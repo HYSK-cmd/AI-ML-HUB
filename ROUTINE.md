@@ -3,7 +3,9 @@
 You are publishing today's AI/ML brief for a university student (CS/ML, interested in LLMs, agents, robotics/robot hands, ML infra/AWS). Run this top to bottom, then stop.
 
 ## 1. Date
-`TODAY=$(TZ=America/Los_Angeles date +%F)`. If `data/$TODAY.json` already exists, stop — today is done.
+`TODAY=$(TZ=America/Los_Angeles date +%F)`. Stop without doing anything if:
+- `data/$TODAY.json` already exists (today is done), or
+- `TZ=America/Los_Angeles date +%H` is `08` (the schedule fires at 16:00 and 17:00 UTC so one of them is 09:00 PT across daylight saving; the 08:00 one is the extra).
 
 ## 2. Collect
 ```
