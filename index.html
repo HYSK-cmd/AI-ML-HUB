@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HUB · AI/ML Daily</title>
-<meta name="description" content="매일 아침 9시(PT), 대학생이 봐야 할 AI/ML 소식을 입문, 중급, 심화 하나씩 골라 한국어 요약과 뉴스 영상으로 전합니다.">
+<meta name="description" content="Daily AI/ML brief for university students: one beginner, one intermediate and one advanced pick each morning, summarized in Korean with a news-style video.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -143,11 +143,11 @@ footer { color: var(--faint); font-size: 13px; padding-top: 48px; }
 <header class="bar">
   <div class="bar-in">
     <a class="brand" href="./">HUB <span>AI/ML Daily</span></a>
-    <nav class="datenav" aria-label="날짜 이동">
-      <button class="iconbtn" id="prev" aria-label="이전 날짜"><i class="ph ph-caret-left"></i></button>
-      <select id="datesel" aria-label="날짜 선택"></select>
-      <button class="iconbtn" id="next" aria-label="다음 날짜"><i class="ph ph-caret-right"></i></button>
-      <button class="iconbtn" id="theme" aria-label="테마 전환"><i class="ph ph-moon"></i></button>
+    <nav class="datenav" data-i18n-aria="site.nav_label">
+      <button class="iconbtn" id="prev" data-i18n-aria="site.prev"><i class="ph ph-caret-left"></i></button>
+      <select id="datesel" data-i18n-aria="site.pick_date"></select>
+      <button class="iconbtn" id="next" data-i18n-aria="site.next"><i class="ph ph-caret-right"></i></button>
+      <button class="iconbtn" id="theme" data-i18n-aria="site.theme"><i class="ph ph-moon"></i></button>
     </nav>
   </div>
 </header>
@@ -155,16 +155,16 @@ footer { color: var(--faint); font-size: 13px; padding-top: 48px; }
 <div class="wrap">
   <aside>
     <section>
-      <h2>카테고리</h2>
+      <h2 data-i18n="site.categories"></h2>
       <div class="cats" id="cats"></div>
-      <button class="clear" id="clear" hidden>선택 해제</button>
+      <button class="clear" id="clear" data-i18n="site.clear" hidden></button>
     </section>
     <section>
-      <h2>난이도</h2>
+      <h2 data-i18n="site.level"></h2>
       <div class="seg" id="levels"></div>
     </section>
     <section class="archive-sec">
-      <h2>지난 브리핑</h2>
+      <h2 data-i18n="site.archive"></h2>
       <ul class="archive" id="archive"></ul>
     </section>
   </aside>
@@ -176,8 +176,9 @@ footer { color: var(--faint); font-size: 13px; padding-top: 48px; }
 </div>
 
 <script>
+// All user-facing text lives in locales/ko.json; this file stays language-neutral.
 const CATS = ["LLM", "Agents", "Multimodal & Vision", "Robotics & Embodied", "RL", "ML Systems & Infra", "Research Fundamentals", "Open Source & Tools", "Industry & Policy"];
-const LEVELS = ["전체", "입문", "중급", "심화"];
+const LEVELS = ["all", "beginner", "intermediate", "advanced"];
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "#";
@@ -187,24 +188,34 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
 };
 
+let L = {};  // locale strings
+const t = (key, vars = {}) => String(key.split(".").reduce((o, k) => o?.[k], L) ?? key).replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? "");
+const levelName = id => id === "all" ? t("site.level_all") : (L.levels?.[id] ?? id);
+
 let dates = [], days = {}, current = null;
-const state = { cats: new Set(store.get("hub.cats", [])), level: store.get("hub.level", "전체") };
-const filtering = () => state.cats.size > 0 || state.level !== "전체";
+const savedLevel = store.get("hub.level", "all");
+const state = { cats: new Set(store.get("hub.cats", [])), level: LEVELS.includes(savedLevel) ? savedLevel : "all" };
+const filtering = () => state.cats.size > 0 || state.level !== "all";
 const allItems = () => dates.flatMap(d => (days[d]?.items || []).map(it => ({ ...it, _date: d })));
 
 // theme
-function applyTheme(t) {
-  if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
-  const dark = t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+function applyTheme(th) {
+  if (th) document.documentElement.dataset.theme = th; else delete document.documentElement.dataset.theme;
+  const dark = th ? th === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
   $("#theme i").className = "ph " + (dark ? "ph-sun" : "ph-moon");
 }
 applyTheme(store.get("hub.theme", null));
 $("#theme").onclick = () => {
-  const t = getComputedStyle(document.documentElement).colorScheme === "dark" ? "light" : "dark";
-  store.set("hub.theme", t); applyTheme(t);
+  const th = getComputedStyle(document.documentElement).colorScheme === "dark" ? "light" : "dark";
+  store.set("hub.theme", th); applyTheme(th);
 };
 
-const fmtDate = d => new Date(d + "T12:00:00").toLocaleDateString("ko-KR", { year: "numeric", month: "long", day: "numeric", weekday: "long" });
+const fmtDate = d => new Date(d + "T12:00:00").toLocaleDateString(document.documentElement.lang, { year: "numeric", month: "long", day: "numeric", weekday: "long" });
+
+function applyStaticText() {
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll("[data-i18n-aria]").forEach(el => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
+}
 
 function renderFilters() {
   const items = allItems();  // counts span the whole archive, filters do too
@@ -212,7 +223,7 @@ function renderFilters() {
     const n = items.filter(i => (i.categories || []).includes(c)).length;
     return `<button class="cat${n ? "" : " zero"}" aria-pressed="${state.cats.has(c)}" data-cat="${esc(c)}">${esc(c)}<span class="n">${n}</span></button>`;
   }).join("");
-  $("#levels").innerHTML = LEVELS.map(l => `<button aria-pressed="${state.level === l}" data-level="${l}">${l}</button>`).join("");
+  $("#levels").innerHTML = LEVELS.map(l => `<button aria-pressed="${state.level === l}" data-level="${l}">${esc(levelName(l))}</button>`).join("");
   $("#clear").hidden = !filtering();
 }
 
@@ -221,11 +232,11 @@ function toggleCat(c) {
   store.set("hub.cats", [...state.cats]);
   render();
 }
-function resetFilters() {
-  state.cats.clear(); state.level = "전체";
-  store.set("hub.cats", []); store.set("hub.level", "전체");
-  render();
+function clearFilters() {
+  state.cats.clear(); state.level = "all";
+  store.set("hub.cats", []); store.set("hub.level", "all");
 }
+function resetFilters() { clearFilters(); render(); }
 $("#cats").onclick = e => { const b = e.target.closest("[data-cat]"); if (b) toggleCat(b.dataset.cat); };
 $("#levels").onclick = e => {
   const b = e.target.closest("[data-level]"); if (!b) return;
@@ -233,19 +244,20 @@ $("#levels").onclick = e => {
 };
 $("#clear").onclick = resetFilters;
 $("#main").onclick = e => {
-  const t = e.target.closest("[data-cat]"); if (t) { toggleCat(t.dataset.cat); return; }
+  const c = e.target.closest("[data-cat]"); if (c) { toggleCat(c.dataset.cat); return; }
   if (e.target.closest("#reset")) resetFilters();
 };
 
 function itemHTML(it, i) {
+  const unsupported = it.check?.unsupported || [];
   return `<li class="item" style="--i:${i}">
-    <span class="rank">${esc(it.level || "")}</span>
+    <span class="rank">${esc(levelName(it.level || ""))}</span>
     <article>
       <div class="meta mono"><span class="src">${esc(it.source)}</span></div>
       <h3><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${esc(it.title)} <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a></h3>
       <p class="summary">${esc(it.summary)}</p>
-      ${it.why ? `<p class="why"><b>왜 봐야 하나</b>${esc(it.why)}</p>` : ""}
-      ${it.check?.verified === false ? `<details class="unverified"><summary>원문에서 확인되지 않은 문장 ${it.check.unsupported.length}개</summary><p>자동 검증기가 수집된 원문 요약에서 근거를 찾지 못한 문장이에요. 원문 링크에서 직접 확인해 보세요.</p><ul>${it.check.unsupported.map(s => `<li>${esc(s)}</li>`).join("")}</ul></details>` : ""}
+      ${it.why ? `<p class="why"><b>${esc(t("site.why"))}</b>${esc(it.why)}</p>` : ""}
+      ${it.check?.verified === false ? `<details class="unverified"><summary>${esc(t("site.unverified_summary", { n: unsupported.length }))}</summary><p>${esc(t("site.unverified_note"))}</p><ul>${unsupported.map(s => `<li>${esc(s)}</li>`).join("")}</ul></details>` : ""}
       <div class="tags">
         ${(it.categories || []).map(c => `<button class="tag cat-tag" data-cat="${esc(c)}">${esc(c)}</button>`).join("")}
         ${(it.keywords || []).map(k => `<span class="tag">${esc(k)}</span>`).join("")}
@@ -254,7 +266,7 @@ function itemHTML(it, i) {
   </li>`;
 }
 
-const FOOTER = `<footer>매일 오전 9시(PT) 업데이트. arXiv, Hugging Face, Hacker News, Reddit, GitHub, AI 랩 블로그에서 수집하고 Claude가 입문, 중급, 심화 하나씩 골라 요약합니다. 요약은 틀릴 수 있으니 중요한 내용은 원문을 확인하세요.</footer>`;
+const footer = () => `<footer>${esc(t("site.footer"))}</footer>`;
 
 function renderDay() {
   const day = days[current];
@@ -263,17 +275,17 @@ function renderDay() {
     <div class="dayhead">
       <time class="mono" datetime="${esc(day.date)}">${esc(fmtDate(day.date))}</time>
       <h1>${esc(day.headline)}</h1>
-      ${video ? `<div class="video"><video controls preload="metadata" playsinline poster="${esc(video.replace(/\.mp4$/, ".jpg"))}" src="${esc(video)}" aria-label="${esc(day.date)} AI 뉴스 브리핑 영상"></video></div>` : ""}
+      ${video ? `<div class="video"><video controls preload="metadata" playsinline poster="${esc(video.replace(/\.mp4$/, ".jpg"))}" src="${esc(video)}" aria-label="${esc(t("site.video_label", { date: day.date }))}"></video></div>` : ""}
     </div>
     <ol class="items">${day.items.map(itemHTML).join("")}</ol>
-    ${FOOTER}`;
+    ${footer()}`;
 }
 
 function renderFiltered() {
   const shown = allItems().filter(it =>
     (!state.cats.size || (it.categories || []).some(c => state.cats.has(c))) &&
-    (state.level === "전체" || it.level === state.level));
-  const label = [...state.cats, state.level !== "전체" ? state.level : ""].filter(Boolean).join(", ");
+    (state.level === "all" || it.level === state.level));
+  const label = [...state.cats, state.level !== "all" ? levelName(state.level) : ""].filter(Boolean).join(", ");
   let html = "", last = null;
   shown.forEach((it, i) => {
     if (it._date !== last) {
@@ -284,13 +296,13 @@ function renderFiltered() {
   });
   $("#main").innerHTML = `
     <div class="dayhead">
-      <time class="mono">전체 아카이브에서 찾기</time>
+      <time class="mono">${esc(t("site.archive_search"))}</time>
       <h1>${esc(label)}</h1>
-      <div class="stat mono">${dates.length}일 동안 ${shown.length}개</div>
+      <div class="stat mono">${esc(t("site.archive_stat", { days: dates.length, n: shown.length }))}</div>
     </div>
     ${shown.length ? html + "</ol>"
-      : `<div class="state"><h2>조건에 맞는 항목이 없어요</h2><p>아직 이 카테고리나 난이도의 글이 올라오지 않았습니다. 필터를 바꾸거나 초기화해 보세요.</p><button id="reset">필터 초기화</button></div>`}
-    ${FOOTER}`;
+      : `<div class="state"><h2>${esc(t("site.empty_title"))}</h2><p>${esc(t("site.empty_body"))}</p><button id="reset">${esc(t("site.reset"))}</button></div>`}
+    ${footer()}`;
 }
 
 function render() {
@@ -308,15 +320,15 @@ function renderNav() {
   $("#archive").innerHTML = dates.slice(0, 30).map(d => `<li><a href="#${d}"${d === current ? ' aria-current="true"' : ""}>${d}</a></li>`).join("");
 }
 
-function showError(title, msg) {
-  $("#main").innerHTML = `<div class="state"><h2>${esc(title)}</h2><p>${esc(msg)}</p><button onclick="location.reload()">다시 시도</button></div>`;
+function showError(titleKey, bodyKey) {
+  $("#main").innerHTML = `<div class="state"><h2>${esc(t(titleKey))}</h2><p>${esc(t(bodyKey))}</p><button onclick="location.reload()">${esc(t("site.retry"))}</button></div>`;
 }
 
 // Picking a date means "show me that day", so it drops any active filter.
 function route() {
   const want = location.hash.slice(1);
   current = dates.includes(want) ? want : dates[0];
-  if (want && dates.includes(want) && filtering()) { state.cats.clear(); state.level = "전체"; store.set("hub.cats", []); store.set("hub.level", "전체"); }
+  if (want && dates.includes(want) && filtering()) clearFilters();
   render(); window.scrollTo({ top: 0 });
 }
 $("#datesel").onchange = e => { location.hash = e.target.value; };
@@ -330,16 +342,23 @@ const getJSON = url => fetch(url, { cache: "no-cache" }).then(r => { if (!r.ok) 
 
 (async () => {
   try {
+    L = await getJSON(`locales/${document.documentElement.lang}.json`);
+  } catch {
+    $("#main").textContent = "Could not load the text resources (locales/). Reload to try again.";
+    return;
+  }
+  applyStaticText();
+  try {
     dates = [...await getJSON("data/index.json")].sort().reverse();
   } catch {
-    return showError("목록을 불러오지 못했어요", "data/index.json을 읽을 수 없습니다. 로컬에서 보고 있다면 python -m http.server로 열어주세요.");
+    return showError("site.err_index_title", "site.err_index_body");
   }
-  if (!dates.length) return showError("아직 브리핑이 없어요", "첫 브리핑은 다음 오전 9시(PT)에 올라옵니다.");
+  if (!dates.length) return showError("site.err_empty_title", "site.err_empty_body");
   // ponytail: loads every day file up front (3 items each) so filters span the archive; switch to one combined feed.json past ~300 days
   const loaded = await Promise.allSettled(dates.map(d => getJSON(`data/${d}.json`)));
   loaded.forEach((r, i) => { if (r.status === "fulfilled") days[dates[i]] = { ...r.value, items: r.value.items || [] }; });
   dates = dates.filter(d => days[d]);
-  if (!dates.length) return showError("브리핑을 불러오지 못했어요", "데이터를 가져오는 중 문제가 생겼습니다. 잠시 후 다시 시도해 주세요.");
+  if (!dates.length) return showError("site.err_days_title", "site.err_days_body");
   route();
 })();
 </script>

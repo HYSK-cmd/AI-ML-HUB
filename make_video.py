@@ -26,11 +26,13 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).parent
 W, H = 1280, 720
 NAVY, NAVY2, WHITE, INK, GREY, ACCENT = "#0d1a2e", "#15294a", "#f7f7f5", "#0d1a2e", "#9aa7bd", "#e8590c"
-LEVEL_COLOR = {"입문": "#2f9e44", "중급": "#1971c2", "심화": "#c2255c"}
+LEVELS = ("beginner", "intermediate", "advanced")  # data values; display names come from the locale
+LEVEL_COLOR = {"beginner": "#2f9e44", "intermediate": "#1971c2", "advanced": "#c2255c"}
 VOICE = "ko-KR-SunHiNeural"
 FONT_URL = "https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/public/static/Pretendard-{}.otf"
 UA = {"User-Agent": "Mozilla/5.0 (hub-video; +https://github.com/HYSK-cmd/hub)"}
-WEEKDAY = "월화수목금토일"
+LOCALE = json.loads((ROOT / "locales" / "ko.json").read_text(encoding="utf-8"))  # every on-screen/spoken string
+V, LEVEL_NAME = LOCALE["video"], LOCALE["levels"]
 
 
 def font(weight, size, _cache={}):
@@ -97,7 +99,7 @@ def base(day_label):
         d.line([(0, y), (W, y)], fill=c)
     d.rectangle([0, 0, W, 56], fill="#0a1424")
     d.rectangle([32, 12, 208, 44], fill=ACCENT)
-    d.text((120, 28), "HUB AI 뉴스", font=font("Bold", 20), fill=WHITE, anchor="mm")
+    d.text((120, 28), V["channel"], font=font("Bold", 20), fill=WHITE, anchor="mm")
     d.text((W - 32, 28), day_label, font=font("Medium", 18), fill=GREY, anchor="rm")
     return img, d
 
@@ -114,13 +116,13 @@ def subtitle(img, d, text):
 
 def intro_slide(day, day_label, text):
     img, d = base(day_label)
-    d.text((80, 120), "오늘의 AI 브리핑", font=font("Bold", 56), fill=WHITE)
+    d.text((80, 120), V["intro_title"], font=font("Bold", 56), fill=WHITE)
     d.text((80, 196), day_label, font=font("Medium", 24), fill=GREY)
     for i, it in enumerate(day["items"]):
         y = 270 + i * 86
         lvl = it.get("level", "")
         d.rounded_rectangle([80, y, 160, y + 44], 6, fill=LEVEL_COLOR.get(lvl, ACCENT))
-        d.text((120, y + 22), lvl, font=font("Bold", 22), fill=WHITE, anchor="mm")
+        d.text((120, y + 22), LEVEL_NAME.get(lvl, lvl), font=font("Bold", 22), fill=WHITE, anchor="mm")
         line = wrap(d, it.get("headline_ko") or it["title"], font("Bold", 30), W - 280, 1)[0]
         d.text((184, y + 22), line, font=font("Bold", 30), fill=WHITE, anchor="lm")
     subtitle(img, d, text)
@@ -148,7 +150,7 @@ def item_slide(it, day_label, text, material):
         d.text((tx, y), line, font=font("SemiBold", 26), fill=WHITE)
         y += 36
     y += 18
-    d.text((tx, y), "핵심 키워드", font=font("Bold", 20), fill=ACCENT)
+    d.text((tx, y), V["keywords"], font=font("Bold", 20), fill=ACCENT)
     y += 34
     for kw in (it.get("keywords") or [])[:4]:
         d.text((tx, y), f"· {kw}", font=font("Medium", 22), fill="#d7deea")
@@ -156,7 +158,7 @@ def item_slide(it, day_label, text, material):
     # lower third: level tab + Korean headline bar
     ly = 452
     d.rectangle([60, ly, 164, ly + 64], fill=LEVEL_COLOR.get(lvl, ACCENT))
-    d.text((112, ly + 32), lvl, font=font("Bold", 28), fill=WHITE, anchor="mm")
+    d.text((112, ly + 32), LEVEL_NAME.get(lvl, lvl), font=font("Bold", 28), fill=WHITE, anchor="mm")
     d.rectangle([164, ly, W - 60, ly + 64], fill=WHITE)
     head = wrap(d, it.get("headline_ko") or it["title"], font("Bold", 32), W - 60 - 164 - 40, 1)[0]
     d.text((188, ly + 32), head, font=font("Bold", 32), fill=INK, anchor="lm")
@@ -206,8 +208,12 @@ def validate(day_path):
     items = day.get("items", [])
     if not day.get("date") or not day.get("headline"):
         errs.append("missing date/headline")
-    if [i.get("level") for i in items] != ["입문", "중급", "심화"]:
-        errs.append(f"need exactly 3 items ordered 입문, 중급, 심화; got {[i.get('level') for i in items]}")
+    if [i.get("level") for i in items] != list(LEVELS):
+        errs.append(f"need exactly 3 items ordered {', '.join(LEVELS)}; got {[i.get('level') for i in items]}")
+    openers = {o.format(level=name) for o in V["item_openers"] for name in LEVEL_NAME.values()}
+    for n, it in enumerate(items):
+        if sentences(it.get("narration"))[:1] and sentences(it.get("narration"))[0] in openers:
+            errs.append(f"item {n}: narration starts with the item opener; drop it, the video adds it")
     published = corpus(exclude=day_path)
     for n, it in enumerate(items):
         errs += [f"item {n}: missing {f}" for f in FIELDS if not it.get(f)]
@@ -228,16 +234,17 @@ def render(day_path):
         sys.exit("invalid day file:\n  " + "\n  ".join(errs))
     day = json.loads(day_path.read_text(encoding="utf-8"))
     dt = date.fromisoformat(day["date"])
-    day_label = f"{dt.year}.{dt.month:02d}.{dt.day:02d} ({WEEKDAY[dt.weekday()]})"
-    spoken_date = f"{dt.month}월 {dt.day}일"
+    day_label = f"{dt.year}.{dt.month:02d}.{dt.day:02d} ({V['weekdays'][dt.weekday()]})"
+    spoken_date = V["spoken_date"].format(month=dt.month, day=dt.day)
     ff = ffmpeg_bin()
 
-    slides = [(intro_slide, (day, day_label), f"{spoken_date}, 오늘의 AI 브리핑입니다. {day.get('headline', '')}")]
-    for it in day["items"]:
+    slides = [(intro_slide, (day, day_label), V["intro"].format(date=spoken_date, headline=day.get("headline", "")))]
+    for n, it in enumerate(day["items"]):
         material = og_image(it["url"])
-        for s in sentences(it.get("narration") or it.get("summary")):
+        opener = V["item_openers"][n].format(level=LEVEL_NAME.get(it["level"], it["level"]))
+        for s in [opener] + sentences(it.get("narration") or it.get("summary")):
             slides.append((item_slide, (it, day_label), s, material))
-    slides.append((intro_slide, (day, day_label), "원문 링크와 자세한 요약은 HUB 사이트에서 확인하세요. 이상 HUB AI 브리핑이었습니다."))
+    slides.append((intro_slide, (day, day_label), V["outro"]))
 
     out = ROOT / "videos" / f"{day['date']}.mp4"
     out.parent.mkdir(exist_ok=True)
@@ -268,7 +275,8 @@ def render(day_path):
 
 
 def check():
-    assert sentences("첫 문장입니다. 두 번째! 세 번째?") == ["첫 문장입니다.", "두 번째!", "세 번째?"]
+    assert sentences("First one. Second! Third?") == ["First one.", "Second!", "Third?"]
+    assert all(k in LEVEL_NAME for k in LEVELS) and len(V["item_openers"]) == len(LEVELS)
     d = ImageDraw.Draw(Image.new("RGB", (10, 10)))
     f = ImageFont.load_default()
     lines = wrap(d, "a " * 200 + "x" * 300, f, 200, 3)

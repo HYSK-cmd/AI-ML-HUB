@@ -201,7 +201,7 @@ def keys(url, title=""):
     ks = {host + u.path.rstrip("/").lower()}
     if host in ("arxiv.org", "export.arxiv.org", "huggingface.co") and (m := ARXIV_ID.search(u.path)):
         ks.add("arxiv:" + m.group(1))
-    t = re.sub(r"[^0-9a-z가-힣]", "", (title or "").lower())
+    t = re.sub(r"[\W_]", "", (title or "").lower())  # letters and digits of any script
     if len(t) > 12:
         ks.add("title:" + t)
     return ks

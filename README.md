@@ -1,6 +1,6 @@
 # AI/ML HUB
 
-Daily AI/ML brief for a university student: every morning at 09:00 PT, three picks (입문, 중급, 심화) summarized in Korean, plus a Korean news-style video of them.
+Daily AI/ML brief for a university student: every morning at 09:00 PT, three picks (beginner, intermediate, advanced) summarized in Korean, plus a Korean news-style video of them.
 
 Live: https://hysk-cmd.github.io/hub/
 
@@ -27,7 +27,7 @@ flowchart TD
         guard -- yes --> stop(["Stop"])
         guard -- no --> fresh{"candidates.json<br/>dated today?"}
         fresh -- no --> stop
-        fresh -- yes --> select["Select exactly 3<br/>입문 / 중급 / 심화"]
+        fresh -- yes --> select["Select exactly 3<br/>beginner / intermediate / advanced"]
         select --> read["Read each pick's page<br/>collect.page_text"] --> write["Write data/TODAY.json<br/>summary, why, keywords,<br/>headline_ko, narration"]
         write --> validate{"make_video.py --validate<br/>3 items in level order, fields,<br/>categories, no em-dash, not in corpus"}
         validate -- errors --> write

@@ -77,7 +77,6 @@ class ClaimAnswers(SystemOneResponse):
 
 
 STOP = set("a an the of for and in on to with via from by is are as at its it this that we our your how what why new using towards into".split())
-INTRO = re.compile(r"^(첫|두|세) 번째는 \S+ 소식입니다\.$")  # fixed narration opener, not a claim
 
 
 def warn(msg):
@@ -107,9 +106,10 @@ def keep(j):
 
 
 def claims(item):
+    # the spoken "first/second/third item" opener is added by make_video.py, so every sentence here is a claim
     for field in ("summary", "narration"):
         for s in re.split(r"(?<=[.!?])\s+", item.get(field) or ""):
-            if s.strip() and not INTRO.match(s.strip()):
+            if s.strip():
                 yield field, s.strip()
 
 
@@ -255,7 +255,7 @@ def check():
     assert keep({**j, "injection": 0.99}).startswith("injection")
     assert keep({**j, "has_substance": 0.04}).startswith("no substance")
     assert keep({**j, "learning_value": 0.3}).startswith("low learning")
-    assert [s for _, s in claims({"narration": "두 번째는 중급 소식입니다. 모델을 공개했습니다."})] == ["모델을 공개했습니다."]
+    assert [s for _, s in claims({"summary": "It works. Really?", "narration": "Yes!"})] == ["It works.", "Really?", "Yes!"]
     assert overlap("Build voice apps with vLLM-Omni on SageMaker AI", "Generate images with vLLM-Omni on SageMaker AI") >= PAIR_MIN_OVERLAP
     assert overlap("Robot tactile sensing with JEPA", "Nvidia stock options lawsuit") == 0
     base = set(SystemOneResponse.model_fields)
