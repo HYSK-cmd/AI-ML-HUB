@@ -19,7 +19,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: sudo apt-get install -y -qq ffmpeg && pip install -q edge-tts gTTS pillow
+      - run: sudo apt-get install -y -qq ffmpeg && pip install -q edge-tts gTTS pillow typesafe-sdk
+      - name: Check summaries against their sources (TypeSafe)
+        env:
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+        run: |
+          for f in data/2*.json; do
+            [ -e "$f" ] || continue
+            grep -q '"check"' "$f" || python judge.py verify "$f" || echo "::warning::verify failed for $f"
+          done
       - name: Render missing videos
         run: |
           for f in data/2*.json; do
@@ -33,7 +41,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git diff --cached --quiet && exit 0
-          git commit -m "video: $(ls -t videos/*.mp4 | head -1 | xargs -n1 basename)"
+          git commit -m "publish: verify + video"
           git pull --rebase && git push
       - uses: actions/upload-pages-artifact@v3
         with:

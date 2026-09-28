@@ -19,6 +19,10 @@ jobs:
           python-version: "3.12"
       - name: Collect candidates (corpus overlap removed)
         run: HUB_DATE=$(TZ=America/Los_Angeles date +%F) python collect.py > candidates.json
+      - name: Judge candidates with TypeSafe (screen, score, semantic dedupe)
+        env:
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+        run: pip install -q typesafe-sdk && python judge.py candidates candidates.json
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"

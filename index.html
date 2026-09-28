@@ -88,6 +88,11 @@ main { padding: 40px 0 120px; min-width: 0; }
 .summary { margin: 0; color: var(--text); max-width: 68ch; }
 .why { margin: 16px 0 0; padding: 12px 16px; background: var(--surface); border-radius: var(--radius); color: var(--muted); font-size: 15px; max-width: 68ch; }
 .why b { color: var(--accent); font-weight: 600; margin-right: 6px; }
+.unverified { margin: 12px 0 0; max-width: 68ch; font-size: 14px; color: var(--muted); }
+.unverified summary { cursor: pointer; color: var(--faint); }
+.unverified summary:hover { color: var(--text); }
+.unverified p { margin: 8px 0 4px; }
+.unverified ul { margin: 0; padding-left: 18px; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
 .tag { font-family: var(--mono); font-size: 12px; color: var(--muted); padding: 2px 8px; border-radius: 6px; background: var(--surface); }
 .tag.cat-tag { background: none; border: 1px solid var(--line); cursor: pointer; }
@@ -240,6 +245,7 @@ function itemHTML(it, i) {
       <h3><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${esc(it.title)} <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a></h3>
       <p class="summary">${esc(it.summary)}</p>
       ${it.why ? `<p class="why"><b>왜 봐야 하나</b>${esc(it.why)}</p>` : ""}
+      ${it.check?.verified === false ? `<details class="unverified"><summary>원문에서 확인되지 않은 문장 ${it.check.unsupported.length}개</summary><p>자동 검증기가 수집된 원문 요약에서 근거를 찾지 못한 문장이에요. 원문 링크에서 직접 확인해 보세요.</p><ul>${it.check.unsupported.map(s => `<li>${esc(s)}</li>`).join("")}</ul></details>` : ""}
       <div class="tags">
         ${(it.categories || []).map(c => `<button class="tag cat-tag" data-cat="${esc(c)}">${esc(c)}</button>`).join("")}
         ${(it.keywords || []).map(k => `<span class="tag">${esc(k)}</span>`).join("")}
