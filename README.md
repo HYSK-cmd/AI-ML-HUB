@@ -1,4 +1,4 @@
-# HUB
+# AI/ML HUB
 
 Daily AI/ML brief for a university student: every morning at 09:00 PT, three picks (입문, 중급, 심화) summarized in Korean, plus a Korean news-style video of them.
 
