@@ -1,16 +1,16 @@
 {
  "date": "2026-09-28",
- "collected_at": "2026-09-28T17:30:54+00:00",
+ "collected_at": "2026-09-28T17:42:30+00:00",
  "counts": {
   "hf_papers": 30,
   "arxiv": 0,
   "hacker_news": 14,
-  "reddit": 26,
+  "reddit": 0,
   "github_trending": 4,
   "blogs": 6,
   "anthropic": 1
  },
- "dedup": "dedup: 18 already in corpus, 0 cross-source duplicates, 63 new",
+ "dedup": "dedup: 18 already in corpus, 0 cross-source duplicates, 37 new",
  "items": [
   {
    "source": "HF Papers",
@@ -22,9 +22,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.82,
-    "learning_value": 2.77,
-    "hands_on": 0.97
+    "difficulty": 1.79,
+    "learning_value": 2.8,
+    "hands_on": 0.98
    }
   },
   {
@@ -37,9 +37,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.9,
-    "learning_value": 2.7,
-    "hands_on": 0.97
+    "difficulty": 1.86,
+    "learning_value": 2.68,
+    "hands_on": 0.96
    }
   },
   {
@@ -52,7 +52,7 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.57,
+    "difficulty": 1.55,
     "learning_value": 2.54,
     "hands_on": 0.91
    }
@@ -67,9 +67,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.54,
-    "learning_value": 2.79,
-    "hands_on": 0.94
+    "difficulty": 1.57,
+    "learning_value": 2.77,
+    "hands_on": 0.95
    }
   },
   {
@@ -82,9 +82,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.78,
-    "learning_value": 2.82,
-    "hands_on": 0.92
+    "difficulty": 1.75,
+    "learning_value": 2.83,
+    "hands_on": 0.89
    }
   },
   {
@@ -97,9 +97,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.08,
-    "learning_value": 2.78,
-    "hands_on": 1.02
+    "difficulty": 1.05,
+    "learning_value": 2.77,
+    "hands_on": 1.05
    }
   },
   {
@@ -112,9 +112,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 1.77,
+    "difficulty": 1.74,
     "learning_value": 2.62,
-    "hands_on": 0.92
+    "hands_on": 0.9
    }
   },
   {
@@ -127,8 +127,8 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.58,
-    "learning_value": 2.78,
+    "difficulty": 1.59,
+    "learning_value": 2.76,
     "hands_on": 0.94
    }
   },
@@ -142,9 +142,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.32,
-    "learning_value": 2.46,
-    "hands_on": 0.94
+    "difficulty": 1.34,
+    "learning_value": 2.49,
+    "hands_on": 0.93
    }
   },
   {
@@ -158,8 +158,8 @@
     "injection": 0.03,
     "has_substance": 0.98,
     "difficulty": 1.46,
-    "learning_value": 2.83,
-    "hands_on": 0.95
+    "learning_value": 2.78,
+    "hands_on": 0.96
    }
   },
   {
@@ -170,10 +170,10 @@
    "score": 9,
    "published": "2026-09-23T20:00:00.000Z",
    "judge": {
-    "injection": 0.01,
+    "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.5,
-    "learning_value": 2.93,
+    "difficulty": 1.52,
+    "learning_value": 2.92,
     "hands_on": 0.96
    }
   },
@@ -187,8 +187,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.8,
-    "learning_value": 2.52,
+    "difficulty": 1.78,
+    "learning_value": 2.57,
     "hands_on": 0.96
    }
   },
@@ -201,10 +201,10 @@
    "published": "2026-09-23T20:00:00.000Z",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 0.67,
+    "has_substance": 0.97,
+    "difficulty": 0.7,
     "learning_value": 2.05,
-    "hands_on": 0.65
+    "hands_on": 0.62
    }
   },
   {
@@ -217,9 +217,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.99,
-    "difficulty": 1.22,
+    "difficulty": 1.26,
     "learning_value": 2.92,
-    "hands_on": 1.67
+    "hands_on": 1.69
    }
   },
   {
@@ -233,7 +233,7 @@
     "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.89,
-    "learning_value": 2.92,
+    "learning_value": 2.9,
     "hands_on": 0.99
    }
   },
@@ -247,7 +247,7 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.66,
+    "difficulty": 1.67,
     "learning_value": 2.77,
     "hands_on": 0.93
    }
@@ -262,7 +262,7 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.94,
+    "difficulty": 1.93,
     "learning_value": 2.78,
     "hands_on": 0.96
    }
@@ -275,10 +275,10 @@
    "score": 6,
    "published": "2026-09-23T20:00:00.000Z",
    "judge": {
-    "injection": 0.02,
+    "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.94,
-    "learning_value": 2.82,
+    "learning_value": 2.8,
     "hands_on": 0.95
    }
   },
@@ -292,9 +292,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.42,
+    "difficulty": 1.43,
     "learning_value": 2.95,
-    "hands_on": 1.7
+    "hands_on": 1.75
    }
   },
   {
@@ -306,10 +306,10 @@
    "published": "2026-09-28T07:33:29Z",
    "judge": {
     "injection": 0.05,
-    "has_substance": 0.86,
-    "difficulty": 0.33,
+    "has_substance": 0.87,
+    "difficulty": 0.29,
     "learning_value": 2.25,
-    "hands_on": 0.78
+    "hands_on": 0.76
    }
   },
   {
@@ -321,10 +321,10 @@
    "published": "2026-09-28T03:23:53Z",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.88,
-    "difficulty": 0.63,
-    "learning_value": 2.28,
-    "hands_on": 0.72
+    "has_substance": 0.87,
+    "difficulty": 0.68,
+    "learning_value": 2.29,
+    "hands_on": 0.74
    }
   },
   {
@@ -335,221 +335,11 @@
    "score": 116,
    "published": "2026-09-27T15:51:28Z",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.84,
-    "difficulty": 0.21,
-    "learning_value": 1.05,
-    "hands_on": 0.76
-   }
-  },
-  {
-   "source": "r/MachineLearning",
-   "title": "Functional Gradient Descent with Adaptive Representations [R]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1wsejb7/functional_gradient_descent_with_adaptive/",
-   "snippet": "Sharing our recent work, now accepted at NeurIPS: Functional Gradient Descent with Adaptive Representations . Functional GD algorithms generally outperform neural nets, but are hard to accurately implement. This is because functional gradients are infinite-dimensional, and therefore must be approximated in practice; but if you approximate them naively, you converge to the wrong place! To rectify this, we formalize a broad class of approximation schemes (\"adaptive representations\"), which provably ensure convergence to the global minimizer while being immediately implementable. The resulting algorithms outperform corresponding neural nets often by an order of magnitude, across a number of settings. It is still the start for this line of work, but we believe it has quite a bit of potential! Paper: https://arxiv.org/abs/2606.16926 (First author here, happy to take any questions) submitted by /u/dccsillag0 [link] [comments]",
-   "score": 14,
-   "published": "2026-09-28T13:23:54+00:00",
-   "judge": {
     "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 1.96,
-    "learning_value": 2.16,
-    "hands_on": 0.99
-   }
-  },
-  {
-   "source": "r/MachineLearning",
-   "title": "Free, open-source AI engineering course where you build each algorithm by hand: 523 lessons, now as EPUB/PDF books [P]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1ws6e9p/free_opensource_ai_engineering_course_where_you/",
-   "snippet": "AI Engineering from Scratch is an MIT-licensed curriculum: 523 lessons across 20 phases, from linear algebra and backprop to transformers, LLMs, agents, and production serving. The code is stdlib-first, so you see every step instead of calling a library. This month's edition: - six EPUB and PDF volumes built from the lessons, attached to the release - the site interface and lessons in eight languages (Chinese, Hindi, Spanish, Arabic, French, Portuguese, Turkish, Vietnamese) - CI now runs each lesson's own tests, and a sweep fixed datasets, models, and links that had stopped working Site: https://aiengineeringfromscratch.com Books and release notes: https://github.com/rohitg00/ai-engineering-from-scratch/releases/tag/v2026.10 If you use a coding agent, npx skills add rohitg00/ai-engineering-from-scratch and then /start-learning gives you a placement quiz and a study plan. submitted by /u/SeveralSeat2176 [link] [comments]",
-   "score": 13,
-   "published": "2026-09-28T05:49:38+00:00",
-   "judge": {
-    "injection": 0.55,
-    "has_substance": 0.98,
-    "difficulty": 0.32,
-    "learning_value": 2.81,
-    "hands_on": 1.99
-   }
-  },
-  {
-   "source": "r/MachineLearning",
-   "title": "Qwen3-VL 8B on a laptop vs Opus 5.5 / Sonnet 5 / GPT-5.6 on 137 messy documents: beat GPT-5.6 on tax forms, lost badly on Indian date formats[R]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1wsbqni/qwen3vl_8b_on_a_laptop_vs_opus_55_sonnet_5_gpt56/",
-   "snippet": "I benchmarked Qwen3-VL 8B Instruct (Q4_K_M, Ollama, M5 24GB, ~30s/doc) against Claude Opus 5.5, Sonnet 5 and GPT-5.6 Terra on: - receipts: CORD (Indonesia) and SROIE (Malaysia), 30 each - 20 scanned 1980s-90s invoices , answer keys human-verified - 32 real IRS forms, 4 damage levels (generated this week, so not in anyone's training data) - 10 synthetic Indian bank statements, 15 CUAD contracts Results (documents fully right): - Opus 89%, - Sonnet 85%, - Qwen 8B 59%, - GPT-5.6 Terra 57%. Qwen-specific findings: - W-2s: 21/32 fully right vs GPT-5.6 Terra 7/32 - Indian bank statements: 2/10. Every amount and balance correct, but dd-mm-yyyy read as mm-dd. - Contracts (long text): 2/15, mostly wrong expiry dates - The default qwen3-vl:8b tag in Ollama is the thinking variant and ignores think:false. On long contracts it spent all 4,096 tokens thinking and returned nothing. Use :8b-instruct. Other things I didn't expect: - GPT-5.6 Terra \"corrects\" unusual spellings (Rachael -> Rachel, Kelleyland -> Kellyland) - Asking a model to check its own output changed almost nothing (119/137 identical) - At least 4 of the 30 SROIE receipts have a wrong published answer key (e.g. B1750 where the receipt prints 81750) Next I'm fine-tuning the 8B to fix the date and spelling failures and will post the result either way. https://preview.redd.it/vmwm4920v8sh1.png?width=2200&format=png&auto=webp&s=173dcd046cdcb7c2d26ba9027f1ef4b9c24486e0 Prompts, keys, scorer tests and every raw output: https://git",
-   "score": 12,
-   "published": "2026-09-28T11:11:59+00:00",
-   "judge": {
-    "injection": 0.06,
-    "has_substance": 0.97,
-    "difficulty": 0.87,
-    "learning_value": 2.64,
-    "hands_on": 1.69
-   }
-  },
-  {
-   "source": "r/MachineLearning",
-   "title": "Browser demo of our Clash Royale RL environment: a 5.6k-parameter REINFORCE policy learns defensive placement against a brute-force optimum [P]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1wsfkwg/browser_demo_of_our_clash_royale_rl_environment_a/",
-   "snippet": "Yesterday I shared our open-source Clash Royale simulator and its recurrent PPO agent here. A training loop is easier to understand when you can watch it, so we put a small interactive version online: https://itzik123.github.io/ClashRoyaleAi/lab/ The task is one decision. An attacker spawns at a random point on the enemy side, and the policy picks a legal cell for one defending card, then a delay of 0 to 5 s given that cell. The reward is the fraction of tower damage prevented relative to no defence. The policy has 5,629 parameters and trains with REINFORCE (per-spawn baseline, annealed entropy bonus) in plain JavaScript with hand-written gradients. Every rollout runs in the project's C++ engine compiled to WebAssembly, and the deploy pipeline checks that the WASM build agrees exactly with the native engine. The chart also shows the optimum, found by brute force over every cell and delay (up to ~300k rollouts per matchup), so the gap between the learned policy and the best answer is visible. One observation from building it: Giant vs Cannon has a strong local optimum, a lane placement worth about 75% of the best. With a constant entropy coefficient of 0.01, 5 of 6 runs (3 seeds, batch 16 and 64) stayed there. A linear anneal from 0.1 to 0.005 over 10k tries reduced that to 1 of 6. One pairing, Battle Ram vs Valkyrie, is withheld because no setting we tried got past 55% of the optimum. This is a miniature of the full problem (a 4-card hand, elixir, full matches, recurrent PPO)",
-   "score": 10,
-   "published": "2026-09-28T14:06:42+00:00",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.02,
-    "learning_value": 2.83,
-    "hands_on": 1.84
-   }
-  },
-  {
-   "source": "r/MachineLearning",
-   "title": "Two-stage shelf audit: YOLO finds the products, embeddings can't tell sibling SKUS apart. What should Stage 2 be? [P]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1wrxabu/twostage_shelf_audit_yolo_finds_the_products/",
-   "snippet": "Help: Project l'm building a shelf audit tool. A photo goes through YOLO, which crops each product, and then I embed the crop and search a small gallery of reference photos to get the SKU. New products should be addable by just dropping in photos, no detector retrain. Detection is basically fine. ldentification is not. Same brand, same bottle, different flavor or size (like 1.25 L vs 2 L) and the nearest neighbor is often the wrong SKU. Correct and wrong scores overlap, so a threshold either misses real products or accepts the wrong one. I tried DINOV2, SigLIP2 and OpenCLIP. Same story. Crops get letterboxed to 224, so the tiny \"1.25L\" / \"2L\" text basically disappears. Most SKUS only have a couple of shelf photos as references, not clean studio shots. Has anyone actually shipped something like this? Did you fine-tune the embedder on hard negatives, add OCR as a second check, or give up on one global embedding? Curious what worked for size variants. thanks in advance submitted by /u/ryan7ait [link] [comments]",
-   "score": 8,
-   "published": "2026-09-27T22:13:14+00:00",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 1.03,
-    "learning_value": 1.82,
-    "hands_on": 0.74
-   }
-  },
-  {
-   "source": "r/MachineLearning",
-   "title": "Reduced my Jev judge’s calibration error [D]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1ws2mhx/reduced_my_jev_judges_calibration_error_d/",
-   "snippet": "I benchmarked Jev on TRIVIA+ dataset using an untouched 645-example test set. Before calibration: ECE: 0.0982 After learning from human-labelled examples: ECE: 0.0313 That’s a 68.1% reduction in calibration error . But hallucination-detection F1 only moved: 0.5833 → 0.5877 So what improved? Not the judge’s ability to classify examples. Its confidence became much more aligned with reality . And that distinction matters. If a judge score is only being displayed on a dashboard, maybe not much. But if confidence > 0.8 means “automatically approve this answer,” or < 0.4 means “escalate to a human,” then badly calibrated scores can quietly become a production problem. That’s one of the reasons I’ve been building calibration into Typed Evals instead of treating raw judge confidence as trustworthy by default. Benchmark/methodology report: https://github.com/TrustifAI/typed_evals/blob/main/docs/BENCHMARK.md Would be interested to know how people here pick production thresholds for LLM/Jev judges. submitted by /u/Charming_Group_2950 [link] [comments]",
-   "score": 7,
-   "published": "2026-09-28T02:26:49+00:00",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 0.63,
-    "learning_value": 2.42,
-    "hands_on": 1.71
-   }
-  },
-  {
-   "source": "r/MachineLearning",
-   "title": "OpenTrainDNN: A Browser-Based Real-Time Neural Network Visualizer.[P]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1ws14qi/opentraindnn_a_browserbased_realtime_neural/",
-   "snippet": "OpenTrainDNN is an open-source, client-side web application designed to render the step-by-step training mechanics of deep neural networks in real-time. It provides direct visibility into backpropagation, activation flows, and weight updates without requiring backend servers, specialized hardware drivers, or local installation. submitted by /u/NeedleworkerKey3487 [link] [comments]",
-   "score": 6,
-   "published": "2026-09-28T01:12:00+00:00",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 0.33,
-    "learning_value": 2.37,
-    "hands_on": 1.57
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "Qwen plays World of Warcraft",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wry136/qwen_plays_world_of_warcraft/",
-   "snippet": "Been doing a bunch of vibe coding lately. Had my agents host a private WoW server for me, then built out a web browser client so you can play without installing the game and it has mobile controls. Afterwards, created a custom mcp to drive the client and have finer game control than a generic browser agent. The agent harness can plug into your local or cloud LLMs and be used to drive the game. For best results have a model that can output >50token/sec. No visual input is used in the making (might be beneficial in the future but incur more latency). The mcp and agent are only running on my dev server but if folks are interested in trying the game go to https://jankcraft.xyz/ Still vibing but I’ll make some more content of it … I think those Pokémon benchmarks have become a little too easy and they need a new challenge like speed running to 80 in wraith of the lich king. submitted by /u/professormunchies [link] [comments]",
-   "score": 11,
-   "published": "2026-09-27T22:46:25+00:00",
-   "judge": {
-    "injection": 0.05,
-    "has_substance": 0.91,
-    "difficulty": 0.51,
-    "learning_value": 2.08,
-    "hands_on": 1.15
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "Naive-N0.5-Flash - 309B-A15.5B",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wrs58t/naiven05flash_309ba155b/",
-   "snippet": "https://naive.ai/en/research/ Built for coding and AI R&D 1M context Hybrid SWA/DSA submitted by /u/nullmove [link] [comments]",
-   "score": 9,
-   "published": "2026-09-27T18:48:03+00:00",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 1.29,
-    "learning_value": 1.06,
-    "hands_on": 0.99
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "I’m calling this the Monstrosity. 5 ex mining BC-250 boards Qwen3-Coder-Next Q4 at 40 tok/s",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ws49si/im_calling_this_the_monstrosity_5_ex_mining_bc250/",
-   "snippet": "Using an asrock 12 unit case running one board as the main with the rest of them headless. About 71GB of vram exposed. So far 40 tok/s is with 30k context and it dips to around 30 tok/s at 100k context. This is all over the 1gb Ethernet that is on the boards already. I have 2 more of these and will probably get them running to see if 3.8 flash next runs at usable speeds. This setup is wildly inefficient with power but cost me less than $800. submitted by /u/Ok-Breadfruit-3523 [link] [comments]",
-   "score": 7,
-   "published": "2026-09-28T03:52:30+00:00",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 0.73,
-    "learning_value": 1.76,
-    "hands_on": 1.03
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "Qwen company already rushed out a Jev competitor. No open weights yet.",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wrz9py/qwen_company_already_rushed_out_a_jev_competitor/",
-   "snippet": "EDIT: About that, I tried it out, and it's garbage so far. I did some basic tests through AIHubMix (do not use that platform btw, it's trash), and my agent did some comparison. I guess it figures, it was a model they released just days after the Jev hype started. The agent's analysis is below: AI Agent's output: ``` I thoroughly tested https://aihubmix.com/v1/systemone using the provided API key and decision-model-preview across latency, throughput, and linguistic judgment accuracy against our test suite. Here are the test results and why I strongly recommend NOT switching to this endpoint yet: ──────────────────────────────────────────────────────────────────────────────── Latency & Rate Limit Benchmark Server-side execution: The endpoint reports latency_ms: ~130ms–160ms. Total Round-Trip (network + TLS): Averaged 644.9 ms (ranging from 473ms up to 882ms). By comparison, your existing local router ([9router IP]) averages ~439 ms. Hard 16-Question Ceiling: The proxy strictly rejects requests with more than 16 questions: {\"error\": {\"message\": \"questions: 19 exceeds the limit of 16\", \"type\": \"Aihubmix_api_error\"}} On longer Japanese sentences (e.g. 外に出してやってくれませんか。 or ちょっと聞いてみたいんだけど。), our parallel diagnostic tensor sends 19–22 questions, which throws an immediate 400 Bad Request. Aggressive Rate Limiting: Even with a 1-second pause between sequential requests, it frequently triggered 429 Too Many Requests. ────────────────────────────────────────────────────────────────────────",
-   "score": 6,
-   "published": "2026-09-27T23:43:08+00:00",
-   "judge": {
-    "injection": 0.12,
-    "has_substance": 0.84,
-    "difficulty": 0.26,
-    "learning_value": 1.63,
-    "hands_on": 0.94
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "ImaJev-4b: I spent 15 days fine-tuning a 4B model to make business decisions from text and photos, and it just ranked #1 of 91 on JevBench & ahead of GPT-5.6 Luna on DecisionBench",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsgrma/imajev4b_i_spent_15_days_finetuning_a_4b_model_to/",
-   "snippet": "Some context first. I am process improvement / business consultant and had worked with Fortune 500 companies on improving their processes around refunds, returns, customer support, etc. This entire thing had a lot of complex decision making and generally every decision / condition node in a process map was generally replaced by a human because factoring in ambiguity in a code is very difficult. Idea of ImaJev Hence, when Jev came out, I was very intrigued with it and also could clearly see its use-case of improving decision making in complex decision work flows. However, Jev didnt have support for Images and I thought that it can be replicated for both Text and Images in a single model and thats when I started with ImaJev. Training Process It went badly at first. My first big fine-tune on about 500k short decisions made the 9B model worse at reasoning: 64.9 down to 42.3 on JevBench hard. It had basically learned to pattern-match. I spent the next couple of weeks generating hard questions with open-weight models and only keeping the ones where two Ai models agreed on the answer. That brought it back. Results Then, on the JevBench - It came out #1 of 91 (v1.4.2.2, scored 27 Sep), 67.37 vs Jev 1.13.0 at 63.29. The same week DecisionBench put it #3 of 56 , ahead of GPT-5.6 Luna and DeepSeek V4.1. I honestly didn't expect either. To be fair about it: the #1 is on a score that weighs accuracy, calibration, speed and cost equally. On accuracy alone it's #3. Its main strength is that",
-   "score": 3,
-   "published": "2026-09-28T14:53:36+00:00",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.92,
-    "difficulty": 0.96,
-    "learning_value": 2.04,
-    "hands_on": 0.99
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "... so, yeah.",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wrutx9/so_yeah/",
-   "snippet": "Finally got 3.8-Flash-Next running on my M4Pro 48GB Mac with https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF Dense 3.8-27B is just faster... and maybe better due to quantization level... EDIT: Hold a second, Flash-Next is actually performing faster than 27B after some key flags on llama.cpp. it's Holding up to 131K without OOM-ing..... maybe... 0.36.940.283 I srv load: --top-k 0.36.940.283 I srv load: 20 0.36.940.284 I srv load: --ctx-size 0.36.940.284 I srv load: 131072 0.36.940.284 I srv load: --cache-type-k 0.36.940.285 I srv load: q4_0 0.36.940.285 I srv load: --cache-type-v 0.36.940.285 I srv load: q4_0 0.36.940.285 I srv load: --flash-attn 0.36.940.285 I srv load: on 0.36.940.285 I srv load: --load-mode 0.36.940.286 I srv load: mmap 0.36.940.286 I srv load: --lazy-mode 0.36.940.286 I srv load: on EDIT 2 Yes, this model is brutal. This quant at Q2_0 in llama.cpp is out performing 27B at oQ4e in prompt processing, speed generation, but most importantly, the only thing that matters, sheer intelligence. What a time to have 48 GB of ram !!! submitted by /u/JLeonsarmiento [link] [comments]",
-   "score": 2,
-   "published": "2026-09-27T20:32:36+00:00",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.81,
-    "learning_value": 1.33,
-    "hands_on": 1.87
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "Qwen3.8-Flash-Next 177B NVFP4(119GiB): SSD streaming at 9-10 tok/s on one 16 GB RTX 5060 Ti + 32 GB RAM",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wrxap8/qwen38flashnext_177b_nvfp4119gib_ssd_streaming_at/",
-   "snippet": "We built an inference engine InferredThoughts for MoE models that don't fit in VRAM + RAM. Most of the model stays on the SSD, and experts are read as tokens need them. This started as a proof of concept, and poc worked, we are getting 9-10 tok/s decode on Qwen3.8-Flash-Next NVFP4 (9.06 on the benchmark turn, 10.4 on the best turn). This is just the start. With better SSD streaming, we expect v2 to reach ~14-15 tok/s decode. Repo: InferredThoughts https://github.com/compiledthoughts/Inferred-Thoughts Model: Qwen3.8-Flash-Next, 176.9B params, NVFP4 GGUF (119 GiB): https://huggingface.co/CompiledThoughts/Qwen3.8-Flash-Next-NVFP4-Q8_0 Machine: RTX 5060 Ti 16 GB, Ryzen 7 9700X, 32 GB DDR5, Gen5 NVMe SSD 1Tb, Windows 11 Where the 119 GiB lives part of the file size where dense weights (attention, shared experts, LM head) 4.4 GiB VRAM token embedding table 0.6 GiB RAM, one row read per token hottest routed experts 8.8 GiB VRAM next-hottest routed experts 6.0 GiB pinned RAM remaining routed experts 48.5 GiB SSD, streamed on demand n-gram table 50.7 GiB SSD, 16 rows read per token So 20 GiB is in memory and 99 GiB stays on the SSD: 48.5 GiB of routed experts, streamed as the router picks them, and the 50.7 GiB hashed n-gram table (looking forward to qwen4 ngram). Speed Decode: 9.06 tok/s on the benchmark turn, 10.4 on the best turn at xhigh effort Prefill: 49.2 tok/s on a 5.5k-token prompt llama.cpp on the same machine: 4.9 tok/s average decode How it works VRAM holds the dense weigh",
-   "score": 1,
-   "published": "2026-09-27T22:13:42+00:00",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.1,
-    "learning_value": 2.85,
-    "hands_on": 1.98
+    "has_substance": 0.85,
+    "difficulty": 0.18,
+    "learning_value": 1.03,
+    "hands_on": 0.72
    }
   },
   {
@@ -563,7 +353,7 @@
     "injection": 0.04,
     "has_substance": 0.96,
     "difficulty": 0.03,
-    "learning_value": 2.3,
+    "learning_value": 2.17,
     "hands_on": 1.84
    }
   },
@@ -578,8 +368,8 @@
     "injection": 0.02,
     "has_substance": 0.98,
     "difficulty": 0.02,
-    "learning_value": 2.49,
-    "hands_on": 1.85
+    "learning_value": 2.47,
+    "hands_on": 1.89
    }
   },
   {
@@ -592,9 +382,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 0.74,
-    "learning_value": 2.37,
-    "hands_on": 1.21
+    "difficulty": 0.77,
+    "learning_value": 2.4,
+    "hands_on": 1.26
    },
    "related_to": [
     "Build real-time voice applications with vLLM-Omni on SageMaker AI – Part 1"
@@ -610,9 +400,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 0.39,
-    "learning_value": 2.78,
-    "hands_on": 1.67
+    "difficulty": 0.4,
+    "learning_value": 2.79,
+    "hands_on": 1.7
    }
   },
   {
@@ -624,124 +414,174 @@
    "published": "2026-09-28T15:49:04+00:00",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.23,
-    "learning_value": 2.64,
-    "hands_on": 0.94
+    "has_substance": 0.97,
+    "difficulty": 0.22,
+    "learning_value": 2.6,
+    "hands_on": 0.95
    }
   }
  ],
  "dropped": [
   {
+   "source": "Hacker News",
    "title": "Owed a billion dollars in Nvidia stock",
    "url": "https://colo.to/nvidia-stock-narrative.html",
+   "snippet": "A first-person account of a 1993 NVIDIA stock option grant, a decades-later discovery of a vesting discrepancy, and how the statute of limitations settled it. (HN discussion: https://news.ycombinator.com/item?id=49872723 (421 comments))",
+   "score": 993,
+   "published": "2026-09-28T02:05:13Z",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.04,
+    "difficulty": 0.0,
+    "learning_value": 0.44,
+    "hands_on": 0.01
+   },
    "reason": "no substance 0.04"
   },
   {
+   "source": "Hacker News",
    "title": "AI companies in race to demonstrate their model most threatening to humanity",
    "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/",
+   "snippet": "In the midst of growing fears that artificial intelligence is advancing at such a rate that it may compel itself to end all life on earth, AI giants from OpenAI to Anthropic are switching up their … (HN discussion: https://news.ycombinator.com/item?id=49875148 (369 comments))",
+   "score": 410,
+   "published": "2026-09-28T08:35:40Z",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.05,
+    "difficulty": 0.01,
+    "learning_value": 0.28,
+    "hands_on": 0.02
+   },
    "reason": "no substance 0.05"
   },
   {
+   "source": "Hacker News",
    "title": "There are no \"rogue\" AI agents",
    "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
-   "reason": "no substance 0.05"
+   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49868083 (265 comments)",
+   "score": 384,
+   "published": "2026-09-27T16:19:46Z",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.06,
+    "difficulty": 0.25,
+    "learning_value": 0.58,
+    "hands_on": 0.01
+   },
+   "reason": "no substance 0.06"
   },
   {
+   "source": "Hacker News",
    "title": "The problem is not AI code, but not knowing about system architecture or intent",
    "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
+   "snippet": "If we think Is writing code dead, and AI is generating all codebases, I still think the bigger problem is people or full teams not knowing anything anymore about the system... (HN discussion: https://news.ycombinator.com/item?id=49880312 (158 comments))",
+   "score": 247,
+   "published": "2026-09-28T16:11:42Z",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.05,
+    "difficulty": 0.01,
+    "learning_value": 0.43,
+    "hands_on": 0.01
+   },
    "reason": "no substance 0.05"
   },
   {
+   "source": "Hacker News",
    "title": "SNL Weekend Update: Anthropic CEO Dario Amodei on A.I.'S Threat to Humanity [video]",
    "url": "https://www.youtube.com/watch?v=-Nvne3LzBls",
-   "reason": "no substance 0.04"
+   "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube. (HN discussion: https://news.ycombinator.com/item?id=49868831 (102 comments))",
+   "score": 189,
+   "published": "2026-09-27T17:32:02Z",
+   "judge": {
+    "injection": 0.05,
+    "has_substance": 0.03,
+    "difficulty": 0.02,
+    "learning_value": 0.1,
+    "hands_on": 0.03
+   },
+   "reason": "no substance 0.03"
   },
   {
+   "source": "Hacker News",
    "title": "Jensen Huang says AI distillation is 'competition.'",
    "url": "https://www.cnbc.com/2026/09/28/nvidias-jensen-huang-ai-distillation-china.html",
-   "reason": "no substance 0.22"
+   "snippet": "Nvidia CEO Jensen Huang argued that AI model distillation is \"competition\". U.S. Treasury Secretary Scott Bessent has called it \"theft.\" (HN discussion: https://news.ycombinator.com/item?id=49879032 (67 comments))",
+   "score": 67,
+   "published": "2026-09-28T14:55:34Z",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.25,
+    "difficulty": 0.42,
+    "learning_value": 0.4,
+    "hands_on": 0.02
+   },
+   "reason": "no substance 0.25"
   },
   {
+   "source": "Hacker News",
    "title": "OpenAI halts training of latest models as reports mount of AI agents going rogue",
    "url": "https://www.theguardian.com/technology/2026/sep/27/openai-halts-training-of-latest-models-as-reports-mount-of-ai-agents-going-rogue",
-   "reason": "no substance 0.15"
-  },
-  {
-   "title": "What Would a Serious AI Product Look Like?",
-   "url": "https://blog.glyph.im/2026/09/serious-ai-product.html",
-   "reason": "no substance 0.18"
-  },
-  {
-   "title": "Are there machine learning subfields that are becoming irrelevant (or is irrelevant)? [D]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1wrqoxp/are_there_machine_learning_subfields_that_are/",
+   "snippet": "Decision follows disclosures that OpenAI agents searching government websites had acted in unexpected ways (HN discussion: https://news.ycombinator.com/item?id=49868202 (118 comments))",
+   "score": 58,
+   "published": "2026-09-27T16:29:38Z",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.14,
+    "difficulty": 0.07,
+    "learning_value": 0.8,
+    "hands_on": 0.05
+   },
    "reason": "no substance 0.14"
   },
   {
-   "title": "Are there any good research papers around Text clustering using LLMs [R]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1ws6g1p/are_there_any_good_research_papers_around_text/",
-   "reason": "low learning value 0.57"
+   "source": "Hacker News",
+   "title": "What Would a Serious AI Product Look Like?",
+   "url": "https://blog.glyph.im/2026/09/serious-ai-product.html",
+   "snippet": "Deciphering Glyph, the blog of Glyph Lefkowitz. (HN discussion: https://news.ycombinator.com/item?id=49876148 (20 comments))",
+   "score": 51,
+   "published": "2026-09-28T11:02:12Z",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.16,
+    "difficulty": 0.49,
+    "learning_value": 0.72,
+    "hands_on": 0.06
+   },
+   "reason": "no substance 0.16"
   },
   {
-   "title": "Google Deepmind Optimization Roles [D]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1ws1a92/google_deepmind_optimization_roles_d/",
-   "reason": "no substance 0.05"
-  },
-  {
-   "title": "How can I turn an industry ML project into a publication? [R]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1ws7z0e/how_can_i_turn_an_industry_ml_project_into_a/",
-   "reason": "no substance 0.05"
-  },
-  {
-   "title": "GPT-3 is discontinued today",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ws67x4/gpt3_is_discontinued_today/",
-   "reason": "no substance 0.45"
-  },
-  {
-   "title": "FT: Corporate America rejects overpriced frontier, embraces open models",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wrzpzg/ft_corporate_america_rejects_overpriced_frontier/",
-   "reason": "no substance 0.10"
-  },
-  {
-   "title": "NVIDIA shipped OpenShell, an open source sandbox that gives local and open agents real runtime limits instead of prompt rules. Over 100 firms joined the safety stack. OpenAI did not.",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ws9ydg/nvidia_shipped_openshell_an_open_source_sandbox/",
-   "reason": "low learning value 0.99"
-  },
-  {
-   "title": "Finally found a model my hardware can run at full precision: me",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsiepp/finally_found_a_model_my_hardware_can_run_at_full/",
-   "reason": "low learning value 0.66"
-  },
-  {
-   "title": "Guys I promise It wasn't me 😭😭",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsc0iz/guys_i_promise_it_wasnt_me/",
-   "reason": "no substance 0.12"
-  },
-  {
-   "title": "Mimo v2.6 flash MOPD",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wrq71o/mimo_v26_flash_mopd/",
-   "reason": "low learning value 0.55"
-  },
-  {
-   "title": "You can just merge Qwen3.6 & 3.8 27B to get decent performance with much fewer token generation",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsdyd2/you_can_just_merge_qwen36_38_27b_to_get_decent/",
-   "reason": "low learning value 0.44"
-  },
-  {
-   "title": "3090 for $1500???",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ws8f1r/3090_for_1500/",
-   "reason": "no substance 0.04"
-  },
-  {
+   "source": "OpenAI",
    "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
    "url": "https://openai.com/index/proaction",
-   "reason": "low learning value 0.12"
+   "snippet": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+   "score": 0,
+   "published": "2026-09-25T19:00:00+00:00",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.6,
+    "difficulty": 0.05,
+    "learning_value": 0.1,
+    "hands_on": 0.49
+   },
+   "reason": "low learning value 0.10"
   },
   {
+   "source": "Anthropic",
    "title": "Anthropic and Infosys build AI agents",
    "url": "https://www.anthropic.com/news/anthropic-infosys",
+   "snippet": "Anthropic and Infosys will build AI agents for telecom, financial services, manufacturing, and other regulated industries. (Anthropic and Infosys will build AI agents for telecom, financial services, manufacturing, and other regulated industries.)",
+   "score": 0,
+   "published": "2026-09-28T03:20:50+00:00",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.09,
+    "difficulty": 0.01,
+    "learning_value": 0.16,
+    "hands_on": 0.08
+   },
    "reason": "no substance 0.09"
   }
  ],
- "judge": "judge: 41 kept, 22 dropped (4 pairs checked)"
+ "judge": "judge: 27 kept, 10 dropped (4 pairs checked)"
 }
