@@ -205,6 +205,24 @@ def corpus(exclude=None):
     return seen
 
 
+def enrich(it):
+    """Give thin items real text to summarize from: a repo's README, or the linked page's description."""
+    if len(it["snippet"]) >= 300:
+        return
+    try:
+        if it["source"] == "GitHub Trending":
+            readme = get(f"https://raw.githubusercontent.com/{it['title']}/HEAD/README.md")
+            readme = re.sub(r"!\[[^\]]*\]\([^)]*\)|\[!\[.*?\]\(.*?\)\]\(.*?\)", "", readme)  # drop images/badges
+            it["snippet"] = clean(f"{it['snippet']} README: {readme}")
+        else:
+            page = get(it["url"])
+            desc = meta(page, "og:description") or (re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']*)', page) or [None, ""])[1]
+            if desc:
+                it["snippet"] = clean(f"{desc} ({it['snippet']})" if it["snippet"] else desc)
+    except Exception as e:  # enrichment is optional
+        print(f"  enrich skip ({it['url']}): {e}", file=sys.stderr)
+
+
 def collect():
     all_items, counts = [], {}
     for name, fn in SOURCES.items():
@@ -227,6 +245,8 @@ def collect():
         else:
             today |= k
             uniq.append(it)
+    for it in uniq:
+        enrich(it)
     dedup = f"dedup: {old} already in corpus, {dup} cross-source duplicates, {len(uniq)} new"
     print(dedup, file=sys.stderr)
     return uniq, counts, dedup
