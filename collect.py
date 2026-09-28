@@ -1,8 +1,10 @@
 """Collect AI/ML candidate items for the daily HUB brief.
 
 Usage:
-  python collect.py            # JSON list of candidates to stdout, per-source counts to stderr
-  python collect.py --check    # assert each source returns something (reddit/github are best-effort)
+  HUB_DATE=2026-09-28 python collect.py > candidates.json   # {date, counts, dedup, items} to stdout, log to stderr
+  python collect.py --check    # assert each source returns something (reddit/github/blogs are best-effort)
+
+Runs in GitHub Actions (.github/workflows/collect.yml) because the Claude cloud routine has no open internet.
 
 stdlib only. Every source is independent: one failing source is logged and skipped.
 Candidates already in the corpus (every item in data/2*.json + URLs in data/seen.json) are dropped
@@ -11,6 +13,7 @@ before output, and the same paper arriving from two sources (HF + arXiv) is kept
 import gzip
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -52,7 +55,7 @@ def get(url):
     return body.decode("utf-8", "replace")
 
 
-def clean(s, n=1000):
+def clean(s, n=1500):  # the routine can't open pages, so the snippet is what it summarizes from
     s = html.unescape(re.sub(r"<[^>]+>", " ", s or ""))
     return re.sub(r"\s+", " ", s).strip()[:n]
 
@@ -150,9 +153,28 @@ def blogs():
     return out
 
 
+def meta(page, prop):
+    m = (re.search(rf'<meta[^>]+property=["\']{prop}["\'][^>]+content=["\']([^"\']*)', page)
+         or re.search(rf'<meta[^>]+content=["\']([^"\']*)["\'][^>]+property=["\']{prop}["\']', page))
+    return html.unescape(m.group(1)) if m else ""
+
+
+def anthropic():
+    # no RSS; the sitemap's lastmod on /news/ pages is the closest thing to a publish date
+    ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+    root, out, cutoff = ET.fromstring(get("https://www.anthropic.com/sitemap.xml")), [], NOW - timedelta(hours=72)
+    for u in root.iter(ns + "url"):
+        loc, mod = u.findtext(ns + "loc") or "", parse_date(u.findtext(ns + "lastmod") or "")
+        if "/news/" in loc and mod and mod >= cutoff:
+            page = get(loc)
+            out.append(item("Anthropic", meta(page, "og:title") or loc.rsplit("/", 1)[-1], loc,
+                            meta(page, "og:description"), 0, mod.isoformat()))
+    return out
+
+
 SOURCES = {"hf_papers": hf_papers, "arxiv": arxiv, "hacker_news": hacker_news,
-           "reddit": reddit, "github_trending": github_trending, "blogs": blogs}
-BEST_EFFORT = {"reddit", "github_trending", "blogs"}  # blocked IPs / markup changes / quiet days
+           "reddit": reddit, "github_trending": github_trending, "blogs": blogs, "anthropic": anthropic}
+BEST_EFFORT = {"reddit", "github_trending", "blogs", "anthropic"}  # blocked IPs / markup changes / quiet days
 
 
 def keys(url, title=""):
@@ -205,8 +227,9 @@ def collect():
         else:
             today |= k
             uniq.append(it)
-    print(f"dedup: {old} already in corpus, {dup} cross-source duplicates, {len(uniq)} new", file=sys.stderr)
-    return uniq, counts
+    dedup = f"dedup: {old} already in corpus, {dup} cross-source duplicates, {len(uniq)} new"
+    print(dedup, file=sys.stderr)
+    return uniq, counts, dedup
 
 
 if __name__ == "__main__":
@@ -214,7 +237,7 @@ if __name__ == "__main__":
         assert keys("https://huggingface.co/papers/2609.28654") & keys("https://arxiv.org/abs/2609.28654v2")
         assert keys("https://www.github.com/a/b/") & keys("https://github.com/A/b")
         assert not keys("https://github.com/a/b") & keys("https://github.com/a/c")
-    items, counts = collect()
+    items, counts, dedup = collect()
     if "--check" in sys.argv:
         hard = [k for k, v in counts.items() if v == 0 and k not in BEST_EFFORT]
         soft = [k for k, v in counts.items() if v == 0 and k in BEST_EFFORT]
@@ -223,4 +246,6 @@ if __name__ == "__main__":
         print(f"OK {len(items)} items" + (f" (warn, empty: {soft})" if soft else ""), file=sys.stderr)
     else:
         sys.stdout.reconfigure(encoding="utf-8")
-        json.dump(items, sys.stdout, ensure_ascii=False, indent=1)
+        day = os.environ.get("HUB_DATE") or datetime.now().date().isoformat()
+        json.dump({"date": day, "collected_at": NOW.isoformat(timespec="seconds"), "counts": counts,
+                   "dedup": dedup, "items": items}, sys.stdout, ensure_ascii=False, indent=1)

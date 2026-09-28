@@ -1,0 +1,49 @@
+# On every push to main: render the news video for any day that doesn't have one yet, commit it, deploy Pages.
+# Commits made here use GITHUB_TOKEN, which doesn't retrigger this workflow, so there's no loop.
+name: publish
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: push-main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get install -y -qq ffmpeg && pip install -q edge-tts gTTS pillow
+      - name: Render missing videos
+        run: |
+          for f in data/2*.json; do
+            [ -e "$f" ] || continue
+            grep -q '"video"' "$f" && continue
+            python make_video.py "$f" || python make_video.py "$f" || echo "::warning::video failed for $f"
+          done
+      - name: Commit videos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data videos
+          git diff --cached --quiet && exit 0
+          git commit -m "video: $(ls -t videos/*.mp4 | head -1 | xargs -n1 basename)"
+          git pull --rebase && git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

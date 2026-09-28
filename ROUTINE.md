@@ -1,20 +1,22 @@
 # Daily HUB routine
 
-You are publishing today's AI/ML brief for a university student (CS/ML, interested in LLMs, agents, robotics/robot hands, ML infra/AWS): **exactly 3 items, one 입문, one 중급, one 심화**, plus a Korean news-style video of them. Run this top to bottom, then stop.
+You are publishing today's AI/ML brief for a university student (CS/ML, interested in LLMs, agents, robotics/robot hands, ML infra/AWS): **exactly 3 items, one 입문, one 중급, one 심화**. GitHub Actions turns them into a Korean news-style video after you push. Run this top to bottom, then stop.
 
 ## 1. Guards
 `TODAY=$(TZ=America/Los_Angeles date +%F)`. Stop without doing anything if:
 - `data/$TODAY.json` already exists (today is done), or
 - `TZ=America/Los_Angeles date +%H` is `08` (the schedule fires at 16:00 and 17:00 UTC so one of them is 09:00 PT across daylight saving; the 08:00 one is the extra).
 
-## 2. Collect (corpus overlap is removed here)
+## 2. Read candidates (collected and deduplicated by GitHub Actions)
+This sandbox has no open internet: do not run `collect.py`, WebFetch or WebSearch here, they are blocked. The `collect` GitHub Actions workflow already ran `collect.py` this morning and committed `candidates.json`:
 ```
-pip install -q edge-tts gTTS pillow imageio-ffmpeg
-python collect.py > candidates.json
+git pull -q origin main
+pip install -q pillow
+python -c "import json; d=json.load(open('candidates.json')); print(d['date'], d['counts'], d['dedup'], len(d['items']))"
 ```
-`collect.py` already drops every candidate that overlaps the corpus (all items in `data/2*.json` plus `data/seen.json`, matched by URL, arXiv id and title) and merges the same paper arriving from HF and arXiv. Its stderr prints per-source counts and a `dedup:` line; keep both for the final report. Reddit / GitHub Trending / blogs failing is fine. If `hf_papers`, `arxiv` and `hacker_news` are all empty, stop without committing.
+If `candidates.json` is missing, its `date` is not `$TODAY`, or it has no items, stop without committing and say the collect workflow didn't run.
 
-Also WebFetch `https://www.anthropic.com/news` and consider any post from the last 3 days. Before using it, confirm its URL is not already in `data/` (`grep -rF "<url>" data/`).
+Every candidate has already been checked against the corpus (all items in `data/2*.json` plus `data/seen.json`, matched by URL, arXiv id and title), and the same paper arriving from HF and arXiv is kept once. Keep `counts` and `dedup` for the final report.
 
 ## 3. Select exactly 3
 One per level, judged for a CS undergrad:
@@ -24,7 +26,7 @@ One per level, judged for a CS undergrad:
 
 Within each level, rank for learning value, not hype: a new idea worth understanding, widely discussed (HF upvotes, HN points, GitHub stars today), or hands-on (code, open weights). Prefer 3 different categories and at least one non-paper when a good one exists. Favor robotics/embodied when a strong one exists. Drop funding/sales/customer stories and anything you can't verify.
 
-Read beyond the snippet (WebFetch the page) for all 3. Never invent numbers or claims. Legal/news items: say whose claim it is.
+Summarize only from the candidate's `title` and `snippet` (for papers that is the abstract). Never invent numbers or claims beyond them. If a snippet is too thin to write an accurate summary (for example a Hacker News link with no text), pick another item. Legal/news items: say whose claim it is.
 
 ## 4. Write `data/$TODAY.json`
 Items ordered 입문, 중급, 심화. Fixed categories (exact strings): `LLM`, `Agents`, `Multimodal & Vision`, `Robotics & Embodied`, `RL`, `ML Systems & Infra`, `Research Fundamentals`, `Open Source & Tools`, `Industry & Policy`. Never use em-dashes in any text; use a period, comma or colon.
@@ -52,17 +54,11 @@ Items ordered 입문, 중급, 심화. Fixed categories (exact strings): `LLM`, `
 
 Then `python make_video.py --validate data/$TODAY.json`. It exits 2 and lists problems (wrong count or order, missing fields, unknown category, em-dash, already published); fix them and re-run until it prints `OK`.
 
-## 5. Video
-```
-python make_video.py data/$TODAY.json
-```
-Renders `videos/$TODAY.mp4` and `videos/$TODAY.jpg` (Korean TTS narration, one slide per sentence with the item's og:image as material) and adds `"video"` to the day file. If it fails, retry once; if it still fails, publish without the video and say so in the report.
-
-## 6. Index, validate, publish
+## 5. Index, validate, publish
 - Prepend `$TODAY` to the array in `data/index.json` (no duplicates, newest first).
 - `python -m json.tool data/index.json > /dev/null && python make_video.py --validate data/$TODAY.json`
-- `git add data videos && git commit -m "brief: $TODAY" && git push origin HEAD:main`
+- `git add data && git commit -m "brief: $TODAY" && git push origin HEAD:main`
 
-GitHub Pages redeploys from `main` automatically. Do not edit any other file.
+Do not render the video here. The push triggers the `publish` GitHub Actions workflow, which renders `videos/$TODAY.mp4` (Korean TTS narration, one slide per sentence, og:image as material), commits it and deploys Pages. Do not edit any other file.
 
-Final report, one line: date, the 3 titles with levels, video yes/no, per-source counts and the `dedup:` line.
+Final report, one line: date, the 3 titles with levels, per-source `counts` and the `dedup` line from candidates.json.
