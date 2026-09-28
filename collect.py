@@ -5,6 +5,8 @@ Usage:
   python collect.py --check    # assert each source returns something (reddit/github are best-effort)
 
 stdlib only. Every source is independent: one failing source is logged and skipped.
+Candidates already in the corpus (every item in data/2*.json + URLs in data/seen.json) are dropped
+before output, and the same paper arriving from two sources (HF + arXiv) is kept once.
 """
 import gzip
 import html
@@ -15,6 +17,7 @@ import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
@@ -36,6 +39,8 @@ BLOGS = {
     "BAIR": "https://bair.berkeley.edu/blog/feed.xml",
 }
 ATOM = "{http://www.w3.org/2005/Atom}"
+DATA = Path(__file__).parent / "data"
+ARXIV_ID = re.compile(r"(\d{4}\.\d{4,5})")
 
 
 def get(url):
@@ -150,6 +155,34 @@ SOURCES = {"hf_papers": hf_papers, "arxiv": arxiv, "hacker_news": hacker_news,
 BEST_EFFORT = {"reddit", "github_trending", "blogs"}  # blocked IPs / markup changes / quiet days
 
 
+def keys(url, title=""):
+    """Identity keys: normalized URL, arXiv id (HF papers + arxiv.org share it), normalized title."""
+    u = urllib.parse.urlsplit(url or "")
+    host = u.netloc.lower().removeprefix("www.")
+    ks = {host + u.path.rstrip("/").lower()}
+    if host in ("arxiv.org", "export.arxiv.org", "huggingface.co") and (m := ARXIV_ID.search(u.path)):
+        ks.add("arxiv:" + m.group(1))
+    t = re.sub(r"[^0-9a-z가-힣]", "", (title or "").lower())
+    if len(t) > 12:
+        ks.add("title:" + t)
+    return ks
+
+
+def corpus(exclude=None):
+    """Everything already published or explicitly retired. Never shown again."""
+    seen = set()
+    for p in DATA.glob("2*.json"):
+        if exclude and p.resolve() == Path(exclude).resolve():
+            continue
+        for it in json.loads(p.read_text(encoding="utf-8")).get("items", []):
+            seen |= keys(it.get("url"), it.get("title"))
+    extra = DATA / "seen.json"
+    if extra.exists():
+        for url in json.loads(extra.read_text(encoding="utf-8")):
+            seen |= keys(url)
+    return seen
+
+
 def collect():
     all_items, counts = [], {}
     for name, fn in SOURCES.items():
@@ -162,15 +195,25 @@ def collect():
         counts[name] = len(got)
         print(f"{name}: {len(got)} ({time.time() - t:.1f}s)", file=sys.stderr)
         all_items += got
-    seen, uniq = set(), []
-    for it in all_items:
-        if it["url"] and it["url"] not in seen:
-            seen.add(it["url"])
+    published, today, uniq, old, dup = corpus(), set(), [], 0, 0
+    for it in all_items:  # sources are ordered best-first, so HF (upvotes) wins over bare arXiv
+        k = keys(it["url"], it["title"])
+        if not it["url"] or k & published:
+            old += 1
+        elif k & today:
+            dup += 1
+        else:
+            today |= k
             uniq.append(it)
+    print(f"dedup: {old} already in corpus, {dup} cross-source duplicates, {len(uniq)} new", file=sys.stderr)
     return uniq, counts
 
 
 if __name__ == "__main__":
+    if "--check" in sys.argv:
+        assert keys("https://huggingface.co/papers/2609.28654") & keys("https://arxiv.org/abs/2609.28654v2")
+        assert keys("https://www.github.com/a/b/") & keys("https://github.com/A/b")
+        assert not keys("https://github.com/a/b") & keys("https://github.com/a/c")
     items, counts = collect()
     if "--check" in sys.argv:
         hard = [k for k, v in counts.items() if v == 0 and k not in BEST_EFFORT]
