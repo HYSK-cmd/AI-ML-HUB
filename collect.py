@@ -17,6 +17,7 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -46,10 +47,21 @@ DATA = Path(__file__).parent / "data"
 ARXIV_ID = re.compile(r"(\d{4}\.\d{4,5})")
 
 
-def get(url):
+def get(url, retries=3):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "gzip"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        body = r.read()
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                body = r.read()
+            break
+        except urllib.error.HTTPError as e:
+            # GitHub runners share IPs, so Reddit's per-IP budget is often spent by others; it refills in seconds
+            if e.code not in (429, 503) or attempt == retries:
+                raise
+            hint = e.headers.get("x-ratelimit-reset") or e.headers.get("Retry-After") or ""
+            wait = min(float(hint) if hint.replace(".", "", 1).isdigit() and float(hint) > 0 else 10 * (attempt + 1), 30)
+            print(f"  {e.code} from {urllib.parse.urlsplit(url).netloc}, retry in {wait:.0f}s", file=sys.stderr)
+            time.sleep(wait)
     if body[:2] == b"\x1f\x8b":  # some feeds (DeepMind) gzip regardless of Accept-Encoding
         body = gzip.decompress(body)
     return body.decode("utf-8", "replace")
@@ -75,12 +87,17 @@ def hf_papers():
 
 
 def arxiv():
-    q = urllib.parse.quote("cat:cs.CL OR cat:cs.LG OR cat:cs.AI OR cat:cs.CV OR cat:cs.RO")
-    feed = ET.fromstring(get(f"https://export.arxiv.org/api/query?search_query={q}"
-                             "&sortBy=submittedDate&sortOrder=descending&max_results=60"))
-    return [item("arXiv", e.findtext(ATOM + "title"), e.findtext(ATOM + "id"),
-                 e.findtext(ATOM + "summary"), 0, e.findtext(ATOM + "published"))
-            for e in feed.iter(ATOM + "entry")]
+    # From GitHub runner IPs the API answers any OR query with 406, but single-category queries work.
+    out = []
+    for n, cat in enumerate(("cs.CL", "cs.LG", "cs.AI", "cs.CV", "cs.RO")):
+        if n:
+            time.sleep(3)  # arXiv API etiquette: one request every 3 seconds
+        feed = ET.fromstring(get(f"https://export.arxiv.org/api/query?search_query=cat:{cat}"
+                                 "&sortBy=submittedDate&sortOrder=descending&max_results=12"))
+        out += [item("arXiv", e.findtext(ATOM + "title"), e.findtext(ATOM + "id"),
+                     e.findtext(ATOM + "summary"), 0, e.findtext(ATOM + "published"))
+                for e in feed.iter(ATOM + "entry")]
+    return out  # cross-listed papers repeat across categories; collect()'s dedupe keeps one
 
 
 def hacker_news():
@@ -174,7 +191,7 @@ def anthropic():
 
 SOURCES = {"hf_papers": hf_papers, "arxiv": arxiv, "hacker_news": hacker_news,
            "reddit": reddit, "github_trending": github_trending, "blogs": blogs, "anthropic": anthropic}
-BEST_EFFORT = {"arxiv", "reddit", "github_trending", "blogs", "anthropic"}  # arXiv/Reddit block cloud IPs, markup changes, quiet days
+BEST_EFFORT = {"reddit", "github_trending", "blogs", "anthropic"}  # Reddit rate limits shared IPs, markup changes, quiet days
 
 
 def keys(url, title=""):
