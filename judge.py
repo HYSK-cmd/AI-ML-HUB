@@ -20,7 +20,7 @@ from pathlib import Path
 from typesafe_sdk import (Choice, ChoiceAnswer, Noul, NoulAnswer, RetryPolicy, Score, ScoreAnswer,
                           SystemOneResponse, TypeSafeAPIError, TypeSafeClient, TypeSafeError)
 
-from collect import DATA
+from collect import DATA, page_text
 
 # policy: tuned on 2026-09-28 candidates (see README), starting points not constants of nature
 INJECTION_MAX = 0.7    # drop above: text trying to steer the routine that reads it
@@ -52,7 +52,7 @@ PAIR_QS = {"relation": Score(instructions="How do `a` and `b` relate as pieces o
     "Different work: separate projects, papers, or events",
     "Related: same topic or lineage, a follow-up, or commentary on the other, but a different piece of work",
     "Same work or event: the same paper, project, or news story, including a paper's official code release or project page"])}
-CLAIM_QS = {"relation": Choice(instructions="How does `source` relate to `claim`? The claim is a Korean summary sentence about the source; judge meaning, not wording. `source.listed_on` is where the item was found today (for example GitHub Trending means it is trending today).", criteria={
+CLAIM_QS = {"relation": Choice(instructions="How does `source` relate to `claim`? The claim is a Korean summary sentence about the source; judge meaning, not wording. `source.snippet` and `source.page` (text of the source page, may be empty) together are the source. `source.listed_on` is where the item was found today (for example GitHub Trending means it is trending today).", criteria={
     "supports": "The source states or directly implies everything the claim says",
     "contradicts": "The source states something incompatible with the claim",
     "says_nothing": "The source does not address some part of the claim, so that part is unsupported"})}
@@ -225,7 +225,13 @@ def verify(day_path):
         if not src:
             it["check"] = {"verified": None, "note": "source not in candidates.json"}
             continue
-        source = {"listed_on": it["source"], "title": src["title"], "text": src["snippet"], "published": src.get("published", "")}
+        try:  # the same page text the routine was told to write from; the snippet alone if the page won't load
+            page = page_text(it["url"])
+        except Exception as e:
+            warn(f"page fetch failed for {it['url']} ({e}); checking against the snippet only")
+            page = ""
+        source = {"listed_on": it["source"], "title": src["title"], "snippet": src["snippet"], "page": page,
+                  "published": src.get("published", "")}
         for field, s in claims(it):
             jobs.append({"claim": s, "source": source})
             owners.append((it, s))

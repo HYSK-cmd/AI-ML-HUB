@@ -28,7 +28,7 @@ flowchart TD
         guard -- no --> fresh{"candidates.json<br/>dated today?"}
         fresh -- no --> stop
         fresh -- yes --> select["Select exactly 3<br/>입문 / 중급 / 심화"]
-        select --> write["Write data/TODAY.json<br/>summary, why, keywords,<br/>headline_ko, narration"]
+        select --> read["Read each pick's page<br/>collect.page_text"] --> write["Write data/TODAY.json<br/>summary, why, keywords,<br/>headline_ko, narration"]
         write --> validate{"make_video.py --validate<br/>3 items in level order, fields,<br/>categories, no em-dash, not in corpus"}
         validate -- errors --> write
         validate -- OK --> push["Prepend to data/index.json<br/>commit + push to main"]
@@ -37,7 +37,7 @@ flowchart TD
     cands --> fresh
 
     subgraph publish_wf ["GitHub Actions: publish.yml, on push"]
-        verify["judge.py verify (TypeSafe Jev)<br/>each summary/narration sentence vs its source:<br/>supports / contradicts / says nothing"] --> flag["Sentences without confident support<br/>listed as unverified on the site"]
+        verify["judge.py verify (TypeSafe Jev)<br/>each summary/narration sentence vs snippet + source page text<br/>(collect.page_text, same text the routine reads):<br/>supports / contradicts / says nothing"] --> flag["Sentences without confident support<br/>listed as unverified on the site"]
         flag --> render["make_video.py for days without a video"]
         render --> tts["Korean TTS per sentence<br/>edge-tts, gTTS fallback"]
         render --> slides["News slide per sentence<br/>og:image material, level tag,<br/>lower third, subtitle"]

@@ -222,6 +222,15 @@ def corpus(exclude=None):
     return seen
 
 
+def page_text(url, n=6000):
+    """Readable text of a source page (a repo's README for GitHub links).
+    Shared on purpose: the routine writes from it and judge.py verify checks against the same text."""
+    if m := re.match(r"https://github\.com/([^/]+/[^/#?]+)/?$", url):
+        return clean(get(f"https://raw.githubusercontent.com/{m.group(1)}/HEAD/README.md"), n)
+    page = re.sub(r"(?is)<(script|style|nav|header|footer|svg)\b[^>]*>.*?</\1>", " ", get(url))
+    return clean(page, n)
+
+
 def enrich(it):
     """Give thin items real text to summarize from: a repo's README, or the linked page's description."""
     if len(it["snippet"]) >= 300:
