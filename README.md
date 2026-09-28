@@ -2,7 +2,7 @@
 
 Daily AI/ML brief for a university student: every morning at 09:00 PT, three picks (beginner, intermediate, advanced) summarized in Korean, plus a Korean news-style video of them.
 
-Live: https://hysk-cmd.github.io/hub/
+Live: https://hysk-cmd.github.io/AI-ML-HUB/
 
 ## Agent workflow
 

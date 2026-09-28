@@ -30,7 +30,7 @@ LEVELS = ("beginner", "intermediate", "advanced")  # data values; display names 
 LEVEL_COLOR = {"beginner": "#2f9e44", "intermediate": "#1971c2", "advanced": "#c2255c"}
 VOICE = "ko-KR-SunHiNeural"
 FONT_URL = "https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/public/static/Pretendard-{}.otf"
-UA = {"User-Agent": "Mozilla/5.0 (hub-video; +https://github.com/HYSK-cmd/hub)"}
+UA = {"User-Agent": "Mozilla/5.0 (hub-video; +https://github.com/HYSK-cmd/AI-ML-HUB)"}
 LOCALE = json.loads((ROOT / "locales" / "ko.json").read_text(encoding="utf-8"))  # every on-screen/spoken string
 V, LEVEL_NAME = LOCALE["video"], LOCALE["levels"]
 

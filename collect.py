@@ -25,7 +25,7 @@ from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
-UA = "Mozilla/5.0 (hub-collector; +https://github.com/HYSK-cmd/hub)"
+UA = "Mozilla/5.0 (hub-collector; +https://github.com/HYSK-cmd/AI-ML-HUB)"
 NOW = datetime.now(timezone.utc)
 AI_WORDS = re.compile(
     r"\b(ai|ml|llm|llms|gpt|claude|gemini|llama|mistral|qwen|deepseek|openai|anthropic|deepmind|"
