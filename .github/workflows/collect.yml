@@ -19,10 +19,13 @@ jobs:
           python-version: "3.12"
       - name: Collect candidates (corpus overlap removed)
         run: HUB_DATE=$(TZ=America/Los_Angeles date +%F) python collect.py > candidates.json
+      # Never blocks the commit below: if judging fails, unjudged candidates are committed and the routine still runs.
       - name: Judge candidates with TypeSafe (screen, score, semantic dedupe)
         env:
           TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
-        run: pip install -q typesafe-sdk && python judge.py candidates candidates.json
+        run: |
+          pip install -q typesafe-sdk && python judge.py candidates candidates.json \
+            || echo "::warning::TypeSafe judging failed; committing unjudged candidates"
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
