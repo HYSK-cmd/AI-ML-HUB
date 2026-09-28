@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-28",
+  "headline": "코딩 에이전트를 오늘 바로 돌려보는 도구부터 로봇 팔을 리허설로 훈련하는 연구까지, 실전과 연구를 함께 살펴봅니다.",
+  "items": [
+    {
+      "title": "mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "source": "GitHub Trending",
+      "categories": ["Open Source & Tools", "Agents"],
+      "level": "입문",
+      "headline_ko": "코드 두 에이전트를 한 팀으로",
+      "summary": "openrig는 Claude Code와 Codex, 두 코딩 에이전트를 하나의 시스템처럼 함께 실행하는 오픈소스 멀티 에이전트 하네스입니다. 두 에이전트를 나란히 붙여 작업을 나누거나 서로의 결과를 점검하게 만드는 구조를 제공합니다. 오늘 GitHub Trending에 오르며 개발자들의 관심을 모았습니다. 소스가 모두 공개되어 있어 지금 바로 내려받아 직접 실행해 볼 수 있습니다.",
+      "why": "여러 코딩 에이전트를 조합해 실제 개발 워크플로를 짜는 감각을 직접 실행해 보며 익힐 수 있습니다.",
+      "keywords": ["multi-agent", "Claude Code", "Codex", "coding harness"],
+      "narration": "첫 번째는 입문 소식입니다. Claude Code와 Codex, 두 코딩 에이전트를 하나의 시스템처럼 함께 돌리는 오픈소스 프로젝트 openrig가 오늘 GitHub에서 화제입니다. 소스가 모두 공개되어 있어 지금 바로 내려받아 두 에이전트를 함께 써 보는 경험을 할 수 있습니다. 여러 코딩 에이전트를 조합하는 실전 감각을 얻고 싶다면 살펴볼 만합니다."
+    },
+    {
+      "title": "Build real-time voice applications with vLLM-Omni on SageMaker AI – Part 1",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1/",
+      "source": "AWS ML",
+      "categories": ["ML Systems & Infra"],
+      "level": "중급",
+      "headline_ko": "SageMaker에서 실시간 음성 서빙",
+      "summary": "AWS가 vLLM-Omni 컨테이너로 SageMaker AI에 텍스트투스피치 모델을 배포하고, 지속적인 양방향 연결로 생성된 음성을 스트리밍하는 방법을 소개했습니다. 이번 1부에서는 Qwen3-TTS 모델을 배포하고 Gradio 애플리케이션으로 음성을 실시간 스트리밍합니다. 모델 서빙과 실시간 오디오 스트리밍을 함께 다루는 실전 튜토리얼이라 인프라 구성 감각을 익히기 좋습니다. 코드와 배포 설정을 그대로 따라 하며 실습할 수 있습니다.",
+      "why": "트랜스포머 기반 모델을 실제 서비스로 배포하고 스트리밍 파이프라인을 구성하는 경험을 쌓을 수 있습니다.",
+      "keywords": ["vLLM-Omni", "SageMaker", "TTS", "streaming inference"],
+      "narration": "두 번째는 중급 소식입니다. AWS는 vLLM-Omni 컨테이너를 이용해 SageMaker AI에서 텍스트투스피치 모델을 배포하고, 생성된 음성을 실시간으로 스트리밍하는 방법을 공개했습니다. 이번 1부는 Qwen3-TTS 모델을 올리고 Gradio 앱으로 음성을 지속적인 연결을 통해 스트리밍합니다. 모델 서빙과 실시간 오디오 처리를 함께 실습하고 싶다면 따라 해볼 만한 튜토리얼입니다."
+    },
+    {
+      "title": "World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal",
+      "url": "https://huggingface.co/papers/2609.29964",
+      "source": "HF Papers",
+      "categories": ["Robotics & Embodied", "Agents"],
+      "level": "심화",
+      "headline_ko": "VLM이 로봇 조작을 리허설하다",
+      "summary": "이 논문은 시각언어모델(VLM)이 로봇 팔을 직접 조종하도록 만드는 World Action Agent(WAA)를 제안합니다. 로봇은 장면 기하 구조에서 자동으로 선택한 접촉 시점 화면을 보며, 각 행동을 실행 전에 미리 편집하고 검토하는 액션 리허설 과정을 거칩니다. 관찰과 리허설, 실제 실행을 하나의 루프로 묶어 오차를 그 자리에서 보정하는 in-view correction 기법도 포함됩니다. LIBERO-Pro 벤치마크에서 LIBERO-90만으로 학습한 스킬로 75.6퍼센트의 평균 성공률을 기록해 기존 end-to-end VLA나 code-as-policy 에이전트를 능가했습니다.",
+      "why": "VLM을 로봇 제어에 직접 연결하는 최신 방법론과, 리허설 기반 행동 계획이라는 아이디어를 깊이 있게 배울 수 있습니다.",
+      "keywords": ["VLM", "robot manipulation", "world model", "action rehearsal"],
+      "narration": "세 번째는 심화 소식입니다. World Action Agent는 시각언어모델이 로봇 팔을 직접 조종하게 하는 멀티 에이전트 하네스입니다. 로봇은 행동을 실행하기 전에 그 행동을 미리 편집하고 검토하는 리허설 과정을 거치고, 실행 중 어긋난 부분은 관찰한 화면 안에서 바로 보정합니다. LIBERO-Pro 벤치마크에서 기존 방식보다 높은 75.6퍼센트의 성공률을 기록했습니다. VLM과 로봇 제어를 연결하는 연구를 살펴보고 싶다면 참고할 만합니다."
+    }
+  ]
+}
