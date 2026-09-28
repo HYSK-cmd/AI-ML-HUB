@@ -69,9 +69,9 @@ flowchart TD
 Local deps: `pip install edge-tts gTTS pillow imageio-ffmpeg typesafe-sdk`. The Actions workflows need a `TYPESAFE_API_KEY` repository secret.
 
 ### TypeSafe judgment policy (first tuned on 2026-09-28 data)
-- Candidate dropped if injection > 0.7, substance < 0.5, or learning value < 1.0 (of 3). On that day this removed 6 non-study HN stories, a partnership announcement and a customer story, and kept every paper plus 3 real HN finds.
+- Candidate dropped if injection > 0.7, substance < 0.5, or learning value < 0.9 (of 3; lowered from 1.0 so tool launches scoring ~0.99 survive). On 2026-09-28 this removed 6 non-study HN stories, a partnership announcement and a customer story, and kept every paper plus 3 real HN finds.
 - Duplicate pairs: nearest level of different / related / same decides (no threshold). A paper's own code release counts as "same".
 - A summary sentence passes only as "supports" with confidence ≥ 0.8; everything else is listed as unverified, never silently published as fact.
-- Raw probabilities stay in `candidates.json` (`judge`) so thresholds can be retuned without new calls.
+- Raw probabilities stay in `candidates.json` (`judge`), for kept and dropped items alike, so thresholds can be retuned without new calls.
 - Answers are typed (`response_model` subclasses of `SystemOneResponse`), and requests retry on 429/5xx/timeouts (`RETRY` in `judge.py`).
 - If TypeSafe is down: candidates fail open (unjudged items are kept and committed, the routine still runs); verify fails closed (nothing is marked, re-run the publish workflow to retry).

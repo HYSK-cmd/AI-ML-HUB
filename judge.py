@@ -25,7 +25,7 @@ from collect import DATA
 # policy: tuned on 2026-09-28 candidates (see README), starting points not constants of nature
 INJECTION_MAX = 0.7    # drop above: text trying to steer the routine that reads it
 SUBSTANCE_MIN = 0.5    # drop below: people, money, satire, opinion with nothing to study
-LEARNING_MIN = 1.0     # drop below (0-3 scale): announcements and customer stories
+LEARNING_MIN = 0.9     # drop below (0-3 scale): announcements and customer stories; 0.9 keeps tool launches like NVIDIA OpenShell (0.99)
 CLAIM_CONFIDENCE = 0.8  # a claim passes only as "supports" at or above this confidence
 MAX_PAIRS = 40          # dedupe budget per day, strongest word overlaps first
 PAIR_MIN_OVERLAP = 0.12  # Jaccard of title/snippet words below which a pair isn't worth asking about
@@ -168,7 +168,10 @@ def judge_candidates(path):
                            "difficulty": round(r.difficulty.score, 3), "learning_value": round(r.learning_value.score, 3),
                            "hands_on": round(r.hands_on.score, 3)}
         if reason := keep(j):
-            dropped.append({"title": it["title"], "url": it["url"], "reason": reason})
+            rec = {**it, "reason": reason}  # full item + scores, so a retune can restore it offline
+            if j["injection"] > INJECTION_MAX:
+                rec.pop("snippet")  # never hand injected text to the routine that reads this file
+            dropped.append(rec)
         else:
             kept.append(it)
 
@@ -192,7 +195,7 @@ def judge_candidates(path):
         level = round(r.relation.score)  # nearest level names the outcome (entity-alignment cookbook)
         if level == 2 and id(a) not in gone and id(b) not in gone:
             gone.add(id(a))
-            dropped.append({"title": a["title"], "url": a["url"], "reason": f"same as {kind}: {b['title'][:80]}"})
+            dropped.append({**a, "reason": f"same as {kind}: {b['title'][:80]}"})
         elif level == 1:
             a.setdefault("related_to", []).append(b["title"][:120])
     doc["items"] = [it for it in kept if id(it) not in gone]
