@@ -174,7 +174,7 @@ def anthropic():
 
 SOURCES = {"hf_papers": hf_papers, "arxiv": arxiv, "hacker_news": hacker_news,
            "reddit": reddit, "github_trending": github_trending, "blogs": blogs, "anthropic": anthropic}
-BEST_EFFORT = {"reddit", "github_trending", "blogs", "anthropic"}  # blocked IPs / markup changes / quiet days
+BEST_EFFORT = {"arxiv", "reddit", "github_trending", "blogs", "anthropic"}  # arXiv/Reddit block cloud IPs, markup changes, quiet days
 
 
 def keys(url, title=""):
