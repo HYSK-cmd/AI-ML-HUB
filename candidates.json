@@ -1,30 +1,30 @@
 {
  "date": "2026-09-29",
- "collected_at": "2026-09-29T16:37:54+00:00",
+ "collected_at": "2026-09-29T18:43:26+00:00",
  "counts": {
   "hf_papers": 30,
   "arxiv": 60,
-  "hacker_news": 23,
-  "reddit": 24,
+  "hacker_news": 25,
+  "reddit": 23,
   "github_trending": 8,
-  "blogs": 18,
+  "blogs": 22,
   "anthropic": 1
  },
- "dedup": "dedup: 4 already in corpus, 21 cross-source duplicates, 139 new",
+ "dedup": "dedup: 8 already in corpus, 22 cross-source duplicates, 139 new",
  "items": [
   {
    "source": "HF Papers",
    "title": "Post-Training Leaves Behavioral Shadows on Unrelated Decisions",
    "url": "https://huggingface.co/papers/2609.29233",
    "snippet": "We find that language models can transfer capabilities through task-unrelated text. Post-training typically improves language models using task-specific data. Prior work on subliminal learning shows that information about these updates can pass through unrelated generations, but has largely focused on traits or preferences using extensive teacher outputs. We introduce Active Taskless Distillation (ATD), which achieves capability transfer using only a single word from the teacher per prompt. ATD probes the behavioral shadow of post-training by selecting prompts where the teacher and student's shared public ancestor is nearly indifferent between two ordinary words. A student initialized from this ancestor learns solely from the resulting prompt-word pairs, without target-task examples, teacher logits, or teacher parameters. In the primary coding experiment with Qwen2.5-1.5B, 5,664nses yield a 5.34 pp gain on HumanEval+ over an exact nuisance-matched control thadisrupts prompt-resperiments showtransfer in scientific knowledge, commonsense reasoning, and reading comprehensins across additional model generations, sizes, and families. Functional analyses show that the learned sid composable, andthat its strength tracks the teacher's update strength.",
-   "score": 165,
+   "score": 231,
    "published": "2026-09-23T20:00:00.000Z",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.62,
-    "learning_value": 2.76,
-    "hands_on": 0.99
+    "difficulty": 1.63,
+    "learning_value": 2.74,
+    "hands_on": 0.98
    }
   },
   {
@@ -37,9 +37,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.55,
-    "learning_value": 2.65,
-    "hands_on": 0.9
+    "difficulty": 1.6,
+    "learning_value": 2.66,
+    "hands_on": 0.89
    }
   },
   {
@@ -62,14 +62,14 @@
    "title": "Groupwise Agentic Grading and Advantage Redistribution for Code Agent RL",
    "url": "https://huggingface.co/papers/2609.32577",
    "snippet": "Reinforcement learning (RL) for code agents often uses executable tests to provide binary rewards. With these rewards, Group Relative Policy Optimization (GRPO) assigns identical advantages to test-passing trajectories within each rollout group, overlooking differences in implementation quality and adherence to task requirements. This leaves the policy without a learning signal that favors clean, targeted implementations over those containing unnecessary or out-of-scope changes. We introduce GAGAR, a framework for quality-aware credit redistribution in code agent RL. Built on dynamic sampling that retains groups containing both passing and failing trajectories, GAGAR places all trajectories from each group in a shared workspace, where an SFT-trained agentic grader jointly inspects them and ranks the test-passing candidates. Based on this ranking, we downweight lower-ranked trajectories and proportionally rescale the advantages of all test-passing trajectories to restore their original sum. This sum-preserving redistribution retains the relative weights established by quality-based downweighting while shifting credit toward higher-quality implementations. We evaluate GAGAR at industrial scale using pre-RL SFT checkpoints of MiMo-V2.6-Flash (310B total parameters) and MiMo-V2.6-Pro (1.02T total parameters). Controlled code-only Flash experiments show improved code agent performance, reduced trajectory-length growth, and more stable training. We further apply GAGAR in large-scal",
-   "score": 66,
+   "score": 69,
    "published": "2026-09-25T20:00:00.000Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.8,
-    "learning_value": 2.56,
-    "hands_on": 0.8
+    "difficulty": 1.79,
+    "learning_value": 2.57,
+    "hands_on": 0.85
    }
   },
   {
@@ -82,9 +82,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.97,
-    "difficulty": 1.58,
+    "difficulty": 1.62,
     "learning_value": 2.39,
-    "hands_on": 0.66
+    "hands_on": 0.65
    }
   },
   {
@@ -92,13 +92,13 @@
    "title": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
    "url": "https://huggingface.co/papers/2609.35767",
    "snippet": "Unified multimodal models can both look at and render images, so in principle they can repair their own generations: diagnose what an image gets wrong, revise it, observe the result, and diagnose again. Whether a revision helps is known only after it is rendered, so the reflection text and the image generation must be learned jointly, over the whole loop. Supervised fine-tuning (SFT) on reflection trajectories gives a cold start but does not find the high-success repair paths, and naive RL that optimizes only the renderer or only one head leaves most of the gain untapped. We introduce UMM-Reflection, which applies reinforcement learning (RL) to complete reflection trajectories inside one unified model: sibling trajectories share one initial image, so the group-relative advantage compares reflection strategies, and one trajectory-level advantage updates both the reflection tokens and the flow-based revisions, avoiding the combinatorial blow-up of per-round credit assignment. Unlike single-round editing or pipelines with an external critic, credit flows across rounds and to both roles of the same model, and no verifier is needed at inference. On BAGEL, UMM-Reflection improves GenEval by 12.05 points over SFT, and the gains transfer to WISE (+10.97), OneIG-Bench (+3.48), and T2I-CompBench++ (+4.63), none of which is used in training.",
-   "score": 34,
+   "score": 35,
    "published": "2026-09-27T20:00:00.000Z",
    "judge": {
-    "injection": 0.01,
+    "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.7,
-    "learning_value": 2.73,
+    "difficulty": 1.64,
+    "learning_value": 2.75,
     "hands_on": 0.93
    }
   },
@@ -107,14 +107,14 @@
    "title": "Recursive Harness Distillation across Agents for Robot Manipulation",
    "url": "https://huggingface.co/papers/2609.33378",
    "snippet": "A central goal in robotics is to enable manipulation across changing tasks and environments. Vision-language-action (VLA) models provide broad manipulation capabilities but can struggle when execution requires diagnosing failures and adapting behavior. Strong agents can discover effective interventions through interaction with these policies. We propose Recursive Harness Distillation to accumulate this experience as reusable guidance across agents. A strong agent distills its experience into a playbook for a light agent, then recursively refines the playbook using the light agent's execution feedback. The resulting playbook enables agents to reuse accumulated intervention knowledge in new task instances without updating model parameters. In real-world manipulation, the harness improves success from 37.3% to 64.0%. On SimplerEnv Bridge, the light agent with the playbook achieves 66.7% success, compared with 41.7% for the GR00T-only baseline, and outperforms the strong agent without a playbook. The same playbook also benefits the strong agent, which reaches 79.2% success. These results demonstrate the feasibility of harness distillation for robotics: intervention experience can be accumulated, refined through execution, and reused across agents to improve manipulation.",
-   "score": 28,
+   "score": 29,
    "published": "2026-09-26T20:00:00.000Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.46,
-    "learning_value": 2.67,
-    "hands_on": 0.94
+    "difficulty": 1.43,
+    "learning_value": 2.66,
+    "hands_on": 0.92
    },
    "related_to": [
     "World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal"
@@ -125,14 +125,14 @@
    "title": "SentZero: An Enhanced Sentence-Centric Vision-Language Pretraining for Multi-Task Zero-Shot Chest X-Ray Analysis",
    "url": "https://huggingface.co/papers/2609.34479",
    "snippet": "Vision-language (VL) pretraining using paired chest X-ray (CXR) images and radiology reports has shown strong potential for medical image understanding. However, existing methods often remain dependent on task-specific finetuning because radiology reports are lengthy, clinically dense, and difficult to align with simple zero-shot prompts. Recent sentence-level approaches partially address this limitation using clinical phrases extracted by large language models (LLMs), but they largely overlook the intrinsic characteristics of radiology discourse. In particular, limited positive-pair diversity constrains further gains, while clinically equivalent sentences frequently recur across patients, creating false negatives in contrastive learning. To address these issues, we propose SentZero, an enhanced sentence-centric VL pretraining framework for zero-shot, multi-task CXR analysis. SentZero introduces LLM-based abstract-level sentence structuring and mapping to expand positive-pair diversity, together with an additional loss term to mitigate false negatives. We further introduce sentence-conditioned residual modulation of visual embeddings, enabling visual features to adapt to the semantic characteristics of each input sentence. Across diverse downstream tasks and datasets, SentZero improves zero-shot generalization and outperforms prior multi-task zero-shot methods.",
-   "score": 24,
+   "score": 25,
    "published": "2026-09-27T20:00:00.000Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.69,
-    "learning_value": 2.58,
-    "hands_on": 0.9
+    "learning_value": 2.61,
+    "hands_on": 0.89
    }
   },
   {
@@ -140,12 +140,12 @@
    "title": "QwenGyre: An Elastic Reinforcement Learning Framework for Training xLong-Horizon Agents",
    "url": "https://huggingface.co/papers/2609.33848",
    "snippet": "Large language model (LLM) agents increasingly undertake extreme-long (xlong) horizon tasks, where a single execution can span hours, hundreds of model--environment interactions, and nearly 1M tokens per rollout. Applying online reinforcement learning (RL) to such executions poses two fundamental challenges: (1) severe execution variance and prolonged rollout delays cause massive GPU idling; and (2) complex non-linear branching generates massive trajectory redundancy, crippling training efficiency. To address these, we presents QwenGyre, an end-to-end framework for xlong-horizon online RL. QwenGyre elastically reallocates GPUs between rollout and training without interrupting live executions, while its trajectory processor reconstructs branching histories, scores partial progress, and deduplicates redundant paths to bound training costs. Scaled to our flagship model, Qwen~3.8 2.4T, with 700K tokens per rollout, QwenGyre yields a 6.0% absolute gain on NL2RepoBench (52.5% to 58.5%) in 48 steps. Across our evaluations on diverse domains of training datasets, QwenGyre delivers up to 1.85times and 1.78times speedups over Colocate and Async, respectively.",
-   "score": 24,
+   "score": 25,
    "published": "2026-09-26T20:00:00.000Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.67,
+    "difficulty": 1.68,
     "learning_value": 2.59,
     "hands_on": 0.92
    }
@@ -160,9 +160,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.91,
-    "learning_value": 2.6,
-    "hands_on": 0.88
+    "difficulty": 1.88,
+    "learning_value": 2.59,
+    "hands_on": 0.89
    }
   },
   {
@@ -170,14 +170,29 @@
    "title": "In-Flight KV Cache with Clean Anchors for Faster Autoregressive Video Diffusion",
    "url": "https://huggingface.co/papers/2609.32540",
    "snippet": "Few-step autoregressive video diffusion generates a long video by splitting the video into temporal chunks and generating chunk-by-chunk, each through a short sequence of denoising stages. To memorize chunks that are already generated, previous methods reconstruct a clean or less-noisy key--value (KV) cache by additional forwards to build the cache without advancing an output latent. However, every denoising forward itself already computes the in-flight KV of the current chunk. We introduce FlashForward, which directly reuses this cache to avoid the heavy cache-update-only model forwards. After the current chunk completes one denoising stage, its stage-specific cache is already available for the next chunk. Assigning one GPU to each stage therefore lets different chunks occupy different stages concurrently. This early availability has a quality cost: the resulting stage-matched history is noisy, causing appearance and motion drift among chunks. To complement it, FlashForward produces sparse auxiliary clean anchor latents before the corresponding region is generated so the generation trajectories can be stabilized by this two-sided conditioning. The two memories operate at different temporal scales: sparse clean anchor KV supplies coarse, long-range two-sided structural guidance, while dense stage-matched history preserves fine, recent evolution. With up to four GPUs, FlashForward runs 1.16--1.69times faster than HiAR and 1.42--2.92times faster than Self-Forcing for 16 FPS vid",
-   "score": 17,
+   "score": 19,
    "published": "2026-09-25T20:00:00.000Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.89,
-    "learning_value": 2.65,
+    "learning_value": 2.68,
     "hands_on": 0.97
+   }
+  },
+  {
+   "source": "HF Papers",
+   "title": "Change the Product, Keep the Parameters: Associative Algebra Layers for Transformers",
+   "url": "https://huggingface.co/papers/2609.32814",
+   "snippet": "Fast matrix multiplication algorithms keep the product fixed and search for a cheaper way to evaluate it. We instead ask whether a Transformer's learned projections can use a different, cheaper product altogether. Building on an associative-algebra construction that replaces ordinary matrix multiplication with a sparser interaction table over the same weight blocks, we construct a family with quadratic arithmetic in the matrix dimension when the physical block size remains fixed, and derive finite-shape constraints for GPU execution. The construction is provably optimal for its bilinear rank by the Alder--Strassen bound and can be realized as row-typed rectangular projections compatible with causal masking and KV-cached decoding. We provide an empirical test of this approach by training two approximately 110M-parameter decoder-only Transformer LMs from the same recipe and 12.3B-token budget, differing only in their feed-forward layer: one uses ordinary dense matrix multiplication and the other uses the associative-algebra product. Across four prompt domains, the algebraic model achieves a 6.2--7.8\\% increase in end-to-end generation throughput, while obtaining lower scores on all three reported downstream metrics. We treat these results as a feasibility and trainability check for the proposed approach at small scale, leaving further investigation to future work.",
+   "score": 17,
+   "published": "2026-09-25T20:00:00.000Z",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.98,
+    "difficulty": 1.94,
+    "learning_value": 2.57,
+    "hands_on": 0.99
    }
   },
   {
@@ -190,24 +205,24 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.13,
+    "difficulty": 1.15,
     "learning_value": 2.69,
-    "hands_on": 1.5
+    "hands_on": 1.47
    }
   },
   {
    "source": "HF Papers",
-   "title": "Change the Product, Keep the Parameters: Associative Algebra Layers for Transformers",
-   "url": "https://huggingface.co/papers/2609.32814",
-   "snippet": "Fast matrix multiplication algorithms keep the product fixed and search for a cheaper way to evaluate it. We instead ask whether a Transformer's learned projections can use a different, cheaper product altogether. Building on an associative-algebra construction that replaces ordinary matrix multiplication with a sparser interaction table over the same weight blocks, we construct a family with quadratic arithmetic in the matrix dimension when the physical block size remains fixed, and derive finite-shape constraints for GPU execution. The construction is provably optimal for its bilinear rank by the Alder--Strassen bound and can be realized as row-typed rectangular projections compatible with causal masking and KV-cached decoding. We provide an empirical test of this approach by training two approximately 110M-parameter decoder-only Transformer LMs from the same recipe and 12.3B-token budget, differing only in their feed-forward layer: one uses ordinary dense matrix multiplication and the other uses the associative-algebra product. Across four prompt domains, the algebraic model achieves a 6.2--7.8\\% increase in end-to-end generation throughput, while obtaining lower scores on all three reported downstream metrics. We treat these results as a feasibility and trainability check for the proposed approach at small scale, leaving further investigation to future work.",
+   "title": "FlowTool: Controlling Tool Parameter in Image Retouching via Flow Matching",
+   "url": "https://huggingface.co/papers/2609.35673",
+   "snippet": "Tool-based image editing (image retouching) is commonly formulated with autoregressive multimodal large language models (MLLMs) that sequentially generate reasoning, tool selections, and parameter values. In this work, we present a novel approach to tool-based image editing by framing the task as a flow matching problem. We introduce FlowTool, a framework that directly models the distribution of high-quality tool parameters conditioned on the input image and user instruction using conditional rectified flow. FlowTool combines a vision-language model backbone for multimodal understanding with a Diffusion Transformer parameter generator that transforms Gaussian noise into an editing plan. We train FlowTool with a two-stage supervised flow-matching curriculum, followed by reward-based post-training. Across MMArt-Bench, FlowTool-Eval, ArtEdit-Bench, and MIT-Adobe5K, FlowTool achieves significantly stronger reference-based performance than specialized MLLM editing agents and proprietary MLLMs, while remaining competitive with proprietary models under reference-free evaluation. Moreover, FlowTool significantly improves inference efficiency, reducing latency by at least 50times while requiring nearly 2times less memory than the compared baselines. These results demonstrate that tool-based image editing can be effectively modeled as conditional generation over structured continuous editing parameters, without autoregressive reasoning.",
    "score": 15,
-   "published": "2026-09-25T20:00:00.000Z",
+   "published": "2026-09-27T20:00:00.000Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.94,
-    "learning_value": 2.59,
-    "hands_on": 0.99
+    "difficulty": 1.79,
+    "learning_value": 2.71,
+    "hands_on": 0.94
    }
   },
   {
@@ -220,24 +235,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.9,
-    "learning_value": 2.8,
-    "hands_on": 0.92
-   }
-  },
-  {
-   "source": "HF Papers",
-   "title": "FlowTool: Controlling Tool Parameter in Image Retouching via Flow Matching",
-   "url": "https://huggingface.co/papers/2609.35673",
-   "snippet": "Tool-based image editing (image retouching) is commonly formulated with autoregressive multimodal large language models (MLLMs) that sequentially generate reasoning, tool selections, and parameter values. In this work, we present a novel approach to tool-based image editing by framing the task as a flow matching problem. We introduce FlowTool, a framework that directly models the distribution of high-quality tool parameters conditioned on the input image and user instruction using conditional rectified flow. FlowTool combines a vision-language model backbone for multimodal understanding with a Diffusion Transformer parameter generator that transforms Gaussian noise into an editing plan. We train FlowTool with a two-stage supervised flow-matching curriculum, followed by reward-based post-training. Across MMArt-Bench, FlowTool-Eval, ArtEdit-Bench, and MIT-Adobe5K, FlowTool achieves significantly stronger reference-based performance than specialized MLLM editing agents and proprietary MLLMs, while remaining competitive with proprietary models under reference-free evaluation. Moreover, FlowTool significantly improves inference efficiency, reducing latency by at least 50times while requiring nearly 2times less memory than the compared baselines. These results demonstrate that tool-based image editing can be effectively modeled as conditional generation over structured continuous editing parameters, without autoregressive reasoning.",
-   "score": 14,
-   "published": "2026-09-27T20:00:00.000Z",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.75,
-    "learning_value": 2.71,
-    "hands_on": 0.95
+    "difficulty": 1.88,
+    "learning_value": 2.79,
+    "hands_on": 0.91
    }
   },
   {
@@ -245,14 +245,29 @@
    "title": "Hard Vision, Easy Vision: What GPT-6 Astra Reveals Across Computer Vision",
    "url": "https://huggingface.co/papers/2609.35718",
    "snippet": "Frontier general-purpose systems are rapidly expanding beyond visual understanding into capabilities traditionally handled by dedicated computer-vision models. As these capabilities expand, a central question for the computer-vision community is how far this reach extends, and what remains hard. We evaluate GPT-6 Astra alongside five frontier general-purpose AI systems across 34 capabilities and 55 benchmarks spanning nine areas of computer vision. We compare their performance with dedicated models and humans where suitable references are available. Astra demonstrates broad visual capability, with substantial gains over other frontier systems in visual and spatial reasoning and several forms of structured prediction. Across the state-of-the-art systems, a consistent pattern emerges. Capabilities involving semantic interpretation, reasoning, and object-centric prediction increasingly approach or reach available reference levels. In contrast, larger gaps remain when tasks require metric geometric accuracy, faithful reconstruction, temporally consistent dense prediction, or specialized fine-grained visual knowledge. Additional reasoning and specialist tools close selected gaps, but their benefits vary across capabilities. These results map a changing landscape of computer vision in which increasingly sophisticated visual tasks are accessible through a general-purpose interface, while precise and fidelity-sensitive perception remains an important frontier.",
-   "score": 12,
+   "score": 13,
    "published": "2026-09-27T20:00:00.000Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.94,
     "difficulty": 1.12,
-    "learning_value": 2.01,
-    "hands_on": 0.42
+    "learning_value": 2.02,
+    "hands_on": 0.49
+   }
+  },
+  {
+   "source": "HF Papers",
+   "title": "Imprint Reader: From Weight-Update Readout to Behavioral Intervention",
+   "url": "https://huggingface.co/papers/2609.35261",
+   "snippet": "As language models take a growing role in AI development, a natural aspiration is for them to reflect on their own learning process, as humans do, and use that reflection to improve themselves. At the same time, these models have an advantage that human learners lack, since training leaves parameter-level traces that can, in principle, be inspected directly. However, current models cannot decode these traces into an explicit account of what they have learned. To this end, we introduce the Imprint Reader, a model trained with Semantic Mount-and-Read Tuning (SaRT) to describe frozen weight updates. SMaRT mounts each update onto the Reader and uses an anchor-free meta-query to elicit a natural-language description, while no-change and random-perturbation controls discourage unsupported claims. On held-out updates, the joint Reader reaches judge-based Pass@100 of 2% for knowledge and 16% for behavior. These results demonstrate the feasibility of natural-language readout while pointing to reliability across updates as the next step. Beyond free-form generation, the Reader provides a differentiable proxy for the gap between a specified target behavior and a candidate weight update. Its coordinate-aligned gradients support intervention through MetaEdit. At a 0.5% pruning rate, Reader-guided selection raises measured harmful-prompt refusal from 57.9% to 64.1% under a safety-maintenance target. Using behavior descriptions without target-task training data, MetaEdit increases the frequ",
+   "score": 11,
+   "published": "2026-09-27T20:00:00.000Z",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.78,
+    "learning_value": 2.68,
+    "hands_on": 0.97
    }
   },
   {
@@ -265,24 +280,39 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.88,
-    "learning_value": 2.71,
+    "difficulty": 1.89,
+    "learning_value": 2.69,
     "hands_on": 0.92
    }
   },
   {
    "source": "HF Papers",
-   "title": "Imprint Reader: From Weight-Update Readout to Behavioral Intervention",
-   "url": "https://huggingface.co/papers/2609.35261",
-   "snippet": "As language models take a growing role in AI development, a natural aspiration is for them to reflect on their own learning process, as humans do, and use that reflection to improve themselves. At the same time, these models have an advantage that human learners lack, since training leaves parameter-level traces that can, in principle, be inspected directly. However, current models cannot decode these traces into an explicit account of what they have learned. To this end, we introduce the Imprint Reader, a model trained with Semantic Mount-and-Read Tuning (SaRT) to describe frozen weight updates. SMaRT mounts each update onto the Reader and uses an anchor-free meta-query to elicit a natural-language description, while no-change and random-perturbation controls discourage unsupported claims. On held-out updates, the joint Reader reaches judge-based Pass@100 of 2% for knowledge and 16% for behavior. These results demonstrate the feasibility of natural-language readout while pointing to reliability across updates as the next step. Beyond free-form generation, the Reader provides a differentiable proxy for the gap between a specified target behavior and a candidate weight update. Its coordinate-aligned gradients support intervention through MetaEdit. At a 0.5% pruning rate, Reader-guided selection raises measured harmful-prompt refusal from 57.9% to 64.1% under a safety-maintenance target. Using behavior descriptions without target-task training data, MetaEdit increases the frequ",
+   "title": "An RL View of OPD: Least Square Policy Distillation for Sample-Efficient LLM Reasoning",
+   "url": "https://huggingface.co/papers/2609.35505",
+   "snippet": "We study on-policy distillation (OPD) through the lens of reinforcement learning, establishing a connection between the reverse-KL objective in OPD and KL-regularized policy optimization. Building on this connection, we introduce Least-Square Policy Distillation (LSPD), an RL-inspired framework that brings optimistic exploration and off-policy data reuse from value-based RL into policy distillation. LSPD preserves policy diversity through exploration while improving rollout efficiency by repeatedly learning from previously collected trajectories. Our theoretical analysis connects LSPD to optimistic value-based learning and shows that its idealized formulation achieves a sharp mathcal O(log K) regret bound under online exploration. Empirically, LSPD consistently outperforms existing distillation baselines across six mathematical reasoning benchmarks and diverse teacher-student settings, with average gains of +1.59 points in Avg@16. Remarkably, through Pass@k evaluations up to k=64, we found that LSPD better preserves policy diversity by achieving stronger performance as k grows. Its fully off-policy variant achieves comparable performance to vanilla OPD using only the first 25% of rollout batches. Together, these results provide an RL perspective on OPD that offers both a principled interpretation and a practical route toward more effective and rollout-efficient language model distillation.",
    "score": 10,
    "published": "2026-09-27T20:00:00.000Z",
    "judge": {
-    "injection": 0.02,
+    "injection": 0.01,
+    "has_substance": 0.99,
+    "difficulty": 1.85,
+    "learning_value": 2.9,
+    "hands_on": 0.95
+   }
+  },
+  {
+   "source": "HF Papers",
+   "title": "Residual Transferability in Neural Image Watermarking",
+   "url": "https://huggingface.co/papers/2609.32241",
+   "snippet": "Neural image watermarks can be forged by extracting watermark-bearing residuals from released images and transferring them to unrelated content. While prior work has demonstrated this vulnerability, what makes these residuals transferable remains poorly understood. We formalize this vulnerability with residual transferability (RT), a metric that quantifies how well watermark evidence remains decodable after transfer across unrelated images. Through comparative analyses and controlled interventions, we find that common training-side variations do not account for the large RT differences across watermarking systems; instead, architectural design plays a central role. By contrasting high- and low-RT systems and validating their architectural differences through controlled interventions, we identify two mechanisms that strengthen the dependence of watermark evidence on the cover image, thereby suppressing the residual transferability. These findings provide concrete design guidance for developing more forgery-resistant watermarking architectures. Complementarily, for existing watermarking systems where architectural redesign is impractical, we introduce CoverLock, a plug-and-play strategy for existing watermarking systems that strengthens such image dependence without architectural redesign. Across representative watermarking systems exhibiting high residual transferability, CoverLock achieves a more favorable security--robustness trade-off than both traditional handcrafted defen",
+   "score": 10,
+   "published": "2026-09-25T20:00:00.000Z",
+   "judge": {
+    "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.83,
-    "learning_value": 2.79,
-    "hands_on": 0.97
+    "difficulty": 1.78,
+    "learning_value": 2.86,
+    "hands_on": 0.91
    }
   },
   {
@@ -295,24 +325,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.99,
-    "difficulty": 1.91,
-    "learning_value": 2.69,
+    "difficulty": 1.9,
+    "learning_value": 2.7,
     "hands_on": 0.97
-   }
-  },
-  {
-   "source": "HF Papers",
-   "title": "Residual Transferability in Neural Image Watermarking",
-   "url": "https://huggingface.co/papers/2609.32241",
-   "snippet": "Neural image watermarks can be forged by extracting watermark-bearing residuals from released images and transferring them to unrelated content. While prior work has demonstrated this vulnerability, what makes these residuals transferable remains poorly understood. We formalize this vulnerability with residual transferability (RT), a metric that quantifies how well watermark evidence remains decodable after transfer across unrelated images. Through comparative analyses and controlled interventions, we find that common training-side variations do not account for the large RT differences across watermarking systems; instead, architectural design plays a central role. By contrasting high- and low-RT systems and validating their architectural differences through controlled interventions, we identify two mechanisms that strengthen the dependence of watermark evidence on the cover image, thereby suppressing the residual transferability. These findings provide concrete design guidance for developing more forgery-resistant watermarking architectures. Complementarily, for existing watermarking systems where architectural redesign is impractical, we introduce CoverLock, a plug-and-play strategy for existing watermarking systems that strengthens such image dependence without architectural redesign. Across representative watermarking systems exhibiting high residual transferability, CoverLock achieves a more favorable security--robustness trade-off than both traditional handcrafted defen",
-   "score": 9,
-   "published": "2026-09-25T20:00:00.000Z",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.77,
-    "learning_value": 2.89,
-    "hands_on": 0.94
    }
   },
   {
@@ -325,23 +340,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.79,
-    "learning_value": 2.7,
-    "hands_on": 0.95
-   }
-  },
-  {
-   "source": "HF Papers",
-   "title": "An RL View of OPD: Least Square Policy Distillation for Sample-Efficient LLM Reasoning",
-   "url": "https://huggingface.co/papers/2609.35505",
-   "snippet": "We study on-policy distillation (OPD) through the lens of reinforcement learning, establishing a connection between the reverse-KL objective in OPD and KL-regularized policy optimization. Building on this connection, we introduce Least-Square Policy Distillation (LSPD), an RL-inspired framework that brings optimistic exploration and off-policy data reuse from value-based RL into policy distillation. LSPD preserves policy diversity through exploration while improving rollout efficiency by repeatedly learning from previously collected trajectories. Our theoretical analysis connects LSPD to optimistic value-based learning and shows that its idealized formulation achieves a sharp mathcal O(log K) regret bound under online exploration. Empirically, LSPD consistently outperforms existing distillation baselines across six mathematical reasoning benchmarks and diverse teacher-student settings, with average gains of +1.59 points in Avg@16. Remarkably, through Pass@k evaluations up to k=64, we found that LSPD better preserves policy diversity by achieving stronger performance as k grows. Its fully off-policy variant achieves comparable performance to vanilla OPD using only the first 25% of rollout batches. Together, these results provide an RL perspective on OPD that offers both a principled interpretation and a practical route toward more effective and rollout-efficient language model distillation.",
-   "score": 8,
-   "published": "2026-09-27T20:00:00.000Z",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.86,
-    "learning_value": 2.86,
+    "difficulty": 1.76,
+    "learning_value": 2.71,
     "hands_on": 0.96
    }
   },
@@ -355,9 +355,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.93,
-    "learning_value": 2.62,
-    "hands_on": 0.97
+    "difficulty": 1.94,
+    "learning_value": 2.64,
+    "hands_on": 0.96
    }
   },
   {
@@ -370,9 +370,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.99,
-    "difficulty": 1.33,
-    "learning_value": 2.59,
-    "hands_on": 0.94
+    "difficulty": 1.35,
+    "learning_value": 2.6,
+    "hands_on": 0.96
    }
   },
   {
@@ -385,8 +385,8 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.33,
-    "learning_value": 2.87,
+    "difficulty": 1.29,
+    "learning_value": 2.88,
     "hands_on": 0.98
    }
   },
@@ -400,24 +400,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.51,
-    "learning_value": 2.84,
-    "hands_on": 0.98
-   }
-  },
-  {
-   "source": "HF Papers",
-   "title": "Measuring Collapse and Correction in Homogeneous-Panel LLM Debate",
-   "url": "https://huggingface.co/papers/2609.35279",
-   "snippet": "Multi-agent large language model (LLM) debate is often evaluated by whether final answers improve, but movement is not necessarily improvement: the same discussion can rescue an initially wrong majority or destroy an initially correct one. Standard final-accuracy evaluations conflate these opposing mechanisms. We introduce an auditable protocol for homogeneous debate on multiple-choice questions (MCQs) that records each run as a transition ledger over collapse, correction, onset, and signed intervention utility. On 6,925 MMLU-Pro debates, the protocol identifies 253 collapses and a parallel correction ledger that changes how interventions should be judged. Replay experiments reveal the central tradeoff: a leave-one-model-out probe-gated freeze prevents 29 collapses but loses 108 corrections under equal weights, so collapse prevention alone can recommend the wrong policy. A compact pre-debate 8-probe screen is a triage signal: its unadjusted family-level association with conditional-collapse risk is high (G=7, Spearman rho=0.893, exact two-sided p=0.0123), but initial-majority accuracy is a close comparator (rho=0.821; family partial rho=0.767, p=0.0877), so we do not treat it as calibrated or capability-adjusted prediction. Round-level traces localize many collapses to the first debate round, where early disagreement can precede both harmful cascades and useful recovery. We release replayable schemas, coders, audits, cost cards, and zero-API rebuild scripts so future model-sc",
-   "score": 5,
-   "published": "2026-09-27T20:00:00.000Z",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 1.79,
-    "learning_value": 2.94,
-    "hands_on": 1.75
+    "difficulty": 1.54,
+    "learning_value": 2.82,
+    "hands_on": 0.96
    }
   },
   {
@@ -429,10 +414,10 @@
    "published": "2026-09-27T20:00:00.000Z",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.47,
-    "learning_value": 2.21,
-    "hands_on": 0.98
+    "has_substance": 0.98,
+    "difficulty": 1.52,
+    "learning_value": 2.22,
+    "hands_on": 0.96
    }
   },
   {
@@ -446,8 +431,8 @@
     "injection": 0.02,
     "has_substance": 0.99,
     "difficulty": 1.75,
-    "learning_value": 2.86,
-    "hands_on": 0.86
+    "learning_value": 2.87,
+    "hands_on": 0.93
    },
    "related_to": [
     "World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal"
@@ -463,7 +448,7 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.95,
+    "difficulty": 1.93,
     "learning_value": 2.77,
     "hands_on": 0.96
    }
@@ -478,8 +463,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.64,
-    "learning_value": 2.73,
+    "difficulty": 1.7,
+    "learning_value": 2.78,
     "hands_on": 0.95
    }
   },
@@ -494,7 +479,7 @@
     "injection": 0.01,
     "has_substance": 0.97,
     "difficulty": 1.47,
-    "learning_value": 2.2,
+    "learning_value": 2.22,
     "hands_on": 0.95
    }
   },
@@ -508,9 +493,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.08,
-    "learning_value": 2.58,
-    "hands_on": 0.95
+    "difficulty": 1.07,
+    "learning_value": 2.54,
+    "hands_on": 0.97
    }
   },
   {
@@ -521,11 +506,11 @@
    "score": 0,
    "published": "2026-09-28T17:58:03Z",
    "judge": {
-    "injection": 0.01,
+    "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.86,
-    "learning_value": 2.73,
-    "hands_on": 0.91
+    "difficulty": 1.87,
+    "learning_value": 2.74,
+    "hands_on": 0.88
    }
   },
   {
@@ -538,9 +523,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.62,
-    "learning_value": 2.53,
-    "hands_on": 0.88
+    "difficulty": 1.57,
+    "learning_value": 2.52,
+    "hands_on": 0.85
    }
   },
   {
@@ -553,9 +538,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.69,
-    "learning_value": 2.73,
-    "hands_on": 0.84
+    "difficulty": 1.71,
+    "learning_value": 2.76,
+    "hands_on": 0.87
    }
   },
   {
@@ -568,7 +553,7 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.33,
+    "difficulty": 1.35,
     "learning_value": 2.81,
     "hands_on": 0.99
    }
@@ -584,8 +569,8 @@
     "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.46,
-    "learning_value": 2.7,
-    "hands_on": 0.96
+    "learning_value": 2.67,
+    "hands_on": 0.97
    }
   },
   {
@@ -598,9 +583,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 1.28,
-    "learning_value": 2.67,
-    "hands_on": 0.9
+    "difficulty": 1.26,
+    "learning_value": 2.66,
+    "hands_on": 0.91
    }
   },
   {
@@ -613,8 +598,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.74,
-    "learning_value": 2.71,
+    "difficulty": 1.72,
+    "learning_value": 2.74,
     "hands_on": 0.91
    }
   },
@@ -628,9 +613,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 0.57,
-    "learning_value": 2.87,
-    "hands_on": 1.57
+    "difficulty": 0.6,
+    "learning_value": 2.86,
+    "hands_on": 1.55
    }
   },
   {
@@ -642,9 +627,9 @@
    "published": "2026-09-28T17:28:29Z",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.8,
-    "learning_value": 2.44,
+    "has_substance": 0.96,
+    "difficulty": 1.79,
+    "learning_value": 2.42,
     "hands_on": 0.9
    }
   },
@@ -658,8 +643,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.93,
-    "learning_value": 2.83,
+    "difficulty": 1.94,
+    "learning_value": 2.84,
     "hands_on": 0.99
    }
   },
@@ -675,22 +660,7 @@
     "has_substance": 0.98,
     "difficulty": 1.99,
     "learning_value": 2.85,
-    "hands_on": 1.15
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "TokenCast: Forecasting Token Consumption During LLM Agent Execution",
-   "url": "http://arxiv.org/abs/2609.35760v1",
-   "snippet": "When a large language model (LLM) agent executes the same task, token consumption can vary by over an order of magnitude across runs. The agent chooses its next steps based on tool feedback and intermediate results, while the growing context steadily inflates the input size of every subsequent call. The total consumption of a task is therefore hard to predict before execution and the prediction must be revised as the run unfolds. In this paper, we propose TokenCast, which learns a composable cost representation for each execution segment, recording its own consumption and the context growth it introduces. Composing adjacent segments yields a cumulative estimate that captures the extra input cost incurred when context from earlier segments is re-read by every later call. As execution unfolds, newly observed evidence refreshes the forecast, requiring no additional LLM calls and incurring a mean cumulative prediction time of 32.8 ms per run on SWE-bench Verified. Across 4 task suites and 6 agent models, TokenCast's mean absolute error reduction against the strongest comparator averages 14.5% over 96 evaluated combinations. In offline budget-control replay, TokenCast uses 21.3% fewer tokens on average than a fixed-budget policy at matched trace completion. The code is available at https://github.com/DEFENSE-SEU/TokenCast.",
-   "score": 0,
-   "published": "2026-09-28T17:59:09Z",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.24,
-    "learning_value": 2.86,
-    "hands_on": 1.97
+    "hands_on": 1.14
    }
   },
   {
@@ -704,7 +674,7 @@
     "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.99,
-    "learning_value": 2.51,
+    "learning_value": 2.48,
     "hands_on": 0.94
    }
   },
@@ -718,9 +688,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.96,
-    "learning_value": 2.62,
-    "hands_on": 0.95
+    "difficulty": 1.95,
+    "learning_value": 2.61,
+    "hands_on": 0.96
    }
   },
   {
@@ -750,7 +720,7 @@
     "has_substance": 0.98,
     "difficulty": 1.69,
     "learning_value": 2.58,
-    "hands_on": 0.81
+    "hands_on": 0.83
    }
   },
   {
@@ -763,8 +733,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.64,
-    "learning_value": 2.74,
+    "difficulty": 1.61,
+    "learning_value": 2.73,
     "hands_on": 0.92
    }
   },
@@ -777,9 +747,9 @@
    "published": "2026-09-28T17:44:11Z",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.6,
-    "learning_value": 2.26,
+    "has_substance": 0.96,
+    "difficulty": 1.62,
+    "learning_value": 2.19,
     "hands_on": 0.91
    }
   },
@@ -794,8 +764,8 @@
     "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.94,
-    "learning_value": 2.55,
-    "hands_on": 0.94
+    "learning_value": 2.52,
+    "hands_on": 0.92
    }
   },
   {
@@ -808,9 +778,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 1.12,
-    "learning_value": 2.64,
-    "hands_on": 1.1
+    "difficulty": 1.14,
+    "learning_value": 2.61,
+    "hands_on": 1.09
    }
   },
   {
@@ -823,7 +793,7 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.07,
+    "difficulty": 1.09,
     "learning_value": 2.62,
     "hands_on": 0.9
    }
@@ -838,7 +808,7 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.74,
+    "difficulty": 1.7,
     "learning_value": 2.59,
     "hands_on": 0.88
    }
@@ -853,8 +823,8 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.82,
-    "learning_value": 2.51,
+    "difficulty": 1.78,
+    "learning_value": 2.5,
     "hands_on": 0.95
    }
   },
@@ -868,9 +838,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.36,
-    "learning_value": 2.68,
-    "hands_on": 0.91
+    "difficulty": 1.32,
+    "learning_value": 2.72,
+    "hands_on": 0.9
    }
   },
   {
@@ -884,8 +854,8 @@
     "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.97,
-    "learning_value": 2.48,
-    "hands_on": 0.89
+    "learning_value": 2.49,
+    "hands_on": 0.93
    }
   },
   {
@@ -900,7 +870,7 @@
     "has_substance": 0.98,
     "difficulty": 1.99,
     "learning_value": 2.5,
-    "hands_on": 0.94
+    "hands_on": 0.95
    }
   },
   {
@@ -913,9 +883,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.87,
-    "learning_value": 2.75,
-    "hands_on": 0.9
+    "difficulty": 1.88,
+    "learning_value": 2.76,
+    "hands_on": 0.87
    },
    "related_to": [
     "X-Reset: Scaling Object-Centric Reinforcement Learning via Cross-Embodiment Resets"
@@ -931,8 +901,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.99,
-    "learning_value": 2.63,
+    "difficulty": 1.98,
+    "learning_value": 2.6,
     "hands_on": 1.01
    }
   },
@@ -946,8 +916,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.83,
-    "learning_value": 2.71,
+    "difficulty": 1.87,
+    "learning_value": 2.69,
     "hands_on": 0.92
    },
    "related_to": [
@@ -965,7 +935,7 @@
     "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.87,
-    "learning_value": 2.32,
+    "learning_value": 2.31,
     "hands_on": 0.93
    }
   },
@@ -977,10 +947,10 @@
    "score": 0,
    "published": "2026-09-28T17:37:00Z",
    "judge": {
-    "injection": 0.01,
+    "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.71,
-    "learning_value": 2.7,
+    "difficulty": 1.73,
+    "learning_value": 2.68,
     "hands_on": 0.93
    }
   },
@@ -994,9 +964,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.91,
-    "learning_value": 2.56,
-    "hands_on": 0.88
+    "difficulty": 1.92,
+    "learning_value": 2.57,
+    "hands_on": 0.83
    }
   },
   {
@@ -1009,9 +979,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.94,
-    "learning_value": 2.53,
-    "hands_on": 0.95
+    "difficulty": 1.95,
+    "learning_value": 2.55,
+    "hands_on": 0.92
    }
   },
   {
@@ -1024,8 +994,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.94,
-    "learning_value": 2.7,
+    "difficulty": 1.93,
+    "learning_value": 2.75,
     "hands_on": 0.99
    }
   },
@@ -1037,11 +1007,11 @@
    "score": 0,
    "published": "2026-09-28T16:34:17Z",
    "judge": {
-    "injection": 0.01,
+    "injection": 0.02,
     "has_substance": 0.98,
     "difficulty": 1.65,
     "learning_value": 2.72,
-    "hands_on": 0.89
+    "hands_on": 0.9
    }
   },
   {
@@ -1052,10 +1022,10 @@
    "score": 0,
    "published": "2026-09-28T16:32:09Z",
    "judge": {
-    "injection": 0.02,
+    "injection": 0.01,
     "has_substance": 0.98,
     "difficulty": 1.8,
-    "learning_value": 2.74,
+    "learning_value": 2.72,
     "hands_on": 1.01
    }
   },
@@ -1063,29 +1033,29 @@
    "source": "Hacker News",
    "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
    "url": "https://github.com/firelex/jeff",
-   "snippet": "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification - firelex/jeff (HN discussion: https://news.ycombinator.com/item?id=49883844 (213 comments))",
-   "score": 553,
+   "snippet": "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification - firelex/jeff (HN discussion: https://news.ycombinator.com/item?id=49883844 (216 comments))",
+   "score": 558,
    "published": "2026-09-28T20:23:36Z",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 0.92,
-    "learning_value": 1.68,
-    "hands_on": 1.69
+    "difficulty": 0.93,
+    "learning_value": 1.75,
+    "hands_on": 1.68
    }
   },
   {
    "source": "Hacker News",
    "title": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
    "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
-   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49890226 (116 comments)",
-   "score": 360,
+   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49890226 (124 comments)",
+   "score": 385,
    "published": "2026-09-29T09:03:41Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.86,
-    "difficulty": 1.12,
-    "learning_value": 1.55,
+    "difficulty": 1.15,
+    "learning_value": 1.57,
     "hands_on": 0.18
    }
   },
@@ -1093,15 +1063,15 @@
    "source": "Hacker News",
    "title": "MicroLLM Lab – Try 7 tiny LLM's in the browser",
    "url": "https://stateofutopia.com/experiments/microllmlab/",
-   "snippet": "Run Q4 small language models entirely in the browser with WebGPU. Chat, benchmark, and compare PetitGPT, SmolLM2, and friends on-device. (HN discussion: https://news.ycombinator.com/item?id=49882781 (99 comments))",
-   "score": 270,
+   "snippet": "Run Q4 small language models entirely in the browser with WebGPU. Chat, benchmark, and compare PetitGPT, SmolLM2, and friends on-device. (HN discussion: https://news.ycombinator.com/item?id=49882781 (113 comments))",
+   "score": 272,
    "published": "2026-09-28T18:58:53Z",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 0.37,
-    "learning_value": 2.68,
-    "hands_on": 1.46
+    "difficulty": 0.33,
+    "learning_value": 2.65,
+    "hands_on": 1.49
    }
   },
   {
@@ -1113,25 +1083,25 @@
    "published": "2026-09-28T07:33:29Z",
    "judge": {
     "injection": 0.05,
-    "has_substance": 0.86,
+    "has_substance": 0.87,
     "difficulty": 0.31,
-    "learning_value": 2.22,
-    "hands_on": 0.71
+    "learning_value": 2.24,
+    "hands_on": 0.73
    }
   },
   {
    "source": "Hacker News",
    "title": "Jeeves. Reasoning improves Jev-like decision models",
    "url": "https://github.com/PostHog/jeeves",
-   "snippet": "Jeeves – Reasoning improves Jev-like decision models - PostHog/jeeves (HN discussion: https://news.ycombinator.com/item?id=49891290 (70 comments))",
-   "score": 171,
+   "snippet": "Jeeves – Reasoning improves Jev-like decision models - PostHog/jeeves (HN discussion: https://news.ycombinator.com/item?id=49891290 (81 comments))",
+   "score": 193,
    "published": "2026-09-29T11:13:54Z",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.91,
-    "difficulty": 0.6,
-    "learning_value": 1.46,
-    "hands_on": 1.56
+    "difficulty": 0.61,
+    "learning_value": 1.45,
+    "hands_on": 1.6
    },
    "related_to": [
     "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms"
@@ -1142,44 +1112,44 @@
    "title": "Cf: The Agentic CLI for the Cloudflare API",
    "url": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
    "snippet": "We are releasing cf, our new command-line tool that mirrors the entire Cloudflare API and supports programmatic TypeScript configuration. We are also open-sourcing Forge, our internal SDK generator. (HN discussion: https://news.ycombinator.com/item?id=49879577 (82 comments))",
-   "score": 160,
+   "score": 164,
    "published": "2026-09-28T15:28:13Z",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
     "difficulty": 0.0,
-    "learning_value": 1.57,
-    "hands_on": 1.4
+    "learning_value": 1.53,
+    "hands_on": 1.39
    }
   },
   {
    "source": "Hacker News",
    "title": "ESP32S3 cluster running 1.58-bit (BitNet) Language model",
    "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
-   "snippet": "7-node ESP32-S3 cluster running a 0.4B LLM via 1.58-bit (BitNet) ternary quantization over SPI daisy-chain - Low-Zi-Hong/ESP32s3-LLM-Cluster (HN discussion: https://news.ycombinator.com/item?id=49884625 (30 comments))",
-   "score": 139,
+   "snippet": "7-node ESP32-S3 cluster running a 0.4B LLM via 1.58-bit (BitNet) ternary quantization over SPI daisy-chain - Low-Zi-Hong/ESP32s3-LLM-Cluster (HN discussion: https://news.ycombinator.com/item?id=49884625 (31 comments))",
+   "score": 144,
    "published": "2026-09-28T21:26:41Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 0.98,
-    "learning_value": 2.31,
-    "hands_on": 1.82
+    "difficulty": 0.97,
+    "learning_value": 2.42,
+    "hands_on": 1.83
    }
   },
   {
    "source": "Hacker News",
    "title": "Show HN: Pac-Bench – How well can models one-shot a Pac-Man game?",
    "url": "https://jonclegg.github.io/pacman-bakeoff/",
-   "snippet": "PacBench: how well a model and harness can recreate Pac-Man from a single prompt. (HN discussion: https://news.ycombinator.com/item?id=49885493 (45 comments))",
-   "score": 76,
+   "snippet": "PacBench: how well a model and harness can recreate Pac-Man from a single prompt. (HN discussion: https://news.ycombinator.com/item?id=49885493 (47 comments))",
+   "score": 77,
    "published": "2026-09-28T22:43:12Z",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.93,
-    "difficulty": 0.51,
-    "learning_value": 1.55,
-    "hands_on": 1.08
+    "difficulty": 0.49,
+    "learning_value": 1.53,
+    "hands_on": 1.06
    }
   },
   {
@@ -1187,14 +1157,14 @@
    "title": "New Cyber-OSINT model released",
    "url": "https://twitter.com/0x0SojalSec/status/2104736980768866439",
    "snippet": "The Cyber-OSINT model that You can run locally. - MoE (26B total, 4B active, 262K ctx) trained on 6,500 OSINT/CTI instructions. - SFT for cyber threat intel and investigative work. - Threat-actor attribution. - IoC pivoting. Geolocation. - Admiralty source grading. - 262K context. (HN discussion: https://news.ycombinator.com/item?id=49890829 (15 comments))",
-   "score": 46,
+   "score": 48,
    "published": "2026-09-29T10:23:33Z",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 0.93,
-    "learning_value": 2.19,
-    "hands_on": 1.12
+    "difficulty": 0.92,
+    "learning_value": 2.2,
+    "hands_on": 1.09
    }
   },
   {
@@ -1202,14 +1172,14 @@
    "title": "I wrote a free, open-source book on making ML models actually fast, from silicon to agents [P]",
    "url": "https://www.reddit.com/r/MachineLearning/comments/1wt6ns4/i_wrote_a_free_opensource_book_on_making_ml/",
    "snippet": "I’ve spent the last few months writing something I wish I had when I started working on ML performance engineering. It’s called How to Make Your Model Fast: A Systems View of Efficient Machine Learning, from Silicon to Agents . The basic idea is that reducing FLOPs doesn’t necessarily make a model faster. Before optimising anything, you need to understand what the system is actually bounded by. The book starts with roofline analysis and hardware, then works its way up through kernels, compilers, quantisation, pruning, vision, on-device LLMs, robotics, profiling, serving and finally agents. The goal is to build the intuition to look at a model and a piece of hardware and reason about: How fast can this possibly run? Am I compute, bandwidth, memory or system bound? Which optimisation will actually move that limit? Is quantisation, pruning or kernel optimisation even worth doing here? What happens when the same thinking is applied to serving and agent systems? The whole thing is free and open source: https://github.com/usamahz/make-your-model-fast Would genuinely appreciate feedback or contributions from people working on ML systems, inference, compilers, edge AI or performance engineering. And if you find it useful, a ⭐ would be appreciated! submitted by /u/SoloTiger_ [link] [comments]",
-   "score": 13,
+   "score": 14,
    "published": "2026-09-29T10:35:53+00:00",
    "judge": {
-    "injection": 0.01,
+    "injection": 0.02,
     "has_substance": 0.94,
     "difficulty": 1.15,
-    "learning_value": 2.68,
-    "hands_on": 0.82
+    "learning_value": 2.71,
+    "hands_on": 0.85
    }
   },
   {
@@ -1222,9 +1192,9 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.92,
-    "learning_value": 2.79,
-    "hands_on": 1.01
+    "difficulty": 1.93,
+    "learning_value": 2.76,
+    "hands_on": 1.02
    }
   },
   {
@@ -1236,10 +1206,10 @@
    "published": "2026-09-29T05:26:38+00:00",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 0.24,
-    "learning_value": 1.89,
-    "hands_on": 0.77
+    "has_substance": 0.94,
+    "difficulty": 0.23,
+    "learning_value": 1.86,
+    "hands_on": 0.71
    }
   },
   {
@@ -1247,12 +1217,12 @@
    "title": "nvidia/NVIDIA-Nemotron-Labs-3-Competitive-Coding-550B-A55B-NVFP4 · Hugging Face",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsuqmb/nvidianvidianemotronlabs3competitivecoding550ba55b/",
    "snippet": "Model Developer: NVIDIA Corporation Model Development: Fine-tuned from NVIDIA-Nemotron-3-Ultra-550B-A55B What is Nemotron? NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Description Nemotron-Labs-3-Competitive-Coding is a competitive-programming specialist model based on Nemotron-3-Ultra, fine-tuned for one epoch on 477,642 synthetic reasoning traces distilled from GLM-5.2 across 22,000 curated problems spanning 16 regional and international competitive-programming contest families. Selected as the SFT teacher for its higher accuracy and roughly 30% shorter generations compared to a DeepSeek-V4-Flash-trained variant, GLM-5.2 distillation yields a model that, combined at inference time with GenCorrect — an iterative closed-loop test-time compute strategy that generates diverse candidate solutions, incorporates evaluator feedback, and refines subsequent generations under a fixed submission budget — was evaluated live and prospectively on the IOI 2026 problem set under official contest time, internet-access, and submission constraints, scoring 535.4 out of 600 and surpassing both the gold-medal threshold (361.12) and the top human contestant's score (498.27), making it the first AI system reported to outscore the highest-scoring human contestant on an IOI problem set. This model is ready for commercial or non-commercial use. submitted by /u/jacek2023 [link] ",
-   "score": 12,
+   "score": 11,
    "published": "2026-09-28T23:45:33+00:00",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.18,
+    "difficulty": 1.16,
     "learning_value": 2.32,
     "hands_on": 1.74
    }
@@ -1262,44 +1232,14 @@
    "title": "Speculative reward hacking in coding agents",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsuag0/speculative_reward_hacking_in_coding_agents/",
    "snippet": "I audited thousands of agent rollouts in DeepSWE-1.1. Over 80% contained reasoning about an imagined grader. Yet no grader/verifier is mentioned in prompts nor accessible to the agents. Agents reasoned things like: \" Let me look at the problem from the grader's perspective \" and referred to \" hidden tests \", \" test authors \", and \" the checker \". I found this behavior across all six frontier models analyzed, including recent models from OpenAI, Anthropic, Z.ai , and Kimi. In 10–25% of cases, such reasoning pulled the agent's work away from the user's original spec (yet it often still earned full reward on the DeepSWE task). I call this speculative reward hacking where the agent's reasoning focuses on imagining a grader rather than what the user wants. [Pictured example shows verbatim quotes from agent's reasoning] For instance while completing a DeepSWE-1.1 task, GLM 5.3 knows that its implementation violates user requirements yet sticks with it after imagining what a hypothetical grader will check. My article details many problematic trajectories, quantitative findings, and a taxonomy of these reward hacking behaviors: https://joinhandshake.com/research/ai/deepswe-reward-hacking/ submitted by /u/jonas__m [link] [comments]",
-   "score": 11,
+   "score": 10,
    "published": "2026-09-28T23:25:35+00:00",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.87,
-    "difficulty": 0.82,
-    "learning_value": 2.27,
-    "hands_on": 0.33
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "First few days of qwen3.8-flash-next on 4x R9700 - it's been really interesting so far",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsxgbo/first_few_days_of_qwen38flashnext_on_4x_r9700_its/",
-   "snippet": "Here's a metric dashboard giving an idea of the last few days. Been testing with a variety of different agentic coding use-cases, mostly using a pi harness. qwen3.8-flash-next has seriously exceeded my expectations (used https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8 ) Both speed and quality have surprised me, given that I can get 3-5 concurrent streams going with ~100t/s gen each, and single stream easily gets to 150+t/s. Prefill is 10k+t/s submitted by /u/pubudeux [link] [comments]",
-   "score": 7,
-   "published": "2026-09-29T01:52:32+00:00",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 0.78,
-    "learning_value": 1.17,
-    "hands_on": 1.87
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "Debugging PCIe Link Retraining on an x8/x8 Splitter with Two RTX 3090s",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsscrw/debugging_pcie_link_retraining_on_an_x8x8/",
-   "snippet": "submitted by /u/bolts98 [link] [comments]",
-   "score": 6,
-   "published": "2026-09-28T22:02:16+00:00",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.84,
-    "difficulty": 0.64,
-    "learning_value": 1.07,
-    "hands_on": 0.44
+    "has_substance": 0.86,
+    "difficulty": 0.79,
+    "learning_value": 2.3,
+    "hands_on": 0.39
    }
   },
   {
@@ -1307,14 +1247,44 @@
    "title": "[Release] GSQ-RCO GGUFs for Qwen3.8-Flash-Next, plus a 50% expert-pruned Coder build at ~1.89 bpw",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wt4s88/release_gsqrco_ggufs_for_qwen38flashnext_plus_a/",
    "snippet": "We have released Qwen3.8-Flash-Next quantized with GSQ and RCO, together with a second, capability-targeted build in which half of the model's experts have been removed. Flash-Next is a sparse mixture-of-experts model: 512 routed experts per layer across 48 layers, 176.9B parameters, 354 GB at BF16. What's inside Four quantized GGUFs , 2.40 to 3.50 bpw (66.4 to 83.6 GB), and the BF16 vision projector Expert-pruned Coder GGUF , 58.4 GB in total, of which 29.6 GB must remain resident GSQ (Gumbel-Softmax Quantization): post-training scalar quantization that jointly learns grid assignments and group scales, closing most of the gap between scalar and vector quantization at low bit-widths while remaining deployable in standard GGUF types RCO (Riemannian Constrained Optimization): enforces exact budgets by gradient descent on the task loss, without per-constraint tuning. It serves two roles in this release: assigning a quantization type to every tensor, and selecting which experts to retain in the Coder build, where it enforces several exact budgets simultaneously, one per layer Results: At 3.50 bpw the model matches the BF16 base on every benchmark evaluated. IQ3_S (3.50 bpw, 83.6 GB) : AIME25 100.00, GPQA-Diamond 92.93 against 91.92 for BF16 , LiveCodeBench v6 86.86 against 87.43. Task average 93.26 against 93.12. IQ3_XXS (3.00 bpw, 75.8 GB) : AIME25 100.00, GPQA-Diamond 91.41, LiveCodeBench v6 86.29 Q2_0 (2.40 bpw, 66.4 GB) : zero-shot average 78.00, above the BF16 value of 76.94",
-   "score": 5,
+   "score": 4,
    "published": "2026-09-29T08:40:34+00:00",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.56,
-    "learning_value": 2.76,
-    "hands_on": 1.56
+    "difficulty": 1.53,
+    "learning_value": 2.72,
+    "hands_on": 1.57
+   }
+  },
+  {
+   "source": "r/LocalLLaMA",
+   "title": "First few days of qwen3.8-flash-next on 4x R9700 - it's been really interesting so far",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsxgbo/first_few_days_of_qwen38flashnext_on_4x_r9700_its/",
+   "snippet": "Here's a metric dashboard giving an idea of the last few days. Been testing with a variety of different agentic coding use-cases, mostly using a pi harness. qwen3.8-flash-next has seriously exceeded my expectations (used https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8 ) Both speed and quality have surprised me, given that I can get 3-5 concurrent streams going with ~100t/s gen each, and single stream easily gets to 150+t/s. Prefill is 10k+t/s submitted by /u/pubudeux [link] [comments]",
+   "score": 3,
+   "published": "2026-09-29T01:52:32+00:00",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.94,
+    "difficulty": 0.81,
+    "learning_value": 1.15,
+    "hands_on": 1.86
+   }
+  },
+  {
+   "source": "r/LocalLLaMA",
+   "title": "Debugging PCIe Link Retraining on an x8/x8 Splitter with Two RTX 3090s",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsscrw/debugging_pcie_link_retraining_on_an_x8x8/",
+   "snippet": "submitted by /u/bolts98 [link] [comments]",
+   "score": 2,
+   "published": "2026-09-28T22:02:16+00:00",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.83,
+    "difficulty": 0.66,
+    "learning_value": 0.94,
+    "hands_on": 0.38
    }
   },
   {
@@ -1322,29 +1292,14 @@
    "title": "Do you need some extra memory on your DGX Spark?",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wt1ees/do_you_need_some_extra_memory_on_your_dgx_spark/",
    "snippet": "​ I created this repo to help the DGX Spark users that have a spare 10-24 GB GPU at home to squeeze some extra memory out of a single Spark or a Sparks cluster. It moves the spec-decode draft model off your Sparks onto that GPU: the freed GB of memory can be used for extra context, or better quant quality. Supports both TCP and RDMA, shipped as eugr-vllm compatible mods: https://github.com/ciprianveg/gb10-vllm/tree/main/remote-dspark submitted by /u/ciprianveg [link] [comments]",
-   "score": 2,
+   "score": 1,
    "published": "2026-09-29T05:13:50+00:00",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.02,
+    "difficulty": 1.06,
     "learning_value": 1.95,
-    "hands_on": 1.94
-   }
-  },
-  {
-   "source": "r/LocalLLaMA",
-   "title": "Searching for 3.8 35B: Qwen3.6-35B-A3B (Testing 5 Finetunes vs. Base)",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wss436/searching_for_38_35b_qwen3635ba3b_testing_5/",
-   "snippet": "TL;DR -- You should probably just use base Qwen3.6-35B, as only Occamy-1.0 is competitive with it. Tiel is a major let-down, worse than Ornith. KAT surprises (good), Nex surprises (bad). This post is long. Sorry, lots to cover. I think we all want to see a next-generation small MoE from the Qwen team to replace 3.6-35B in our workflows. This model is a perfect fit for smaller gmaing laptops and mid-tier rigs. It sucks that Qwen seems to have abandoned this model, but at least there are fine-tunes that improve upon it... right? Well... maybe not. I ran benchmarks on the 3.6-35B-A3B base model, as well as five finetuunes: Occamy-1.0, Ornith-1.5, KAT-Coder-V2.5-Dev, Tiel-Coder, and Nex-N2.5-mini, and the results are quite surprising. I chose Aider Polyglot for a few reasons: it's an agentic coding benchmark I can run in ~10 hourso on my machine, it's not actively post-trained on by any of these models, and it provides a lot of useful information along with the raw accuracy scores. This includes: first-try and retry pass rates, token counts, solve times, and how well-formed the output diffs are. Here's the table: model First-try pass Retry pass tokens sec/case tok/solve well-formed diff Qwen3.6-35B-A3B BASE (STOCK template) 37.4% 71.0% 8650 285 14.1K 96.3% Occamy-1.0-35B-A3B (STOCK template) 29.0% 70.1% 6801 285 17.2K 86.9% Occamy-1.0-35B-A3B (froggeric medium) 30.8% 69.2% 6009 233 16.8K 94.4% Occamy-1.0-35B-A3B (froggeric, xhigh) 27.1% 67.3% 8631 310 20.0K 91.6% Ornith-1.5-35B-A",
-   "score": 1,
-   "published": "2026-09-28T21:52:28+00:00",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 0.98,
-    "learning_value": 1.81,
-    "hands_on": 1.07
+    "hands_on": 1.93
    }
   },
   {
@@ -1357,8 +1312,8 @@
    "judge": {
     "injection": 0.03,
     "has_substance": 0.98,
-    "difficulty": 0.41,
-    "learning_value": 2.45,
+    "difficulty": 0.42,
+    "learning_value": 2.49,
     "hands_on": 1.49
    }
   },
@@ -1372,9 +1327,9 @@
    "judge": {
     "injection": 0.04,
     "has_substance": 0.96,
-    "difficulty": 0.03,
-    "learning_value": 2.14,
-    "hands_on": 1.85
+    "difficulty": 0.04,
+    "learning_value": 2.26,
+    "hands_on": 1.86
    }
   },
   {
@@ -1388,23 +1343,8 @@
     "injection": 0.02,
     "has_substance": 0.98,
     "difficulty": 0.01,
-    "learning_value": 1.77,
-    "hands_on": 1.59
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "rohitg00/ai-engineering-from-scratch",
-   "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-   "snippet": "Learn it. Build it. Ship it for others. README: Read in your language: Español · Français · Português · Deutsch · Italiano · 简体中文 · 日本語 · 한국어 · हिन्दी · العربية · Русский · Türkçe Translated landing pages, committed to the repo. English is canonical; lesson pages are machine-translated on the translations branch. See docs/i18n.md . ## From the creator of [Agent Memory - #1 Persistent memory ⭐](https://github.com/rohitg00/agentmemory) which naturally works with any agents or chat assistants. ```text ░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒ ``` > **84% of students already use AI tools. Only 18% feel prepared to use them > professionally.** This curriculum closes that gap. > > 523 lessons. 20 phases. ~342 hours. Python, TypeScript, Rust, Julia. Every lesson ships > a reusable artifact: a prompt, a skill, an agent, an MCP server. Free, open source, MIT. > > You don't just learn AI. You build it. End-to-end. By hand. 114,584 readers · 181,995 page views in the last 30 days · as of 2026-08-29 ## Start here: choose what you want to build You do not need to scan 523 lessons before beginning. Pick one goal. Each link opens the same curriculum on GitHub or the website, and both versions use the same lesson code. | Your goal | Learn on GitHub | Learn on the website | |---|---|---| | I am new and want the complete foundation | [Phase 0: Setup and Tooling](phases/00-setup-and-tooling/) | [Dev Environment](https://aiengineeringfromscratch.c",
-   "score": 855,
-   "published": "",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.95,
-    "difficulty": 0.66,
-    "learning_value": 2.91,
-    "hands_on": 1.92
+    "learning_value": 1.75,
+    "hands_on": 1.62
    }
   },
   {
@@ -1415,11 +1355,11 @@
    "score": 822,
    "published": "",
    "judge": {
-    "injection": 0.02,
+    "injection": 0.03,
     "has_substance": 0.98,
-    "difficulty": 0.6,
+    "difficulty": 0.62,
     "learning_value": 2.56,
-    "hands_on": 1.86
+    "hands_on": 1.83
    }
   },
   {
@@ -1433,8 +1373,23 @@
     "injection": 0.02,
     "has_substance": 0.98,
     "difficulty": 0.02,
-    "learning_value": 2.49,
-    "hands_on": 1.88
+    "learning_value": 2.48,
+    "hands_on": 1.87
+   }
+  },
+  {
+   "source": "Google Research",
+   "title": "How Diffusion Controller unifies and simplifies AI image generation",
+   "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+   "snippet": "Algorithms & Theory",
+   "score": 0,
+   "published": "2026-09-29T18:38:27+00:00",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.82,
+    "difficulty": 1.59,
+    "learning_value": 1.17,
+    "hands_on": 0.34
    }
   },
   {
@@ -1445,11 +1400,11 @@
    "score": 0,
    "published": "2026-09-29T15:30:38+00:00",
    "judge": {
-    "injection": 0.02,
+    "injection": 0.01,
     "has_substance": 0.82,
-    "difficulty": 0.46,
-    "learning_value": 1.03,
-    "hands_on": 0.74
+    "difficulty": 0.48,
+    "learning_value": 1.07,
+    "hands_on": 0.72
    }
   },
   {
@@ -1460,11 +1415,11 @@
    "score": 0,
    "published": "2026-09-29T13:07:00+00:00",
    "judge": {
-    "injection": 0.03,
-    "has_substance": 0.65,
-    "difficulty": 0.73,
-    "learning_value": 1.34,
-    "hands_on": 0.24
+    "injection": 0.02,
+    "has_substance": 0.61,
+    "difficulty": 0.7,
+    "learning_value": 1.31,
+    "hands_on": 0.21
    }
   },
   {
@@ -1478,8 +1433,8 @@
     "injection": 0.03,
     "has_substance": 0.9,
     "difficulty": 0.12,
-    "learning_value": 1.87,
-    "hands_on": 0.42
+    "learning_value": 1.9,
+    "hands_on": 0.43
    }
   },
   {
@@ -1490,11 +1445,11 @@
    "score": 0,
    "published": "2026-09-29T16:27:33+00:00",
    "judge": {
-    "injection": 0.03,
+    "injection": 0.04,
     "has_substance": 0.85,
-    "difficulty": 0.1,
-    "learning_value": 1.31,
-    "hands_on": 0.52
+    "difficulty": 0.07,
+    "learning_value": 1.3,
+    "hands_on": 0.53
    },
    "related_to": [
     "Prompt engineering fundamentals for Amazon Quick"
@@ -1510,7 +1465,7 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.95,
-    "difficulty": 0.54,
+    "difficulty": 0.55,
     "learning_value": 2.03,
     "hands_on": 1.0
    }
@@ -1524,10 +1479,25 @@
    "published": "2026-09-29T15:55:17+00:00",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.91,
-    "difficulty": 0.1,
-    "learning_value": 1.58,
-    "hands_on": 0.73
+    "has_substance": 0.92,
+    "difficulty": 0.09,
+    "learning_value": 1.57,
+    "hands_on": 0.76
+   }
+  },
+  {
+   "source": "AWS ML",
+   "title": "Grok 4.7 is now available on Amazon Bedrock",
+   "url": "https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/",
+   "snippet": "xAI (xAI's Grok 4.7 is now available on Amazon Bedrock: a frontier model for coding, long-running agents, and knowledge work. It offers a 500K token context window and four configurable reasoning effort levels, reachable through the Responses, Chat Completions, and Converse APIs.)",
+   "score": 0,
+   "published": "2026-09-28T22:13:16+00:00",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.93,
+    "difficulty": 0.07,
+    "learning_value": 0.91,
+    "hands_on": 0.92
    }
   },
   {
@@ -1540,9 +1510,9 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 0.73,
-    "learning_value": 2.4,
-    "hands_on": 1.25
+    "difficulty": 0.75,
+    "learning_value": 2.38,
+    "hands_on": 1.22
    },
    "related_to": [
     "Build real-time voice applications with vLLM-Omni on SageMaker AI – Part 1"
@@ -1558,8 +1528,8 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 0.43,
-    "learning_value": 2.78,
+    "difficulty": 0.4,
+    "learning_value": 2.8,
     "hands_on": 1.68
    }
   },
@@ -1571,11 +1541,11 @@
    "score": 0,
    "published": "2026-09-28T15:49:04+00:00",
    "judge": {
-    "injection": 0.02,
+    "injection": 0.01,
     "has_substance": 0.97,
-    "difficulty": 0.21,
-    "learning_value": 2.62,
-    "hands_on": 0.95
+    "difficulty": 0.24,
+    "learning_value": 2.63,
+    "hands_on": 0.96
    }
   }
  ],
@@ -1584,14 +1554,14 @@
    "source": "Hacker News",
    "title": "It's Time to Investigate the AI Labs",
    "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
-   "snippet": "Over the last several months, the two leading frontier AI labs have shown some brazen behavior. It started with a series of​ carefully planned announcements​ ... Read more (HN discussion: https://news.ycombinator.com/item?id=49883471 (240 comments))",
-   "score": 571,
+   "snippet": "Over the last several months, the two leading frontier AI labs have shown some brazen behavior. It started with a series of​ carefully planned announcements​ ... Read more (HN discussion: https://news.ycombinator.com/item?id=49883471 (246 comments))",
+   "score": 584,
    "published": "2026-09-28T19:53:35Z",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.05,
-    "difficulty": 0.06,
-    "learning_value": 0.19,
+    "difficulty": 0.05,
+    "learning_value": 0.17,
     "hands_on": 0.01
    },
    "reason": "no substance 0.05"
@@ -1600,110 +1570,158 @@
    "source": "Hacker News",
    "title": "AI companies in race to demonstrate their model most threatening to humanity",
    "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/",
-   "snippet": "In the midst of growing fears that artificial intelligence is advancing at such a rate that it may compel itself to end all life on earth, AI giants from OpenAI to Anthropic are switching up their … (HN discussion: https://news.ycombinator.com/item?id=49875148 (391 comments))",
+   "snippet": "In the midst of growing fears that artificial intelligence is advancing at such a rate that it may compel itself to end all life on earth, AI giants from OpenAI to Anthropic are switching up their … (HN discussion: https://news.ycombinator.com/item?id=49875148 (392 comments))",
    "score": 434,
    "published": "2026-09-28T08:35:40Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.05,
     "difficulty": 0.02,
-    "learning_value": 0.26,
+    "learning_value": 0.27,
     "hands_on": 0.02
    },
    "reason": "no substance 0.05"
   },
   {
    "source": "Hacker News",
+   "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+   "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49896586 (315 comments)",
+   "score": 395,
+   "published": "2026-09-29T17:06:45Z",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.41,
+    "difficulty": 0.16,
+    "learning_value": 0.54,
+    "hands_on": 0.28
+   },
+   "reason": "no substance 0.41"
+  },
+  {
+   "source": "Hacker News",
    "title": "The problem is not AI code, but not knowing about system architecture or intent",
    "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
-   "snippet": "If we think writing code is dead, and AI is generating all codebases, I still think the bigger problem is people or full teams not knowing anything anymore about the system... (HN discussion: https://news.ycombinator.com/item?id=49880312 (237 comments))",
-   "score": 375,
+   "snippet": "If we think writing code is dead, and AI is generating all codebases, I still think the bigger problem is people or full teams not knowing anything anymore about the system... (HN discussion: https://news.ycombinator.com/item?id=49880312 (238 comments))",
+   "score": 377,
    "published": "2026-09-28T16:11:42Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.05,
     "difficulty": 0.01,
     "learning_value": 0.35,
-    "hands_on": 0.01
+    "hands_on": 0.02
    },
    "reason": "no substance 0.05"
   },
   {
    "source": "Hacker News",
-   "title": "Nvidia wants to put a watchdog chip next to every AI agent",
-   "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
-   "snippet": "Nvidia says its new software could have prevented OpenAI's Hugging Face incident. (HN discussion: https://news.ycombinator.com/item?id=49879883 (279 comments))",
-   "score": 215,
-   "published": "2026-09-28T15:46:36Z",
+   "title": "Dots: Always-on agents",
+   "url": "https://openai.com/index/introducing-dots/",
+   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49896604 (175 comments)",
+   "score": 284,
+   "published": "2026-09-29T17:07:57Z",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.56,
-    "difficulty": 0.35,
-    "learning_value": 0.86,
-    "hands_on": 0.29
+    "has_substance": 0.53,
+    "difficulty": 0.25,
+    "learning_value": 0.83,
+    "hands_on": 0.17
    },
-   "reason": "low learning value 0.86"
+   "reason": "low learning value 0.83"
+  },
+  {
+   "source": "Hacker News",
+   "title": "DraftKings Is Using AI to Behaviorally Target Chronic Gamblers",
+   "url": "https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising",
+   "snippet": "Online sports betting company DraftKings is using AI to target customers who are most likely to place losing bets and respond to gambling promotions. This kind of targeting is a form of online behavioral advertising, which is when companies personalize the ads they show you based on the data they’... (HN discussion: https://news.ycombinator.com/item?id=49896050 (175 comments))",
+   "score": 254,
+   "published": "2026-09-29T16:30:48Z",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.3,
+    "difficulty": 0.0,
+    "learning_value": 0.94,
+    "hands_on": 0.07
+   },
+   "reason": "no substance 0.30"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Nvidia wants to put a watchdog chip next to every AI agent",
+   "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+   "snippet": "Nvidia says its new software could have prevented OpenAI's Hugging Face incident. (HN discussion: https://news.ycombinator.com/item?id=49879883 (286 comments))",
+   "score": 218,
+   "published": "2026-09-28T15:46:36Z",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.57,
+    "difficulty": 0.32,
+    "learning_value": 0.84,
+    "hands_on": 0.28
+   },
+   "reason": "low learning value 0.84"
   },
   {
    "source": "Hacker News",
    "title": "What would a serious AI product look like?",
    "url": "https://blog.glyph.im/2026/09/serious-ai-product.html",
-   "snippet": "Deciphering Glyph, the blog of Glyph Lefkowitz. (HN discussion: https://news.ycombinator.com/item?id=49876148 (76 comments))",
+   "snippet": "Deciphering Glyph, the blog of Glyph Lefkowitz. (HN discussion: https://news.ycombinator.com/item?id=49876148 (78 comments))",
    "score": 166,
    "published": "2026-09-28T11:02:12Z",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.18,
-    "difficulty": 0.52,
-    "learning_value": 0.87,
-    "hands_on": 0.1
+    "has_substance": 0.17,
+    "difficulty": 0.51,
+    "learning_value": 0.86,
+    "hands_on": 0.08
    },
-   "reason": "no substance 0.18"
+   "reason": "no substance 0.17"
   },
   {
    "source": "Hacker News",
    "title": "Claude partial outage",
    "url": "https://status.claude.com/incidents/4xvtc2gnq73l",
-   "snippet": "Claude's Status Page - Elevated errors on claude.ai, Claude Code, Claude Cowork and the Claude API. (HN discussion: https://news.ycombinator.com/item?id=49893876 (134 comments))",
-   "score": 162,
+   "snippet": "Claude's Status Page - Elevated errors on claude.ai, Claude Code, Claude Cowork and the Claude API. (HN discussion: https://news.ycombinator.com/item?id=49893876 (139 comments))",
+   "score": 165,
    "published": "2026-09-29T14:25:41Z",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.27,
+    "has_substance": 0.29,
     "difficulty": 0.0,
-    "learning_value": 0.57,
-    "hands_on": 0.18
+    "learning_value": 0.54,
+    "hands_on": 0.16
    },
-   "reason": "no substance 0.27"
+   "reason": "no substance 0.29"
   },
   {
    "source": "Hacker News",
    "title": "Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions",
    "url": "https://appleinsider.com/articles/26/09/28/metas-new-ai-agent-blatantly-ignores-users-permissions",
-   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49893709 (29 comments)",
-   "score": 137,
+   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49893709 (37 comments)",
+   "score": 146,
    "published": "2026-09-29T14:15:24Z",
    "judge": {
-    "injection": 0.03,
-    "has_substance": 0.36,
-    "difficulty": 0.02,
-    "learning_value": 0.63,
+    "injection": 0.02,
+    "has_substance": 0.35,
+    "difficulty": 0.03,
+    "learning_value": 0.66,
     "hands_on": 0.09
    },
-   "reason": "no substance 0.36"
+   "reason": "no substance 0.35"
   },
   {
    "source": "Hacker News",
    "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
    "url": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
-   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49886005 (128 comments)",
-   "score": 122,
+   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49886005 (133 comments)",
+   "score": 128,
    "published": "2026-09-28T23:40:59Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.06,
-    "difficulty": 0.05,
-    "learning_value": 0.79,
+    "difficulty": 0.04,
+    "learning_value": 0.81,
     "hands_on": 0.02
    },
    "reason": "no substance 0.06"
@@ -1712,17 +1730,17 @@
    "source": "Hacker News",
    "title": "OpenAI still doesn't seem to have a handle on all of its rogue AI activity",
    "url": "https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/",
-   "snippet": "On Friday, OpenAI published a new site devoted to “misalignment reports” and the breadth of the incidents is alarming. (HN discussion: https://news.ycombinator.com/item?id=49881484 (110 comments))",
+   "snippet": "On Friday, OpenAI published a new site devoted to “misalignment reports” and the breadth of the incidents is alarming. (HN discussion: https://news.ycombinator.com/item?id=49881484 (111 comments))",
    "score": 107,
    "published": "2026-09-28T17:33:34Z",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.17,
-    "difficulty": 0.11,
-    "learning_value": 0.87,
-    "hands_on": 0.06
+    "has_substance": 0.15,
+    "difficulty": 0.12,
+    "learning_value": 0.89,
+    "hands_on": 0.04
    },
-   "reason": "no substance 0.17"
+   "reason": "no substance 0.15"
   },
   {
    "source": "Hacker News",
@@ -1734,75 +1752,59 @@
    "judge": {
     "injection": 0.02,
     "has_substance": 0.06,
-    "difficulty": 0.31,
-    "learning_value": 0.64,
+    "difficulty": 0.26,
+    "learning_value": 0.63,
     "hands_on": 0.01
    },
    "reason": "no substance 0.06"
   },
   {
    "source": "Hacker News",
+   "title": "OpenAI: Tomorrow we are re-opening the Pro $200 subscription",
+   "url": "https://twitter.com/thsottiaux/status/2104823812042940713",
+   "snippet": "Hi, Tomorrow we are re-opening the Pro $200 subscriptions to new subscribers, but together with it we are also changing how we calculate the usage for it. In effect, if you do the math, it will net out at half the dollar in API spend compared to the old Pro $200 plan. Now that it's said, let me … (HN discussion: https://news.ycombinator.com/item?id=49889306 (88 comments))",
+   "score": 73,
+   "published": "2026-09-29T07:07:53Z",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.17,
+    "difficulty": 0.02,
+    "learning_value": 0.39,
+    "hands_on": 0.13
+   },
+   "reason": "no substance 0.17"
+  },
+  {
+   "source": "Hacker News",
    "title": "Jensen Huang says AI distillation is 'competition.'",
    "url": "https://www.cnbc.com/2026/09/28/nvidias-jensen-huang-ai-distillation-china.html",
-   "snippet": "Nvidia CEO Jensen Huang argued that AI model distillation is \"competition\". U.S. Treasury Secretary Scott Bessent has called it \"theft.\" (HN discussion: https://news.ycombinator.com/item?id=49879032 (80 comments))",
+   "snippet": "Nvidia CEO Jensen Huang argued that AI model distillation is \"competition\". U.S. Treasury Secretary Scott Bessent has called it \"theft.\" (HN discussion: https://news.ycombinator.com/item?id=49879032 (81 comments))",
    "score": 72,
    "published": "2026-09-28T14:55:34Z",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.25,
-    "difficulty": 0.39,
-    "learning_value": 0.35,
+    "has_substance": 0.22,
+    "difficulty": 0.46,
+    "learning_value": 0.38,
     "hands_on": 0.02
    },
-   "reason": "no substance 0.25"
-  },
-  {
-   "source": "Hacker News",
-   "title": "OpenAI: Tomorrow we are re-opening the Pro $200 subscription",
-   "url": "https://twitter.com/thsottiaux/status/2104823812042940713",
-   "snippet": "Hi, Tomorrow we are re-opening the Pro $200 subscriptions to new subscribers, but together with it we are also changing how we calculate the usage for it. In effect, if you do the math, it will net out at half the dollar in API spend compared to the old Pro $200 plan. Now that it's said, let me … (HN discussion: https://news.ycombinator.com/item?id=49889306 (82 comments))",
-   "score": 68,
-   "published": "2026-09-29T07:07:53Z",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.16,
-    "difficulty": 0.01,
-    "learning_value": 0.34,
-    "hands_on": 0.14
-   },
-   "reason": "no substance 0.16"
+   "reason": "no substance 0.22"
   },
   {
    "source": "Hacker News",
    "title": "OpenAI Says It Will Not Release Newest A.I. Model Over Safety Concerns",
    "url": "https://www.nytimes.com/2026/09/28/technology/openai-astra-safety.html",
-   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49886416 (99 comments)",
-   "score": 59,
+   "snippet": "HN discussion: https://news.ycombinator.com/item?id=49886416 (101 comments)",
+   "score": 60,
    "published": "2026-09-29T00:34:27Z",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.08,
     "difficulty": 0.01,
-    "learning_value": 0.65,
-    "hands_on": 0.02
-   },
-   "reason": "no substance 0.08"
-  },
-  {
-   "source": "Hacker News",
-   "title": "We Can't Let Enormous Weirdos Regulate AI",
-   "url": "https://little-flying-robots.ghost.io/why-we-cant-let-enormous-weirdos-regulate-ai/",
-   "snippet": "Imagine if instead of regulating drones via the standard lengthy, boring, and bureaucratic process - which we did - we instead decided, in the name of fostering all-important American drone innovation, to avoid regulating drones meaningfully at all. Also, imagine that we did not pay well-known aviation safety experts, aeronautical (HN discussion: https://news.ycombinator.com/item?id=49880968 (9 comments))",
-   "score": 46,
-   "published": "2026-09-28T16:55:50Z",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.03,
-    "difficulty": 0.0,
-    "learning_value": 0.16,
+    "learning_value": 0.67,
     "hands_on": 0.01
    },
-   "reason": "no substance 0.03"
+   "reason": "no substance 0.08"
   },
   {
    "source": "r/MachineLearning",
@@ -1814,8 +1816,8 @@
    "judge": {
     "injection": 0.01,
     "has_substance": 0.06,
-    "difficulty": 0.09,
-    "learning_value": 0.03,
+    "difficulty": 0.08,
+    "learning_value": 0.05,
     "hands_on": 0.06
    },
    "reason": "no substance 0.06"
@@ -1825,16 +1827,16 @@
    "title": "What are the trending topics in medical imaging? [D]",
    "url": "https://www.reddit.com/r/MachineLearning/comments/1wsockf/what_are_the_trending_topics_in_medical_imaging_d/",
    "snippet": "Hello everyone, I hope you're doing well. I'm a new PhD candidate, and my thesis is about the meta-learning paradigm in medical imaging. Right now, I don't have a specific problem to work on, and my supervisor told me to explore the field and find one myself. I've done some research and a literature review so far. I've learned about different meta-learning and few-shot learning techniques, read about histopathology and other medical imaging datasets, and looked a bit into foundation model adaptation and domain generalization. I also came across several benchmarks, but I haven't found one that I find particularly interesting. On the other hand, the MICCAI challenges caught my attention much more, and I'm wondering whether choosing one of them as a starting point would be a good idea. I'd like to know what the more promising or fertile research directions in medical imaging are right now, especially ones that could be relevant to tackling the limited data problem. I would really appreciate any suggestions or feedback. Thank you in advance. submitted by /u/dinoucs [link] [comments]",
-   "score": 14,
+   "score": 13,
    "published": "2026-09-28T19:30:56+00:00",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.47,
-    "difficulty": 1.69,
-    "learning_value": 0.82,
+    "has_substance": 0.49,
+    "difficulty": 1.68,
+    "learning_value": 0.79,
     "hands_on": 0.07
    },
-   "reason": "no substance 0.47"
+   "reason": "no substance 0.49"
   },
   {
    "source": "r/MachineLearning",
@@ -1845,12 +1847,12 @@
    "published": "2026-09-29T09:02:43+00:00",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.04,
-    "difficulty": 0.16,
-    "learning_value": 0.31,
+    "has_substance": 0.05,
+    "difficulty": 0.13,
+    "learning_value": 0.3,
     "hands_on": 0.02
    },
-   "reason": "no substance 0.04"
+   "reason": "no substance 0.05"
   },
   {
    "source": "r/MachineLearning",
@@ -1877,28 +1879,12 @@
    "published": "2026-09-29T13:18:06+00:00",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.18,
-    "difficulty": 0.24,
-    "learning_value": 0.8,
+    "has_substance": 0.19,
+    "difficulty": 0.28,
+    "learning_value": 0.85,
     "hands_on": 0.41
    },
-   "reason": "no substance 0.18"
-  },
-  {
-   "source": "r/MachineLearning",
-   "title": "Which coding tool should I buy? Claudepro / cursor or which one for 20$ [D]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1wtar8w/which_coding_tool_should_i_buy_claudepro_cursor/",
-   "snippet": "Hey all, i am an aspiring Al and ML engineer. In 4th year amid my placement season and the recent ML hackthon i have decided i am way behind the crowd and competition if I dont get one of this subscription. Many of them told me claude pro is worth it and stuff. For all the stuff I am doing till now I use claude free and I keep prompting in a fear of reaching limit nevertheless its code and debugging works well for me. So should I go for its pro? My main job is for ML research, coding and building good projects.. These days I see this grok bots add too. And ppl say cursor gives access to more models, now for 20$ which is the smartest one and which i can work uninterrupted ly is what I want...tell me guys which do you use and which one u are gonna suggest me! submitted by /u/Severe_Reality991 [link] [comments]",
-   "score": 7,
-   "published": "2026-09-29T13:54:39+00:00",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.63,
-    "difficulty": 0.0,
-    "learning_value": 0.13,
-    "hands_on": 0.03
-   },
-   "reason": "low learning value 0.13"
+   "reason": "no substance 0.19"
   },
   {
    "source": "r/LocalLLaMA",
@@ -1925,74 +1911,106 @@
    "published": "2026-09-29T14:48:03+00:00",
    "judge": {
     "injection": 0.09,
-    "has_substance": 0.35,
-    "difficulty": 0.23,
-    "learning_value": 0.45,
+    "has_substance": 0.38,
+    "difficulty": 0.24,
+    "learning_value": 0.48,
     "hands_on": 0.07
    },
-   "reason": "no substance 0.35"
+   "reason": "no substance 0.38"
+  },
+  {
+   "source": "r/LocalLLaMA",
+   "title": "Anthropic just dropped the greatest advertisement for GLM ever.",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wth4iz/anthropic_just_dropped_the_greatest_advertisement/",
+   "snippet": "Like.. yea bro, I knew GLM was cool. Now everyone does. submitted by /u/BannedGoNext [link] [comments]",
+   "score": 13,
+   "published": "2026-09-29T17:55:48+00:00",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.12,
+    "difficulty": 0.26,
+    "learning_value": 0.02,
+    "hands_on": 0.07
+   },
+   "reason": "no substance 0.12"
   },
   {
    "source": "r/LocalLLaMA",
    "title": "Qwen next 3.8 and 3.8 27b Vs Sonnet 5.5 low and Sonnet 5.5 medium.",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsq6r5/qwen_next_38_and_38_27b_vs_sonnet_55_low_and/",
    "snippet": "Six months ago, a result like this was unthinkable. But now we can say it loud and clear: local models are at the cutting edge, and the gap of just a few months has been confirmed. Personally, I use Qwen-Next 3.8 for complex tasks; today, GPT-Sol-6-High was messing up a project, but Qwen-Next got it back on track. I consider it a reliable benchmark. What’s your take? submitted by /u/LegacyRemaster [link] [comments]",
-   "score": 13,
+   "score": 12,
    "published": "2026-09-28T20:38:40+00:00",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.72,
-    "difficulty": 0.21,
-    "learning_value": 0.13,
-    "hands_on": 0.8
+    "has_substance": 0.74,
+    "difficulty": 0.22,
+    "learning_value": 0.14,
+    "hands_on": 0.76
    },
-   "reason": "low learning value 0.13"
+   "reason": "low learning value 0.14"
   },
   {
    "source": "r/LocalLLaMA",
    "title": "Reflection 70B was released two years ago (September 2024)",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wt7e94/reflection_70b_was_released_two_years_ago/",
    "snippet": "You may think that jev, OpenClaw or TurboQuant are super cool , but actually the coolest LLM invention happened two years ago As we all know, the best source of reliable information about LLMs is YouTube: https://preview.redd.it/4tv0ctbwyfsh1.png?width=2544&format=png&auto=webp&s=46d5e37a8f69372cbbb55d6d4ab22021e94ca285 Back in September 2024, Reflection 70B appeared out of nowhere and was announced as an open-source model that supposedly destroyed GPT-4o There was only one small problem. People downloaded it. And tested it :( https://preview.redd.it/kamhrp9izfsh1.png?width=1514&format=png&auto=webp&s=207d61b01898f579c8d9d2469e85dc710b5aa3a8 It turned out that Reflection 70B was basically a Llama 3.1 https://preview.redd.it/ghmof4l50gsh1.png?width=1524&format=png&auto=webp&s=049b9adf5ac30be6d01951da07c558dd21745613 but at the end the mystery was solved https://preview.redd.it/44eb3jw90gsh1.png?width=1530&format=png&auto=webp&s=c3f53eeba1dc0d126f848ed24e4b782ae8ceb003 Let this be a moment of reflection on the current hypes in LocalLLaMA. great summary by Maziyar PANAHI https://x.com/MaziyarPanahi/status/1838559480658710982 submitted by /u/jacek2023 [link] [comments]",
-   "score": 10,
+   "score": 9,
    "published": "2026-09-29T11:18:20+00:00",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.54,
-    "difficulty": 0.31,
-    "learning_value": 0.58,
-    "hands_on": 0.88
+    "has_substance": 0.55,
+    "difficulty": 0.3,
+    "learning_value": 0.64,
+    "hands_on": 0.91
    },
-   "reason": "low learning value 0.58"
+   "reason": "low learning value 0.64"
   },
   {
    "source": "r/LocalLLaMA",
-   "title": "I am concerned about all these disparate hard forks that target specific architectures instead of opening a PR against upstream",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsn59w/i_am_concerned_about_all_these_disparate_hard/",
-   "snippet": "Other than the obvious self promotion, is there a practical reason people do this that I am missing? There's dozens of llamacpp forks with silly names that are supposedly \"optimized\" for this or that specific GPU and seem to have zero intention to merge into upstream. Am I missing the real reasons why this happens so often? Why do people think it's OK to do this? In my experience in the open source community this is generally frowned upon. I don't know if it's just a me problem that this kind of thing puts me off so much. I am usually quite grateful for PR feedback and conscientious about the code I put out there; I take pride in submitting high quality code that meets or exceeds the standards of a given project. Of course there is nothing ethically wrong with hard forks or taking shortcuts if you find the collaborative process cumbersome, but personally I wouldn't promote my fork in such cases, let alone go out of my way to add custom branding with a Reddit announcement post etc. since the effort required to do so seems roughly equivalent to the effort required to meet the contributor standards. In contrast, many of the authors of these forks seem very eager to have others adopt their rebranded fork for production use cases. There just seems to be a big disconnect, idk. Edit: some great discussion in this thread, thanks to all who responded. Consensus seems to be that (excluding the obvious low-effort engagement bait forks) the base project has to meet many compatibility req",
-   "score": 9,
-   "published": "2026-09-28T18:47:59+00:00",
+   "title": "GLM-5.3 and the Spread of Advanced Cyber Capabilities \\ Anthropic",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wtg0vd/glm53_and_the_spread_of_advanced_cyber/",
+   "snippet": "submitted by /u/brown2green [link] [comments]",
+   "score": 8,
+   "published": "2026-09-29T17:14:32+00:00",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.14,
-    "difficulty": 0.51,
-    "learning_value": 0.42,
-    "hands_on": 0.09
+    "injection": 0.02,
+    "has_substance": 0.41,
+    "difficulty": 0.47,
+    "learning_value": 0.36,
+    "hands_on": 0.16
    },
-   "reason": "no substance 0.14"
+   "reason": "no substance 0.41"
   },
   {
    "source": "r/LocalLLaMA",
    "title": "Can we get some quality control on all these model perf posts?",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsq0pa/can_we_get_some_quality_control_on_all_these/",
    "snippet": "Too many hyperactive amateurs are coming in here with \"1b model at 832843tok/s!\" and hardly any of them have all the info necessary for local runners to evaluate. We need context ladders with perplexity/KLD, hardware specs, model params and quant(s), runtime, tuned runtime parameters, basically everything we need to reproduce locally if we can match the entire setup. To say nothing of what the model is even good at in the first place if it's not a well-known model. The goal is to get perf numbers that show they meet a certain quality bar. I don't care if I get 8324834 tok/s if it's all garbage. Can we start filtering the hyperactive amateur perf posts please? It's getting really frustrating seeing all these posts of models and wading through info just to see that it doesn't test with anything but an empty context or doesn't say anything about quant or platform. We need to define some rigor and apply it to this place, or it will remain like most ai-oriented subs and get continually choked with slop. submitted by /u/tossit97531 [link] [comments]",
-   "score": 8,
+   "score": 7,
    "published": "2026-09-28T20:32:10+00:00",
    "judge": {
     "injection": 0.04,
+    "has_substance": 0.13,
+    "difficulty": 0.82,
+    "learning_value": 0.61,
+    "hands_on": 0.11
+   },
+   "reason": "no substance 0.13"
+  },
+  {
+   "source": "r/LocalLLaMA",
+   "title": "I am concerned about all these disparate hard forks that target specific architectures instead of opening a PR against upstream",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsn59w/i_am_concerned_about_all_these_disparate_hard/",
+   "snippet": "Other than the obvious self promotion, is there a practical reason people do this that I am missing? There's dozens of llamacpp forks with silly names that are supposedly \"optimized\" for this or that specific GPU and seem to have zero intention to merge into upstream. Am I missing the real reasons why this happens so often? Why do people think it's OK to do this? In my experience in the open source community this is generally frowned upon. I don't know if it's just a me problem that this kind of thing puts me off so much. I am usually quite grateful for PR feedback and conscientious about the code I put out there; I take pride in submitting high quality code that meets or exceeds the standards of a given project. Of course there is nothing ethically wrong with hard forks or taking shortcuts if you find the collaborative process cumbersome, but personally I wouldn't promote my fork in such cases, let alone go out of my way to add custom branding with a Reddit announcement post etc. since the effort required to do so seems roughly equivalent to the effort required to meet the contributor standards. In contrast, many of the authors of these forks seem very eager to have others adopt their rebranded fork for production use cases. There just seems to be a big disconnect, idk. Edit: some great discussion in this thread, thanks to all who responded. Consensus seems to be that (excluding the obvious low-effort engagement bait forks) the base project has to meet many compatibility req",
+   "score": 6,
+   "published": "2026-09-28T18:47:59+00:00",
+   "judge": {
+    "injection": 0.01,
     "has_substance": 0.12,
-    "difficulty": 0.84,
-    "learning_value": 0.64,
-    "hands_on": 0.12
+    "difficulty": 0.51,
+    "learning_value": 0.39,
+    "hands_on": 0.07
    },
    "reason": "no substance 0.12"
   },
@@ -2001,48 +2019,32 @@
    "title": "Is AI Profitable Yet?",
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wt33uu/is_ai_profitable_yet/",
    "snippet": "submitted by /u/yahbluez [link] [comments]",
-   "score": 4,
+   "score": 5,
    "published": "2026-09-29T06:54:35+00:00",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.06,
-    "difficulty": 0.1,
-    "learning_value": 0.07,
-    "hands_on": 0.05
+    "difficulty": 0.14,
+    "learning_value": 0.06,
+    "hands_on": 0.04
    },
    "reason": "no substance 0.06"
   },
   {
-   "source": "r/LocalLLaMA",
-   "title": "What do you think about ToMoE v2 paper, converting dense model to MoE model at near lossless accuracy? I feel Qwen3.8-27B-A16B or something along those lines would be amazing, though there are architectural hurdles, as well as need folr training data.",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsmsnx/what_do_you_think_about_tomoe_v2_paper_converting/",
-   "snippet": "submitted by /u/jinnyjuice [link] [comments]",
-   "score": 3,
-   "published": "2026-09-28T18:35:00+00:00",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.82,
-    "difficulty": 1.45,
-    "learning_value": 0.59,
-    "hands_on": 0.42
-   },
-   "reason": "low learning value 0.59"
-  },
-  {
    "source": "OpenAI",
-   "title": "How we will do better for Australia",
-   "url": "https://openai.com/index/how-we-will-do-better-for-australia",
-   "snippet": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+   "title": "DevDay 2026 Recap",
+   "url": "https://openai.com/index/devday-2026-recap",
+   "snippet": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
    "score": 0,
-   "published": "2026-09-28T19:00:00+00:00",
+   "published": "2026-09-29T10:00:00+00:00",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.1,
-    "difficulty": 0.0,
-    "learning_value": 0.05,
-    "hands_on": 0.04
+    "has_substance": 0.54,
+    "difficulty": 0.11,
+    "learning_value": 0.72,
+    "hands_on": 0.5
    },
-   "reason": "no substance 0.10"
+   "reason": "low learning value 0.72"
   },
   {
    "source": "OpenAI",
@@ -2053,12 +2055,28 @@
    "published": "2026-09-28T19:00:00+00:00",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.27,
+    "has_substance": 0.29,
     "difficulty": 0.91,
-    "learning_value": 0.95,
-    "hands_on": 0.08
+    "learning_value": 1.0,
+    "hands_on": 0.07
    },
-   "reason": "no substance 0.27"
+   "reason": "no substance 0.29"
+  },
+  {
+   "source": "OpenAI",
+   "title": "How we will do better for Australia",
+   "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+   "snippet": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+   "score": 0,
+   "published": "2026-09-28T19:00:00+00:00",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.09,
+    "difficulty": 0.0,
+    "learning_value": 0.05,
+    "hands_on": 0.04
+   },
+   "reason": "no substance 0.09"
   },
   {
    "source": "OpenAI",
@@ -2069,12 +2087,12 @@
    "published": "2026-09-28T07:00:00+00:00",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.05,
+    "has_substance": 0.04,
     "difficulty": 0.0,
-    "learning_value": 0.39,
-    "hands_on": 0.06
+    "learning_value": 0.38,
+    "hands_on": 0.07
    },
-   "reason": "no substance 0.05"
+   "reason": "no substance 0.04"
   },
   {
    "source": "OpenAI",
@@ -2084,13 +2102,13 @@
    "score": 0,
    "published": "2026-09-28T00:00:00+00:00",
    "judge": {
-    "injection": 0.05,
-    "has_substance": 0.14,
+    "injection": 0.06,
+    "has_substance": 0.13,
     "difficulty": 0.01,
-    "learning_value": 0.09,
+    "learning_value": 0.07,
     "hands_on": 0.02
    },
-   "reason": "no substance 0.14"
+   "reason": "no substance 0.13"
   },
   {
    "source": "OpenAI",
@@ -2101,28 +2119,12 @@
    "published": "2026-09-28T00:00:00+00:00",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.74,
+    "has_substance": 0.73,
     "difficulty": 0.0,
-    "learning_value": 0.25,
+    "learning_value": 0.24,
     "hands_on": 0.41
    },
-   "reason": "low learning value 0.25"
-  },
-  {
-   "source": "AWS ML",
-   "title": "Grok 4.7 is now available on Amazon Bedrock",
-   "url": "https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/",
-   "snippet": "xAI (xAI's Grok 4.7 is now available on Amazon Bedrock: a frontier model for coding, long-running agents, and knowledge work. It offers a 500K token context window and four configurable reasoning effort levels, reachable through the Responses, Chat Completions, and Converse APIs.)",
-   "score": 0,
-   "published": "2026-09-28T22:13:16+00:00",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.05,
-    "learning_value": 0.89,
-    "hands_on": 0.92
-   },
-   "reason": "low learning value 0.89"
+   "reason": "low learning value 0.24"
   },
   {
    "source": "AWS ML",
@@ -2135,10 +2137,10 @@
     "injection": 0.02,
     "has_substance": 0.89,
     "difficulty": 0.01,
-    "learning_value": 0.68,
-    "hands_on": 0.82
+    "learning_value": 0.7,
+    "hands_on": 0.88
    },
-   "reason": "low learning value 0.68"
+   "reason": "low learning value 0.70"
   },
   {
    "source": "Anthropic",
@@ -2148,14 +2150,14 @@
    "score": 0,
    "published": "2026-09-28T03:20:50+00:00",
    "judge": {
-    "injection": 0.02,
-    "has_substance": 0.09,
+    "injection": 0.01,
+    "has_substance": 0.1,
     "difficulty": 0.01,
-    "learning_value": 0.2,
+    "learning_value": 0.17,
     "hands_on": 0.05
    },
-   "reason": "no substance 0.09"
+   "reason": "no substance 0.10"
   }
  ],
- "judge": "judge: 103 kept, 36 dropped (33 pairs checked)"
+ "judge": "judge: 101 kept, 38 dropped (34 pairs checked)"
 }
