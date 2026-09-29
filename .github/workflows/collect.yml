@@ -4,6 +4,7 @@ name: collect
 on:
   schedule:
     - cron: "23 13 * * *"
+    - cron: "47 14 * * *"  # backup: GitHub sometimes drops scheduled runs
   workflow_dispatch:
 permissions:
   contents: write
