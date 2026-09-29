@@ -1,0 +1,68 @@
+{
+ "date": "2026-09-29",
+ "headline": "무료 커리큘럼으로 AI 엔지니어링을 시작하고, 에이전트의 토큰 소비를 예측하고, 멀티 에이전트 토론이 언제 무너지는지까지 살펴봅니다.",
+ "items": [
+  {
+   "title": "rohitg00/ai-engineering-from-scratch",
+   "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+   "source": "GitHub Trending",
+   "categories": [
+    "Open Source & Tools",
+    "Agents"
+   ],
+   "level": "beginner",
+   "headline_ko": "무료 AI 엔지니어링 커리큘럼 공개",
+   "summary": "rohitg00가 만든 ai-engineering-from-scratch는 AI 엔지니어링을 처음부터 끝까지 손으로 익히는 무료 오픈소스 커리큘럼입니다. 523개 레슨과 20개 phase로 구성되어 있고 수학 기초부터 LLM 엔지니어링, 에이전트 엔지니어링, Model Context Protocol(MCP)까지 다루며 Python, TypeScript, Rust, Julia로 실습합니다. 각 레슨은 prompt나 skill, agent, MCP server 같은 실제로 쓸 수 있는 결과물을 남기도록 설계되어 있습니다. 최근 30일 동안 18만 회 넘는 페이지뷰를 기록하며 GitHub Trending에 올랐습니다.",
+   "why": "본인의 목표에 맞는 phase를 골라 수학 기초부터 LLM, 에이전트, MCP까지 직접 코드를 실행하며 AI 엔지니어링 전반의 기초 체력을 기를 수 있습니다.",
+   "keywords": [
+    "AI engineering",
+    "curriculum",
+    "LLM",
+    "MCP",
+    "agent"
+   ],
+   "narration": "rohitg00가 공개한 ai-engineering-from-scratch는 AI 엔지니어링을 처음부터 손으로 익히는 무료 커리큘럼입니다. 523개 레슨을 통해 수학 기초부터 LLM 엔지니어링, 에이전트 엔지니어링까지 순서대로 배울 수 있습니다. 각 레슨은 prompt나 agent 같은 실제로 쓸 수 있는 결과물을 남깁니다. 최근 한 달 동안 18만 회 넘는 조회수를 기록하며 GitHub에서 큰 화제가 되었습니다."
+  },
+  {
+   "title": "TokenCast: Forecasting Token Consumption During LLM Agent Execution",
+   "url": "http://arxiv.org/abs/2609.35760v1",
+   "source": "arXiv",
+   "categories": [
+    "Agents",
+    "ML Systems & Infra"
+   ],
+   "level": "intermediate",
+   "headline_ko": "에이전트 토큰 소비량 예측하기",
+   "summary": "TokenCast는 LLM 에이전트가 작업을 실행하는 동안 토큰 소비량이 실행마다 10배 넘게 달라지는 문제를 다룹니다. 각 실행 구간마다 자신의 소비량과 이후 호출에서 다시 읽히는 context 증가분을 함께 기록하는 composable cost representation을 학습해, 인접 구간을 합치면 누적 소비량을 추정합니다. 실행이 진행될수록 새로 관측된 값으로 예측을 갱신하며, 추가 LLM 호출 없이 SWE-bench Verified 기준 실행당 평균 32.8ms 만에 계산을 끝냅니다. 4개 task suite와 6개 에이전트 모델 조합 96개에서 기존 최강 비교 기법보다 평균 오차를 14.5퍼센트 줄였고, 예산 제어 replay 실험에서는 고정 예산 정책보다 토큰을 21.3퍼센트 더 적게 썼습니다.",
+   "why": "에이전트를 실제로 운영할 때 필요한 토큰 예산을 미리 가늠하고 관리하는 실전적인 접근을 배울 수 있습니다.",
+   "keywords": [
+    "token forecasting",
+    "LLM agent",
+    "cost representation",
+    "budget control"
+   ],
+   "narration": "LLM 에이전트가 똑같은 작업을 실행해도 토큰 소비량은 실행마다 10배 넘게 차이가 납니다. TokenCast는 실행 구간마다 토큰 소비와 context 증가분을 함께 기록해서 누적 소비량을 실시간으로 예측하는 방법을 제안합니다. 추가 LLM 호출 없이 실행 중간에도 예측을 계속 갱신할 수 있습니다. 여섯 개 에이전트 모델에서 실험한 결과 기존 방법보다 예측 오차를 크게 줄였고 토큰도 더 적게 썼습니다."
+  },
+  {
+   "title": "Measuring Collapse and Correction in Homogeneous-Panel LLM Debate",
+   "url": "https://huggingface.co/papers/2609.35279",
+   "source": "HF Papers",
+   "categories": [
+    "LLM",
+    "Research Fundamentals"
+   ],
+   "level": "advanced",
+   "headline_ko": "LLM 토론, 언제 무너지나",
+   "summary": "이 논문은 여러 LLM이 서로 의견을 주고받는 homogeneous debate를 최종 정답 정확도만으로 평가하면 안 된다고 지적합니다. 같은 토론이 원래 틀렸던 다수 의견을 바로잡을 수도 있고 원래 맞았던 답을 오히려 무너뜨릴 수도 있기 때문입니다. 저자들은 각 토론을 collapse, correction, onset, signed intervention utility로 기록하는 감사 가능한 프로토콜을 만들어 MMLU-Pro 문제 6,925건의 토론을 분석했고, 253건의 collapse를 확인했습니다. 재현 실험에서는 한 모델을 제외하고 학습한 probe로 위험한 토론을 미리 멈추는 방법이 29건의 collapse는 막지만 108건의 correction 기회도 함께 잃어버려, collapse만 막는 전략이 오히려 잘못된 정책이 될 수 있음을 보였습니다.",
+   "why": "정답률 하나만으로 멀티 에이전트 토론을 평가하는 방식의 함정을 이해하고, 평가 프로토콜을 설계하는 관점을 배울 수 있습니다.",
+   "keywords": [
+    "multi-agent debate",
+    "LLM evaluation",
+    "collapse",
+    "correction",
+    "MMLU-Pro"
+   ],
+   "narration": "여러 LLM이 토론해서 답을 정하는 multi-agent debate는 최종 정답률만 보면 그 안에서 무슨 일이 일어났는지 알 수 없습니다. 토론이 원래 틀렸던 다수 의견을 바로잡기도 하지만 원래 맞았던 답을 무너뜨리기도 하기 때문입니다. 연구진은 MMLU-Pro 문제 6,925건의 토론을 collapse와 correction으로 나눠 기록하는 감사 프로토콜을 만들었습니다. 위험한 토론을 미리 멈추는 전략은 collapse를 막아도 그만큼 correction 기회를 잃어서 무조건 좋은 정책은 아니라는 결과를 보였습니다."
+  }
+ ]
+}
