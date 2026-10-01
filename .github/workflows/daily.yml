@@ -1,0 +1,61 @@
+# One daily run, in order: collect (Gemini search) -> judge (TypeSafe) -> pick 3 (Gemini) -> publish (verify, video, Pages).
+# 16:00 and 17:00 UTC: one of them is 09:00 PT across daylight saving; the other exits at the guard.
+name: daily
+on:
+  schedule:
+    - cron: "0 16 * * *"
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    outputs:
+      pushed: ${{ steps.commit.outputs.pushed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Guard (already done today, or the off-hour cron)
+        id: guard
+        run: |
+          TODAY=$(TZ=America/Los_Angeles date +%F)
+          if [ -e "data/$TODAY.json" ] || { [ "$GITHUB_EVENT_NAME" = schedule ] && [ "$(TZ=America/Los_Angeles date +%H)" = 08 ]; }; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.guard.outputs.skip != 'true'
+        run: pip install -q google-genai typesafe-sdk pillow
+      - name: Collect candidates (Gemini Google Search, corpus overlap removed)
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: HUB_DATE=$(TZ=America/Los_Angeles date +%F) python collect.py > candidates.json
+      # Never blocks: if judging fails, unjudged candidates go to the picker.
+      - name: Judge candidates with TypeSafe
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+        run: python judge.py candidates candidates.json || echo "::warning::TypeSafe judging failed; picking from unjudged candidates"
+      - name: Pick 3 and write data/<today>.json
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python pick.py
+      - name: Commit
+        id: commit
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add candidates.json data
+          git commit -m "brief: $(TZ=America/Los_Angeles date +%F)"
+          git pull --rebase && git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+  publish:
+    needs: brief
+    if: needs.brief.outputs.pushed == 'true'
+    uses: ./.github/workflows/publish.yml

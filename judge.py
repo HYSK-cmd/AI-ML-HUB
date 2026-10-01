@@ -5,7 +5,7 @@ Usage (needs TYPESAFE_API_KEY; without it every command warns and changes nothin
   python judge.py verify data/2026-09-28.json  # check each summary/narration claim against its source
   python judge.py --check                      # offline self-check of the pure helpers
 
-Runs in GitHub Actions only (collect.yml, publish.yml): the Claude routine's sandbox can't reach the API.
+Runs in GitHub Actions only (daily.yml, publish.yml).
 Policy thresholds live below; raw probabilities are saved so they can be retuned without new calls.
 Failure policy: candidates fail open (an unjudged item is kept, the routine still reviews it); verify
 fails closed (nothing is written, so the day can be re-verified by re-running the publish workflow).

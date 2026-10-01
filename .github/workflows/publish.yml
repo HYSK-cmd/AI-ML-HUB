@@ -1,10 +1,11 @@
-# On every push to main: render the news video for any day that doesn't have one yet, commit it, deploy Pages.
+# Called by daily.yml after the brief is pushed (GITHUB_TOKEN pushes don't retrigger workflows); also runs on manual pushes. Render the news video for any day that doesn't have one yet, commit it, deploy Pages.
 # Commits made here use GITHUB_TOKEN, which doesn't retrigger this workflow, so there's no loop.
 name: publish
 on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_call:
 permissions:
   contents: write
   pages: write

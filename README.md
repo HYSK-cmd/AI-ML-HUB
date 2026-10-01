@@ -6,12 +6,12 @@ Live: https://hysk-cmd.github.io/AI-ML-HUB/
 
 ## Agent workflow
 
-Three pieces, all in the cloud. GitHub Actions does everything that needs the open internet (collecting, TTS, og:images, deploying). The Claude routine does the judgment: picking 3 and writing the Korean summaries and narration. Its sandbox has no open internet, so it only reads what Actions committed.
+One GitHub Actions workflow (`daily.yml`, 16:00 + 17:00 UTC = 09:00 PT) runs everything in order: collect (Gemini API search grounding), judge (TypeSafe), pick 3 and write the Korean text (Gemini API), then the `publish` workflow (verify, video, Pages). Secrets: `GEMINI_API_KEY`, `TYPESAFE_API_KEY`.
 
 ```mermaid
 flowchart TD
-    subgraph collect_wf ["GitHub Actions: collect.yml, 13:23 UTC"]
-        fetch["collect.py fetches<br/>HF Daily Papers, arXiv, Hacker News, Reddit,<br/>GitHub Trending, lab blogs, Anthropic news"] --> corpus{"Overlaps the corpus?<br/>data/2*.json + data/seen.json<br/>by URL, arXiv id, title"}
+    subgraph collect_wf ["GitHub Actions: daily.yml, collect + judge"]
+        fetch["collect.py fetches<br/>Gemini + Google Search grounding<br/>(papers, lab blogs, GitHub, HN, Reddit)"] --> corpus{"Overlaps the corpus?<br/>data/2*.json + data/seen.json<br/>by URL, arXiv id, title"}
         corpus -- yes --> drop(["Dropped"])
         corpus -- no --> xdup{"Same paper from<br/>two sources?"}
         xdup -- yes --> merge(["Kept once"])
@@ -22,7 +22,7 @@ flowchart TD
         sem -- "related / different" --> cands[("candidates.json<br/>with judge scores, committed")]
     end
 
-    subgraph routine ["Claude cloud routine: ROUTINE.md, 16:00 + 17:00 UTC"]
+    subgraph routine ["daily.yml: pick.py (PICK.md)"]
         guard{"data/TODAY.json exists,<br/>or PT hour is 08?"}
         guard -- yes --> stop(["Stop"])
         guard -- no --> fresh{"candidates.json<br/>dated today?"}
@@ -55,11 +55,12 @@ flowchart TD
 
 | File | What it does |
 |---|---|
-| `ROUTINE.md` | Instructions the daily Claude routine follows. Change selection rules and the schema here. |
+| `PICK.md` | System prompt for `pick.py`. Change selection rules and the schema here. |
+| `pick.py` | Picks 3 from `candidates.json` with the Gemini API, validates, writes `data/<day>.json`. |
 | `collect.py` | Pulls candidates and removes anything already in the corpus. stdlib only. `python collect.py --check` self-tests. |
 | `judge.py` | TypeSafe judgments where code would guess: candidate screen/scores/semantic dedupe, and sentence-level fact check of summaries. Thresholds at the top of the file. Skips cleanly without `TYPESAFE_API_KEY`. `--check` self-tests. |
 | `make_video.py` | Validates a day file and renders the news video. `--validate FILE`, `--check`. |
-| `.github/workflows/collect.yml` | Morning run of `collect.py` + `judge.py candidates`, commits `candidates.json`. |
+| `.github/workflows/daily.yml` | The single daily trigger: collect, judge, pick, commit, then calls `publish.yml`. |
 | `.github/workflows/publish.yml` | On push: `judge.py verify` + renders missing videos, commits them, deploys Pages. |
 | `data/YYYY-MM-DD.json` | One day: 3 items. `data/index.json` lists the days. |
 | `data/seen.json` | Extra URLs to never show again (items retired from the site). |
