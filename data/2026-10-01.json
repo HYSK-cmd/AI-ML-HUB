@@ -1,73 +1,74 @@
 {
-  "date": "2026-10-01",
-  "headline": "오늘의 AI/ML 소식은 에이전트 메모리 구축부터 자율 에이전트, LLM 추론 개선까지 다룹니다.",
-  "items": [
-    {
-      "title": "Build agent memory with NVIDIA NeMo Agent Toolkit and Amazon S3 Vectors",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors/",
-      "source": "AWS ML Blog",
-      "categories": [
-        "ML Systems & Infra",
-        "Agents"
-      ],
-      "level": "beginner",
-      "headline_ko": "에이전트 메모리 구축",
-      "summary": "NVIDIA NeMo Agent Toolkit(NAT)과 Amazon S3 Vectors를 사용하여 AI 에이전트의 메모리 시스템을 구축하는 방법을 소개합니다. NAT의 자동 메모리 래퍼를 활용해 대화 기록, 사용자 선호도, 장기 지식 등을 에이전트가 쉽게 저장하고 검색할 수 있습니다. Amazon S3 Vectors를 영구 메모리 계층으로 통합하여 확장 가능한 벡터 스토리지와 강력한 일관성을 제공합니다. 이를 통해 프로덕션 수준의 멀티 에이전트 시스템 설계를 간소화하고 운영 제어를 강화할 수 있습니다.",
-      "why": "학생들은 이 글을 통해 LLM 에이전트의 핵심인 메모리 관리가 실제 시스템에서 어떻게 구현되는지 배울 수 있습니다. AWS 클라우드 환경에서 에이전트 인프라를 구축하는 실용적인 지식을 얻을 수 있습니다.",
-      "keywords": [
-        "NVIDIA NeMo Agent Toolkit",
-        "NAT",
-        "agent memory",
-        "Amazon S3 Vectors",
-        "AWS EKS"
-      ],
-      "narration": "오늘의 첫 번째 이야기는 AWS 머신러닝 블로그의 글입니다. NVIDIA NeMo Agent Toolkit과 Amazon S3 Vectors를 활용하여 AI 에이전트의 메모리 시스템을 구축하는 방법을 소개합니다. 이 아키텍처는 에이전트가 대화 기록과 장기 지식을 효율적으로 관리하도록 돕습니다. 확장 가능한 에이전트 시스템 구축에 대한 실용적인 가이드가 될 것입니다."
-    },
-    {
-      "title": "PrimeIntellect-ai/prime-agent: A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
-      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
-      "source": "GitHub Trending",
-      "categories": [
-        "Agents",
-        "Open Source & Tools"
-      ],
-      "level": "intermediate",
-      "headline_ko": "장기 자율 작업 에이전트",
-      "summary": "Prime Agent는 장기 코딩 및 연구 작업을 위한 오픈소스 에이전트입니다. Recursive Language Model(RLM) 개념을 통해 문맥을 변수로, 도구를 재귀적 서브 에이전트로 취급하여 지속적인 REPL 환경 내에서 작동합니다. Continual Harness는 보조 프롬프트, 기억, 스킬 등을 내구성 있는 상태로 저장하고 개선합니다. 이를 통해 에이전트가 스스로 학습하고, 병렬 작업을 수행하며, 장시간 지속되는 복잡한 프로젝트를 효과적으로 관리할 수 있습니다.",
-      "why": "학생들은 이 프로젝트를 통해 자율 에이전트의 설계 원리, 특히 '프롬프트를 변수처럼' 다루는 혁신적인 RLM 접근 방식을 이해할 수 있습니다. 실제로 코딩 및 연구 작업을 자동화하는 에이전트를 직접 경험하며 고급 에이전트 개발 기술을 습득할 수 있습니다.",
-      "keywords": [
-        "Prime Agent",
-        "RLM",
-        "self-improving agent",
-        "coding agent",
-        "autonomous tasks",
-        "Continual Harness"
-      ],
-      "narration": "두 번째는 PrimeIntellect-ai의 Prime Agent입니다. 이 오픈소스 에이전트는 Recursive Language Model을 기반으로 장기 코딩 및 연구 작업을 수행합니다. 컨텍스트를 변수로 다루고 재귀적 서브 에이전트를 함수처럼 호출하여 복잡한 작업을 처리하죠. 스스로 개선하고 지속적인 작업을 수행하는 자율 에이전트 기술의 실제 적용 사례를 만나보세요."
-    },
-    {
-      "title": "Semifactual Credit-Augmented Policy Optimization (SCAPO)",
-      "url": "https://arxiv.org/abs/2609.40360",
-      "source": "arXiv",
-      "categories": [
-        "RL",
-        "LLM",
-        "Research Fundamentals"
-      ],
-      "level": "advanced",
-      "headline_ko": "LLM 추론 개선을 위한 SCAPO",
-      "summary": "Reinforcement learning with verifiable rewards (RLVR)를 통해 LLM의 추론 능력은 향상되었지만, 예측이 여전히 작업과 무관한 프롬프트 기능에 민감합니다. 이 논문은 Group Relative Policy Optimization(GRPO)의 인과적 변형인 Semifactual Credit-Augmented Policy Optimization(SCAPO)을 제안합니다. SCAPO는 토큰 수준의 신용 할당에 'semifactual stability'를 통합하여 프롬프트 민감도를 줄입니다. Qwen3-4B-Base 및 Qwen3-1.7B-Base 모델에서 GRPO 대비 수학 벤치마크 정확도를 크게 향상시켰습니다.",
-      "why": "학생들은 이 논문을 통해 LLM 추론의 한계와 강화 학습 기반 개선 방법에 대한 깊이 있는 이해를 얻을 수 있습니다. 인과 관계에서 영감을 받은 SCAPO가 어떻게 토큰 수준에서 미세한 신용 할당을 통해 모델의 일반화 능력과 견고성을 높이는지 학습할 수 있습니다.",
-      "keywords": [
-        "RLVR",
-        "LLM reasoning",
-        "prompt sensitivity",
-        "SCAPO",
-        "semifactual stability",
-        "credit assignment",
-        "GRPO"
-      ],
-      "narration": "마지막으로, LLM의 추론 능력을 한 단계 더 끌어올릴 수 있는 논문을 소개합니다. arXiv에 발표된 Semifactual Credit-Augmented Policy Optimization, SCAPO는 LLM 예측의 프롬프트 민감도 문제를 해결합니다. 이 방법은 토큰 수준의 신용 할당에 'semifactual stability'를 통합하여 추론 정확도를 크게 높입니다. LLM의 강건하고 일반화된 추론 능력에 관심 있는 분이라면 꼭 읽어보시길 바랍니다."
-    }
-  ]
+ "date": "2026-10-01",
+ "headline": "오늘의 AI/ML 소식은 에이전트 메모리 구축부터 자율 에이전트, LLM 추론 개선까지 다룹니다.",
+ "items": [
+  {
+   "title": "Build agent memory with NVIDIA NeMo Agent Toolkit and Amazon S3 Vectors",
+   "url": "https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors/",
+   "source": "AWS ML Blog",
+   "categories": [
+    "ML Systems & Infra",
+    "Agents"
+   ],
+   "level": "beginner",
+   "headline_ko": "에이전트 메모리 구축",
+   "summary": "NVIDIA NeMo Agent Toolkit(NAT)과 Amazon S3 Vectors를 사용하여 AI 에이전트의 메모리 시스템을 구축하는 방법을 소개합니다. NAT의 자동 메모리 래퍼를 활용해 대화 기록, 사용자 선호도, 장기 지식 등을 에이전트가 쉽게 저장하고 검색할 수 있습니다. Amazon S3 Vectors를 영구 메모리 계층으로 통합하여 확장 가능한 벡터 스토리지와 강력한 일관성을 제공합니다. 이를 통해 프로덕션 수준의 멀티 에이전트 시스템 설계를 간소화하고 운영 제어를 강화할 수 있습니다.",
+   "why": "학생들은 이 글을 통해 LLM 에이전트의 핵심인 메모리 관리가 실제 시스템에서 어떻게 구현되는지 배울 수 있습니다. AWS 클라우드 환경에서 에이전트 인프라를 구축하는 실용적인 지식을 얻을 수 있습니다.",
+   "keywords": [
+    "NVIDIA NeMo Agent Toolkit",
+    "NAT",
+    "agent memory",
+    "Amazon S3 Vectors",
+    "AWS EKS"
+   ],
+   "narration": "오늘의 첫 번째 이야기는 AWS 머신러닝 블로그의 글입니다. NVIDIA NeMo Agent Toolkit과 Amazon S3 Vectors를 활용하여 AI 에이전트의 메모리 시스템을 구축하는 방법을 소개합니다. 이 아키텍처는 에이전트가 대화 기록과 장기 지식을 효율적으로 관리하도록 돕습니다. 확장 가능한 에이전트 시스템 구축에 대한 실용적인 가이드가 될 것입니다."
+  },
+  {
+   "title": "PrimeIntellect-ai/prime-agent: A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
+   "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+   "source": "GitHub Trending",
+   "categories": [
+    "Agents",
+    "Open Source & Tools"
+   ],
+   "level": "intermediate",
+   "headline_ko": "장기 자율 작업 에이전트",
+   "summary": "Prime Agent는 장기 코딩 및 연구 작업을 위한 오픈소스 에이전트입니다. Recursive Language Model(RLM) 개념을 통해 문맥을 변수로, 도구를 재귀적 서브 에이전트로 취급하여 지속적인 REPL 환경 내에서 작동합니다. Continual Harness는 보조 프롬프트, 기억, 스킬 등을 내구성 있는 상태로 저장하고 개선합니다. 이를 통해 에이전트가 스스로 학습하고, 병렬 작업을 수행하며, 장시간 지속되는 복잡한 프로젝트를 효과적으로 관리할 수 있습니다.",
+   "why": "학생들은 이 프로젝트를 통해 자율 에이전트의 설계 원리, 특히 '프롬프트를 변수처럼' 다루는 혁신적인 RLM 접근 방식을 이해할 수 있습니다. 실제로 코딩 및 연구 작업을 자동화하는 에이전트를 직접 경험하며 고급 에이전트 개발 기술을 습득할 수 있습니다.",
+   "keywords": [
+    "Prime Agent",
+    "RLM",
+    "self-improving agent",
+    "coding agent",
+    "autonomous tasks",
+    "Continual Harness"
+   ],
+   "narration": "두 번째는 PrimeIntellect-ai의 Prime Agent입니다. 이 오픈소스 에이전트는 Recursive Language Model을 기반으로 장기 코딩 및 연구 작업을 수행합니다. 컨텍스트를 변수로 다루고 재귀적 서브 에이전트를 함수처럼 호출하여 복잡한 작업을 처리하죠. 스스로 개선하고 지속적인 작업을 수행하는 자율 에이전트 기술의 실제 적용 사례를 만나보세요."
+  },
+  {
+   "title": "Semifactual Credit-Augmented Policy Optimization (SCAPO)",
+   "url": "https://arxiv.org/abs/2609.40360",
+   "source": "arXiv",
+   "categories": [
+    "RL",
+    "LLM",
+    "Research Fundamentals"
+   ],
+   "level": "advanced",
+   "headline_ko": "LLM 추론 개선을 위한 SCAPO",
+   "summary": "Reinforcement learning with verifiable rewards (RLVR)를 통해 LLM의 추론 능력은 향상되었지만, 예측이 여전히 작업과 무관한 프롬프트 기능에 민감합니다. 이 논문은 Group Relative Policy Optimization(GRPO)의 인과적 변형인 Semifactual Credit-Augmented Policy Optimization(SCAPO)을 제안합니다. SCAPO는 토큰 수준의 신용 할당에 'semifactual stability'를 통합하여 프롬프트 민감도를 줄입니다. Qwen3-4B-Base 및 Qwen3-1.7B-Base 모델에서 GRPO 대비 수학 벤치마크 정확도를 크게 향상시켰습니다.",
+   "why": "학생들은 이 논문을 통해 LLM 추론의 한계와 강화 학습 기반 개선 방법에 대한 깊이 있는 이해를 얻을 수 있습니다. 인과 관계에서 영감을 받은 SCAPO가 어떻게 토큰 수준에서 미세한 신용 할당을 통해 모델의 일반화 능력과 견고성을 높이는지 학습할 수 있습니다.",
+   "keywords": [
+    "RLVR",
+    "LLM reasoning",
+    "prompt sensitivity",
+    "SCAPO",
+    "semifactual stability",
+    "credit assignment",
+    "GRPO"
+   ],
+   "narration": "마지막으로, LLM의 추론 능력을 한 단계 더 끌어올릴 수 있는 논문을 소개합니다. arXiv에 발표된 Semifactual Credit-Augmented Policy Optimization, SCAPO는 LLM 예측의 프롬프트 민감도 문제를 해결합니다. 이 방법은 토큰 수준의 신용 할당에 'semifactual stability'를 통합하여 추론 정확도를 크게 높입니다. LLM의 강건하고 일반화된 추론 능력에 관심 있는 분이라면 꼭 읽어보시길 바랍니다."
+  }
+ ],
+ "video": "videos/2026-10-01.mp4"
 }
