@@ -1,469 +1,59 @@
 {
- "date": "2026-10-02",
- "collected_at": "2026-10-02T20:17:28+00:00",
+ "date": "2026-10-03",
+ "collected_at": "2026-10-03T18:56:57+00:00",
  "counts": {
-  "gemini_search": 30
+  "gemini_search": 3
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 30 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 3 new",
  "items": [
   {
-   "source": "AWS Architecture Blog",
-   "title": "How MHK built a HIPAA-eligible agentic AI solution on Amazon Bedrock",
-   "url": "https://aws.amazon.com/blogs/architecture/how-mhk-built-a-hipaa-eligible-agentic-ai-solution-on-amazon-bedrock/",
-   "snippet": "MHK built the SmartProminence AI Orchestrator, a HIPAA-eligible agentic workflow framework on AWS using Amazon Bedrock, Amazon ECS, and event-driven patterns. It reduced manual medical review effort by 90% and cut new AI feature deployment from months to weeks. Learn how MHK architected this reusable, multi-tenant orchestrator for healthcare AI. (MHK built the SmartProminence AI Orchestrator, a HIPAA-eligible agentic workflow framework on AWS using Amazon Bedrock, Amazon ECS, and event-driven patterns. It reduced manual medical review effort by 90% and cut new AI feature deployment from months to weeks.)",
-   "score": 0,
-   "published": "2026-09-30",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 0.26,
-    "learning_value": 1.67,
-    "hands_on": 0.88
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
-   "url": "https://arxiv.org/abs/2610.02199",
-   "snippet": "Full-parameter fine-tuning of large language models (LLMs) incurs substantial optimizer state memory overhead, limiting the model sizes that fit on modern GPUs. Existing approaches either compress optimizer state, abandon first-order gradients, or change the update geometry while retaining dense state. The recently introduced Muon optimizer reduces optimizer memory through matrix-valued updates. Still, its geometry differs from AdamW and can lead to performance degradation when fine-tuning AdamW-pretrained models. To reduce optimizer memory without sacrificing accuracy or computational efficiency in LLM fine-tuning, we propose Ternary Absolute-max Column-wise One-sparse optimizer, or TACO, which follows Muon's operator-norm steepest-descent view but takes the geometric route further. TACO computes the exact steepest-descent direction under a dimension-normalized $1\\to1$ operator norm by selecting the sign of the largest magnitude entry in each column of two-dimensional weight matrices. This retains first-order gradients while making optimizer state memory nearly negligible. Our practical TACO optimizer maintains only a small set of low precision gradient components per column, reducing persistent optimizer state by $174\\times$ relative to AdamW8bit (from 27.7 GB to 0.16 GB) and peak training memory by $2.9\\times$ (from 80.6 GB to 27.5 GB) on OPT-13B, while achieving comparable accuracy and runtime. TACO further enables full-parameter fine-tuning of 30-32B-parameter models on ",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.88,
-    "learning_value": 2.77,
-    "hands_on": 0.97
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "FERPO: Forward Entropy-Regularized Policy Optimization",
-   "url": "https://arxiv.org/abs/2610.02198",
-   "snippet": "Several state-of-the-art methods for online reinforcement learning in continuous control improve policies using action gradients of a learned critic. However, critics are typically trained to predict returns, and accurate value predictions do not necessarily yield accurate action derivatives, potentially leading to unreliable policy updates. We propose Forward Entropy-Regularized Policy Optimization (FERPO), an on-policy maximum entropy reinforcement learning algorithm that performs policy improvement using critic values without differentiating the critic with respect to actions. FERPO derives an optimal target action distribution from a policy-improvement objective regularized by entropy and Kullback-Leibler (KL) divergence. We then fit the actor to this target by minimizing a forward-KL objective, estimated using self-normalized importance sampling (SNIS) with actions drawn from the rollout policy. By limiting the target distribution's deviation from the rollout policy, the KL regularization helps keep these importance weights well behaved. In contrast to reverse-KL objectives, which can favor a subset of the target distribution's modes, the forward-KL objective encourages coverage of multiple high-value modes and thereby promotes exploration. Experiments and ablations on MuJoCo Playground and ManiSkill show competitive performance and sample-efficiency gains. Computational benchmarks also demonstrate faster actor updates than Relative Entropy Pathwise Policy Optimization (",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.89,
-    "learning_value": 2.52,
-    "hands_on": 0.94
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models",
-   "url": "https://arxiv.org/abs/2610.02191",
-   "snippet": "While Large Language Models (LLMs) have demonstrated striking capabilities on frontier mathematical problems, it remains unclear whether they possess the structural mathematical understanding underlying their solutions. In this paper, we take a first step toward systematically studying mathematical understanding in LLMs, from diagnosing its distinct capabilities to leveraging these findings to improve post-training. First, we introduce the notion of Mathematical Primitive to probe structural mathematical understanding and propose \\hlei{}, a novel benchmark that evaluates mathematical reasoning along four distinct dimensions: Discovery, Generation, Digestion, and Execution. Second, our systematic diagnosis shows that solution accuracy masks distinct capability profiles, primitives unlock substantial latent execution capacity, and Discovery is the dominant bottleneck in mathematical reasoning. Our post-training analysis further shows that discovery-limited failures are particularly amenable to repair. Finally, building on these findings, we introduce \\abs{}, a primitive-privileged self-distillation framework that selectively transfers primitive-guided reasoning into the student model. Extensive experiments demonstrate that \\abs{} consistently improves mathematical reasoning over baselines across model scales and challenging benchmarks. (This paper diagnoses and repairs mathematical reasoning in Large Language Models, identifying a 'missing primitive' that hinders their capabili",
+   "source": "BeyondTrust",
+   "title": "AI Agent Security",
+   "url": "https://www.beyondtrust.com/resources/blog/ai-agent-security",
+   "snippet": "Our Phantom Labs® security research team's controlled research into agentic AI and autonomous AI worms exposed a critical gap: AI agents can act, adapt, and propagate at machine speed. We built AI Agent Security precisely to bring visibility, least privilege, and control to this new class of digital identity. AI Agent Security helps organizations discover AI agents, attribute actions to humans or agents, and control what those agents can access or execute on endpoints.",
    "score": 0,
    "published": "2026-10-02",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 1.62,
-    "learning_value": 2.82,
-    "hands_on": 0.88
+    "has_substance": 0.86,
+    "difficulty": 0.07,
+    "learning_value": 0.95,
+    "hands_on": 0.28
    }
   },
   {
-   "source": "arXiv",
-   "title": "Robust LassoNet: Enhancing Feature Selection in Neural Networks via Robust Loss Functions",
-   "url": "https://arxiv.org/abs/2609.38263",
-   "snippet": "Feature selection in neural networks remains a challenging problem, particularly in the presence of noisy or contaminated data. LassoNet is a recent approach that addresses this issue by combining neural networks with hierarchical sparsity constraints, enabling simultaneous prediction and variable selection. However, its standard formulation relies on the mean squared error (MSE) loss, which is known to be highly sensitive to outliers. In this paper, we present Robust LassoNet, an extension of LassoNet that incorporates robust loss functions, such as Huber, Cauchy, Tukey's bisquare, and Nonnegative Garrote, to mitigate the effect of extreme observations. The proposed approach preserves the original optimization framework while improving stability under data contamination. Through experiments on synthetic and real datasets, we show that robust LassoNet significantly improves both predictive performance and feature selection accuracy in the presence of outliers or heavy tailed noise, while maintaining comparable performance in clean settings. These results highlight the importance of robustness in neural network based feature selection and suggest practical guidelines for choosing appropriate loss functions. (Robust LassoNet is proposed to enhance feature selection in neural networks by using robust loss functions. This work contributes to improving the reliability and stability of feature selection in machine learning models, particularly when dealing with noisy data.)",
+   "source": "CVE.org",
+   "title": "CVE-2026-104994 Detail",
+   "url": "https://www.cve.org/CVERecord?id=CVE-2026-104994",
+   "snippet": "Trivy before 0.71.0 allows directory traversal in Terraform filesystem functions when they try to access pathnames above the scan root. The risk occurs when using misconf scanning on untrusted input (e.g., upon a third-party pull request that contains a Terraform configuration), if sensitive data can be found at those unintended pathnames, and an adversary can then view a sensitive data value within scan output.",
    "score": 0,
-   "published": "2026-10-01",
+   "published": "2026-10-03",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.53,
-    "learning_value": 2.35,
-    "hands_on": 0.92
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Ego4WAM: What Matters When Scaling Egocentric Human Data for Robot Learning?",
-   "url": "https://arxiv.org/abs/2609.40341",
-   "snippet": "Egocentric human data provides a scalable source of experience for robot learning, but varies substantially in human-robot alignment, behavioral coverage, and available supervision. Existing work shows favorable scaling with increasing human data, but it remains unclear which data properties drive downstream robot gains and how to use such data throughout the training pipeline. We present a systematic study of egocentric human data with different alignment and supervision under a unified world-action model framework. With the model backbone fixed, we disentangle the effects of human-robot alignment, data duration and task diversity, action supervision, and data usage strategies. We find that aligned human demonstrations substantially improve out-of-distribution generalization and reduce target-task robot data requirements; data duration and task diversity affect downstream capabilities differently; and video-only supervision remains effective without action labels, providing a strong foundation for subsequent video-action training. We validate these findings through closed-loop policy evaluation on both real robots and RoboDojo. Rather than treating data duration as the sole scaling axis, Ego4WAM shows how alignment, task diversity, available supervision, and usage strategy jointly shape the value of egocentric human data for robot learning. (This paper investigates what factors are crucial when scaling egocentric human data for robot learning. It explores the impact of large",
-   "score": 0,
-   "published": "2026-10-01",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 1.64,
-    "learning_value": 2.31,
-    "hands_on": 0.84
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents",
-   "url": "https://arxiv.org/abs/2609.40306",
-   "snippet": "Pretrained robot policies provide useful action priors, but long-horizon manipulation still requires coordination between semantic reasoning and physical execution. Semantic reasoning operates at a coarser timescale than physical interaction, while episode-level failures provide limited guidance on which system component should be revised. We propose DynaHarness, a dynamic physical harness that couples semantic reasoning with physical governance through a shared execution contract and turns failure evidence into validated capability revisions. To be more specific, the slow brain proposes capabilities and symbolic arguments, while the fast brain grounds and monitors commands, refuses unresolved actions, substitutes capabilities, and requests replans when needed. The physical execution contract bounds each accepted command and records execution evidence across analytic skills, recovery skills, and the frozen VLA. Failure attribution localizes faults in these records and directs targeted revisions of reusable capabilities or execution mechanisms. Paired regression checks govern admission or rejection, closing the self-evolution loop. On LIBERO-Pro, DynaHarness achieves 75.2% on 800 newly sampled initial states, compared with 17.5% for the frozen policy. With the same capability library, full dynamic execution reaches 74.0% versus 63.9% under nominal one-step replanning. This demonstrates the value of DynaHarness as a dynamic physical harness that governs how existing capabilitie",
-   "score": 0,
-   "published": "2026-10-01",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 1.86,
-    "learning_value": 2.75,
-    "hands_on": 0.91
-   }
-  },
-  {
-   "source": "alphaXiv",
-   "title": "Tokenization: A Survey for Modern NLP",
-   "url": "https://alphaxiv.com/2609.02122",
-   "snippet": "This survey provides a comprehensive overview of tokenization in modern natural language processing (NLP), a crucial yet often overlooked aspect of LLM pipelines. It discusses algorithms, techniques, pitfalls, theory, and practice, along with jumping-off points for prospective researchers and practitioners.",
-   "score": 0,
-   "published": "2026-09-30",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.73,
-    "difficulty": 1.01,
-    "learning_value": 2.04,
-    "hands_on": 0.18
-   }
-  },
-  {
-   "source": "Hugging Face Blog",
-   "title": "New in llama.cpp: Decision Models",
-   "url": "https://huggingface.co/blog/ggml-org/decision-models",
-   "snippet": "This blog post announces the integration of new decision models into llama.cpp, which offer structured probabilistic decisions in a single forward pass. These models serve as inexpensive components for larger AI pipelines, routing user inquiries based on defined options.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 0.61,
-    "learning_value": 1.08,
-    "hands_on": 1.04
-   }
-  },
-  {
-   "source": "Hugging Face Community Blog",
-   "title": "Live Human Feedback in the Training Loop: Aligning Diffusion Models with Real People",
-   "url": "https://huggingface.co/blog/rapidata/live-human-feedback-training-diffusion",
-   "snippet": "This article discusses incorporating live human feedback directly into the training loop for aligning diffusion models. It emphasizes the importance of real-time human input to improve model alignment and performance, enabling more accurate and user-preferred outputs.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.67,
-    "difficulty": 1.14,
-    "learning_value": 1.32,
-    "hands_on": 0.63
-   }
-  },
-  {
-   "source": "Hugging Face Community Blog",
-   "title": "GPT IMAGE 2 in practice：Generate Checkable App and Web Mockups from Complete Interface Prompts",
-   "url": "https://huggingface.co/blog/vulcanfeynman/gpt-image-2-app-web-mockups",
-   "snippet": "This post demonstrates how to use GPT IMAGE 2 to generate checkable app and web mockups from complete interface prompts. It showcases practical applications for UI/UX design and development workflows, accelerating the creation of visual prototypes.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.02,
     "has_substance": 0.93,
     "difficulty": 0.04,
-    "learning_value": 1.82,
-    "hands_on": 1.07
-   }
-  },
-  {
-   "source": "Hugging Face Community Blog",
-   "title": "OpenAI Decisions API vs. Jev: A Practical Guide to Decision Models",
-   "url": "https://huggingface.co/blog/a2aprotocol/openai-decisions-api-vs-jev",
-   "snippet": "This guide provides a practical comparison between the OpenAI Decisions API and Jev for building decision models. It aims to help developers choose the right tool for their AI agent applications, highlighting key features and use cases.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.92,
-    "difficulty": 0.25,
-    "learning_value": 1.6,
-    "hands_on": 0.61
-   }
-  },
-  {
-   "source": "Hugging Face Community Blog",
-   "title": "How to Use OpenAI Dots: A Practical Guide to Always-On AI Agents",
-   "url": "https://huggingface.co/blog/jiames1969/openai-dots-practical-guide",
-   "snippet": "This guide offers practical advice on using OpenAI Dots to build always-on AI agents. It covers key concepts and implementation strategies for persistent AI interactions, enhancing continuous user assistance.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.84,
-    "difficulty": 0.3,
-    "learning_value": 1.89,
-    "hands_on": 0.93
-   }
-  },
-  {
-   "source": "Hugging Face Community Blog",
-   "title": "What Is OpenAI Dots? Always-On AI Agents Explained",
-   "url": "https://huggingface.co/blog/jiames1969/openai-dots-explained",
-   "snippet": "This article explains OpenAI Dots, detailing how these 'always-on AI agents' function to provide continuous assistance. It provides an overview of the underlying technology and its implications for consistent AI presence.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.52,
-    "difficulty": 0.24,
-    "learning_value": 1.2,
-    "hands_on": 0.25
-   },
-   "related_to": [
-    "How to Use OpenAI Dots: A Practical Guide to Always-On AI Agents"
-   ]
-  },
-  {
-   "source": "Hugging Face Daily Papers",
-   "title": "GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning",
-   "url": "https://huggingface.co/papers/2610.02111",
-   "snippet": "GEPA argues that reflective prompt evolution can outperform reinforcement learning methods like GRPO for adapting LLMs to tasks. It suggests that language's interpretable nature offers a richer learning medium than sparse scalar rewards.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.91,
-    "difficulty": 1.14,
-    "learning_value": 1.81,
-    "hands_on": 0.59
-   }
-  },
-  {
-   "source": "Hugging Face Daily Papers",
-   "title": "RP-OPSD: Resolution-Privileged On-Policy Self-Distillation for Multimodal Large Language Models",
-   "url": "https://huggingface.co/papers/2610.02102",
-   "snippet": "RP-OPSD introduces a resolution-privileged on-policy self-distillation method for multimodal large language models. This approach uses privileged information from a teacher model to provide dense token-level supervision, addressing limitations of existing methods.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.71,
-    "learning_value": 1.81,
-    "hands_on": 0.65
-   }
-  },
-  {
-   "source": "Hugging Face Daily Papers",
-   "title": "OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators",
-   "url": "https://huggingface.co/papers/2610.02101",
-   "snippet": "OPSD-V proposes an on-policy self-distillation paradigm for post-training few-step autoregressive video diffusion models. It aims to reduce long-horizon degradation and preserve efficient inference paths in video generation, improving output quality.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 1.81,
-    "learning_value": 1.83,
-    "hands_on": 0.82
-   }
-  },
-  {
-   "source": "Hugging Face Daily Papers",
-   "title": "OpsEval: A Comprehensive Task-Oriented Benchmark for LLMs in AIOps",
-   "url": "https://huggingface.co/papers/2610.02099",
-   "snippet": "OpsEval is introduced as a comprehensive task-oriented benchmark to assess LLMs' proficiency in various crucial AIOps scenarios. The benchmark includes 7184 multi-choice questions and 1736 question-answering formats in English and Chinese.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 0.6,
-    "learning_value": 1.27,
-    "hands_on": 0.52
-   }
-  },
-  {
-   "source": "Hugging Face Daily Papers",
-   "title": "Reinforce-Ada: An Adaptive Sampling Framework for Reinforce-Style LLM Training",
-   "url": "https://huggingface.co/papers/2610.02095",
-   "snippet": "Reinforce-Ada proposes an adaptive sampling framework for Reinforce-style LLM training, addressing instability from fixed and uniform response sampling. This method aims to improve gradient estimates by dynamically allocating inference budget per prompt.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.35,
-    "learning_value": 1.95,
-    "hands_on": 0.88
-   }
-  },
-  {
-   "source": "Hugging Face Daily Papers",
-   "title": "RL of Thoughts: Navigating LLM Reasoning with Inference-time Reinforcement Learning",
-   "url": "https://huggingface.co/papers/2610.02089",
-   "snippet": "Join the discussion on this paper page (RL of Thoughts enhances LLM reasoning by guiding it through sophisticated logical structures at inference-time using reinforcement learning. This approach offers cost-effective improvements without modifying LLM parameters.)",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.04,
-    "has_substance": 0.95,
-    "difficulty": 1.14,
-    "learning_value": 1.68,
-    "hands_on": 0.89
-   }
-  },
-  {
-   "source": "Hugging Face Daily Papers",
-   "title": "Re:Form -- Reducing Human Priors in Scalable Formal Software Verification with RL in LLMs: A Preliminary Study on Dafny",
-   "url": "https://huggingface.co/papers/2610.02088",
-   "snippet": "Re:Form explores reducing human priors in scalable formal software verification using reinforcement learning with LLMs, focusing on Dafny. This preliminary study addresses challenges in generating verifiable programs with existing models.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.91,
-    "difficulty": 1.61,
-    "learning_value": 1.18,
-    "hands_on": 0.65
-   }
-  },
-  {
-   "source": "Hugging Face Daily Papers",
-   "title": "HuRo: A Human-Robot Dataset for Learning Dexterous Manipulation from Egocentric Videos",
-   "url": "https://huggingface.co/papers/2610.02087",
-   "snippet": "HuRo introduces a human-robot dataset, comprising 630K robotized episodes and 142M processed frames, for learning dexterous manipulation from egocentric videos. This dataset significantly improves robot completion rates and out-of-distribution robustness across real-world tasks.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 0.81,
-    "learning_value": 2.09,
-    "hands_on": 0.75
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
-   "url": "https://arxiv.org/abs/2610.02206",
-   "snippet": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark and dataset for natural-language--to--CLI translation on Kali Linux, comprising 8,504 query--command pairs spanning 1,642 tools across 23 capability dimensions and 5 security phases. KaliBench is constructed via a manuscript-grounded pipeline with deterministic canonicalization and alias-aware evaluation, enabling precise and reproducible assessment of tool selection and argument construction. To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sandboxed terminal execution, and human-in-the-loop refinement. Building on these fine-grained, deterministic signals, KaliBench further enables runtime-free verifiable rewards for training. Across three evaluation modes and 24 configurations of general-purpose and security-focused open-weight models, no open-weight model exceeds 42% exact-command accur",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 1.44,
-    "learning_value": 2.81,
-    "hands_on": 1.02
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Hierarchical Continuous Diffusion Language Models",
-   "url": "https://arxiv.org/abs/2610.02193",
-   "snippet": "Discrete diffusion language models offer a compelling alternative to autoregressive generation for tasks demanding bidirectional reasoning and global constraint satisfaction. Yet they share a structural bottleneck: when decoding in parallel, each token is sampled independently from its marginal, severing the statistical dependencies among the tokens decoded together. Continuous diffusion language models avoid this by denoising a shared continuous state, but their denoiser sees only that state, so nothing ties it to a valid token configuration until it is finally decoded. To address this, we propose Hierarchical Continuous Diffusion Language Models (HC-DLM), which couple discrete token generation with a continuous latent trajectory in a single, principled denoising process, whose training objective is derived from a variational bound on the token likelihood. In contrast to recent methods that attach continuous context to a self-contained discrete chain, HC-DLM makes the latent the only persistent generative state: tokens are read out from it at every step and feed back as a scaffold for the next latent update. On structured reasoning (Sudoku), mathematical planning (Countdown) and language modeling (LM1B), HC-DLM improves over discrete and continuous diffusion baselines at matched model size, in puzzle accuracy on Sudoku and Countdown and in generative perplexity on LM1B. Project page: https://hc-dlm.github.io/. (This paper presents Hierarchical Continuous Diffusion Language M",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.97,
-    "learning_value": 2.71,
-    "hands_on": 1.13
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
-   "url": "https://arxiv.org/abs/2610.02163",
-   "snippet": "Coding agents solve repository-level software engineering tasks through long trajectories of code inspection, search, editing, and testing. As a task progresses, earlier exploration becomes stale, so managing context is more than avoiding overflow: an agent must decide when to compact, what working state to preserve, and how to continue from it. We introduce AutoCompact, which trains a coding agent to make these decisions as part of its policy. To collect training data, we run the base agent on coding tasks and use a judge to review its compaction decisions, summaries, and actions after compaction. Flawed outputs are replaced with corrected ones before being executed in the environment, so each trajectory continues from the corrected decisions. We use these trajectories for supervised fine-tuning, then jointly optimize coding and compaction through reinforcement learning with task-success rewards. Experiments on SWE-bench Verified and SWE-PolyBench Verified show that AutoCompact improves pass rates over the base model by an absolute 9.2\\% and 5.0\\%, respectively. The improvements hold across all evaluated inference budgets, with a 256K context window that never overflows and with a 16K window whose overflow triggers fallback compaction. (AutoCompact proposes a method for long-horizon coding agents to learn when to compact their context, optimizing memory usage. This research aims to improve efficiency and performance in complex coding tasks by dynamically managing contextual ",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 1.32,
-    "learning_value": 2.6,
-    "hands_on": 0.94
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "From Knowledge Access to Source Learning: Developing Source-Specific Competence",
-   "url": "https://arxiv.org/abs/2610.02150",
-   "snippet": "Large language model (LLM) agents increasingly rely on persistent external sources to solve sequences of knowledge-intensive tasks. Existing methods improve how source content is accessed and organized, while agent-memory systems preserve reusable knowledge from prior interactions, but repeated use of the same source is still largely treated as repeated access rather than an opportunity to progressively improve understanding of that source. We study source learning: developing reusable source-specific competence over a persistent authoritative source. We represent this competence with a persistent source model that captures reusable understanding of the source, including how its knowledge is structured, interpreted, and applied. To construct and progressively refine such models, we propose SourceLearn, which combines two complementary learning mechanisms. Self-Directed Source Learning identifies what remains incompletely understood and adaptively revisits the source, while Task-Guided Source Learning uses downstream experience to reveal local representational gaps and recurring needs in how source knowledge should be organized. In both cases, learning signals determine what should be reconsidered, while persistent updates are reconstructed from the authoritative source. Across five benchmarks and three LLM backends, SourceLearn achieves the best performance in 13 of 15 settings, with gains of up to 22.6 points over Hybrid RAG and substantial overall improvements over static s",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 1.68,
-    "learning_value": 2.82,
-    "hands_on": 0.89
-   }
-  },
-  {
-   "source": "Hugging Face Daily Papers",
-   "title": "OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction",
-   "url": "https://huggingface.co/papers/2610.02075",
-   "snippet": "OneStreamer presents a framework for unifying perception, memory, and proactive response in streaming video interaction. This work aims to create more intelligent and responsive AI systems for real-time video analysis and agentic behavior.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.91,
-    "difficulty": 1.41,
-    "learning_value": 1.04,
-    "hands_on": 0.69
+    "learning_value": 1.56,
+    "hands_on": 0.83
    }
   }
  ],
  "dropped": [
   {
-   "source": "Google DeepMind",
-   "title": "Introducing SynthID Bio, bringing our watermarking technology to synthetic biology.",
-   "url": "https://deepmind.google/blog/",
-   "snippet": "We're introducing SynthID Bio, extending our watermarking technology to help verify and trace synthetic biological data. This aims to bolster trust and provenance in the rapidly evolving field of synthetic biology.",
-   "score": 0,
-   "published": "2026-09-30",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.77,
-    "difficulty": 0.02,
-    "learning_value": 0.6,
-    "hands_on": 0.2
-   },
-   "reason": "low learning value 0.60"
-  },
-  {
-   "source": "Hugging Face Community Blog",
-   "title": "Data-center AI, now on a laptop — POCKET-Darwin-180B",
-   "url": "https://huggingface.co/blog/final-bench/pocket-darwin-180b-laptop-ai",
-   "snippet": "This post introduces POCKET-Darwin-180B, making data-center level AI capabilities available on a laptop. It highlights advancements in efficient local AI inference, allowing powerful models to run on consumer-grade hardware.",
-   "score": 0,
-   "published": "2026-10-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.86,
-    "difficulty": 0.34,
-    "learning_value": 0.67,
-    "hands_on": 0.99
-   },
-   "reason": "low learning value 0.67"
-  },
-  {
-   "source": "Hugging Face Community Blog",
-   "title": "Does your SKILL.md help coding agents?",
-   "url": "https://huggingface.co/blog/phranzia/skill-md-coding-agents",
-   "snippet": "This post explores whether `SKILL.md` files effectively aid coding agents in understanding and utilizing skills. It delves into the importance of clear documentation for AI agent performance and task execution.",
+   "source": "Zscaler",
+   "title": "AI agents for MDR",
+   "url": "https://www.zscaler.com/blogs/security-research/ai-agents-mdr",
+   "snippet": "Our AI agents dynamically interact with data and systems to execute a specific job based on real-time inputs and context. Powered by AI models like LLM, these agents adapt their behavior based on tasking – a massive upgrade from rigid automated workflows. Our AI agents are specialized, focusing on a narrow set of tasks that they perform flawlessly.",
    "score": 0,
    "published": "2026-10-02",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.34,
-    "difficulty": 0.19,
-    "learning_value": 0.79,
-    "hands_on": 0.06
+    "has_substance": 0.75,
+    "difficulty": 0.13,
+    "learning_value": 0.56,
+    "hands_on": 0.34
    },
-   "reason": "no substance 0.34"
+   "reason": "low learning value 0.56"
   }
  ],
- "judge": "judge: 27 kept, 3 dropped (1 pairs checked)"
+ "judge": "judge: 2 kept, 1 dropped (1 pairs checked)"
 }
