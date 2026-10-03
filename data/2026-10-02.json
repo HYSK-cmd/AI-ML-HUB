@@ -1,72 +1,73 @@
 {
-  "date": "2026-10-02",
-  "headline": "AI 에이전트 구축부터 로봇 자가 진화, LLM 효율화까지 최신 AI 기술을 탐구합니다.",
-  "items": [
-    {
-      "title": "How to Use OpenAI Dots: A Practical Guide to Always-On AI Agents",
-      "url": "https://huggingface.co/blog/jiames1969/openai-dots-practical-guide",
-      "source": "Hugging Face Community Blog",
-      "categories": [
-        "Agents",
-        "Open Source & Tools"
-      ],
-      "level": "beginner",
-      "headline_ko": "OpenAI Dots 활용법",
-      "summary": "이 가이드는 OpenAI Dots를 활용하여 상시 작동하는 AI 에이전트 구축에 대한 실용적인 조언을 제공합니다. 이는 지속적인 AI 상호작용을 위한 핵심 개념과 구현 전략을 다룹니다. 이를 통해 사용자 지원의 연속성을 향상할 수 있습니다.",
-      "why": "이 가이드를 통해 OpenAI Dots를 사용해 실제 상시 에이전트를 만드는 방법을 배울 수 있습니다. 실용적인 구현 팁을 얻어 프로젝트에 바로 적용해볼 수 있습니다.",
-      "keywords": [
-        "OpenAI Dots",
-        "AI agents",
-        "always-on agents",
-        "persistent AI"
-      ],
-      "narration": "오늘은 OpenAI Dots를 사용하여 상시 작동하는 AI 에이전트를 구축하는 실용 가이드부터 시작합니다. 이 가이드는 지속적인 AI 상호작용을 위한 핵심 개념과 구현 전략을 다룹니다. 이를 통해 항상 사용자 곁에서 도움을 주는 에이전트를 만드는 방법을 배울 수 있습니다."
-    },
-    {
-      "title": "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents",
-      "url": "https://arxiv.org/abs/2609.40306",
-      "source": "arXiv",
-      "categories": [
-        "Robotics & Embodied",
-        "Agents",
-        "RL"
-      ],
-      "level": "intermediate",
-      "headline_ko": "DynaHarness, 로봇 진화",
-      "summary": "DynaHarness는 로봇 에이전트의 자가 진화를 위한 동적 물리적 하네스입니다. 이는 의미론적 추론과 물리적 실행을 공유된 실행 계약으로 연결하고, 실패 증거를 검증된 능력 수정으로 전환합니다. LIBERO-Pro 벤치마크에서 기존 정책 대비 75.2%의 성공률을 달성하여 로봇의 장기 조작 및 자가 개선 능력을 크게 향상시켰습니다.",
-      "why": "이 논문은 로봇이 실제 환경에서 실패를 통해 스스로 학습하고 능력을 발전시키는 방법을 제시합니다. 로봇 에이전트의 자율성과 적응력을 높이는 중요한 연구 방향을 이해할 수 있습니다.",
-      "keywords": [
-        "DynaHarness",
-        "robot agents",
-        "self-evolving",
-        "semantic reasoning",
-        "physical execution",
-        "LIBERO-Pro"
-      ],
-      "narration": "다음은 자가 진화하는 로봇 에이전트를 위한 동적 물리적 하네스, DynaHarness에 대한 논문입니다. 이는 의미론적 추론과 물리적 실행을 연결하고, 실패 증거를 능력 수정으로 전환합니다. DynaHarness는 로봇이 복잡한 작업을 수행하고 스스로 학습하며 능력을 발전시키는 데 중요한 진전을 보여줍니다."
-    },
-    {
-      "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
-      "url": "https://arxiv.org/abs/2610.02199",
-      "source": "arXiv",
-      "categories": [
-        "LLM",
-        "ML Systems & Infra",
-        "Research Fundamentals"
-      ],
-      "level": "advanced",
-      "headline_ko": "TACO, LLM 파인튜닝",
-      "summary": "TACO는 LLM 파인튜닝 시 발생하는 최적화기 상태 메모리 오버헤드를 줄이는 새로운 최적화기입니다. 이 최적화기는 AdamW와 유사한 정확도를 유지하면서, 각 열에서 가장 큰 절댓값 엔트리의 부호를 선택하여 1->1 연산자 노름 하에서 정확한 최급 강하 방향을 계산합니다. TACO는 OPT-13B 모델에서 AdamW8bit 대비 영구 최적화기 상태 메모리를 174배, 피크 학습 메모리를 2.9배 감소시켰으며, 30-32B 파라미터 모델의 전체 파라미터 파인튜닝을 가능하게 합니다.",
-      "why": "LLM 파인튜닝에서 메모리 효율성은 중요한 제약 요소인데, 이 논문은 기존 AdamW의 성능을 유지하면서 메모리를 획기적으로 줄이는 방법을 제시합니다. 고성능 LLM 연구 및 개발에 필수적인 최적화 기술에 대한 깊은 이해를 얻을 수 있습니다.",
-      "keywords": [
-        "TACO",
-        "LLM fine-tuning",
-        "optimizer",
-        "memory optimization",
-        "AdamW",
-        "gradient descent"
-      ],
-      "narration": "마지막으로, LLM 파인튜닝의 메모리 효율성을 혁신하는 TACO 최적화기 논문을 소개합니다. TACO는 AdamW와 유사한 정확도를 유지하면서도, 최적화기 상태 메모리를 크게 줄입니다. 이 기술은 OPT-13B 모델에서 메모리를 최대 174배까지 줄여, 더 큰 LLM을 파인튜닝할 수 있게 합니다."
-    }
-  ]
+ "date": "2026-10-02",
+ "headline": "AI 에이전트 구축부터 로봇 자가 진화, LLM 효율화까지 최신 AI 기술을 탐구합니다.",
+ "items": [
+  {
+   "title": "How to Use OpenAI Dots: A Practical Guide to Always-On AI Agents",
+   "url": "https://huggingface.co/blog/jiames1969/openai-dots-practical-guide",
+   "source": "Hugging Face Community Blog",
+   "categories": [
+    "Agents",
+    "Open Source & Tools"
+   ],
+   "level": "beginner",
+   "headline_ko": "OpenAI Dots 활용법",
+   "summary": "이 가이드는 OpenAI Dots를 활용하여 상시 작동하는 AI 에이전트 구축에 대한 실용적인 조언을 제공합니다. 이는 지속적인 AI 상호작용을 위한 핵심 개념과 구현 전략을 다룹니다. 이를 통해 사용자 지원의 연속성을 향상할 수 있습니다.",
+   "why": "이 가이드를 통해 OpenAI Dots를 사용해 실제 상시 에이전트를 만드는 방법을 배울 수 있습니다. 실용적인 구현 팁을 얻어 프로젝트에 바로 적용해볼 수 있습니다.",
+   "keywords": [
+    "OpenAI Dots",
+    "AI agents",
+    "always-on agents",
+    "persistent AI"
+   ],
+   "narration": "오늘은 OpenAI Dots를 사용하여 상시 작동하는 AI 에이전트를 구축하는 실용 가이드부터 시작합니다. 이 가이드는 지속적인 AI 상호작용을 위한 핵심 개념과 구현 전략을 다룹니다. 이를 통해 항상 사용자 곁에서 도움을 주는 에이전트를 만드는 방법을 배울 수 있습니다."
+  },
+  {
+   "title": "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents",
+   "url": "https://arxiv.org/abs/2609.40306",
+   "source": "arXiv",
+   "categories": [
+    "Robotics & Embodied",
+    "Agents",
+    "RL"
+   ],
+   "level": "intermediate",
+   "headline_ko": "DynaHarness, 로봇 진화",
+   "summary": "DynaHarness는 로봇 에이전트의 자가 진화를 위한 동적 물리적 하네스입니다. 이는 의미론적 추론과 물리적 실행을 공유된 실행 계약으로 연결하고, 실패 증거를 검증된 능력 수정으로 전환합니다. LIBERO-Pro 벤치마크에서 기존 정책 대비 75.2%의 성공률을 달성하여 로봇의 장기 조작 및 자가 개선 능력을 크게 향상시켰습니다.",
+   "why": "이 논문은 로봇이 실제 환경에서 실패를 통해 스스로 학습하고 능력을 발전시키는 방법을 제시합니다. 로봇 에이전트의 자율성과 적응력을 높이는 중요한 연구 방향을 이해할 수 있습니다.",
+   "keywords": [
+    "DynaHarness",
+    "robot agents",
+    "self-evolving",
+    "semantic reasoning",
+    "physical execution",
+    "LIBERO-Pro"
+   ],
+   "narration": "다음은 자가 진화하는 로봇 에이전트를 위한 동적 물리적 하네스, DynaHarness에 대한 논문입니다. 이는 의미론적 추론과 물리적 실행을 연결하고, 실패 증거를 능력 수정으로 전환합니다. DynaHarness는 로봇이 복잡한 작업을 수행하고 스스로 학습하며 능력을 발전시키는 데 중요한 진전을 보여줍니다."
+  },
+  {
+   "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
+   "url": "https://arxiv.org/abs/2610.02199",
+   "source": "arXiv",
+   "categories": [
+    "LLM",
+    "ML Systems & Infra",
+    "Research Fundamentals"
+   ],
+   "level": "advanced",
+   "headline_ko": "TACO, LLM 파인튜닝",
+   "summary": "TACO는 LLM 파인튜닝 시 발생하는 최적화기 상태 메모리 오버헤드를 줄이는 새로운 최적화기입니다. 이 최적화기는 AdamW와 유사한 정확도를 유지하면서, 각 열에서 가장 큰 절댓값 엔트리의 부호를 선택하여 1->1 연산자 노름 하에서 정확한 최급 강하 방향을 계산합니다. TACO는 OPT-13B 모델에서 AdamW8bit 대비 영구 최적화기 상태 메모리를 174배, 피크 학습 메모리를 2.9배 감소시켰으며, 30-32B 파라미터 모델의 전체 파라미터 파인튜닝을 가능하게 합니다.",
+   "why": "LLM 파인튜닝에서 메모리 효율성은 중요한 제약 요소인데, 이 논문은 기존 AdamW의 성능을 유지하면서 메모리를 획기적으로 줄이는 방법을 제시합니다. 고성능 LLM 연구 및 개발에 필수적인 최적화 기술에 대한 깊은 이해를 얻을 수 있습니다.",
+   "keywords": [
+    "TACO",
+    "LLM fine-tuning",
+    "optimizer",
+    "memory optimization",
+    "AdamW",
+    "gradient descent"
+   ],
+   "narration": "마지막으로, LLM 파인튜닝의 메모리 효율성을 혁신하는 TACO 최적화기 논문을 소개합니다. TACO는 AdamW와 유사한 정확도를 유지하면서도, 최적화기 상태 메모리를 크게 줄입니다. 이 기술은 OPT-13B 모델에서 메모리를 최대 174배까지 줄여, 더 큰 LLM을 파인튜닝할 수 있게 합니다."
+  }
+ ],
+ "video": "videos/2026-10-02.mp4"
 }
