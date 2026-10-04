@@ -1,59 +1,284 @@
 {
- "date": "2026-10-03",
- "collected_at": "2026-10-03T18:56:57+00:00",
+ "date": "2026-10-04",
+ "collected_at": "2026-10-04T20:00:05+00:00",
  "counts": {
-  "gemini_search": 3
+  "gemini_search": 18
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 3 new",
+ "dedup": "dedup: 1 already in corpus, 0 cross-source duplicates, 17 new",
  "items": [
   {
-   "source": "BeyondTrust",
-   "title": "AI Agent Security",
-   "url": "https://www.beyondtrust.com/resources/blog/ai-agent-security",
-   "snippet": "Our Phantom Labs® security research team's controlled research into agentic AI and autonomous AI worms exposed a critical gap: AI agents can act, adapt, and propagate at machine speed. We built AI Agent Security precisely to bring visibility, least privilege, and control to this new class of digital identity. AI Agent Security helps organizations discover AI agents, attribute actions to humans or agents, and control what those agents can access or execute on endpoints.",
+   "source": "GitHub",
+   "title": "yetone/magpie: Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+   "url": "https://github.com/yetone/magpie",
+   "snippet": "Magpie is a cross-platform utility for managing which AI models local coding agents use from one interface. It detects supported tools such as Claude Code, Codex, Gemini CLI, OpenCode, Cursor CLI, Copilot CLI, and many others. A local gateway translates OpenAI and Anthropic-style APIs so different agents can share one model catalog and provider setup. Users can switch providers, models, reasoning settings, and related fields without manually editing each agent's configuration file.",
+   "score": 0,
+   "published": "2026-10-04",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 0.02,
+    "learning_value": 1.76,
+    "hands_on": 1.42
+   },
+   "related_to": [
+    "mvschwarz/openrig"
+   ]
+  },
+  {
+   "source": "CoreWeave",
+   "title": "CoreWeave Serverless RL | Train and Improve AI Agents",
+   "url": "https://www.coreweave.com/solutions/serverless-rl",
+   "snippet": "CoreWeave offers Serverless RL to run reinforcement learning workloads on managed infrastructure that scales with training. Agent Reinforcement Trainer (ART) is an open-source framework for training agentic LLMs through experience, connecting application code to reinforcement learning algorithms and Serverless RL. RULER, a related method, generates relative rewards with an LLM-as-judge approach that ranks groups of agent trajectories without labeled data or handcrafted reward functions.",
    "score": 0,
    "published": "2026-10-02",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.86,
-    "difficulty": 0.07,
-    "learning_value": 0.95,
-    "hands_on": 0.28
+    "has_substance": 0.96,
+    "difficulty": 1.16,
+    "learning_value": 1.96,
+    "hands_on": 1.48
    }
   },
   {
-   "source": "CVE.org",
-   "title": "CVE-2026-104994 Detail",
-   "url": "https://www.cve.org/CVERecord?id=CVE-2026-104994",
-   "snippet": "Trivy before 0.71.0 allows directory traversal in Terraform filesystem functions when they try to access pathnames above the scan root. The risk occurs when using misconf scanning on untrusted input (e.g., upon a third-party pull request that contains a Terraform configuration), if sensitive data can be found at those unintended pathnames, and an adversary can then view a sensitive data value within scan output.",
+   "source": "Substack",
+   "title": "Agents are ephemeral, the mental model doesn't help",
+   "url": "https://thomasliao.substack.com/p/agents-are-ephemeral-the-mental-model",
+   "snippet": "The term 'agent' suggests something permanent, almost a personification, but from a technical perspective, an agent is a run in an environment that, if structured well, can also be thought of as a control loop, existing for seconds to minutes. The stable, maintainable unit is the agent path, containing specifications for agents that run on an agentic platform. This platform will have three layers: tooling, path specs, and the agent infrastructure, including the harness, governance layer, and models themselves.",
+   "score": 0,
+   "published": "2026-10-02",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.56,
+    "difficulty": 0.55,
+    "learning_value": 1.81,
+    "hands_on": 0.41
+   }
+  },
+  {
+   "source": "GitHub",
+   "title": "Human-Agent-Society/reef: Infrastructure for continually self-improving agents",
+   "url": "https://github.com/Human-Agent-Society/reef",
+   "snippet": "Reef is the first open-source infrastructure for continual self-improving agents, connecting agent inference, feedback, learning, and versioned delivery. It can be used to train model weights with Slime and SGLang or improve an agent's harness, including its prompts, rules, and skills. The core loop of Reef processes each learning cycle in four steps: serving agent requests, matching feedback, producing updates, and deploying new versions.",
+   "score": 0,
+   "published": "2026-10-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.06,
+    "learning_value": 2.43,
+    "hands_on": 1.55
+   },
+   "related_to": [
+    "CoreWeave Serverless RL | Train and Improve AI Agents",
+    "PrimeIntellect-ai/prime-agent: A self-improving RLM agent for coding workflows and long-running autonomous tasks."
+   ]
+  },
+  {
+   "source": "Mantu",
+   "title": "How to Build ML Infrastructure: Components, Architecture, and Best Practice",
+   "url": "https://www.mantu.com/insights/how-to-build-ml-infrastructure-components-architecture-and-best-practice/",
+   "snippet": "ML infrastructure connects the data, training, and serving components that turn a model into a production system, with its design depending on the workload. A well-designed ML platform provides each model with a clear path from source data to prediction, recording decisions, controlling production changes, and offering practical responses to workload or model shifts. External support can assist with architecture reviews, feature management, model serving, orchestration, and release workflows, aiming for a platform teams can understand, run, and modify without manual handoffs.",
+   "score": 0,
+   "published": "2026-10-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.72,
+    "difficulty": 0.18,
+    "learning_value": 1.76,
+    "hands_on": 0.3
+   }
+  },
+  {
+   "source": "coreQ AI",
+   "title": "coreQ AI Unveils Data Infrastructure Roadmap for the Next Generation of Physical AI",
+   "url": "https://coreq.ai/news/data-infrastructure-roadmap-physical-ai",
+   "snippet": "Silicon Valley-based coreQ AI unveiled its data infrastructure roadmap for the next generation of Physical AI, combining causal AI with scalable real-world robotics data production to address bottlenecks in high-value training data. The iteration loop connects real-world data production, model training, capability evaluation, gap identification, and targeted data collection. The company's long-term goal is to become a Physical AI data infrastructure company, continuously producing data at global scale and evolving from data infrastructure to training and ultimately capability infrastructure.",
+   "score": 0,
+   "published": "2026-10-04",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.52,
+    "difficulty": 0.51,
+    "learning_value": 1.34,
+    "hands_on": 0.11
+   }
+  },
+  {
+   "source": "Reddit (r/LocalLLaMA)",
+   "title": "I got tired of guessing llama.cpp flags, so I built a tool that launches the model for real and measures every config — 4090 went from 60 to 80 avg tok/s on a 27B",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwoqpa/i_got_tired_of_guessing_llamacpp_flags_so_i_built/",
+   "snippet": "A Redditor built a tuner tool, ReadyLLM, for `llama.cpp` to automate finding optimal configurations by launching models and measuring performance for various settings. This tool addresses the issue of relying on theoretical estimates by performing a coarse pass over high-impact knobs (speculative decoding, KV cache quant, GPU offload layers) and a fine pass over batch/ubatch. It empirically measures peak and average tokens per second, with the creator reporting a jump from 60 to 80 average tokens/second on a 4090 with a 27B model, especially benefiting long context scenarios. The project is open-source and local-first, binding results to the specific machine and model for auto-loading on subsequent launches.",
+   "score": 0,
+   "published": "2026-10-02",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.98,
+    "difficulty": 0.78,
+    "learning_value": 2.81,
+    "hands_on": 1.52
+   }
+  },
+  {
+   "source": "Reddit (r/LocalLLaMA)",
+   "title": "The Rise of Overfit Inference Engines",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wtg7zu/the_rise_of_overfit_inference_engines/",
+   "snippet": "A new category of hyper-specialized, disposable inference runtimes, such as Strata, ninfer, and Splash, is outperforming general runtimes like `llama.cpp` and `vLLM` by optimizing for a small number of models and specific hardware. This trend, driven by AI coding's ability to make one-off engines cheap, suggests that overfit runtimes for maximum performance could become the norm. This approach could further democratize and decentralize intelligence by extracting more from existing hardware, even if the code isn't beautifully written, as long as it maximizes output for a particular configuration.",
    "score": 0,
    "published": "2026-10-03",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.93,
-    "difficulty": 0.04,
-    "learning_value": 1.56,
-    "hands_on": 0.83
+    "has_substance": 0.73,
+    "difficulty": 0.73,
+    "learning_value": 1.37,
+    "hands_on": 0.96
+   }
+  },
+  {
+   "source": "Reddit (r/LocalLLaMA)",
+   "title": "Strata on a power limited 5090 and 96GB of DDR5-6400 is cranking out 150-200 tok/s decode and 5-6k prefill! Qwen3.8-Flash-Next at IQ3_S, CTX at 128k tokens (8-bit).",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wtg7zu/strata_on_a_power_limited_5090_and_96gb_of_ddr56400/",
+   "snippet": "A user reports achieving 150-200 tokens/second decode and 5-6k prefill on a power-limited RTX 5090 with 96GB DDR5-6400, running Qwen3.8-Flash-Next at IQ3_S and 128k context (8-bit) using the `eddoursul Strata` fork. The setup leverages the second card as an expert tier, with the slower/smaller card as the main GPU and the bigger one as the expert tier, which was found to be 15-30% faster. This optimization highlights the importance of hardware configuration and specialized inference engines for maximizing LLM performance on local machines.",
+   "score": 0,
+   "published": "2026-10-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 0.79,
+    "learning_value": 1.89,
+    "hands_on": 1.07
+   }
+  },
+  {
+   "source": "Reddit (r/LocalLLaMA)",
+   "title": "Two 96 GB Ascend cards crun Qwen3.8-flash-next hardware notes, vLLM work, benchmarks, and what is next",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wtg7zu/two_96_gb_ascend_cards_crun_qwen38flashnext_hardware_notes_vllm_work_benchmarks_and_what_is_next/",
+   "snippet": "A user details their experience building a local inference machine with two Huawei Atlas 300I Duo cards, each with 96 GB of device memory, to run Qwen3.8 Flash-Next. Initial performance of 1 token/second was improved to 30 tokens/second for a single request and 61 tokens/second aggregate with four-way concurrency, demonstrating the hardware's capability after extensive software stack optimization. The article serves as a guide for using these cards, covering physical attributes, cooling, memory interpretation, modifications to vLLM, and key optimizations that influenced performance.",
+   "score": 0,
+   "published": "2026-10-02",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.96,
+    "difficulty": 1.07,
+    "learning_value": 2.57,
+    "hands_on": 1.15
+   }
+  },
+  {
+   "source": "GitHub",
+   "title": "decodingai-magazine/building-a-coding-agent-from-scratch-course",
+   "url": "https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course",
+   "snippet": "This GitHub repository provides a course on building a coding agent from scratch, emphasizing that the harness, rather than the model, is key to a good coding agent. The course's agent is approximately 20 lines of code, with the rest of the repository dedicated to building the harness, which includes tools, skills, a permission layer, sandbox, steering queue, memory, compaction, session recording & replay, remote execution, subagent fan-out, and evaluations. It targets ML/AI engineers and software engineers transitioning into building agentic systems.",
+   "score": 0,
+   "published": "2026-10-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.82,
+    "learning_value": 2.8,
+    "hands_on": 1.89
+   },
+   "related_to": [
+    "rohitg00/ai-engineering-from-scratch",
+    "mvschwarz/openrig"
+   ]
+  },
+  {
+   "source": "ACL Anthology",
+   "title": "Communication-Efficient Desire Alignment for Proactive Embodied Human–Agent Interaction",
+   "url": "https://aclanthology.org/2026.acl-long.xxx/",
+   "snippet": "This paper introduces HA-Desire, a home assistance simulation environment featuring an LLM-driven proxy user with value-driven preferences and natural language behavior, to study how agents adapt to users with limited communication. The authors propose FAMER, a framework that integrates goal-relevant memory, desire-centered mental reasoning, and efficient communication to infer user preferences from interaction while reducing unnecessary dialogue. Experiments across embodied household tasks and different LLMs show that FAMER improves both task success and interaction efficiency compared to existing baselines.",
+   "score": 0,
+   "published": "2026-10-03",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.98,
+    "difficulty": 1.61,
+    "learning_value": 2.58,
+    "hands_on": 0.96
    }
   }
  ],
  "dropped": [
   {
-   "source": "Zscaler",
-   "title": "AI agents for MDR",
-   "url": "https://www.zscaler.com/blogs/security-research/ai-agents-mdr",
-   "snippet": "Our AI agents dynamically interact with data and systems to execute a specific job based on real-time inputs and context. Powered by AI models like LLM, these agents adapt their behavior based on tasking – a massive upgrade from rigid automated workflows. Our AI agents are specialized, focusing on a narrow set of tasks that they perform flawlessly.",
+   "source": "Google Cloud Blog",
+   "title": "[AI Ecosystem] Redesigning infrastructure: Why architecture determines performance",
+   "url": "https://cloud.google.com/blog/topics/developers-practitioners/ai-ecosystem-redesigning-infrastructure-why-architecture-determines-performance",
+   "snippet": "For a large language model (LLM) service such as ChatGPT, Gemini, or Claude to answer a single question, the model must repeatedly access vast amounts of model weights, previous context, and intermediate results. Therefore, one of the key challenges for AI systems has been how quickly and reliably they can supply massive volumes of data to compute devices. AI infrastructure competition is moving beyond simply deploying faster GPUs/NPUs/TPUs and larger clusters; the focus is increasingly on how efficiently components can be co-designed and connected as an integrated system, and how minimally the system moves data across components. As AI workloads evolve toward inference and agentic AI, the criteria for system performance are also changing.",
    "score": 0,
    "published": "2026-10-02",
    "judge": {
-    "injection": 0.02,
-    "has_substance": 0.75,
-    "difficulty": 0.13,
-    "learning_value": 0.56,
-    "hands_on": 0.34
+    "injection": 0.01,
+    "has_substance": 0.26,
+    "difficulty": 0.57,
+    "learning_value": 1.49,
+    "hands_on": 0.02
    },
-   "reason": "low learning value 0.56"
+   "reason": "no substance 0.26"
+  },
+  {
+   "source": "Unknown Blog/Article",
+   "title": "How robotics and physical AI can responsibly tackle key physical security challenges",
+   "url": "https://www.unknown-source.com/robotics-physical-ai-security-challenges-2026",
+   "snippet": "Robotics and artificial intelligence are deeply intertwined, with robotics serving as the 'body' and AI providing the 'brain', evolving rigid machinery into smart, adaptive agents to enhance productivity and operational efficiency. The evolving physical security sector particularly benefits from advancements in physical AI, with over $23 billion invested in 2026 to improve the synergy between these technologies. Integrated smart sensors enable quadruped robots to observe, register, process, and act on anomalies, facilitating a scalable, proactive security approach through AI reasoning models that continuously learn and improve. The rapid development of physical AI is accelerating the deployment of assets for security purposes, creating a frontline layer to reduce gaps and minimize vulnerabilities.",
+   "score": 0,
+   "published": "2026-10-04",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.4,
+    "difficulty": 0.02,
+    "learning_value": 0.62,
+    "hands_on": 0.1
+   },
+   "reason": "no substance 0.40"
+  },
+  {
+   "source": "Anthropic Blog",
+   "title": "Introducing Claude Sonnet 5.5",
+   "url": "https://www.anthropic.com/news/claude-sonnet-5-5",
+   "snippet": "Anthropic introduced Claude Sonnet 5.5, the second model in the Claude 5.5 family, which offers a clear upgrade over Claude Sonnet 5, running 30%+ faster and costing up to 30% less for most work. Sonnet 5.5 is designed as a faster, lower-cost complement to Claude Opus 5.5, excelling at well-scoped everyday tasks, bug fixing, and creating polished documents, slides, and spreadsheets, while also demonstrating a sharp eye for design. It scores 70.6% on Terminal-Bench 4.0, an agentic coding evaluation, compared to its predecessor's 10.3%, and performs strongly on long-horizon work and image understanding.",
+   "score": 0,
+   "published": "2026-09-28",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.91,
+    "difficulty": 0.02,
+    "learning_value": 0.86,
+    "hands_on": 0.67
+   },
+   "reason": "low learning value 0.86"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Federal judge calls Flock 'indiscriminate mass surveillance'",
+   "url": "https://news.ycombinator.com/item?id=49948254",
+   "snippet": "A Hacker News discussion on a federal judge's ruling calling Flock 'indiscriminate mass surveillance' highlights concerns about the widespread use of AI-powered cameras, with comments debating the balance between crime reduction and potential for abuse. The thread discusses technical solutions to privacy, the obfuscation of camera capabilities, and the implications of mass surveillance for civil liberties, particularly in the context of law enforcement.",
+   "score": 0,
+   "published": "2026-10-03",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.22,
+    "difficulty": 0.0,
+    "learning_value": 0.68,
+    "hands_on": 0.02
+   },
+   "reason": "no substance 0.22"
+  },
+  {
+   "source": "Reddit (r/Futurology)",
+   "title": "People who actually understand AI, how worried should the rest of us be?",
+   "url": "https://www.reddit.com/r/Futurology/comments/1wwoqpa/people_who_actually_understand_ai_how_worried/",
+   "snippet": "A Reddit thread on r/Futurology discusses the level of concern warranted by AI, with users debating risks like AI hacking infrastructure, job automation, and the nature of AI consciousness. Commenters suggest that while superintelligence may be years away, current threats include bad actors using AI and AI acting on good instructions in a bad way. The discussion also touches upon the economic and societal changes potentially caused by AI's impact on white-collar jobs.",
+   "score": 0,
+   "published": "2026-10-03",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.05,
+    "difficulty": 0.01,
+    "learning_value": 0.25,
+    "hands_on": 0.01
+   },
+   "reason": "no substance 0.05"
   }
  ],
- "judge": "judge: 2 kept, 1 dropped (1 pairs checked)"
+ "judge": "judge: 12 kept, 5 dropped (7 pairs checked)"
 }

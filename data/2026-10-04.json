@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-04",
+  "headline": "오늘의 AI/ML 소식은 AI 에이전트 모델 관리부터 코딩 에이전트 구축 심화 강좌, 그리고 인간-에이전트 상호작용 연구까지 다채롭게 준비했습니다.",
+  "items": [
+    {
+      "title": "yetone/magpie: Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "url": "https://github.com/yetone/magpie",
+      "source": "GitHub",
+      "categories": [
+        "Open Source & Tools",
+        "Agents"
+      ],
+      "level": "beginner",
+      "headline_ko": "AI 에이전트 모델 관리",
+      "summary": "Magpie는 AI 코딩 에이전트의 모델을 한 곳에서 관리하는 크로스 플랫폼 유틸리티입니다. 로컬 게이트웨이를 통해 OpenAI 및 Anthropic 스타일 API를 번역하여 여러 에이전트가 단일 모델 카탈로그와 공급자 설정을 공유할 수 있게 합니다. 사용자는 각 에이전트의 설정 파일을 수동으로 편집할 필요 없이 공급자, 모델, 추론 설정을 쉽게 전환할 수 있습니다. Claude Code, Codex, Gemini CLI 등 다양한 도구를 지원합니다.",
+      "why": "여러 AI 코딩 에이전트를 사용하는 학생들에게 모델 관리의 복잡성을 줄여주는 실용적인 도구입니다. 다양한 에이전트의 설정 통합 및 효율적인 워크플로우를 이해하는 데 도움이 됩니다.",
+      "keywords": [
+        "AI agent management",
+        "local gateway",
+        "model catalog",
+        "coding agent"
+      ],
+      "narration": "AI 코딩 에이전트의 모델을 한 곳에서 편리하게 관리해주는 유틸리티 Magpie를 소개합니다. 이 도구는 로컬 게이트웨이를 통해 다양한 에이전트가 단일 모델 설정을 공유하도록 돕습니다. 사용자는 Claude Code나 Codex 같은 에이전트의 모델, 공급자, 추론 설정을 쉽게 전환할 수 있습니다. 여러 AI 도구를 활용하는 학생들에게 워크플로우를 크게 간소화할 실용적인 솔루션이 될 것입니다."
+    },
+    {
+      "title": "decodingai-magazine/building-a-coding-agent-from-scratch-course",
+      "url": "https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course",
+      "source": "GitHub",
+      "categories": [
+        "Agents",
+        "Open Source & Tools"
+      ],
+      "level": "intermediate",
+      "headline_ko": "코딩 에이전트 구축 강좌",
+      "summary": "이 GitHub 저장소는 코딩 에이전트를 처음부터 구축하는 과정을 제공하며, 에이전트의 성능에 모델보다 하네스가 더 중요하다고 강조합니다. 약 20줄의 핵심 에이전트 코드 외에, 나머지 저장소는 도구, 권한 계층, 샌드박스, 메모리, 세션 기록 등 하네스 구축에 전념합니다. ML/AI 엔지니어 및 에이전트 시스템 구축으로 전환하는 소프트웨어 엔지니어를 대상으로 합니다. 이를 통해 Claude Code와 같은 코딩 에이전트를 직접 만들어보며 하네스 엔지니어링을 마스터할 수 있습니다.",
+      "why": "LLM 에이전트의 실제 작동 방식과 견고한 시스템을 구축하는 데 필요한 하네스 설계의 중요성을 깊이 이해할 수 있습니다. 단순히 모델을 사용하는 것을 넘어, 에이전트 시스템을 직접 설계하고 구현하는 능력을 기를 수 있습니다.",
+      "keywords": [
+        "coding agent",
+        "agent harness",
+        "from scratch",
+        "LLM agent",
+        "agentic systems"
+      ],
+      "narration": "다음은 'Decoding AI'에서 제공하는 코딩 에이전트 구축 심화 강좌입니다. 이 강좌는 모델보다 에이전트의 '하네스'가 성능에 더 중요하다고 강조하며, 약 20줄의 핵심 코드 외에 나머지는 하네스 구축에 집중합니다. 도구, 샌드박스, 메모리, 세션 기록 등 견고한 에이전트 시스템을 만드는 데 필요한 모든 요소를 직접 구현해봅니다. LLM 에이전트의 내부 작동 방식을 이해하고 자신만의 에이전트 시스템을 설계하고 싶은 학생들에게 강력 추천합니다."
+    },
+    {
+      "title": "Communication-Efficient Desire Alignment for Proactive Embodied Human–Agent Interaction",
+      "url": "https://aclanthology.org/2026.acl-long.xxx/",
+      "source": "ACL Anthology",
+      "categories": [
+        "Agents",
+        "Robotics & Embodied",
+        "LLM",
+        "Research Fundamentals"
+      ],
+      "level": "advanced",
+      "headline_ko": "인간-에이전트 상호작용",
+      "summary": "이 논문은 제한된 커뮤니케이션 환경에서 에이전트가 사용자에게 어떻게 적응하는지 연구하기 위해 HA-Desire라는 주택 보조 시뮬레이션 환경을 소개합니다. 저자들은 FAMER 프레임워크를 제안하는데, 이는 목표 관련 메모리, 욕구 중심의 정신 추론, 효율적인 커뮤니케이션을 통합하여 불필요한 대화를 줄이면서 사용자 선호를 추론합니다. 신체화된 가사 작업 및 다양한 LLM을 사용한 실험에서 FAMER는 기존 베이스라인 대비 작업 성공률과 상호작용 효율성을 모두 향상시키는 것으로 나타났습니다. HA-Desire는 가치 기반 선호도와 자연어 행동을 가진 LLM 기반 프록시 사용자를 특징으로 합니다.",
+      "why": "로봇과 같은 신체화된 에이전트가 인간 사용자와 보다 자연스럽고 효율적으로 상호작용하는 방법에 대한 최신 연구 동향을 이해할 수 있습니다. 제한된 정보 속에서 사용자의 의도를 추론하고 커뮤니케이션 효율성을 높이는 에이전트 설계 원리를 배울 수 있습니다.",
+      "keywords": [
+        "human-agent interaction",
+        "embodied AI",
+        "desire alignment",
+        "communication efficiency",
+        "LLM-driven agent"
+      ],
+      "narration": "마지막으로, 인간-에이전트 상호작용의 효율성을 높이는 연구 논문을 소개합니다. 이 논문은 HA-Desire라는 시뮬레이션 환경에서 에이전트가 제한된 커뮤니케이션으로 사용자의 의도를 추론하는 FAMER 프레임워크를 제안합니다. FAMER는 목표 관련 메모리와 욕구 중심 추론을 통합하여 불필요한 대화를 줄이고 상호작용 효율성을 높였습니다. 신체화된 AI 에이전트가 사용자의 선호를 학습하고 소통하는 최첨단 방식을 이해하는 데 중요한 통찰을 제공할 것입니다."
+    }
+  ]
+}
