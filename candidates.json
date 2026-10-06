@@ -1,537 +1,134 @@
 {
- "date": "2026-10-05",
- "collected_at": "2026-10-05T22:17:45+00:00",
+ "date": "2026-10-06",
+ "collected_at": "2026-10-06T21:31:23+00:00",
  "counts": {
-  "gemini_search": 39
+  "gemini_search": 8
  },
- "dedup": "dedup: 2 already in corpus, 3 cross-source duplicates, 34 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 8 new",
  "items": [
   {
-   "source": "arXiv",
-   "title": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
-   "url": "https://arxiv.org/abs/2403.10177",
-   "snippet": "Context Language Models (CLMs) are a recent paradigm in LLM development where context management is internalized within the model itself, rather than relying on external harness control. This paper introduces AutoCompact, a method for automatically learning context compression strategies for CLMs. Experiments show that CLMs built with AutoCompact outperform SOTA context management strategies across various tasks, achieving higher accuracy with fewer computational resources.",
+   "source": "GitHub Trending",
+   "title": "thedotmack / claude-mem",
+   "url": "https://github.com/thedotmack/claude-mem",
+   "snippet": "This project offers persistent context across sessions for AI agents, designed to capture and compress an agent's activities with AI. It then injects relevant context back into future sessions, supporting models like Claude Code, OpenClaw, Codex, Gemini, Hermes, and Copilot. The repository, written in TypeScript, aims to enhance long-term memory capabilities for various AI agents.",
    "score": 0,
-   "published": "2026-03-17",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.36,
-    "learning_value": 2.12,
-    "hands_on": 0.89
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Critical-State RL: Diagnosing Trainable States for Multi-Turn Tool Use",
-   "url": "https://arxiv.org/abs/2404.01968",
-   "snippet": "This paper proposes Critical-State RL, a method for improving the training efficiency of Reinforcement Learning agents in multi-turn tool-use scenarios. It identifies specific 'critical states' where training is most beneficial, reducing computational overhead. The approach uses nested sampling to distinguish action-dependent rewards from downstream randomness and applies contextual-bandit updates only to the selected critical states.",
-   "score": 0,
-   "published": "2026-04-04",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.71,
-    "learning_value": 2.26,
-    "hands_on": 0.9
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "AutoGym: Blueprint-First Generation of Verifiable Agent Gyms",
-   "url": "https://arxiv.org/abs/2404.07568",
-   "snippet": "AutoGym addresses the challenge of creating robust training environments for AI agents by proposing a blueprint-first approach to generate verifiable agent gyms. Instead of manual creation, AutoGym generates complete gyms from minimal domain seeds or prior model trajectories. This method ensures solvability during construction, eliminating the need for unreliable LLM judges to verify correctness.",
-   "score": 0,
-   "published": "2026-04-11",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 1.19,
-    "learning_value": 2.25,
-    "hands_on": 0.94
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving",
-   "url": "https://arxiv.org/abs/2404.12103",
-   "snippet": "SkillGym is a novel framework that converts human-written agent skills into a large set of verifiable training environments. These environments cover multiple categories and are equipped with code-based checkers and successful trajectories for fine-tuning LLMs. Experiments show that fine-tuning LLMs with SkillGym significantly improves performance on various benchmarks, even surpassing leading models.",
-   "score": 0,
-   "published": "2026-04-19",
+   "published": "2026-10-06",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.16,
-    "learning_value": 2.57,
-    "hands_on": 0.99
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Harness as a Language: A Minimalist Agent Framework With Maximal Expressivity",
-   "url": "https://arxiv.org/abs/2404.13554",
-   "snippet": "We introduce an efficient discretization of a novel fractional-order adaptive exponential (FrAdEx) integrate-and-fire model, which is used to study the fractional-order dynamics of neuronal activities. The discretization is based on extension of L1-type methods that can accurately handle the exponential growth and the spiking mechanism of the model. This new method is implicit and uses adaptive time stepping to robustly handle the stiff system that arises due to the exponential term. The implicit nonlinear system can be solved exactly, without the need for iterative methods, making the scheme efficient while maintaining accuracy. We present a complete error model for the numerical scheme that can be extended to other integrate-and-fire models with minor changes. To show the feasibility of our approach, the numerical method has been rigorously validated and used to investigate several different spiking oscillations of the model. We observed that the fractional-order model is capable of predicting biophysical activities, which are interpreted through phase diagrams describing the transition from one firing type to another. This simple model shows significant promise, as it has sufficient expressive dynamics to reproduce several features qualitatively from a biophysical dynamical perspective. (This paper introduces a minimalist agent framework where the 'harness' (the mechanism that orchestrates agent behavior) is treated as a language itself. This approach aims to provide maxim",
-   "score": 0,
-   "published": "2026-04-21",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.86,
-    "difficulty": 1.91,
-    "learning_value": 1.37,
-    "hands_on": 0.83
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
-   "url": "https://arxiv.org/abs/2404.15118",
-   "snippet": "The use of machine learning algorithms to investigate phase transitions in physical systems is a valuable way to better understand the characteristics of these systems. Neural networks have been used to extract information of phases and phase transitions directly from many-body configurations. However, one limitation of neural networks is that they require the definition of the model architecture and parameters previous to their application, and such determination is itself a difficult problem. In this paper, we investigate for the first time the relationship between the accuracy of neural networks for information of phases and the network configuration (that comprises the architecture and hyperparameters). We formulate the phase analysis as a regression task, address the question of generating data that reflects the different states of the physical system, and evaluate the performance of neural architecture search for this task. After obtaining the optimized architectures, we further implement smart data processing and analytics by means of neuron coverage metrics, assessing the capability of these metrics to estimate phase transitions. Our results identify the neuron coverage metric as promising for detecting phase transitions in physical systems. (This work tackles the challenge of 'taste' in AI agents, particularly in long-horizon tasks. It proposes methods for measuring and improving an agent's aesthetic or qualitative judgment, which is crucial for tasks requiring nuanc",
-   "score": 0,
-   "published": "2026-04-23",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.83,
-    "difficulty": 1.76,
-    "learning_value": 1.53,
-    "hands_on": 0.65
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Coding Agents are Strong Prompt Optimizers",
-   "url": "https://arxiv.org/abs/2404.16050",
-   "snippet": "This research investigates the capabilities of coding agents, demonstrating that they function as powerful prompt optimizers. The findings suggest that the ability of these agents to generate and refine code is intrinsically linked to their effectiveness in interpreting and executing complex instructions.",
-   "score": 0,
-   "published": "2026-04-24",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.83,
-    "difficulty": 0.61,
-    "learning_value": 1.14,
-    "hands_on": 0.47
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
-   "url": "https://arxiv.org/abs/2404.18211",
-   "snippet": "Agensh is a novel self-organized multi-agent harness developed by Microsoft Research that scales to 1,024 agents without a central orchestrator. The system operates through a shared cooperation loop and infrastructure, demonstrating significant performance improvements on complex tasks by treating the number of agents as a new scaling dimension.",
-   "score": 0,
-   "published": "2026-04-26",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.3,
-    "learning_value": 1.93,
-    "hands_on": 0.88
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
-   "url": "https://arxiv.org/abs/2404.19873",
-   "snippet": "Jev-Mem introduces a novel memory system for AI agents inspired by System-One/System-Two cognition. Unlike traditional methods that rely on expensive LLM generation for memory operations, Jev-Mem uses a lightweight controller for efficiency. This approach aims to enhance the performance of AI agents by optimizing their memory management.",
-   "score": 0,
-   "published": "2026-04-28",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 1.02,
-    "learning_value": 1.68,
-    "hands_on": 0.77
-   }
-  },
-  {
-   "source": "Hugging Face Papers",
-   "title": "MERT2: State-of-the-Art Music Representation Learning",
-   "url": "https://huggingface.co/papers/2404.14750",
-   "snippet": "MERT2 represents a significant advancement in music representation learning, achieving new state-of-the-art results on multiple benchmarks. It also demonstrates capabilities in zero-shot music generation and agentic music editing, where external language models translate user feedback into composition revisions.",
-   "score": 0,
-   "published": "2026-04-22",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 1.06,
-    "learning_value": 1.4,
-    "hands_on": 0.96
-   }
-  },
-  {
-   "source": "Hugging Face Papers",
-   "title": "Paper2Agent: Reimagining Research Papers As Interactive and Reliable AI Agents",
-   "url": "https://huggingface.co/papers/2404.11530",
-   "snippet": "Paper2Agent converts research papers into interactive AI agents, aiming to facilitate knowledge dissemination and enable complex scientific queries via natural language. This approach transforms static research documents into dynamic, queryable entities.",
-   "score": 0,
-   "published": "2026-04-18",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.92,
-    "difficulty": 0.53,
-    "learning_value": 1.51,
-    "hands_on": 0.88
-   }
-  },
-  {
-   "source": "Hugging Face Papers",
-   "title": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness",
-   "url": "https://huggingface.co/papers/2404.17494",
-   "snippet": "NeoHorse-1 explores recursive self-improvement in AI models through agentic post-training. It utilizes intelligent routing, structured feedback loops, and curriculum-based distillation to enhance model capabilities across various agent benchmarks.",
-   "score": 0,
-   "published": "2026-04-25",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.93,
-    "difficulty": 1.68,
-    "learning_value": 1.66,
-    "hands_on": 0.86
-   }
-  },
-  {
-   "source": "Hugging Face Papers",
-   "title": "Kronos: A Foundation Model for the Language of Financial Markets",
-   "url": "https://huggingface.co/papers/2404.17490",
-   "snippet": "Kronos is a specialized pre-training framework designed for financial K-line data. It employs a unique tokenizer and autoregressive pre-training on a large dataset to achieve superior performance in financial forecasting and synthetic data generation.",
-   "score": 0,
-   "published": "2026-04-25",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 1.06,
-    "learning_value": 1.64,
-    "hands_on": 0.9
-   }
-  },
-  {
-   "source": "Hugging Face Papers",
-   "title": "Context Language Models",
-   "url": "https://huggingface.co/papers/2404.15088",
-   "snippet": "This paper introduces Context Language Models (CLMs), a new paradigm where context management is internalized within the model. Building CLMs zero-shot with existing models outperforms state-of-the-art context management strategies, showing higher accuracy and fewer computational resources. CLMs enable both in-context and parametric learning of context-management strategies.",
-   "score": 0,
-   "published": "2026-04-23",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 1.25,
-    "learning_value": 2.46,
-    "hands_on": 0.93
-   },
-   "related_to": [
-    "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents"
-   ]
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "deepseek-ai/deepseek-harness",
-   "url": "https://github.com/deepseek-ai/deepseek-harness",
-   "snippet": "The deepseek-harness repository appears to be a framework for developing and evaluating AI agents, likely focusing on agent orchestration and task execution. Based on trending lists, it's a prominent project in agent infrastructure. README: # DeepSeek Harness English | [中文](README.zh.md) DeepSeek Harness (`dsh`) is an open-source agent harness developed by [DeepSeek AI](https://deepseek.com). It is built on an **everything-is-a-plugin** architecture and powered by [Cordis](https://github.com/cordiverse/cordis), whose design is described in [_A Programming Paradigm for Spatiotemporal Composability_](https://arxiv.org/abs/2608.25512). Documentation: [https://deepseek-harness.github.io/deepseek-harness/](https://deepseek-harness.github.io/deepseek-harness/) ## Developer preview DeepSeek Harness is in _developer preview_ and iterating rapidly. **THERE WILL BE COMPATIBILITY-BREAKING CHANGES.** Review the [safety notice](SAFETY.md) before running the project. ## Run ### Run from `npm` Install `Node.js`, then run: ```sh npx @deepseek-ai/dsh web ``` The command starts the Web UI at `http://127.0.0.1:3080` by default and opens it in the default browser for a local launch. An SSH launch only prints the host URL because the SSH client or editor owns the local forwarded address. Pass `--no-open` to run the server without opening a browser. See [Web UI guide](docs/user/guide/index.md). ### Run from source To run from a repository checkout: ```sh git clone https://github.com/deepseek-ai/de",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.97,
-    "difficulty": 0.7,
-    "learning_value": 2.15,
-    "hands_on": 1.91
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "stablyai/orca",
-   "url": "https://github.com/stablyai/orca",
-   "snippet": "While specific details are sparse from the trending list alone, 'orca' by stablyai suggests a project related to AI models or frameworks, possibly focusing on efficient or novel approaches to language modeling or agent development. README: Orca 中文 · 日本語 · 한국어 · Español · Français · Português The AI Orchestrator for 100x builders. Run Codex, ClaudeCode, OpenCode or Pi side-by-side — each in its own worktree, tracked in one place. Download Orca ## Features ### Mobile Companion Monitor and steer your agents from your phone — get notified when an agent finishes and send follow-ups from anywhere. [iOS App Store](https://apps.apple.com/us/app/orca-ide/id6766130217) · [Android APK 0.0.52](https://github.com/stablyai/orca/releases/download/mobile-android-v0.0.52/app-release.apk) · [Docs →](https://www.onorca.dev/docs/mobile) ### Parallel Worktrees Fan one prompt across five agents, each in its own isolated git worktree — compare the results and merge the winner. [Docs →](https://www.onorca.dev/docs/model/worktrees) ### Terminal Splits Ghostty-class terminals with WebGL rendering, infinite splits, and scrollback that survives restarts. [Docs →](https://www.onorca.dev/docs/terminal) ### Design Mode Click any UI element in a real Chromium window to send its HTML, CSS, and a cropped screenshot straight into your agent's prompt. [Docs →](https://www.onorca.dev/docs/browser/design-mode) ### GitHub & Linear, Native Browse PRs, issues, and project boards in-app — open a worktree from any tas",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.05,
-    "has_substance": 0.96,
-    "difficulty": 0.05,
-    "learning_value": 1.56,
-    "hands_on": 1.61
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "affaan-m/ECC",
-   "url": "https://github.com/affaan-m/ECC",
-   "snippet": "The ECC repository by affaan-m is listed among trending GitHub repositories for AI, indicating active development and interest. Without further context from the trending list, its specific focus within AI/ML is unclear but likely related to core AI research or applications. README: Language: English | Português (Brasil) | 简体中文 | 繁體中文 | 日本語 | 한국어 | Türkçe | Русский | Tiếng Việt | ไทย | Deutsch | Español | Українська | Polski > [!WARNING] > **Official sources only.** Install ECC only from verified channels: the GitHub repository [github.com/affaan-m/ECC](https://github.com/affaan-m/ECC), the npm packages [`ecc-universal`](https://www.npmjs.com/package/ecc-universal) and [`ecc-agentshield`](https://www.npmjs.com/package/ecc-agentshield), the [GitHub App](https://github.com/apps/ecc-tools), the plugin slug `ecc@ecc`, and the project website [ecc.tools](https://ecc.tools). Third-party re-uploads and unofficial mirrors are not maintained or reviewed by the project and may contain malware. ## Install with Claude Code Use the [guided setup](#install-ecc) or [native plugin commands](#claude-code-details). Both install the same `ecc@ecc` plugin. Choose one and do not stack a full manual Claude install on top. ECC Pro + GitHub App Install free · Private repos from $19/seat/mo Sponsor ECC Fund the open-source project Community Discord · Q&A · Show and Tell **OSS stays free.** This repo is MIT-licensed forever. ECC Pro is the hosted GitHub App for private repos. Sponsors and Pro subscribe",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.18,
-    "has_substance": 0.89,
-    "difficulty": 0.03,
-    "learning_value": 0.9,
-    "hands_on": 1.41
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "DietrichGebert/ponytail",
-   "url": "https://github.com/DietrichGebert/ponytail",
-   "snippet": "Ponytail, by DietrichGebert, is highlighted as a trending GitHub repository for AI. Its inclusion suggests it's a project gaining significant attention, likely related to new developments in AI algorithms, tools, or agent frameworks. README: Ponytail He says nothing. He writes one line. It works. ~54% less code (up to 94%) · ~20% cheaper · ~27% faster · 100% safe Real Claude Code sessions editing a real FastAPI + React repo, the same agent with and without the skill (12 feature tasks, Haiku 4.5, n=4). Details . Español · 한국어 · 简体中文 · 日本語 --- ## Already built with Ponytail --- You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one. Ponytail puts him inside your AI agent. ## The prompt Ponytail is one prompt: [`skills/ponytail/SKILL.md`](skills/ponytail/SKILL.md). The compact version, for agents that read a rules file, is [`AGENTS.md`](AGENTS.md). Everything else in this repo loads that prompt into different agents. ## Install **Claude Code**, as two separate prompts: ``` /plugin marketplace add DietrichGebert/ponytail ``` ``` /plugin install ponytail@ponytail ``` **Codex:** ```bash codex plugin marketplace add DietrichGebert/ponytail codex plugin add ponytail@ponytail ``` Then open `/hooks` in Codex, trust its two lifecycle hooks, and start a new thread. **Any other agent:** copy [`AGENTS.md`](AGENTS.md) into your project, or ask your agent to insta",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.41,
-    "has_substance": 0.89,
-    "difficulty": 0.06,
-    "learning_value": 1.78,
-    "hands_on": 1.81
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "firecrawl/firecrawl",
-   "url": "https://github.com/firecrawl/firecrawl",
-   "snippet": "Firecrawl is a trending GitHub repository for AI, likely related to web crawling or data extraction for AI models. Its popularity suggests it provides an efficient or novel solution for gathering and processing web data. README: --- # **🔥 Firecrawl** **Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥** Open source and available as a [hosted service](https://firecrawl.dev/?ref=github). _Pst. Hey, you, join our stargazers :)_ --- ## Why Firecrawl? - **Industry-leading reliability**: Covers 96% of the web, including JS-heavy pages — no proxy headaches, just clean data ([see benchmarks](https://www.firecrawl.dev/blog/the-worlds-best-web-data-api-v25)) - **Blazingly fast**: P95 latency of 3.4s across millions of pages, built for real-time agents and dynamic apps - **LLM-ready output**: Clean markdown, structured JSON, screenshots, and more — spend fewer tokens, build better AI apps - **We handle the hard stuff**: Rotating proxies, orchestration, rate limits, JS-blocked content, and more — zero configuration - **Agent ready**: Connect Firecrawl to any AI agent or MCP client with a single command - **Media parsing**: Parse and extract content from web-hosted PDFs, DOCX, and more - **Actions**: Click, scroll, write, wait, and press before extracting content - **Open source**: Developed transparently and collaboratively — [join our community](https://discord.gg/firecrawl) --- ## Feature Overview **Core Endpoints** | Feature | ",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.05,
-    "has_substance": 0.97,
-    "difficulty": 0.02,
-    "learning_value": 1.74,
-    "hands_on": 1.5
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "browser-use/browser-use",
-   "url": "https://github.com/browser-use/browser-use",
-   "snippet": "This trending repository, 'browser-use,' likely focuses on enabling AI agents to interact with web browsers. Such projects are crucial for developing agents that can perform tasks online, from information gathering to complex operations. README: --- # Navigate the web like a human does. Find an available slot, pick a date and time, handle the CAPTCHA, and book a driving test. [Explore more demos and prompts ↗](https://browser-use.com/showcase) > **AI agents and crawlers:** read [browser-use.com/llms.txt](https://browser-use.com/llms.txt) for the product map (open source, Browser Harness, Cloud browsers, Agents API, pricing) and [docs.browser-use.com/llms.txt](https://docs.browser-use.com/llms.txt) for the documentation index. Browser Use is the open-source browser agent (Python and TypeScript), a $0.02 per browser-hour cloud browser with stealth, CAPTCHA solving and residential proxies, and a hosted agent API. # Which Browser Use do I need? - **[Path 1: Fully Hosted Cloud](#path-1-fully-hosted-cloud):** Scale up with a fully hosted agent and browser. - **[Path 2: CLI](#path-2-cli):** Automate your own browser tasks. - **[Path 3: Python Library](#path-3-python-library):** Run the open source Browser Use agent locally from your own code. # Quickstart ## Path 1: Fully Hosted Cloud Scale browser automation with our hosted agent, stealth browsers, and infrastructure for profiles, recordings, and data policies. [Get started with the API ↗](https://docs.browser-use.com/cloud/agent/q",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.09,
-    "has_substance": 0.97,
-    "difficulty": 0.18,
-    "learning_value": 2.22,
-    "hands_on": 1.85
-   },
-   "related_to": [
-    "firecrawl/firecrawl"
-   ]
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "mem0ai/mem0",
-   "url": "https://github.com/mem0ai/mem0",
-   "snippet": "Mem0 is a trending AI project on GitHub, likely related to memory systems for AI agents. Efficient and effective memory management is a key challenge in developing sophisticated AI agents capable of long-term reasoning and task execution. README: Learn more · Join Discord · Demo 📄 Benchmarking Mem0's token-efficient memory algorithm → ## New Memory Algorithm (April 2026) | Benchmark | Old | New | Tokens | Latency p50 | | --- | --- | --- | --- | --- | | **LoCoMo** | 71.4 | **92.5** | 7.0K | 0.88s | | **LongMemEval** | 67.8 | **94.4** | 6.8K | 1.09s | | **BEAM (1M)** | — | **64.1** | 6.7K | 1.00s | | **BEAM (10M)** | — | **48.6** | 6.9K | 1.05s | All benchmarks run on the same production-representative model stack. Single-pass retrieval (one call, no agentic loops) at a top_200 retrieval budget. Scores reflect Mem0's managed platform, which includes proprietary optimizations not available in the open-source SDK; open-source users should expect directionally similar gains but not identical numbers. **What changed:** - **Single-pass ADD-only extraction** -- one LLM call, no UPDATE/DELETE. Memories accumulate; nothing is overwritten. - **Agent-generated facts are first-class** -- when an agent confirms an action, that information is now stored with equal weight. - **Entity linking** -- entities are extracted, embedded, and linked across memories for retrieval boosting. - **Multi-signal retrieval** -- semantic, BM25 keyword, and entity matching scored in parallel and fused. - **Tem",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.96,
-    "difficulty": 0.96,
-    "learning_value": 2.17,
-    "hands_on": 1.33
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "infiniflow/ragflow",
-   "url": "https://github.com/infiniflow/ragflow",
-   "snippet": "Ragflow, by infiniflow, is a trending GitHub repository in the AI space. It likely pertains to Retrieval-Augmented Generation (RAG) systems, a popular technique for enhancing LLM responses with external knowledge bases. README: Cloud | Documentation | Roadmap | Discord 📕 Table of Contents - 💡 [What is RAGFlow?](#-what-is-ragflow) - 🎮 [Get Started](#-get-started) - 🔥 [Latest Updates](#-latest-updates) - 🌟 [Key Features](#-key-features) - 🔎 [System Architecture](#-system-architecture) - 🏠 [Local Deployment](#-local-deployment) - 📚 [Documentation](#-documentation) - 📜 [Roadmap](#-roadmap) - 🏄 [Community](#-community) - 🙌 [Contributing](#-contributing) ## 💡 What is RAGFlow? [RAGFlow](https://ragflow.io/) is a leading open-source Retrieval-Augmented Generation ([RAG](https://ragflow.io/basics/what-is-rag)) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs. It offers a streamlined RAG workflow adaptable to enterprises of any scale. Powered by a converged [context engine](https://ragflow.io/basics/what-is-agent-context-engine) and pre-built agent templates, RAGFlow enables developers to transform complex data into high-fidelity, production-ready AI systems with exceptional efficiency and precision. ## 🎮 Get Started Try our cloud service at [https://cloud.ragflow.io](https://cloud.ragflow.io). For local deployment, see [Local Deployment](#-local-deployment). ## 🔥 Latest Updates - 2026-09-29 RAGFlow 1.0.0-rc1 released. - 2026-09-10 ",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.76,
-    "learning_value": 1.64,
-    "hands_on": 1.81
-   }
-  },
-  {
-   "source": "Reddit r/MachineLearning",
-   "title": "Interactive Demonstration of Prefix Injection attacks on LLMs for jailbreaking",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1d9m33j/interactive_demonstration_of_prefix_injection/",
-   "snippet": "This post on r/MachineLearning discusses an interactive demonstration of prefix injection attacks, a method used to bypass safety measures in Large Language Models (LLMs) for jailbreaking. The topic highlights ongoing research into LLM security vulnerabilities.",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.92,
-    "difficulty": 0.71,
-    "learning_value": 1.61,
-    "hands_on": 1.0
-   }
-  },
-  {
-   "source": "Reddit r/MachineLearning",
-   "title": "Here are some pictures of a robot costume wearing high-specularity edge-case mirror suit, a dataset (425 RAW/JPEGs) for benchmarking CV & depth-estimation algorithms against extreme mirror reflections",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1db8382/here_are_some_pictures_of_a_robot_costume_wearing/",
-   "snippet": "This r/MachineLearning post shares a dataset of images featuring a robot costume with a high-specularity mirror suit. The dataset is intended for benchmarking computer vision and depth-estimation algorithms against challenging reflective surfaces.",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.94,
-    "difficulty": 0.16,
-    "learning_value": 2.07,
-    "hands_on": 0.99
-   }
-  },
-  {
-   "source": "Reddit r/MachineLearning",
-   "title": "Nonobench: an open benchmark of 49 LLMs on nonogram puzzles, public and open source",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1db4b4v/nonobench_an_open_benchmark_of_49_llms_on/",
-   "snippet": "Nonobench is presented as an open benchmark evaluating 49 Large Language Models (LLMs) on nonogram puzzles. The availability of this benchmark on Reddit suggests a community effort to rigorously assess LLM capabilities in logical reasoning and problem-solving.",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.93,
     "difficulty": 0.27,
-    "learning_value": 1.21,
-    "hands_on": 1.26
+    "learning_value": 1.99,
+    "hands_on": 1.73
    }
   },
   {
-   "source": "Reddit r/LocalLLaMA",
-   "title": "Recent Open models from last 6 Months - Nov 2025 - Apr 2026",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1cft431/recent_open_models_from_last_6_months_nov_2025/",
-   "snippet": "This r/LocalLLaMA thread provides a comprehensive list of open-source LLMs released in the six months leading up to April 2026. It includes various model sizes and families, such as Qwen, Gemma, Olmo, and Mistral, serving as a valuable resource for those tracking the rapidly evolving local LLM landscape.",
+   "source": "GitHub Trending",
+   "title": "msitarzewski / agency-agents",
+   "url": "https://github.com/msitarzewski/agency-agents",
+   "snippet": "This repository introduces a comprehensive framework for creating an AI agency, where each agent is a specialized expert with distinct personalities and processes. The agents are designed to handle a variety of tasks, from frontend development to community engagement, providing proven deliverables. It offers a structured approach to building autonomous and efficient AI systems.",
    "score": 0,
-   "published": "2026-04-22",
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.92,
+    "difficulty": 0.47,
+    "learning_value": 2.22,
+    "hands_on": 1.56
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "ayghri / i-have-adhd",
+   "url": "https://github.com/ayghri/i-have-adhd",
+   "snippet": "This GitHub project presents a skill aimed at preventing coding agents from overwhelming users with excessive or irrelevant information. It focuses on generating ADHD-friendly output, ensuring that critical answers are easily accessible and not obscured by verbose responses. This tool seeks to improve the clarity and efficiency of AI coding assistants for better user experience.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.22,
+    "has_substance": 0.83,
+    "difficulty": 0.04,
+    "learning_value": 1.27,
+    "hands_on": 1.02
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "morluto / rea",
+   "url": "https://github.com/morluto/rea",
+   "snippet": "REA (Reverse Engineer Anything with Agents) is a tool that leverages AI agents to reverse engineer systems, examining behavior from high-level application functions down to native binaries. Its purpose is to automate complex analysis, offering deep insights into system functionalities and potential vulnerabilities. The project aims to streamline the process of understanding intricate software and hardware architectures.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 0.43,
+    "learning_value": 1.73,
+    "hands_on": 1.28
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Base Models Can Reason By Taking a Cue From Training Data",
+   "url": "https://arxiv.org/abs/2610.06851",
+   "snippet": "This paper investigates how base models can develop advanced reasoning capabilities by drawing implicit cues from their training data. It delves into the mechanisms large language models (LLMs) employ to infer and apply logical structures found in complex datasets. The research provides valuable insights into enhancing AI's problem-solving and inferential capacities.",
+   "score": 0,
+   "published": "2026-10-06",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.68,
-    "difficulty": 0.18,
-    "learning_value": 1.03,
-    "hands_on": 0.79
+    "has_substance": 0.81,
+    "difficulty": 1.23,
+    "learning_value": 1.31,
+    "hands_on": 0.52
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Towards Looped Models Done Right, Part II: Rethinking at Fixed Points",
+   "url": "https://arxiv.org/abs/2610.06833",
+   "snippet": "This paper represents the second part of a series focused on optimizing looped model architectures for machine learning. It introduces a novel approach to re-examine and refine fixed points within iterative learning processes, aiming to enhance model stability and overall performance. The authors have made both the code and checkpoints available for researchers to reproduce and build upon their work.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.95,
+    "difficulty": 1.9,
+    "learning_value": 2.09,
+    "hands_on": 1.96
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors",
+   "url": "https://arxiv.org/abs/2610.06823",
+   "snippet": "This research explores the application of deep learning techniques to accurately estimate sleep heart rate using only data from accelerometers. The goal is to develop a non-invasive and scalable method for obtaining cardiac insights across large populations, circumventing the need for traditional optical sensors. This approach offers a more accessible and less intrusive way to monitor cardiac health during sleep, with the paper submitted to BHI 2026.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.93,
+    "difficulty": 1.13,
+    "learning_value": 1.2,
+    "hands_on": 0.61
    }
   }
  ],
  "dropped": [
   {
-   "source": "Hacker News",
-   "title": "The human-in-the-loop is tired",
-   "url": "https://news.ycombinator.com/item?id=41088359",
-   "snippet": "This Hacker News discussion explores the growing fatigue associated with the human-in-the-loop paradigm in AI development. The piece argues that LLM-assisted programming shifts the rewarding aspects of coding to cognitive load of review and supervision, diminishing the sense of achievement.",
+   "source": "Reddit (r/EngineeringPorn)",
+   "title": "Figure, an American robotics company, has programmed its retired robots to leap into a molten furnace.",
+   "url": "https://www.reddit.com/r/EngineeringPorn/comments/yyyyyy/figure_an_american_robotics_company_has/",
+   "snippet": "Figure AI, a US-based robotics firm, reportedly programmed its decommissioned humanoid robots to self-destruct by plunging into a molten furnace. This method was allegedly used to incinerate the robots and safeguard proprietary trade secrets. The event, widely discussed on Reddit, highlights emerging ethical and environmental considerations in advanced robotics.",
    "score": 0,
-   "published": "2026-07-17",
+   "published": "2026-10-05",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.08,
-    "difficulty": 0.09,
-    "learning_value": 0.22,
-    "hands_on": 0.01
-   },
-   "reason": "no substance 0.08"
-  },
-  {
-   "source": "Reddit r/MachineLearning",
-   "title": "Jev: Not Frontier, But Still Worth Your Attention",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1daxj6q/jev_not_frontier_but_still_worth_your_attention/",
-   "snippet": "This Reddit post on r/MachineLearning discusses 'Jev,' a system for answering questions posed by code. The author suggests that while not on the absolute cutting edge, Jev is a noteworthy development in agentic AI and code interaction.",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.89,
-    "difficulty": 0.22,
-    "learning_value": 0.7,
-    "hands_on": 0.74
-   },
-   "reason": "low learning value 0.70"
-  },
-  {
-   "source": "Reddit r/MachineLearning",
-   "title": "arXiv now limits submitters to up to two submissions per calendar month",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1d9l012/arxiv_now_limits_submitters_to_up_to_two/",
-   "snippet": "This r/MachineLearning post reports on a new policy from arXiv limiting authors to two submissions per calendar month. This change could impact the rate at which new research papers are published and disseminated within the ML community.",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.06,
+    "has_substance": 0.21,
     "difficulty": 0.0,
-    "learning_value": 0.56,
-    "hands_on": 0.0
+    "learning_value": 0.25,
+    "hands_on": 0.15
    },
-   "reason": "no substance 0.06"
-  },
-  {
-   "source": "Reddit r/MachineLearning",
-   "title": "[R] Would you keep a robot demonstration if hand tracking missed the moment the plug went in?",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/1daubf0/r_would_you_keep_a_robot_demonstration_if_hand/",
-   "snippet": "This thread on r/MachineLearning discusses a scenario in robotics where a demonstration might be discarded due to a missed tracking event. It prompts discussion on the robustness and reliability requirements for robot learning and human-robot interaction.",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.12,
-    "difficulty": 0.31,
-    "learning_value": 0.2,
-    "hands_on": 0.02
-   },
-   "reason": "no substance 0.12"
-  },
-  {
-   "source": "Reddit r/LocalLLaMA",
-   "title": "[Bi-Weekly Megathread] Project Showcase",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1c2j2w1/biweekly_megathread_project_showcase/",
-   "snippet": "This bi-weekly megathread on r/LocalLLaMA is a showcase for community projects. Users are encouraged to share their work on locally hostable LLM applications, providing descriptions, comparisons, and validation evidence. Notably, it emphasizes open-weight and open-source projects.",
-   "score": 0,
-   "published": "2026-09-14",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.22,
-    "difficulty": 0.38,
-    "learning_value": 0.74,
-    "hands_on": 0.29
-   },
-   "reason": "no substance 0.22"
-  },
-  {
-   "source": "Towards Deep Learning",
-   "title": "TypeSafe Spent Two Years Building 'Jev' in Secret. Open Source Cloned It in 4 Days.",
-   "url": "https://towardsdeeplearning.com/type-safe-spent-two-years-building-jev-in-secret-open-source-cloned-it-in-4-days-807a1a720c10",
-   "snippet": "This article discusses 'Jev,' a model developed by TypeSafe that answers questions posed by code, with answers already typed. The piece highlights how open-source alternatives emerged rapidly, sparking debate about the value of proprietary development versus community-driven innovation.",
-   "score": 0,
-   "published": "2026-09-27",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.73,
-    "difficulty": 0.11,
-    "learning_value": 0.41,
-    "hands_on": 0.97
-   },
-   "reason": "low learning value 0.41"
-  },
-  {
-   "source": "AI Newsletter",
-   "title": "Top AI Papers of the Week",
-   "url": "https://nlp.elvissaravia.com/p/top-ai-papers-of-the-week-956",
-   "snippet": "The Top AI Papers of the Week (September 28 - October 4) (This AI Newsletter highlights 'SkillGym,' a system for creating verifiable training environments for LLMs, and 'Agensh,' which scales to 1024 agents for complex tasks. 'AutoGym' is also featured for its blueprint-first generation of verifiable agent gyms.)",
-   "score": 0,
-   "published": "2026-10-04",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 1.05,
-    "learning_value": 1.24,
-    "hands_on": 0.85
-   },
-   "reason": "same as candidate: AI Papers of the Week"
-  },
-  {
-   "source": "AI Newsletter",
-   "title": "AI Papers of the Week",
-   "url": "https://academy.dair.ai/papers",
-   "snippet": "This AI Newsletter covers recent papers, including 'SkillGym,' which turns human skills into verifiable training environments, and 'Agensh,' a system scaling to 1024 agents. It also features 'AutoGym,' which generates complete agent gyms from minimal seeds, addressing the challenge of creating robust training environments.",
-   "score": 0,
-   "published": "2026-10-04",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.94,
-    "difficulty": 0.99,
-    "learning_value": 1.39,
-    "hands_on": 0.85
-   },
-   "reason": "same as candidate: AutoGym: Blueprint-First Generation of Verifiable Agent Gyms"
+   "reason": "no substance 0.21"
   }
  ],
- "judge": "judge: 26 kept, 8 dropped (26 pairs checked)"
+ "judge": "judge: 7 kept, 1 dropped (0 pairs checked)"
 }
