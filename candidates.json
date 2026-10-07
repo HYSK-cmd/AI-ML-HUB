@@ -1,134 +1,337 @@
 {
- "date": "2026-10-06",
- "collected_at": "2026-10-06T21:31:23+00:00",
+ "date": "2026-10-07",
+ "collected_at": "2026-10-07T21:51:35+00:00",
  "counts": {
-  "gemini_search": 8
+  "gemini_search": 21
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 8 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 21 new",
  "items": [
   {
-   "source": "GitHub Trending",
-   "title": "thedotmack / claude-mem",
-   "url": "https://github.com/thedotmack/claude-mem",
-   "snippet": "This project offers persistent context across sessions for AI agents, designed to capture and compress an agent's activities with AI. It then injects relevant context back into future sessions, supporting models like Claude Code, OpenClaw, Codex, Gemini, Hermes, and Copilot. The repository, written in TypeScript, aims to enhance long-term memory capabilities for various AI agents.",
+   "source": "AWS ML Blog",
+   "title": "AWS Weekly Roundup: Amazon Bedrock Managed Agents powered by OpenAI, Q3 service availability updates, Kiro workflows, and more (October 5, 2026)",
+   "url": "https://aws.amazon.com/blogs/machine-learning/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/",
+   "snippet": "Last week, we announced a public preview of Amazon Bedrock Managed Agents powered by OpenAI, built on a customized version of OpenAI's Agents API engineered to be AWS-native and integrated with AWS resources. You can now build agents optimized for OpenAI models that run entirely inside AWS with the identities, permissions, and governance controls you already use.",
    "score": 0,
-   "published": "2026-10-06",
+   "published": "2026-10-05",
    "judge": {
     "injection": 0.02,
+    "has_substance": 0.93,
+    "difficulty": 0.06,
+    "learning_value": 0.93,
+    "hands_on": 0.9
+   }
+  },
+  {
+   "source": "AWS ML Blog",
+   "title": "New agent skill: Amazon SageMaker optimized generative AI inference for your coding agent | Artificial Intelligence - AWS",
+   "url": "https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent/",
+   "snippet": "Amazon SageMaker optimized generative AI inference introduces the aws-ai-ml skill through the Agent Toolkit for AWS, giving coding agents like Kiro, Claude Code, and Codex deep expertise in inference optimization and benchmarking. Describe what you want, and your agent generates executable SageMaker Python SDK v3 code to benchmark, recommend, and compare deployments. (Engineers increasingly use coding assistance tools to accelerate their development workflows. Today, Amazon SageMaker AI optimized generative AI inference introduces the aws-ai-ml skill, available through the Agent Toolkit for AWS.)",
+   "score": 0,
+   "published": "2026-10-05",
+   "judge": {
+    "injection": 0.17,
+    "has_substance": 0.95,
+    "difficulty": 0.15,
+    "learning_value": 1.08,
+    "hands_on": 0.98
+   }
+  },
+  {
+   "source": "AWS ML Blog",
+   "title": "Introducing GLM 5.3 on Amazon Bedrock | Artificial Intelligence - AWS",
+   "url": "https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock/",
+   "snippet": "GLM 5.3 from Z.ai is now available on Amazon Bedrock: a 753B-parameter mixture-of-experts model built for coding and long-horizon agentic tasks. Learn how to invoke it with the OpenAI-compatible APIs, cut cost and latency with prompt caching, and run an authorized security test with the open-source Strix agent. (GLM 5.3 from Z.ai (Zhipu AI) is now available on Amazon Bedrock. GLM 5.3, as published on Hugging Face Hub, is a 753B-parameter mixture-of-experts model optimized for coding and long-horizon agentic tasks.)",
+   "score": 0,
+   "published": "2026-10-05",
+   "judge": {
+    "injection": 0.03,
     "has_substance": 0.97,
-    "difficulty": 0.27,
-    "learning_value": 1.99,
-    "hands_on": 1.73
+    "difficulty": 0.4,
+    "learning_value": 1.14,
+    "hands_on": 1.29
+   }
+  },
+  {
+   "source": "Hugging Face Blog",
+   "title": "Falcon OCR Arabic: 270M Parameters State-of-the-Art Arabic OCR",
+   "url": "https://huggingface.co/blog/tiiuae/falcon-ocr-arabic",
+   "snippet": "Falcon-OCR-Arabic extends Falcon OCR to Arabic documents without changing its architecture. Falcon OCR is our 270M-parameter early-fusion OCR model, introduced in the Falcon Perception blog post. We adapt it in two stages: supervised finetuning (SFT) on real and synthetic Arabic documents, then reinforcement learning (RL) on a curated set of high-quality samples.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 0.97,
+    "learning_value": 1.76,
+    "hands_on": 1.01
    }
   },
   {
    "source": "GitHub Trending",
-   "title": "msitarzewski / agency-agents",
-   "url": "https://github.com/msitarzewski/agency-agents",
-   "snippet": "This repository introduces a comprehensive framework for creating an AI agency, where each agent is a specialized expert with distinct personalities and processes. The agents are designed to handle a variety of tasks, from frontend development to community engagement, providing proven deliverables. It offers a structured approach to building autonomous and efficient AI systems.",
+   "title": "prompts.chat",
+   "url": "https://github.com/f/prompts.chat",
+   "snippet": "Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+   "score": 0,
+   "published": "2026-10-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.9,
+    "difficulty": 0.02,
+    "learning_value": 1.09,
+    "hands_on": 1.29
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?",
+   "url": "https://arxiv.org/abs/2610.08775",
+   "snippet": "Large language models (LLMs) can solve many narrow tasks, but querying them separately for millions of related instances can be prohibitively expensive. Can LLM agents autonomously create cheaper solutions for such workloads? We call this ability \"bottling\": the ability to turn general capabilities into task-specific solutions that balance answer quality and amortised cost.",
    "score": 0,
    "published": "2026-10-06",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.92,
-    "difficulty": 0.47,
-    "learning_value": 2.22,
-    "hands_on": 1.56
+    "has_substance": 0.57,
+    "difficulty": 0.7,
+    "learning_value": 1.89,
+    "hands_on": 0.48
    }
   },
   {
-   "source": "GitHub Trending",
-   "title": "ayghri / i-have-adhd",
-   "url": "https://github.com/ayghri/i-have-adhd",
-   "snippet": "This GitHub project presents a skill aimed at preventing coding agents from overwhelming users with excessive or irrelevant information. It focuses on generating ADHD-friendly output, ensuring that critical answers are easily accessible and not obscured by verbose responses. This tool seeks to improve the clarity and efficiency of AI coding assistants for better user experience.",
+   "source": "arXiv",
+   "title": "Sherpa: Teaching LLMs to Teach Adaptively",
+   "url": "https://arxiv.org/abs/2610.08778",
+   "snippet": "Large language models (LLMs) have become increasingly capable problem solvers, but being able to solve a problem is not the same as being able to teach it. To address this, we introduce Sherpa, a multi-turn reinforcement learning framework that instantiates multiple student archetypes with LLMs conditioned on distinct learning preferences and trains a teacher model to adapt its instruction by directly maximizing their learning outcomes.",
    "score": 0,
    "published": "2026-10-06",
    "judge": {
-    "injection": 0.22,
-    "has_substance": 0.83,
-    "difficulty": 0.04,
-    "learning_value": 1.27,
+    "injection": 0.01,
+    "has_substance": 0.96,
+    "difficulty": 1.21,
+    "learning_value": 2.42,
+    "hands_on": 0.86
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?",
+   "url": "https://arxiv.org/abs/2610.08720",
+   "snippet": "LLM-based agents are increasingly advancing scientific and engineering problem solving, with physics simulation emerging as a challenging yet practical testbed for reproducing complex physical phenomena with application in embodied AI, games and films. As the workhorse of such simulation, a solver computes how the state of a dynamic system evolves over time.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.87,
+    "difficulty": 1.29,
+    "learning_value": 1.1,
+    "hands_on": 0.62
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus.",
+   "url": "https://arxiv.org/abs/2610.08722",
+   "snippet": "Many long-horizon agents compact their context on a global rule, usually a token budget, blind to what the agent was doing. We ask whether the agent's recent behaviour predicts when a compaction will hurt. TRACE's public corpus of 590 harness-triggered AppWorld compaction boundaries replays each boundary from a re-executed prefix state under the pre-compaction context and under the summary, and records the burden of the next actions: calls that error or repeat a call already made.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.96,
+    "difficulty": 1.46,
+    "learning_value": 2.03,
     "hands_on": 1.02
    }
   },
   {
-   "source": "GitHub Trending",
-   "title": "morluto / rea",
-   "url": "https://github.com/morluto/rea",
-   "snippet": "REA (Reverse Engineer Anything with Agents) is a tool that leverages AI agents to reverse engineer systems, examining behavior from high-level application functions down to native binaries. Its purpose is to automate complex analysis, offering deep insights into system functionalities and potential vulnerabilities. The project aims to streamline the process of understanding intricate software and hardware architectures.",
+   "source": "arXiv",
+   "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
+   "url": "https://arxiv.org/abs/2610.08761",
+   "snippet": "Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. We introduce VeriFine, an agent harness framework that scales verification through the co-evolution of the policy, training curriculum, and judge.",
    "score": 0,
    "published": "2026-10-06",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 0.43,
-    "learning_value": 1.73,
-    "hands_on": 1.28
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Base Models Can Reason By Taking a Cue From Training Data",
-   "url": "https://arxiv.org/abs/2610.06851",
-   "snippet": "This paper investigates how base models can develop advanced reasoning capabilities by drawing implicit cues from their training data. It delves into the mechanisms large language models (LLMs) employ to infer and apply logical structures found in complex datasets. The research provides valuable insights into enhancing AI's problem-solving and inferential capacities.",
-   "score": 0,
-   "published": "2026-10-06",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.81,
-    "difficulty": 1.23,
-    "learning_value": 1.31,
-    "hands_on": 0.52
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Towards Looped Models Done Right, Part II: Rethinking at Fixed Points",
-   "url": "https://arxiv.org/abs/2610.06833",
-   "snippet": "This paper represents the second part of a series focused on optimizing looped model architectures for machine learning. It introduces a novel approach to re-examine and refine fixed points within iterative learning processes, aiming to enhance model stability and overall performance. The authors have made both the code and checkpoints available for researchers to reproduce and build upon their work.",
-   "score": 0,
-   "published": "2026-10-06",
-   "judge": {
-    "injection": 0.01,
     "has_substance": 0.95,
-    "difficulty": 1.9,
-    "learning_value": 2.09,
-    "hands_on": 1.96
+    "difficulty": 1.62,
+    "learning_value": 2.25,
+    "hands_on": 0.78
    }
   },
   {
-   "source": "arXiv",
-   "title": "Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors",
-   "url": "https://arxiv.org/abs/2610.06823",
-   "snippet": "This research explores the application of deep learning techniques to accurately estimate sleep heart rate using only data from accelerometers. The goal is to develop a non-invasive and scalable method for obtaining cardiac insights across large populations, circumventing the need for traditional optical sensors. This approach offers a more accessible and less intrusive way to monitor cardiac health during sleep, with the paper submitted to BHI 2026.",
+   "source": "Hugging Face Papers",
+   "title": "RealCompanion: Benchmarking Human Understanding from Reasoning over Longitudinal Real-World Conversations",
+   "url": "https://huggingface.co/papers/2610.01780",
+   "snippet": "A companion that talks with a person for months should come to understand them. It should remember what they said, infer who they are, and know when the past bears on the message in front of it. We release \\bench, ten real relationships with an AI companion: 27,218 messages over up to 120 days, released as the conversation and four files derived from it, a profile, a persona, a chat ground truth and a question set, each citing the messages it rests on.",
+   "score": 0,
+   "published": "2026-10-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 0.59,
+    "learning_value": 2.37,
+    "hands_on": 0.94
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Native Action-Prior Learning from Videos for World Action Models",
+   "url": "https://huggingface.co/papers/2610.03391",
+   "snippet": "World action models integrate future visual dynamics with robot action prediction, but their scalability remains limited by the need for action-annotated robot trajectories. We present NAVA-WAM, which introduces native action-prior learning by directly pretraining the action policy from observation-only videos, avoiding indirect representation-to-control transfer or a separate latent-action model.",
+   "score": 0,
+   "published": "2026-10-05",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 1.67,
+    "learning_value": 2.32,
+    "hands_on": 0.79
+   },
+   "related_to": [
+    "World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal"
+   ]
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation",
+   "url": "https://huggingface.co/papers/2610.03223",
+   "snippet": "We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters). Both models generate 5-second video clips with synchronized 44 kHz audio, including lip-sync, in text-to-audio-video (T2AV) and image-to-audio-video (I2AV) modes; a built-in super-resolution model raises the output resolution to Full-HD (1920×1080).",
    "score": 0,
    "published": "2026-10-06",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.93,
-    "difficulty": 1.13,
-    "learning_value": 1.2,
-    "hands_on": 0.61
+    "has_substance": 0.98,
+    "difficulty": 0.9,
+    "learning_value": 1.39,
+    "hands_on": 1.03
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "ALoDLM: Adaptively Looped Diffusion Language Models",
+   "url": "https://huggingface.co/papers/2610.04198",
+   "snippet": "Diffusion language models (DLMs) enable fast generation by predicting multiple tokens in parallel, but their practical adoption remains limited by a persistent quality gap relative to comparably sized autoregressive (AR) models. We introduce ALoDLM, which replaces uniform computation with token-adaptive latent recurrence.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 1.81,
+    "learning_value": 1.96,
+    "hands_on": 0.7
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures",
+   "url": "https://huggingface.co/papers/2610.04292",
+   "snippet": "LLM-based agents are increasingly capable of generating complex 3D structures, with the potential to reshape how objects are designed and realized in the physical world. Yet, producing elegant geometry is fundamentally different from producing objects that can be built and perform their intended functions. We introduce LMBuild, a benchmark for evaluating LLM agents on generating buildable and functional structures.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.94,
+    "difficulty": 0.93,
+    "learning_value": 1.57,
+    "hands_on": 0.74
    }
   }
  ],
  "dropped": [
   {
-   "source": "Reddit (r/EngineeringPorn)",
-   "title": "Figure, an American robotics company, has programmed its retired robots to leap into a molten furnace.",
-   "url": "https://www.reddit.com/r/EngineeringPorn/comments/yyyyyy/figure_an_american_robotics_company_has/",
-   "snippet": "Figure AI, a US-based robotics firm, reportedly programmed its decommissioned humanoid robots to self-destruct by plunging into a molten furnace. This method was allegedly used to incinerate the robots and safeguard proprietary trade secrets. The event, widely discussed on Reddit, highlights emerging ethical and environmental considerations in advanced robotics.",
+   "source": "OpenAI",
+   "title": "Sharing AI progress in mathematics",
+   "url": "https://openai.com/news/sharing-ai-progress-in-mathematics",
+   "snippet": "We're releasing a broad range of new mathematical results produced by an internal frontier model. For this release, we're publishing the results in a GitHub repository, with protocols for paper revisions and citations.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.72,
+    "difficulty": 0.18,
+    "learning_value": 0.8,
+    "hands_on": 1.1
+   },
+   "reason": "low learning value 0.80"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Our approach to EU text provenance rules",
+   "url": "https://openai.com/news/our-approach-to-eu-text-provenance-rules",
+   "snippet": "Over the coming weeks, we will introduce text watermarking to eligible ChatGPT and Codex users across all plans in the EU only. We are not making text watermarking a global default at launch.",
    "score": 0,
    "published": "2026-10-05",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.21,
-    "difficulty": 0.0,
-    "learning_value": 0.25,
-    "hands_on": 0.15
+    "injection": 0.02,
+    "has_substance": 0.56,
+    "difficulty": 0.02,
+    "learning_value": 0.47,
+    "hands_on": 0.11
    },
-   "reason": "no substance 0.21"
+   "reason": "low learning value 0.47"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Helping teens learn, plan, and shape the future of AI",
+   "url": "https://openai.com/news/helping-teens-learn-plan-and-shape-the-future-of-ai",
+   "snippet": "College Planner is coming to ChatGPT for teens, alongside a new teen AI council and more tools for learning. Since we introduced ChatGPT for Teens—the default experience automatically applied to accounts identified as under 18—we've seen young people use it to learn, explore ideas and solve everyday problems.",
+   "score": 0,
+   "published": "2026-10-07",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.42,
+    "difficulty": 0.0,
+    "learning_value": 0.12,
+    "hands_on": 0.22
+   },
+   "reason": "no substance 0.42"
+  },
+  {
+   "source": "Hugging Face Blog",
+   "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+   "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+   "snippet": "Turning a general Arabic model into an Emirati-dialect specialist sounds like a smaller job than building the base model in the first place. It isn't. A few things make it genuinely difficult: Emirati is mostly a spoken dialect. It shows up far less in writing online than MSA, or even other Gulf and Levantine dialects, so...",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.47,
+    "difficulty": 0.56,
+    "learning_value": 1.08,
+    "hands_on": 0.37
+   },
+   "reason": "no substance 0.47"
+  },
+  {
+   "source": "Reddit (r/MachineLearning)",
+   "title": "Researching from scratch! [R]",
+   "url": "https://www.reddit.com/r/MachineLearning/comments/14o3u2d/researching_from_scratch_r/",
+   "snippet": "I am trying to go really deep into Machine Learning and Artificial Intelligence. Not just learning how to use the latest models and frameworks, but understanding how we reached here from the ground up.",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.07,
+    "difficulty": 0.44,
+    "learning_value": 0.01,
+    "hands_on": 0.01
+   },
+   "reason": "no substance 0.07"
+  },
+  {
+   "source": "Anthropic",
+   "title": "Claude Haiku 5.5",
+   "url": "https://www.anthropic.com/news/claude-haiku-5-5",
+   "snippet": "Claude Haiku 5.5 is the fastest and most efficient model in the Claude 5.5 family, built for high-volume, cost-sensitive work. It also costs around 75 percent less than Claude Haiku 4.5 for most tasks. It is also the first Haiku with effort controls, so teams can tune cost against intelligence for each task.",
+   "score": 0,
+   "published": "2026-10-07",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.86,
+    "difficulty": 0.01,
+    "learning_value": 0.72,
+    "hands_on": 0.57
+   },
+   "reason": "low learning value 0.72"
   }
  ],
- "judge": "judge: 7 kept, 1 dropped (0 pairs checked)"
+ "judge": "judge: 15 kept, 6 dropped (6 pairs checked)"
 }
