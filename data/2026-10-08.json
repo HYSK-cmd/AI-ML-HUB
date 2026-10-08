@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-08",
+  "headline": "로봇 학습 하드웨어부터 AI 에이전트 훈련 및 모니터링까지, 실용적인 AI 시스템 구축 여정.",
+  "items": [
+    {
+      "title": "Embodied AI Hardware for Robot Learning",
+      "url": "https://www.trossenrobotics.com/embodied-ai-hardware-for-robot-learning.aspx",
+      "source": "Trossen Robotics Blog",
+      "categories": [
+        "Robotics & Embodied",
+        "ML Systems & Infra"
+      ],
+      "level": "beginner",
+      "headline_ko": "로봇 학습 하드웨어 가이드",
+      "summary": "이 글은 로봇 학습을 위한 Embodied AI 하드웨어 선택 가이드를 제시합니다. 단순히 로봇 팔을 넘어 조작기, 엔드 이펙터, 카메라, 컴퓨팅, 컨트롤러 및 원격 조작 인터페이스를 통합한 포괄적인 연구 스택이 중요합니다. 효과적인 연구를 위해서는 태스크 수행이 가능한 로봇, 적절한 그리퍼, 동기화된 센싱, 제어, 컴퓨팅 및 인간 인터페이스를 갖춘 통합되고 반복 가능한 설정이 필요합니다. 이동성은 실험에 필요할 때만 추가해야 합니다.",
+      "why": "로봇 학습 연구를 시작하려는 학생들에게 필요한 하드웨어 구성 요소와 고려 사항을 명확히 알려줍니다. 실제 로봇 시스템 구축에 대한 실용적인 통찰력을 얻을 수 있습니다.",
+      "keywords": [
+        "embodied AI",
+        "robot hardware",
+        "robot learning",
+        "research stack"
+      ],
+      "narration": "로봇 학습을 위한 하드웨어 선택이 쉽지 않다면 이 글을 참고해 보세요. 단순히 로봇 팔을 고르는 것을 넘어, 연구에 필요한 전체 스택 구성 요소를 알려줍니다. 효과적인 연구를 위한 핵심 하드웨어 구성과 그 중요성을 배울 수 있습니다. 통합적이고 반복 가능한 설정을 구축하는 데 도움이 될 거예요."
+    },
+    {
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "source": "Microsoft Research Blog",
+      "categories": [
+        "Agents",
+        "RL",
+        "ML Systems & Infra",
+        "Open Source & Tools"
+      ],
+      "level": "intermediate",
+      "headline_ko": "Agent Lightning v1.0 공개",
+      "summary": "Microsoft Research Asia가 경량 Agentic RL 프레임워크인 Agent Lightning v1.0을 공개했습니다. 이 프레임워크는 약 3,500줄의 코드로 실제 하네스를 사용하여 에이전트를 훈련시킬 수 있게 합니다. 에이전트와 모델 사이에 LLM 프록시를 도입하여 기존 하네스 코드를 수정하지 않고도 훈련 중에 모델 호출을 관찰하고 기록할 수 있습니다. 또한, 확장 가능한 롤아웃을 위한 기본 Kubernetes를 지원하며, 완전한 코딩 에이전트 훈련 예시를 제공합니다.",
+      "why": "실제 배포 환경과 동일한 에이전트 하네스로 RL 훈련을 진행할 수 있는 'Harnessed Agentic RL' 패러다임을 이해할 수 있습니다. 경량 프레임워크를 통해 복잡한 에이전트 시스템 훈련의 실제 적용 방안을 배울 수 있습니다.",
+      "keywords": [
+        "agentic RL",
+        "agent training",
+        "LLM proxy",
+        "Kubernetes",
+        "Harnessed Agentic RL",
+        "Agent Lightning"
+      ],
+      "narration": "마이크로소프트가 경량 Agentic RL 프레임워크인 Agent Lightning v1.0을 공개했습니다. 약 3,500줄의 코드로 실제 하네스를 이용해 에이전트를 훈련할 수 있죠. 에이전트와 모델 사이에 LLM 프록시를 두어 기존 코드를 수정 없이 훈련 과정을 관찰합니다. 확장 가능한 훈련을 위한 Kubernetes 지원도 갖추고 있습니다."
+    },
+    {
+      "title": "CoreWeave Agent Lens | AI Agent Observability",
+      "url": "https://www.coreweave.com/products/agent-lens",
+      "source": "CoreWeave",
+      "categories": [
+        "Agents",
+        "ML Systems & Infra",
+        "Open Source & Tools"
+      ],
+      "level": "advanced",
+      "headline_ko": "AI 에이전트 관측성 솔루션",
+      "summary": "CoreWeave Agent Lens는 프로덕션 AI 에이전트를 위한 지능형 관측성(observability) 솔루션을 제공합니다. 이 플랫폼은 팀이 에이전트 행동을 모니터링하고, 실패 지점을 정확히 찾아내며, 문제의 근본 원인을 추적하고, 수정 사항을 평가할 수 있도록 돕습니다. 연결된 워크플로를 통해 에이전트 성능의 지속적인 개선을 가능하게 합니다. 사용자는 실패 클러스터로부터 맞춤형 LLM judge를 생성하고 튜닝할 수 있으며, 도메인 전문가 피드백을 통합하여 평가를 개선할 수 있습니다.",
+      "why": "실제 운영 환경에서 AI 에이전트의 복잡한 동작을 이해하고 문제 해결 및 성능 개선에 필요한 고급 Observability 기법과 도구의 중요성을 파악할 수 있습니다. LLM judge 활용과 같은 최신 에이전트 평가 접근 방식도 배울 수 있습니다.",
+      "keywords": [
+        "agent observability",
+        "AI agents",
+        "production monitoring",
+        "LLM judges",
+        "failure analysis",
+        "CoreWeave"
+      ],
+      "narration": "CoreWeave Agent Lens는 프로덕션 AI 에이전트를 위한 지능형 관측성 솔루션입니다. 에이전트의 행동을 모니터링하고, 실패 원인을 찾아내며, 문제 해결을 돕습니다. 이 플랫폼은 에이전트 성능을 지속적으로 개선할 수 있도록 설계되었습니다. 맞춤형 LLM judge를 활용해 에이전트 평가를 정교화할 수도 있습니다."
+    }
+  ]
+}
