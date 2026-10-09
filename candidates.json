@@ -1,155 +1,211 @@
 {
- "date": "2026-10-08",
- "collected_at": "2026-10-08T21:55:23+00:00",
+ "date": "2026-10-09",
+ "collected_at": "2026-10-09T20:29:36+00:00",
  "counts": {
-  "gemini_search": 9
+  "gemini_search": 13
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 9 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 13 new",
  "items": [
   {
-   "source": "Databricks on AWS Blog",
-   "title": "What is Agent Bricks?",
-   "url": "https://www.databricks.com/product/agent-bricks",
-   "snippet": "Agent Bricks is the Databricks agent developer platform, designed to help build and deploy agents that power agentic products and workflows. It supports developers in building agents with any framework or harness and integrating any model. The platform is built for developers who write code.",
+   "source": "GitHub Trending",
+   "title": "cathrynlavery / diagram-design",
+   "url": "https://github.com/cathrynlavery/diagram-design",
+   "snippet": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. The repository offers 42 diagram types, self-contained HTML + SVG, and avoids common pitfalls like shadows or Mermaid slop.",
    "score": 0,
-   "published": "2026-10-06",
+   "published": "2026-10-09",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.92,
-    "difficulty": 0.16,
-    "learning_value": 0.92,
-    "hands_on": 0.48
-   }
-  },
-  {
-   "source": "Sierra Blog",
-   "title": "Introducing Personal Agent Protocol",
-   "url": "https://www.sierra.ai/blog/introducing-personal-agent-protocol",
-   "snippet": "Sierra, in collaboration with Meta and industry partners including Genesys, Instinct, Rocket, Shopify, Stripe, and Walmart, announced the Personal Agent Protocol. This open standard defines how personal agents interact with businesses, providing a trusted way for brands to understand who an AI agent represents, its authorization, and intent for secure interactions.",
-   "score": 0,
-   "published": "2026-10-06",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.71,
     "difficulty": 0.01,
-    "learning_value": 0.99,
-    "hands_on": 0.21
-   },
-   "related_to": [
-    "AI Agent Security",
-    "AI Agent Security"
-   ]
+    "learning_value": 1.79,
+    "hands_on": 1.56
+   }
   },
   {
-   "source": "Microsoft Research Blog",
-   "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
-   "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-   "snippet": "Agent Lightning v1.0 is a lightweight (approx. 3,500 lines of code) agentic RL framework for training agents with real harnesses. It introduces an LLM proxy between the agent and the model, allowing observation and recording of model calls during training without modifying existing harness code. The framework also supports native Kubernetes for scalable rollouts and provides a complete coding agent training example.",
+   "source": "GitHub Trending",
+   "title": "alibaba / open-code-review",
+   "url": "https://github.com/alibaba/open-code-review",
+   "snippet": "This hybrid architecture code review tool is secure, fast, efficient, and battle-tested at Alibaba's scale. It combines deterministic pipelines with an LLM Agent, providing precise line-level comments and a built-in multi-language ruleset for issues like NPE, thread-safety, XSS, and SQL injection. The tool is compatible with OpenAI and Anthropic models.",
    "score": 0,
-   "published": "2026-10-07",
+   "published": "2026-10-09",
    "judge": {
-    "injection": 0.01,
+    "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.05,
-    "learning_value": 2.62,
-    "hands_on": 1.28
+    "difficulty": 0.3,
+    "learning_value": 1.89,
+    "hands_on": 1.51
    }
   },
   {
-   "source": "CoreWeave",
-   "title": "CoreWeave Agent Lens | AI Agent Observability",
-   "url": "https://www.coreweave.com/products/agent-lens",
-   "snippet": "CoreWeave Agent Lens offers intelligent observability for production AI agents, enabling teams to monitor agent behavior, pinpoint failures, trace issues to their root cause, and evaluate fixes. This platform facilitates continuous improvement of agent performance through a connected workflow. Users can create and tune custom LLM judges from failure clusters, incorporating domain expert feedback to refine evaluations.",
+   "source": "GitHub Trending",
+   "title": "anthropics / knowledge-work-plugins",
+   "url": "https://github.com/anthropics/knowledge-work-plugins",
+   "snippet": "This open-source repository contains a collection of plugins primarily intended for knowledge workers. These plugins are designed for use within Claude Cowork, enabling enhanced functionality and integration for various professional tasks.",
    "score": 0,
-   "published": "2026-10-07",
+   "published": "2026-10-09",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.58,
-    "learning_value": 1.35,
-    "hands_on": 0.53
+    "has_substance": 0.92,
+    "difficulty": 0.06,
+    "learning_value": 1.03,
+    "hands_on": 1.41
    }
   },
   {
-   "source": "Databricks on AWS Blog",
-   "title": "Agent skills for AI coding assistants",
-   "url": "https://docs.databricks.com/en/genai/agent-skills-coding-assistants.html",
-   "snippet": "Databricks has introduced task-specific skills embedded within its app templates for AI coding assistants. These skills are compatible with agents built using frameworks like LangGraph, LangChain, and OpenAI Agents SDK, as well as Databricks App Kits and various chatbot/data app frameworks. The new capabilities facilitate instrumenting, debugging, and evaluating LLM agents with MLflow.",
+   "source": "GitHub Trending",
+   "title": "BerriAI / litellm",
+   "url": "https://github.com/BerriAI/litellm",
+   "snippet": "LiteLLM is highlighted as the fastest and lightest AI Gateway, featuring a Rust core with a Python SDK. It allows users to call over 100+ LLM APIs in OpenAI or native formats, offering functionalities such as cost tracking, guardrails, load balancing, and logging for various providers including Bedrock, Azure, OpenAI, Anthropic, VertexAI, vLLM, and Nvidia NIM.",
    "score": 0,
-   "published": "2026-10-07",
+   "published": "2026-10-09",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.23,
-    "learning_value": 1.08,
-    "hands_on": 0.85
+    "has_substance": 0.98,
+    "difficulty": 0.14,
+    "learning_value": 1.7,
+    "hands_on": 1.41
    }
   },
   {
-   "source": "Trossen Robotics Blog",
-   "title": "Embodied AI Hardware for Robot Learning",
-   "url": "https://www.trossenrobotics.com/embodied-ai-hardware-for-robot-learning.aspx",
-   "snippet": "Choosing embodied AI hardware involves more than just selecting a robot arm; a comprehensive research stack integrates manipulators, end effectors, cameras, compute, controllers, and a teleoperation interface. The core stack for robot learning requires a task-capable robot, an appropriate gripper, synchronized sensing, control and compute, and a human interface for setup or teleoperation. Mobility components should be added only when experiments necessitate environmental movement, emphasizing the importance of integrated and repeatable setups for effective research.",
+   "source": "AICoder Blog",
+   "title": "Grok Imagine Video 1.5 Lite hits the API: workhorse text/image-to-video from $0.02/s at 480p ...",
+   "url": "https://aicode.blog/grok-imagine-video-1-5-lite-hits-the-api-workhorse-text-image-to-video-from-0-02-s-at-480p-about-a-quarter-of-video-1-5s-list-price",
+   "snippet": "On 2026-10-08 xAI shipped grok-imagine-video-1.5-lite in the Grok Imagine API, offering text/image-to-video capabilities with native lip-synced audio for clips lasting 1–15 seconds. This new Lite model provides competitive pricing at $0.02/s (480p) and $0.03/s (720p), making it attractive for generating drafts, text-heavy clips, and bulk content. The 1080p output is upscaled from 720p, focusing on cost and latency improvements over pure quality.",
+   "score": 0,
+   "published": "2026-10-08",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.93,
+    "difficulty": 0.01,
+    "learning_value": 0.94,
+    "hands_on": 0.95
+   }
+  },
+  {
+   "source": "Vercel AI Gateway",
+   "title": "GLM 5.3 Fast",
+   "url": "https://vercel.com/docs/ai/models/zai/glm-5-3-fast",
+   "snippet": "GLM 5.3 Fast, from Z.AI, is an accelerated version of GLM-5.3 that offers 1.5 to 2 times faster generation while maintaining the original model's capabilities. It supports a context window of up to 1 million tokens. The model is available through Vercel AI Gateway, providing developers with unified API access, billing, and request tracing for efficient integration into their applications.",
    "score": 0,
    "published": "2026-10-07",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.82,
-    "difficulty": 0.33,
-    "learning_value": 1.81,
-    "hands_on": 0.43
+    "has_substance": 0.96,
+    "difficulty": 0.08,
+    "learning_value": 1.0,
+    "hands_on": 0.98
+   }
+  },
+  {
+   "source": "University of Waterloo News",
+   "title": "AI chatbots hesitant to recommend change",
+   "url": "https://uwaterloo.ca/news/ai-chatbots-hesitant-to-recommend-change",
+   "snippet": "A new study from the University of Waterloo revealed that large language models (LLMs) tend to exhibit a 'status quo bias,' favoring existing conditions over alternatives when providing advice. Researchers tested 11 LLMs with over 7,500 queries across various domains, finding that chatbots recommended fewer environmentally friendly options than are currently available. The study, 'Large language models exhibit status quo bias in climate-relevant advice,' was published in Environmental Research Communications.",
+   "score": 0,
+   "published": "2026-10-09",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.88,
+    "difficulty": 0.04,
+    "learning_value": 1.72,
+    "hands_on": 0.37
+   }
+  },
+  {
+   "source": "Kosmo Online (PUFsecurity via PR NewsWire)",
+   "title": "Trusted AI Agents Must Be Anchored in Silicon",
+   "url": "https://www.kosmo.com.my/en/2026/10/09/trusted-ai-agents-must-be-anchored-in-silicon/",
+   "snippet": "A new technical perspective from PUFsecurity, 'Building Trusted AI Agents from the Silicon Root of Trust,' argues that the security of autonomous AI agents fundamentally relies on hardware Roots of Trust within the chips that run them. Modern data-center processors are increasingly integrating multiple Roots of Trust directly into the die to support agentic AI. As AI agents gain more autonomy in tasks like booking travel or making purchases, ensuring their integrity through silicon-level security becomes critical to prevent physical harm and digital loss.",
+   "score": 0,
+   "published": "2026-10-09",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.52,
+    "difficulty": 0.22,
+    "learning_value": 1.01,
+    "hands_on": 0.07
+   }
+  },
+  {
+   "source": "Kimi.ai Blog",
+   "title": "10 Agent Orchestration Platforms Worth Trying in 2026",
+   "url": "https://kimi.ai/blog/10-agent-orchestration-platforms-worth-trying-in-2026",
+   "snippet": "This article explores ten efficient AI agent orchestration tools that enable multiple AI systems to work collaboratively, making complex tasks faster and more organized. These platforms are crucial for managing planning, coordination, tool usage, and memory within AI workflows to ensure scalability and efficiency. Key features discussed include advanced RAG pipelines for connecting to external knowledge sources, multi-document reasoning, and robust multi-agent collaboration engines.",
+   "score": 0,
+   "published": "2026-10-08",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.87,
+    "difficulty": 0.49,
+    "learning_value": 1.53,
+    "hands_on": 0.69
+   }
+  },
+  {
+   "source": "Oracle AI & Data Science Blog",
+   "title": "What's New in Oracle AI? October 2026 Edition",
+   "url": "https://blogs.oracle.com/ai-data-science/whats-new-in-oracle-ai-october-2026-edition",
+   "snippet": "Oracle's October 2026 updates for OCI Enterprise AI include significant enhancements such as the new Smart Model Router and improved Model Discovery capabilities. The Smart Model Router intelligently directs on-demand inference requests across customer-selected OCI regions where a model is available, optimizing performance and resource utilization. Additionally, customers now have more granular control over model access using OCI Identity and Access Management (IAM) policies.",
+   "score": 0,
+   "published": "2026-10-09",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.92,
+    "difficulty": 0.02,
+    "learning_value": 1.01,
+    "hands_on": 0.57
    }
   }
  ],
  "dropped": [
   {
-   "source": "Parallel.ai",
-   "title": "Parallel - Web Infrastructure for AI Agents",
-   "url": "https://parallel.ai/",
-   "snippet": "Parallel gives agents real-time access to fresh and relevant context from the web. Search billions of pages, extract key information, monitor changes, and do complex research with cited outputs you can trust in production. The company is an enterprise SaaS business focused on workflow automation, backed by Sequoia and Index Ventures.",
+   "source": "Anthropic Blog",
+   "title": "Introducing Claude Haiku 5.5",
+   "url": "https://www.anthropic.com/news/claude-haiku-5-5",
+   "snippet": "Anthropic has released Claude Haiku 5.5, positioning it as their cheapest, fastest, and most capable small model to date. Designed for high-volume and cost-sensitive tasks, it efficiently handles quick and repetitive workloads such as summaries, database queries, and classification requests. Claude Haiku 5.5 also excels as a subagent for coding tasks when paired with more powerful models like Opus 5.5 and Sonnet 5.5.",
    "score": 0,
-   "published": "2026-10-08",
+   "published": "2026-10-07",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.76,
-    "difficulty": 0.06,
-    "learning_value": 0.67,
-    "hands_on": 0.31
-   },
-   "reason": "low learning value 0.67"
-  },
-  {
-   "source": "Mistral AI Blog",
-   "title": "Introducing Mistral Large 4",
-   "url": "https://mistral.ai/news/mistral-large-4/",
-   "snippet": "Mistral Large 4 demonstrates exceptional performance across coding, agentic workflows, and multimodal understanding. It achieves performance competitive with the strongest open-source models globally, and significantly outperforms any open-weight model developed in the US or Europe. On critical enterprise workloads, including cybersecurity, finance and law, it is state-of-the-art among open models.",
-   "score": 0,
-   "published": "2026-10-06",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.86,
-    "difficulty": 0.13,
-    "learning_value": 0.34,
-    "hands_on": 0.72
-   },
-   "reason": "low learning value 0.34"
-  },
-  {
-   "source": "Google Cloud Blog",
-   "title": "Gemini at Work 2026: Introducing Gemini agent",
-   "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-at-work-2026-introducing-gemini-agent",
-   "snippet": "Google Cloud has announced the Gemini agent, a universal agent designed to streamline various work tasks, from knowledge work and answering questions to content creation and coding, all accessible from a single prompt box. This agent plans tasks, utilizes skills and tools, connects to existing systems, and delivers finished work directly within familiar documents, inboxes, and developer environments. It is engineered to operate by delegating objectives rather than requiring step-by-step instructions.",
-   "score": 0,
-   "published": "2026-10-08",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.85,
+    "has_substance": 0.91,
     "difficulty": 0.01,
-    "learning_value": 0.82,
-    "hands_on": 0.63
+    "learning_value": 0.78,
+    "hands_on": 0.81
    },
-   "reason": "low learning value 0.82"
+   "reason": "low learning value 0.78"
+  },
+  {
+   "source": "AWS Machine Learning Blog",
+   "title": "Introducing Claude Haiku 5.5 on AWS",
+   "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+   "snippet": "AWS announced the immediate availability of Claude Haiku 5.5 on Amazon Bedrock and the Claude Platform on AWS. This integration brings Anthropic's fastest and most efficient Claude 5.5 model, built for subagents and high-volume, cost-sensitive work, to AWS customers. Users can leverage Haiku 5.5's capabilities within their existing AWS infrastructure, ensuring regional data residency and compatibility with established AWS controls.",
+   "score": 0,
+   "published": "2026-10-07",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.89,
+    "difficulty": 0.01,
+    "learning_value": 0.69,
+    "hands_on": 0.82
+   },
+   "reason": "low learning value 0.69"
+  },
+  {
+   "source": "Cloud Security Alliance",
+   "title": "Frontier Ready: AI Security Maturity Model",
+   "url": "https://cloudsecurityalliance.org/blog/2026/10/09/frontier-ready-ai-security-maturity-model/",
+   "snippet": "The Cloud Security Alliance (CSA) has officially released its 'Frontier Ready Maturity Model,' providing practical guidance for organizations to adapt their security programs against advanced, adversarial AI. This model offers achievable advice to improve security outcomes, addressing challenges such as attackers weaponizing zero-day vulnerabilities and engaging in complex multi-stage attacks. It covers critical areas including Defensive AI and Agent Operations, Pipeline and Supply Chain Security, and Workforce and Operating Model considerations.",
+   "score": 0,
+   "published": "2026-10-09",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.33,
+    "difficulty": 0.12,
+    "learning_value": 1.28,
+    "hands_on": 0.1
+   },
+   "reason": "no substance 0.33"
   }
  ],
- "judge": "judge: 6 kept, 3 dropped (14 pairs checked)"
+ "judge": "judge: 10 kept, 3 dropped (2 pairs checked)"
 }
