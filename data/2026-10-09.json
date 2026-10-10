@@ -1,66 +1,67 @@
 {
-  "date": "2026-10-09",
-  "headline": "오늘은 AI 시대의 효율적인 시각화, 코드 리뷰, 그리고 복잡한 에이전트 시스템 구축에 필요한 도구와 지식을 살펴봅니다.",
-  "items": [
-    {
-      "title": "cathrynlavery / diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "source": "GitHub Trending",
-      "categories": [
-        "Open Source & Tools",
-        "Agents"
-      ],
-      "level": "beginner",
-      "headline_ko": "AI 시대 다이어그램 디자인",
-      "summary": "이 GitHub 리포지토리는 Claude Code, Codex 등 AI 코딩 에이전트를 위한 편집형 다이어그램 디자인을 제공합니다. 42가지 다이어그램 유형을 포함하며, HTML+SVG 형식으로 자체 포함되어 있어 그림자나 Mermaid의 단점을 피합니다. 기존 AI 에이전트가 생성하는 일반적인 둥근 상자 형태의 다이어그램 대신, 깔끔하고 시각적으로 정돈된 결과물을 만들 수 있습니다.",
-      "why": "복잡한 시스템이나 아이디어를 명확하게 시각화하는 데 필요한 도구입니다. 개발자나 연구자가 자신의 프로젝트 아키텍처나 워크플로우를 효과적으로 설명하고 공유하는 데 큰 도움이 됩니다.",
-      "keywords": [
-        "diagram design",
-        "SVG",
-        "AI agent tools"
-      ],
-      "narration": "첫 번째는 AI 에이전트를 위한 깔끔한 다이어그램 디자인 도구입니다. Claude Code나 Codex 같은 AI 에이전트가 만드는 일반적인 그림 대신, 이 도구를 사용해 전문적인 시각 자료를 만들 수 있습니다. 42가지 유형의 다이어그램을 HTML+SVG로 제공하여 명확하고 편집하기 쉽습니다. 프로젝트의 복잡한 구조를 효과적으로 시각화하고 싶다면 이 도구를 확인해 보세요."
-    },
-    {
-      "title": "alibaba / open-code-review",
-      "url": "https://github.com/alibaba/open-code-review",
-      "source": "GitHub Trending",
-      "categories": [
-        "ML Systems & Infra",
-        "Agents",
-        "Open Source & Tools"
-      ],
-      "level": "intermediate",
-      "headline_ko": "알리바바 AI 코드 리뷰 툴",
-      "summary": "알리바바에서 대규모로 검증된 이 AI 기반 코드 리뷰 CLI 도구는 안전하고 빠르며 효율적입니다. 확정적 파이프라인과 LLM Agent를 결합한 하이브리드 아키텍처를 특징으로 하며, NPE, 스레드 안전성, XSS, SQL 인젝션과 같은 문제에 대한 다국어 규칙 세트를 내장하고 있습니다. 이를 통해 정밀한 라인 단위의 코드 리뷰 주석을 생성할 수 있습니다.",
-      "why": "AI를 활용한 코드 리뷰의 한계점을 극복하고, 실제 대규모 프로젝트에서 코드 품질과 개발 효율성을 높이는 방법을 배울 수 있습니다. LLM Agent와 기존 공학적 접근 방식의 장점을 결합한 시스템 설계에 대한 통찰을 얻을 수 있습니다.",
-      "keywords": [
-        "code review",
-        "LLM Agent",
-        "hybrid architecture",
-        "Alibaba"
-      ],
-      "narration": "다음은 알리바바가 공개한 AI 기반 코드 리뷰 도구 Open Code Review입니다. 이 도구는 확정적 파이프라인과 LLM Agent의 하이브리드 아키텍처를 채택해 높은 정확도를 자랑합니다. 기존 일반 에이전트의 단점을 보완하며, 라인 단위의 정밀한 피드백을 제공합니다. 실제 개발 환경에서 코드 품질을 혁신적으로 개선할 수 있는 강력한 솔루션입니다."
-    },
-    {
-      "title": "10 Agent Orchestration Platforms Worth Trying in 2026",
-      "url": "https://kimi.ai/blog/10-agent-orchestration-platforms-worth-trying-in-2026",
-      "source": "Hugging Face",
-      "categories": [
-        "Agents",
-        "ML Systems & Infra"
-      ],
-      "level": "advanced",
-      "headline_ko": "AI 에이전트 오케스트레이션",
-      "summary": "이 기사는 여러 AI 시스템이 협업하여 복잡한 작업을 빠르고 체계적으로 수행할 수 있도록 돕는 10가지 AI 에이전트 오케스트레이션 도구를 소개합니다. 이 플랫폼들은 AI 워크플로우 내에서 계획, 조정, 도구 사용 및 메모리 관리를 지원하여 확장성과 효율성을 보장하는 데 중요합니다. 외부 지식 소스에 연결하는 고급 RAG 파이프라인과 다중 문서 추론 기능이 주요 특징으로 논의됩니다.",
-      "why": "다중 에이전트 시스템을 설계하고 관리하는 데 필요한 핵심 개념과 현재 사용 가능한 도구들을 이해할 수 있습니다. 복잡한 AI 워크플로우를 효율적으로 구축하고 확장하기 위한 전략적 통찰을 얻을 수 있습니다.",
-      "keywords": [
-        "agent orchestration",
-        "multi-agent systems",
-        "RAG pipelines",
-        "AI workflows"
-      ],
-      "narration": "마지막으로, 여러 AI 에이전트가 협력하여 복잡한 작업을 수행하도록 돕는 10가지 오케스트레이션 플랫폼을 살펴봅니다. 이 플랫폼들은 계획, 조정, 도구 사용, 메모리 관리 등 AI 워크플로우의 핵심 요소를 다룹니다. 확장 가능한 멀티 에이전트 시스템을 구축하려는 연구자나 개발자에게 필수적인 통찰을 제공할 것입니다."
-    }
-  ]
+ "date": "2026-10-09",
+ "headline": "오늘은 AI 시대의 효율적인 시각화, 코드 리뷰, 그리고 복잡한 에이전트 시스템 구축에 필요한 도구와 지식을 살펴봅니다.",
+ "items": [
+  {
+   "title": "cathrynlavery / diagram-design",
+   "url": "https://github.com/cathrynlavery/diagram-design",
+   "source": "GitHub Trending",
+   "categories": [
+    "Open Source & Tools",
+    "Agents"
+   ],
+   "level": "beginner",
+   "headline_ko": "AI 시대 다이어그램 디자인",
+   "summary": "이 GitHub 리포지토리는 Claude Code, Codex 등 AI 코딩 에이전트를 위한 편집형 다이어그램 디자인을 제공합니다. 42가지 다이어그램 유형을 포함하며, HTML+SVG 형식으로 자체 포함되어 있어 그림자나 Mermaid의 단점을 피합니다. 기존 AI 에이전트가 생성하는 일반적인 둥근 상자 형태의 다이어그램 대신, 깔끔하고 시각적으로 정돈된 결과물을 만들 수 있습니다.",
+   "why": "복잡한 시스템이나 아이디어를 명확하게 시각화하는 데 필요한 도구입니다. 개발자나 연구자가 자신의 프로젝트 아키텍처나 워크플로우를 효과적으로 설명하고 공유하는 데 큰 도움이 됩니다.",
+   "keywords": [
+    "diagram design",
+    "SVG",
+    "AI agent tools"
+   ],
+   "narration": "첫 번째는 AI 에이전트를 위한 깔끔한 다이어그램 디자인 도구입니다. Claude Code나 Codex 같은 AI 에이전트가 만드는 일반적인 그림 대신, 이 도구를 사용해 전문적인 시각 자료를 만들 수 있습니다. 42가지 유형의 다이어그램을 HTML+SVG로 제공하여 명확하고 편집하기 쉽습니다. 프로젝트의 복잡한 구조를 효과적으로 시각화하고 싶다면 이 도구를 확인해 보세요."
+  },
+  {
+   "title": "alibaba / open-code-review",
+   "url": "https://github.com/alibaba/open-code-review",
+   "source": "GitHub Trending",
+   "categories": [
+    "ML Systems & Infra",
+    "Agents",
+    "Open Source & Tools"
+   ],
+   "level": "intermediate",
+   "headline_ko": "알리바바 AI 코드 리뷰 툴",
+   "summary": "알리바바에서 대규모로 검증된 이 AI 기반 코드 리뷰 CLI 도구는 안전하고 빠르며 효율적입니다. 확정적 파이프라인과 LLM Agent를 결합한 하이브리드 아키텍처를 특징으로 하며, NPE, 스레드 안전성, XSS, SQL 인젝션과 같은 문제에 대한 다국어 규칙 세트를 내장하고 있습니다. 이를 통해 정밀한 라인 단위의 코드 리뷰 주석을 생성할 수 있습니다.",
+   "why": "AI를 활용한 코드 리뷰의 한계점을 극복하고, 실제 대규모 프로젝트에서 코드 품질과 개발 효율성을 높이는 방법을 배울 수 있습니다. LLM Agent와 기존 공학적 접근 방식의 장점을 결합한 시스템 설계에 대한 통찰을 얻을 수 있습니다.",
+   "keywords": [
+    "code review",
+    "LLM Agent",
+    "hybrid architecture",
+    "Alibaba"
+   ],
+   "narration": "다음은 알리바바가 공개한 AI 기반 코드 리뷰 도구 Open Code Review입니다. 이 도구는 확정적 파이프라인과 LLM Agent의 하이브리드 아키텍처를 채택해 높은 정확도를 자랑합니다. 기존 일반 에이전트의 단점을 보완하며, 라인 단위의 정밀한 피드백을 제공합니다. 실제 개발 환경에서 코드 품질을 혁신적으로 개선할 수 있는 강력한 솔루션입니다."
+  },
+  {
+   "title": "10 Agent Orchestration Platforms Worth Trying in 2026",
+   "url": "https://kimi.ai/blog/10-agent-orchestration-platforms-worth-trying-in-2026",
+   "source": "Hugging Face",
+   "categories": [
+    "Agents",
+    "ML Systems & Infra"
+   ],
+   "level": "advanced",
+   "headline_ko": "AI 에이전트 오케스트레이션",
+   "summary": "이 기사는 여러 AI 시스템이 협업하여 복잡한 작업을 빠르고 체계적으로 수행할 수 있도록 돕는 10가지 AI 에이전트 오케스트레이션 도구를 소개합니다. 이 플랫폼들은 AI 워크플로우 내에서 계획, 조정, 도구 사용 및 메모리 관리를 지원하여 확장성과 효율성을 보장하는 데 중요합니다. 외부 지식 소스에 연결하는 고급 RAG 파이프라인과 다중 문서 추론 기능이 주요 특징으로 논의됩니다.",
+   "why": "다중 에이전트 시스템을 설계하고 관리하는 데 필요한 핵심 개념과 현재 사용 가능한 도구들을 이해할 수 있습니다. 복잡한 AI 워크플로우를 효율적으로 구축하고 확장하기 위한 전략적 통찰을 얻을 수 있습니다.",
+   "keywords": [
+    "agent orchestration",
+    "multi-agent systems",
+    "RAG pipelines",
+    "AI workflows"
+   ],
+   "narration": "마지막으로, 여러 AI 에이전트가 협력하여 복잡한 작업을 수행하도록 돕는 10가지 오케스트레이션 플랫폼을 살펴봅니다. 이 플랫폼들은 계획, 조정, 도구 사용, 메모리 관리 등 AI 워크플로우의 핵심 요소를 다룹니다. 확장 가능한 멀티 에이전트 시스템을 구축하려는 연구자나 개발자에게 필수적인 통찰을 제공할 것입니다."
+  }
+ ],
+ "video": "videos/2026-10-09.mp4"
 }
