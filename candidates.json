@@ -1,489 +1,333 @@
 {
- "date": "2026-10-10",
- "collected_at": "2026-10-10T19:41:12+00:00",
+ "date": "2026-10-11",
+ "collected_at": "2026-10-11T19:52:43+00:00",
  "counts": {
-  "gemini_search": 30
+  "gemini_search": 21
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 30 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 21 new",
  "items": [
   {
-   "source": "Facebook AI Research Blog",
-   "title": "9 AI Concepts for Building AI Agents October 2026",
-   "url": "https://ai.facebook.com/blog/9-ai-concepts-building-agents-october-2026/",
-   "snippet": "This post outlines 9 critical concepts for building effective AI agents, including agentic loops, the MCP open standard for tool and data connection, and strategies for multi-agent systems. It emphasizes design principles for simple, scalable agents.",
+   "source": "GitHub",
+   "title": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust.",
+   "url": "https://github.com/storytold/photocraft",
+   "snippet": "PhotoCraft is an open-source, clean-room image editor written from scratch in Rust, featuring layers, masks, adjustment layers, layer styles, typography, vectors, brushes, and native PSD support. It leverages a GPU compositor on wgpu for native and fast performance, supporting Metal, Vulkan, DX12, and WebGPU. The engine can be controlled via CLI, JSON control channel, or an MCP server for AI agent automation.",
    "score": 0,
    "published": "2026-10-09",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.83,
-    "difficulty": 0.61,
-    "learning_value": 1.81,
-    "hands_on": 0.59
+    "has_substance": 0.98,
+    "difficulty": 0.12,
+    "learning_value": 2.34,
+    "hands_on": 1.68
    }
   },
   {
-   "source": "MDPI Journal",
-   "title": "Deep Reinforcement Learning for Multi-Agent Systems: From Individual Learning to Collective Intelligence",
-   "url": "https://www.mdpi.com/journal/article-link-placeholder",
-   "snippet": "This special issue highlights advancements in Deep Reinforcement Learning for Multi-Agent Systems (DRL-MAS), covering theoretical analysis, cooperative robotic control, and vision–language–action approaches for embodied agents. It discusses opportunities for integrating MARL with foundation models and multimodal perception.",
+   "source": "Liquid AI Blog",
+   "title": "Open d1: Edge decision models for text, vision, and audio.",
+   "url": "https://liquid.ai/blog/open-d1-edge-decision-models-for-text-vision-and-audio",
+   "snippet": "Today, we release d1-3B and d1-omni-600M, two open-weight models in our d1 decision model family. d1-3B scores 48.57 on the Decision Index v0.2.1 (public split), ahead of every model under 10B. They produce an answer in a single forward pass, making them suitable for fast, structured decisions in applications like agent guardrails, reranking, and visual inspection.",
+   "score": 0,
+   "published": "2026-10-07",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 0.57,
+    "learning_value": 1.54,
+    "hands_on": 1.88
+   }
+  },
+  {
+   "source": "Microsoft AI Blog",
+   "title": "Introducing Microsoft-Decision-1, our model for fast decision-making.",
+   "url": "https://blogs.microsoft.com/ai/microsoft-decision-1",
+   "snippet": "Microsoft-Decision-1 is a new model for fast decision-scoring, designed for routing, classification, prioritization, verification, and workflow control. It delivers top performance in latency and quality on structured decision tasks, outperforming both LLMs and other decision models. The model, post-trained from Qwen3.5-9B, provides calibrated probability scores for fixed answer options in a single pass.",
    "score": 0,
    "published": "2026-10-09",
    "judge": {
+    "injection": 0.02,
+    "has_substance": 0.94,
+    "difficulty": 0.59,
+    "learning_value": 1.15,
+    "hands_on": 0.9
+   }
+  },
+  {
+   "source": "Perplexity AI Platform Forum",
+   "title": "We're releasing pplx-embed-v2-late, two late-interaction embedding models that retrieve text, images, and pages with a shared embedding space for cross-model querying.",
+   "url": "https://platform.perplexity.ai/community/announcements/perplexity-pplx-embed-v2-late",
+   "snippet": "Perplexity has released pplx-embed-v2-late, a pair of late-interaction embedding models that retrieve text, images, and pages. Both models come in two sizes, 9B and 0.6B parameters, and produce multi-vector embeddings, sharing one embedding space. They achieve frontier performance and are publicly available on Hugging Face.",
+   "score": 0,
+   "published": "2026-10-07",
+   "judge": {
     "injection": 0.01,
-    "has_substance": 0.52,
-    "difficulty": 1.78,
-    "learning_value": 0.9,
-    "hands_on": 0.09
+    "has_substance": 0.98,
+    "difficulty": 0.9,
+    "learning_value": 1.63,
+    "hands_on": 1.9
    }
   },
   {
    "source": "arXiv",
-   "title": "Hierarchical Reinforcement Learning for Complex Robotic Manipulation with Foundational Models",
-   "url": "https://arxiv.org/abs/2610.01234",
-   "snippet": "This paper presents a novel hierarchical reinforcement learning framework that integrates large language models for high-level planning and vision-language-action models for low-level control, demonstrating superior performance in complex robotic manipulation tasks. The approach addresses long-horizon planning challenges in robotics.",
+   "title": "Memento 3: Recursive Self-Improvement for Frozen LLMs via Reflective Rulebooks.",
+   "url": "https://arxiv.org/abs/2610.11794",
+   "snippet": "Memento 3, a system from University College London and Huawei's Noah's Ark Lab, clears every level of all 25 public ARC-AGI-3 games with a mean RHAE of 100.0, the benchmark's ceiling score. The agent maintains a natural-language rulebook compiled into executable code, which it refines through a continuous observation-reflection-revision-compilation-verification loop, enabling recursive self-improvement while the underlying LLM remains fixed.",
    "score": 0,
-   "published": "2026-10-09",
+   "published": "2026-10-08",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.73,
-    "learning_value": 2.28,
-    "hands_on": 0.88
-   },
-   "related_to": [
-    "Deep Reinforcement Learning for Multi-Agent Systems: From Individual Learning to Collective Intelligence"
-   ]
-  },
-  {
-   "source": "Google DeepMind Blog",
-   "title": "Scaling Vision-Language Models for Embodied AI: A New Paradigm",
-   "url": "https://deepmind.google/blog/scaling-vlm-embodied-ai-new-paradigm/",
-   "snippet": "DeepMind introduces a new method for scaling vision-language models, showcasing their enhanced capabilities in understanding and interacting with physical environments for embodied AI applications. The blog post details architectural innovations and experimental results.",
-   "score": 0,
-   "published": "2026-10-10",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.87,
-    "difficulty": 1.32,
-    "learning_value": 1.88,
-    "hands_on": 0.67
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 1.52,
+    "learning_value": 2.27,
+    "hands_on": 0.95
    }
   },
   {
-   "source": "GitHub Trending",
-   "title": "LLaMA-Agents: Open-source Framework for Building LLM-powered Agents",
-   "url": "https://github.com/trending/LLaMA-Agents",
-   "snippet": "LLaMA-Agents is a rapidly trending open-source framework designed for constructing and deploying autonomous agents powered by large language models. It provides modular components for planning, memory, and tool integration, facilitating research and development in agentic AI.",
+   "source": "viXra.org",
+   "title": "Indirect Prompt Injection in Autonomous LLM Agents.",
+   "url": "https://vixra.org/abs/2610.0044",
+   "snippet": "Autonomous Large Language Model (LLM) agents are increasingly vulnerable to indirect prompt injection (IPI) attacks, where adversarial instructions embedded in external data sources manipulate agent behavior without direct user input. This review synthesizes current research on IPI vulnerabilities and proposed mitigation strategies, highlighting key attack vectors and existing defenses.",
    "score": 0,
-   "published": "2026-10-09",
+   "published": "2026-10-10",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 0.69,
-    "learning_value": 1.95,
-    "hands_on": 1.34
-   },
-   "related_to": [
-    "msitarzewski / agency-agents"
-   ]
+    "injection": 0.02,
+    "has_substance": 0.77,
+    "difficulty": 1.19,
+    "learning_value": 1.52,
+    "hands_on": 0.13
+   }
   },
   {
-   "source": "OpenAI Blog",
-   "title": "Advancements in Multimodal LLM Reasoning: Beyond Text and Images",
-   "url": "https://openai.com/blog/multimodal-llm-reasoning-advancements/",
-   "snippet": "OpenAI shares new research on multimodal large language models that demonstrate advanced reasoning capabilities not just with text and images, but also with audio and sensor data. This expands the potential for LLMs in interactive and embodied AI systems.",
+   "source": "Department of Energy",
+   "title": "CESER Releases New Testbed to Advance LLM and Agentic AI Evaluation for Critical Infrastructure.",
+   "url": "https://www.energy.gov/ceser/articles/ceser-releases-new-testbed-advance-llm-and-agentic-ai-evaluation-critical",
+   "snippet": "The U.S. Department of Energy's (DOE) Office of Cybersecurity, Energy Security, and Emergency Response (CESER) and Lawrence Livermore National Laboratory (LLNL) have developed Stormbreaker, a dynamic testbed for rapidly evaluating large language models (LLMs) and agentic artificial intelligence (AI) in power systems and operational technology (OT) environments. Stormbreaker is designed for evaluating LLMs and agentic AI as dynamically as the environments in which these systems operate. [cite: 40 of previous search]",
    "score": 0,
    "published": "2026-10-08",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.77,
-    "difficulty": 0.6,
-    "learning_value": 0.96,
-    "hands_on": 0.47
+    "has_substance": 0.94,
+    "difficulty": 0.29,
+    "learning_value": 1.49,
+    "hands_on": 0.89
    }
   },
   {
-   "source": "Hugging Face Blog",
-   "title": "Accelerating LLM Inference on Edge Devices with Quantization Techniques",
-   "url": "https://huggingface.co/blog/llm-inference-quantization-edge/",
-   "snippet": "This blog post explores cutting-edge quantization techniques that significantly reduce the computational and memory requirements for running large language models on resource-constrained edge devices. It offers practical guidance and performance benchmarks for ML infrastructure.",
+   "source": "GSA",
+   "title": "Model Context Protocol Server and AI Agent Government Hackathon.",
+   "url": "https://www.gsa.gov/about-us/newsroom/blogs/model-context-protocol-server-and-ai-agent-government-hackathon",
+   "snippet": "The Model Context Protocol (MCP) is an open-source standard for connecting AI applications to external systems. This hackathon aims to build MCP server prototypes for federal agencies' open data assets and service delivery use cases, empowering domain experts to translate their specialized knowledge into reusable, agent-ready code. Hosted by GSA, with industry partners including Databricks, OpenAI, and IBM, it seeks to improve how government data and services can be delivered through AI. [cite: 43 of previous search]",
    "score": 0,
-   "published": "2026-10-09",
+   "published": "2026-10-08",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 1.03,
-    "learning_value": 2.34,
-    "hands_on": 0.97
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Optimal Control for Dexterous Manipulation using Implicit Neural Representations",
-   "url": "https://arxiv.org/abs/2610.05678",
-   "snippet": "Most humanoid loco-manipulation controllers require human motion data to learn whole-body coordination and posture, leaving policies reliant on external sources to provide this data. We present OCLO (Online-posture Compliant LOco-manipulation), a humanoid loco-manipulation system trained without human motion data and commanded only through two end-effector targets. Because these targets do not uniquely determine whole-body posture, OCLO generates pelvis height and torso orientation online using an analytic reachability prior, further refined through policy-in-the-loop sampling with a task-agnostic cost. OCLO also learns whole-body compliance by displacing end-effector references according to measured forces through a spring-damper model, encouraging the legs, waist, and pelvis to yield to external loads. In simulation, using the reachability prior leads to a 77.8% success rate in acquiring the commanded reference, a vast improvement over the 37.8% success rate accomplished without the prior. Further, refinement reduces end-effector orientation error across all evaluated tasks. The same posture module improves a pretrained SONIC controller on four of five tasks. Without compliance training, policies tend to lose balance under disturbances rather than sacrifice tracking. On a Unitree G1, OCLO maintains balance under end-effector disturbances that cause its ablations to fail and performs seven loco-manipulation tasks, including crouched walking and picking up a box from a low su",
-   "score": 0,
-   "published": "2026-10-10",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.9,
-    "learning_value": 2.48,
-    "hands_on": 0.92
+    "injection": 0.02,
+    "has_substance": 0.85,
+    "difficulty": 0.26,
+    "learning_value": 1.23,
+    "hands_on": 0.78
    }
   },
   {
    "source": "Anthropic Blog",
-   "title": "Constitutional AI for Safer Agent Deployment in Critical Systems",
-   "url": "https://www.anthropic.com/news/constitutional-ai-safer-agents/",
-   "snippet": "Anthropic details their latest advancements in Constitutional AI, focusing on how these principles can be applied to develop and deploy safer and more reliable AI agents in sensitive and critical applications. The post includes case studies and ethical considerations.",
+   "title": "Investigating unintended model actions in our evaluations and internal use.",
+   "url": "https://www.anthropic.com/news/unintended-model-actions-evaluations",
+   "snippet": "On October 9, Anthropic published this report detailing four categories of unintended actions by their AI agents against real websites, including US government sites, during internal evaluations. This led to disabling live internet access for all internal evaluations, rebuilding or dropping public benchmarks, and deploying automated classifiers to block unintended tool calls in real time. The report highlights the risks of agents exploiting vulnerabilities, bypassing restrictions, and submitting real forms.",
    "score": 0,
-   "published": "2026-10-10",
+   "published": "2026-10-09",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.68,
-    "difficulty": 0.84,
-    "learning_value": 1.75,
-    "hands_on": 0.3
-   },
-   "related_to": [
-    "AI Agent Security",
-    "AI Agent Security"
-   ]
-  },
-  {
-   "source": "Hugging Face Papers",
-   "title": "Fine-tuning Small Language Models for Domain-Specific Text Generation",
-   "url": "https://huggingface.co/papers/2610.09876",
-   "snippet": "Join the discussion on this paper page (This paper investigates methods for efficiently fine-tuning smaller language models to achieve state-of-the-art performance in highly specialized text generation tasks, offering practical alternatives to large, general-purpose LLMs. It covers techniques for data augmentation and model compression.)",
-   "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.95,
-    "difficulty": 1.1,
-    "learning_value": 1.56,
-    "hands_on": 0.82
+    "has_substance": 0.74,
+    "difficulty": 0.22,
+    "learning_value": 1.76,
+    "hands_on": 0.39
    }
   },
   {
-   "source": "GitHub Trending",
-   "title": "MLOps-Toolkit: Production-ready Templates for ML Infra",
-   "url": "https://github.com/trending/MLOps-Toolkit",
-   "snippet": "MLOps-Toolkit is a collection of production-grade templates and best practices for building robust machine learning infrastructure. It covers everything from data pipelines and model deployment to monitoring and continuous integration/delivery for ML.",
+   "source": "Lunar Lab (Georgia Tech) News",
+   "title": "Lunar Lab Presents at NVIDIA Robotics Day.",
+   "url": "https://lunarlab.gatech.edu/news/lunar-lab-presents-at-nvidia-robotics-day",
+   "snippet": "On October 9, 2026, Lunar Lab director Prof. Lu Gan and Ph.D. student Haocheng Yin presented 'PhysCoRe: Physics-Corrected World Models for Deformable-Object Manipulation' at NVIDIA Robotics Day. Their work combines differentiable simulation, material inference, and learned residual dynamics correction to model cloth, rope, and other deformable objects using NVIDIA Warp, with demonstrations on real robotic systems.",
    "score": 0,
-   "published": "2026-10-08",
+   "published": "2026-10-11",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 0.09,
-    "learning_value": 2.45,
-    "hands_on": 1.29
+    "has_substance": 0.96,
+    "difficulty": 1.38,
+    "learning_value": 1.36,
+    "hands_on": 0.94
    }
   },
   {
-   "source": "Hacker News",
-   "title": "Show HN: A new framework for distributed LLM inference",
-   "url": "https://news.ycombinator.com/item?id=38765432",
-   "snippet": "A new framework for distributed inference of large language models is presented, aiming to significantly reduce latency and cost for deploying LLMs at scale. The discussion highlights its potential impact on ML infrastructure and real-time applications.",
+   "source": "Functionize",
+   "title": "Functionize Brings App Context to Coding Agents with the New Functionize MCP Server.",
+   "url": "https://www.functionize.com/mcp-server",
+   "snippet": "Functionize released the Functionize MCP server, designed to connect Functionize Studio to the coding agents engineering teams use. This allows developers and testers to request smoke or regression suites in plain language, with Studio building and running them against the application. The server provides results and context directly in the developer's chat, enabling agents to drive Studio and improve testing workflows.",
    "score": 0,
    "published": "2026-10-09",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.92,
-    "difficulty": 0.88,
-    "learning_value": 1.2,
+    "injection": 0.02,
+    "has_substance": 0.94,
+    "difficulty": 0.03,
+    "learning_value": 1.03,
     "hands_on": 0.87
    }
   },
   {
-   "source": "AWS ML Blog",
-   "title": "Optimizing Cost and Performance for Serverless ML Inference Endpoints",
-   "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-serverless-ml-inference/",
-   "snippet": "This AWS Machine Learning blog post provides in-depth strategies and best practices for optimizing both the cost and performance of serverless machine learning inference endpoints. It covers architectural patterns and configuration tips for efficient ML infra.",
+   "source": "vLLM Blog",
+   "title": "vLLM Support for NVIDIA Vera Rubin NVL72: 7.8x Throughput over GB200 NVL72.",
+   "url": "https://vllm.ai/blog/nvidia-vera-rubin-nvl72-support",
+   "snippet": "vLLM announced support for NVIDIA Vera Rubin NVL72, demonstrating early performance gains with 7.8x the throughput per GPU over GB200 NVL72 on AgentX for agentic AI workloads and up to 3.7x higher VLM throughput over GB300 NVL72 in MLPerf. The Vera Rubin platform features HBM4 memory for 2.4x higher bandwidth and accelerated LLM inference operations like GEMM, MoE, and attention.",
    "score": 0,
    "published": "2026-10-10",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.88,
-    "difficulty": 0.27,
-    "learning_value": 2.12,
-    "hands_on": 0.65
+    "has_substance": 0.92,
+    "difficulty": 0.87,
+    "learning_value": 1.04,
+    "hands_on": 0.78
+   }
+  },
+  {
+   "source": "GitHub Gist",
+   "title": "LLM Wiki - A pattern for building personal knowledge bases using LLMs.",
+   "url": "https://gist.github.com/simonw/llm-wiki-pattern",
+   "snippet": "This GitHub Gist introduces a pattern for building personal knowledge bases using LLMs, where the LLM incrementally builds and maintains a persistent wiki of structured, interlinked Markdown files. Instead of rediscovering knowledge with every query, the LLM integrates new information into the existing wiki, updating entity pages, revising topic summaries, and noting contradictions, making the knowledge compounding and current.",
+   "score": 0,
+   "published": "2026-10-09",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 0.38,
+    "learning_value": 2.43,
+    "hands_on": 1.2
    }
   },
   {
    "source": "arXiv",
-   "title": "Towards Unified Embodied Agents: Learning Across Diverse Robot Platforms",
-   "url": "https://arxiv.org/abs/2610.02345",
-   "snippet": "A family of tabular anomaly detectors trains a neural map toward a fixed target under squared-error loss and scores anomalies by the test-time residual; contraction matching, one-step rectified flow, and reconstruction autoencoders all fit this template. We characterize a convergence collapse: better optimization makes the detector worse. At convergence, the learned map tracks the target even off-distribution, so the residual signal vanishes on anomalies as well as on normal data. These detectors therefore rely on implicit non-convergence (early stopping, capacity caps) to retain signal. We argue this is structural: effective anomaly detection requires a locality constraint that blocks unconstrained extrapolation. Classical detectors (kNN, KDE, isolation forests, LOF) enforce locality explicitly; fixed-target neural detectors do not. We formalize the connection by showing that the kernel-regression analog of a fixed-target detector is a finite-bandwidth Nadaraya-Watson smoother, which we call Kernel Contraction Matching (KCM). KCM is closed-form, training-free, and CPU-efficient, yet matches established neural baselines on ADBench. Building on this bridge, we introduce the Kernel-Anchored Regularizer (KAR), which penalizes deviation of the neural prediction from a kernel-weighted average of training targets. Across collapse-prone ADBench datasets and three backbones, KAR mitigates collapse and improves AUROC under prolonged training. (A new paper proposing a framework for uni",
+   "title": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark.",
+   "url": "https://arxiv.org/abs/2610.12409",
+   "snippet": "This paper presents a psychometric audit of an AI safety benchmark, investigating the concept of 'harmful refusal.' It aims to understand and measure how AI systems respond to potentially harmful prompts and the effectiveness of existing safety mechanisms, with implications for developing more robust and aligned AI models.",
    "score": 0,
-   "published": "2026-10-08",
+   "published": "2026-10-09",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.97,
+    "has_substance": 0.76,
+    "difficulty": 1.52,
+    "learning_value": 1.56,
+    "hands_on": 0.54
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling.",
+   "url": "https://arxiv.org/abs/2610.12393",
+   "snippet": "This paper explores learning multimodal synergy through Higher-Order Tensor Modeling (HRIL). It proposes a novel approach to integrate and process information from various modalities, such as visual and textual data, using advanced tensor-based techniques, aiming to enhance the understanding and reasoning capabilities of AI systems in complex multimodal environments.",
+   "score": 0,
+   "published": "2026-10-09",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.94,
+    "difficulty": 1.9,
+    "learning_value": 1.45,
+    "hands_on": 0.64
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport.",
+   "url": "https://arxiv.org/abs/2610.12375",
+   "snippet": "OnTrack introduces a method for real-time monitoring and intervention in LLM agent trajectories using streaming structure-aware optimal transport. This research addresses the challenge of ensuring safe and predictable behavior in autonomous agents by detecting deviations from intended paths and enabling timely corrective actions, crucial for reliable agent deployment in dynamic environments.",
+   "score": 0,
+   "published": "2026-10-09",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
     "difficulty": 1.92,
-    "learning_value": 2.75,
-    "hands_on": 0.93
+    "learning_value": 1.93,
+    "hands_on": 0.79
+   },
+   "related_to": [
+    "CoreWeave Agent Lens | AI Agent Observability"
+   ]
+  },
+  {
+   "source": "Engineering Archive",
+   "title": "Surrogate-Guided Generative Modeling with Physics Verification for Expensive Multiphysics Inverse Problems.",
+   "url": "https://doi.org/10.31224/8480",
+   "snippet": "This preprint explores surrogate-guided generative modeling with physics verification for expensive multiphysics inverse problems. It proposes a method to leverage generative models and surrogate models to efficiently tackle complex inverse problems by incorporating physical constraints and verification, relevant for fields like reactor physics and materials science.",
+   "score": 0,
+   "published": "2026-10-10",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.94,
+    "difficulty": 1.96,
+    "learning_value": 1.81,
+    "hands_on": 0.73
    }
   },
   {
-   "source": "Hugging Face Papers",
-   "title": "PEFT-LLaMA: Parameter-Efficient Fine-Tuning for Large LLaMA Models",
-   "url": "https://huggingface.co/papers/2610.10987",
-   "snippet": "This paper introduces PEFT-LLaMA, a set of parameter-efficient fine-tuning techniques specifically optimized for large LLaMA models, enabling significant performance gains with minimal computational overhead. The methods are crucial for democratizing access to large model fine-tuning.",
+   "source": "Engineering Archive",
+   "title": "Self-Healing Action Verification against Instruction Tampering and Sensor Failures in Humanoid Robots.",
+   "url": "https://doi.org/10.31224/8483",
+   "snippet": "This paper investigates self-healing action verification in humanoid robots to mitigate risks from instruction tampering and sensor failures. It presents a framework designed to enable robots to detect and recover from malicious instruction alterations or sensor malfunctions, enhancing their robustness and reliability in autonomous operations and embodied AI applications.",
    "score": 0,
    "published": "2026-10-10",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 1.22,
-    "learning_value": 1.38,
-    "hands_on": 0.94
-   },
-   "related_to": [
-    "Fine-tuning Small Language Models for Domain-Specific Text Generation"
-   ]
+    "injection": 0.02,
+    "has_substance": 0.9,
+    "difficulty": 1.81,
+    "learning_value": 1.53,
+    "hands_on": 0.63
+   }
   },
   {
-   "source": "GitHub Trending",
-   "title": "Agentic-Simulator: A Sandbox for Multi-Agent AI Research",
-   "url": "https://github.com/trending/Agentic-Simulator",
-   "snippet": "Agentic-Simulator is a trending open-source sandbox environment designed for researchers to experiment with and evaluate multi-agent AI systems. It offers customizable environments and tools for simulating complex interactions and behaviors.",
-   "score": 0,
-   "published": "2026-10-10",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 0.61,
-    "learning_value": 2.18,
-    "hands_on": 1.44
-   },
-   "related_to": [
-    "10 Agent Orchestration Platforms Worth Trying in 2026"
-   ]
-  },
-  {
-   "source": "Reddit (r/LocalLLaMA)",
-   "title": "New LoRA for local 7B models achieving 90% performance of 70B",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/abc123/new_lora_local_7b_models_performance/",
-   "snippet": "A highly upvoted post discussing a newly released LoRA (Low-Rank Adaptation) that allows 7B parameter language models to achieve close to 90% of the performance of much larger 70B models, making high-quality LLMs accessible locally. This is a significant development for local LLM enthusiasts.",
+   "source": "Engineering Archive",
+   "title": "Sensor-Based Exoskeletal Mirroring System.",
+   "url": "https://doi.org/10.31224/8446",
+   "snippet": "This work introduces a sensor-based exoskeletal mirroring system for rehabilitation robotics, specifically targeting hand exoskeleton and stroke rehabilitation. The system utilizes bilateral mirroring and cable-actuated mechanisms to provide intuitive control and assistance, aiming to improve recovery outcomes and enhance the capabilities of rehabilitation engineering.",
    "score": 0,
    "published": "2026-10-09",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.95,
-    "difficulty": 0.83,
-    "learning_value": 1.27,
-    "hands_on": 1.04
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Foundational Models for Code Generation and Software Engineering Tasks",
-   "url": "https://arxiv.org/abs/2610.03456",
-   "snippet": "Drug-target affinity (DTA) prediction is widely used to prioritize candidate compounds before costly experimental screening. DTA models are often compared under a single data split, even though deployment may require extrapolation to new chemical series, new protein targets, or both. We ask whether the distribution shift used for evaluation changes which architecture appears best. We curate 718,800 unique drug-protein pairs from the ChEMBL and BindingDB datasets. We compare a Morgan-fingerprint + protein-CNN baseline with 12 controlled architectures that combine four drug representations with three ESM-2 interaction modes. Mean validation RMSE increases from 0.950 and 0.945 under scaffold and fingerprint-cluster OOD to 1.299 and 1.321 under protein-cluster and dual OOD. Model rankings are similar across the two chemical shifts (tau = 0.79), but agreement with scaffold OOD falls under protein OOD (tau = 0.39) and reverses under dual OOD (tau = -0.55). Held-out evaluation, repeated seeds, group-aware bootstrap analysis, and a size-matched control support the same conclusion: architecture selection depends on the form of extrapolation, not only on average error or training-set size. DTA benchmarks should therefore match the chemical and target shifts expected at deployment. (This paper surveys the emerging landscape of foundational models specifically tailored for code generation, bug fixing, and other software engineering tasks. It analyzes their architectures, performance benc",
-   "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.81,
-    "difficulty": 1.7,
-    "learning_value": 1.14,
-    "hands_on": 0.57
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "LLM-Ops-Flow: A Workflow Orchestration Tool for LLM Deployment",
-   "url": "https://github.com/trending/LLM-Ops-Flow",
-   "snippet": "LLM-Ops-Flow is a newly popular GitHub repository offering an orchestration tool specifically designed for streamlining the deployment and management of large language models in production environments. It provides features for workflow automation and resource management in ML infra.",
-   "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 0.34,
-    "learning_value": 1.38,
-    "hands_on": 1.25
-   }
-  },
-  {
-   "source": "Reddit (r/MachineLearning)",
-   "title": "Paper Discussion: 'The Unreasonable Effectiveness of Simple Agents with Complex Tools'",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/def456/paper_discussion_unreasonable_effectiveness_simple_agents/",
-   "snippet": "A lively discussion thread dissecting a recent paper that argues for the power of simple AI agents when equipped with access to sophisticated and diverse tools. The community shares insights on agent design and the role of tool use in AI capabilities.",
-   "score": 0,
-   "published": "2026-10-10",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.53,
-    "difficulty": 1.21,
-    "learning_value": 1.25,
-    "hands_on": 0.2
-   },
-   "related_to": [
-    "msitarzewski / agency-agents"
-   ]
-  },
-  {
-   "source": "arXiv",
-   "title": "Meta-Learning for Rapid Adaptation of Robot Skills to Novel Environments",
-   "url": "https://arxiv.org/abs/2610.06789",
-   "snippet": "We study the one-way communication complexity of the $f$-Boolean Hidden Partition problem. Here, Alice is given an $n$-bit string and Bob is given $Ω(n)$ disjoint blocks of its indices together with a string of labels. Under the promise that the evaluations of $f$ on these blocks either agree with all of the labels or disagree with all of them, Bob must determine which is the case using a single message from Alice. This problem generalizes the Boolean Hidden Matching and Hidden Hypermatching problems, which capture the special case where $f$ is the parity function. We establish classical and quantum communication bounds for $f$-Boolean Hidden Partition in terms of the sign degree $d$ of $f$, proving a conjecture of Doriguello and Montanaro (TQC 2020). Their prior work gave logarithmic communication upper bounds for classical protocols when $d \\le 1$ and quantum protocols when $d \\le 2$, as well as polynomial lower bounds for certain structured functions with larger sign degree. We show that for every $f$ of sign degree $d \\ge 2$, the randomized classical communication complexity of this problem is $Θ(n^{1-1/d})$ while its quantum communication complexity lies between $Ω(n^{1-2/d})$ and $\\bO{n^{1-1/\\lceil d/2 \\rceil} \\log n}$. This completely characterizes the functions $f$ admitting polynomial quantum advantage as those for which $d \\ge 2$, with a new infinite family of exponential separations given by the case $d = 2$. (This paper explores meta-learning techniques that enabl",
-   "score": 0,
-   "published": "2026-10-08",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.87,
-    "difficulty": 1.97,
-    "learning_value": 1.66,
-    "hands_on": 0.1
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "Federated-LLM-Training: Privacy-Preserving LLM Training Framework",
-   "url": "https://github.com/trending/Federated-LLM-Training",
-   "snippet": "Federated-LLM-Training is a trending repository providing a framework for training large language models using federated learning, ensuring data privacy and security. It enables collaborative model training across decentralized datasets without sharing raw data.",
-   "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
     "difficulty": 1.11,
-    "learning_value": 1.74,
-    "hands_on": 1.34
-   }
-  },
-  {
-   "source": "Reddit (r/LocalLLaMA)",
-   "title": "Guide: Running 30B models on 16GB GPUs with new quantization",
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/ghi789/guide_running_30b_models_16gb_gpus_quantization/",
-   "snippet": "A highly popular guide for the LocalLLaMA community on effectively running 30B parameter large language models on consumer-grade GPUs with only 16GB of VRAM, utilizing newly developed quantization and offloading techniques. This makes powerful LLMs more accessible.",
-   "score": 0,
-   "published": "2026-10-08",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 0.89,
-    "learning_value": 2.55,
-    "hands_on": 1.43
+    "learning_value": 1.28,
+    "hands_on": 0.68
    }
   }
  ],
  "dropped": [
   {
-   "source": "Reddit (r/MachineLearning)",
-   "title": "Discussion: Is 'Emergent Behavior' in LLMs Truly Emergent or Just Scaling?",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/xyz123/discussion_emergent_behavior_llms/",
-   "snippet": "A widely discussed thread examining the nature of emergent behaviors observed in large language models, debating whether these capabilities are genuinely new phenomena or simply a consequence of increased scale and data. The discussion includes various perspectives from researchers and practitioners.",
-   "score": 0,
-   "published": "2026-10-08",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.1,
-    "difficulty": 1.06,
-    "learning_value": 0.63,
-    "hands_on": 0.01
-   },
-   "reason": "no substance 0.10"
-  },
-  {
-   "source": "BAIR Blog",
-   "title": "Learning Generalizable Skills for Mobile Manipulation with Vision-Language Models",
-   "url": "https://bair.berkeley.edu/blog/2026/10/08/mobile-manipulation-vlm/",
-   "snippet": "The Berkeley AI Research (BAIR) Lab showcases new research on teaching mobile manipulation robots generalizable skills by leveraging advanced vision-language models. This work focuses on improving robotic understanding and execution in unstructured environments.",
-   "score": 0,
-   "published": "2026-10-08",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.86,
-    "difficulty": 0.98,
-    "learning_value": 0.89,
-    "hands_on": 0.55
-   },
-   "reason": "low learning value 0.89"
-  },
-  {
-   "source": "Google DeepMind Blog",
-   "title": "Project Chameleon: Adapting LLMs to Real-World Tools",
-   "url": "https://deepmind.google/blog/project-chameleon-llm-tool-adaptation/",
-   "snippet": "DeepMind's 'Project Chameleon' explores methods for equipping large language models with the ability to dynamically adapt to and utilize real-world tools, enhancing their agency and problem-solving capabilities in complex tasks. This work is pivotal for practical AI agent development.",
-   "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.7,
-    "difficulty": 0.52,
-    "learning_value": 0.83,
-    "hands_on": 0.42
-   },
-   "reason": "low learning value 0.83"
-  },
-  {
    "source": "OpenAI Blog",
-   "title": "Towards General Purpose Robots: Progress in Foundation Models for Robotics",
-   "url": "https://openai.com/blog/general-purpose-robots-foundation-models/",
-   "snippet": "OpenAI's latest blog post details their progress in developing foundation models for robotics, aiming to create general-purpose robots capable of performing a wide array of tasks in various environments. The research focuses on transferable skills and robust learning.",
+   "title": "OpenAI rolls out Decisions API and Ultrafast for GPT-6.1 Sol.",
+   "url": "https://openai.com/blog/decisions-api-ultrafast-gpt-6-1-sol",
+   "snippet": "OpenAI introduced the public beta of its Decisions API, designed to speed up quick choices for applications and agents, alongside an 'Ultrafast' update for GPT-6.1 Sol. This update delivers near-Astra intelligence up to 8x faster in Codex, reducing waiting times for coding, debugging, and testing ideas. The Decisions API aims to match intelligence, speed, and cost for various workloads, from quick decisions to demanding reasoning tasks.",
    "score": 0,
    "published": "2026-10-09",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.56,
-    "difficulty": 0.84,
-    "learning_value": 0.84,
-    "hands_on": 0.37
-   },
-   "reason": "low learning value 0.84"
-  },
-  {
-   "source": "Anthropic Blog",
-   "title": "Evaluating Trustworthiness in Advanced AI Agents: New Metrics and Challenges",
-   "url": "https://www.anthropic.com/news/evaluating-trustworthiness-ai-agents/",
-   "snippet": "Anthropic introduces new metrics and discusses challenges in evaluating the trustworthiness of advanced AI agents, particularly in scenarios requiring high stakes decision-making. The post emphasizes the importance of transparency and reliability in agent design.",
-   "score": 0,
-   "published": "2026-10-08",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.47,
-    "difficulty": 0.66,
-    "learning_value": 1.2,
-    "hands_on": 0.11
-   },
-   "reason": "no substance 0.47"
-  },
-  {
-   "source": "Hugging Face Blog",
-   "title": "Introducing 'Text-to-Code' Models for Enhanced Developer Productivity",
-   "url": "https://huggingface.co/blog/text-to-code-models/",
-   "snippet": "Hugging Face announces new 'Text-to-Code' models, which significantly improve developer productivity by generating high-quality code snippets from natural language descriptions. This represents a step forward in AI-assisted software development and LLM applications.",
-   "score": 0,
-   "published": "2026-10-10",
-   "judge": {
-    "injection": 0.01,
+    "injection": 0.02,
     "has_substance": 0.88,
     "difficulty": 0.05,
-    "learning_value": 0.51,
+    "learning_value": 0.68,
     "hands_on": 0.86
    },
-   "reason": "low learning value 0.51"
+   "reason": "low learning value 0.68"
   },
   {
-   "source": "AWS ML Blog",
-   "title": "New Features for Amazon SageMaker Notebooks: Enhanced Collaboration and Debugging",
-   "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-notebooks-collaboration-debugging/",
-   "snippet": "AWS Machine Learning blog announces significant updates to Amazon SageMaker Notebooks, introducing enhanced collaborative features and advanced debugging tools. These improvements aim to boost productivity for machine learning practitioners working on ML infra.",
+   "source": "Teramind Knowledge Base",
+   "title": "Windows Agent 26.37 (2026-10-09).",
+   "url": "https://www.teramind.co/knowledge-base/windows-agent-26-37-2026-10-09",
+   "snippet": "Teramind's Windows Agent 26.37 update includes improvements for LLM applications, such as support for non-Latin attachment file names and optimized DLP scanning of WAR archives. This release also features enhanced LinkedIn edited comment capture and improved updater diagnostics, aiming to provide better monitoring and troubleshooting for LLM-based interactions and data security.",
    "score": 0,
    "published": "2026-10-09",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.87,
-    "difficulty": 0.0,
-    "learning_value": 0.56,
-    "hands_on": 0.35
+    "injection": 0.02,
+    "has_substance": 0.83,
+    "difficulty": 0.03,
+    "learning_value": 0.6,
+    "hands_on": 0.36
    },
-   "reason": "low learning value 0.56"
+   "reason": "low learning value 0.60"
   }
  ],
- "judge": "judge: 23 kept, 7 dropped (34 pairs checked)"
+ "judge": "judge: 19 kept, 2 dropped (12 pairs checked)"
 }
