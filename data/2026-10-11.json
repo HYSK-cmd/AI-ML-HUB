@@ -1,70 +1,71 @@
 {
-  "date": "2026-10-11",
-  "headline": "개인 지식 베이스부터 자기 개선 AI 에이전트까지, 최신 AI 트렌드를 만나보세요.",
-  "items": [
-    {
-      "title": "LLM Wiki - A pattern for building personal knowledge bases using LLMs.",
-      "url": "https://gist.github.com/simonw/llm-wiki-pattern",
-      "source": "GitHub Gist",
-      "categories": [
-        "LLM",
-        "Open Source & Tools"
-      ],
-      "level": "beginner",
-      "headline_ko": "LLM 개인 위키 구축",
-      "summary": "이 GitHub Gist는 LLM을 사용하여 개인 지식 베이스를 구축하는 패턴을 소개합니다. LLM은 구조화되고 상호 연결된 Markdown 파일로 구성된 영구적인 위키를 점진적으로 구축하고 유지합니다. 매번 새로운 쿼리로 지식을 재발견하는 대신, LLM은 새 정보를 기존 위키에 통합하여 엔티티 페이지를 업데이트하고, 토픽 요약을 수정하며, 모순을 기록합니다. 이를 통해 지식이 누적되고 최신 상태를 유지합니다.",
-      "why": "LLM을 활용하여 개인 정보를 효율적으로 관리하고 지식을 축적하는 실용적인 방법을 배울 수 있습니다. 정보를 계속 업데이트하고 연결하는 LLM의 능력을 이해하는 데 도움이 됩니다.",
-      "keywords": [
-        "LLM wiki",
-        "knowledge base",
-        "Markdown",
-        "personal LLM"
-      ],
-      "narration": "첫 번째 소식은 LLM으로 개인 위키를 만드는 방법입니다. 이 패턴을 사용하면 LLM이 구조화된 Markdown 파일을 통해 지식 베이스를 구축합니다. 새로운 정보가 들어오면 기존 위키에 통합하여 계속 업데이트합니다. 여러분의 지식을 체계적으로 관리하고 축적하는 데 도움을 줄 것입니다."
-    },
-    {
-      "title": "We're releasing pplx-embed-v2-late, two late-interaction embedding models that retrieve text, images, and pages with a shared embedding space for cross-model querying.",
-      "url": "https://platform.perplexity.ai/community/announcements/perplexity-pplx-embed-v2-late",
-      "source": "Perplexity AI Platform Forum",
-      "categories": [
-        "Multimodal & Vision",
-        "LLM",
-        "ML Systems & Infra"
-      ],
-      "level": "intermediate",
-      "headline_ko": "멀티모달 임베딩 모델",
-      "summary": "Perplexity는 텍스트, 이미지, 페이지를 검색하는 late-interaction 임베딩 모델인 pplx-embed-v2-late를 공개했습니다. 이 모델들은 9B와 0.6B 두 가지 크기로 제공되며, 하나의 임베딩 공간을 공유하는 멀티 벡터 임베딩을 생성합니다. 공개된 이 모델들은 최첨단 성능을 달성하며 Hugging Face에서 이용 가능합니다.",
-      "why": "텍스트, 이미지 등 다양한 모달리티를 통합하여 검색하는 최신 임베딩 기술을 이해할 수 있습니다. 멀티모달 시스템 설계 및 구현에 대한 통찰력을 얻을 수 있습니다.",
-      "keywords": [
-        "multimodal embedding",
-        "late-interaction",
-        "Perplexity",
-        "retrieval"
-      ],
-      "narration": "다음은 Perplexity가 공개한 멀티모달 임베딩 모델 소식입니다. pplx-embed-v2-late는 텍스트, 이미지, 페이지를 동시에 검색할 수 있습니다. 9B와 0.6B 두 가지 크기로 제공되며, Hugging Face에서 직접 만나볼 수 있습니다. 이 모델들은 최첨단 성능을 보여주고 있습니다."
-    },
-    {
-      "title": "Memento 3: Recursive Self-Improvement for Frozen LLMs via Reflective Rulebooks.",
-      "url": "https://arxiv.org/abs/2610.11794",
-      "source": "arXiv",
-      "categories": [
-        "Agents",
-        "LLM",
-        "Research Fundamentals",
-        "Robotics & Embodied"
-      ],
-      "level": "advanced",
-      "headline_ko": "LLM의 자기 개선 비결",
-      "summary": "Memento 3는 University College London과 Huawei Noah's Ark Lab의 시스템으로, 25개 ARC-AGI-3 게임의 모든 레벨을 성공적으로 통과하며 벤치마크 최고 점수인 평균 RHAE 100.0을 달성했습니다. 이 에이전트는 실행 가능한 코드로 컴파일되는 자연어 규칙서를 유지하며, 지속적인 관찰-반영-수정-컴파일-검증 루프를 통해 이를 개선합니다. 이 과정은 기본 LLM을 고정한 채 재귀적 자기 개선을 가능하게 합니다.",
-      "why": "LLM 에이전트가 외부 기억과 리플렉션을 통해 어떻게 스스로 학습하고 성능을 개선하는지 심도 있게 탐구할 수 있습니다. 자기 개선 시스템 및 에이전트 설계에 대한 최신 연구 동향을 파악할 수 있습니다.",
-      "keywords": [
-        "recursive self-improvement",
-        "LLM agent",
-        "rulebook",
-        "reflection",
-        "ARC-AGI-3"
-      ],
-      "narration": "마지막 소식은 LLM의 재귀적 자기 개선에 대한 연구, Memento 3입니다. 이 시스템은 ARC-AGI-3 게임에서 최고 점수를 기록하며 놀라운 성능을 보여줍니다. 에이전트는 자연어 규칙서를 유지하고, 이를 지속적으로 개선하며 스스로 학습합니다. 기본 LLM은 고정된 채로 성능이 향상되는 방식은 매우 인상적입니다."
-    }
-  ]
+ "date": "2026-10-11",
+ "headline": "개인 지식 베이스부터 자기 개선 AI 에이전트까지, 최신 AI 트렌드를 만나보세요.",
+ "items": [
+  {
+   "title": "LLM Wiki - A pattern for building personal knowledge bases using LLMs.",
+   "url": "https://gist.github.com/simonw/llm-wiki-pattern",
+   "source": "GitHub Gist",
+   "categories": [
+    "LLM",
+    "Open Source & Tools"
+   ],
+   "level": "beginner",
+   "headline_ko": "LLM 개인 위키 구축",
+   "summary": "이 GitHub Gist는 LLM을 사용하여 개인 지식 베이스를 구축하는 패턴을 소개합니다. LLM은 구조화되고 상호 연결된 Markdown 파일로 구성된 영구적인 위키를 점진적으로 구축하고 유지합니다. 매번 새로운 쿼리로 지식을 재발견하는 대신, LLM은 새 정보를 기존 위키에 통합하여 엔티티 페이지를 업데이트하고, 토픽 요약을 수정하며, 모순을 기록합니다. 이를 통해 지식이 누적되고 최신 상태를 유지합니다.",
+   "why": "LLM을 활용하여 개인 정보를 효율적으로 관리하고 지식을 축적하는 실용적인 방법을 배울 수 있습니다. 정보를 계속 업데이트하고 연결하는 LLM의 능력을 이해하는 데 도움이 됩니다.",
+   "keywords": [
+    "LLM wiki",
+    "knowledge base",
+    "Markdown",
+    "personal LLM"
+   ],
+   "narration": "첫 번째 소식은 LLM으로 개인 위키를 만드는 방법입니다. 이 패턴을 사용하면 LLM이 구조화된 Markdown 파일을 통해 지식 베이스를 구축합니다. 새로운 정보가 들어오면 기존 위키에 통합하여 계속 업데이트합니다. 여러분의 지식을 체계적으로 관리하고 축적하는 데 도움을 줄 것입니다."
+  },
+  {
+   "title": "We're releasing pplx-embed-v2-late, two late-interaction embedding models that retrieve text, images, and pages with a shared embedding space for cross-model querying.",
+   "url": "https://platform.perplexity.ai/community/announcements/perplexity-pplx-embed-v2-late",
+   "source": "Perplexity AI Platform Forum",
+   "categories": [
+    "Multimodal & Vision",
+    "LLM",
+    "ML Systems & Infra"
+   ],
+   "level": "intermediate",
+   "headline_ko": "멀티모달 임베딩 모델",
+   "summary": "Perplexity는 텍스트, 이미지, 페이지를 검색하는 late-interaction 임베딩 모델인 pplx-embed-v2-late를 공개했습니다. 이 모델들은 9B와 0.6B 두 가지 크기로 제공되며, 하나의 임베딩 공간을 공유하는 멀티 벡터 임베딩을 생성합니다. 공개된 이 모델들은 최첨단 성능을 달성하며 Hugging Face에서 이용 가능합니다.",
+   "why": "텍스트, 이미지 등 다양한 모달리티를 통합하여 검색하는 최신 임베딩 기술을 이해할 수 있습니다. 멀티모달 시스템 설계 및 구현에 대한 통찰력을 얻을 수 있습니다.",
+   "keywords": [
+    "multimodal embedding",
+    "late-interaction",
+    "Perplexity",
+    "retrieval"
+   ],
+   "narration": "다음은 Perplexity가 공개한 멀티모달 임베딩 모델 소식입니다. pplx-embed-v2-late는 텍스트, 이미지, 페이지를 동시에 검색할 수 있습니다. 9B와 0.6B 두 가지 크기로 제공되며, Hugging Face에서 직접 만나볼 수 있습니다. 이 모델들은 최첨단 성능을 보여주고 있습니다."
+  },
+  {
+   "title": "Memento 3: Recursive Self-Improvement for Frozen LLMs via Reflective Rulebooks.",
+   "url": "https://arxiv.org/abs/2610.11794",
+   "source": "arXiv",
+   "categories": [
+    "Agents",
+    "LLM",
+    "Research Fundamentals",
+    "Robotics & Embodied"
+   ],
+   "level": "advanced",
+   "headline_ko": "LLM의 자기 개선 비결",
+   "summary": "Memento 3는 University College London과 Huawei Noah's Ark Lab의 시스템으로, 25개 ARC-AGI-3 게임의 모든 레벨을 성공적으로 통과하며 벤치마크 최고 점수인 평균 RHAE 100.0을 달성했습니다. 이 에이전트는 실행 가능한 코드로 컴파일되는 자연어 규칙서를 유지하며, 지속적인 관찰-반영-수정-컴파일-검증 루프를 통해 이를 개선합니다. 이 과정은 기본 LLM을 고정한 채 재귀적 자기 개선을 가능하게 합니다.",
+   "why": "LLM 에이전트가 외부 기억과 리플렉션을 통해 어떻게 스스로 학습하고 성능을 개선하는지 심도 있게 탐구할 수 있습니다. 자기 개선 시스템 및 에이전트 설계에 대한 최신 연구 동향을 파악할 수 있습니다.",
+   "keywords": [
+    "recursive self-improvement",
+    "LLM agent",
+    "rulebook",
+    "reflection",
+    "ARC-AGI-3"
+   ],
+   "narration": "마지막 소식은 LLM의 재귀적 자기 개선에 대한 연구, Memento 3입니다. 이 시스템은 ARC-AGI-3 게임에서 최고 점수를 기록하며 놀라운 성능을 보여줍니다. 에이전트는 자연어 규칙서를 유지하고, 이를 지속적으로 개선하며 스스로 학습합니다. 기본 LLM은 고정된 채로 성능이 향상되는 방식은 매우 인상적입니다."
+  }
+ ],
+ "video": "videos/2026-10-11.mp4"
 }
