@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-12",
+  "headline": "오늘은 AI 에이전트를 활용한 취업 도구부터 로봇 아바타 상호작용, 그리고 의료 영상 진단 기술까지 다양하게 다룹니다.",
+  "items": [
+    {
+      "title": "MadsLorentzen / ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "source": "GitHub Trending",
+      "categories": [
+        "Agents",
+        "Open Source & Tools"
+      ],
+      "level": "beginner",
+      "headline_ko": "AI 취업 에이전트",
+      "summary": "이 오픈소스 AI 프레임워크는 Claude Code를 기반으로 하며, 사용자 기기에서 구동됩니다. 채용 공고를 분석하고, 이력서와 자기소개서를 맞춤형으로 작성하며, 면접 준비까지 돕습니다. 실제 에이전트 AI가 일상생활에 어떻게 적용될 수 있는지 보여주는 실용적인 사례입니다.",
+      "why": "이 도구를 통해 에이전트 AI가 채용 시장에서 개인의 취업 과정을 어떻게 혁신할 수 있는지 직접 경험해 볼 수 있습니다. 실제 취업에 성공한 개발자의 경험을 바탕으로 실질적인 도움을 받을 수 있습니다.",
+      "keywords": [
+        "AI agents",
+        "job search",
+        "open source",
+        "Claude Code"
+      ],
+      "narration": "첫 번째는 AI 취업 에이전트입니다. 이 오픈소스 프레임워크는 Claude Code 기반으로 이력서와 자기소개서 작성을 돕고 면접까지 준비해 줍니다. 에이전트 AI의 실용적인 적용 사례를 직접 경험해 보세요. 취업 준비 시간을 획기적으로 줄여줄 수 있습니다."
+    },
+    {
+      "title": "Designing robot-to-robot interaction to support early-stage engagement in a teleoperated Robot Avatar system with multiple robots",
+      "url": "https://www.frontiersin.org/articles/10.3389/frai.2026.00001/full",
+      "source": "Frontiers in Artificial Intelligence",
+      "categories": [
+        "Robotics & Embodied",
+        "Agents"
+      ],
+      "level": "intermediate",
+      "headline_ko": "로봇 아바타 상호작용",
+      "summary": "이 연구는 다중 로봇 아바타 시스템에서 로봇 간 통신이 원격 조작 시스템 사용자의 초기 참여를 어떻게 향상시킬 수 있는지 탐구합니다. 특히 인간-로봇 상호작용에 중점을 두며, 협력 로봇 시스템의 역동성을 분석합니다.",
+      "why": "다중 로봇 아바타 시스템에서의 사용자 참여 증진 방안과 로봇 간 상호작용 디자인에 대한 깊이 있는 이해를 얻을 수 있습니다.",
+      "keywords": [
+        "human-robot interaction",
+        "teleoperation",
+        "robot avatars",
+        "robot-to-robot communication"
+      ],
+      "narration": "중간 레벨은 로봇 아바타 시스템의 로봇 간 상호작용 디자인 연구입니다. 이 연구는 다중 로봇 아바타 시스템에서 로봇 간 통신이 사용자의 초기 참여를 어떻게 향상시키는지 탐구합니다. 협력 로봇 시스템의 역동성과 인간-로봇 상호작용에 관심 있다면 흥미로울 것입니다."
+    },
+    {
+      "title": "Diffusion-augmented contrastive learning for diabetic retinopathy severity classification",
+      "url": "https://www.frontiersin.org/articles/10.3389/frai.2026.00000/full",
+      "source": "Frontiers in Artificial Intelligence",
+      "categories": [
+        "Multimodal & Vision",
+        "Research Fundamentals"
+      ],
+      "level": "advanced",
+      "headline_ko": "확산 모델 기반 망막병증",
+      "summary": "이 논문은 확산 증강 대조 학습 방법을 활용하여 당뇨병성 망막병증 심각도 분류를 개선하는 방법을 탐구합니다. 생성 모델을 사용하여 특징 표현을 강화함으로써, 의료 영상 진단 도구의 견고성과 정확도를 높이는 접근 방식을 제안합니다.",
+      "why": "확산 모델과 대조 학습의 결합을 통해 의료 영상 분야의 최신 딥러닝 기술이 어떻게 적용되는지 깊이 있게 이해할 수 있습니다.",
+      "keywords": [
+        "diffusion models",
+        "contrastive learning",
+        "diabetic retinopathy",
+        "medical imaging",
+        "generative models"
+      ],
+      "narration": "마지막은 당뇨병성 망막병증 분류를 위한 확산 증강 대조 학습 연구입니다. 이 논문은 생성 모델을 활용해 특징 표현을 강화하고, 의료 영상 진단 도구의 정확도를 높이는 방법을 제시합니다. 최신 딥러닝 기술이 의료 분야에 어떻게 적용되는지 심층적으로 다룹니다."
+    }
+  ]
+}

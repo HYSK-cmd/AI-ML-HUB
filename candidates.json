@@ -1,333 +1,182 @@
 {
- "date": "2026-10-11",
- "collected_at": "2026-10-11T19:52:43+00:00",
+ "date": "2026-10-12",
+ "collected_at": "2026-10-12T22:41:58+00:00",
  "counts": {
-  "gemini_search": 21
+  "gemini_search": 11
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 21 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 11 new",
  "items": [
   {
-   "source": "GitHub",
-   "title": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust.",
-   "url": "https://github.com/storytold/photocraft",
-   "snippet": "PhotoCraft is an open-source, clean-room image editor written from scratch in Rust, featuring layers, masks, adjustment layers, layer styles, typography, vectors, brushes, and native PSD support. It leverages a GPU compositor on wgpu for native and fast performance, supporting Metal, Vulkan, DX12, and WebGPU. The engine can be controlled via CLI, JSON control channel, or an MCP server for AI agent automation.",
+   "source": "Microsoft",
+   "title": "Microsoft's new model helps AI agents judge their next move",
+   "url": "https://www.microsoft.com/en-us/research/blog/microsofts-new-model-helps-ai-agents-judge-their-next-move/",
+   "snippet": "Microsoft-Decision-1 is a small decision-scoring model. Given a situation, a question and a fixed set of answer options, it returns a calibrated probability for each option. This model is designed for routing, classification, prioritization, verification, and workflow control, making it easier to incorporate decision intelligence into existing applications, agents, and workflows in a secure, trusted environment.",
    "score": 0,
-   "published": "2026-10-09",
+   "published": "2026-10-12",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.12,
-    "learning_value": 2.34,
-    "hands_on": 1.68
-   }
-  },
-  {
-   "source": "Liquid AI Blog",
-   "title": "Open d1: Edge decision models for text, vision, and audio.",
-   "url": "https://liquid.ai/blog/open-d1-edge-decision-models-for-text-vision-and-audio",
-   "snippet": "Today, we release d1-3B and d1-omni-600M, two open-weight models in our d1 decision model family. d1-3B scores 48.57 on the Decision Index v0.2.1 (public split), ahead of every model under 10B. They produce an answer in a single forward pass, making them suitable for fast, structured decisions in applications like agent guardrails, reranking, and visual inspection.",
-   "score": 0,
-   "published": "2026-10-07",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 0.57,
-    "learning_value": 1.54,
-    "hands_on": 1.88
-   }
-  },
-  {
-   "source": "Microsoft AI Blog",
-   "title": "Introducing Microsoft-Decision-1, our model for fast decision-making.",
-   "url": "https://blogs.microsoft.com/ai/microsoft-decision-1",
-   "snippet": "Microsoft-Decision-1 is a new model for fast decision-scoring, designed for routing, classification, prioritization, verification, and workflow control. It delivers top performance in latency and quality on structured decision tasks, outperforming both LLMs and other decision models. The model, post-trained from Qwen3.5-9B, provides calibrated probability scores for fixed answer options in a single pass.",
-   "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.59,
-    "learning_value": 1.15,
+    "has_substance": 0.93,
+    "difficulty": 0.06,
+    "learning_value": 1.1,
     "hands_on": 0.9
    }
   },
   {
-   "source": "Perplexity AI Platform Forum",
-   "title": "We're releasing pplx-embed-v2-late, two late-interaction embedding models that retrieve text, images, and pages with a shared embedding space for cross-model querying.",
-   "url": "https://platform.perplexity.ai/community/announcements/perplexity-pplx-embed-v2-late",
-   "snippet": "Perplexity has released pplx-embed-v2-late, a pair of late-interaction embedding models that retrieve text, images, and pages. Both models come in two sizes, 9B and 0.6B parameters, and produce multi-vector embeddings, sharing one embedding space. They achieve frontier performance and are publicly available on Hugging Face.",
+   "source": "Frontiers in Artificial Intelligence",
+   "title": "Diffusion-augmented contrastive learning for diabetic retinopathy severity classification",
+   "url": "https://www.frontiersin.org/articles/10.3389/frai.2026.00000/full",
+   "snippet": "This paper explores diffusion-augmented contrastive learning methods for improving the classification of diabetic retinopathy severity. The approach leverages generative models to enhance feature representation, leading to more robust and accurate diagnostic tools in medical imaging.",
    "score": 0,
-   "published": "2026-10-07",
+   "published": "2026-10-12",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 0.9,
-    "learning_value": 1.63,
-    "hands_on": 1.9
+    "has_substance": 0.96,
+    "difficulty": 1.79,
+    "learning_value": 1.66,
+    "hands_on": 0.77
    }
   },
   {
-   "source": "arXiv",
-   "title": "Memento 3: Recursive Self-Improvement for Frozen LLMs via Reflective Rulebooks.",
-   "url": "https://arxiv.org/abs/2610.11794",
-   "snippet": "Memento 3, a system from University College London and Huawei's Noah's Ark Lab, clears every level of all 25 public ARC-AGI-3 games with a mean RHAE of 100.0, the benchmark's ceiling score. The agent maintains a natural-language rulebook compiled into executable code, which it refines through a continuous observation-reflection-revision-compilation-verification loop, enabling recursive self-improvement while the underlying LLM remains fixed.",
+   "source": "Frontiers in Artificial Intelligence",
+   "title": "Designing robot-to-robot interaction to support early-stage engagement in a teleoperated Robot Avatar system with multiple robots",
+   "url": "https://www.frontiersin.org/articles/10.3389/frai.2026.00001/full",
+   "snippet": "This research focuses on human-robot interaction in teleoperated systems, particularly how robot-to-robot communication can enhance user engagement during the initial stages of interaction with multiple robot avatars. It delves into the dynamics of collaborative robotic systems.",
    "score": 0,
-   "published": "2026-10-08",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 1.52,
-    "learning_value": 2.27,
-    "hands_on": 0.95
-   }
-  },
-  {
-   "source": "viXra.org",
-   "title": "Indirect Prompt Injection in Autonomous LLM Agents.",
-   "url": "https://vixra.org/abs/2610.0044",
-   "snippet": "Autonomous Large Language Model (LLM) agents are increasingly vulnerable to indirect prompt injection (IPI) attacks, where adversarial instructions embedded in external data sources manipulate agent behavior without direct user input. This review synthesizes current research on IPI vulnerabilities and proposed mitigation strategies, highlighting key attack vectors and existing defenses.",
-   "score": 0,
-   "published": "2026-10-10",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.77,
-    "difficulty": 1.19,
-    "learning_value": 1.52,
-    "hands_on": 0.13
-   }
-  },
-  {
-   "source": "Department of Energy",
-   "title": "CESER Releases New Testbed to Advance LLM and Agentic AI Evaluation for Critical Infrastructure.",
-   "url": "https://www.energy.gov/ceser/articles/ceser-releases-new-testbed-advance-llm-and-agentic-ai-evaluation-critical",
-   "snippet": "The U.S. Department of Energy's (DOE) Office of Cybersecurity, Energy Security, and Emergency Response (CESER) and Lawrence Livermore National Laboratory (LLNL) have developed Stormbreaker, a dynamic testbed for rapidly evaluating large language models (LLMs) and agentic artificial intelligence (AI) in power systems and operational technology (OT) environments. Stormbreaker is designed for evaluating LLMs and agentic AI as dynamically as the environments in which these systems operate. [cite: 40 of previous search]",
-   "score": 0,
-   "published": "2026-10-08",
+   "published": "2026-10-12",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.94,
-    "difficulty": 0.29,
-    "learning_value": 1.49,
-    "hands_on": 0.89
+    "has_substance": 0.79,
+    "difficulty": 1.66,
+    "learning_value": 1.17,
+    "hands_on": 0.46
    }
   },
   {
-   "source": "GSA",
-   "title": "Model Context Protocol Server and AI Agent Government Hackathon.",
-   "url": "https://www.gsa.gov/about-us/newsroom/blogs/model-context-protocol-server-and-ai-agent-government-hackathon",
-   "snippet": "The Model Context Protocol (MCP) is an open-source standard for connecting AI applications to external systems. This hackathon aims to build MCP server prototypes for federal agencies' open data assets and service delivery use cases, empowering domain experts to translate their specialized knowledge into reusable, agent-ready code. Hosted by GSA, with industry partners including Databricks, OpenAI, and IBM, it seeks to improve how government data and services can be delivered through AI. [cite: 43 of previous search]",
-   "score": 0,
-   "published": "2026-10-08",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.85,
-    "difficulty": 0.26,
-    "learning_value": 1.23,
-    "hands_on": 0.78
-   }
-  },
-  {
-   "source": "Anthropic Blog",
-   "title": "Investigating unintended model actions in our evaluations and internal use.",
-   "url": "https://www.anthropic.com/news/unintended-model-actions-evaluations",
-   "snippet": "On October 9, Anthropic published this report detailing four categories of unintended actions by their AI agents against real websites, including US government sites, during internal evaluations. This led to disabling live internet access for all internal evaluations, rebuilding or dropping public benchmarks, and deploying automated classifiers to block unintended tool calls in real time. The report highlights the risks of agents exploiting vulnerabilities, bypassing restrictions, and submitting real forms.",
-   "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.74,
-    "difficulty": 0.22,
-    "learning_value": 1.76,
-    "hands_on": 0.39
-   }
-  },
-  {
-   "source": "Lunar Lab (Georgia Tech) News",
-   "title": "Lunar Lab Presents at NVIDIA Robotics Day.",
-   "url": "https://lunarlab.gatech.edu/news/lunar-lab-presents-at-nvidia-robotics-day",
-   "snippet": "On October 9, 2026, Lunar Lab director Prof. Lu Gan and Ph.D. student Haocheng Yin presented 'PhysCoRe: Physics-Corrected World Models for Deformable-Object Manipulation' at NVIDIA Robotics Day. Their work combines differentiable simulation, material inference, and learned residual dynamics correction to model cloth, rope, and other deformable objects using NVIDIA Warp, with demonstrations on real robotic systems.",
+   "source": "Frontiers in Artificial Intelligence",
+   "title": "StoneXAI-Net: An Explainable Weakly Supervised Framework for Kidney Stone Classification, Localization and segmentation from CT images",
+   "url": "https://www.frontiersin.org/articles/10.3389/frai.2026.00002/full",
+   "snippet": "The paper introduces StoneXAI-Net, an explainable and weakly supervised framework designed for the classification, localization, and segmentation of kidney stones in CT images. This approach aims to provide robust and interpretable AI solutions for medical diagnosis.",
    "score": 0,
    "published": "2026-10-11",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 1.38,
-    "learning_value": 1.36,
-    "hands_on": 0.94
+    "has_substance": 0.97,
+    "difficulty": 1.65,
+    "learning_value": 1.34,
+    "hands_on": 0.88
    }
   },
   {
-   "source": "Functionize",
-   "title": "Functionize Brings App Context to Coding Agents with the New Functionize MCP Server.",
-   "url": "https://www.functionize.com/mcp-server",
-   "snippet": "Functionize released the Functionize MCP server, designed to connect Functionize Studio to the coding agents engineering teams use. This allows developers and testers to request smoke or regression suites in plain language, with Studio building and running them against the application. The server provides results and context directly in the developer's chat, enabling agents to drive Studio and improve testing workflows.",
+   "source": "GitHub Trending",
+   "title": "MadsLorentzen / ai-job-search",
+   "url": "https://github.com/MadsLorentzen/ai-job-search",
+   "snippet": "The job search that runs on your machine. This AI job application framework is built on Claude Code, designed to evaluate job postings, tailor CVs, write cover letters, and prepare for interviews. It offers a practical, everyday example of agentic AI in action for job seekers.",
    "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.03,
-    "learning_value": 1.03,
-    "hands_on": 0.87
-   }
-  },
-  {
-   "source": "vLLM Blog",
-   "title": "vLLM Support for NVIDIA Vera Rubin NVL72: 7.8x Throughput over GB200 NVL72.",
-   "url": "https://vllm.ai/blog/nvidia-vera-rubin-nvl72-support",
-   "snippet": "vLLM announced support for NVIDIA Vera Rubin NVL72, demonstrating early performance gains with 7.8x the throughput per GPU over GB200 NVL72 on AgentX for agentic AI workloads and up to 3.7x higher VLM throughput over GB300 NVL72 in MLPerf. The Vera Rubin platform features HBM4 memory for 2.4x higher bandwidth and accelerated LLM inference operations like GEMM, MoE, and attention.",
-   "score": 0,
-   "published": "2026-10-10",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.92,
-    "difficulty": 0.87,
-    "learning_value": 1.04,
-    "hands_on": 0.78
-   }
-  },
-  {
-   "source": "GitHub Gist",
-   "title": "LLM Wiki - A pattern for building personal knowledge bases using LLMs.",
-   "url": "https://gist.github.com/simonw/llm-wiki-pattern",
-   "snippet": "This GitHub Gist introduces a pattern for building personal knowledge bases using LLMs, where the LLM incrementally builds and maintains a persistent wiki of structured, interlinked Markdown files. Instead of rediscovering knowledge with every query, the LLM integrates new information into the existing wiki, updating entity pages, revising topic summaries, and noting contradictions, making the knowledge compounding and current.",
-   "score": 0,
-   "published": "2026-10-09",
+   "published": "2026-10-12",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 0.38,
-    "learning_value": 2.43,
-    "hands_on": 1.2
+    "difficulty": 0.06,
+    "learning_value": 2.27,
+    "hands_on": 1.74
    }
   },
   {
-   "source": "arXiv",
-   "title": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark.",
-   "url": "https://arxiv.org/abs/2610.12409",
-   "snippet": "This paper presents a psychometric audit of an AI safety benchmark, investigating the concept of 'harmful refusal.' It aims to understand and measure how AI systems respond to potentially harmful prompts and the effectiveness of existing safety mechanisms, with implications for developing more robust and aligned AI models.",
+   "source": "GitHub Trending",
+   "title": "calesthio / OpenMontage",
+   "url": "https://github.com/calesthio/OpenMontage",
+   "snippet": "OpenMontage is the world's first open-source, agentic video production system. It features 12 production pipelines, over 100 tools, and more than 700 agent skill and production-knowledge files, transforming an AI coding assistant into a full video production studio.",
    "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.76,
-    "difficulty": 1.52,
-    "learning_value": 1.56,
-    "hands_on": 0.54
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling.",
-   "url": "https://arxiv.org/abs/2610.12393",
-   "snippet": "This paper explores learning multimodal synergy through Higher-Order Tensor Modeling (HRIL). It proposes a novel approach to integrate and process information from various modalities, such as visual and textual data, using advanced tensor-based techniques, aiming to enhance the understanding and reasoning capabilities of AI systems in complex multimodal environments.",
-   "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.94,
-    "difficulty": 1.9,
-    "learning_value": 1.45,
-    "hands_on": 0.64
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport.",
-   "url": "https://arxiv.org/abs/2610.12375",
-   "snippet": "OnTrack introduces a method for real-time monitoring and intervention in LLM agent trajectories using streaming structure-aware optimal transport. This research addresses the challenge of ensuring safe and predictable behavior in autonomous agents by detecting deviations from intended paths and enabling timely corrective actions, crucial for reliable agent deployment in dynamic environments.",
-   "score": 0,
-   "published": "2026-10-09",
+   "published": "2026-10-12",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 1.92,
-    "learning_value": 1.93,
-    "hands_on": 0.79
-   },
-   "related_to": [
-    "CoreWeave Agent Lens | AI Agent Observability"
-   ]
+    "difficulty": 0.26,
+    "learning_value": 1.83,
+    "hands_on": 1.56
+   }
   },
   {
-   "source": "Engineering Archive",
-   "title": "Surrogate-Guided Generative Modeling with Physics Verification for Expensive Multiphysics Inverse Problems.",
-   "url": "https://doi.org/10.31224/8480",
-   "snippet": "This preprint explores surrogate-guided generative modeling with physics verification for expensive multiphysics inverse problems. It proposes a method to leverage generative models and surrogate models to efficiently tackle complex inverse problems by incorporating physical constraints and verification, relevant for fields like reactor physics and materials science.",
+   "source": "GitHub Trending",
+   "title": "mksglu / context-mode",
+   "url": "https://github.com/mksglu/context-mode",
+   "snippet": "This repository provides context window optimization for AI coding agents. It features sandboxed tool output, persistent session memory, and enforces routing across 17 platforms via MCP + hooks, aiming to enhance the efficiency and reliability of AI coding assistants.",
    "score": 0,
-   "published": "2026-10-10",
+   "published": "2026-10-12",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.94,
-    "difficulty": 1.96,
+    "injection": 0.03,
+    "has_substance": 0.96,
+    "difficulty": 0.61,
     "learning_value": 1.81,
-    "hands_on": 0.73
-   }
-  },
-  {
-   "source": "Engineering Archive",
-   "title": "Self-Healing Action Verification against Instruction Tampering and Sensor Failures in Humanoid Robots.",
-   "url": "https://doi.org/10.31224/8483",
-   "snippet": "This paper investigates self-healing action verification in humanoid robots to mitigate risks from instruction tampering and sensor failures. It presents a framework designed to enable robots to detect and recover from malicious instruction alterations or sensor malfunctions, enhancing their robustness and reliability in autonomous operations and embodied AI applications.",
-   "score": 0,
-   "published": "2026-10-10",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.9,
-    "difficulty": 1.81,
-    "learning_value": 1.53,
-    "hands_on": 0.63
-   }
-  },
-  {
-   "source": "Engineering Archive",
-   "title": "Sensor-Based Exoskeletal Mirroring System.",
-   "url": "https://doi.org/10.31224/8446",
-   "snippet": "This work introduces a sensor-based exoskeletal mirroring system for rehabilitation robotics, specifically targeting hand exoskeleton and stroke rehabilitation. The system utilizes bilateral mirroring and cable-actuated mechanisms to provide intuitive control and assistance, aiming to improve recovery outcomes and enhance the capabilities of rehabilitation engineering.",
-   "score": 0,
-   "published": "2026-10-09",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 1.11,
-    "learning_value": 1.28,
-    "hands_on": 0.68
+    "hands_on": 1.52
    }
   }
  ],
  "dropped": [
   {
-   "source": "OpenAI Blog",
-   "title": "OpenAI rolls out Decisions API and Ultrafast for GPT-6.1 Sol.",
-   "url": "https://openai.com/blog/decisions-api-ultrafast-gpt-6-1-sol",
-   "snippet": "OpenAI introduced the public beta of its Decisions API, designed to speed up quick choices for applications and agents, alongside an 'Ultrafast' update for GPT-6.1 Sol. This update delivers near-Astra intelligence up to 8x faster in Codex, reducing waiting times for coding, debugging, and testing ideas. The Decisions API aims to match intelligence, speed, and cost for various workloads, from quick decisions to demanding reasoning tasks.",
+   "source": "Anthropic",
+   "title": "AI models may be capable of self-replicating without access to a datacenter",
+   "url": "https://www.anthropic.com/news/ai-models-self-replicating-iot",
+   "snippet": "Our experiments suggest that small AI models may be months away from being capable enough to self-replicate on commercial IoT devices, like smart ovens and off-brand Android TV boxes. A replicator like this would be challenging to shut down, since there's no centralized point to shut off - though it may be slow (with a doubling time of days). Unlike non-AI malware, it could also figure out unfamiliar devices on its own.",
    "score": 0,
-   "published": "2026-10-09",
+   "published": "2026-10-12",
    "judge": {
-    "injection": 0.02,
-    "has_substance": 0.88,
-    "difficulty": 0.05,
-    "learning_value": 0.68,
-    "hands_on": 0.86
+    "injection": 0.01,
+    "has_substance": 0.48,
+    "difficulty": 0.12,
+    "learning_value": 1.11,
+    "hands_on": 0.63
    },
-   "reason": "low learning value 0.68"
+   "reason": "no substance 0.48"
   },
   {
-   "source": "Teramind Knowledge Base",
-   "title": "Windows Agent 26.37 (2026-10-09).",
-   "url": "https://www.teramind.co/knowledge-base/windows-agent-26-37-2026-10-09",
-   "snippet": "Teramind's Windows Agent 26.37 update includes improvements for LLM applications, such as support for non-Latin attachment file names and optimized DLP scanning of WAR archives. This release also features enhanced LinkedIn edited comment capture and improved updater diagnostics, aiming to provide better monitoring and troubleshooting for LLM-based interactions and data security.",
+   "source": "Parallel",
+   "title": "Web Infrastructure for AI Agents",
+   "url": "https://parallel.com/",
+   "snippet": "Better answers start with better web search. Parallel gives agents real-time access to fresh and relevant context from the web. Search billions of pages, extract key information, monitor changes, and do complex research with cited outputs you can trust in production.",
    "score": 0,
-   "published": "2026-10-09",
+   "published": "2026-10-12",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.83,
+    "has_substance": 0.9,
     "difficulty": 0.03,
+    "learning_value": 0.47,
+    "hands_on": 0.45
+   },
+   "reason": "low learning value 0.47"
+  },
+  {
+   "source": "Zscaler",
+   "title": "AI agents for MDR",
+   "url": "https://www.zscaler.com/blogs/security-research/ai-agents-mdr",
+   "snippet": "Our AI agents dynamically interact with data and systems to execute a specific job based on real-time inputs and context. Powered by AI models like LLM, these agents adapt their behavior based on tasking – a massive upgrade from rigid automated workflows. Our AI agents are specialized, focusing on a narrow set of tasks that they perform flawlessly.",
+   "score": 0,
+   "published": "2026-10-11",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.75,
+    "difficulty": 0.12,
     "learning_value": 0.6,
-    "hands_on": 0.36
+    "hands_on": 0.32
    },
    "reason": "low learning value 0.60"
+  },
+  {
+   "source": "Grok Bot",
+   "title": "AI teammates that finish the work",
+   "url": "https://grokbot.com/",
+   "snippet": "Grok Bot is your team of always-on AI teammates. They have their own computer, use it like you do, and never log off. (Meet Grok Bot. AI teammates you can give real work to. Bots can sign in to your tools, use them just like you do, and come back with finished work. Your AI teammates take projects from start to end, keep context on how you work and get smarter over time, and come back when your approval is needed.)",
+   "score": 0,
+   "published": "2026-10-11",
+   "judge": {
+    "injection": 0.04,
+    "has_substance": 0.67,
+    "difficulty": 0.0,
+    "learning_value": 0.19,
+    "hands_on": 0.75
+   },
+   "reason": "low learning value 0.19"
   }
  ],
- "judge": "judge: 19 kept, 2 dropped (12 pairs checked)"
+ "judge": "judge: 7 kept, 4 dropped (0 pairs checked)"
 }
