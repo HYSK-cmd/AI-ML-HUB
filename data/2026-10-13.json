@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-13",
+  "headline": "오늘의 AI/ML 브리핑에서는 AI 에이전트의 실제 활용과 효율적인 개발, 그리고 뇌의 심층 학습 원리까지 다룹니다.",
+  "items": [
+    {
+      "title": "Let your AI agent operate",
+      "url": "https://www.fortrabbit.com/",
+      "source": "fortrabbit Blog",
+      "categories": [
+        "Agents",
+        "Open Source & Tools"
+      ],
+      "level": "beginner",
+      "headline_ko": "AI 에이전트 구동",
+      "summary": "fortrabbit은 MCP 서버, 공용 API, CLI, 그리고 전용 에이전트 스킬을 제공하여 AI 에이전트의 자율적인 작동과 프로젝트 관리를 지원합니다. 이 플랫폼은 에이전트가 프로젝트를 시작하고, 파일을 동기화하며, 데이터베이스를 관리하고, 환경을 효율적으로 설정할 수 있도록 돕습니다. 한 데모에서는 에이전트가 이러한 도구들을 활용하는 모습을 보여줍니다. 이를 통해 에이전트가 복잡한 작업을 스스로 처리하는 능력을 향상시킬 수 있습니다.",
+      "why": "이 기사를 통해 학생들이 AI 에이전트가 실세계에서 어떻게 작동하고 프로젝트를 자동화하는지 이해할 수 있습니다. 에이전트가 플랫폼 도구를 사용하여 자율적으로 작업을 수행하는 방식에 대한 실제적인 관점을 얻을 수 있습니다.",
+      "keywords": [
+        "AI agent",
+        "autonomous operation",
+        "project management",
+        "fortrabbit"
+      ],
+      "narration": "첫 번째 소식은 AI 에이전트의 자율 운영을 돕는 플랫폼에 대한 이야기입니다. fortrabbit은 MCP 서버와 API를 통해 에이전트가 스스로 프로젝트를 관리할 수 있도록 지원합니다. 데모에서는 에이전트가 파일을 동기화하고 환경을 설정하는 과정을 보여줍니다. 이를 통해 AI 에이전트가 실제 작업에서 어떻게 활용될 수 있는지 엿볼 수 있습니다."
+    },
+    {
+      "title": "tinyhumansai/openhuman: The fastest, cheapest, most efficient open-source agent harness.",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "source": "GitHub Trending",
+      "categories": [
+        "Agents",
+        "Open Source & Tools",
+        "ML Systems & Infra"
+      ],
+      "level": "intermediate",
+      "headline_ko": "오픈소스 에이전트 엔진",
+      "summary": "OpenHuman은 빠르고 저렴하며 효율적인 오픈소스 에이전트 하네스로, 단돈 10달러짜리 VPS 서버에서 500개 이상의 에이전트를 실행할 수 있습니다. 핵심은 컴파일된 Rust로 구현되어 모델 호출 간에 낮은 메모리 및 CPU 사용량을 보장합니다. 또한, 이 시스템은 깊이 통합된 메모리 기능과 효율적인 RLM 토큰 압축 기술을 특징으로 합니다. 벤치마크 결과 다른 도구들보다 작업 완료 시간이 2.3배 빠르고 토큰 사용량은 2.6배 적은 것으로 나타났습니다.",
+      "why": "이 프로젝트는 대규모 에이전트 시스템을 구축하고 운영하는 데 필요한 효율성과 비용 절감 방법을 보여줍니다. Rust 기반의 성능 최적화와 독창적인 토큰 압축 기술을 통해 에이전트 개발 및 배포의 실제적인 어려움을 해결하는 방법을 배울 수 있습니다.",
+      "keywords": [
+        "agent harness",
+        "Rust",
+        "efficiency",
+        "token compression",
+        "open-source"
+      ],
+      "narration": "두 번째 소식은 에이전트를 효율적으로 실행하는 오픈소스 하네스, OpenHuman입니다. 이 도구는 단돈 10달러짜리 서버에서 500개 이상의 에이전트를 구동할 수 있다고 합니다. Rust 코어와 독자적인 토큰 압축 기술 덕분에 뛰어난 성능과 낮은 비용을 자랑합니다. 에이전트 시스템을 구축하려는 개발자들에게 유용할 것입니다."
+    },
+    {
+      "title": "Understanding neural circuit principles for representation learning through joint-embedding predictive architectures",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.11.25.690220v3",
+      "source": "bioRxiv",
+      "categories": [
+        "Research Fundamentals"
+      ],
+      "level": "advanced",
+      "headline_ko": "뇌의 내부 모델 학습 이론",
+      "summary": "이 연구는 뇌가 경험을 통해 세계의 내부 모델을 어떻게 습득하는지에 대한 회로 중심의 이론적 프레임워크를 제시합니다. 제안된 모델은 인간 1차 시각 피질에서 관찰되는 것과 유사한 후속 표현(successor-like representations)을 학습하며, 마카크 전전두 피질의 그것과 유사한 추상적인 순서 표현을 개발합니다. 이는 자기 지도 학습(self-supervised learning)에서 영감을 받은 순환 예측 학습(Recurrent Predictive Learning, RPL) 아키텍처를 통해 달성됩니다.",
+      "why": "이 논문은 뇌의 정보 처리 방식을 인공지능 모델에 적용하려는 연구자들에게 깊은 통찰력을 제공합니다. 뇌가 복잡한 경험으로부터 추상적인 표현을 학습하는 원리를 이해하고, 이를 통해 더욱 정교하고 효율적인 인공지능 시스템 설계에 대한 아이디어를 얻을 수 있습니다.",
+      "keywords": [
+        "neural circuits",
+        "representation learning",
+        "joint-embedding",
+        "predictive architectures",
+        "brain model"
+      ],
+      "narration": "마지막으로 소개할 것은 뇌의 학습 원리에 대한 심층 연구 논문입니다. 이 연구는 뇌가 경험을 통해 세계의 내부 모델을 어떻게 구축하는지에 대한 이론적 틀을 제시합니다. 특히, 인간 시각 피질과 마카크 전전두 피질에서 관찰되는 것과 유사한 순서 표현을 모델이 학습함을 보여줍니다. 뇌의 작동 방식에 관심 있는 학생들에게 흥미로운 읽을거리가 될 것입니다."
+    }
+  ]
+}
