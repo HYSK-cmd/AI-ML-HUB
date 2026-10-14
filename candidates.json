@@ -1,155 +1,212 @@
 {
- "date": "2026-10-13",
- "collected_at": "2026-10-13T20:57:13+00:00",
+ "date": "2026-10-14",
+ "collected_at": "2026-10-14T19:56:13+00:00",
  "counts": {
-  "gemini_search": 10
+  "gemini_search": 13
  },
- "dedup": "dedup: 0 already in corpus, 1 cross-source duplicates, 9 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 13 new",
  "items": [
   {
    "source": "GitHub Trending",
-   "title": "tinyhumansai/openhuman: The fastest, cheapest, most efficient open-source agent harness.",
-   "url": "https://github.com/tinyhumansai/openhuman",
-   "snippet": "The fastest, cheapest, most efficient open-source agent harness, OpenHuman, allows running over 500 agents on a $10 VPS. Its core is compiled Rust, ensuring low memory and CPU usage between model calls. The system also features deeply integrated memory and RLM token compression for efficiency.",
+   "title": "morluto/rea",
+   "url": "https://github.com/morluto/rea",
+   "snippet": "Reverse engineer anything with agents, from app behavior down to native binaries. This repository gained +45,327 stars today and is written in TypeScript. It is currently the 1st trending LLM repository. README: **English** · [简体中文](docs/readme/README_zh.md) · [繁體中文](docs/readme/README_zh-TW.md) · [日本語](docs/readme/README_ja.md) · [한국어](docs/readme/README_ko.md) · [Türkçe](docs/readme/README_tr.md) · [Русский](docs/readme/README_ru.md) · [Tiếng Việt](docs/readme/README_vi.md) · [ไทย](docs/readme/README_th.md) · [Deutsch](docs/readme/README_de.md) · [Español](docs/readme/README_es.md) · [Français](docs/readme/README_fr.md) · [Українська](docs/readme/README_uk.md) · [Polski](docs/readme/README_pl.md) · [Português (Brasil)](docs/readme/README_pt-BR.md) · [العربية](docs/readme/README_ar.md) · [فارسی](docs/readme/README_fa.md) · [Bahasa Indonesia](docs/readme/README_id.md) · [Italiano](docs/readme/README_it.md) · [Ελληνικά](docs/readme/README_el.md) # REA: Reverse Engineer Anything ### One MCP for reverse engineering across binaries, applications, and runtime behavior. **See a feature you like. Understand how it works, down to the binary level.** **[Website](https://rea.tools/) · [Guides](https://rea.tools/guides/) · [Showcases](https://rea.tools/showcase/)** [Quick start](#quick-start) · [How REA works](#how-rea-works) · [What you can analyze](#what-you-can-analyze) · [Showcases](#showcases) · [FAQ](#faq) · [Documentation](#documentation) npx rea-agents setup > [!IMPORTANT] > Get",
    "score": 0,
    "published": "2026-10-13",
    "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 0.54,
-    "learning_value": 1.55,
-    "hands_on": 1.47
+    "injection": 0.05,
+    "has_substance": 0.98,
+    "difficulty": 0.49,
+    "learning_value": 2.4,
+    "hands_on": 1.89
    }
   },
   {
-   "source": "EDB Blog",
-   "title": "PostgreSQL RPM repository meets AI with pg_statviz",
-   "url": "https://planet.postgresql.org/",
-   "snippet": "pg_statviz now integrates with LLMs like Claude, Ollama, OpenAI, or Gemini to explain PostgreSQL statistics across various distributions. This tool, updated on October 12, 2026, snapshots internal statistics and generates charts, enhancing database analysis with AI insights. Getting there took three days and a few dozen new Python packages.",
+   "source": "GitHub Trending",
+   "title": "mksglu/context-mode",
+   "url": "https://github.com/mksglu/context-mode",
+   "snippet": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. This TypeScript project gained +246 stars today. README: # Context Mode **The other half of the context problem.** Used across teams at ## The Problem Every MCP tool call dumps raw data into your context window. A Playwright snapshot costs 56 KB. Twenty GitHub issues cost 59 KB. One access log — 45 KB. After 30 minutes, 40% of your context is gone. And when the agent compacts the conversation to free space, it forgets which files it was editing, what tasks are in progress, and what you last asked for. On top of that, the agent wastes output tokens on filler, pleasantries, and verbose explanations — burning context from both sides. ### How Context Mode Solves It Context Mode is an MCP server that solves all four sides of this problem: 1. **Context Saving** — Sandbox tools keep raw data out of the context window. 315 KB becomes 5.4 KB. 98% reduction. 2. **Session Continuity** — Every file edit, git operation, task, error, and user decision is tracked in SQLite. When the conversation compacts, context-mode doesn't dump this data back into context — it indexes events into FTS5 and retrieves only what's relevant via BM25 search. The model picks up exactly where you left off. If you don't `--continue`, previous session data is deleted immediately — a fresh session means a clean slate. 3. **Think in Code** — The L",
    "score": 0,
-   "published": "2026-10-12",
+   "published": "2026-10-13",
+   "judge": {
+    "injection": 0.06,
+    "has_substance": 0.98,
+    "difficulty": 0.39,
+    "learning_value": 2.69,
+    "hands_on": 1.78
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "open-webui/open-webui",
+   "url": "https://github.com/open-webui/open-webui",
+   "snippet": "User-friendly AI Interface supporting Ollama, OpenAI API, and other large language models. This Python project gained +157 stars today. README: # Open WebUI 👋 Open WebUI is **a home for AI**, a self-hosted AI platform that's **[extensible](https://docs.openwebui.com/features/extensibility/plugin/)**, **[feature-rich](https://docs.openwebui.com/features/)**, user-friendly, and built to run **[entirely offline](https://openwebui.com/sovereign-ai)**. With support for **Ollama** and **OpenAI-compatible APIs**, it gives you a powerful, provider-agnostic interface for both local and cloud-based models. Passionate about open-source AI? [Join our team →](https://careers.openwebui.com/) > [!TIP] > **Looking for an [Enterprise Plan](https://docs.openwebui.com/enterprise)?** – **[Speak with Our Sales Team Today!](https://docs.openwebui.com/enterprise)** For more information, be sure to check out our [Open WebUI Documentation](https://docs.openwebui.com/). ## Key Features of Open WebUI ⭐ - 🚀 **Effortless Setup**: Install seamlessly via pip, uv, Docker, or Kubernetes (kubectl, kustomize, or helm), with `:ollama` and `:cuda` tagged images available for container deployments. - 🤝 **Broad Model & API Integration**: Connect any OpenAI-compatible API alongside local Ollama models. Point the API URL at **LMStudio, GroqCloud, Mistral, OpenRouter, vLLM, and more** to mix and match providers freely. - 🔐 **Granular RBAC & User Groups**: Administrators define detailed roles, groups, and permissions,",
+   "score": 0,
+   "published": "2026-10-13",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.98,
+    "difficulty": 0.08,
+    "learning_value": 1.78,
+    "hands_on": 1.81
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "calesthio/OpenMontage",
+   "url": "https://github.com/calesthio/OpenMontage",
+   "snippet": "World's first open-source, agentic video production system. It features 12 production pipelines, 100+ tools, and over 700 agent skill and production-knowledge files, allowing an AI coding assistant to become a full video production studio. README: Monty the Clapper — the official mascot of OpenMontage OpenMontage The first open-source, agentic video production system. Paste A Video · Quick Start · Try These Prompts · Pipelines · How It Works · Sponsors · Providers · Review Guide · Agent Guide Follow The Build ## Sponsors > Want to support OpenMontage? [Sponsor the project](https://github.com/sponsors/calesthio). Click to collapse Bloome lets multiple AI agents (Claude, ChatGPT, DeepSeek, and more) collaborate in one conversation for agentic video pipelines. It has zero setup, runs in the cloud, works on web and mobile, and lets you share a configured agent with your whole team. Try Bloome . Atlas Cloud is a full-modal AI inference platform that gives developers a single AI API for video generation, image generation, and LLM APIs. Instead of managing multiple vendor integrations, you connect once and get unified access to 300+ curated models across all modalities. Check out Atlas Cloud's new coding plan promotion for more budget-friendly API access. --- Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition. **Important distinction:** ",
+   "score": 0,
+   "published": "2026-10-13",
+   "judge": {
+    "injection": 0.14,
+    "has_substance": 0.96,
+    "difficulty": 0.19,
+    "learning_value": 2.0,
+    "hands_on": 1.76
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "K-Dense-AI / scientific-agent-skills",
+   "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "snippet": "Turn any AI agent into an AI Scientist. This #1 Agent Skills library for science is used by over 250,000 scientists worldwide and includes 177 ready-to-use validated skills and 100+ scientific databases covering biology, chemistry, medicine, and drug discovery.",
+   "score": 0,
+   "published": "2026-10-14",
+   "judge": {
+    "injection": 0.05,
+    "has_substance": 0.92,
+    "difficulty": 0.19,
+    "learning_value": 1.43,
+    "hands_on": 1.42
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "ifixai-ai / iFixAi",
+   "url": "https://github.com/ifixai-ai/iFixAi",
+   "snippet": "Independent Auditing of AI Agents. iFixAi helps determine if an agent is performing as intended, through human or self-run audits, providing answers in less than 120 seconds.",
+   "score": 0,
+   "published": "2026-10-14",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 0.02,
-    "learning_value": 1.24,
-    "hands_on": 0.99
+    "has_substance": 0.93,
+    "difficulty": 0.08,
+    "learning_value": 1.2,
+    "hands_on": 1.16
    }
   },
   {
-   "source": "Hugging Face Papers",
-   "title": "From Given to Gathered Evidence: Agentic Learning for Longitudinal Medical Reasoning",
-   "url": "https://huggingface.co/CASE-Bench",
-   "snippet": "Org profile for CASE on Hugging Face, the AI community building the future. (This paper introduces agentic learning for longitudinal medical reasoning, focusing on the ability of AI agents to gather and utilize evidence over time for complex medical tasks. This research contributes to advancing automated reasoning and decision-making in the healthcare domain.)",
+   "source": "GitHub Trending",
+   "title": "debpalash / VoiceStudio",
+   "url": "https://github.com/debpalash/VoiceStudio",
+   "snippet": "VoiceStudio is an open-source, fully-local alternative to ElevenLabs, offering voice cloning, voice design, video dubbing, dictation, transcription, and audiobook creation in 646 languages.",
    "score": 0,
-   "published": "2026-10-12",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.78,
-    "difficulty": 1.43,
-    "learning_value": 0.9,
-    "hands_on": 0.63
-   }
-  },
-  {
-   "source": "bioRxiv",
-   "title": "Understanding neural circuit principles for representation learning through joint-embedding predictive architectures",
-   "url": "https://www.biorxiv.org/content/10.1101/2025.11.25.690220v3",
-   "snippet": "This work establishes a circuit-centric theory framework for understanding how the brain may acquire an internal model of the world through experience. The model learns sequence representations resembling successor-like representations observed in the human primary visual cortex and develops abstract sequence representations comparable to those in the macaque prefrontal cortex.",
-   "score": 0,
-   "published": "2026-10-12",
+   "published": "2026-10-14",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.88,
-    "difficulty": 1.82,
-    "learning_value": 2.06,
-    "hands_on": 0.74
+    "has_substance": 0.97,
+    "difficulty": 0.1,
+    "learning_value": 1.55,
+    "hands_on": 1.5
    }
   },
   {
-   "source": "fortrabbit Blog",
-   "title": "Let your AI agent operate",
-   "url": "https://www.fortrabbit.com/",
-   "snippet": "fortrabbit empowers AI agents with an MCP server, public API, CLI, and dedicated agent skills, facilitating autonomous operation and project management. A demonstration illustrates an agent utilizing these tools to initiate projects, synchronize files, manage databases, and establish environments efficiently.",
+   "source": "GitHub Trending",
+   "title": "vxcontrol/pentagi",
+   "url": "https://github.com/vxcontrol/pentagi",
+   "snippet": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks. This Go project is among the trending repositories today. README: # PentAGI P enetration testing A rtificial G eneral I ntelligence > **Join the Community!** Connect with security researchers, AI enthusiasts, and fellow ethical hackers. Get support, share insights, and stay updated with the latest PentAGI developments. ⠀ ## Table of Contents - [Overview](#overview) - [Features](#features) - [Architecture](#architecture) - [Agent Supervision](#advanced-agent-supervision) - [Quick Start](#quick-start) - [Agent Docker Access](#giving-agents-docker-without-giving-away-the-host) - [Running Several Instances](#running-several-instances-tenant_id) - [How to Use PentAGI After Login](#how-to-use-pentagi-after-login) - [API Access](#api-access) - [LLM Provider Configuration](#custom-llm-provider-configuration) - [Azure OpenAI](#using-azure-openai) - [Ollama](#ollama-provider-configuration) - [OpenAI](#openai-provider-configuration) - [Anthropic](#anthropic-provider-configuration) - [Google AI (Gemini)](#google-ai-gemini-provider-configuration) - [AWS Bedrock](#aws-bedrock-provider-configuration) - [DeepSeek](#deepseek-provider-configuration) - [GLM](#glm-provider-configuration) - [Kimi](#kimi-provider-configuration) - [Qwen](#qwen-provider-configuration) - [MiniMax](#minimax-provider-configuration) - [Mistral](#mistral-provider-configuration) - [xAI (Grok)](#xai-grok-provider-configuration) - [Ad",
    "score": 0,
-   "published": "2026-10-12",
+   "published": "2026-10-14",
    "judge": {
-    "injection": 0.34,
-    "has_substance": 0.94,
-    "difficulty": 0.07,
-    "learning_value": 1.24,
-    "hands_on": 1.01
+    "injection": 0.07,
+    "has_substance": 0.96,
+    "difficulty": 0.61,
+    "learning_value": 1.98,
+    "hands_on": 1.79
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2610.18683",
+   "snippet": "Reinforcement learning (RL) has emerged as the primary paradigm for optimizing Large Language Model (LLM) agents, yet efficient critic-free algorithms (e.g., GRPO) suffer from a fundamental uniform credit assignment dilemma that broadcasts trajectory-level advantages equally to all actions. Our analysis reveals that this uniformity inherently reinforces structurally invalid actions in preferred trajectories and ignores the downstream cascading influence of early pivotal deviations in unpreferred ones. To resolve this without introducing critic overhead, we propose Progress-Aware Advantage Shaping (ProAS), a plug-and-play framework that leverages a dynamically evolving Agentic Reference Graph (ARG) to achieve fine-grained credit assignment via Masking Unreasonable Incentives (MUI) and Asymmetric Penalty Redistribution (APR). Extensive experiments across Qwen2.5-1.5B-Instruct and Qwen2.5-7B-Instruct demonstrate that ProAS universally elevates mainstream group-based baselines to new state-of-the-art performance, achieving peak success rates of 91.9\\% and 94.3\\% on ALFWorld, alongside 66.7\\% and 70.8\\% on WebShop, respectively. Furthermore, it accelerates training convergence by up to $2.44\\times$ while maintaining strong robustness against imperfect or distilled ARGs. Codes: https://github.com/LINs-lab/ProAS. (This paper presents ProAS, a framework designed for multi-turn agentic reinforcement learning. The work, consisting of 23 pages and 2 figures, contributes to the fields of",
+   "score": 0,
+   "published": "2026-10-14",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.9,
+    "learning_value": 2.89,
+    "hands_on": 1.95
    },
    "related_to": [
-    "AI Agent Security"
+    "Critical-State RL: Diagnosing Trainable States for Multi-Turn Tool Use"
    ]
+  },
+  {
+   "source": "arXiv",
+   "title": "A Refresh Interval Does Not Fully Specify a Refresh Schedule: Learning-Rate-Dependent Placement in Kronecker-Preconditioned Language Model Training",
+   "url": "https://arxiv.org/abs/2610.18695",
+   "snippet": "Kronecker-preconditioned optimizers recompute a cached curvature eigendecomposition only periodically, and implementations and adaptive methods control this through the refresh frequency. We show that frequency leaves part of a schedule free: at a fixed number of refreshes, when they occur changes held-out loss at the same compute. Training GPT-style models with the Mousse optimizer across model sizes, we move the middle refreshes of a four-refresh schedule while fixing the first and last. On FineWeb the two placements exchanged rank as the learning rate rose (later placement was better at low rates, earlier placement at high ones), so a single-learning-rate comparison can report either ranking. The reversal held under controls including the published optimizer internals, and placement still mattered at the published refresh density. The learning rate at which the preference flips fell with model size, consistent with a held-out smaller model, and shifted with training length. A spectral-width staleness score predicted the same ranking at every learning rate and missed the reversal. Refresh schedules should be reported in full and compared across the learning rates at which they will be used. (This paper explores the complexities of refresh schedules in Kronecker-preconditioned language model training, showing that a refresh interval alone is insufficient. The research, comprising 18 pages including references and appendices, is categorized under Machine Learning.)",
+   "score": 0,
+   "published": "2026-10-14",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 1.92,
+    "learning_value": 2.23,
+    "hands_on": 0.94
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Learning Source Structure: Bayesian Prediction with Transformers",
+   "url": "https://arxiv.org/abs/2610.18725",
+   "snippet": "A transformer trained on sequences whose source parameters are drawn afresh each time can learn only what the sequences share: the source family and its prior. The Bayesian predictor that knows both, which we call informed Bayes, is the unique minimizer of the training loss and is computable from the family alone; we use it as a quantitative, falsifiable reference. Where earlier work compared transformers with Bayes on sources whose contexts can be learned independently, we build Markov sources with up to 64 symbols in which observations in one context inform prediction in another: product sources with known or hidden encodings, transition rows sharing an unknown base law and depth, and a mixture of three families. Our main result is that informed Bayes predicts, from the family and prior alone, how a trained transformer behaves in four tests that go beyond the learning curve: the loss that remains under a source outside the training family (predicted 2.237 bits, measured 2.309), the doubling of the extra loss when two independent components change rather than one (0.345 predicted, 0.350 measured), the benefit of other contexts when a token appears for the first time, and the depth at which copying an earlier continuation starts to pay. On the learning curves themselves, small transformers match informed Bayes when the shared structure is visible in the tokens, and hidden structure needs more layers and training, with gaps below 0.01 bits per token for the largest models. We ",
+   "score": 0,
+   "published": "2026-10-14",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.98,
+    "difficulty": 1.95,
+    "learning_value": 2.46,
+    "hands_on": 0.91
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "On the Monitorability of Natural Language Autoencoders: Identification vs Discrimination",
+   "url": "https://arxiv.org/abs/2610.18727",
+   "snippet": "Natural Language Autoencoders (NLAs) are proposed as oversight tools for language models: an Activation Verbaliser (AV) writes an English explanation of an activation vector, and an Activation Reconstructor (AR) maps the explanation back to a vector. Their value for oversight depends on a human monitor being able to tell a true account of an activation from a false one, given the Av's explanation. We formalise NLA training and NLA oversight deployment as two different referential games from Emergent Communication: training is a generative referential game, while oversight is a discriminative, multi-modal, partially-observable referential game played over a many-to-many relation between the monitored language model's activations and the accounts that are true of them. The gap between the two games predicts that AV's explanations will identify which activation they describe without discriminating its true account from closely matched false ones, since training never asks explanations to rule anything out. Using the NLA's own AR as a maximally-sympathetic surrogate monitor model, we experimentally confirm this theoretical insight on one released checkpoint: true accounts beat accounts of other activations in all 320 comparisons, but beat fluent rivals differing in a single claim only 60.2% of the time (std.err. 6.7%, chance at 50%, $n = 35$). A meaning-preserving rewrite by an uninvolved model costs only 2.1% of the distance to another activation's account, so the failure is not",
+   "score": 0,
+   "published": "2026-10-14",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.96,
+    "difficulty": 1.81,
+    "learning_value": 2.46,
+    "hands_on": 0.98
+   }
   }
  ],
  "dropped": [
   {
-   "source": "Hugging Face",
-   "title": "danielhanchen updated unsloth/MiniMax-M3-GGUF",
-   "url": "https://huggingface.co/unsloth/MiniMax-M3-GGUF",
-   "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science. (The unsloth/MiniMax-M3-GGUF model, updated by danielhanchen, provides enhanced capabilities for text generation. This update aims to improve performance and efficiency for users deploying local Large Language Models. It is available on Hugging Face, catering to various AI and ML applications.)",
-   "score": 0,
-   "published": "2026-10-11",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.92,
-    "difficulty": 0.24,
-    "learning_value": 0.77,
-    "hands_on": 1.51
-   },
-   "reason": "low learning value 0.77"
-  },
-  {
-   "source": "Anthropic Blog",
-   "title": "AI models may be capable of self-replicating without access to a datacenter",
-   "url": "https://www.anthropic.com/research/self-replicating-ai",
-   "snippet": "Our experiments suggest that small AI models may be months away from being capable enough to self-replicate on commercial internet-of-things (IoT) devices, like smart ovens and off-brand Android TV boxes. A replicator like this would be challenging to shut down, since there's no centralized point to shut off—though it may be slow (with a doubling time of days).",
+   "source": "Microsoft Blog",
+   "title": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
+   "url": "https://news.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+   "snippet": "Microsoft is entering a new phase of infrastructure by scaling its Azure Maia family to multi-gigawatt deployments starting in 2027. Maia will become the primary inference system for Microsoft products and services, with Maia 200 already serving production workloads like Microsoft Copilot and supporting MAI team development. Maia 300 is designed for new AI workloads, offering 40% more tokens per megawatt compared to leading GPU-based systems.",
    "score": 0,
    "published": "2026-10-12",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.47,
-    "difficulty": 0.15,
-    "learning_value": 1.0,
-    "hands_on": 0.54
+    "has_substance": 0.77,
+    "difficulty": 0.14,
+    "learning_value": 0.84,
+    "hands_on": 0.19
    },
-   "reason": "no substance 0.47"
-  },
-  {
-   "source": "GitHub",
-   "title": "docker/sbx-releases: 2026-10-13 — Nightly build",
-   "url": "https://github.com/docker/sbx-releases/releases/tag/b3b25f405b5751183a399b41e977aeaba6572f2f",
-   "snippet": "This nightly build of Docker Sandboxes, released on October 13, 2026, supports AI coding agents operating in isolated environments. These sandboxes can run on local machines or Docker-managed cloud infrastructure. This release enhances the capability for secure and efficient execution of AI agent tasks.",
-   "score": 0,
-   "published": "2026-10-13",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.93,
-    "difficulty": 0.01,
-    "learning_value": 0.75,
-    "hands_on": 1.04
-   },
-   "reason": "low learning value 0.75"
-  },
-  {
-   "source": "GitHub",
-   "title": "docker/sbx-releases: 2026-10-12 — Nightly build",
-   "url": "https://github.com/docker/sbx-releases/releases/tag/f6cd720",
-   "snippet": "A nightly build of Docker Sandboxes from October 12, 2026, further contributes to the isolated execution environments for AI coding agents. These releases are crucial for continuous development and improvement of the underlying infrastructure supporting AI agent operations.",
-   "score": 0,
-   "published": "2026-10-12",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.81,
-    "difficulty": 0.02,
-    "learning_value": 0.52,
-    "hands_on": 0.9
-   },
-   "reason": "low learning value 0.52"
+   "reason": "low learning value 0.84"
   }
  ],
- "judge": "judge: 5 kept, 4 dropped (8 pairs checked)"
+ "judge": "judge: 12 kept, 1 dropped (5 pairs checked)"
 }
