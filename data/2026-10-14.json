@@ -1,67 +1,68 @@
 {
-  "date": "2026-10-14",
-  "headline": "오늘의 AI/ML 소식은 로컬 LLM 환경부터 에이전트의 컨텍스트 관리, 그리고 강화 학습 최적화까지 다룹니다.",
-  "items": [
-    {
-      "title": "open-webui/open-webui",
-      "url": "https://github.com/open-webui/open-webui",
-      "source": "GitHub Trending",
-      "categories": [
-        "Open Source & Tools",
-        "LLM",
-        "ML Systems & Infra"
-      ],
-      "level": "beginner",
-      "headline_ko": "로컬 LLM 인터페이스",
-      "summary": "Open WebUI는 Ollama 및 OpenAI 호환 API를 지원하는 사용자 친화적인 자체 호스팅 AI 플랫폼입니다. 이 도구는 로컬 및 클라우드 기반 모델 모두에 강력하고 공급업체에 구애받지 않는 인터페이스를 제공합니다. 손쉬운 설치, 광범위한 모델 통합, 세분화된 RBAC, 플러그인 지원 등의 주요 기능을 갖추고 있습니다. 또한 에이전트 실행을 위한 Open Terminal과 로컬 RAG 및 웹 검색 기능도 포함합니다.",
-      "why": "LLM과 AI 에이전트를 개인 서버에 구축하고 싶은 학생들에게 유용합니다. 다양한 LLM을 활용하고 자체 RAG 시스템을 구축하는 실제 경험을 배울 수 있습니다.",
-      "keywords": [
-        "Open WebUI",
-        "Ollama",
-        "self-hosted LLM"
-      ],
-      "narration": "Open WebUI는 Ollama와 OpenAI API를 지원하는 자체 호스팅 AI 플랫폼입니다. 이 도구는 로컬 및 클라우드 모델 모두를 위한 사용자 친화적인 인터페이스를 제공합니다. 손쉬운 설치와 다양한 플러그인 지원이 강점입니다. 여러분의 LLM 에이전트 구축에 유용할 것입니다."
-    },
-    {
-      "title": "mksglu/context-mode",
-      "url": "https://github.com/mksglu/context-mode",
-      "source": "GitHub Trending",
-      "categories": [
-        "Agents",
-        "ML Systems & Infra",
-        "Open Source & Tools"
-      ],
-      "level": "intermediate",
-      "headline_ko": "에이전트 컨텍스트 최적화",
-      "summary": "Context Mode는 AI 코딩 에이전트의 컨텍스트 창 문제를 해결하는 MCP 서버입니다. 이 프레임워크는 도구 출력을 샌드박스 처리하여 컨텍스트 사용량을 98%까지 줄이고, SQLite에 세션 메모리를 유지하여 연속성을 보장합니다. 또한 LLM이 직접 데이터를 처리하기보다 분석 스크립트를 작성하게 하여 컨텍스트 효율을 높입니다. 17개 플랫폼에서 라우팅을 강제 적용합니다.",
-      "why": "AI 에이전트 개발 시 중요한 컨텍스트 관리 문제를 깊이 이해하고 실용적인 해결책을 배울 수 있습니다. LLM 에이전트의 효율성을 극대화하는 방법을 탐구하는 데 도움이 될 것입니다.",
-      "keywords": [
-        "context window",
-        "AI agent",
-        "MCP server"
-      ],
-      "narration": "다음은 AI 코딩 에이전트의 컨텍스트 창을 최적화하는 'Context Mode'입니다. 이 도구는 도구 출력을 샌드박스 처리하여 컨텍스트 사용량을 크게 줄여줍니다. 또한 세션 메모리를 유지하여 에이전트가 중단된 지점에서 작업을 이어갈 수 있도록 돕습니다. 컨텍스트 관리 효율을 높여 LLM 에이전트의 성능을 향상시킬 수 있습니다."
-    },
-    {
-      "title": "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2610.18683",
-      "source": "arXiv",
-      "categories": [
-        "RL",
-        "Agents",
-        "LLM",
-        "Research Fundamentals"
-      ],
-      "level": "advanced",
-      "headline_ko": "에이전트 RL 성능 향상",
-      "summary": "ProAS는 LLM 에이전트 최적화를 위한 다중 턴 에이전트 강화 학습 프레임워크입니다. 이 프레임워크는 비판기 없는(critic-free) RL 알고리즘의 고질적인 균일한 보상 할당 문제를 해결합니다. 동적으로 진화하는 Agentic Reference Graph (ARG)를 활용하여 Masking Unreasonable Incentives (MUI)와 Asymmetric Penalty Redistribution (APR)를 통해 세밀한 보상 할당을 가능하게 합니다. ALFWorld 및 WebShop에서 SOTA 성능을 달성하며 훈련 수렴을 최대 2.44배 가속화합니다.",
-      "why": "LLM 에이전트의 강화 학습에서 발생하는 근본적인 문제와 이를 해결하기 위한 고급 기법을 심도 있게 탐구할 수 있습니다. 특히 크리틱 없는 RL 시스템의 한계를 극복하는 혁신적인 접근법을 이해하는 데 도움이 될 것입니다.",
-      "keywords": [
-        "LLM agents",
-        "reinforcement learning",
-        "credit assignment"
-      ],
-      "narration": "마지막으로, LLM 에이전트를 위한 다중 턴 에이전트 강화 학습 프레임워크 'ProAS'입니다. 이는 비판기 없는 RL 알고리즘의 균일한 보상 할당 문제를 해결합니다. 동적으로 진화하는 Agentic Reference Graph를 활용하여 세밀한 보상 할당을 가능하게 합니다. 이 프레임워크는 훈련 수렴 속도를 높이고 최신 성능을 달성합니다."
-    }
-  ]
+ "date": "2026-10-14",
+ "headline": "오늘의 AI/ML 소식은 로컬 LLM 환경부터 에이전트의 컨텍스트 관리, 그리고 강화 학습 최적화까지 다룹니다.",
+ "items": [
+  {
+   "title": "open-webui/open-webui",
+   "url": "https://github.com/open-webui/open-webui",
+   "source": "GitHub Trending",
+   "categories": [
+    "Open Source & Tools",
+    "LLM",
+    "ML Systems & Infra"
+   ],
+   "level": "beginner",
+   "headline_ko": "로컬 LLM 인터페이스",
+   "summary": "Open WebUI는 Ollama 및 OpenAI 호환 API를 지원하는 사용자 친화적인 자체 호스팅 AI 플랫폼입니다. 이 도구는 로컬 및 클라우드 기반 모델 모두에 강력하고 공급업체에 구애받지 않는 인터페이스를 제공합니다. 손쉬운 설치, 광범위한 모델 통합, 세분화된 RBAC, 플러그인 지원 등의 주요 기능을 갖추고 있습니다. 또한 에이전트 실행을 위한 Open Terminal과 로컬 RAG 및 웹 검색 기능도 포함합니다.",
+   "why": "LLM과 AI 에이전트를 개인 서버에 구축하고 싶은 학생들에게 유용합니다. 다양한 LLM을 활용하고 자체 RAG 시스템을 구축하는 실제 경험을 배울 수 있습니다.",
+   "keywords": [
+    "Open WebUI",
+    "Ollama",
+    "self-hosted LLM"
+   ],
+   "narration": "Open WebUI는 Ollama와 OpenAI API를 지원하는 자체 호스팅 AI 플랫폼입니다. 이 도구는 로컬 및 클라우드 모델 모두를 위한 사용자 친화적인 인터페이스를 제공합니다. 손쉬운 설치와 다양한 플러그인 지원이 강점입니다. 여러분의 LLM 에이전트 구축에 유용할 것입니다."
+  },
+  {
+   "title": "mksglu/context-mode",
+   "url": "https://github.com/mksglu/context-mode",
+   "source": "GitHub Trending",
+   "categories": [
+    "Agents",
+    "ML Systems & Infra",
+    "Open Source & Tools"
+   ],
+   "level": "intermediate",
+   "headline_ko": "에이전트 컨텍스트 최적화",
+   "summary": "Context Mode는 AI 코딩 에이전트의 컨텍스트 창 문제를 해결하는 MCP 서버입니다. 이 프레임워크는 도구 출력을 샌드박스 처리하여 컨텍스트 사용량을 98%까지 줄이고, SQLite에 세션 메모리를 유지하여 연속성을 보장합니다. 또한 LLM이 직접 데이터를 처리하기보다 분석 스크립트를 작성하게 하여 컨텍스트 효율을 높입니다. 17개 플랫폼에서 라우팅을 강제 적용합니다.",
+   "why": "AI 에이전트 개발 시 중요한 컨텍스트 관리 문제를 깊이 이해하고 실용적인 해결책을 배울 수 있습니다. LLM 에이전트의 효율성을 극대화하는 방법을 탐구하는 데 도움이 될 것입니다.",
+   "keywords": [
+    "context window",
+    "AI agent",
+    "MCP server"
+   ],
+   "narration": "다음은 AI 코딩 에이전트의 컨텍스트 창을 최적화하는 'Context Mode'입니다. 이 도구는 도구 출력을 샌드박스 처리하여 컨텍스트 사용량을 크게 줄여줍니다. 또한 세션 메모리를 유지하여 에이전트가 중단된 지점에서 작업을 이어갈 수 있도록 돕습니다. 컨텍스트 관리 효율을 높여 LLM 에이전트의 성능을 향상시킬 수 있습니다."
+  },
+  {
+   "title": "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2610.18683",
+   "source": "arXiv",
+   "categories": [
+    "RL",
+    "Agents",
+    "LLM",
+    "Research Fundamentals"
+   ],
+   "level": "advanced",
+   "headline_ko": "에이전트 RL 성능 향상",
+   "summary": "ProAS는 LLM 에이전트 최적화를 위한 다중 턴 에이전트 강화 학습 프레임워크입니다. 이 프레임워크는 비판기 없는(critic-free) RL 알고리즘의 고질적인 균일한 보상 할당 문제를 해결합니다. 동적으로 진화하는 Agentic Reference Graph (ARG)를 활용하여 Masking Unreasonable Incentives (MUI)와 Asymmetric Penalty Redistribution (APR)를 통해 세밀한 보상 할당을 가능하게 합니다. ALFWorld 및 WebShop에서 SOTA 성능을 달성하며 훈련 수렴을 최대 2.44배 가속화합니다.",
+   "why": "LLM 에이전트의 강화 학습에서 발생하는 근본적인 문제와 이를 해결하기 위한 고급 기법을 심도 있게 탐구할 수 있습니다. 특히 크리틱 없는 RL 시스템의 한계를 극복하는 혁신적인 접근법을 이해하는 데 도움이 될 것입니다.",
+   "keywords": [
+    "LLM agents",
+    "reinforcement learning",
+    "credit assignment"
+   ],
+   "narration": "마지막으로, LLM 에이전트를 위한 다중 턴 에이전트 강화 학습 프레임워크 'ProAS'입니다. 이는 비판기 없는 RL 알고리즘의 균일한 보상 할당 문제를 해결합니다. 동적으로 진화하는 Agentic Reference Graph를 활용하여 세밀한 보상 할당을 가능하게 합니다. 이 프레임워크는 훈련 수렴 속도를 높이고 최신 성능을 달성합니다."
+  }
+ ],
+ "video": "videos/2026-10-14.mp4"
 }
