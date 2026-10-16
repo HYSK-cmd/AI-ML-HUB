@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-16",
+  "headline": "개인 AI 에이전트부터 로봇 개인화, LLM 기억 통합까지",
+  "items": [
+    {
+      "title": "CowAgent",
+      "url": "https://github.com/zhayujie/CowAgent",
+      "source": "GitHub Trending",
+      "categories": [
+        "Agents",
+        "Open Source & Tools",
+        "ML Systems & Infra"
+      ],
+      "level": "beginner",
+      "headline_ko": "개인용 AI 에이전트 CowAgent",
+      "summary": "CowAgent는 오픈 소스 개인용 AI 어시스턴트이자 에이전트 하네스입니다. 작업을 계획하고, 도구와 스킬을 실행하며, 메모리와 지식으로 스스로 진화합니다. 다양한 LLM 제공자를 연결할 수 있으며, 다중 에이전트 팀 구성과 멀티채널 통합을 지원합니다. 한 줄 설치로 가볍고 확장 가능하며, 데스크톱 클라이언트도 제공합니다.",
+      "why": "이 프로젝트는 실제 동작하는 강력한 개인용 에이전트 시스템을 직접 경험하고 구축해볼 수 있는 기회를 제공합니다. 에이전트 아키텍처와 실제 적용 사례를 이해하는 데 도움이 될 것입니다.",
+      "keywords": [
+        "AI 에이전트",
+        "개인 비서",
+        "오픈소스"
+      ],
+      "narration": "첫 번째 소식은 강력한 오픈 소스 개인용 AI 에이전트, CowAgent입니다. 이 에이전트는 작업을 계획하고 도구를 실행하며, 메모리와 지식을 통해 스스로 진화합니다. 다양한 LLM과 연동되며, 다중 에이전트 팀 구성 및 여러 채널 통합을 지원합니다. 한 줄 설치로 가볍고 확장 가능하여, 누구나 쉽게 자신만의 AI 비서를 만들 수 있습니다."
+    },
+    {
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2610.22372",
+      "source": "arXiv",
+      "categories": [
+        "Robotics & Embodied",
+        "ML Systems & Infra",
+        "Research Fundamentals"
+      ],
+      "level": "intermediate",
+      "headline_ko": "로봇 개인화 벤치마크",
+      "summary": "일반적인 로봇이 가정 환경에서 실용성을 갖추려면 개인화가 필수적입니다. LIBERO-PeRM은 embodied agent의 선호도 학습을 위한 벤치마크를 제시합니다. 이 벤치마크는 확장 가능한 절차적 생성 파이프라인을 특징으로 하며, 공유된 레이아웃 내에서 작업과 선호도 조건부 변형을 자동으로 생성합니다. 실험 결과, 현재의 VLA 정책은 zero-shot 개인화에 어려움을 겪지만, SFT를 통해 선호도를 학습할 수 있음이 나타났습니다.",
+      "why": "로봇이 실제 환경에서 사용자 선호도를 학습하고 따르는 방법을 탐구하는 중요한 연구입니다. 개인화된 로봇 조작에 대한 최신 벤치마크와 도전 과제를 이해하는 데 도움이 될 것입니다.",
+      "keywords": [
+        "로봇 조작",
+        "개인화",
+        "선호도 학습",
+        "벤치마크"
+      ],
+      "narration": "두 번째 소식은 로봇이 사용자 선호도를 학습하는 방법에 대한 새로운 벤치마크입니다. LIBERO-PeRM은 일반 로봇이 가정 환경에서 실용성을 갖추기 위한 개인화 학습을 목표로 합니다. 이 벤치마크는 절차적 생성 파이프라인을 통해 다양한 작업과 선호도 조건부 변형을 자동으로 생성합니다. 현재 VLA 정책은 zero-shot 개인화에 어려움을 겪지만, SFT를 통해 선호도 학습이 가능함을 보여주었습니다."
+    },
+    {
+      "title": "Cortex: Consolidating Context into Parametric Memory",
+      "url": "https://arxiv.org/abs/2610.20399",
+      "source": "arXiv",
+      "categories": [
+        "LLM",
+        "Research Fundamentals"
+      ],
+      "level": "advanced",
+      "headline_ko": "LLM 문맥 기억 통합 기술",
+      "summary": "대규모 언어 모델(LLM)은 문맥을 통해 성능이 향상되지만, 문맥이 제거되면 이러한 개선이 사라질 수 있습니다. 이 연구는 '기억 통합(Memory Consolidation, MC)'을 문맥에서 얻은 이점을 모델 내부에 내재화하는 동시에 다른 기존 능력은 보존하는 과정으로 정의합니다. Cortex는 문맥 사용을 예측하기 위한 잠재적 쿼리를 생성하고, 문맥 조건부 출력을 병합 가능한 저랭크 또는 구조적 피드포워드 네트워크 업데이트로 증류합니다. 14B 모델에 50번의 순차적 사실 편집을 적용한 결과, Cortex-Structural은 문맥으로 인한 성능 향상의 88.9%를 회복하면서 원래 비대상 성능의 99.8%를 유지했습니다.",
+      "why": "LLM이 학습된 지식을 효율적으로 통합하고 유지하는 방법을 탐구하는 중요한 연구입니다. 문맥 의존성을 줄이고 모델의 장기 기억 능력을 향상시키는 새로운 접근 방식을 이해할 수 있습니다.",
+      "keywords": [
+        "LLM",
+        "기억 통합",
+        "문맥 학습",
+        "파라미터 메모리"
+      ],
+      "narration": "마지막 소식은 LLM의 문맥 기억 통합 기술인 Cortex입니다. LLM은 문맥으로 성능이 향상되지만, 문맥이 사라지면 이 장점이 사라질 수 있습니다. Cortex는 문맥에서 얻은 이점을 모델의 파라미터 메모리에 내재화하여, 문맥이 없어도 지식을 유지하도록 합니다. 이 기술은 14B 모델에서 문맥으로 인한 성능 향상의 88.9%를 회복하면서, 기존 능력의 99.8%를 보존하는 놀라운 결과를 보여주었습니다."
+    }
+  ]
+}
