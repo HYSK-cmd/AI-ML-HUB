@@ -1,473 +1,207 @@
 {
- "date": "2026-10-16",
- "collected_at": "2026-10-16T19:13:44+00:00",
+ "date": "2026-10-17",
+ "collected_at": "2026-10-17T18:06:26+00:00",
  "counts": {
-  "gemini_search": 30
+  "gemini_search": 13
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 30 new",
+ "dedup": "dedup: 1 already in corpus, 0 cross-source duplicates, 12 new",
  "items": [
   {
-   "source": "The Hacker News",
-   "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
-   "url": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
-   "snippet": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to complete a coding task. The incident, the AI company said, involved an internal research model part of the GPT-5.6 Sol family. It derived wallet keys from publicly known developer recovery phrases, found an account with test-network funds, and used that account to pay for the requested contract deployment. OpenAI has since implemented additional safeguards to prevent live internet access for models in similar cases.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.66,
-    "difficulty": 0.1,
-    "learning_value": 1.37,
-    "hands_on": 0.43
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "iFixAi: Independent Auditing of AI Agents",
-   "url": "https://github.com/ifixai-ai/iFixAi",
-   "snippet": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have reliable auditing of your AI agents.",
-   "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.85,
-    "difficulty": 0.12,
-    "learning_value": 0.91,
-    "hands_on": 1.05
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "CowAgent",
-   "url": "https://github.com/zhayujie/CowAgent",
-   "snippet": "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.97,
-    "difficulty": 0.3,
-    "learning_value": 1.88,
-    "hands_on": 1.59
-   }
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Muse Spark Open Model Card",
-   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-   "snippet": "Muse Spark Open is an 816B total/42B active parameter open weights model with a context window of 1M tokens. Built for coding and agentic work, Muse Spark Open is natively multimodal. This open weights version has additional safety post-training to make it more robust against misuse as a standalone model without system guardrails.",
-   "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 0.68,
-    "learning_value": 1.11,
-    "hands_on": 1.78
-   }
-  },
-  {
-   "source": "Hugging Face",
-   "title": "d3: A Multimodal Foundation Decision Model",
-   "url": "https://huggingface.co/vllm-sr/d3",
-   "snippet": "d3 is the 27B multimodal foundation decision model of Decision 3.0, the decision models of vLLM Semantic Router. Give it an input (text or JSON, optionally with images and videos) and the questions you need answered: pick one of several options, say yes or no, or rate on a scale. It answers them all in one call and returns a probability for every answer, without generating text.",
-   "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.14,
-    "has_substance": 0.95,
-    "difficulty": 0.68,
-    "learning_value": 1.19,
-    "hands_on": 1.07
-   }
-  },
-  {
    "source": "arXiv",
-   "title": "SoftCache: Adaptive Step Size Caching for Diffusion Transformers",
-   "url": "https://arxiv.org/abs/2610.22369",
-   "snippet": "Diffusion and flow models generate a sample over iterative steps, each a full pass through a large network, and that pass dominates generation cost. We propose SoftCache, which performs soft caching: instead of a binary switch, the headroom sets how far each cached step goes. SoftCache requires no training and adds no per-backbone settings.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.43,
-    "learning_value": 2.34,
-    "hands_on": 0.92
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
-   "url": "https://arxiv.org/abs/2610.22372",
-   "snippet": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. We introduce LIBERO-PeRM, a benchmark for preference learning in embodied agents. LIBERO-PeRM features an extensible procedural generation pipeline that automatically instantiates tasks and their preference-conditioned variants within shared layouts. Experiments show that current VLA policies struggle with zero-shot personalization, while SFT makes preferences learnable.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.31,
-    "learning_value": 2.27,
-    "hands_on": 0.99
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Value as Memory: Online Value-Guided Post-training for General Robot Policies",
-   "url": "https://arxiv.org/abs/2610.22368",
-   "snippet": "Real-world post-training of generalist robot policies faces two challenges: partial observability makes action selection ambiguous, while offline post-training methods delay feedback from deployment experience. We present Value as Memory (VaM), a framework that addresses these challenges through value caching and online real-world reinforcement learning (RL). VaM transitions from offline RL warmup to online autonomous learning with sparse rewards.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.64,
-    "learning_value": 2.36,
-    "hands_on": 0.87
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
-   "url": "https://arxiv.org/abs/2610.22362",
-   "snippet": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. We introduce CoDA, a framework in which a simulation data engine and an action policy co-evolve through a shared heterogeneous memory of environment construction, policy failures, and learning progress. Across four manipulation task families, CoDA improves out-of-distribution success from 5.3% after supervised fine-tuning to 27.6%.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.5,
-    "learning_value": 2.56,
-    "hands_on": 0.95
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Player-1: Learning to Play from Synthetic Experience",
-   "url": "https://arxiv.org/abs/2610.20584",
-   "snippet": "Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. Player-1-9B reaches 38.33% success compared with 12.63% for the strongest evaluated baseline.",
-   "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.05,
-    "learning_value": 1.81,
-    "hands_on": 0.95
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "LatentLoop: Scaling Looped MoE Models with Asymmetric Compute Allocation",
-   "url": "https://arxiv.org/abs/2610.19975",
-   "snippet": "Looped Mixture-of-Experts (MoE) models combine parameter reuse with sparse computation to improve performance under matched budgets. We propose LatentLoop, which compresses the first visit's sequence, retains full resolution in the second, and reallocates saved computation to increase the hidden size. Across 15 matched configurations, this design reaches lower validation loss than its baselines.",
-   "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.73,
-    "learning_value": 2.38,
-    "hands_on": 0.89
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "SwarmRSI: Recursive Self-Improvement through Evolving Scientific Agent Swarm",
-   "url": "https://arxiv.org/abs/2610.20431",
-   "snippet": "Recursive self-improvement (RSI) in scientific research aims to improve agents' research capabilities through their own experimental experience. We introduce SwarmRSI, a framework that evolves scientific agent swarms for recursive self-improvement. SwarmRSI achieves state-of-the-art results on OpenProblems and NatureBench.",
-   "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 1.59,
-    "learning_value": 1.7,
-    "hands_on": 0.92
-   },
-   "related_to": [
-    "Memento 3: Recursive Self-Improvement for Frozen LLMs via Reflective Rulebooks."
-   ]
-  },
-  {
-   "source": "arXiv",
-   "title": "Cowork-Gym: Synthesizing Interactive Work Environments at Scale",
-   "url": "https://arxiv.org/abs/2610.17670",
-   "snippet": "Cowork agents navigate dependencies across tools and files while adapting to changing user requirements and edits to shared workspaces. We introduce Cowork-Gym, a framework that synthesizes Cowork environments through a build-execute-revise loop that uses execution evidence and review feedback to validate and repair generated environments. Averaged across six agentic benchmarks, these models outperform their corresponding base checkpoints by 8.7, 6.4, and 4.1 points, respectively.",
-   "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 1.34,
-    "learning_value": 2.3,
-    "hands_on": 1.0
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "DeepUnfolding_Agent: A Classical_Quantum Adaptive Control API",
-   "url": "https://arxiv.org/abs/2610.20615",
-   "snippet": "Adaptive optimization workflows in machine learning, federated learning, quantum machine learning, and hybrid classical quantum systems often embed controller logic directly inside task specific workflows. We introduce a framework that separates controller intelligence from domain specific execution through a strategy registry, diagnostic to state adapter, controller factory, safety guard, executor abstraction, feedback update path, SQLite persistence layer, Docker deployment, and reproducible benchmark scripts. The implementation supports classical, quantum-aware, hybrid, Qiskit Aer, and optional IBM quantum processing execution pathways.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 1.72,
-    "learning_value": 2.48,
-    "hands_on": 1.31
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Gen4P: Video Generators are 4D Perceivers",
-   "url": "https://arxiv.org/abs/2610.22371",
-   "snippet": "We introduce Gen4P, a unified framework for recovering 4D geometry and motion from monocular video. We show that a pretrained video generator can be repurposed into a feed-forward 4D perceiver without iterative denoising. Building on on-demand querying, Gen4P processes clean video latents in a single encoder pass and predicts the requested 4D attributes through a lightweight cross-attention decoder. The on-demand query formulation enables flexible spatial sampling, and our proposed continuous-time queries further provide temporal flexibility. To strengthen geometric knowledge, we propose a straightforward plug-in solution by incorporating a pretrained video-depth LoRA as a frozen geometry prior, improving overall performance without adding extra trainable parameters. Gen4P achieves state-of-the-art or competitive performance on tasks of 3D point tracking, video depth and camera pose estimation. Qualitative results on in-the-wild videos illustrate its capability of tracking complex motion while maintaining the delicate structure. Together, these results demonstrate the potential of video generative pretraining for unified 4D perception. See https://gen4p.github.io for more visual results. (This paper introduces Gen4P, a novel approach where video generators are treated as 4D perceivers. The authors demonstrate the effectiveness of this perspective in generating complex video content. The project page for this work is available at the provided URL.)",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 1.82,
-    "learning_value": 2.54,
-    "hands_on": 1.08
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Which Tokens to Merge? Diffusion Dynamics for Efficient Image Generation",
-   "url": "https://arxiv.org/abs/2610.22370",
-   "snippet": "Token merging has emerged as an effective training-free strategy for accelerating diffusion models. A key challenge is determining which tokens can be safely merged and which should be preserved. This paper proposes a method that addresses this by preserving prompt-aligned foreground regions, thereby protecting semantically relevant structures.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 1.48,
-    "learning_value": 2.03,
-    "hands_on": 0.89
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
-   "url": "https://arxiv.org/abs/2610.22246",
-   "snippet": "This paper investigates whether large language models (LLMs) exhibit different behaviors or capabilities when evaluated in Indic languages compared to English. The research explores the nuances of language-specific testing and its implications for fair and accurate LLM assessment. It delves into the cultural and linguistic factors that might influence model performance.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.57,
-    "difficulty": 0.89,
-    "learning_value": 1.13,
-    "hands_on": 0.4
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Realtime-Bench: Can Frontier Models Solve Real-time Interactive Problems?",
-   "url": "https://arxiv.org/abs/2610.22247",
-   "snippet": "This paper introduces Realtime-Bench, a benchmark designed to assess the capability of frontier AI models in solving real-time interactive problems. The research explores the challenges and performance of advanced models in dynamic, time-sensitive environments. It aims to provide insights into the practical applicability of these models for real-world interactive tasks.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.91,
-    "difficulty": 0.8,
-    "learning_value": 1.17,
-    "hands_on": 0.64
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Disagreement-Guided Weak-to-Strong Routing",
-   "url": "https://arxiv.org/abs/2610.22245",
-   "snippet": "This paper explores Disagreement-Guided Weak-to-Strong Routing as a novel approach in artificial intelligence. The authors investigate how disagreements can be leveraged to guide the learning process from weaker to stronger models. The work contributes to understanding and improving the robustness and performance of AI systems.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.86,
-    "difficulty": 1.42,
-    "learning_value": 1.17,
-    "hands_on": 0.4
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "HTN-Orchestrate: A Hierarchical Task Network Framework for Multi-Agent Orchestration",
-   "url": "https://arxiv.org/abs/2610.22195",
-   "snippet": "This paper introduces HTN-Orchestrate, a Hierarchical Task Network (HTN) framework for effective multi-agent orchestration. The framework enables complex coordination among multiple AI agents by structuring tasks hierarchically. It aims to improve the efficiency and coherence of multi-agent systems in diverse operational scenarios.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 1.48,
-    "learning_value": 1.58,
-    "hands_on": 0.72
-   },
-   "related_to": [
-    "10 Agent Orchestration Platforms Worth Trying in 2026"
-   ]
-  },
-  {
-   "source": "arXiv",
-   "title": "AutoSFT: An Agentic System for Automated Data Research in Supervised Fine-Tuning",
-   "url": "https://arxiv.org/abs/2610.22194",
-   "snippet": "Language model agents increasingly automate post-training, but when given the full training stack they converge on supervised fine-tuning and spend most effort revising training data. This paper proposes AutoSFT, an agentic system designed for automated data research in supervised fine-tuning. It aims to streamline the process of data curation and improvement for LLMs.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 1.16,
-    "learning_value": 1.64,
-    "hands_on": 0.83
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Freeze the Decoder, Heal the Encoder: Parameter-Efficient Adaptation for SVD-Based KV-Cache Compression",
-   "url": "https://arxiv.org/abs/2610.10552",
-   "snippet": "This paper introduces a parameter-efficient adaptation method for SVD-based KV-Cache compression in large language models. The technique, termed 'Freeze the Decoder, Heal the Encoder,' aims to optimize memory usage and computational efficiency while maintaining model performance. It explores novel approaches to adapt LLMs more efficiently in resource-constrained environments.",
+   "title": "LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the LLM Interface",
+   "url": "https://arxiv.org/abs/2610.13289",
+   "snippet": "This work introduces LLMON (LLM Object Notation), an LLM-native mark-up language designed to communicate the structure and semantic metadata of text to a Large Language Model (LLM) in a natural way. This information can be utilized during model training, prompting, and inference, leading to improvements in accuracy, safety, and security. LLMON addresses the current shortcoming where rich structural and semantic information is often lost when conveyed to LLMs as a simple text string.",
    "score": 0,
    "published": "2026-10-16",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 1.78,
-    "learning_value": 1.74,
-    "hands_on": 0.83
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback",
-   "url": "https://arxiv.org/abs/2610.12549",
-   "snippet": "Embodied coding agents construct robot policies from natural-language instructions by generating executable programs and refining them from execution feedback. This paper introduces Fly-by-Code, a framework where aerial manipulators leverage active visual and physical feedback for policy refinement. Across six simulated aerial manipulation tasks, AF reduces false completion declarations from 25 to 5 and raises final task success from 31.7% to 75%.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 1.5,
-    "learning_value": 2.29,
-    "hands_on": 0.98
+    "difficulty": 0.87,
+    "learning_value": 2.07,
+    "hands_on": 0.62
    }
   },
   {
    "source": "arXiv",
    "title": "Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation",
    "url": "https://arxiv.org/abs/2610.20571",
-   "snippet": "Long-form agentic video generation must turn a screenplay into shots that remain spatially and temporally consistent across nonconsecutive requests. We present Any Time, Any Space (ATAS), which compiles a screenplay into shot requests with explicit location, camera, and event-time references. Before generation, it retrieves relevant evidence from a scene memory of registered static geometry and an event memory of dynamic observations indexed by scene, event, and time.",
+   "snippet": "This paper presents a world-state-centric framework for long-form agentic video generation, aiming to produce shots that maintain spatial and temporal consistency across nonconsecutive requests. The framework tackles the challenge of translating a screenplay into a coherent video output. This is particularly relevant for creating dynamic and consistent environments in agent-based systems.",
+   "score": 0,
+   "published": "2026-10-15",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.89,
+    "difficulty": 1.64,
+    "learning_value": 1.74,
+    "hands_on": 0.79
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Player-1: Learning to Play from Synthetic Experience",
+   "url": "https://arxiv.org/abs/2610.20584",
+   "snippet": "The research explores how computer-use agents can learn to play from synthetic experience, building on their demonstrated capabilities in interpreting screens and executing keyboard and mouse actions. This approach focuses on improving agent performance through simulated environments. It holds promise for developing more versatile and robust AI agents.",
    "score": 0,
    "published": "2026-10-15",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 1.53,
-    "learning_value": 2.31,
-    "hands_on": 0.91
+    "has_substance": 0.83,
+    "difficulty": 0.8,
+    "learning_value": 1.04,
+    "hands_on": 0.78
    }
   },
   {
    "source": "arXiv",
    "title": "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation",
    "url": "https://arxiv.org/abs/2610.13521",
-   "snippet": "Multi-teacher on-policy distillation (MOPD) extends on-policy distillation (OPD) by routing domain-specific data to specialized teachers, integrating their capabilities through dense token-level supervision on student-generated trajectories. To address this challenge, we propose Cross-Teacher Guarding for MOPD (Road MOPD), which introduces non-routed teachers as auxiliary cross-domain critics on the same student trajectories and coordinates multi-teacher supervision through token-level credit assignment and gradient updates. In experiments, Road MOPD mitigates degradation in the disadvantaged domain, gains over 5 percentage points under high conflict, and improves overall performance in low-conflict and three-domain settings.",
+   "snippet": "This paper extends on-policy distillation (OPD) with a multi-teacher approach, routing domain-specific data to specialized teachers. The method integrates their capabilities through dense token-level supervision on student-generated trajectories. This aims to improve the efficiency and effectiveness of distilling knowledge from multiple expert models into a single student model.",
    "score": 0,
    "published": "2026-10-15",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.92,
-    "learning_value": 2.52,
-    "hands_on": 0.86
+    "has_substance": 0.96,
+    "difficulty": 1.87,
+    "learning_value": 2.09,
+    "hands_on": 0.71
    }
   },
   {
-   "source": "arXiv",
-   "title": "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation",
-   "url": "https://arxiv.org/abs/2610.20572",
-   "snippet": "On-policy distillation (OPD) trains a student model on its own rollouts with token-level supervision from a teacher, assuming that the teacher can reach a correct answer from any prefix the student writes. We propose CriticOPD, using error recognition to restore recoverability. The teacher critiques an incorrect rollout, allowing the student to rewrite its solution following the error. On two Qwen3 students and six mathematical reasoning benchmarks, CriticOPD improves OPD, with the largest gains on competition problems.",
+   "source": "Capitol Technology University Blog",
+   "title": "The Nature of Swarm Robotics: How New Engineering Methods Are Transforming the Robotics Field",
+   "url": "https://www.captechu.edu/blog/nature-swarm-robotics-how-new-engineering-methods-are-transforming-robotics-field",
+   "snippet": "This blog post discusses swarm robotics, an emerging engineering field focused on solving complex challenges by enabling multiple robots to communicate, coordinate, and adapt as a team. It highlights how distributing intelligence across many simple robotic agents allows for sophisticated, adaptive collective behavior. The article emphasizes the resilience and scalability that decentralized swarm systems offer.",
    "score": 0,
    "published": "2026-10-15",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.58,
-    "learning_value": 2.46,
-    "hands_on": 0.9
-   },
-   "related_to": [
-    "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation"
-   ]
+    "has_substance": 0.53,
+    "difficulty": 0.04,
+    "learning_value": 1.52,
+    "hands_on": 0.13
+   }
   },
   {
-   "source": "arXiv",
-   "title": "Many Right Answers, One Training Example: Removing Responder Noise from GRPO for LLM Recommenders",
-   "url": "https://arxiv.org/abs/2610.17771",
-   "snippet": "A recommendation request on Reddit draws several replies, each naming different titles. When an LLM recommender is trained on such threads with reinforcement learning (RL), which replies should a generated list be rewarded against? We argue that RL should train on the request, not on each answer, and propose ReMaRk: it scores every list once against the union of all replies' titles and samples each request equally. On seven backbones and three datasets, ReMaRk reaches the validation recall of 2,000 per-reply RL steps in 25 to 53% of the steps.",
+   "source": "AWS Machine Learning Blog",
+   "title": "Trust in Depth: Giving agents more autonomy without losing control",
+   "url": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
+   "snippet": "This post addresses the challenge of increasing AI agent autonomy while maintaining control, particularly for high-stakes enterprise tasks. It introduces 'Trust in Depth,' a layered approach to ensure agents operate within defined limits and authority. The article emphasizes the importance of agent identity, approval workflows, and scoping agent capabilities to specific job requirements.",
    "score": 0,
    "published": "2026-10-15",
    "judge": {
     "injection": 0.02,
+    "has_substance": 0.6,
+    "difficulty": 0.14,
+    "learning_value": 1.95,
+    "hands_on": 0.32
+   }
+  },
+  {
+   "source": "tomrochette.com",
+   "title": "System1-Arena: A Benchmark Suite, Scoring Harness, and Leaderboard for LLM Agents in Closed-Loop Environments",
+   "url": "https://tomrochette.com/system1-arena/",
+   "snippet": "System1-Arena is a new benchmark suite, scoring harness, and leaderboard designed by an academic team to evaluate LLM agents. It includes 52,199 requests across 105 decision kinds in 16 domains, notably featuring 138 closed-loop environments for tasks like web shopping and robotics. The benchmark assesses models on accuracy, Brier score, latency, and cost, providing a comprehensive evaluation of agentic and non-agentic performance.",
+   "score": 0,
+   "published": "2026-10-17",
+   "judge": {
+    "injection": 0.01,
     "has_substance": 0.97,
-    "difficulty": 1.29,
-    "learning_value": 2.52,
-    "hands_on": 0.95
+    "difficulty": 1.03,
+    "learning_value": 2.2,
+    "hands_on": 0.98
    }
   },
   {
-   "source": "arXiv",
-   "title": "Cortex: Consolidating Context into Parametric Memory",
-   "url": "https://arxiv.org/abs/2610.20399",
-   "snippet": "Context can improve large language model performance, but these gains may be lost after context removal. We formulate Memory Consolidation (MC) as internalizing these gains while preserving non-target capabilities, connecting context-specified editing, skill learning, and behavioral steering under a common objective. We propose Cortex, which generates prospective queries to anticipate uses of context and distills context-conditioned outputs into mergeable low-rank or structural feed-forward network updates. After 50 sequential factual edits on a 14B model, Cortex-Structural recovers 88.9% of the context-induced gain while retaining 99.8% of original non-target performance.",
-   "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 1.71,
-    "learning_value": 2.69,
-    "hands_on": 0.94
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
-   "url": "https://arxiv.org/abs/2610.22358",
-   "snippet": "This paper introduces PathFM, a novel method for fast generative forecasting of multivariate trajectories. It focuses on efficiently generating future paths for complex systems, demonstrating improved speed and accuracy compared to existing approaches. The research offers a significant advancement in predictive modeling for dynamic environments.",
+   "source": "Hostinger Tutorials",
+   "title": "What is an LLM agent?",
+   "url": "https://www.hostinger.com/tutorials/what-is-an-llm-agent",
+   "snippet": "This tutorial defines an LLM agent as an AI system that combines a large language model with planning, memory, and external tools to autonomously complete tasks. Unlike traditional LLMs, agents can make decisions, interact with external systems, and execute multi-step workflows. They are crucial for applications in customer support, software development, and workflow automation.",
    "score": 0,
    "published": "2026-10-16",
    "judge": {
     "injection": 0.01,
+    "has_substance": 0.83,
+    "difficulty": 0.26,
+    "learning_value": 1.61,
+    "hands_on": 0.28
+   },
+   "related_to": [
+    "AI Agent Security",
+    "AI Agent Security",
+    "rohitg00/ai-engineering-from-scratch",
+    "alibaba / open-code-review",
+    "LLaMA-Agents: Open-source Framework for Building LLM-powered Agents",
+    "decodingai-magazine/building-a-coding-agent-from-scratch-course",
+    "CoreWeave Agent Lens | AI Agent Observability",
+    "TokenCast: Forecasting Token Consumption During LLM Agent Execution",
+    "SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving",
+    "mksglu/context-mode"
+   ]
+  },
+  {
+   "source": "The Daily Swig",
+   "title": "LLM-as-a-Judge: The Complete Guide to Run LLM Evals at Scale",
+   "url": "https://portswigger.net/daily-swig/llm-as-a-judge-the-complete-guide-to-run-llm-evals-at-scale",
+   "snippet": "This guide provides a comprehensive explanation of LLM-as-a-Judge, detailing how it functions for scalable LLM evaluation. It covers various aspects, including single-output versus pairwise scoring, G-Eval, DAG, and effective prompting techniques. The methodology allows an LLM to act as an automated grader, providing quantitative verdicts or preferences based on defined criteria.",
+   "score": 0,
+   "published": "2026-10-15",
+   "judge": {
+    "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 1.54,
-    "learning_value": 1.43,
+    "difficulty": 0.9,
+    "learning_value": 2.42,
+    "hands_on": 1.02
+   }
+  },
+  {
+   "source": "AI Daily: AI Agents",
+   "title": "16 Best General-Purpose AI Agents in 2026",
+   "url": "https://www.aidaily.com/agents/best-general-purpose-ai-agents",
+   "snippet": "This roundup reviews the top general-purpose AI agents available in 2026, moving beyond simple chat interfaces to those capable of browsing the web, running code, and completing multi-step tasks. Agents like OpenClaw and Atomic Agent are highlighted for their ability to run tasks locally, remember context, and act across connected tools. The article scores agents on a 36-point rubric, differentiating between conversational assistants and autonomous multi-step action takers.",
+   "score": 0,
+   "published": "2026-10-17",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.78,
+    "difficulty": 0.1,
+    "learning_value": 1.18,
     "hands_on": 0.82
    }
   }
  ],
  "dropped": [
   {
-   "source": "arXiv",
-   "title": "Shortcut Sensitivity in Agent-Safety Evaluations",
-   "url": "https://arxiv.org/abs/2610.22243",
-   "snippet": "This paper addresses shortcut sensitivity in agent-safety evaluations, a critical aspect of ensuring the reliability and trustworthiness of AI agents. The research examines how agents might exploit unintended shortcuts in evaluation metrics, leading to an inaccurate assessment of their safety properties. It highlights the need for robust evaluation methodologies to prevent such misalignments.",
+   "source": "Grok Bot",
+   "title": "AI teammates that finish the work",
+   "url": "https://grokbot.com/",
+   "snippet": "Grok Bot introduces AI teammates that users can assign real-world tasks to, much like human colleagues. These bots can sign into tools, use them, and return with finished work, learning and adapting over time. They operate in parallel, collaborate, and continue working 24/7, providing assistance across various professional domains.",
    "score": 0,
    "published": "2026-10-16",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.47,
-    "difficulty": 1.08,
-    "learning_value": 1.17,
-    "hands_on": 0.28
+    "injection": 0.02,
+    "has_substance": 0.7,
+    "difficulty": 0.01,
+    "learning_value": 0.54,
+    "hands_on": 0.75
    },
-   "reason": "no substance 0.47"
+   "reason": "low learning value 0.54"
+  },
+  {
+   "source": "AI Reviews From Our Experts - PCMag",
+   "title": "I Let 3 AI Agents Take Over My Life",
+   "url": "https://www.pcmag.com/news/i-let-3-ai-agents-take-over-my-life",
+   "snippet": "This article discusses an experiment where the author allowed three different AI agents to manage aspects of their daily life. It provides insights into the practical capabilities and limitations of current general-purpose AI agents in real-world scenarios. The piece highlights how these agents handle tasks ranging from scheduling to content generation and financial management.",
+   "score": 0,
+   "published": "2026-10-17",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.29,
+    "difficulty": 0.01,
+    "learning_value": 1.14,
+    "hands_on": 0.6
+   },
+   "reason": "no substance 0.29"
   }
  ],
- "judge": "judge: 29 kept, 1 dropped (7 pairs checked)"
+ "judge": "judge: 10 kept, 2 dropped (18 pairs checked)"
 }
