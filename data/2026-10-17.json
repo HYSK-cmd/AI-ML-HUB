@@ -1,76 +1,77 @@
 {
-  "date": "2026-10-17",
-  "headline": "AI 에이전트의 통제부터 성능 평가, 그리고 고급 증류 기법까지, 에이전트 연구의 스펙트럼을 탐험해 보세요.",
-  "items": [
-    {
-      "title": "Trust in Depth: Giving agents more autonomy without losing control",
-      "url": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
-      "source": "AWS Machine Learning Blog",
-      "categories": [
-        "Agents",
-        "ML Systems & Infra",
-        "Industry & Policy"
-      ],
-      "level": "beginner",
-      "headline_ko": "AI 에이전트 신뢰 관리",
-      "summary": "이 AWS 블로그 게시물은 고위험 엔터프라이즈 작업에서 AI 에이전트의 자율성을 높이면서도 통제력을 유지하는 과제를 다룹니다. 'Trust in Depth'라는 다층적 접근 방식을 소개하여 에이전트가 정의된 한계 내에서 작동하도록 보장합니다. 이 글은 에이전트의 ID, 승인 워크플로우, 그리고 특정 작업 요구사항에 에이전트의 역량을 맞추는 것의 중요성을 강조합니다.",
-      "why": "에이전트 시스템을 구축할 때 중요한 보안 및 통제 문제를 AWS의 관점에서 이해할 수 있습니다. 실제 엔터프라이즈 환경에서 에이전트를 어떻게 안전하게 배포하고 관리하는지에 대한 실질적인 통찰력을 얻을 수 있습니다.",
-      "keywords": [
-        "AI agents",
-        "autonomy",
-        "control",
-        "Trust in Depth",
-        "enterprise tasks",
-        "AWS"
-      ],
-      "narration": "오늘 첫 번째 소식은 AWS의 Trust in Depth입니다. 기업 환경에서 AI 에이전트의 자율성을 높이면서도 통제력을 유지하는 방법을 다루는데요. 에이전트 ID와 승인 워크플로우 등을 통해 정의된 한계 내에서 작동하도록 보장합니다. 에이전트 시스템의 보안과 관리에 대한 실질적인 접근 방식을 배울 수 있습니다."
-    },
-    {
-      "title": "System1-Arena: A Benchmark Suite, Scoring Harness, and Leaderboard for LLM Agents in Closed-Loop Environments",
-      "url": "https://tomrochette.com/system1-arena/",
-      "source": "tomrochette.com",
-      "categories": [
-        "Agents",
-        "LLM",
-        "Robotics & Embodied",
-        "Open Source & Tools"
-      ],
-      "level": "intermediate",
-      "headline_ko": "LLM 에이전트 벤치마크",
-      "summary": "System1-Arena는 LLM 에이전트의 성능을 평가하기 위해 학술 팀이 개발한 새로운 벤치마크 스위트, 채점 도구 및 리더보드입니다. 이 벤치마크는 웹 쇼핑 및 로봇 공학 같은 138개의 폐쇄 루프 환경을 포함하여 16개 도메인에서 105가지 의사 결정 유형에 걸쳐 52,199개의 요청을 포함합니다. 모델의 정확도, Brier score, 지연 시간, 비용을 평가하여 에이전트 및 비 에이전트 성능에 대한 포괄적인 평가를 제공합니다.",
-      "why": "LLM 에이전트의 실제 환경에서의 성능을 측정하는 방법을 이해하고, 다양한 에이전트 모델들을 객관적으로 비교할 수 있는 최신 벤치마크를 살펴볼 수 있습니다. 특히 로봇 공학 분야에 관심 있는 학생들에게 유용합니다.",
-      "keywords": [
-        "LLM agents",
-        "benchmark",
-        "evaluation",
-        "closed-loop environments",
-        "robotics",
-        "System1-Arena"
-      ],
-      "narration": "다음은 System1-Arena라는 LLM 에이전트 벤치마크 소식입니다. 웹 쇼핑과 로봇 공학 같은 138개의 폐쇄 루프 환경에서 에이전트의 성능을 평가합니다. 정확도와 지연 시간, 비용 등 여러 지표로 LLM 에이전트를 종합적으로 평가하는데요. 실제 환경에서 에이전트의 성능을 측정하는 새로운 표준을 제시합니다."
-    },
-    {
-      "title": "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation",
-      "url": "https://arxiv.org/abs/2610.13521",
-      "source": "arXiv",
-      "categories": [
-        "Research Fundamentals",
-        "RL",
-        "LLM"
-      ],
-      "level": "advanced",
-      "headline_ko": "다중 교사 On-Policy 증류",
-      "summary": "이 논문은 on-policy distillation (OPD)을 다중 교사 접근 방식으로 확장하여 도메인별 데이터를 전문 교사에게 라우팅합니다. 이 방법은 학생이 생성한 궤적에 대한 dense token-level supervision을 통해 여러 교사의 역량을 통합합니다. 목표는 여러 전문가 모델의 지식을 단일 학생 모델로 증류하는 효율성과 효과를 개선하는 것입니다. Cross-Teacher Guarding for MOPD (Road MOPD)는 교사 간의 합의를 사용하여 신호를 강화하고, 잠재적 충돌 업데이트를 제어하여 성능 저하를 완화합니다.",
-      "why": "복잡한 다중 도메인 작업에서 여러 전문 모델의 지식을 단일 모델로 효율적으로 통합하는 고급 기술을 탐구할 수 있습니다. 특히 knowledge distillation과 Reinforcement Learning 연구에 관심 있는 학생들에게 유용합니다.",
-      "keywords": [
-        "on-policy distillation",
-        "multi-teacher",
-        "knowledge distillation",
-        "token-level supervision",
-        "gradient conflicts",
-        "Road MOPD"
-      ],
-      "narration": "마지막은 arXiv의 고급 연구 논문입니다. 다중 교사 on-policy distillation (MOPD) 방법을 확장한 논문인데요. 여러 전문 교사의 지식을 학생 모델로 효율적으로 증류하기 위해, dense token-level supervision을 사용합니다. 특히 교사 간의 신호 충돌을 해결하여 성능 저하를 완화하는 Road MOPD 방식을 제안합니다. 복잡한 지식 증류 기술에 대해 깊이 있는 이해를 얻을 수 있습니다."
-    }
-  ]
+ "date": "2026-10-17",
+ "headline": "AI 에이전트의 통제부터 성능 평가, 그리고 고급 증류 기법까지, 에이전트 연구의 스펙트럼을 탐험해 보세요.",
+ "items": [
+  {
+   "title": "Trust in Depth: Giving agents more autonomy without losing control",
+   "url": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
+   "source": "AWS Machine Learning Blog",
+   "categories": [
+    "Agents",
+    "ML Systems & Infra",
+    "Industry & Policy"
+   ],
+   "level": "beginner",
+   "headline_ko": "AI 에이전트 신뢰 관리",
+   "summary": "이 AWS 블로그 게시물은 고위험 엔터프라이즈 작업에서 AI 에이전트의 자율성을 높이면서도 통제력을 유지하는 과제를 다룹니다. 'Trust in Depth'라는 다층적 접근 방식을 소개하여 에이전트가 정의된 한계 내에서 작동하도록 보장합니다. 이 글은 에이전트의 ID, 승인 워크플로우, 그리고 특정 작업 요구사항에 에이전트의 역량을 맞추는 것의 중요성을 강조합니다.",
+   "why": "에이전트 시스템을 구축할 때 중요한 보안 및 통제 문제를 AWS의 관점에서 이해할 수 있습니다. 실제 엔터프라이즈 환경에서 에이전트를 어떻게 안전하게 배포하고 관리하는지에 대한 실질적인 통찰력을 얻을 수 있습니다.",
+   "keywords": [
+    "AI agents",
+    "autonomy",
+    "control",
+    "Trust in Depth",
+    "enterprise tasks",
+    "AWS"
+   ],
+   "narration": "오늘 첫 번째 소식은 AWS의 Trust in Depth입니다. 기업 환경에서 AI 에이전트의 자율성을 높이면서도 통제력을 유지하는 방법을 다루는데요. 에이전트 ID와 승인 워크플로우 등을 통해 정의된 한계 내에서 작동하도록 보장합니다. 에이전트 시스템의 보안과 관리에 대한 실질적인 접근 방식을 배울 수 있습니다."
+  },
+  {
+   "title": "System1-Arena: A Benchmark Suite, Scoring Harness, and Leaderboard for LLM Agents in Closed-Loop Environments",
+   "url": "https://tomrochette.com/system1-arena/",
+   "source": "tomrochette.com",
+   "categories": [
+    "Agents",
+    "LLM",
+    "Robotics & Embodied",
+    "Open Source & Tools"
+   ],
+   "level": "intermediate",
+   "headline_ko": "LLM 에이전트 벤치마크",
+   "summary": "System1-Arena는 LLM 에이전트의 성능을 평가하기 위해 학술 팀이 개발한 새로운 벤치마크 스위트, 채점 도구 및 리더보드입니다. 이 벤치마크는 웹 쇼핑 및 로봇 공학 같은 138개의 폐쇄 루프 환경을 포함하여 16개 도메인에서 105가지 의사 결정 유형에 걸쳐 52,199개의 요청을 포함합니다. 모델의 정확도, Brier score, 지연 시간, 비용을 평가하여 에이전트 및 비 에이전트 성능에 대한 포괄적인 평가를 제공합니다.",
+   "why": "LLM 에이전트의 실제 환경에서의 성능을 측정하는 방법을 이해하고, 다양한 에이전트 모델들을 객관적으로 비교할 수 있는 최신 벤치마크를 살펴볼 수 있습니다. 특히 로봇 공학 분야에 관심 있는 학생들에게 유용합니다.",
+   "keywords": [
+    "LLM agents",
+    "benchmark",
+    "evaluation",
+    "closed-loop environments",
+    "robotics",
+    "System1-Arena"
+   ],
+   "narration": "다음은 System1-Arena라는 LLM 에이전트 벤치마크 소식입니다. 웹 쇼핑과 로봇 공학 같은 138개의 폐쇄 루프 환경에서 에이전트의 성능을 평가합니다. 정확도와 지연 시간, 비용 등 여러 지표로 LLM 에이전트를 종합적으로 평가하는데요. 실제 환경에서 에이전트의 성능을 측정하는 새로운 표준을 제시합니다."
+  },
+  {
+   "title": "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation",
+   "url": "https://arxiv.org/abs/2610.13521",
+   "source": "arXiv",
+   "categories": [
+    "Research Fundamentals",
+    "RL",
+    "LLM"
+   ],
+   "level": "advanced",
+   "headline_ko": "다중 교사 On-Policy 증류",
+   "summary": "이 논문은 on-policy distillation (OPD)을 다중 교사 접근 방식으로 확장하여 도메인별 데이터를 전문 교사에게 라우팅합니다. 이 방법은 학생이 생성한 궤적에 대한 dense token-level supervision을 통해 여러 교사의 역량을 통합합니다. 목표는 여러 전문가 모델의 지식을 단일 학생 모델로 증류하는 효율성과 효과를 개선하는 것입니다. Cross-Teacher Guarding for MOPD (Road MOPD)는 교사 간의 합의를 사용하여 신호를 강화하고, 잠재적 충돌 업데이트를 제어하여 성능 저하를 완화합니다.",
+   "why": "복잡한 다중 도메인 작업에서 여러 전문 모델의 지식을 단일 모델로 효율적으로 통합하는 고급 기술을 탐구할 수 있습니다. 특히 knowledge distillation과 Reinforcement Learning 연구에 관심 있는 학생들에게 유용합니다.",
+   "keywords": [
+    "on-policy distillation",
+    "multi-teacher",
+    "knowledge distillation",
+    "token-level supervision",
+    "gradient conflicts",
+    "Road MOPD"
+   ],
+   "narration": "마지막은 arXiv의 고급 연구 논문입니다. 다중 교사 on-policy distillation (MOPD) 방법을 확장한 논문인데요. 여러 전문 교사의 지식을 학생 모델로 효율적으로 증류하기 위해, dense token-level supervision을 사용합니다. 특히 교사 간의 신호 충돌을 해결하여 성능 저하를 완화하는 Road MOPD 방식을 제안합니다. 복잡한 지식 증류 기술에 대해 깊이 있는 이해를 얻을 수 있습니다."
+  }
+ ],
+ "video": "videos/2026-10-17.mp4"
 }
