@@ -1,451 +1,152 @@
 {
- "date": "2026-10-18",
- "collected_at": "2026-10-18T18:25:09+00:00",
+ "date": "2026-10-19",
+ "collected_at": "2026-10-19T21:23:19+00:00",
  "counts": {
-  "gemini_search": 30
+  "gemini_search": 9
  },
- "dedup": "dedup: 2 already in corpus, 0 cross-source duplicates, 28 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 9 new",
  "items": [
   {
-   "source": "GitHub Trending",
-   "title": "claude-plugins-official",
-   "url": "https://github.com/anthropics/claude-plugins-official",
-   "snippet": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+   "source": "Cryptology ePrint Archive",
+   "title": "HERMES: High-Performance Private Decoding for Large Language Models",
+   "url": "https://eprint.iacr.org/2026/2532",
+   "snippet": "Privacy-preserving inference (PI) enables users to query large language models (LLMs) without revealing their prompts, but incurs substantial computation and communication overhead. We present HERMES, a PI system optimized for LLM decoding. HERMES lowers time per output token (TPOT) by up to 2.7× and total PI latency by up to 2.1× on Llama 3.1 8B Instruct.",
    "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.88,
-    "difficulty": 0.03,
-    "learning_value": 1.04,
-    "hands_on": 0.73
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "plugins",
-   "url": "https://github.com/cursor/plugins",
-   "snippet": "Cursor plugin specification and official plugins.",
-   "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.86,
-    "difficulty": 0.04,
-    "learning_value": 1.01,
-    "hands_on": 0.64
-   },
-   "related_to": [
-    "claude-plugins-official"
-   ]
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "ruflo",
-   "url": "https://github.com/ruvnet/ruflo",
-   "snippet": "The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated.",
-   "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.93,
-    "difficulty": 0.8,
-    "learning_value": 1.16,
-    "hands_on": 1.16
-   }
-  },
-  {
-   "source": "Google DeepMind Blog",
-   "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-   "url": "https://deepmind.google/blog/grounding-ai-agents-in-biological-reality/",
-   "snippet": "We are bringing AI agents to the wet-lab bench at Google Research to navigate complex biological landscapes. By grounding agents in physical lab robotics, we can run fast closed-loop molecular design cycles where agents learn how to learn, ultimately discovering single-digit nanomolar protein binders for cancer targets. First, we present the VERified Infrastructure for Discovery Laboratories (VERID) framework to bridge the gap between the high-level reasoning of AI agents and the complex, error-prone physical reality of a wet lab.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.88,
-    "difficulty": 0.97,
-    "learning_value": 1.6,
-    "hands_on": 0.73
-   }
-  },
-  {
-   "source": "aiengineeringfromscratch.com",
-   "title": "Learn what's inside AI Agent Interactively in 3D",
-   "url": "https://aiengineeringfromscratch.com/inside-an-ai-agent",
-   "snippet": "An AI agent is more than an LLM call. Break the machine to see why. (This interactive resource allows users to explore the internal workings of an AI agent in a 3D environment. It aims to make complex AI agent concepts more accessible and understandable. The platform provides a visual and interactive way to learn about agent architecture and behavior.)",
-   "score": 0,
-   "published": "2026-10-17",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.87,
-    "difficulty": 0.59,
-    "learning_value": 2.51,
-    "hands_on": 0.72
-   }
-  },
-  {
-   "source": "Hugging Face",
-   "title": "AuroraASR-1M",
-   "url": "https://huggingface.co/AuroraAI-Research/AuroraASR-1M",
-   "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science. (AuroraASR-1M is a tiny weight-shared Conformer-CTC speech recognizer under 1M parameters. It achieves 11.43% WER on LibriSpeech test-clean and runs around 436x real-time on a single CPU thread. This extremely lightweight model is designed for local deployment.)",
-   "score": 0,
-   "published": "2026-10-18",
+   "published": "2026-10-19",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 0.85,
-    "learning_value": 1.77,
-    "hands_on": 1.44
+    "difficulty": 1.55,
+    "learning_value": 1.72,
+    "hands_on": 0.96
    }
   },
   {
-   "source": "NVIDIA Research Blog",
-   "title": "ASPIRE: Agentic /Skills Discovery for Robotics",
-   "url": "https://www.nvidia.com/en-us/research/ai/aspire-agentic-skills-discovery-robotics/",
-   "snippet": "ASPIRE operates in an open-ended learning loop for robotics, consisting of three key components: (1) a closed-loop robot execution engine exposing fine-grained multimodal traces; (2) a continually expanding skill library; and (3) an evolutionary search procedure that generates diverse programs. It enables agents to autonomously diagnose failures, synthesize repairs, and consolidate successful recovery patterns into persistent skills.",
+   "source": "MathWorks (UOS Robotics)",
+   "title": "From Simulation to Reality: How UOS Robotics Won the RoboCup ARM Challenge 2026",
+   "url": "https://www.mathworks.com/company/newsroom/robotics/uos-robocup-arm-challenge-2026.html",
+   "snippet": "UOS Robotics from the University of Seoul returned to the RoboCup ARM Challenge in 2026 after winning titles in 2022 and 2023. The team took first place in the global simulation round and went on to win the on-site final on home soil. Today’s blog highlights the engineering work behind this success: bringing perception, planning, and control algorithms from a virtual environment to a real Universal Robot.",
    "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 1.65,
-    "learning_value": 2.19,
-    "hands_on": 0.92
-   }
-  },
-  {
-   "source": "allfather.dev",
-   "title": "Odin - A search engine for debugging",
-   "url": "https://allfather.dev",
-   "snippet": "Odin is a search engine built for debugging that reads a bug report and points to the exact file (93%) and function (79.4%) needing a fix. It runs mostly in the browser, utilizing Tree-sitter (via WebAssembly) and small local models (via WebGPU). This allows code analysis without sending it to large cloud LLMs.",
-   "score": 0,
-   "published": "2026-10-18",
+   "published": "2026-10-19",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 0.11,
-    "learning_value": 2.1,
-    "hands_on": 1.05
-   }
-  },
-  {
-   "source": "Anthropic Blog",
-   "title": "Claude reveals ECDSA curve origins",
-   "url": "https://www.anthropic.com/news/claude-reveals-ecdsa-curve-origins",
-   "snippet": "Anthropic reports that Claude traced ten NIST and ANSI elliptic-curve seeds to lrand48, a 1990s C pseudorandom generator initialized from Unix timestamps. This discovery closes a major technical gap, making the core mechanism unusually easy to check and reducing suspicions of deliberate weaknesses in the standardized curves.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.93,
-    "difficulty": 0.73,
-    "learning_value": 1.6,
-    "hands_on": 0.63
-   }
-  },
-  {
-   "source": "Apple ML Research",
-   "title": "Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio",
-   "url": "https://machinelearning.apple.com/research/mlx-mac-studio",
-   "snippet": "This post showcases running the Muse Spark Open model, with nearly a trillion parameters, on a Mac Studio using the latest MLX. On a cluster of four Mac Studios, Muse Spark Open generates over 36 tokens per second. It highlights Apple's push towards distributed inference on consumer-grade hardware.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 0.87,
-    "learning_value": 1.58,
-    "hands_on": 1.11
-   }
-  },
-  {
-   "source": "GitHub",
-   "title": "ps5-llama.cpp",
-   "url": "https://github.com/cobanov/ps5-llama.cpp",
-   "snippet": "PS5LM is an open-source project by Mert Cobanov that brings llama.cpp to the PlayStation 5, enabling local language model execution. It allows models like Qwen 3.8 27B to run at approximately 20 tokens per second on a jailbroken PS5's GPU.",
-   "score": 0,
-   "published": "2026-10-14",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 0.37,
-    "learning_value": 1.41,
-    "hands_on": 1.5
-   },
-   "related_to": [
-    "Introducing Llama Windows: llama.cpp in your Windows tray"
-   ]
-  },
-  {
-   "source": "claude.dev",
-   "title": "How the Claude Code team does code review",
-   "url": "https://claude.dev/blog/how-the-claude-code-team-does-code-review",
-   "snippet": "Anthropic's Claude Code team details their six-layer AI review pipeline that more than doubled merged PRs while cutting reverts by 40%. Claude writes about 90% of Claude Code's own code, so the team rebuilt review to minimize human intervention for routine tasks. This system is now available on Team and Enterprise plans.",
-   "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.9,
-    "difficulty": 0.07,
-    "learning_value": 1.64,
+    "has_substance": 0.67,
+    "difficulty": 0.32,
+    "learning_value": 1.12,
     "hands_on": 0.67
-   },
-   "related_to": [
-    "alibaba / open-code-review",
-    "mvschwarz/openrig"
-   ]
-  },
-  {
-   "source": "starskirmish.com",
-   "title": "StarSkirmish Bench v0.2: Gemini 4 Argon plays StarCraft",
-   "url": "https://starskirmish.com/bench/v0-2/",
-   "snippet": "StarSkirmish Bench v0.2 is a benchmark that measures how well flagship LLMs, including Gemini 4 Argon, can write C++ code to play StarCraft: Brood War. Bots are scored by their win rate against a fixed roster of competitive human-written and demo bots. The benchmark aims to evaluate LLMs in complex, agentic coding tasks.",
-   "score": 0,
-   "published": "2026-10-16",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 0.54,
-    "learning_value": 1.39,
-    "hands_on": 1.02
    }
   },
   {
-   "source": "Black Forest Labs",
-   "title": "FLUX 3 Image Klein: Open weights image generation and editing",
-   "url": "https://blackforestlabs.ai/flux-3-image-klein",
-   "snippet": "FLUX 3 Image Klein is a 5.6B open weights model for text-to-image generation, image editing, and multi-reference generation, supporting up to 10 reference images. It generates images from text, edits them from instructions, and combines references, all within a single model runnable on local hardware. The model boasts native 4K generation and pixel-perfect editing.",
+   "source": "Bright Security (via GlobeNewswire)",
+   "title": "Bright Security Introduces STAR Fuzzer, Agentic Fuzzing That Writes Its Own Harnesses and Proves Every Finding",
+   "url": "https://www.globenewswire.com/news-release/2026/10/19/3358908/0/en/Bright-Security-Introduces-STAR-Fuzzer-Agentic-Fuzzing-That-Writes-Its-Own-Harnesses-and-Proves-Every-Finding.html",
+   "snippet": "Bright Security Introduces STAR Fuzzer, Agentic Fuzzing That Writes Its Own Harnesses and Proves Every Finding. Built on an evolutionary engine first released in 2018, STAR Fuzzer by Bright Security finds crashes, memory exhaustion and memory-safety bugs in security-critical code without a running application.",
    "score": 0,
-   "published": "2026-10-15",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.28,
-    "learning_value": 1.37,
-    "hands_on": 1.45
-   }
-  },
-  {
-   "source": "Anthropic Blog",
-   "title": "Designing more efficient quantum circuits with Claude",
-   "url": "https://www.anthropic.com/news/designing-more-efficient-quantum-circuits-with-claude",
-   "snippet": "Anthropic's Claude has designed quantum circuits that improve upon the best published designs, in some cases by an order of magnitude or more, significantly reducing resource requirements. Claude, working largely autonomously, was given plain-language specifications for eight circuits and achieved these results through novel structural and mathematical insights.",
-   "score": 0,
-   "published": "2026-10-17",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.82,
-    "difficulty": 1.04,
-    "learning_value": 0.95,
-    "hands_on": 0.78
-   }
-  },
-  {
-   "source": "GitHub",
-   "title": "AryanDinakaran/EpochGo",
-   "url": "https://github.com/AryanDinakaran/EpochGo",
-   "snippet": "EpochGo is an open-source, local-first multi-agent AutoML system designed to address cloud API inference costs and LLM hallucinations in mathematical reasoning. It uses offline Ollama LLMs as orchestrators and deterministic Scikit-Learn pipelines for execution. The engine runs entirely offline on standard consumer hardware.",
-   "score": 0,
-   "published": "2026-10-12",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.77,
-    "learning_value": 2.27,
-    "hands_on": 1.63
-   }
-  },
-  {
-   "source": "Hugging Face",
-   "title": "DeepSeek-V4.1-Flash-1017-GGUF",
-   "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
-   "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science. (This is a GGUF quantized version of the DeepSeek-V4.1-Flash model, optimized for local inference. It is a large language model designed for efficient deployment on consumer hardware. The '-1017-' in its name suggests a release or significant update on October 17th.)",
-   "score": 0,
-   "published": "2026-10-17",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 0.43,
-    "learning_value": 1.1,
-    "hands_on": 1.55
-   }
-  },
-  {
-   "source": "Parallel.ai",
-   "title": "Web Infrastructure for AI Agents",
-   "url": "https://www.parallel.ai/agents",
-   "snippet": "Parallel provides web infrastructure for AI agents, offering real-time access to fresh and relevant context from the web. It enables agents to search billions of pages, extract key information, monitor changes, and conduct complex research with cited and confidence-scored outputs for enterprise workflows. It leverages specialized agents and a proprietary Web Index.",
-   "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.91,
-    "difficulty": 0.16,
-    "learning_value": 0.97,
-    "hands_on": 0.45
-   }
-  },
-  {
-   "source": "GitHub",
-   "title": "datalab-to/omni_parse_bench",
-   "url": "https://github.com/datalab-to/omni_parse_bench",
-   "snippet": "This repository hosts Datalab's open OCR and document-understanding benchmark, OmniParseBench, built around 16,288 yes-or-no tests across 2,937 pages in 92 languages. It allows users to run document-parsing benchmarks using their dataset or the provided Hugging Face dataset. The code is Apache 2.0 licensed.",
-   "score": 0,
-   "published": "2026-10-16",
+   "published": "2026-10-19",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 0.24,
-    "learning_value": 2.18,
-    "hands_on": 1.95
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "On-Policy Residual Learning for Diffusion Language Models",
-   "url": "https://arxiv.org/abs/2610.20687",
-   "snippet": "ORL (On-Policy Residual Learning) introduces a new research direction to make diffusion language models (dLLMs) significantly faster without sacrificing generation quality. With ORL and a custom inference engine, dlmrt, it achieves 2,788 tokens/s on a single RTX 5090 using LLaDA-2.1-mini. The approach focuses on training dLLMs directly on fresh trajectories generated by the current model.",
-   "score": 0,
-   "published": "2026-10-14",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.75,
-    "learning_value": 2.4,
-    "hands_on": 0.98
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "stablyai / orca",
-   "url": "https://github.com/stablyai/orca",
-   "snippet": "Orca is presented as a platform for working with a fleet of agents, supporting various coding agents like Grok Bot and Claude Code. It's designed to run any coding agent with a user's own subscription, available across desktop, mobile, and remote runtimes.",
-   "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.92,
-    "difficulty": 0.04,
-    "learning_value": 0.91,
-    "hands_on": 1.11
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "debpalash / VoiceStudio",
-   "url": "https://github.com/debpalash/VoiceStudio",
-   "snippet": "VoiceStudio is an open-source, fully-local alternative to ElevenLabs, offering features such as voice cloning, voice design, video dubbing, dictation, transcription, and audiobook creation. It supports 646 languages, aiming to provide natural voiceovers without the need for expensive recording tools.",
-   "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.97,
-    "difficulty": 0.09,
-    "learning_value": 1.53,
-    "hands_on": 1.52
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "OpenHands/OpenHands",
-   "url": "https://github.com/OpenHands/OpenHands",
-   "snippet": "OpenHands is described as a platform for AI-Driven Development. As an 'AI Repo of the Day', it signifies a tool or framework gaining significant attention for its contributions to autonomous or AI-assisted software development. README: Agent Canvas The self-hosted developer control center for coding agents and automations. Run OpenHands, Claude Code, Codex, Gemini, Pi, OpenCode, or any ACP-compatible agent across local, remote, and cloud backends. Quickstart | Docs | Self-Hosting | ACP Agents | Automations | Slack OpenHands Agent Canvas turns your coding agents into a self-hosted, always-on engineering team. It's a developer control center for starting conversations and automating everyday tasks — like generating reports that publish to Slack or automatically decomposing GitHub issues into tasks. It runs locally on your machine by default, but can connect to multiple “agent backends”, e.g. running agents in Docker containers, on VMs, or within your company infrastructure. You can optionally choose to run agents on OpenHands Cloud or OpenHands Enterprise infrastructure. Agent Canvas runs the open source OpenHands agent out-of-the-box, but can use third-party agents such as Claude Code, Codex, Gemini CLI, Pi, and OpenCode. | | | | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------",
-   "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.04,
-    "has_substance": 0.97,
-    "difficulty": 0.08,
-    "learning_value": 1.85,
-    "hands_on": 1.85
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "Comfy-Org / ComfyUI",
-   "url": "https://github.com/Comfy-Org/ComfyUI",
-   "snippet": "ComfyUI is a powerful and modular graphical user interface (GUI), API, and backend for diffusion models, featuring a node-based interface. It is highlighted as one of the fastest local inference engines available, enabling advanced model manipulation and generation.",
-   "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 0.66,
-    "learning_value": 1.86,
-    "hands_on": 1.64
-   }
-  },
-  {
-   "source": "Hugging Face",
-   "title": "nvidia/parakeet-ctc-1.1b",
-   "url": "https://huggingface.co/nvidia/parakeet-ctc-1.1b",
-   "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science. (The nvidia/parakeet-ctc-1.1b model is a large-scale Conformer-CTC speech recognition model. It is part of NVIDIA's efforts to provide high-performance, open-source speech recognition capabilities. This model offers advanced acoustic modeling for various speech-to-text applications.)",
-   "score": 0,
-   "published": "2026-10-17",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 0.79,
-    "learning_value": 1.01,
-    "hands_on": 1.46
-   },
-   "related_to": [
-    "AuroraASR-1M"
-   ]
-  },
-  {
-   "source": "Hugging Face",
-   "title": "qnguyen3/QUAN-Transcribe-1.0",
-   "url": "https://huggingface.co/qnguyen3/QUAN-Transcribe-1.0",
-   "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science. (QUAN-Transcribe-1.0 is an automatic speech recognition model for transcribing audio. It is listed as a recent model on Hugging Face, contributing to the growing ecosystem of open-source ASR solutions. This model aims to provide accurate and efficient transcription capabilities.)",
-   "score": 0,
-   "published": "2026-10-17",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.95,
-    "difficulty": 0.13,
+    "has_substance": 0.94,
+    "difficulty": 0.38,
     "learning_value": 0.96,
-    "hands_on": 1.36
+    "hands_on": 0.85
+   }
+  },
+  {
+   "source": "SSD Nodes Blog",
+   "title": "Self-host LiteLLM as your LLM gateway",
+   "url": "https://ssdnodes.com/blog/self-host-litellm-llm-gateway/",
+   "snippet": "LiteLLM is an open source LLM gateway you host yourself: one HTTP endpoint that all of your applications call, which then forwards each request to whichever provider should answer it. This enables features like virtual keys, per-key budgets, fallbacks, and pinned images, simplifying management and providing a single point for cost tracking.",
+   "score": 0,
+   "published": "2026-10-18",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 0.06,
+    "learning_value": 1.81,
+    "hands_on": 1.18
+   }
+  },
+  {
+   "source": "figshare",
+   "title": "Early Saxon Discursive Identity Revisited: Sensitivity Models and Hydro-Geographical Baselines",
+   "url": "https://figshare.com/articles/preprint/Early_Saxon_Discursive_Identity_Revisited_Sensitivity_Models_and_Hydro-Geographical_Baselines/24522432",
+   "snippet": "This supplement to the original article shifts the quantitative historiography of early Saxon ethnogenesis from purely discursive records to a hydro-geographical baseline. Spurred by a localized LLM tokenization anomaly in the gazetteer indexing the main study, a restored hybrid framework is subjected to dual sensitivity analyses.",
+   "score": 0,
+   "published": "2026-10-18",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.65,
+    "difficulty": 1.25,
+    "learning_value": 0.91,
+    "hands_on": 0.69
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Into the Unknown: Benchmarking AI agents on open scientific research problems",
+   "url": "https://huggingface.co/papers/2610.19159",
+   "snippet": "This paper introduces a new benchmark for evaluating AI agents on open scientific research problems, revealing that even leading models frequently fail to meet the specific conditions required by domain scientists or business constraints. The accompanying GitHub repository provides task materials, results, and evaluations under an Apache-2.0 license.",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 0.84,
+    "learning_value": 2.54,
+    "hands_on": 1.92
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents",
+   "url": "https://huggingface.co/papers/2610.23479",
+   "snippet": "HexaShell proposes a thin harness that allows Vision Language Model (VLM) coding agents to control a two-arm robot, including writing and fixing tools based on observed failures. The study tests the capabilities of VLMs as robot coding agents within a RoboDojo experiment, achieving a 39.7 percent success rate for new configurations.",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 1.18,
+    "learning_value": 2.1,
+    "hands_on": 0.99
    },
    "related_to": [
-    "AuroraASR-1M"
+    "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents"
    ]
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "OpenMobile-2: Building Versatile Mobile Agents with Scalable Environments and App-Native Tools",
+   "url": "https://huggingface.co/papers/2610.14157",
+   "snippet": "OpenMobile-2 introduces a near-frontier mobile agent, complete with fully open training environments and recipes, including MobileGym++ which features 35 simulated commercial applications and hybrid GUI/app-native tool usage. This infrastructure helps in measuring errors by assessing the achieved application state rather than merely individual screen actions.",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.22,
+    "learning_value": 2.71,
+    "hands_on": 1.47
+   }
   }
  ],
  "dropped": [
   {
-   "source": "GitHub Trending",
-   "title": "opencode",
-   "url": "https://github.com/anomalyco/opencode",
-   "snippet": "The open source coding agent.",
+   "source": "Microsoft Blog",
+   "title": "Agents are your newest insiders. Security must move at their speed.",
+   "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+   "snippet": "In the last few months, concerns have arisen about AI safety as a growing number of incidents were publicly disclosed. These incidents exposed how powerful models have become and how they represent a significant threat if not handled well. And with the global race on innovation, the challenge will compound as models become even more... (Agents are rapidly becoming part of how work gets done. To be most useful, they often need access to company data, applications, tools, and other agents. With that capability can come insider risk. This does not mean agents are inherently malicious.)",
    "score": 0,
-   "published": "2026-10-18",
+   "published": "2026-10-19",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.89,
-    "difficulty": 0.17,
-    "learning_value": 0.71,
-    "hands_on": 0.95
+    "has_substance": 0.07,
+    "difficulty": 0.02,
+    "learning_value": 0.4,
+    "hands_on": 0.01
    },
-   "reason": "low learning value 0.71"
-  },
-  {
-   "source": "Zscaler",
-   "title": "AI agents for MDR",
-   "url": "https://www.zscaler.com/resources/ai-agents-mdr",
-   "snippet": "Zscaler introduces AI agents for Managed Detection and Response (MDR), dynamically interacting with data and systems to execute specialized security tasks. Powered by LLMs, these agents adapt behavior based on tasking, offering a significant upgrade from rigid automated workflows and focusing on reliability over breadth.",
-   "score": 0,
-   "published": "2026-10-17",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.84,
-    "difficulty": 0.14,
-    "learning_value": 0.81,
-    "hands_on": 0.45
-   },
-   "reason": "low learning value 0.81"
+   "reason": "no substance 0.07"
   }
  ],
- "judge": "judge: 26 kept, 2 dropped (18 pairs checked)"
+ "judge": "judge: 8 kept, 1 dropped (6 pairs checked)"
 }
