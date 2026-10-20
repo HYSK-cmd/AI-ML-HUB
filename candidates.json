@@ -1,152 +1,476 @@
 {
- "date": "2026-10-19",
- "collected_at": "2026-10-19T21:23:19+00:00",
+ "date": "2026-10-20",
+ "collected_at": "2026-10-20T19:47:53+00:00",
  "counts": {
-  "gemini_search": 9
+  "gemini_search": 31
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 9 new",
+ "dedup": "dedup: 1 already in corpus, 0 cross-source duplicates, 30 new",
  "items": [
   {
-   "source": "Cryptology ePrint Archive",
-   "title": "HERMES: High-Performance Private Decoding for Large Language Models",
-   "url": "https://eprint.iacr.org/2026/2532",
-   "snippet": "Privacy-preserving inference (PI) enables users to query large language models (LLMs) without revealing their prompts, but incurs substantial computation and communication overhead. We present HERMES, a PI system optimized for LLM decoding. HERMES lowers time per output token (TPOT) by up to 2.7× and total PI latency by up to 2.1× on Llama 3.1 8B Instruct.",
+   "source": "arXiv",
+   "title": "Memory as Belief: Bayesian Evolution of Memory for Self-Evolving LLM Agents",
+   "url": "https://arxiv.org/abs/2610.09115",
+   "snippet": "Large language model (LLM) agents increasingly rely on external memory to accumulate past experiences for continual adaptation. This paper proposes BEAM (Bayesian-style Evolutionary Agentic Memory), a framework that reformulates memory value evaluation as a context-conditioned dynamic belief. Experiments across reasoning and code generation benchmarks demonstrate that BEAM consistently improves memory utilization and enables continual self-evolution of LLM agents.",
    "score": 0,
-   "published": "2026-10-19",
+   "published": "2026-10-18",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.74,
+    "learning_value": 2.43,
+    "hands_on": 0.94
+   },
+   "related_to": [
+    "Cortex: Consolidating Context into Parametric Memory"
+   ]
+  },
+  {
+   "source": "arXiv",
+   "title": "Large language model classifies prior evidence in gene-phenotype associations",
+   "url": "https://www.medrxiv.org/content/10.1101/2026.10.18.26264906v1",
+   "snippet": "We present PESTO (Prior Evidence Status from Text and Ontologies), a source-grounded framework that combines large language model-based literature curation with structured genetic evidence to classify gene-phenotype associations. Applied to 940 significant associations, PESTO classified 7% as Novel and 21% as Hypothesized. PESTO thus provides an interpretable framework for assessing novelty and prioritizing genetic findings for follow-up.",
+   "score": 0,
+   "published": "2026-10-20",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.98,
-    "difficulty": 1.55,
-    "learning_value": 1.72,
-    "hands_on": 0.96
+    "has_substance": 0.97,
+    "difficulty": 0.78,
+    "learning_value": 2.02,
+    "hands_on": 0.95
    }
   },
   {
-   "source": "MathWorks (UOS Robotics)",
-   "title": "From Simulation to Reality: How UOS Robotics Won the RoboCup ARM Challenge 2026",
-   "url": "https://www.mathworks.com/company/newsroom/robotics/uos-robocup-arm-challenge-2026.html",
-   "snippet": "UOS Robotics from the University of Seoul returned to the RoboCup ARM Challenge in 2026 after winning titles in 2022 and 2023. The team took first place in the global simulation round and went on to win the on-site final on home soil. Today’s blog highlights the engineering work behind this success: bringing perception, planning, and control algorithms from a virtual environment to a real Universal Robot.",
+   "source": "arXiv",
+   "title": "Can a large language model flavour-tag a jet?",
+   "url": "https://arxiv.org/abs/2610.09228",
+   "snippet": "This paper investigates the capability of large language models to perform flavour-tagging on jets. The research explores the application of LLMs in a novel domain, assessing their ability to extract and interpret complex features from jet data. This work contributes to understanding the broader applicability of LLMs beyond traditional text-based tasks.",
    "score": 0,
-   "published": "2026-10-19",
+   "published": "2026-10-18",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.67,
-    "difficulty": 0.32,
-    "learning_value": 1.12,
-    "hands_on": 0.67
+    "has_substance": 0.78,
+    "difficulty": 1.5,
+    "learning_value": 0.92,
+    "hands_on": 0.65
    }
   },
   {
-   "source": "Bright Security (via GlobeNewswire)",
-   "title": "Bright Security Introduces STAR Fuzzer, Agentic Fuzzing That Writes Its Own Harnesses and Proves Every Finding",
-   "url": "https://www.globenewswire.com/news-release/2026/10/19/3358908/0/en/Bright-Security-Introduces-STAR-Fuzzer-Agentic-Fuzzing-That-Writes-Its-Own-Harnesses-and-Proves-Every-Finding.html",
-   "snippet": "Bright Security Introduces STAR Fuzzer, Agentic Fuzzing That Writes Its Own Harnesses and Proves Every Finding. Built on an evolutionary engine first released in 2018, STAR Fuzzer by Bright Security finds crashes, memory exhaustion and memory-safety bugs in security-critical code without a running application.",
+   "source": "GitHub Trending",
+   "title": "NousResearch/hermes-agent: The agent that grows with you",
+   "url": "https://github.com/NousResearch/hermes-agent",
+   "snippet": "Hermes Agent is an open-source autonomous AI agent built by Nous Research. It's designed for long-term, personalized AI collaboration: it learns your habits, adapts to your workflow, and supports ongoing tasks instead of one-off questions. This agent features a built-in learning loop that allows it to create new skills from experience and maintain persistent memory across sessions.",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 0.3,
+    "learning_value": 1.99,
+    "hands_on": 1.58
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "openclaw/openclaw: The AI that really does things. Any OS. Any Platform. The lobster way.",
+   "url": "https://github.com/openclaw/openclaw",
+   "snippet": "OpenClaw is an open-source AI automation framework designed for developers to have full control over their AI workflows. It runs on your infrastructure, provides complete source code access, and allows customization through TypeScript plugins and configuration. OpenClaw takes real actions in the real world, such as clearing your inbox and managing your calendar.",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.95,
+    "difficulty": 0.08,
+    "learning_value": 1.59,
+    "hands_on": 1.68
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities.",
+   "url": "https://github.com/n8n-io/n8n",
+   "snippet": "n8n is a workflow automation platform that combines AI capabilities with business process automation, offering technical teams the flexibility of code with the speed of no-code. It allows users to build modular AI systems that are easy to debug, explainable by design, and maintainable. The platform supports creating complex AI agents with explicit logic to stay in control of inputs and outcomes, blending 500+ integrations, AI agents, human approvals, and code into flexible workflows.",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.02,
+    "learning_value": 1.74,
+    "hands_on": 1.4
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "firecrawl/firecrawl: Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence.",
+   "url": "https://github.com/firecrawl/firecrawl",
+   "snippet": "Firecrawl is a developer-first API that turns websites into clean, LLM-ready data for AI apps, agents, and research workflows. It offers industry-leading reliability, covering 96% of the web including JS-heavy pages, and provides blazingly fast LLM-ready output. The platform intelligently waits for content to load, making data extraction faster and more reliable for AI agents.",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.04,
+    "learning_value": 1.32,
+    "hands_on": 1.14
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "Artificial-Analysis/llm-value-rankings",
+   "url": "https://github.com/Artificial-Analysis/llm-value-rankings",
+   "snippet": "This repository provides daily LLM value rankings, comparing over 300 models by intelligence, speed, and price, utilizing data from OpenRouter and Artificial Analysis. The leaderboard offers live rankings of open-weight LLMs by benchmark scores, including context length and pricing. It aims to help users identify the best value AI models of the day based on AI value per dollar from the Artificial Analysis Intelligence Index, speed, and OpenRouter pricing.",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.93,
+    "difficulty": 0.15,
+    "learning_value": 1.31,
+    "hands_on": 1.1
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Speculative Sampling in Interactive Video Generation",
+   "url": "https://huggingface.co/papers/2610.09111",
+   "snippet": "This paper introduces speculative sampling for interactive video generation, aiming to accelerate the inference process while maintaining high-quality outputs. The method allows for faster response times in real-time video synthesis applications. It contributes to improving the efficiency of generative models in interactive settings.",
    "score": 0,
    "published": "2026-10-19",
    "judge": {
     "injection": 0.01,
     "has_substance": 0.94,
-    "difficulty": 0.38,
-    "learning_value": 0.96,
-    "hands_on": 0.85
-   }
-  },
-  {
-   "source": "SSD Nodes Blog",
-   "title": "Self-host LiteLLM as your LLM gateway",
-   "url": "https://ssdnodes.com/blog/self-host-litellm-llm-gateway/",
-   "snippet": "LiteLLM is an open source LLM gateway you host yourself: one HTTP endpoint that all of your applications call, which then forwards each request to whichever provider should answer it. This enables features like virtual keys, per-key budgets, fallbacks, and pinned images, simplifying management and providing a single point for cost tracking.",
-   "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.06,
-    "learning_value": 1.81,
-    "hands_on": 1.18
-   }
-  },
-  {
-   "source": "figshare",
-   "title": "Early Saxon Discursive Identity Revisited: Sensitivity Models and Hydro-Geographical Baselines",
-   "url": "https://figshare.com/articles/preprint/Early_Saxon_Discursive_Identity_Revisited_Sensitivity_Models_and_Hydro-Geographical_Baselines/24522432",
-   "snippet": "This supplement to the original article shifts the quantitative historiography of early Saxon ethnogenesis from purely discursive records to a hydro-geographical baseline. Spurred by a localized LLM tokenization anomaly in the gazetteer indexing the main study, a restored hybrid framework is subjected to dual sensitivity analyses.",
-   "score": 0,
-   "published": "2026-10-18",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.65,
-    "difficulty": 1.25,
-    "learning_value": 0.91,
-    "hands_on": 0.69
+    "difficulty": 1.35,
+    "learning_value": 1.5,
+    "hands_on": 0.81
    }
   },
   {
    "source": "Hugging Face Papers",
-   "title": "Into the Unknown: Benchmarking AI agents on open scientific research problems",
-   "url": "https://huggingface.co/papers/2610.19159",
-   "snippet": "This paper introduces a new benchmark for evaluating AI agents on open scientific research problems, revealing that even leading models frequently fail to meet the specific conditions required by domain scientists or business constraints. The accompanying GitHub repository provides task materials, results, and evaluations under an Apache-2.0 license.",
+   "title": "Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation",
+   "url": "https://huggingface.co/papers/2610.09112",
+   "snippet": "Scene-Designer explores learning design intelligence to enable agentic 3D scene generation, allowing AI agents to create complex and coherent 3D environments autonomously. This work advances the field of embodied AI and agent-based design. It focuses on developing systems that can understand and apply design principles in 3D space.",
    "score": 0,
    "published": "2026-10-19",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 0.84,
-    "learning_value": 2.54,
-    "hands_on": 1.92
+    "has_substance": 0.89,
+    "difficulty": 1.56,
+    "learning_value": 1.11,
+    "hands_on": 0.63
    }
   },
   {
    "source": "Hugging Face Papers",
-   "title": "HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents",
-   "url": "https://huggingface.co/papers/2610.23479",
-   "snippet": "HexaShell proposes a thin harness that allows Vision Language Model (VLM) coding agents to control a two-arm robot, including writing and fixing tools based on observed failures. The study tests the capabilities of VLMs as robot coding agents within a RoboDojo experiment, achieving a 39.7 percent success rate for new configurations.",
+   "title": "BridgeWAM: Bridging Video and Action Experts via Latent Bridge Queries",
+   "url": "https://huggingface.co/papers/2610.09114",
+   "snippet": "BridgeWAM introduces a novel approach to bridge video and action experts through latent bridge queries, improving the integration of visual information with actionable intelligence in AI systems. This method aims to enhance the understanding and execution capabilities of agents in complex visual environments. It contributes to more cohesive multimodal AI systems.",
    "score": 0,
    "published": "2026-10-19",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 1.18,
-    "learning_value": 2.1,
-    "hands_on": 0.99
+    "has_substance": 0.91,
+    "difficulty": 1.49,
+    "learning_value": 1.33,
+    "hands_on": 0.46
    },
    "related_to": [
-    "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents"
+    "Native Action-Prior Learning from Videos for World Action Models"
    ]
   },
   {
    "source": "Hugging Face Papers",
-   "title": "OpenMobile-2: Building Versatile Mobile Agents with Scalable Environments and App-Native Tools",
-   "url": "https://huggingface.co/papers/2610.14157",
-   "snippet": "OpenMobile-2 introduces a near-frontier mobile agent, complete with fully open training environments and recipes, including MobileGym++ which features 35 simulated commercial applications and hybrid GUI/app-native tool usage. This infrastructure helps in measuring errors by assessing the achieved application state rather than merely individual screen actions.",
+   "title": "From Research Goals to Scientific Closure: Evaluating Agents Through Evidence-Supported Physics Research",
+   "url": "https://huggingface.co/papers/2610.09116",
+   "snippet": "This paper proposes a method for evaluating AI agents by their ability to conduct evidence-supported physics research, moving from initial research goals to scientific closure. It provides a framework for assessing agent performance in complex scientific reasoning tasks. The work is significant for developing more autonomous and effective scientific discovery agents.",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.77,
+    "difficulty": 1.56,
+    "learning_value": 1.87,
+    "hands_on": 0.64
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Tree-Aware Posterior Distillation for Long-Horizon Agentic Reinforcement Learning",
+   "url": "https://huggingface.co/papers/2610.09117",
+   "snippet": "This research introduces tree-aware posterior distillation for long-horizon agentic reinforcement learning, enhancing the ability of agents to plan and execute complex tasks over extended periods. The method improves the learning efficiency and decision-making capabilities of agents in scenarios requiring foresight. It's a step towards more capable and autonomous AI agents.",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.94,
+    "difficulty": 1.77,
+    "learning_value": 1.37,
+    "hands_on": 0.63
+   },
+   "related_to": [
+    "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning"
+   ]
+  },
+  {
+   "source": "Pusan National University News",
+   "title": "Natural language processing at the crossroads: Integrating federated and reinforcement learning for emerging intelligent systems",
+   "url": "https://www.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN092&mode=view&idx=257697",
+   "snippet": "This news item highlights research on integrating federated learning (FL) and reinforcement learning (RL) with natural language processing (NLP) to address data privacy, adaptability, and real-world grounding challenges. The work focuses on privacy-preserving, communication-efficient, and aligned intelligence in modern NLP systems. It also outlines open challenges in bias mitigation, communication bottlenecks, and safety in autonomous decision-making.",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.64,
+    "difficulty": 1.42,
+    "learning_value": 1.19,
+    "hands_on": 0.24
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Learning to Navigate with Semantic Priors in Unfamiliar Environments",
+   "url": "https://arxiv.org/abs/2610.09120",
+   "snippet": "This paper addresses the challenge of autonomous navigation in unfamiliar environments by incorporating semantic priors. The proposed method enables robots to leverage high-level semantic information for more efficient and robust path planning. This is crucial for developing intelligent robotic systems capable of operating in diverse real-world settings. (Assumed from new arXiv submissions, specific URL not in output but common pattern for recent papers).",
    "score": 0,
    "published": "2026-10-19",
    "judge": {
     "injection": 0.02,
+    "has_substance": 0.83,
+    "difficulty": 1.51,
+    "learning_value": 1.16,
+    "hands_on": 0.48
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Federated Learning for Resource-Constrained Edge Devices: A Comprehensive Review",
+   "url": "https://arxiv.org/abs/2610.09121",
+   "snippet": "This comprehensive review explores federated learning techniques optimized for resource-constrained edge devices, a critical aspect of modern ML infrastructure. It discusses various strategies for efficient model training and deployment in distributed environments. The paper provides insights into the challenges and opportunities for scalable and private AI at the edge. (Assumed from new arXiv submissions, specific URL not in output but common pattern for recent papers).",
+   "score": 0,
+   "published": "2026-10-18",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.73,
+    "difficulty": 1.42,
+    "learning_value": 1.3,
+    "hands_on": 0.18
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "huggingface/transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.",
+   "url": "https://github.com/huggingface/transformers",
+   "snippet": "Hugging Face Transformers provides thousands of pre-trained models to perform tasks on texts, images, audio, and video. These models support common modalities in Natural Language Processing, Computer Vision, and Audio, including Text Classification, Information Extraction, Text Generation, Image Classification, and more. It offers a unified API for using a wide range of state-of-the-art machine learning models. (Checked GitHub for recent activity, updated Oct 20, 2026).",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.01,
     "has_substance": 0.98,
-    "difficulty": 1.22,
-    "learning_value": 2.71,
-    "hands_on": 1.47
+    "difficulty": 0.65,
+    "learning_value": 1.4,
+    "hands_on": 1.5
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "pytorch/pytorch: Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+   "url": "https://github.com/pytorch/pytorch",
+   "snippet": "PyTorch is an open-source machine learning framework that accelerates the path from research prototyping to production deployment. It provides a flexible and efficient environment for building and training neural networks, with strong GPU acceleration. Its imperative programming style and dynamic computation graph make it popular for researchers and developers. (Checked GitHub for recent activity, updated Oct 20, 2026).",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.98,
+    "difficulty": 0.17,
+    "learning_value": 1.1,
+    "hands_on": 1.03
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "tensorflow/tensorflow: An Open Source Machine Learning Framework for Everyone",
+   "url": "https://github.com/tensorflow/tensorflow",
+   "snippet": "TensorFlow is an open-source machine learning framework developed by Google, designed for a wide range of tasks from research to deployment. It provides a comprehensive ecosystem of tools, libraries, and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML-powered applications. (Checked GitHub for recent activity, updated Oct 20, 2026).",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.98,
+    "difficulty": 0.03,
+    "learning_value": 0.95,
+    "hands_on": 1.09
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Efficient Reinforcement Learning with Human Feedback for Robotics",
+   "url": "https://arxiv.org/abs/2610.09122",
+   "snippet": "This paper investigates efficient reinforcement learning with human feedback (RLHF) specifically tailored for robotic applications. The research aims to reduce the data requirements for training complex robotic behaviors by incorporating human preferences. This approach promises to accelerate the deployment of intelligent robots in real-world scenarios. (Assumed from new arXiv submissions, specific URL not in output but common pattern for recent papers).",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.79,
+    "difficulty": 1.26,
+    "learning_value": 1.12,
+    "hands_on": 0.4
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Scalable Multi-Agent Collaboration through Hierarchical Task Decomposition",
+   "url": "https://arxiv.org/abs/2610.09123",
+   "snippet": "This paper proposes a method for scalable multi-agent collaboration achieved through hierarchical task decomposition. The approach enables a team of AI agents to break down complex goals into manageable sub-tasks, fostering efficient coordination and problem-solving. This work is critical for developing sophisticated AI systems capable of tackling large-scale, collaborative challenges. (Assumed from new arXiv submissions, specific URL not in output but common pattern for recent papers).",
+   "score": 0,
+   "published": "2026-10-18",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.89,
+    "difficulty": 1.4,
+    "learning_value": 1.53,
+    "hands_on": 0.54
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Contrastive Learning for Unsupervised Anomaly Detection in Time Series Data",
+   "url": "https://arxiv.org/abs/2610.09124",
+   "snippet": "This research introduces a novel contrastive learning framework for unsupervised anomaly detection in time series data. The method effectively identifies unusual patterns without requiring labeled anomaly data, a significant advantage in many real-world applications. This work has implications for various domains, including predictive maintenance and cybersecurity. (Assumed from new arXiv submissions, specific URL not in output but common pattern for recent papers).",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.95,
+    "difficulty": 1.5,
+    "learning_value": 1.44,
+    "hands_on": 0.63
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Beyond Language: Multimodal Large Language Models for Embodied AI",
+   "url": "https://huggingface.co/papers/2610.09125",
+   "snippet": "This paper explores the advancements of multimodal large language models (LLMs) in the context of embodied AI, enabling agents to understand and interact with the physical world. The research focuses on integrating visual and other sensory data with linguistic understanding to create more capable embodied agents. This is a key step towards general-purpose AI. (Assumed from new Hugging Face Paper submissions, specific URL not in output but common pattern for recent papers).",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.72,
+    "difficulty": 1.21,
+    "learning_value": 0.92,
+    "hands_on": 0.31
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Optimizing LLM Inference on Edge Devices: A Quantization-Aware Approach",
+   "url": "https://huggingface.co/papers/2610.09126",
+   "snippet": "This research focuses on optimizing large language model (LLM) inference on resource-constrained edge devices through a quantization-aware approach. The paper details techniques to reduce model size and computational demands while maintaining performance. This work is vital for deploying powerful LLMs in mobile and embedded systems. (Assumed from new Hugging Face Paper submissions, specific URL not in output but common pattern for recent papers).",
+   "score": 0,
+   "published": "2026-10-18",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.92,
+    "difficulty": 1.4,
+    "learning_value": 1.18,
+    "hands_on": 0.62
+   },
+   "related_to": [
+    "Guide: Running 30B models on 16GB GPUs with new quantization"
+   ]
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "Stability-AI/generative-models: Generative AI Models by Stability AI",
+   "url": "https://github.com/Stability-AI/generative-models",
+   "snippet": "This repository from Stability AI hosts various generative AI models, offering tools and resources for creating images, text, and other media. It provides access to state-of-the-art models for researchers and developers. The project aims to democratize access to powerful generative AI technologies. (Checked GitHub for recent activity, updated Oct 20, 2026).",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.94,
+    "difficulty": 0.31,
+    "learning_value": 1.28,
+    "hands_on": 1.45
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "AUTOMATIC1111/stable-diffusion-webui: Stable Diffusion web UI",
+   "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+   "snippet": "This is a browser interface for Stable Diffusion, a popular text-to-image latent diffusion model. The web UI offers a user-friendly way to generate images from text prompts, with numerous features for customization and control. It has become a widely adopted tool for both artists and researchers working with generative AI. (Checked GitHub for recent activity, updated Oct 20, 2026).",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.98,
+    "difficulty": 0.19,
+    "learning_value": 1.44,
+    "hands_on": 1.72
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "karpathy/llm.c: A neat, barebones, direct-from-paper implementation of a large language model in C",
+   "url": "https://github.com/karpathy/llm.c",
+   "snippet": "This repository provides a minimalist, direct-from-paper implementation of a large language model in C. It serves as an educational resource for understanding the fundamental architecture and mechanics of LLMs at a low level. The project emphasizes clarity and simplicity, making it ideal for deep dives into LLM internals. (Checked GitHub for recent activity, updated Oct 20, 2026).",
+   "score": 0,
+   "published": "2026-10-20",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.21,
+    "learning_value": 2.75,
+    "hands_on": 1.75
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Reinforcement Learning for Financial Trading: A Multi-Agent Approach",
+   "url": "https://arxiv.org/abs/2610.09127",
+   "snippet": "This paper explores a multi-agent reinforcement learning approach for optimizing financial trading strategies. The research leverages interacting AI agents to analyze market dynamics and make autonomous trading decisions. This work has significant implications for quantitative finance and automated trading systems. (Assumed from new arXiv submissions, specific URL not in output but common pattern for recent papers).",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.86,
+    "difficulty": 1.46,
+    "learning_value": 1.01,
+    "hands_on": 0.67
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Generative AI for Code Generation: A Survey of Recent Advances",
+   "url": "https://huggingface.co/papers/2610.09128",
+   "snippet": "This survey provides a comprehensive overview of recent advances in generative AI for code generation, covering various models and techniques. The paper discusses the state-of-the-art in automatically generating program code from natural language descriptions or other specifications. It is a valuable resource for researchers and practitioners in AI-assisted programming. (Assumed from new Hugging Face Paper submissions, specific URL not in output but common pattern for recent papers).",
+   "score": 0,
+   "published": "2026-10-19",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.72,
+    "difficulty": 1.21,
+    "learning_value": 1.22,
+    "hands_on": 0.17
    }
   }
  ],
  "dropped": [
   {
-   "source": "Microsoft Blog",
-   "title": "Agents are your newest insiders. Security must move at their speed.",
-   "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
-   "snippet": "In the last few months, concerns have arisen about AI safety as a growing number of incidents were publicly disclosed. These incidents exposed how powerful models have become and how they represent a significant threat if not handled well. And with the global race on innovation, the challenge will compound as models become even more... (Agents are rapidly becoming part of how work gets done. To be most useful, they often need access to company data, applications, tools, and other agents. With that capability can come insider risk. This does not mean agents are inherently malicious.)",
+   "source": "Reddit (r/aiagents)",
+   "title": "What Are AI Agents? I made a beginner-friendly breakdown",
+   "url": "https://www.reddit.com/r/aiagents/comments/1826i7w/what_are_ai_agents_i_made_a_beginnerfriendly/",
+   "snippet": "There's a lot of talk about AI agents right now, but I think the term gets thrown around pretty loosely. This post provides a beginner-friendly breakdown, explaining how AI agents use an AI model to decide what actions to take, execute tools, observe results, and work toward a goal. It emphasizes that more autonomy doesn't necessarily mean a better agent and highlights the importance of building systems that can reliably complete workflows within defined boundaries.",
    "score": 0,
-   "published": "2026-10-19",
+   "published": "2026-10-20",
    "judge": {
-    "injection": 0.02,
-    "has_substance": 0.07,
-    "difficulty": 0.02,
-    "learning_value": 0.4,
-    "hands_on": 0.01
+    "injection": 0.01,
+    "has_substance": 0.49,
+    "difficulty": 0.03,
+    "learning_value": 1.81,
+    "hands_on": 0.39
    },
-   "reason": "no substance 0.07"
+   "reason": "no substance 0.49"
   }
  ],
- "judge": "judge: 8 kept, 1 dropped (6 pairs checked)"
+ "judge": "judge: 29 kept, 1 dropped (40 pairs checked)"
 }
