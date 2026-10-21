@@ -1,68 +1,69 @@
 {
-  "date": "2026-10-20",
-  "headline": "오늘은 스스로 학습하고 진화하는 AI 에이전트와 LLM의 핵심 구현 원리를 깊이 탐구해 봅니다.",
-  "items": [
-    {
-      "title": "NousResearch/hermes-agent: The agent that grows with you",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "source": "GitHub Trending",
-      "categories": [
-        "Agents",
-        "Open Source & Tools"
-      ],
-      "level": "beginner",
-      "headline_ko": "에르메스 에이전트: 자율 학습 AI",
-      "summary": "Nous Research가 개발한 오픈소스 자율 AI 에이전트인 Hermes Agent는 사용자와 장기적인 개인 맞춤형 협업을 위해 설계되었습니다. 이 에이전트는 사용자의 습관을 학습하고 워크플로우에 적응하며, 단발성 질문이 아닌 지속적인 작업을 지원합니다. 내장된 학습 루프를 통해 경험을 바탕으로 새로운 기술을 생성하고 세션 간에 지속적인 메모리를 유지합니다.",
-      "why": "이 에이전트는 AI가 실제 환경에서 어떻게 개인화되고 진화하는지 직접 경험할 수 있는 좋은 기회입니다. 오픈소스로 제공되어 직접 실행해보고 에이전트의 작동 원리를 이해할 수 있습니다.",
-      "keywords": [
-        "AI 에이전트",
-        "오픈소스",
-        "학습 루프"
-      ],
-      "narration": "첫 번째는 Nous Research의 Hermes Agent입니다. 이 오픈소스 자율 AI 에이전트는 장기적인 개인 맞춤형 협업을 목표로 합니다. 사용자 습관을 학습하고 지속적인 기억을 유지하며, 경험을 통해 새로운 기술을 스스로 생성합니다. 직접 실행해보며 AI 에이전트의 실용적인 진화를 경험해 보세요."
-    },
-    {
-      "title": "karpathy/llm.c: A neat, barebones, direct-from-paper implementation of a large language model in C",
-      "url": "https://github.com/karpathy/llm.c",
-      "source": "GitHub Trending",
-      "categories": [
-        "LLM",
-        "ML Systems & Infra",
-        "Research Fundamentals",
-        "Open Source & Tools"
-      ],
-      "level": "intermediate",
-      "headline_ko": "카르파시의 LLM.c: LLM 심층 이해",
-      "summary": "이 저장소는 대규모 언어 모델(LLM)을 C 언어로 최소한의 핵심만을 구현한 프로젝트입니다. LLM의 근본적인 아키텍처와 작동 방식을 저수준에서 이해하기 위한 교육 자료로 사용됩니다. 명확성과 단순성에 중점을 두어 LLM 내부를 깊이 파고들기에 이상적입니다.",
-      "why": "복잡한 프레임워크 뒤에 숨겨진 LLM의 실제 작동 방식을 C 코드 수준에서 직접 이해할 수 있습니다. 이를 통해 모델의 성능 최적화와 시스템 설계에 대한 통찰력을 얻을 수 있습니다.",
-      "keywords": [
-        "LLM",
-        "C/CUDA",
-        "GPT-2/3",
-        "내부 구현"
-      ],
-      "narration": "다음은 LLM의 내부를 저수준에서 탐구할 수 있는 karpathy/llm.c입니다. PyTorch 없이 순수 C/CUDA로 대규모 언어 모델을 구현한 프로젝트입니다. GPT-2 및 GPT-3 재현에 초점을 맞춰 교육 자료로 활용도가 높습니다. LLM의 핵심 아키텍처와 작동 방식을 깊이 이해하는 데 큰 도움이 될 것입니다."
-    },
-    {
-      "title": "Memory as Belief: Bayesian Evolution of Memory for Self-Evolving LLM Agents",
-      "url": "https://arxiv.org/abs/2610.09115",
-      "source": "arXiv",
-      "categories": [
-        "Agents",
-        "LLM",
-        "Research Fundamentals"
-      ],
-      "level": "advanced",
-      "headline_ko": "LLM 에이전트 기억의 베이지안 진화",
-      "summary": "대규모 언어 모델(LLM) 에이전트는 지속적인 적응을 위해 과거 경험을 축적하는 외부 메모리에 점점 더 의존하고 있습니다. 이 논문은 메모리 가치 평가를 문맥 조건부 동적 신념으로 재구성하는 BEAM 프레임워크를 제안합니다. 추론 및 코드 생성 벤치마크 실험에서 BEAM은 메모리 활용도를 꾸준히 개선하고 LLM 에이전트의 지속적인 자체 진화를 가능하게 합니다.",
-      "why": "LLM 에이전트가 시간이 지남에 따라 더 효과적으로 학습하고 진화하는 방법을 탐구하는 중요한 연구입니다. 기억 관리와 베이지안 접근 방식의 결합을 통해 에이전트의 성능 향상 가능성을 엿볼 수 있습니다.",
-      "keywords": [
-        "LLM 에이전트",
-        "기억",
-        "베이지안",
-        "자기 진화"
-      ],
-      "narration": "마지막으로, LLM 에이전트의 기억과 진화에 관한 고급 연구입니다. 이 논문은 BEAM이라는 프레임워크를 제안하며, 에이전트의 기억 평가를 동적 신념으로 재구성합니다. 이는 LLM 에이전트가 지속적으로 스스로 진화하고 적응하는 데 필수적인 핵심 기술입니다. 기억 메커니즘 개선을 통해 에이전트 성능을 크게 향상시킬 수 있음을 보여줍니다."
-    }
-  ]
+ "date": "2026-10-20",
+ "headline": "오늘은 스스로 학습하고 진화하는 AI 에이전트와 LLM의 핵심 구현 원리를 깊이 탐구해 봅니다.",
+ "items": [
+  {
+   "title": "NousResearch/hermes-agent: The agent that grows with you",
+   "url": "https://github.com/NousResearch/hermes-agent",
+   "source": "GitHub Trending",
+   "categories": [
+    "Agents",
+    "Open Source & Tools"
+   ],
+   "level": "beginner",
+   "headline_ko": "에르메스 에이전트: 자율 학습 AI",
+   "summary": "Nous Research가 개발한 오픈소스 자율 AI 에이전트인 Hermes Agent는 사용자와 장기적인 개인 맞춤형 협업을 위해 설계되었습니다. 이 에이전트는 사용자의 습관을 학습하고 워크플로우에 적응하며, 단발성 질문이 아닌 지속적인 작업을 지원합니다. 내장된 학습 루프를 통해 경험을 바탕으로 새로운 기술을 생성하고 세션 간에 지속적인 메모리를 유지합니다.",
+   "why": "이 에이전트는 AI가 실제 환경에서 어떻게 개인화되고 진화하는지 직접 경험할 수 있는 좋은 기회입니다. 오픈소스로 제공되어 직접 실행해보고 에이전트의 작동 원리를 이해할 수 있습니다.",
+   "keywords": [
+    "AI 에이전트",
+    "오픈소스",
+    "학습 루프"
+   ],
+   "narration": "첫 번째는 Nous Research의 Hermes Agent입니다. 이 오픈소스 자율 AI 에이전트는 장기적인 개인 맞춤형 협업을 목표로 합니다. 사용자 습관을 학습하고 지속적인 기억을 유지하며, 경험을 통해 새로운 기술을 스스로 생성합니다. 직접 실행해보며 AI 에이전트의 실용적인 진화를 경험해 보세요."
+  },
+  {
+   "title": "karpathy/llm.c: A neat, barebones, direct-from-paper implementation of a large language model in C",
+   "url": "https://github.com/karpathy/llm.c",
+   "source": "GitHub Trending",
+   "categories": [
+    "LLM",
+    "ML Systems & Infra",
+    "Research Fundamentals",
+    "Open Source & Tools"
+   ],
+   "level": "intermediate",
+   "headline_ko": "카르파시의 LLM.c: LLM 심층 이해",
+   "summary": "이 저장소는 대규모 언어 모델(LLM)을 C 언어로 최소한의 핵심만을 구현한 프로젝트입니다. LLM의 근본적인 아키텍처와 작동 방식을 저수준에서 이해하기 위한 교육 자료로 사용됩니다. 명확성과 단순성에 중점을 두어 LLM 내부를 깊이 파고들기에 이상적입니다.",
+   "why": "복잡한 프레임워크 뒤에 숨겨진 LLM의 실제 작동 방식을 C 코드 수준에서 직접 이해할 수 있습니다. 이를 통해 모델의 성능 최적화와 시스템 설계에 대한 통찰력을 얻을 수 있습니다.",
+   "keywords": [
+    "LLM",
+    "C/CUDA",
+    "GPT-2/3",
+    "내부 구현"
+   ],
+   "narration": "다음은 LLM의 내부를 저수준에서 탐구할 수 있는 karpathy/llm.c입니다. PyTorch 없이 순수 C/CUDA로 대규모 언어 모델을 구현한 프로젝트입니다. GPT-2 및 GPT-3 재현에 초점을 맞춰 교육 자료로 활용도가 높습니다. LLM의 핵심 아키텍처와 작동 방식을 깊이 이해하는 데 큰 도움이 될 것입니다."
+  },
+  {
+   "title": "Memory as Belief: Bayesian Evolution of Memory for Self-Evolving LLM Agents",
+   "url": "https://arxiv.org/abs/2610.09115",
+   "source": "arXiv",
+   "categories": [
+    "Agents",
+    "LLM",
+    "Research Fundamentals"
+   ],
+   "level": "advanced",
+   "headline_ko": "LLM 에이전트 기억의 베이지안 진화",
+   "summary": "대규모 언어 모델(LLM) 에이전트는 지속적인 적응을 위해 과거 경험을 축적하는 외부 메모리에 점점 더 의존하고 있습니다. 이 논문은 메모리 가치 평가를 문맥 조건부 동적 신념으로 재구성하는 BEAM 프레임워크를 제안합니다. 추론 및 코드 생성 벤치마크 실험에서 BEAM은 메모리 활용도를 꾸준히 개선하고 LLM 에이전트의 지속적인 자체 진화를 가능하게 합니다.",
+   "why": "LLM 에이전트가 시간이 지남에 따라 더 효과적으로 학습하고 진화하는 방법을 탐구하는 중요한 연구입니다. 기억 관리와 베이지안 접근 방식의 결합을 통해 에이전트의 성능 향상 가능성을 엿볼 수 있습니다.",
+   "keywords": [
+    "LLM 에이전트",
+    "기억",
+    "베이지안",
+    "자기 진화"
+   ],
+   "narration": "마지막으로, LLM 에이전트의 기억과 진화에 관한 고급 연구입니다. 이 논문은 BEAM이라는 프레임워크를 제안하며, 에이전트의 기억 평가를 동적 신념으로 재구성합니다. 이는 LLM 에이전트가 지속적으로 스스로 진화하고 적응하는 데 필수적인 핵심 기술입니다. 기억 메커니즘 개선을 통해 에이전트 성능을 크게 향상시킬 수 있음을 보여줍니다."
+  }
+ ],
+ "video": "videos/2026-10-20.mp4"
 }
