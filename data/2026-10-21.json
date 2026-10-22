@@ -1,70 +1,71 @@
 {
-  "date": "2026-10-21",
-  "headline": "AI 에이전트 평가, LLM 문체 교정 및 전문 지식 통합",
-  "items": [
-    {
-      "title": "Introducing Scope: Open-source evaluation for AI coding agents",
-      "url": "https://opensource.microsoft.com/blog/2026/10/19/introducing-scope-open-source-evaluation-for-ai-coding-agents/",
-      "source": "Microsoft Research",
-      "categories": [
-        "Agents",
-        "ML Systems & Infra",
-        "Open Source & Tools"
-      ],
-      "level": "beginner",
-      "headline_ko": "AI 코딩 에이전트 평가",
-      "summary": "마이크로소프트가 AI 코딩 에이전트의 개발자 경험(DevAx)을 개선하기 위한 오픈 소스 플랫폼 'Scope'를 공개했습니다. Scope는 반복 가능한 실험을 통해 에이전트 행동을 평가하고, LLM 기반 Judge 서비스를 활용하여 에이전트의 출력이 요구사항을 얼마나 충족하는지 분석합니다. 이를 통해 문서, SDK, 툴링 등 제품 개선점을 식별하고 지속적인 학습 루프를 지원합니다.",
-      "why": "이 플랫폼은 AI 에이전트가 소프트웨어를 사용하는 방식을 이해하고 개선하는 데 실질적인 도움을 줍니다. 학생들은 실제 산업에서 에이전트 평가가 어떻게 이루어지는지 배우고, 오픈 소스 도구를 활용하여 에이전트 개발 역량을 강화할 수 있습니다.",
-      "keywords": [
-        "AI agent evaluation",
-        "open source",
-        "DevAx",
-        "Scope"
-      ],
-      "narration": "마이크로소프트가 AI 코딩 에이전트 평가를 위한 오픈 소스 플랫폼 'Scope'를 출시했습니다. 개발자 에이전트 경험, 즉 DevAx 개선을 목표로 하는데요. 이 플랫폼은 에이전트의 행동을 분석해 문서나 SDK 같은 제품 개선점을 찾아내는 데 도움을 줍니다. 실제 AI 에이전트의 성능을 어떻게 평가하고 개선하는지 배울 수 있는 좋은 기회입니다."
-    },
-    {
-      "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
-      "url": "https://daily.dev/posts/show-hn-qwen3-4b-with-the-ai-writing-tics-trained-out-qllmcxupg",
-      "source": "Hacker News",
-      "categories": [
-        "LLM",
-        "Open Source & Tools"
-      ],
-      "level": "intermediate",
-      "headline_ko": "Qwen3-4B AI 문체 교정",
-      "summary": "한 개발자가 MacBook Air에서 Qwen3-4B-Instruct 모델을 파인튜닝하여 AI 특유의 문체(em dash, 'not X, but Y' 구문, 세 가지 목록 나열 등)를 제거하는 데 성공했습니다. 3단계 증류 파이프라인을 사용하여 'slop-detector' 점수를 1000단어당 121에서 12.5로 대폭 낮추면서도, 사실 정확도와 작업 적합성을 유지했습니다. 모델과 LoRA 어댑터는 Hugging Face에 공개되어 있습니다.",
-      "why": "LLM이 생성하는 텍스트의 품질을 향상시키기 위한 실제적인 파인튜닝 접근 방식을 이해할 수 있습니다. 한정된 리소스에서 오픈 소스 LLM을 개선하는 기술적 노하우와 모델 스타일 제어의 중요성을 배울 수 있습니다.",
-      "keywords": [
-        "LLM fine-tuning",
-        "AI writing tics",
-        "Qwen3-4B",
-        "distillation",
-        "Ollama"
-      ],
-      "narration": "한 개발자가 Qwen3-4B 모델을 파인튜닝해 AI 특유의 어색한 문체를 제거했습니다. 'em dash'나 특정 구문 같은 AI 문체 습관을 성공적으로 줄였는데요. MacBook Air 같은 개인 장비에서 증류 파이프라인을 사용해 이루어낸 성과입니다. LLM의 텍스트 스타일을 섬세하게 제어하는 방법을 엿볼 수 있습니다."
-    },
-    {
-      "title": "How to Build AI Agents by Augmenting LLMs with Codified Human Expert Domain Knowledge? A Software Engineering Framework",
-      "url": "https://research.chalmers.se/en/publication/554463",
-      "source": "Chalmers University",
-      "categories": [
-        "Agents",
-        "ML Systems & Infra",
-        "Research Fundamentals"
-      ],
-      "level": "advanced",
-      "headline_ko": "LLM 기반 에이전트 지식 통합",
-      "summary": "이 논문은 LLM 기반 AI 에이전트에 인간 전문가의 도메인 지식을 통합하는 소프트웨어 공학 프레임워크를 제안합니다. 시뮬레이션 데이터 시각화 분야의 산업 사례 연구를 통해, LLM에 요청 분류기, 코드 생성을 위한 RAG 시스템, 코드화된 전문가 규칙, 시각화 설계 원칙을 결합하여 자율적이고 반응적이며 능동적이고 사회적인 에이전트를 구축합니다. 이 접근 방식은 비전문가도 전문가 수준의 성과를 달성하도록 돕습니다.",
-      "why": "복잡한 도메인에서 LLM 기반 에이전트의 성능을 전문가 수준으로 끌어올리는 시스템 설계 방법론을 심도 있게 이해할 수 있습니다. RAG, 규칙 기반 시스템 등 다양한 AI 기술을 통합하여 실제 문제를 해결하는 고급 에이전트 구축에 대한 통찰을 얻을 수 있습니다.",
-      "keywords": [
-        "AI agent",
-        "domain knowledge",
-        "software engineering framework",
-        "LLM augmentation",
-        "RAG"
-      ],
-      "narration": "인간 전문가의 지식을 AI 에이전트에 통합하는 소프트웨어 공학 프레임워크에 대한 논문입니다. LLM에 요청 분류기, RAG, 전문가 규칙 등을 결합해 시뮬레이션 데이터 시각화 에이전트를 만드는데요. 이 방법을 통해 비전문가도 전문가 수준의 성과를 낼 수 있음을 보여줍니다. 복잡한 도메인에서 에이전트 성능을 극대화하는 방법을 탐구합니다."
-    }
-  ]
+ "date": "2026-10-21",
+ "headline": "AI 에이전트 평가, LLM 문체 교정 및 전문 지식 통합",
+ "items": [
+  {
+   "title": "Introducing Scope: Open-source evaluation for AI coding agents",
+   "url": "https://opensource.microsoft.com/blog/2026/10/19/introducing-scope-open-source-evaluation-for-ai-coding-agents/",
+   "source": "Microsoft Research",
+   "categories": [
+    "Agents",
+    "ML Systems & Infra",
+    "Open Source & Tools"
+   ],
+   "level": "beginner",
+   "headline_ko": "AI 코딩 에이전트 평가",
+   "summary": "마이크로소프트가 AI 코딩 에이전트의 개발자 경험(DevAx)을 개선하기 위한 오픈 소스 플랫폼 'Scope'를 공개했습니다. Scope는 반복 가능한 실험을 통해 에이전트 행동을 평가하고, LLM 기반 Judge 서비스를 활용하여 에이전트의 출력이 요구사항을 얼마나 충족하는지 분석합니다. 이를 통해 문서, SDK, 툴링 등 제품 개선점을 식별하고 지속적인 학습 루프를 지원합니다.",
+   "why": "이 플랫폼은 AI 에이전트가 소프트웨어를 사용하는 방식을 이해하고 개선하는 데 실질적인 도움을 줍니다. 학생들은 실제 산업에서 에이전트 평가가 어떻게 이루어지는지 배우고, 오픈 소스 도구를 활용하여 에이전트 개발 역량을 강화할 수 있습니다.",
+   "keywords": [
+    "AI agent evaluation",
+    "open source",
+    "DevAx",
+    "Scope"
+   ],
+   "narration": "마이크로소프트가 AI 코딩 에이전트 평가를 위한 오픈 소스 플랫폼 'Scope'를 출시했습니다. 개발자 에이전트 경험, 즉 DevAx 개선을 목표로 하는데요. 이 플랫폼은 에이전트의 행동을 분석해 문서나 SDK 같은 제품 개선점을 찾아내는 데 도움을 줍니다. 실제 AI 에이전트의 성능을 어떻게 평가하고 개선하는지 배울 수 있는 좋은 기회입니다."
+  },
+  {
+   "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
+   "url": "https://daily.dev/posts/show-hn-qwen3-4b-with-the-ai-writing-tics-trained-out-qllmcxupg",
+   "source": "Hacker News",
+   "categories": [
+    "LLM",
+    "Open Source & Tools"
+   ],
+   "level": "intermediate",
+   "headline_ko": "Qwen3-4B AI 문체 교정",
+   "summary": "한 개발자가 MacBook Air에서 Qwen3-4B-Instruct 모델을 파인튜닝하여 AI 특유의 문체(em dash, 'not X, but Y' 구문, 세 가지 목록 나열 등)를 제거하는 데 성공했습니다. 3단계 증류 파이프라인을 사용하여 'slop-detector' 점수를 1000단어당 121에서 12.5로 대폭 낮추면서도, 사실 정확도와 작업 적합성을 유지했습니다. 모델과 LoRA 어댑터는 Hugging Face에 공개되어 있습니다.",
+   "why": "LLM이 생성하는 텍스트의 품질을 향상시키기 위한 실제적인 파인튜닝 접근 방식을 이해할 수 있습니다. 한정된 리소스에서 오픈 소스 LLM을 개선하는 기술적 노하우와 모델 스타일 제어의 중요성을 배울 수 있습니다.",
+   "keywords": [
+    "LLM fine-tuning",
+    "AI writing tics",
+    "Qwen3-4B",
+    "distillation",
+    "Ollama"
+   ],
+   "narration": "한 개발자가 Qwen3-4B 모델을 파인튜닝해 AI 특유의 어색한 문체를 제거했습니다. 'em dash'나 특정 구문 같은 AI 문체 습관을 성공적으로 줄였는데요. MacBook Air 같은 개인 장비에서 증류 파이프라인을 사용해 이루어낸 성과입니다. LLM의 텍스트 스타일을 섬세하게 제어하는 방법을 엿볼 수 있습니다."
+  },
+  {
+   "title": "How to Build AI Agents by Augmenting LLMs with Codified Human Expert Domain Knowledge? A Software Engineering Framework",
+   "url": "https://research.chalmers.se/en/publication/554463",
+   "source": "Chalmers University",
+   "categories": [
+    "Agents",
+    "ML Systems & Infra",
+    "Research Fundamentals"
+   ],
+   "level": "advanced",
+   "headline_ko": "LLM 기반 에이전트 지식 통합",
+   "summary": "이 논문은 LLM 기반 AI 에이전트에 인간 전문가의 도메인 지식을 통합하는 소프트웨어 공학 프레임워크를 제안합니다. 시뮬레이션 데이터 시각화 분야의 산업 사례 연구를 통해, LLM에 요청 분류기, 코드 생성을 위한 RAG 시스템, 코드화된 전문가 규칙, 시각화 설계 원칙을 결합하여 자율적이고 반응적이며 능동적이고 사회적인 에이전트를 구축합니다. 이 접근 방식은 비전문가도 전문가 수준의 성과를 달성하도록 돕습니다.",
+   "why": "복잡한 도메인에서 LLM 기반 에이전트의 성능을 전문가 수준으로 끌어올리는 시스템 설계 방법론을 심도 있게 이해할 수 있습니다. RAG, 규칙 기반 시스템 등 다양한 AI 기술을 통합하여 실제 문제를 해결하는 고급 에이전트 구축에 대한 통찰을 얻을 수 있습니다.",
+   "keywords": [
+    "AI agent",
+    "domain knowledge",
+    "software engineering framework",
+    "LLM augmentation",
+    "RAG"
+   ],
+   "narration": "인간 전문가의 지식을 AI 에이전트에 통합하는 소프트웨어 공학 프레임워크에 대한 논문입니다. LLM에 요청 분류기, RAG, 전문가 규칙 등을 결합해 시뮬레이션 데이터 시각화 에이전트를 만드는데요. 이 방법을 통해 비전문가도 전문가 수준의 성과를 낼 수 있음을 보여줍니다. 복잡한 도메인에서 에이전트 성능을 극대화하는 방법을 탐구합니다."
+  }
+ ],
+ "video": "videos/2026-10-21.mp4"
 }
