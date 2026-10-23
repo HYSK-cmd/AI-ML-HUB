@@ -1,111 +1,57 @@
 {
- "date": "2026-10-22",
- "collected_at": "2026-10-22T20:27:36+00:00",
+ "date": "2026-10-23",
+ "collected_at": "2026-10-23T19:44:01+00:00",
  "counts": {
-  "gemini_search": 6
+  "gemini_search": 3
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 6 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 3 new",
  "items": [
   {
    "source": "GitHub",
-   "title": "wadeKeith/Awesome-Embodied-AI: Curated embodied AI list: surveys, VLA models, datasets, simulators, humanoids, robot learning, and safety resources.",
-   "url": "https://github.com/wadeKeith/Awesome-Embodied-AI",
-   "snippet": "Curated embodied AI list: surveys, VLA models, datasets, simulators, humanoids, robot learning, and safety resources. It includes 430+ curated resources across 10 major research and tooling tracks. This community-maintained list provides fast entry points for newcomers and practical links for researchers and builders.",
+   "title": "SnailSploit/Claude-Red",
+   "url": "https://github.com/SnailSploit/Claude-Red",
+   "snippet": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a s... (claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.)",
    "score": 0,
-   "published": "2026-10-22",
+   "published": "2026-10-23",
    "judge": {
-    "injection": 0.02,
-    "has_substance": 0.83,
-    "difficulty": 0.96,
-    "learning_value": 1.49,
-    "hands_on": 0.44
-   },
-   "related_to": [
-    "Embodied AI Hardware for Robot Learning"
-   ]
-  },
-  {
-   "source": "OpenCode",
-   "title": "Agents - OpenCode",
-   "url": "https://docs.opencode.com/agents",
-   "snippet": "Agents are specialized AI assistants that can be configured for specific tasks and workflows. They allow you to create focused tools with custom prompts, models, and tool access. The plan agent can be used to analyze code and review suggestions without making any code changes.",
-   "score": 0,
-   "published": "2026-10-22",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.93,
-    "difficulty": 0.04,
-    "learning_value": 1.03,
-    "hands_on": 0.53
-   }
-  },
-  {
-   "source": "Stanford Report",
-   "title": "Researchers open autonomous robotics learning to the world | Stanford Report",
-   "url": "https://news.stanford.edu/2026/10/22/researchers-open-autonomous-robotics-learning-world/",
-   "snippet": "A free online textbook, video lectures, and hands-on resources are making cutting-edge autonomy knowledge accessible to developers, researchers, and robot enthusiasts everywhere. Principles of Robot Autonomy (PoRA) is a new textbook inspired by a course series taught at Stanford since 2017. PoRA aims to bridge the divide, bringing classical robotics and modern AI together in a unified framework.",
-   "score": 0,
-   "published": "2026-10-22",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.91,
-    "difficulty": 0.07,
-    "learning_value": 1.62,
-    "hands_on": 1.1
-   }
-  },
-  {
-   "source": "AWS Machine Learning Blog",
-   "title": "Adaptive agentic intelligence framework using Strands Agents",
-   "url": "https://aws.amazon.com/blogs/machine-learning/adaptive-agentic-intelligence-framework-using-strands-agents/",
-   "snippet": "The Adaptive Agentic Intelligence Framework (AAIF), built with Strands Agents, utilizes small language models (SLMs) to handle routine tasks locally, rather than routing all requests to a single large, expensive model. This approach aims to reduce API costs and maintain low latency for local operations. It builds on research suggesting SLMs are sufficiently powerful and economical for many agentic system invocations.",
-   "score": 0,
-   "published": "2026-10-21",
-   "judge": {
-    "injection": 0.02,
+    "injection": 0.14,
     "has_substance": 0.96,
-    "difficulty": 0.23,
-    "learning_value": 1.74,
-    "hands_on": 0.95
-   },
-   "related_to": [
-    "msitarzewski / agency-agents"
-   ]
-  }
- ],
- "dropped": [
+    "difficulty": 0.19,
+    "learning_value": 1.61,
+    "hands_on": 1.12
+   }
+  },
+  {
+   "source": "Technical Disclosure Commons",
+   "title": "K17 addendum 1: signed-attestation rosters, sponsor-admitted Merkle rosters and a freeze escape for",
+   "url": "https://www.tdcommons.org/dpubs_series/12328/",
+   "snippet": "This addendum discloses three further mechanisms built on that machine. ... First, a signed-attestation roster: the machine pays a fixed sensor or contributor for a reading that the contributor signed... Uses beyond sensors: oracle committees, contributor pools for distributed computation, federated-learning participants, agent marketplaces with admitted agents, subscription and payroll drips to a member list.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 1.62,
+    "learning_value": 1.77,
+    "hands_on": 0.77
+   }
+  },
   {
    "source": "arXiv",
-   "title": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use",
-   "url": "https://arxiv.org/abs/2610.XXXXX",
-   "snippet": "Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, most visibly as computer-use agents, while robotic systems (RSs) couple sensing and actuation under physical dynamics. We define multimodal embodied agents (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This paper raises a central question: what changes when a multimodal agent moves from computer-use to robot-use?",
+   "title": "LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation",
+   "url": "https://arxiv.org/abs/2610.30876v1",
+   "snippet": "Humanoid robots must coordinate locomotion and manipulation in everyday environments, yet progress is difficult to assess across differing policies, controllers, and task settings. LocoManiLab provides an integrated testbed spanning data collection and generation, policy training, evaluation, and physical deployment.",
    "score": 0,
    "published": "2026-10-22",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.44,
-    "difficulty": 1.41,
-    "learning_value": 1.47,
-    "hands_on": 0.13
-   },
-   "reason": "no substance 0.44"
-  },
-  {
-   "source": "NVIDIA Newsroom",
-   "title": "NVIDIA Advances Isaac Platform for General-Purpose Robotics With New Reference Humanoid, Frameworks, Simulation Pipelines and Data",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid",
-   "snippet": "NVIDIA today announced a major expansion of the NVIDIA Isaac™ open robotics development platform, adding a reference humanoid, datasets and runtime, along with updates to its robot learning framework. These technologies provide developers an integrated path from data to deployment to bring general-purpose robots to the real-world faster. Jensen Huang, founder and CEO of NVIDIA, stated that general-purpose robotics is advancing at extraordinary speed, with the 'ChatGPT moment for robotics' fast approaching.",
-   "score": 0,
-   "published": "2026-10-21",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 0.15,
-    "learning_value": 0.87,
-    "hands_on": 1.04
-   },
-   "reason": "low learning value 0.87"
+    "has_substance": 0.97,
+    "difficulty": 1.36,
+    "learning_value": 1.67,
+    "hands_on": 0.9
+   }
   }
  ],
- "judge": "judge: 4 kept, 2 dropped (6 pairs checked)"
+ "dropped": [],
+ "judge": "judge: 3 kept, 0 dropped (1 pairs checked)"
 }
