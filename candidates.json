@@ -1,57 +1,471 @@
 {
- "date": "2026-10-23",
- "collected_at": "2026-10-23T19:44:01+00:00",
+ "date": "2026-10-24",
+ "collected_at": "2026-10-24T18:32:44+00:00",
  "counts": {
-  "gemini_search": 3
+  "gemini_search": 30
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 3 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 30 new",
  "items": [
   {
-   "source": "GitHub",
-   "title": "SnailSploit/Claude-Red",
-   "url": "https://github.com/SnailSploit/Claude-Red",
-   "snippet": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a s... (claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.)",
+   "source": "arXiv",
+   "title": "Reliable AI-Assisted Decisions via Selective Auditing",
+   "url": "https://arxiv.org/abs/2610.31662",
+   "snippet": "This paper proposes methods for reliable AI-assisted decision-making by selectively auditing AI predictions. The approach aims to ensure high accuracy in high-stakes scenarios by intelligently deciding when to defer to human experts based on the AI's confidence. The selective auditing framework focuses on optimizing a specific performance metric under a budget constraint for human review.",
    "score": 0,
    "published": "2026-10-23",
    "judge": {
-    "injection": 0.14,
-    "has_substance": 0.96,
-    "difficulty": 0.19,
-    "learning_value": 1.61,
-    "hands_on": 1.12
-   }
-  },
-  {
-   "source": "Technical Disclosure Commons",
-   "title": "K17 addendum 1: signed-attestation rosters, sponsor-admitted Merkle rosters and a freeze escape for",
-   "url": "https://www.tdcommons.org/dpubs_series/12328/",
-   "snippet": "This addendum discloses three further mechanisms built on that machine. ... First, a signed-attestation roster: the machine pays a fixed sensor or contributor for a reading that the contributor signed... Uses beyond sensors: oracle committees, contributor pools for distributed computation, federated-learning participants, agent marketplaces with admitted agents, subscription and payroll drips to a member list.",
-   "score": 0,
-   "published": "2026-10-22",
-   "judge": {
     "injection": 0.02,
     "has_substance": 0.95,
-    "difficulty": 1.62,
-    "learning_value": 1.77,
-    "hands_on": 0.77
+    "difficulty": 0.85,
+    "learning_value": 1.68,
+    "hands_on": 0.73
    }
   },
   {
    "source": "arXiv",
-   "title": "LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation",
-   "url": "https://arxiv.org/abs/2610.30876v1",
-   "snippet": "Humanoid robots must coordinate locomotion and manipulation in everyday environments, yet progress is difficult to assess across differing policies, controllers, and task settings. LocoManiLab provides an integrated testbed spanning data collection and generation, policy training, evaluation, and physical deployment.",
+   "title": "Nonparametric autoregressive estimation of probability distributions with parallel gradient boosting",
+   "url": "https://arxiv.org/abs/2610.31524",
+   "snippet": "This work introduces a nonparametric method for autoregressive estimation of probability distributions utilizing parallel gradient boosting. The proposed technique addresses the challenge of modeling complex dependencies in sequential data without strong distributional assumptions. It offers an efficient way to capture intricate patterns by leveraging the power of gradient boosting in a parallelized fashion.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 1.85,
+    "learning_value": 1.64,
+    "hands_on": 0.84
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Dimension-free regimes for unadjusted Langevin in ridge-separable models: A subspace robust Wasserstein analysis",
+   "url": "https://arxiv.org/abs/2610.31431",
+   "snippet": "The paper explores dimension-free regimes for unadjusted Langevin dynamics in the context of ridge-separable models. Through a subspace robust Wasserstein analysis, the authors provide theoretical guarantees on the convergence properties of the sampling algorithm. This research contributes to a deeper understanding of high-dimensional sampling methods in machine learning.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 1.99,
+    "learning_value": 1.54,
+    "hands_on": 0.7
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Metric Conformal Prediction via the Conditional Expected Local Radius",
+   "url": "https://arxiv.org/abs/2610.31336",
+   "snippet": "This paper presents a novel approach to metric conformal prediction by introducing the concept of a conditional expected local radius. The method constructs prediction regions with rigorous coverage guarantees, making it suitable for applications requiring reliable uncertainty quantification. It extends traditional conformal prediction to metric spaces, offering more flexible and accurate uncertainty estimates.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.97,
+    "learning_value": 2.0,
+    "hands_on": 0.8
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Deep Learning for Random Objects in Metric Spaces: Beyond Manifold Assumptions",
+   "url": "https://arxiv.org/abs/2610.31328",
+   "snippet": "This research investigates deep learning techniques for analyzing random objects in metric spaces, moving beyond conventional manifold assumptions. The authors propose a framework capable of handling complex data structures that do not necessarily lie on a low-dimensional manifold. This work has implications for various fields where data inherently resides in non-Euclidean spaces.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.91,
+    "difficulty": 1.94,
+    "learning_value": 1.38,
+    "hands_on": 0.64
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "RheOPT: Few-Shot Non-Newtonian Flow Prediction via Newtonian Pretraining of RheOFormer",
+   "url": "https://arxiv.org/abs/2610.31465",
+   "snippet": "This paper introduces RheOPT, a method for few-shot non-Newtonian flow prediction by pretraining a RheOFormer model on Newtonian fluid dynamics. It addresses the challenge of predicting complex fluid behaviors with limited data by leveraging knowledge transferred from simpler fluid regimes. The approach shows promise in engineering applications where experimental data is scarce.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 1.57,
+    "learning_value": 1.93,
+    "hands_on": 0.83
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Multi-Token Prediction and Alternative Tokenization Improve Learning Latent Multi-Hop Graph Search at Scale",
+   "url": "https://arxiv.org/abs/2610.31439",
+   "snippet": "This study demonstrates that multi-token prediction and alternative tokenization strategies can significantly improve the learning of latent multi-hop graph search at scale. The authors explore how different tokenization schemes impact the model's ability to navigate and extract information from large-scale knowledge graphs. This research offers insights into optimizing LLM performance for complex information retrieval tasks.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 1.65,
+    "learning_value": 1.6,
+    "hands_on": 0.7
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Drift Says When, Budget Says How Much: Rate-Controlled KV Re-selection for Long-Form Multimodal Generation",
+   "url": "https://arxiv.org/abs/2610.31433",
+   "snippet": "This paper proposes a rate-controlled key-value re-selection mechanism for long-form multimodal generation, guided by drift detection and budget constraints. The method dynamically adjusts the retrieval and incorporation of information to maintain coherence and relevance over extended generative sequences. It addresses challenges in controlling the content and style of long multimodal outputs.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.97,
+    "difficulty": 1.81,
+    "learning_value": 1.93,
+    "hands_on": 0.85
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Predictable performance is suboptimal, and what it means for model routing",
+   "url": "https://arxiv.org/abs/2610.31428",
+   "snippet": "This research argues that predictable model performance can lead to suboptimal outcomes, especially in dynamic environments requiring adaptive model routing. The paper analyzes the trade-offs between predictability and adaptability, suggesting strategies for designing model routing systems that can leverage less predictable but more performant models. This has implications for efficient ML infrastructure design and deployment.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.72,
+    "difficulty": 1.1,
+    "learning_value": 1.66,
+    "hands_on": 0.32
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Direct Pass@k Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+   "url": "https://arxiv.org/abs/2610.31667",
+   "snippet": "This paper introduces a direct Pass@k optimization approach for thought pruning, aiming to balance quality and diversity in test-time reasoning for large language models. The method dynamically selects and refines reasoning paths to achieve better overall performance, enhancing the efficiency and effectiveness of complex reasoning tasks. It offers a novel strategy for improving agentic behavior in LLMs.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.66,
+    "learning_value": 1.71,
+    "hands_on": 0.84
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+   "url": "https://arxiv.org/abs/2610.31650",
+   "snippet": "This paper presents EpiSEM-Bench, a benchmark for evaluating the safety and evidence recovery capabilities of LLM agents, particularly in scenarios with missing evidence. The benchmark assesses how robustly agents can handle incomplete or ambiguous information while maintaining safety protocols and accurately recovering relevant facts. This is crucial for developing reliable and trustworthy AI agents.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 0.8,
+    "learning_value": 1.29,
+    "hands_on": 0.75
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Efficient Large Language Model Serving: A Survey",
+   "url": "https://arxiv.org/abs/2610.31210",
+   "snippet": "This survey provides a comprehensive overview of efficient large language model serving techniques, covering various aspects from inference optimization to deployment strategies. It analyzes different methods for reducing latency, increasing throughput, and managing computational resources effectively. The paper offers valuable insights for designing and implementing scalable LLM infrastructure.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.87,
+    "difficulty": 1.39,
+    "learning_value": 1.86,
+    "hands_on": 0.25
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Continual Learning with Transformers: Overcoming Catastrophic Forgetting via Knowledge Distillation",
+   "url": "https://arxiv.org/abs/2610.31298",
+   "snippet": "This paper investigates continual learning strategies for transformer models, focusing on mitigating catastrophic forgetting through knowledge distillation. The proposed method aims to enable large language models to continuously learn new information without degrading performance on previously acquired knowledge. It offers a practical solution for adapting LLMs in dynamic environments.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.45,
+    "learning_value": 1.38,
+    "hands_on": 0.73
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Beyond Fixed Priors: Variational Inference with Learnable Noise Models for Robust Inverse Problems",
+   "url": "https://arxiv.org/abs/2610.31155",
+   "snippet": "This research introduces a variational inference framework that incorporates learnable noise models for solving robust inverse problems. Moving beyond fixed prior assumptions, the method adaptively learns the characteristics of noise in data, leading to more accurate and resilient reconstructions. This has applications in various scientific and engineering domains.",
    "score": 0,
    "published": "2026-10-22",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.36,
-    "learning_value": 1.67,
-    "hands_on": 0.9
+    "difficulty": 1.92,
+    "learning_value": 1.86,
+    "hands_on": 0.79
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Federated Reinforcement Learning with Communication-Efficient Experience Replay",
+   "url": "https://arxiv.org/abs/2610.31102",
+   "snippet": "This paper proposes a federated reinforcement learning approach that uses communication-efficient experience replay to train agents in distributed environments. The method minimizes data transfer overhead while ensuring effective learning across multiple decentralized clients. It's particularly relevant for applications requiring privacy-preserving and scalable agent training.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 1.69,
+    "learning_value": 1.56,
+    "hands_on": 0.8
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Task-Oriented Dialogue Systems with Adaptive Prompting for Complex Goal Achievement",
+   "url": "https://arxiv.org/abs/2610.31080",
+   "snippet": "This work explores task-oriented dialogue systems that employ adaptive prompting mechanisms to achieve complex goals. The system dynamically adjusts its conversational strategy based on user input and ongoing task progress, enhancing its ability to handle nuanced interactions. This research contributes to more intelligent and flexible conversational AI agents.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 1.15,
+    "learning_value": 1.33,
+    "hands_on": 0.69
+   }
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+   "url": "https://openai.com/blog/rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii",
+   "snippet": "This is the second part of a series detailing how OpenAI scaled its online storage infrastructure to support over a billion ChatGPT users. It discusses the engineering challenges and solutions implemented to handle immense data volumes and traffic. The post covers distributed systems architectures and optimization strategies for high-performance, cost-effective storage.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.9,
+    "difficulty": 0.35,
+    "learning_value": 1.98,
+    "hands_on": 0.32
+   }
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "Securing our frontier model training environment",
+   "url": "https://openai.com/blog/securing-our-frontier-model-training-environment",
+   "snippet": "This blog post outlines OpenAI's strategies and practices for securing its frontier model training environments. It details the robust security measures, threat models, and operational protocols in place to protect sensitive data and proprietary models during their development. The focus is on ensuring the integrity and confidentiality of advanced AI systems.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.63,
+    "difficulty": 0.25,
+    "learning_value": 1.61,
+    "hands_on": 0.16
+   }
+  },
+  {
+   "source": "Google DeepMind Blog",
+   "title": "Beyond tree cover: mapping the world's forest types",
+   "url": "https://deepmind.google/discover/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+   "snippet": "This research from Google DeepMind focuses on developing AI models to map the world's forest types with greater detail and accuracy, moving beyond simple tree cover detection. The project leverages advanced machine learning to identify diverse ecological structures, contributing to environmental monitoring and conservation efforts. It showcases AI's application in embodied and environmental sensing.",
+   "score": 0,
+   "published": "2026-10-24",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.9,
+    "difficulty": 0.26,
+    "learning_value": 1.01,
+    "hands_on": 0.58
+   }
+  },
+  {
+   "source": "Google DeepMind Blog",
+   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+   "url": "https://deepmind.google/discover/blog/accelerating-the-search-for-antimicrobial-peptides-with-google-antigravity/",
+   "snippet": "Google DeepMind details how their Antigravity platform is accelerating the discovery and design of novel antimicrobial peptides using AI. This initiative aims to combat rising antibiotic resistance by rapidly identifying potential therapeutic compounds. The research combines advanced computational biology with large-scale machine learning.",
+   "score": 0,
+   "published": "2026-10-24",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.92,
+    "difficulty": 0.32,
+    "learning_value": 0.91,
+    "hands_on": 0.66
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "NVIDIA / OpenShell: The safe, private runtime for autonomous AI agents",
+   "url": "https://github.com/NVIDIA/OpenShell",
+   "snippet": "OpenShell is an NVIDIA-backed open-source project providing a safe and private runtime environment for autonomous AI agents. It aims to address security and privacy concerns associated with agent deployment by offering a controlled execution space. This project is crucial for advancing the trustworthy deployment of AI agents in various applications.",
+   "score": 0,
+   "published": "2026-10-24",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 0.09,
+    "learning_value": 1.07,
+    "hands_on": 1.26
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "google-gemini / gemini-cli: An open-source AI agent that brings the power of Gemini directly into your terminal",
+   "url": "https://github.com/google-gemini/gemini-cli",
+   "snippet": "The google-gemini/gemini-cli is an open-source AI agent that integrates the capabilities of Google's Gemini directly into the user's terminal. This command-line interface allows developers and users to interact with advanced AI functionalities in a native terminal environment. It simplifies access to powerful LLM features for scripting and automation.",
+   "score": 0,
+   "published": "2026-10-24",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 0.01,
+    "learning_value": 1.34,
+    "hands_on": 1.57
    }
   }
  ],
- "dropped": [],
- "judge": "judge: 3 kept, 0 dropped (1 pairs checked)"
+ "dropped": [
+  {
+   "source": "OpenAI Blog",
+   "title": "Build more responsive apps with the Decisions API",
+   "url": "https://openai.com/blog/build-more-responsive-apps-with-the-decisions-api",
+   "snippet": "OpenAI introduces the Decisions API, designed to enable developers to build more responsive applications by integrating AI-powered decision-making capabilities. This API allows for quick, low-latency choices and classifications from models, ideal for scenarios requiring rapid responses and structured outputs. It aims to streamline the development of intelligent, interactive systems.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 0.01,
+    "learning_value": 0.75,
+    "hands_on": 0.84
+   },
+   "reason": "low learning value 0.75"
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "What forward deployed engineering means at OpenAI",
+   "url": "https://openai.com/blog/what-forward-deployed-engineering-means-at-openai",
+   "snippet": "This post explains the role and impact of forward-deployed engineering at OpenAI, highlighting how these engineers bridge the gap between advanced AI research and real-world applications. They work closely with clients and internal teams to integrate and optimize AI models, ensuring practical utility and performance. The article delves into the unique challenges and opportunities of this critical function.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.16,
+    "difficulty": 0.1,
+    "learning_value": 1.13,
+    "hands_on": 0.09
+   },
+   "reason": "no substance 0.16"
+  },
+  {
+   "source": "Google DeepMind Blog",
+   "title": "Gemini 4 Argon for Robotics",
+   "url": "https://deepmind.google/discover/blog/gemini-4-argon-for-robotics/",
+   "snippet": "Google DeepMind announces Gemini 4 Argon for Robotics, showcasing advancements in using their frontier AI model to power robotic systems. This release focuses on enhancing robots' ability to understand complex environments, perform intricate tasks, and learn from interactions. It represents a significant step towards more capable and autonomous physical agents.",
+   "score": 0,
+   "published": "2026-10-24",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.82,
+    "difficulty": 0.1,
+    "learning_value": 0.43,
+    "hands_on": 0.58
+   },
+   "reason": "low learning value 0.43"
+  },
+  {
+   "source": "Google DeepMind Blog",
+   "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+   "url": "https://deepmind.google/discover/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+   "snippet": "Google DeepMind introduces EmbeddingGemma 2, an open and lightweight multimodal embedding model. This model is designed to generate efficient and versatile embeddings for various data types, including text and images, facilitating cross-modal understanding. Its open-source nature aims to foster broader research and application development in multimodal AI.",
+   "score": 0,
+   "published": "2026-10-24",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 0.45,
+    "learning_value": 0.89,
+    "hands_on": 1.24
+   },
+   "reason": "low learning value 0.89"
+  },
+  {
+   "source": "Google DeepMind Blog",
+   "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+   "url": "https://deepmind.google/discover/blog/google-deepmind-and-singapore-government-collaborate-to-build-fine-tuned-ai-model-for-scam-detection/",
+   "snippet": "Google DeepMind announces a collaboration with the Singapore Government to develop a fine-tuned AI model specifically for scam detection. This partnership aims to enhance cybersecurity defenses by leveraging advanced AI to identify and prevent fraudulent activities. The initiative focuses on real-world application of AI for public safety.",
+   "score": 0,
+   "published": "2026-10-24",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.5,
+    "difficulty": 0.17,
+    "learning_value": 0.31,
+    "hands_on": 0.15
+   },
+   "reason": "low learning value 0.31"
+  },
+  {
+   "source": "AWS ML Blog",
+   "title": "Celebrating twenty years of innovation in ML and AI technology at AWS",
+   "url": "https://aws.amazon.com/blogs/machine-learning/celebrating-twenty-years-of-innovation-in-ml-and-ai-technology-at-aws/",
+   "snippet": "This blog post celebrates two decades of innovation in machine learning and AI technology at AWS. It highlights key milestones, significant contributions, and the evolution of AWS's offerings in the AI/ML space. The article reflects on the impact of cloud computing on democratizing AI capabilities for developers and enterprises.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.16,
+    "difficulty": 0.01,
+    "learning_value": 0.18,
+    "hands_on": 0.04
+   },
+   "reason": "no substance 0.16"
+  },
+  {
+   "source": "AWS ML Blog",
+   "title": "AWS Continuum for code vulnerabilities is now generally available",
+   "url": "https://aws.amazon.com/blogs/machine-learning/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+   "snippet": "AWS announces the general availability of AWS Continuum for code vulnerabilities, a new service designed to help developers identify and remediate security flaws in their code. This offering leverages machine learning to detect patterns indicative of vulnerabilities, enhancing application security throughout the development lifecycle. It aims to provide continuous security insights for codebases.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.89,
+    "difficulty": 0.0,
+    "learning_value": 0.68,
+    "hands_on": 0.55
+   },
+   "reason": "low learning value 0.68"
+  },
+  {
+   "source": "AWS ML Blog",
+   "title": "The Amazon Polly Generative engine gets a major upgrade",
+   "url": "https://aws.amazon.com/blogs/aws/the-amazon-polly-generative-engine-gets-a-major-upgrade/",
+   "snippet": "Amazon Polly's Generative engine has received a significant upgrade, delivering more expressive and accurate speech synthesis with reduced latency. The update also includes 14 new voices across 9 locales and the general availability of Hindi and Finnish languages. This drop-in upgrade requires no code changes for existing users.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.95,
+    "difficulty": 0.01,
+    "learning_value": 0.62,
+    "hands_on": 0.73
+   },
+   "reason": "low learning value 0.62"
+  }
+ ],
+ "judge": "judge: 22 kept, 8 dropped (11 pairs checked)"
 }
