@@ -1,69 +1,70 @@
 {
-  "date": "2026-10-23",
-  "headline": "클로드 공격 에이전트, 휴머노이드 로봇 테스트베드, 분산 시스템 신뢰 메커니즘을 살펴보세요.",
-  "items": [
-    {
-      "title": "SnailSploit/Claude-Red",
-      "url": "https://github.com/SnailSploit/Claude-Red",
-      "source": "GitHub",
-      "categories": [
-        "Agents",
-        "Open Source & Tools"
-      ],
-      "level": "beginner",
-      "headline_ko": "클로드 공격 툴 라이브러리",
-      "summary": "클로드 스킬 시스템을 위한 공격 보안 기술 라이브러리인 'claude-red'가 공개되었습니다. 각 스킬은 SQLi부터 쉘코드까지 특정 공격 표면에 대한 전문적인 방법론을 클로드에 제공하는 SKILL.md 파일로 구성됩니다. 이를 통해 클로드는 웹 애플리케이션, 무선, 클라우드 등 다양한 분야의 도메인 전문가처럼 행동할 수 있습니다. 모의 해킹, 버그 바운티, 보안 연구 등 여러 활용 사례에 적용 가능합니다.",
-      "why": "LLM 에이전트가 실제 보안 환경에서 어떻게 활용될 수 있는지 보여주는 흥미로운 프로젝트입니다. 직접 클로드에 적용하여 실제 공격 기술을 학습하고 에이전트 활용 능력을 키울 수 있습니다.",
-      "keywords": [
-        "Claude",
-        "red team",
-        "offensive security",
-        "LLM agent"
-      ],
-      "narration": "클로드 스킬 시스템을 위한 공격 보안 기술 라이브러리 'claude-red'가 공개되었습니다. 이 라이브러리는 클로드에게 SQL 주입부터 쉘코드까지 다양한 공격 방법론을 학습시킵니다. 웹 애플리케이션, 클라우드 등 여러 분야의 전문가처럼 행동하도록 돕죠. LLM 에이전트의 실제 보안 활용 사례를 직접 경험해 볼 수 있습니다."
-    },
-    {
-      "title": "LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation",
-      "url": "https://arxiv.org/abs/2610.30876v1",
-      "source": "arXiv",
-      "categories": [
-        "Robotics & Embodied",
-        "Research Fundamentals"
-      ],
-      "level": "intermediate",
-      "headline_ko": "휴머노이드 로봇 통합 실험실",
-      "summary": "휴머노이드 로봇의 이동 및 조작을 위한 통합 테스트베드 'LocoManiLab'이 소개되었습니다. 이 플랫폼은 데이터 수집 및 생성, 정책 학습, 평가, 실제 배포를 모두 아우릅니다. 5가지 가정 환경에서 234개의 작업을 포함하며, 51.5시간의 시뮬레이션 원격 조작 데이터를 제공합니다. 다양한 정책과 컨트롤러에 대한 광범위한 평가를 통해 휴머노이드 로봇 개발의 진척을 가속화합니다.",
-      "why": "휴머노이드 로봇의 복잡한 움직임과 조작 연구에 관심 있는 학생들에게 유용한 자료입니다. 통합 테스트베드 구축과 평가 방법론을 이해하고, 로봇 공학 연구의 실제 과제를 깊이 있게 살펴볼 수 있습니다.",
-      "keywords": [
-        "humanoid robot",
-        "loco-manipulation",
-        "testbed",
-        "robotics",
-        "simulation"
-      ],
-      "narration": "휴머노이드 로봇의 이동과 조작을 위한 통합 테스트베드, 'LocoManiLab'이 공개되었습니다. 이 플랫폼은 데이터 수집부터 실제 배포까지 로봇 개발의 전 과정을 지원합니다. 234가지 작업을 통해 다양한 정책과 컨트롤러를 평가하며 연구 진척을 가속화하죠. 복잡한 로봇 공학 연구에 대한 깊이 있는 통찰을 얻을 수 있습니다."
-    },
-    {
-      "title": "K17 addendum 1: signed-attestation rosters, sponsor-admitted Merkle rosters and a freeze escape for",
-      "url": "https://www.tdcommons.org/dpubs_series/12328/",
-      "source": "Technical Disclosure Commons",
-      "categories": [
-        "Research Fundamentals",
-        "ML Systems & Infra",
-        "Agents"
-      ],
-      "level": "advanced",
-      "headline_ko": "서명된 증명 로스터 메커니즘",
-      "summary": "K17 애드온 1은 기존 시스템에 구축된 세 가지 메커니즘을 공개합니다. 첫 번째는 '서명된 증명 로스터'로, 시스템이 센서나 기여자에게 서명된 데이터를 제공받는 방식입니다. 이러한 메커니즘은 오라클 위원회, 분산 컴퓨팅을 위한 기여자 풀, 연합 학습 참가자, 에이전트 마켓플레이스 등 다양한 분야에 활용될 수 있습니다. 멤버 목록에 대한 구독 및 급여 지급에도 적용될 수 있습니다.",
-      "why": "분산 시스템, 에이전트 마켓플레이스, 연합 학습 등 고급 ML 시스템의 기반이 되는 신뢰할 수 있는 데이터 증명 및 참여자 관리 메커니즘에 대해 깊이 있게 이해할 수 있습니다. 시스템 설계 시 보안과 신뢰성을 어떻게 확보하는지 탐구하는 데 도움이 됩니다.",
-      "keywords": [
-        "signed attestation",
-        "Merkle rosters",
-        "distributed computing",
-        "federated learning",
-        "agent marketplace"
-      ],
-      "narration": "K17 애드온 1은 기존 시스템에 적용되는 세 가지 새로운 메커니즘을 소개합니다. '서명된 증명 로스터'는 시스템이 서명된 데이터를 안전하게 확보하는 방법입니다. 오라클 위원회, 연합 학습 참가자, 에이전트 마켓플레이스 등 다양한 분야에 활용될 수 있습니다. 분산 시스템의 신뢰성과 보안을 높이는 데 중요한 기술입니다."
-    }
-  ]
+ "date": "2026-10-23",
+ "headline": "클로드 공격 에이전트, 휴머노이드 로봇 테스트베드, 분산 시스템 신뢰 메커니즘을 살펴보세요.",
+ "items": [
+  {
+   "title": "SnailSploit/Claude-Red",
+   "url": "https://github.com/SnailSploit/Claude-Red",
+   "source": "GitHub",
+   "categories": [
+    "Agents",
+    "Open Source & Tools"
+   ],
+   "level": "beginner",
+   "headline_ko": "클로드 공격 툴 라이브러리",
+   "summary": "클로드 스킬 시스템을 위한 공격 보안 기술 라이브러리인 'claude-red'가 공개되었습니다. 각 스킬은 SQLi부터 쉘코드까지 특정 공격 표면에 대한 전문적인 방법론을 클로드에 제공하는 SKILL.md 파일로 구성됩니다. 이를 통해 클로드는 웹 애플리케이션, 무선, 클라우드 등 다양한 분야의 도메인 전문가처럼 행동할 수 있습니다. 모의 해킹, 버그 바운티, 보안 연구 등 여러 활용 사례에 적용 가능합니다.",
+   "why": "LLM 에이전트가 실제 보안 환경에서 어떻게 활용될 수 있는지 보여주는 흥미로운 프로젝트입니다. 직접 클로드에 적용하여 실제 공격 기술을 학습하고 에이전트 활용 능력을 키울 수 있습니다.",
+   "keywords": [
+    "Claude",
+    "red team",
+    "offensive security",
+    "LLM agent"
+   ],
+   "narration": "클로드 스킬 시스템을 위한 공격 보안 기술 라이브러리 'claude-red'가 공개되었습니다. 이 라이브러리는 클로드에게 SQL 주입부터 쉘코드까지 다양한 공격 방법론을 학습시킵니다. 웹 애플리케이션, 클라우드 등 여러 분야의 전문가처럼 행동하도록 돕죠. LLM 에이전트의 실제 보안 활용 사례를 직접 경험해 볼 수 있습니다."
+  },
+  {
+   "title": "LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation",
+   "url": "https://arxiv.org/abs/2610.30876v1",
+   "source": "arXiv",
+   "categories": [
+    "Robotics & Embodied",
+    "Research Fundamentals"
+   ],
+   "level": "intermediate",
+   "headline_ko": "휴머노이드 로봇 통합 실험실",
+   "summary": "휴머노이드 로봇의 이동 및 조작을 위한 통합 테스트베드 'LocoManiLab'이 소개되었습니다. 이 플랫폼은 데이터 수집 및 생성, 정책 학습, 평가, 실제 배포를 모두 아우릅니다. 5가지 가정 환경에서 234개의 작업을 포함하며, 51.5시간의 시뮬레이션 원격 조작 데이터를 제공합니다. 다양한 정책과 컨트롤러에 대한 광범위한 평가를 통해 휴머노이드 로봇 개발의 진척을 가속화합니다.",
+   "why": "휴머노이드 로봇의 복잡한 움직임과 조작 연구에 관심 있는 학생들에게 유용한 자료입니다. 통합 테스트베드 구축과 평가 방법론을 이해하고, 로봇 공학 연구의 실제 과제를 깊이 있게 살펴볼 수 있습니다.",
+   "keywords": [
+    "humanoid robot",
+    "loco-manipulation",
+    "testbed",
+    "robotics",
+    "simulation"
+   ],
+   "narration": "휴머노이드 로봇의 이동과 조작을 위한 통합 테스트베드, 'LocoManiLab'이 공개되었습니다. 이 플랫폼은 데이터 수집부터 실제 배포까지 로봇 개발의 전 과정을 지원합니다. 234가지 작업을 통해 다양한 정책과 컨트롤러를 평가하며 연구 진척을 가속화하죠. 복잡한 로봇 공학 연구에 대한 깊이 있는 통찰을 얻을 수 있습니다."
+  },
+  {
+   "title": "K17 addendum 1: signed-attestation rosters, sponsor-admitted Merkle rosters and a freeze escape for",
+   "url": "https://www.tdcommons.org/dpubs_series/12328/",
+   "source": "Technical Disclosure Commons",
+   "categories": [
+    "Research Fundamentals",
+    "ML Systems & Infra",
+    "Agents"
+   ],
+   "level": "advanced",
+   "headline_ko": "서명된 증명 로스터 메커니즘",
+   "summary": "K17 애드온 1은 기존 시스템에 구축된 세 가지 메커니즘을 공개합니다. 첫 번째는 '서명된 증명 로스터'로, 시스템이 센서나 기여자에게 서명된 데이터를 제공받는 방식입니다. 이러한 메커니즘은 오라클 위원회, 분산 컴퓨팅을 위한 기여자 풀, 연합 학습 참가자, 에이전트 마켓플레이스 등 다양한 분야에 활용될 수 있습니다. 멤버 목록에 대한 구독 및 급여 지급에도 적용될 수 있습니다.",
+   "why": "분산 시스템, 에이전트 마켓플레이스, 연합 학습 등 고급 ML 시스템의 기반이 되는 신뢰할 수 있는 데이터 증명 및 참여자 관리 메커니즘에 대해 깊이 있게 이해할 수 있습니다. 시스템 설계 시 보안과 신뢰성을 어떻게 확보하는지 탐구하는 데 도움이 됩니다.",
+   "keywords": [
+    "signed attestation",
+    "Merkle rosters",
+    "distributed computing",
+    "federated learning",
+    "agent marketplace"
+   ],
+   "narration": "K17 애드온 1은 기존 시스템에 적용되는 세 가지 새로운 메커니즘을 소개합니다. '서명된 증명 로스터'는 시스템이 서명된 데이터를 안전하게 확보하는 방법입니다. 오라클 위원회, 연합 학습 참가자, 에이전트 마켓플레이스 등 다양한 분야에 활용될 수 있습니다. 분산 시스템의 신뢰성과 보안을 높이는 데 중요한 기술입니다."
+  }
+ ],
+ "video": "videos/2026-10-23.mp4"
 }
