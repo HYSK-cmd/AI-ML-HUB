@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-25",
+  "headline": "AI 에이전트 효율성부터 LLM 서빙 최적화, 그리고 웨어러블 로봇 시스템까지 오늘을 뜨겁게 달굴 AI 소식들을 만나보세요.",
+  "items": [
+    {
+      "title": "xerj-org/xerj",
+      "url": "https://github.com/xerj-org/xerj",
+      "source": "GitHub Trending",
+      "categories": [
+        "Open Source & Tools",
+        "Agents"
+      ],
+      "level": "beginner",
+      "headline_ko": "AI 에이전트 검색 엔진",
+      "summary": "AI 에이전트의 검색 효율성을 높이는 로컬 퍼스트 검색 엔진 Xerj입니다. 이 Rust 바이너리는 코드, 문서, 로그 및 PDF를 자동으로 인덱싱하여 에이전트가 더 적은 토큰으로 필요한 데이터를 찾을 수 있도록 돕습니다. BM25, 벡터, 하이브리드 검색을 지원하며 Elasticsearch와 호환됩니다. Xerj는 코딩 에이전트의 토큰 사용량을 최대 5배까지 절감하며, 에이전트 메모리와 RAG 파이프라인에 유용합니다.",
+      "why": "이 도구는 AI 에이전트의 비용 효율성과 성능을 크게 개선할 수 있는 실용적인 솔루션을 제공합니다. 로컬에서 데이터를 관리하고 검색하는 방법을 배우고 싶거나, 에이전트 기반 프로젝트를 최적화하려는 학생에게 유용합니다.",
+      "keywords": [
+        "AI 에이전트",
+        "로컬 검색",
+        "토큰 절감",
+        "RAG",
+        "Rust"
+      ],
+      "narration": "첫 번째는 AI 에이전트의 검색 효율성을 혁신하는 로컬 퍼스트 검색 엔진, Xerj입니다. 이 Rust 기반 도구는 코드, 문서 등을 자동으로 인덱싱하여 에이전트의 토큰 사용량을 최대 5배까지 줄여줍니다. 개발 워크플로우를 최적화하고 비용을 절감할 수 있는 실용적인 해결책입니다. 여러분의 에이전트 프로젝트에 바로 적용해 볼 수 있습니다."
+    },
+    {
+      "title": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "source": "GitHub Trending",
+      "categories": [
+        "LLM",
+        "ML Systems & Infra",
+        "Open Source & Tools"
+      ],
+      "level": "intermediate",
+      "headline_ko": "LLM 추론 최적화 엔진",
+      "summary": "vLLM은 LLM을 위한 빠르고 사용하기 쉬운 오픈소스 추론 및 서빙 라이브러리입니다. UC Berkeley에서 개발되었으며, PagedAttention을 통한 효율적인 KV 캐시 관리, 연속 배치, 접두사 캐싱 등 최첨단 기술로 높은 처리량을 제공합니다. 다양한 양자화, 최적화된 어텐션 커널, 분산 추론 지원으로 대규모 LLM 서빙에 필수적인 도구입니다.",
+      "why": "이 프로젝트는 LLM을 효율적으로 배포하고 서빙하는 데 필요한 핵심 기술을 이해하는 데 도움이 됩니다. 고성능 인프라 구축에 관심 있는 학생이라면 PagedAttention과 같은 혁신적인 최적화 기법을 실무적으로 배울 수 있습니다.",
+      "keywords": [
+        "LLM 추론",
+        "vLLM",
+        "PagedAttention",
+        "ML 시스템",
+        "분산 추론"
+      ],
+      "narration": "이어서 중간 레벨에서는 LLM 추론 및 서빙의 속도를 혁신하는 vLLM 프로젝트를 소개합니다. PagedAttention 기술을 활용해 메모리 효율성을 극대화하고, 다양한 최적화 기법으로 높은 처리량을 자랑합니다. 대규모 LLM을 안정적으로 운영하고 싶은 분들에게 필수적인 도구입니다."
+    },
+    {
+      "title": "Towards Field-Deployable Wearable IMU Systems for Occupational Activity Recognition",
+      "url": "https://arxiv.org/abs/2610.31160",
+      "source": "arXiv",
+      "categories": [
+        "Robotics & Embodied",
+        "Research Fundamentals"
+      ],
+      "level": "advanced",
+      "headline_ko": "웨어러블 IMU 활동 인식",
+      "summary": "이 연구는 건설 현장 작업자 활동 인식(HAR)을 위한 웨어러블 IMU 시스템의 실제 배포 가능성을 탐구합니다. 기존 연구들이 높은 집계 정확도를 보고하지만, 이 논문은 사용자 간 편차를 드러내는 LOSO(Leave-One-Subject-Out) 평가의 중요성을 강조합니다. VTT-ConIoT 데이터셋에 대한 체계적인 구성 민감도 분석을 통해, 다중 센서 융합과 긴 윈도우가 정확도를 향상시키고 개인화된 보정이 성능이 낮은 사용자에게 16.8%p의 개선 효과를 가져온다는 것을 보여줍니다.",
+      "why": "웨어러블 센서 기반의 인체 활동 인식 시스템을 실제 환경에 적용할 때 직면하는 과제와 이를 극복하기 위한 심층적인 접근법을 배울 수 있습니다. 실제 환경에 적용 가능한 Embodied AI 시스템 설계에 관심 있는 학생에게 매우 유익한 연구입니다.",
+      "keywords": [
+        "IMU 시스템",
+        "활동 인식",
+        "웨어러블 센서",
+        "Embodied AI",
+        "LOSO"
+      ],
+      "narration": "마지막으로, 고급 레벨에서는 웨어러블 IMU 시스템을 활용한 산업 현장 활동 인식에 관한 연구 논문입니다. 이 논문은 실제 환경에서 웨어러블 센서의 사람 활동 인식 정확도에 영향을 미치는 요인들을 분석합니다. 개인화된 보정으로 시스템 성능을 크게 향상시킬 수 있음을 보여주며, 실제 배포 가능한 로봇 시스템 개발에 중요한 통찰을 제공합니다."
+    }
+  ]
+}
