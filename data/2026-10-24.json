@@ -1,69 +1,70 @@
 {
-  "date": "2026-10-24",
-  "headline": "AI 시스템 인프라 구축과 멀티모달 생성 최신 연구를 조명합니다.",
-  "items": [
-    {
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "url": "https://openai.com/blog/rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii",
-      "source": "OpenAI Blog",
-      "categories": [
-        "ML Systems & Infra"
-      ],
-      "level": "beginner",
-      "headline_ko": "ChatGPT 10억 사용자 스토리지 확장",
-      "summary": "OpenAI는 10억 명 이상의 ChatGPT 사용자를 지원하기 위해 온라인 스토리지 인프라를 확장한 방법을 설명합니다. 이 시리즈의 2부에서는 막대한 데이터 볼륨과 트래픽을 처리하기 위한 엔지니어링 과제와 해결책을 다룹니다. 고성능, 비용 효율적인 스토리지를 위한 분산 시스템 아키텍처 및 최적화 전략이 포함됩니다.",
-      "why": "대규모 서비스를 위한 스토리지 확장 문제를 실제 사례를 통해 이해하고, 분산 시스템 및 최적화 전략에 대한 실용적인 지식을 얻을 수 있습니다.",
-      "keywords": [
-        "스토리지",
-        "분산 시스템",
-        "확장성",
-        "ChatGPT",
-        "인프라"
-      ],
-      "narration": "OpenAI가 10억 명 이상의 ChatGPT 사용자를 위해 스토리지를 확장한 비결을 알아봅니다. 대규모 트래픽과 데이터 볼륨을 처리하는 엔지니어링 도전 과제를 다룹니다. 고성능 스토리지를 위한 분산 시스템 아키텍처와 최적화 전략을 배울 수 있습니다."
-    },
-    {
-      "title": "Efficient Large Language Model Serving: A Survey",
-      "url": "https://arxiv.org/abs/2610.31210",
-      "source": "arXiv",
-      "categories": [
-        "LLM",
-        "ML Systems & Infra"
-      ],
-      "level": "intermediate",
-      "headline_ko": "LLM 서빙 효율화 연구",
-      "summary": "이 서베이 논문은 효율적인 대규모 언어 모델 서빙 기술에 대한 포괄적인 개요를 제공합니다. 추론 최적화부터 배포 전략까지 다양한 측면을 다룹니다. 지연 시간을 줄이고, 처리량을 늘리며, 컴퓨팅 리소스를 효과적으로 관리하는 여러 방법론을 분석합니다.",
-      "why": "확장 가능한 LLM 인프라 설계 및 구현에 필요한 핵심 기술과 전략에 대한 깊이 있는 이해를 얻고, 실제 서비스 적용을 위한 통찰력을 얻을 수 있습니다.",
-      "keywords": [
-        "LLM",
-        "서빙",
-        "추론 최적화",
-        "배포 전략",
-        "인프라"
-      ],
-      "narration": "대규모 언어 모델 서빙 효율화에 대한 포괄적인 서베이 논문입니다. 추론 최적화와 배포 전략 등 다양한 기술을 다룹니다. 지연 시간 단축, 처리량 증가, 컴퓨팅 리소스 관리 방법을 분석합니다. 확장 가능한 LLM 인프라 설계에 중요한 통찰력을 제공합니다."
-    },
-    {
-      "title": "Drift Says When, Budget Says How Much: Rate-Controlled KV Re-selection for Long-Form Multimodal Generation",
-      "url": "https://arxiv.org/abs/2610.31433",
-      "source": "arXiv",
-      "categories": [
-        "Multimodal & Vision",
-        "LLM",
-        "Research Fundamentals"
-      ],
-      "level": "advanced",
-      "headline_ko": "장문 멀티모달 KV 재선택",
-      "summary": "이 논문은 장문 멀티모달 생성에서 드리프트 감지 및 예산 제약을 기반으로 하는 속도 제어 Key-Value 재선택 메커니즘을 제안합니다. 이 방법은 확장된 생성 시퀀스 동안 일관성과 관련성을 유지하기 위해 정보 검색 및 통합을 동적으로 조정합니다. 장문 멀티모달 출력의 내용과 스타일을 제어하는 문제를 해결합니다. 특히 ROUGE-L 지표에서 기존 방법 대비 우수한 성능을 보입니다.",
-      "why": "장문 멀티모달 생성 모델의 KV 캐시 관리 및 성능 향상에 대한 깊이 있는 기술적 접근 방식을 이해하고, 실제 연구 및 개발에 적용할 수 있는 새로운 아이디어를 얻을 수 있습니다.",
-      "keywords": [
-        "KV 캐시",
-        "멀티모달",
-        "생성 모델",
-        "드리프트 감지",
-        "LLM"
-      ],
-      "narration": "장문 멀티모달 생성에서 Key-Value 캐시 재선택을 위한 새로운 메커니즘을 소개합니다. 드리프트 감지와 예산 제약을 통해 정보 검색 및 통합을 동적으로 조정합니다. 확장된 생성 시퀀스에서 일관성과 관련성을 유지하는 데 기여합니다. 멀티모달 LLM 연구에 중요한 논문입니다."
-    }
-  ]
+ "date": "2026-10-24",
+ "headline": "AI 시스템 인프라 구축과 멀티모달 생성 최신 연구를 조명합니다.",
+ "items": [
+  {
+   "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+   "url": "https://openai.com/blog/rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii",
+   "source": "OpenAI Blog",
+   "categories": [
+    "ML Systems & Infra"
+   ],
+   "level": "beginner",
+   "headline_ko": "ChatGPT 10억 사용자 스토리지 확장",
+   "summary": "OpenAI는 10억 명 이상의 ChatGPT 사용자를 지원하기 위해 온라인 스토리지 인프라를 확장한 방법을 설명합니다. 이 시리즈의 2부에서는 막대한 데이터 볼륨과 트래픽을 처리하기 위한 엔지니어링 과제와 해결책을 다룹니다. 고성능, 비용 효율적인 스토리지를 위한 분산 시스템 아키텍처 및 최적화 전략이 포함됩니다.",
+   "why": "대규모 서비스를 위한 스토리지 확장 문제를 실제 사례를 통해 이해하고, 분산 시스템 및 최적화 전략에 대한 실용적인 지식을 얻을 수 있습니다.",
+   "keywords": [
+    "스토리지",
+    "분산 시스템",
+    "확장성",
+    "ChatGPT",
+    "인프라"
+   ],
+   "narration": "OpenAI가 10억 명 이상의 ChatGPT 사용자를 위해 스토리지를 확장한 비결을 알아봅니다. 대규모 트래픽과 데이터 볼륨을 처리하는 엔지니어링 도전 과제를 다룹니다. 고성능 스토리지를 위한 분산 시스템 아키텍처와 최적화 전략을 배울 수 있습니다."
+  },
+  {
+   "title": "Efficient Large Language Model Serving: A Survey",
+   "url": "https://arxiv.org/abs/2610.31210",
+   "source": "arXiv",
+   "categories": [
+    "LLM",
+    "ML Systems & Infra"
+   ],
+   "level": "intermediate",
+   "headline_ko": "LLM 서빙 효율화 연구",
+   "summary": "이 서베이 논문은 효율적인 대규모 언어 모델 서빙 기술에 대한 포괄적인 개요를 제공합니다. 추론 최적화부터 배포 전략까지 다양한 측면을 다룹니다. 지연 시간을 줄이고, 처리량을 늘리며, 컴퓨팅 리소스를 효과적으로 관리하는 여러 방법론을 분석합니다.",
+   "why": "확장 가능한 LLM 인프라 설계 및 구현에 필요한 핵심 기술과 전략에 대한 깊이 있는 이해를 얻고, 실제 서비스 적용을 위한 통찰력을 얻을 수 있습니다.",
+   "keywords": [
+    "LLM",
+    "서빙",
+    "추론 최적화",
+    "배포 전략",
+    "인프라"
+   ],
+   "narration": "대규모 언어 모델 서빙 효율화에 대한 포괄적인 서베이 논문입니다. 추론 최적화와 배포 전략 등 다양한 기술을 다룹니다. 지연 시간 단축, 처리량 증가, 컴퓨팅 리소스 관리 방법을 분석합니다. 확장 가능한 LLM 인프라 설계에 중요한 통찰력을 제공합니다."
+  },
+  {
+   "title": "Drift Says When, Budget Says How Much: Rate-Controlled KV Re-selection for Long-Form Multimodal Generation",
+   "url": "https://arxiv.org/abs/2610.31433",
+   "source": "arXiv",
+   "categories": [
+    "Multimodal & Vision",
+    "LLM",
+    "Research Fundamentals"
+   ],
+   "level": "advanced",
+   "headline_ko": "장문 멀티모달 KV 재선택",
+   "summary": "이 논문은 장문 멀티모달 생성에서 드리프트 감지 및 예산 제약을 기반으로 하는 속도 제어 Key-Value 재선택 메커니즘을 제안합니다. 이 방법은 확장된 생성 시퀀스 동안 일관성과 관련성을 유지하기 위해 정보 검색 및 통합을 동적으로 조정합니다. 장문 멀티모달 출력의 내용과 스타일을 제어하는 문제를 해결합니다. 특히 ROUGE-L 지표에서 기존 방법 대비 우수한 성능을 보입니다.",
+   "why": "장문 멀티모달 생성 모델의 KV 캐시 관리 및 성능 향상에 대한 깊이 있는 기술적 접근 방식을 이해하고, 실제 연구 및 개발에 적용할 수 있는 새로운 아이디어를 얻을 수 있습니다.",
+   "keywords": [
+    "KV 캐시",
+    "멀티모달",
+    "생성 모델",
+    "드리프트 감지",
+    "LLM"
+   ],
+   "narration": "장문 멀티모달 생성에서 Key-Value 캐시 재선택을 위한 새로운 메커니즘을 소개합니다. 드리프트 감지와 예산 제약을 통해 정보 검색 및 통합을 동적으로 조정합니다. 확장된 생성 시퀀스에서 일관성과 관련성을 유지하는 데 기여합니다. 멀티모달 LLM 연구에 중요한 논문입니다."
+  }
+ ],
+ "video": "videos/2026-10-24.mp4"
 }
