@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-26",
+  "headline": "AI 에이전트 추적부터 로봇 덕, LLM 압축 기술까지 최신 AI 소식을 전합니다.",
+  "items": [
+    {
+      "title": "How to trace Claude agents via Native OpenTelemetry Export",
+      "url": "https://www.mlflow.org/blog/2026/10/13/trace-claude-agents-opentelemetry.html",
+      "source": "MLflow Blog",
+      "categories": [
+        "Agents",
+        "ML Systems & Infra"
+      ],
+      "level": "beginner",
+      "headline_ko": "Claude 에이전트 추적",
+      "summary": "이 블로그 게시물은 기본 OpenTelemetry Export를 사용하여 Claude 에이전트를 추적하는 방법을 자세히 설명합니다. AI 에이전트 및 LLM 애플리케이션을 위한 프로덕션 수준의 관찰 가능성을 구현하는 가이드입니다. 개발자가 에이전트의 내부 프로세스와 상호 작용을 추적하여 성능을 효과적으로 디버그, 모니터링 및 최적화할 수 있도록 지원합니다.",
+      "why": "학생들은 이 글을 통해 실제 LLM 에이전트 시스템에서 관찰 가능성(observability)을 구축하는 방법을 배울 수 있습니다. 에이전트의 동작을 이해하고 문제 해결 능력을 향상시키는 데 유용합니다.",
+      "keywords": [
+        "Claude agent",
+        "OpenTelemetry",
+        "observability",
+        "LLM application"
+      ],
+      "narration": "첫 번째 소식은 MLflow 블로그의 Claude 에이전트 추적 가이드입니다. OpenTelemetry를 활용하여 에이전트의 동작을 심층적으로 이해할 수 있습니다. LLM 애플리케이션의 성능을 모니터링하고 최적화하는 데 필수적인 기술입니다."
+    },
+    {
+      "title": "pollen-robotics / microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "source": "GitHub Trending",
+      "categories": [
+        "Robotics & Embodied",
+        "RL"
+      ],
+      "level": "intermediate",
+      "headline_ko": "작고 귀여운 이족 보행 로봇",
+      "summary": "Microduck은 강화 학습 정책으로 움직이는 작고 귀여운 이족 보행 오리 로봇 프로젝트입니다. 이 저장소에는 로봇의 움직임을 제어하는 소프트웨어가 포함되어 있습니다. MuJoCo와 PPO를 활용한 sim2real 레시피로 정책이 훈련되며, 로봇은 걷기, 구르기, 물건 집기, 스스로 일어서기 등 다양한 동작을 수행합니다.",
+      "why": "로봇 공학에 관심 있는 학생들은 강화 학습이 실제 로봇 시스템에 어떻게 적용되는지 실습 사례를 통해 배울 수 있습니다. 특히 sim2real 기법과 ONNX를 통한 정책 배포 과정을 이해하는 데 도움이 됩니다.",
+      "keywords": [
+        "microduck",
+        "biped robot",
+        "reinforcement learning",
+        "sim2real",
+        "MuJoCo",
+        "ONNX"
+      ],
+      "narration": "이어서 소개할 내용은 작지만 강력한 이족 보행 로봇, Microduck입니다. 강화 학습 정책으로 움직이며 걷고, 구르고, 물건을 집는 등 다양한 동작을 수행합니다. MuJoCo와 PPO를 활용한 sim2real 학습 방법론이 적용되었습니다."
+    },
+    {
+      "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
+      "url": "https://arxiv.org/abs/2610.32878",
+      "source": "arXiv",
+      "categories": [
+        "LLM",
+        "Research Fundamentals"
+      ],
+      "level": "advanced",
+      "headline_ko": "LLM 압축, 새 접근 방식",
+      "summary": "이 논문은 LLM 압축을 위한 SVD 기반의 새로운 접근 방식인 Layer-wise Error Modeling Search (LEMS)와 KFAC-SVD를 제안합니다. 기존 방법의 한계인 전역적 랭크 할당과 분해 품질 문제를 해결합니다. LEMS는 계층별 오류 대리 모델을 통해 효과적인 전역 랭크 할당을 가능하게 하며, KFAC-SVD는 토큰별 통계를 사용하여 랭크 결함을 완화합니다. Mistral, Qwen3, Llama 3 모델에서 최대 4.8%의 정확도 향상을 보여줍니다.",
+      "why": "LLM의 효율적인 배포와 운영에 관심 있는 학생들은 SVD 기반 압축의 최신 연구 동향과 기술적 세부 사항을 깊이 있게 이해할 수 있습니다. 대규모 모델의 연산 및 메모리 발자국을 줄이는 핵심 기술입니다.",
+      "keywords": [
+        "LLM compression",
+        "SVD",
+        "Layer-wise Error Modeling Search",
+        "LEMS",
+        "KFAC-SVD",
+        "rank allocation"
+      ],
+      "narration": "마지막은 LLM 압축 기술에 대한 최신 연구 논문입니다. SVD 기반 압축의 한계를 극복하기 위해 계층별 오류 모델 탐색과 KFAC-SVD를 제안합니다. 이 기술은 Mistral, Llama 3 등 주요 LLM의 성능 저하 없이 효율성을 크게 높입니다."
+    }
+  ]
+}

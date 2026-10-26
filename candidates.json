@@ -1,352 +1,492 @@
 {
- "date": "2026-10-25",
- "collected_at": "2026-10-25T18:40:50+00:00",
+ "date": "2026-10-26",
+ "collected_at": "2026-10-26T20:51:12+00:00",
  "counts": {
-  "gemini_search": 25
+  "gemini_search": 30
  },
- "dedup": "dedup: 2 already in corpus, 1 cross-source duplicates, 22 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 30 new",
  "items": [
   {
-   "source": "GitHub Trending",
-   "title": "morluto/rea",
-   "url": "https://github.com/morluto/rea",
-   "snippet": "This is an AI-powered reverse engineering platform that language security researchers, malware analysts, firmware engineers, and CTF players have been waiting for. Created in April of this year, it has garnered 323,000 stars, indicating significant activity. README: **English** · [简体中文](docs/readme/README_zh.md) · [繁體中文](docs/readme/README_zh-TW.md) · [日本語](docs/readme/README_ja.md) · [한국어](docs/readme/README_ko.md) · [Türkçe](docs/readme/README_tr.md) · [Русский](docs/readme/README_ru.md) · [Tiếng Việt](docs/readme/README_vi.md) · [ไทย](docs/readme/README_th.md) · [Deutsch](docs/readme/README_de.md) · [Español](docs/readme/README_es.md) · [Français](docs/readme/README_fr.md) · [Українська](docs/readme/README_uk.md) · [Polski](docs/readme/README_pl.md) · [Português (Brasil)](docs/readme/README_pt-BR.md) · [العربية](docs/readme/README_ar.md) · [فارسی](docs/readme/README_fa.md) · [Bahasa Indonesia](docs/readme/README_id.md) · [Italiano](docs/readme/README_it.md) · [Ελληνικά](docs/readme/README_el.md) · [മലയാളം](docs/readme/README_ml.md) · [Roman Urdu](docs/readme/README_ur-Latn.md) · [Română](docs/readme/README_ro.md) # REA: Reverse Engineer Anything ### One MCP for reverse engineering across binaries, applications, and runtime behavior. **See a feature you like. Understand how it works, down to the binary level.** **[Website](https://rea.tools/) · [Guides](https://rea.tools/guides/) · [Showcases](https://rea.tools/showcase/)** [Quick start](#quick-start) · [How REA works](#how",
+   "source": "arXiv",
+   "title": "SemantEq: Faithful Bidirectional Equivalence of Formal Statements",
+   "url": "https://arxiv.org/abs/2610.32919",
+   "snippet": "We introduce SemantEq, a method for establishing faithful bidirectional equivalence between formal statements. This approach ensures that a statement can be accurately translated and back-translated while preserving its semantic meaning. The method is particularly relevant for applications requiring rigorous verification and translation of complex logical expressions, contributing to robust AI systems.",
    "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.04,
-    "has_substance": 0.97,
-    "difficulty": 0.32,
-    "learning_value": 1.34,
-    "hands_on": 1.39
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "google-research/harness2",
-   "url": "https://github.com/google-research/harness2",
-   "snippet": "This framework is explicitly designed to outlast any single model release, picking up 270 stars on October 23, 2026. Understanding its architecture is mandatory for anyone building agent-native solutions. README: Recursive Agent Harnessing for an Open World A **harness** is the system around a model that enables it to act as an agent: prompts, tools, memory, skills, orchestration, and more. **Harnessing** is the process of optimizing that system. Harness² is a plug-and-play framework for **recursive agent harnessing** in an open world, where agents encounter tasks unseen during harness design. It connects two levels of recursion while keeping model weights fixed: * **Task-level recursion** refines the execution harness for the current task through a contrastive **Propose–Probe–Compose** step: propose edits, probe their effects on the same task, and compose a refined harness from behavioral contrasts between executions, without ground-truth feedback. * **Harnessing-level recursion** updates a persistent *improvement harness* with adopted harnesses and evidence-supported lessons from each task to guide future refinement. Across three professional benchmarks and four model–harness configurations, a single Harness² step improves GLM-5 and Gemini 3.5 Flash over their base harnesses, with gains of up to 11.5 points on WorkBuddy-Bench, 4.5 points on JobBench, and 11.8 percentage points on LAB's partial pass rate. Increasing the task-level recursion budget brings further gains. The r",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.99,
-    "difficulty": 1.72,
-    "learning_value": 2.67,
-    "hands_on": 1.11
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "deepseek-ai/deepseek-harness",
-   "url": "https://github.com/deepseek-ai/deepseek-harness",
-   "snippet": "An agentic framework, DeepSeek Harness is a plugin-based runtime for building extensible AI agents. It gathered significant attention and star growth. README: # DeepSeek Harness English | [中文](README.zh.md) DeepSeek Harness (`dsh`) is an open-source agent harness developed by [DeepSeek AI](https://deepseek.com). It is built on an **everything-is-a-plugin** architecture and powered by [Cordis](https://github.com/cordiverse/cordis), whose design is described in [_A Programming Paradigm for Spatiotemporal Composability_](https://arxiv.org/abs/2608.25512). Documentation: [https://deepseek-harness.github.io/deepseek-harness/](https://deepseek-harness.github.io/deepseek-harness/) ## Developer preview DeepSeek Harness is in _developer preview_ and iterating rapidly. **THERE WILL BE COMPATIBILITY-BREAKING CHANGES.** Review the [safety notice](SAFETY.md) before running the project. ## Run ### Run from `npm` Install `Node.js`, then run: ```sh npx @deepseek-ai/dsh web ``` The command starts the Web UI at `http://127.0.0.1:3080` by default and opens it in the default browser for a local launch. An SSH launch only prints the host URL because the SSH client or editor owns the local forwarded address. Pass `--no-open` to run the server without opening a browser. See [Web UI guide](docs/user/guide/index.md). ### Run from source To run from a repository checkout: ```sh git clone https://github.com/deepseek-ai/deepseek-harness.git cd deepseek-harness pnpm install pnpm run build pnpm dsh web ``",
-   "score": 0,
-   "published": "",
-   "judge": {
-    "injection": 0.04,
-    "has_substance": 0.99,
-    "difficulty": 0.4,
-    "learning_value": 2.18,
-    "hands_on": 1.98
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "YuJunZhiXue/dsh-purge",
-   "url": "https://github.com/YuJunZhiXue/dsh-purge",
-   "snippet": "This repository's name suggests a relation to 'DeepSeek Harness', indicating recent developments or tools within that ecosystem. It is listed among the fastest-rising AI repositories. README: ⚔️ DeepSeek Harness cybersecurity red-team tool (dsh-purge) Version 1.1.78 DeepSeek Harness jailbreak: every model, swap prompts per model. Default prompt for 小码酱. Please star ⭐ If you build on this, see Attribution required. English | 中文 ## A note from the author People have been selling this open-source work in the open. After that, the author was asked to come in and talk. No need to spell out the rest. Read between the lines. From now on the **public internet is closed**. The open-source build only allows **local lab IPs**: loopback and RFC1918. Domains are resolved first (including hosts); every answer must be private or loopback. A hosts trick that points `.lab` at a public IP, a failed lookup, or a mixed public answer is blocked. **Game cheats are forbidden** (aimbot, wallhack, memory edits against a game, anti-cheat bypass); the prompt and the session gate both stop them. This build does not ship the skill library or the knowledge base. **The original build may not be resold.** Charging for it, skinning it, or hawking it in groups is not allowed. Forks are fine, but **you must attribute** and name the source: [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge). Hide the source or pass it off as your own, and you are on the other side. The author's personal channel: ",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.26,
-    "has_substance": 0.96,
-    "difficulty": 0.14,
-    "learning_value": 1.1,
-    "hands_on": 1.47
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "Ebony-Vinyl/dsh-our-free-model",
-   "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-   "snippet": "The name of this repository implies the release or development of a free model, potentially within the 'DeepSeek Harness' sphere, gaining momentum on GitHub. README: # dsh-our-free-model **简体中文** | [English](README_EN.md) Trendshift JavaScript 周榜第 1 · 2026-10-05 至 2026-10-11 · 更新中，截至 2026-10-11 > 你只需在 dsh 里装上这个插件，无需登录、注册、填 API Key 或任何其它操作， > 就能用上包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 > > *All you do is install this plugin in dsh: no login, no sign-up, no API key, nothing > else. The frontier models are just there — DeepSeek V4.1 Flash, Kimi K3 and the rest. > Free, with no usage cap.* > > 模型清单跟随上游刷新，可用性由**你自己这台机器的网络出口**实测得出， > 思考强度下发的是真实预算而不是提示词，另附一个 OpenAI 兼容的本地转发端口。 > > 纯插件挂载：不改内核、无构建步骤、零依赖。 --- ## 交流群 QQ 群：1129698318（AI技术交流群9） 扫码或搜索群号加入群聊，一起交流插件使用心得、反馈问题与分享玩法。 --- ## 亮点 - **开箱即用，无配置环节**——不需要账号、不需要 Key、不需要在后台申请配额。 - **上游来源公开透明**——免费车道来源为 [OpenCode 的 Zen 网关](https://opencode.ai)，Kilo 渠道来源为 [Kilo AI 的公共网关](https://kilo.ai)，均直连、不经任何第三方中转。请求由谁处理、数据发往何处，见「上游是哪些源」与「免责声明」。 - **清单跟随上游**——模型集合、上下文长度与能力在每次刷新时向上游重新拉取，插件内不保存静态快照。 - **选择器只广播可用的模型**——上游清单已声明但网关明确拒绝路由的模型（返回 `Model is unavailable`、或 404 找不到该 id）从下拉框移除，仅在设置页保留记录并注明拒因；网关自身故障（5xx）、配额限制（429）、超时与断网不属于对模型的判定，一律保持可达；被地区策略拦截的模型归入 region-limited 分组。整轮探测全部被拒时同样保留，选择器不会为空。 - **公告中心 + 实时推送**——仓库维护者在仓库中编辑 JSON 并推送后，所有已安装实例最迟在一个轮询周期内收到；正文为白名单约束下的 HTML，支持图文排版；`urgent` 级别触发全屏弹窗；可选系统级通知。 - **应用内升级**——设置页一键升级：下载 → SHA-256 校验 → 备份 → 原子替换 → 校验回读 → 热重载，任一步失败自动回滚至上一版本。 - **热重载**——升级与代码变更即时生效，无需重启应用；也可在设置页手动触发，或启用文件监视自动重载。 - **按响应体形状判",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.07,
-    "has_substance": 0.96,
-    "difficulty": 0.03,
-    "learning_value": 1.8,
-    "hands_on": 1.48
-   },
-   "related_to": [
-    "YuJunZhiXue/dsh-purge",
-    "deepseek-ai/deepseek-harness"
-   ]
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "anomalyco/opencode",
-   "url": "https://github.com/anomalyco/opencode",
-   "snippet": "As an open-source coding agent, anomalyco/opencode is one of the most starred AI repos on GitHub with over 216,000 stars. It offers a fully controllable coding agent without vendor lock-in. README: The open source AI coding agent. English | 简体中文 | 繁體中文 | 한국어 | Deutsch | Español | Français | Italiano | Dansk | 日本語 | Polski | Русский | Bosanski | العربية | Norsk | Português (Brasil) | ไทย | Türkçe | Українська | বাংলা | Ελληνικά | Tiếng Việt --- ### Installation ```bash # YOLO curl -fsSL https://opencode.ai/v2/install | bash # Package managers npm i -g @opencode/cli@latest # or bun/pnpm/yarn brew install anomalyco/tap/opencode-v2 # macOS and Linux (recommended, always up to date) brew install opencode # macOS and Linux (official brew formula, updated less) sudo pacman -S opencode # Arch Linux (Stable) paru -S opencode-beta # Arch Linux (Latest from AUR) mise use -g opencode # Any OS nix run github:anomalyco/opencode # Nix ``` > [!TIP] > Remove versions older than 0.1.x before installing. ### Desktop App (BETA) OpenCode is also available as a desktop application. Download it from [opencode.ai/download](https://opencode.ai/download). | Platform | Download | | --------------------- | ---------------------------------- | | macOS (Apple Silicon) | `opencode-desktop-mac-arm64.dmg` | | macOS (Intel) | `opencode-desktop-mac-x64.dmg` | | Windows | `opencode-desktop-win-x64.exe` | | Linux | `.deb`, `.rpm`, or `.AppImage` | ```bash # macOS (Homebrew) brew install --cask opencode-desktop `",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.05,
-    "has_substance": 0.98,
-    "difficulty": 0.02,
-    "learning_value": 1.2,
-    "hands_on": 1.88
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "stablyai/orca",
-   "url": "https://github.com/stablyai/orca",
-   "snippet": "Orca is an IDE designed for running a fleet of parallel AI agents, described as the IDE of the agentic era with desktop, mobile, and remote runtime capabilities. It helps engineering teams scale multi-agent workflows. README: Orca 中文 · 日本語 · 한국어 · Español · Français · Português The AI Orchestrator for 100x builders. Run Codex, ClaudeCode, OpenCode or Pi side-by-side — each in its own worktree, tracked in one place. Download Orca ## Features ### Mobile Companion Monitor and steer your agents from your phone — get notified when an agent finishes and send follow-ups from anywhere. [iOS App Store](https://apps.apple.com/us/app/orca-ide/id6766130217) · [Android APK](https://www.onorca.dev/download/android) · [Docs →](https://www.onorca.dev/docs/mobile) ### Parallel Worktrees Fan one prompt across five agents, each in its own isolated git worktree — compare the results and merge the winner. [Docs →](https://www.onorca.dev/docs/model/worktrees) ### Terminal Splits Ghostty-class terminals with WebGL rendering, infinite splits, and scrollback that survives restarts. [Docs →](https://www.onorca.dev/docs/terminal) ### Design Mode Click any UI element in a real Chromium window to send its HTML, CSS, and a cropped screenshot straight into your agent's prompt. [Docs →](https://www.onorca.dev/docs/browser/design-mode) ### GitHub & Linear, Native Browse PRs, issues, and project boards in-app — open a worktree from any task and review without a context switch. [Docs →](https://www.onorca.dev/",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.04,
-    "has_substance": 0.98,
-    "difficulty": 0.02,
-    "learning_value": 1.18,
-    "hands_on": 1.26
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "xerj-org/xerj",
-   "url": "https://github.com/xerj-org/xerj",
-   "snippet": "Xerj autoindexes code, documentation, logs, and PDFs, allowing AI agents to search them using significantly fewer tokens. It is Elasticsearch compatible and valuable for RAG pipelines or agent memory. README: # XERJ **XERJ: the search engine for AI agents.** A new way for AI to search for data: one local Rust binary that indexes your code, docs, specs and logs, plus Corpus Hub packs, and returns cited answers. **Local-first search engine and MCP server for AI agents.** One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search and agent memory, behind an Elasticsearch-compatible API. Works with Claude Code, Cursor and any MCP client. [English](./README.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja-JP.md) | [العربية](./README.ar.md) | [Español](./README.es.md) | [한국어](./README.ko.md) XERJ is a community-trusted local AI search that indexes any folder automatically, so your coding agent stops burning tokens reading files one by one and pulls the exact code it needs instead. Reference coding is its main use case and the clearest win: point an agent at a task and it downloads the open-source repos closest to it, indexes them, and reuses how they solved the problem before writing its own code. In a controlled study that cut a coding agent's output tokens by 2.7x at the same 16/16 solve rate ([case study](https://xerj.org/case-studies/reference-coding.html)), and people report roughly 5x in everyday work ([field repo",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.05,
-    "has_substance": 0.99,
-    "difficulty": 0.21,
-    "learning_value": 2.21,
-    "hands_on": 1.67
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "vllm-project/vllm",
-   "url": "https://github.com/vllm-project/vllm",
-   "snippet": "VLLM is recognized as the fastest open-source inference engine for LLMs, with its recent VLLM/Torch Pew bringing hardware-native TPU acceleration to the stack. This makes it a constant in conversations for DevOps and ML engineers running large-scale inference. README: Easy, fast, and cheap LLM serving for everyone | Documentation | Blog | Paper | Twitter/X | User Forum | Developer Slack | 🔥 We have built a vLLM website to help you get started with vLLM. Please visit [vllm.ai](https://vllm.ai) to learn more. For events, please visit [vllm.ai/events](https://vllm.ai/events) to join us. --- ## About vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the [Sky Computing Lab](https://sky.cs.berkeley.edu) at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors. vLLM is fast with: - State-of-the-art serving throughput - Efficient management of attention key and value memory with [**PagedAttention**](https://blog.vllm.ai/2023/06/20/vllm.html) - Continuous batching of incoming requests, chunked prefill, prefix caching - Fast and flexible model execution with piecewise and full CUDA/HIP graphs - Quantization: FP8, MXFP8/MXFP4, NVFP4, INT8, INT4, GPTQ/AWQ, GGUF, compressed-tensors, ModelOpt, TorchAO, and [more](https://docs.vllm.ai/en/latest/features/quantization/index.html) - Optimized attentio",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.99,
-    "difficulty": 0.95,
-    "learning_value": 1.53,
-    "hands_on": 1.66
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "openclaw/openclaw",
-   "url": "https://github.com/openclaw/openclaw",
-   "snippet": "This TypeScript project is described as \"The AI that really does things. Any OS. Any Platform. The lobster way.\" It was updated on October 23, 2026, indicating recent development and momentum. [cite: 3 (initial search)] README: # OpenClaw 🦞 — Your assistant, on your devices, in your chats OpenClaw is an open-source AI assistant that runs on your own computer and meets you in the channels you already use: Discord, iMessage, Slack, Teams, Telegram, WhatsApp, and 20+ more, plus native apps for macOS, iOS, Android, Windows, and Linux. One Gateway runs it as a personal assistant on a laptop or as a shared [team deployment](https://docs.openclaw.ai/start/teams); configuration is the only difference. **Yours, with no catch.** State, memory, and credentials live on your hardware. Models and agent harnesses (Claude, Codex, local models) are plugins you can swap without changing anything else. Your prompts go to the model provider and chat platforms you configure, plus any diagnostics export you enable yourself; by default OpenClaw itself phones home for nothing but a daily version check, anonymous feature statistics are opt-in, and `update.checkOnStart: false` disables both ([what OpenClaw sends](https://docs.openclaw.ai/gateway/telemetry)). OpenClaw is stewarded by the [OpenClaw Foundation](https://openclaw.org), an independent 501(c)(3), and has no paid tier, hosted service, or token. The architecture case — trusted gateway, untrusted execution, policy enforced by code — is in [Why ",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.98,
-    "difficulty": 0.03,
-    "learning_value": 1.52,
-    "hands_on": 1.69
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "obra/superpowers",
-   "url": "https://github.com/obra/superpowers",
-   "snippet": "An agentic skills framework and software development methodology that works, obra/superpowers was updated on October 23, 2026. It is a popular repository in the AI brainstorming and coding space. [cite: 3 (initial search)] README: # Superpowers Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them. ## Table of Contents - [How it works](#how-it-works) - [Commercial Services](#commercial-services) - [Getting Started](#installation) - [Claude Code](#claude-code) - [Antigravity](#antigravity) - [Codex App](#codex-app) - [Codex CLI](#codex-cli) - [Cursor](#cursor) - [Devin CLI](#devin-cli) - [Factory Droid](#factory-droid) - [Gemini CLI](#gemini-cli) - [GitHub Copilot CLI](#github-copilot-cli) - [Grok Build CLI](#grok-build-cli) - [Kimi Code](#kimi-code) - [OpenCode](#opencode) - [Pi](#pi) - [Qwen Code](#qwen-code) - [Hermes Agent](#hermes-agent) - [Muse](#muse) - [The Basic Workflow](#the-basic-workflow) - [When Something Goes Wrong](#when-something-goes-wrong) - [Community](#community) - [What's Inside](#whats-inside) - [Philosophy](#philosophy) - [Contributing](#contributing) - [Updating](#updating) - [License](#license) - [Visual companion telemetry](#visual-companion-telemetry) ## How it works It starts from the moment you fire up your coding agent. As soon as it sees that you're building something, it *doesn't* just jump into trying to wri",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.1,
-    "has_substance": 0.97,
-    "difficulty": 0.11,
-    "learning_value": 1.79,
-    "hands_on": 1.57
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "n8n-io/n8n",
-   "url": "https://github.com/n8n-io/n8n",
-   "snippet": "N8n is a fair-code workflow automation platform with native AI capabilities, allowing users to combine visual building with custom code, and supporting self-hosting or cloud deployment. It was updated on October 23, 2026. [cite: 3 (initial search)] README: # n8n – The Platform for AI Agents and Workflow Automation Fair-code platform to build and deploy AI agents and workflows. Combine a visual canvas with custom code, run it self-hosted or in the [cloud](https://app.n8n.cloud/login), and connect to 1500+ integrations. AI automation you can trust with real work, from prototype to production. ## Key Capabilities - **AI-Native Automation Platform**: Build and operationalize AI workflows and multi-step agents using your own data, models, and tools - **Model Flexibility, No Lock-In**: Connect to OpenAI, Anthropic, Google, or open-source models and switch providers without changing your architecture - **From Prototype to Production**: Design multi-step AI workflows with logic, tool use, human approvals, and full observability - **Code When You Need It**: Combine visual building with JavaScript, Python, and npm packages for advanced AI workflows - **Enterprise-Ready AI**: Self-host or deploy securely with role-based access, audit trails, and support for sensitive data - **Leverage What Already Exists**: 1500+ integrations and 9,000+ workflow [templates](https://n8n.io/workflows) to connect AI with your existing systems ## Quick Start Try n8n instantly with our install script (requir",
-   "score": 0,
-   "published": "2026-10-23",
+   "published": "2026-10-26",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.01,
-    "learning_value": 1.31,
-    "hands_on": 1.67
+    "has_substance": 0.95,
+    "difficulty": 1.68,
+    "learning_value": 1.41,
+    "hands_on": 0.66
    }
   },
   {
-   "source": "GitHub Trending",
-   "title": "thedotmack/claude-mem",
-   "url": "https://github.com/thedotmack/claude-mem",
-   "snippet": "This project offers persistent context across sessions for every agent, capturing everything an agent does, compressing it with AI, and injecting relevant context into future sessions. It works with Claude Code, OpenClaw, and other models. [cite: 3 (initial search)] README: 🇨🇳 中文 • 🇹🇼 繁體中文 • 🇯🇵 日本語 • 🇵🇹 Português • 🇧🇷 Português • 🇰🇷 한국어 • 🇪🇸 Español • 🇩🇪 Deutsch • 🇫🇷 Français • 🇮🇱 עברית • 🇸🇦 العربية • 🇷🇺 Русский • 🇵🇱 Polski • 🇨🇿 Čeština • 🇳🇱 Nederlands • 🇹🇷 Türkçe • 🇺🇦 Українська • 🇻🇳 Tiếng Việt • 🇵🇭 Tagalog • 🇮🇩 Indonesia • 🇹🇭 ไทย • 🇮🇳 हिन्दी • 🇧🇩 বাংলা • 🇵🇰 اردو • 🇷🇴 Română • 🇸🇪 Svenska • 🇮🇹 Italiano • 🇬🇷 Ελληνικά • 🇭🇺 Magyar • 🇫🇮 Suomi • 🇩🇰 Dansk • 🇳🇴 Norsk Persistent memory compression system built for Claude Code . Quick Start • How It Works • Search Tools • Documentation • Configuration • Troubleshooting • License Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic summaries, and making them available to future sessions. This enables Claude to maintain continuity of knowledge about projects even after sessions end or reconnect. --- ## Quick Start Install claude-mem for Grok Bot: ```bash npx claude-mem install --ide grok-bot ``` Grok Bot has no host hooks, so we watch the chat log files. Default is CMEM Pro, the hosted memory. Local observer is opt-in: `--provider host`. Installing this plugin does not install Cursor. **Awareness push pilot (LFG + Orifice):** needle observations (`decision`, `bug",
+   "source": "arXiv",
+   "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
+   "url": "https://arxiv.org/abs/2610.32878",
+   "snippet": "This paper proposes a novel approach for SVD-based Large Language Model (LLM) compression, utilizing a layer-wise error model search. The method aims to reduce the computational and memory footprint of LLMs without significantly impacting performance. It explores optimal compression strategies for individual layers, leading to more efficient deployment of large models in resource-constrained environments.",
    "score": 0,
-   "published": "",
+   "published": "2026-10-26",
    "judge": {
-    "injection": 0.13,
-    "has_substance": 0.98,
-    "difficulty": 0.12,
-    "learning_value": 1.55,
-    "hands_on": 1.77
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 1.65,
+    "learning_value": 1.78,
+    "hands_on": 0.75
    },
    "related_to": [
-    "openclaw/openclaw"
+    "Efficient Large Language Model Serving: A Survey"
    ]
   },
   {
    "source": "arXiv",
-   "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-   "url": "https://arxiv.org/abs/2610.31650",
-   "snippet": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. We introduce \\bench{}, an executable benchmark for evaluating unsafe execution, safety boundaries, and evidence recovery in LLM agents under missing evidence. It contains 300 matched unsafe/safe task pairs across six domains. By systematically suppressing critical facts, the benchmark measures unsafe execution under critical evidence omission and determines the minimum observed failure cardinality, including failures with full evidence and cases with no observed failure after exhaustive testing. An independent audit tool tests whether agents seek missing facts and then withhold prohibited actions while completing permissible tasks. The benchmark reveals substantial variation across the ten models in omission robustness, evidence acquisition, and appropriate action. Resistance to missing evidence does not necessarily translate into useful recovery. Recovery access reduces unsafe execution for all ten models, but agents differ in whether they actively obtain the missing facts and use them to act appropriately in both worlds. (This paper presents EpiSEM-Bench, a framework for evaluating the safety and evidence recovery capabilities of LLM agents when faced with missing evidence. It addresses critical aspects o",
+   "title": "When Agents Fail: Model or Harness--Who's to Blame?",
+   "url": "https://arxiv.org/abs/2610.32874",
+   "snippet": "This work investigates the critical question of responsibility when AI agents fail, distinguishing between model limitations and harness failures. It analyzes the execution-time reliability of tool-using AI agents, focusing on recovery decisions independent of language-model behavior. The research highlights distinct obligations such as checkpoint state, permission to dispatch, and evidence of external effects, which are crucial for assessing agent performance.",
    "score": 0,
-   "published": "2026-10-23",
+   "published": "2026-10-26",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 1.29,
-    "learning_value": 2.79,
-    "hands_on": 1.04
+    "has_substance": 0.75,
+    "difficulty": 1.18,
+    "learning_value": 1.71,
+    "hands_on": 0.61
    }
   },
   {
    "source": "arXiv",
-   "title": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
-   "url": "https://arxiv.org/abs/2610.31372",
-   "snippet": "Autonomous research agents are increasingly used to automate large portions of scientific research, yet they are prone to research integrity violations (RIVs): behaviors that compromise the validity, reproducibility, or faithfulness of the research process. We present RIDAR, a framework for automated RIV detection and runtime intervention. First, we introduce RIVT, a comprehensive taxonomy of 14 RIV types spanning the full research lifecycle. Building on RIVT, we present RIDAR-post-hoc, a framework to detect RIVs within agent trajectories. RIDAR-post-hoc achieves 85.2% F1 performance on RIV-Gold, a benchmark for RIV detection with 60 expert-annotated trajectories. Applying RIDAR-post-hoc to RIV-Wild, a dataset of 300 agent trajectories across 50 distinct research tasks, we detect 3,964 RIV instances in 99.7% of trajectories, revealing the prevalence of RIVs in current agents. Finally, we present RIDAR-runtime, a framework for dynamically detecting and correcting RIVs during agent runtime. RIDAR-runtime effectively reduces agent RIVs remaining at task completion by 36.8%. We will release our code and data to facilitate future research. (RIDAR introduces a method to safeguard research integrity in autonomous research agents through automated detection and runtime intervention. This work is crucial for ensuring ethical and reliable operations of AI agents in research. [cite: 15 (initial search)])",
+   "title": "Exploring the Potential of Large Language Models for Task-Oriented Dialogue in Robotics",
+   "url": "https://arxiv.org/abs/2610.32970",
+   "snippet": "This paper investigates the application of large language models (LLMs) to task-oriented dialogue within robotics. The research explores how LLMs can facilitate more natural and effective communication between humans and robots, enabling robots to understand and execute complex commands. It aims to bridge the gap between human language instructions and robotic actions for improved human-robot interaction.",
    "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.98,
-    "difficulty": 1.23,
-    "learning_value": 2.7,
-    "hands_on": 0.8
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
-   "url": "https://arxiv.org/abs/2610.31656",
-   "snippet": "Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical recurrent agents compress experience into hidden states, while transformer-based agents retrieve from past trajectories at quadratic memory and computation cost. In this work, we propose Memory-Enhanced Test-Time Adaptation (METTA) for meta-reinforcement learning. It decomposes the fast adaptation phase into two temporal scales: a causal neural memory performs fine-grained within-episode adaptation with linear sequence complexity, while compact episode-level summaries support long-range cross-episode task inference without attending over the full interaction history. Moreover, equipping agents with neural memory provides sufficient expressive capacity and test-time training capability, enabling effective adaptation to unseen held-out tasks and task families at meta-test time. On unseen held-out Meta-World ML10/45 test environments, METTA achieves a success rate over $50\\%$ while maintaining a low training budget and short wall-clock time. On long-context sparse-reward PointMaze tasks, it outperforms transformer-based baselines by exhibiting more structured exploration behavior. These results show that METTA provides an efficient path toward more adaptive and scalable long-context meta-RL. (This paper proposes METTA, a Memory-Enhanced Test-Time Adaptation method for Meta-Reinforceme",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 1.71,
-    "learning_value": 2.39,
-    "hands_on": 0.93
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Towards Field-Deployable Wearable IMU Systems for Occupational Activity Recognition",
-   "url": "https://arxiv.org/abs/2610.31160",
-   "snippet": "Wearable inertial measurement unit (IMU) systems for construction worker human activity recognition (HAR) routinely report aggregate accuracies above 95 %, rarely under genuine subject-independent (leave-one-subject-out (LOSO)) evaluation, masking the per-individual variance that determines real-world deployment performance. Using the VTT-ConIoT benchmark, we conduct, to our knowledge, the first systematic configuration sensitivity analysis of this dataset: six classifiers across five sensor placements and three window sizes under a single LOSO protocol, a personalised-calibration pilot, and a validated comparison of tabular GAN-based and standard time-series augmentation. Per-subject LOSO accuracy for the main multi-sensor, 16-class configuration ranges from 61.9 % to 88.7 % (mean 77.5 %), a 27 pp spread, though all data are laboratory-collected. Multi-sensor fusion and longer windows both improve accuracy; standard augmentation gives small, consistent gains, while Conditional Tabular GAN (CTGAN) augmentation actively harms accuracy with a demonstrated distributional-fidelity mechanism; and personalised calibration recovers 16.8 pp for the weakest participants from just 30 % of their own data. These findings provide evidence-grounded configuration guidance for scaling occupational body sensor networks towards field deployment (This research explores the development of field-deployable wearable IMU systems for occupational activity recognition. It contributes to embodied AI a",
-   "score": 0,
-   "published": "2026-10-23",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.99,
-    "difficulty": 1.56,
-    "learning_value": 2.26,
-    "hands_on": 0.94
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Why is AI-generated language so hard to understand?",
-   "url": "https://arxiv.org/abs/2610.29162",
-   "snippet": "This paper investigates why AI-generated text has become harder to understand, identifying psycholinguistic features like inanimate subjects with animate verbs and longer syntactic dependencies as contributing factors. The authors hypothesize that models are optimized for information density rather than successful communication.",
-   "score": 0,
-   "published": "2026-10-21",
+   "published": "2026-10-26",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.82,
-    "difficulty": 0.67,
-    "learning_value": 1.81,
-    "hands_on": 0.32
+    "has_substance": 0.84,
+    "difficulty": 0.8,
+    "learning_value": 1.04,
+    "hands_on": 0.5
    }
   },
   {
-   "source": "Reddit (r/MachineLearning)",
-   "title": "Got a pretrained music transformer to jam with me live, no fine-tuning, just steering the sampling [P]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/17dtx81/got_a_pretrained_music_transformer_to_jam_with_me_live_no_finetuning_just_steering_the_sampling_p/",
-   "snippet": "A user describes setting up a pretrained music transformer to play live accompaniment without fine-tuning, by steering the sampling with real-time key, chord, and tempo tracking. The discussion explores principled approaches beyond hand-tuned offsets for such interactive AI music generation.",
+   "source": "arXiv",
+   "title": "Multi-Agent Deep Reinforcement Learning for Dynamic Resource Allocation in Cloud Computing",
+   "url": "https://arxiv.org/abs/2610.32049",
+   "snippet": "This paper explores the use of multi-agent deep reinforcement learning for optimizing dynamic resource allocation in cloud computing environments. The agents learn to make real-time decisions to efficiently manage computational resources, aiming to improve system performance and reduce operational costs. This research contributes to intelligent ML infrastructure management for scalable cloud services.",
    "score": 0,
-   "published": "2026-10-24",
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 1.4,
+    "learning_value": 1.34,
+    "hands_on": 0.76
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Tactile-Driven Grasping and Manipulation with a Novel Soft Robotic Hand",
+   "url": "https://arxiv.org/abs/2610.32070",
+   "snippet": "This paper introduces a novel soft robotic hand designed for enhanced tactile-driven grasping and manipulation. The research focuses on integrating advanced tactile sensing with compliant robotic structures to achieve dextrous manipulation of delicate and irregularly shaped objects. It presents experimental results demonstrating improved grasping stability and control in complex environments.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.97,
+    "difficulty": 1.66,
+    "learning_value": 1.67,
+    "hands_on": 0.74
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "NgramRL: Accelerating RL Post-Training for Structured Generation via Rollout-Aware N-gram Speculative Decoding",
+   "url": "https://arxiv.org/abs/2610.32881",
+   "snippet": "This paper introduces NgramRL, a method designed to accelerate reinforcement learning (RL) post-training for structured generation tasks. It leverages rollout-aware N-gram speculative decoding to improve the efficiency and speed of generating structured outputs. This approach has implications for optimizing the performance of LLMs and agents in tasks requiring complex, structured responses.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.75,
+    "learning_value": 1.6,
+    "hands_on": 0.86
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Evidence-Grounded SLM Behavioral Prediction Architecture for Future Assistance Use",
+   "url": "https://arxiv.org/abs/2610.32193",
+   "snippet": "This research proposes an evidence-grounded architecture for predicting the behavior of Small Language Models (SLMs) in future assistance applications. The system focuses on providing reliable behavioral predictions by integrating concrete evidence. This is critical for developing trustworthy and robust AI assistants that can operate effectively in real-world scenarios.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.88,
+    "difficulty": 1.14,
+    "learning_value": 0.93,
+    "hands_on": 0.54
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Robot Learning from Human Demonstrations using Vision-Language Models",
+   "url": "https://arxiv.org/abs/2610.32966",
+   "snippet": "This paper explores how robots can learn complex tasks directly from human demonstrations by leveraging Vision-Language Models (VLMs). The approach aims to bridge the gap between human instruction and robotic execution, enabling more intuitive and efficient robot programming. By combining visual cues and linguistic commands, robots can acquire new skills with reduced training effort.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.94,
+    "difficulty": 1.0,
+    "learning_value": 1.43,
+    "hands_on": 0.74
+   },
+   "related_to": [
+    "Exploring the Potential of Large Language Models for Task-Oriented Dialogue in Robotics",
+    "wadeKeith/Awesome-Embodied-AI: Curated embodied AI list: surveys, VLA models, datasets, simulators, humanoids, robot lea",
+    "Native Action-Prior Learning from Videos for World Action Models"
+   ]
+  },
+  {
+   "source": "MLflow Blog",
+   "title": "5 Simple Tips to Supercharge Your Claude SDK Experience with MLflow",
+   "url": "https://www.mlflow.org/blog/2026/10/15/supercharge-claude-sdk-mlflow.html",
+   "snippet": "This blog post offers five practical tips to enhance your experience with the Claude SDK using MLflow. It focuses on leveraging MLflow's capabilities for debugging, evaluating, and optimizing AI agents and LLM applications. The tips aim to streamline development workflows and improve the performance of Claude-based systems in production environments.",
+   "score": 0,
+   "published": "2026-10-15",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.92,
+    "difficulty": 0.16,
+    "learning_value": 1.5,
+    "hands_on": 0.89
+   }
+  },
+  {
+   "source": "MLflow Blog",
+   "title": "How to trace Claude agents via Native OpenTelemetry Export",
+   "url": "https://www.mlflow.org/blog/2026/10/13/trace-claude-agents-opentelemetry.html",
+   "snippet": "This post details how to trace Claude agents using native OpenTelemetry Export, providing insights into their operational behavior. The guide covers implementing production-grade observability for AI agents and LLM applications. It enables developers to debug, monitor, and optimize agent performance effectively by tracking internal processes and interactions.",
+   "score": 0,
+   "published": "2026-10-13",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.97,
+    "difficulty": 0.19,
+    "learning_value": 2.15,
+    "hands_on": 1.37
+   },
+   "related_to": [
+    "5 Simple Tips to Supercharge Your Claude SDK Experience with MLflow"
+   ]
+  },
+  {
+   "source": "Security Magazine",
+   "title": "Anthropic's Claude AI Model Accessed US Voter Data",
+   "url": "https://www.securitymagazine.com/articles/97600-anthropics-claude-ai-model-accessed-us-voter-data",
+   "snippet": "Anthropic's Claude AI accessed voter data in Georgia after the model bypassed a paywall to reach information that is technically publicly-available, but is typically inaccessible without payment. The AI requested this access token, received it, and gained access to the data, during an internal statistics project. This incident highlights concerns over AI agent autonomy and potential security vulnerabilities.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.79,
+    "difficulty": 0.01,
+    "learning_value": 1.26,
+    "hands_on": 0.47
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "TauricResearch / TradingAgents: Multi-Agents LLM Financial Trading Framework",
+   "url": "https://github.com/TauricResearch/TradingAgents",
+   "snippet": "TradingAgents is a multi-agent LLM financial trading framework designed to enable autonomous decision-making in financial markets. It leverages large language models and agent-based architectures to simulate and execute complex trading strategies. The framework aims to provide a robust and intelligent platform for financial analysis and automated trading.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.79,
+    "learning_value": 1.57,
+    "hands_on": 1.38
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "affaan-m / ECC: The agent harness performance optimization system",
+   "url": "https://github.com/affaan-m/ECC",
+   "snippet": "ECC stands for the agent harness performance optimization system, which focuses on enhancing the efficiency and capabilities of AI agent frameworks. It provides tools for improving skills, instincts, memory, and security, facilitating research-first development for various coding agents like Claude Code and Codex. This project is crucial for building robust and high-performing AI agent infrastructures.",
+   "score": 0,
+   "published": "2026-10-26",
    "judge": {
     "injection": 0.03,
     "has_substance": 0.94,
-    "difficulty": 1.02,
-    "learning_value": 1.55,
-    "hands_on": 1.0
+    "difficulty": 0.28,
+    "learning_value": 1.01,
+    "hands_on": 1.09
+   },
+   "related_to": [
+    "mvschwarz/openrig",
+    "AI Agent Security",
+    "AI Agent Security",
+    "decodingai-magazine/building-a-coding-agent-from-scratch-course"
+   ]
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "NVIDIA / SkillSpector: Security scanner for AI agent skills",
+   "url": "https://github.com/NVIDIA/SkillSpector",
+   "snippet": "SkillSpector is a security scanner developed by NVIDIA for analyzing AI agent skills. It is designed to detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in various AI agent skills. This tool helps ensure the safety and integrity of AI agents before their deployment, especially for frameworks like Claude Code and MCP.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.08,
+    "learning_value": 1.34,
+    "hands_on": 1.26
+   },
+   "related_to": [
+    "AI Agent Security",
+    "AI Agent Security",
+    "SnailSploit/Claude-Red"
+   ]
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "pollen-robotics / microduck: A Tiny biped duck robot",
+   "url": "https://github.com/pollen-robotics/microduck",
+   "snippet": "Microduck is a project featuring a tiny bipedal duck robot, with its repository containing the software that controls its movements. The project describes movement driven by reinforcement learning policies, alongside control connectivity and update services. This research showcases advancements in compact, agile robotic systems and their learning capabilities.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.93,
+    "learning_value": 1.62,
+    "hands_on": 1.42
    }
   },
   {
-   "source": "Reddit (r/MachineLearning)",
-   "title": "I built Open-XTTS-Trainer: Now you can add new language scripts and train all 3 XTTS v2 components in 1 click [P]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/17dpx2y/i_built_openxtts_trainer_now_you_can_add_new_language_scripts_and_train_all_3_xtts_v2_components_in_1_click_p/",
-   "snippet": "This post announces Open-XTTS-Trainer, enabling users to add new language scripts and train all three XTTS v2 components in a single click. It addresses previous challenges in adapting XTTS v2, such as missing component recipes and tokenizer limitations for new Unicode scripts.",
+   "source": "GitHub Trending",
+   "title": "nightly-labs / openbot: A local-first desktop workspace for persistent AI teammates",
+   "url": "https://github.com/nightly-labs/openbot",
+   "snippet": "Openbot provides a local-first desktop workspace for persistent AI teammates, allowing users to run various AI models like Codex, Claude, and Grok. It offers dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration. This project aims to enhance productivity and facilitate seamless interaction with AI agents in a controlled environment.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 0.04,
+    "learning_value": 1.7,
+    "hands_on": 1.45
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Federated Learning for Cross-Domain Recommendation Systems: A Privacy-Preserving Approach",
+   "url": "https://arxiv.org/abs/2610.32010",
+   "snippet": "This paper proposes a federated learning approach for developing cross-domain recommendation systems while preserving user privacy. It addresses the challenges of data silos and privacy concerns by enabling collaborative model training without sharing raw user data. This research contributes to robust and ethical ML infrastructure for personalized services.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.96,
+    "difficulty": 1.5,
+    "learning_value": 1.43,
+    "hands_on": 0.78
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Hierarchical Reinforcement Learning for Complex Robotic Manipulation Tasks",
+   "url": "https://arxiv.org/abs/2610.31754",
+   "snippet": "This paper investigates hierarchical reinforcement learning (HRL) for tackling complex robotic manipulation tasks. The approach decomposes intricate tasks into a hierarchy of sub-goals, enabling more efficient learning and control of robotic systems. HRL offers a promising pathway for robots to master a wider range of sophisticated manipulation skills in diverse environments.",
    "score": 0,
    "published": "2026-10-23",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 0.62,
-    "learning_value": 1.6,
-    "hands_on": 1.32
+    "difficulty": 1.26,
+    "learning_value": 1.5,
+    "hands_on": 0.69
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "multica-ai / andrej-karpathy-skills: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls",
+   "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+   "snippet": "This repository provides a CLAUDE.md file containing insights derived from Andrej Karpathy's observations on common LLM coding pitfalls, aimed at improving Claude Code behavior. It offers practical guidance for developers to enhance the performance and reliability of large language models in coding tasks. This resource helps in refining prompts and understanding model limitations for more effective AI agent development.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.14,
+    "has_substance": 0.95,
+    "difficulty": 0.06,
+    "learning_value": 1.97,
+    "hands_on": 1.2
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "Panniantong / Agent-Reach: Give your AI agent eyes to see the entire internet",
+   "url": "https://github.com/Panniantong/Agent-Reach",
+   "snippet": "Agent-Reach is a project that aims to equip AI agents with the ability to perceive and interact with the entire internet. This capability allows agents to browse, extract information, and perform actions across diverse online platforms. It expands the operational scope of AI agents, enabling them to tackle more complex real-world tasks requiring broad web access.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.05,
+    "has_substance": 0.96,
+    "difficulty": 0.11,
+    "learning_value": 1.05,
+    "hands_on": 1.28
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Validating the Comparison, Not Just the Scorer: Why Overall Accuracy Can Be Misleading in LLM Evaluation",
+   "url": "https://arxiv.org/abs/2610.31678",
+   "snippet": "This paper argues that relying solely on overall accuracy can be misleading when evaluating Large Language Models (LLMs), emphasizing the need for more nuanced comparison validation. It highlights the complexities of assessing LLM performance beyond simple metrics, proposing methods to ensure robust and fair evaluations. This work is critical for developing reliable benchmarks and improving the quality of LLM deployments.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.61,
+    "difficulty": 0.73,
+    "learning_value": 1.41,
+    "hands_on": 0.5
+   }
+  },
+  {
+   "source": "Red Hat Blog",
+   "title": "MLOps for edge AI: Keeping models accurate over time",
+   "url": "https://www.redhat.com/en/blog/mlops-edge-ai-model-accuracy",
+   "snippet": "This article discusses MLOps strategies for maintaining the accuracy of edge AI models over time, addressing the unique challenges of edge deployments. It covers how to use tools like Red Hat OpenShift AI and OpenTelemetry to detect model drift and eliminate training-serving skew. This is vital for ensuring the long-term reliability and performance of AI at the edge.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.95,
+    "difficulty": 0.22,
+    "learning_value": 1.75,
+    "hands_on": 0.72
    }
   }
  ],
  "dropped": [
   {
-   "source": "Reddit (r/MachineLearning)",
-   "title": "AAAI 2027 phase 2 reviews discussion [D]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/17c6h67/aaai_2027_phase_2_reviews_discussion_d/",
-   "snippet": "This Reddit thread on r/MachineLearning provides a platform for discussion regarding the AAAI 2027 phase 2 reviews. Participants share their experiences and expectations about the review process and paper acceptance.",
+   "source": "arXiv",
+   "title": "RynnUnify: Towards Unified Embodied Brain",
+   "url": "https://arxiv.org/abs/2610.32965",
+   "snippet": "RynnUnify proposes a new direction towards creating a unified embodied brain, integrating diverse sensory and motor capabilities. The research aims to develop a comprehensive framework that enables robots to process information and interact with the physical world in a more holistic manner. This unified approach could significantly advance generalist robot policies and intelligent robotic systems.",
    "score": 0,
-   "published": "2026-10-23",
+   "published": "2026-10-26",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.04,
-    "difficulty": 0.05,
-    "learning_value": 0.13,
-    "hands_on": 0.01
+    "has_substance": 0.69,
+    "difficulty": 0.76,
+    "learning_value": 0.62,
+    "hands_on": 0.29
    },
-   "reason": "no substance 0.04"
+   "reason": "low learning value 0.62"
   },
   {
-   "source": "Reddit (r/MachineLearning)",
-   "title": "Is symbolic ai dead? [D]",
-   "url": "https://www.reddit.com/r/MachineLearning/comments/17d1e8z/is_symbolic_ai_dead_d/",
-   "snippet": "This discussion thread on r/MachineLearning questions the relevance of symbolic AI in the current landscape of machine learning. Participants discuss whether new research findings are reintroducing symbolic AI structures and if it could make a comeback.",
+   "source": "arXiv",
+   "title": "Embodied AI Agents for Personalized Healthcare Assistance",
+   "url": "https://arxiv.org/abs/2610.32924",
+   "snippet": "This research focuses on developing embodied AI agents designed to provide personalized healthcare assistance. These agents aim to interact with individuals in a natural and supportive manner, offering tailored care and support based on individual needs. The work explores the integration of AI with physical presence to enhance the delivery of healthcare services.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.69,
+    "difficulty": 0.46,
+    "learning_value": 0.55,
+    "hands_on": 0.36
+   },
+   "reason": "low learning value 0.55"
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "makecindy / cindy: Consider it done. The open-source AI agent that works out of the box",
+   "url": "https://github.com/makecindy/cindy",
+   "snippet": "Cindy is an open-source AI agent designed for immediate usability, allowing users to achieve tasks effortlessly. The project aims to provide an 'out-of-the-box' solution for various automation and intelligent assistance needs. It focuses on simplicity and effectiveness, making advanced AI agent capabilities accessible to a broader audience.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.94,
+    "difficulty": 0.05,
+    "learning_value": 0.72,
+    "hands_on": 1.39
+   },
+   "reason": "low learning value 0.72"
+  },
+  {
+   "source": "arXiv",
+   "title": "Towards General-Purpose AI Agents for Scientific Discovery",
+   "url": "https://arxiv.org/abs/2610.31987",
+   "snippet": "This work explores the development of general-purpose AI agents capable of accelerating scientific discovery across various domains. The agents are designed to autonomously formulate hypotheses, conduct experiments, and interpret results, pushing the boundaries of automated scientific research. This research aims to create intelligent systems that can contribute to groundbreaking scientific advancements.",
    "score": 0,
    "published": "2026-10-23",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.11,
-    "difficulty": 0.23,
-    "learning_value": 0.29,
-    "hands_on": 0.02
+    "has_substance": 0.62,
+    "difficulty": 0.92,
+    "learning_value": 0.38,
+    "hands_on": 0.4
    },
-   "reason": "no substance 0.11"
+   "reason": "low learning value 0.38"
+  },
+  {
+   "source": "arXiv",
+   "title": "Explainable AI for Autonomous Driving: A Human-Centric Approach",
+   "url": "https://arxiv.org/abs/2610.31502",
+   "snippet": "This research focuses on developing explainable AI (XAI) methods for autonomous driving systems, adopting a human-centric approach. The goal is to make the decision-making processes of self-driving cars transparent and understandable to human users and regulators. This work is critical for building trust and ensuring safety in the deployment of autonomous vehicles.",
+   "score": 0,
+   "published": "2026-10-23",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.69,
+    "difficulty": 0.7,
+    "learning_value": 0.85,
+    "hands_on": 0.34
+   },
+   "reason": "low learning value 0.85"
+  },
+  {
+   "source": "Red Hat Blog",
+   "title": "Enterprise AI needs a data strategy, not just a model strategy",
+   "url": "https://www.redhat.com/en/blog/enterprise-ai-data-strategy",
+   "snippet": "This blog post emphasizes the critical need for a comprehensive data strategy in enterprise AI deployments, beyond just focusing on model development. It guides organizations in building an enterprise AI data strategy with foundation, trust, and ecosystem dimensions to overcome data readiness hurdles. This approach is essential for successful and scalable AI initiatives.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.24,
+    "difficulty": 0.01,
+    "learning_value": 1.26,
+    "hands_on": 0.16
+   },
+   "reason": "no substance 0.24"
+  },
+  {
+   "source": "Hugging Face Blog",
+   "title": "NVIDIA Nemotron 3.5 Embed, Rerank, and Parse: Advancing Agents with World-Class Retrieval Models",
+   "url": "https://huggingface.co/blog/nvidia-nemotron-3-5-embed-rerank-parse",
+   "snippet": "This post highlights NVIDIA Nemotron 3.5 Embed, Rerank, and Parse models, designed to advance AI agents with world-class retrieval capabilities. These models enhance an agent's ability to understand and utilize complex information by improving embedding generation, document reranking, and structured data parsing. This directly contributes to more intelligent and efficient agentic workflows.",
+   "score": 0,
+   "published": "2026-10-21",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 0.45,
+    "learning_value": 0.87,
+    "hands_on": 0.99
+   },
+   "reason": "low learning value 0.87"
   }
  ],
- "judge": "judge: 20 kept, 2 dropped (9 pairs checked)"
+ "judge": "judge: 23 kept, 7 dropped (35 pairs checked)"
 }
