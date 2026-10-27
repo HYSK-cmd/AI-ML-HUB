@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-27",
+  "headline": "ML 인프라, 로봇 손, ROS 2 최적화.",
+  "items": [
+    {
+      "title": "SWE struggling to become productive in ML inference infrastructure. How would you systematically close the knowledge gaps?",
+      "url": "https://www.reddit.com/r/learnmachinelearning/comments/1xfkwyp/swe_struggling_to_become_productive_in_ml/",
+      "source": "Reddit r/learnmachinelearning",
+      "categories": [
+        "ML Systems & Infra",
+        "Industry & Policy"
+      ],
+      "level": "beginner",
+      "headline_ko": "ML 인프라 생산성 향상 팁",
+      "summary": "이 Reddit 토론은 ML 추론 인프라에서 소프트웨어 엔지니어의 생산성을 높이기 위한 지침을 제공합니다. 복잡한 시스템의 강력한 정신 모델을 구축하기 위해 단일 추론 요청을 처음부터 끝까지 추적하는 것이 주요 조언입니다. 또한 효과적인 디버깅을 위해 오류를 더 작은 규모로 단순화하는 방법을 제안합니다.",
+      "why": "ML 시스템 개발자라면 알아야 할 실용적인 문제 해결 및 시스템 이해 접근법을 배울 수 있습니다. 초보자도 ML 인프라의 기본 개념을 잡는 데 도움이 됩니다.",
+      "keywords": [
+        "ML inference",
+        "debugging",
+        "ML infra",
+        "productivity tips"
+      ],
+      "narration": "ML 추론 인프라에서 생산성을 높이는 방법에 대한 Reddit 토론을 소개합니다. 복잡한 시스템을 이해하려면 단일 추론 요청을 전체적으로 추적해보세요. 효과적인 디버깅을 위해 실패 원인을 단순화하는 팁도 얻을 수 있습니다."
+    },
+    {
+      "title": "What if Thing From the Addams Family was Actually a Robot?",
+      "url": "https://www.automate.org/robotics/industry-insights/what-if-thing-from-addams-family-was-actually-a-robot",
+      "source": "A3 Association for Advancing Automation",
+      "categories": [
+        "Robotics & Embodied",
+        "RL"
+      ],
+      "level": "intermediate",
+      "headline_ko": "스스로 움직이는 로봇 손",
+      "summary": "이 기사는 애덤스 패밀리의 '씽'처럼 스스로 움직이는 로봇 손에 대한 연구를 다룹니다. ETH Zurich 연구팀은 로봇 손가락이 이동과 물체 상호작용 모두에 사용될 수 있도록 제어 소프트웨어를 훈련했습니다. 특히 불균형한 손가락과 비대칭 엄지손가락을 수용하여 실제 손의 움직임을 정확하게 반영하는 시뮬레이션 기반 강화 학습이 핵심입니다. 이를 통해 818g의 로봇 손이 다양한 표면에서 균형을 잡고, 물체를 밀고, 키를 누르는 등 다목적 기능을 수행할 수 있게 되었습니다.",
+      "why": "로봇 공학에서 신체 일부가 여러 기능을 수행하도록 설계하는 방법과 강화 학습의 실제 적용 사례를 배울 수 있습니다. 특히 로봇 손의 이동성 및 조작 능력 향상에 관심 있는 학생들에게 유용합니다.",
+      "keywords": [
+        "robot hand",
+        "locomotion",
+        "object interaction",
+        "reinforcement learning",
+        "ETH Zurich"
+      ],
+      "narration": "애덤스 패밀리의 '씽'처럼 스스로 움직이는 로봇 손이 개발되었습니다. ETH Zurich 연구팀은 손가락으로 이동과 물체 조작을 모두 하는 로봇 손을 만들었습니다. 강화 학습을 통해 실제 손처럼 다양한 환경에서 균형을 잡고 여러 작업을 수행할 수 있습니다."
+    },
+    {
+      "title": "From simulation to real Wi-Fi: Building distributed ROS 2 robotics systems on Arm",
+      "url": "https://developer.arm.com/community/arm-community-blogs/b/internet-of-things-blog/posts/from-simulation-to-real-wi-fi-building-distributed-ros-2-robotics-systems-on-arm",
+      "source": "Arm Community Blog",
+      "categories": [
+        "Robotics & Embodied",
+        "ML Systems & Infra",
+        "Open Source & Tools"
+      ],
+      "level": "advanced",
+      "headline_ko": "ROS 2 로봇 시스템 Wi-Fi 배포",
+      "summary": "이 Arm 블로그 게시물은 ROS 2 로봇 시스템을 시뮬레이션 환경에서 실제 Wi-Fi 기반 Arm 플랫폼 배포로 전환하는 워크플로우를 설명합니다. `rmw_zenoh`를 사용하여 분산 통신을 최적화하고, 센서 데이터가 다양한 장치와 제한된 무선 네트워크에서도 완전하고 사용 가능한 상태로 유지되도록 하는 데 중점을 둡니다. 특히 카메라 이미지나 포인트 클라우드와 같은 대용량 센서 데이터를 Wi-Fi 환경에서 안정적으로 전송하는 방법을 다룹니다.",
+      "why": "실제 로봇 시스템을 개발하고 배포할 때 직면하는 네트워크 통신 문제와 그 해결책을 깊이 있게 이해할 수 있습니다. ROS 2와 `rmw_zenoh`를 활용한 분산 시스템 설계에 대한 실용적인 지식을 얻게 될 것입니다.",
+      "keywords": [
+        "ROS 2",
+        "distributed robotics",
+        "Wi-Fi deployment",
+        "rmw_zenoh",
+        "Arm platforms",
+        "sensor data"
+      ],
+      "narration": "시뮬레이션에서 실제 Wi-Fi 환경으로 ROS 2 로봇 시스템을 배포하는 방법을 소개합니다. Arm 플랫폼에서 분산 통신을 최적화하고 센서 데이터를 안정적으로 유지하는 것이 핵심입니다. `rmw_zenoh`를 활용하여 대용량 센서 데이터를 효율적으로 전송하는 기술적 접근법을 배울 수 있습니다."
+    }
+  ]
+}
