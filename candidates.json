@@ -1,287 +1,851 @@
 {
- "date": "2026-10-27",
- "collected_at": "2026-10-27T20:23:01+00:00",
+ "date": "2026-10-28",
+ "collected_at": "2026-10-28T20:44:20+00:00",
  "counts": {
-  "gemini_search": 18
+  "gemini_search": 53
  },
- "dedup": "dedup: 1 already in corpus, 0 cross-source duplicates, 17 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 53 new",
  "items": [
   {
-   "source": "Microsoft Copilot Studio",
-   "title": "What is an AI Agent? | Microsoft Copilot Studio",
-   "url": "https://www.microsoft.com/en/copilot/ai-knowledge/what-is-an-ai-agent",
-   "snippet": "An AI agent is an intelligent software system that perceives its environment, makes decisions, and takes actions to achieve specific goals. Unlike traditional automation or chatbots, AI agents combine reasoning, planning, and adaptability to handle complex tasks across systems, representing a shift from reactive tools to proactive, goal-driven automation.",
+   "source": "Hugging Face Blog",
+   "title": "A curriculum for post-training agents",
+   "url": "https://huggingface.co/blog/curriculum-for-post-training-agents",
+   "snippet": "We introduce a curriculum learning approach for post-training language models to improve their performance as agents. This method involves progressively training the agent on increasingly complex tasks, enabling it to develop sophisticated decision-making capabilities.",
    "score": 0,
-   "published": "2026-10-26",
+   "published": "2026-10-20",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.82,
-    "difficulty": 0.02,
-    "learning_value": 1.4,
-    "hands_on": 0.16
-   },
-   "related_to": [
-    "AI Agent Security",
-    "AI Agent Security"
-   ]
-  },
-  {
-   "source": "Sentra.app",
-   "title": "Agentic AI vs AI Agents: The Difference Explained (2026) - Sentra.app",
-   "url": "https://www.sentra.app/articles/agentic-ai-vs-ai-agents",
-   "snippet": "Agentic AI vs AI agents, explained for executives: clear definitions, a difference table, 10 business examples by function, and what agents need to work. (Agentic AI refers to the broad class of AI systems that pursue a goal by planning and taking multi-step actions using tools and data. An AI agent is an individual system built in this manner, using a model to decide actions and tools for a defined task.)",
-   "score": 0,
-   "published": "2026-10-26",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.52,
-    "difficulty": 0.04,
-    "learning_value": 1.54,
-    "hands_on": 0.14
+    "has_substance": 0.94,
+    "difficulty": 0.99,
+    "learning_value": 1.71,
+    "hands_on": 0.76
    }
   },
   {
-   "source": "Module",
-   "title": "What is an LLM? Large language models for PMs | Module",
-   "url": "https://bymodule.com/en/glossary/llm",
-   "snippet": "What a large language model (LLM) is, how it generates text, what it does well, its limits, and what a PM should know before building on one. (An LLM (large language model) is a neural network trained on a vast amount of text to predict the most likely next word in a sequence. It powers generative AI features and assistants like ChatGPT, Claude, and Gemini, generating plausible answers rather than looking up facts in a database.)",
+   "source": "Hugging Face Blog",
+   "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories",
+   "url": "https://huggingface.co/blog/simready-central",
+   "snippet": "SimReady Central provides a vast, open library of 3D assets optimized for simulation environments. This resource is crucial for training and testing robotic agents and AI systems in realistic virtual settings, accelerating development for AI factories.",
    "score": 0,
-   "published": "2026-10-26",
+   "published": "2026-10-21",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.95,
-    "difficulty": 0.19,
-    "learning_value": 1.56,
-    "hands_on": 0.13
-   },
-   "related_to": [
-    "Efficient Large Language Model Serving: A Survey",
-    "karpathy/llm.c: A neat, barebones, direct-from-paper implementation of a large language model in C",
-    "Base Models Can Reason By Taking a Cue From Training Data"
-   ]
+    "difficulty": 0.06,
+    "learning_value": 1.29,
+    "hands_on": 0.81
+   }
   },
   {
-   "source": "Google Cloud Blog",
-   "title": "Gemini Robotics Embodied Reasoning 2 is now available on Google Cloud",
-   "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud",
-   "snippet": "Gemini Robotics Embodied Reasoning 2 (ER 2), a specialized Gemini model, is now available in public preview on the Gemini platform, serving as a robot's high-level brain. It enables robots to think, act, and adapt in the physical world by combining advanced spatial and temporal video understanding with long-horizon planning and safety guardrails.",
+   "source": "Hugging Face Blog",
+   "title": "Mundo: From seeing a place to simulating what happens there",
+   "url": "https://huggingface.co/blog/mundo-simulation",
+   "snippet": "Mundo is a novel system that moves beyond simply 'seeing' a place to simulating events within it. This capability is essential for embodied agents to understand and predict the consequences of actions in complex environments.",
    "score": 0,
-   "published": "2026-10-27",
+   "published": "2026-10-24",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 0.21,
-    "learning_value": 1.04,
-    "hands_on": 0.98
+    "has_substance": 0.94,
+    "difficulty": 0.51,
+    "learning_value": 1.08,
+    "hands_on": 0.83
    }
   },
   {
-   "source": "Reddit r/MachineLearning",
-   "title": "How I use AI to create blog content for my SaaS and avoid posting slop",
-   "url": "https://www.reddit.com/r/AI_Agents/comments/1xfcxsz/how_i_use_ai_to_create_blog_content_for_my_saas/",
-   "snippet": "This Reddit post outlines a personal workflow for generating blog content using AI, specifically mentioning Claude, to answer questions sourced from Reddit itself. The process focuses on iterating through content creation and refinement using a 'MCP' (presumably a custom tool or framework) to ensure quality and relevance.",
+   "source": "Hugging Face Blog",
+   "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+   "url": "https://huggingface.co/blog/nvidia-kumo-relational",
+   "snippet": "NVIDIA Kumo Relational demonstrates a novel approach to handling relational data, achieving superior performance without traditional supervised training. This breakthrough has significant implications for AI agents that need to process complex, interconnected information.",
    "score": 0,
-   "published": "2026-10-25",
-   "judge": {
-    "injection": 0.04,
-    "has_substance": 0.75,
-    "difficulty": 0.02,
-    "learning_value": 1.49,
-    "hands_on": 0.89
-   }
-  },
-  {
-   "source": "A3 Association for Advancing Automation",
-   "title": "What if Thing From the Addams Family was Actually a Robot?",
-   "url": "https://www.automate.org/robotics/industry-insights/what-if-thing-from-addams-family-was-actually-a-robot",
-   "snippet": "This article discusses research into a human-shaped robotic hand capable of using its fingers for both locomotion and object interaction, addressing traditional challenges of symmetrical finger design. The breakthrough involved training the control software to accommodate unequal fingers and an offset thumb, with simulations accurately mirroring real-hand movement.",
-   "score": 0,
-   "published": "2026-10-25",
+   "published": "2026-10-22",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.88,
-    "difficulty": 0.22,
-    "learning_value": 1.53,
-    "hands_on": 0.68
+    "has_substance": 0.93,
+    "difficulty": 0.25,
+    "learning_value": 0.94,
+    "hands_on": 0.73
    }
   },
   {
-   "source": "Arm Community Blog",
-   "title": "From simulation to real Wi-Fi: Building distributed ROS 2 robotics systems on Arm",
-   "url": "https://developer.arm.com/community/arm-community-blogs/b/internet-of-things-blog/posts/from-simulation-to-real-wi-fi-building-distributed-ros-2-robotics-systems-on-arm",
-   "snippet": "This blog post outlines a practical workflow for transitioning ROS 2 robotics systems from simulated environments to real-world Wi-Fi deployments on Arm platforms. It focuses on optimizing distributed communication using `rmw_zenoh` to ensure sensor data remains complete and usable across various devices and constrained wireless networks.",
+   "source": "Hugging Face Blog",
+   "title": "Train in Simulation, Deploy on a Real Robot: Microduck with Isaac Lab 3.0",
+   "url": "https://huggingface.co/blog/microduck-isaaclab",
+   "snippet": "This post showcases the successful deployment of a robot trained in simulation (Microduck with Isaac Lab 3.0) onto a real-world robot. It highlights advancements in sim-to-real transfer for embodied agents.",
    "score": 0,
-   "published": "2026-10-26",
+   "published": "2026-10-22",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 0.35,
-    "learning_value": 2.16,
-    "hands_on": 1.02
+    "difficulty": 0.9,
+    "learning_value": 1.39,
+    "hands_on": 1.08
    }
   },
   {
-   "source": "Domo",
-   "title": "Top 10 Enterprise AI Agent Platforms for Governed Data [2026]",
-   "url": "https://www.domo.com/learn/article/enterprise-ai-agents",
-   "snippet": "This article reviews leading enterprise AI agent platforms for managing governed data, highlighting how fragmented data access often creates a gap between AI agent pilots and production. It emphasizes that platforms with integrated connectors and governed context layers are crucial for accelerating deployment, while autonomy levels should align with organizational risk tolerance.",
+   "source": "Hugging Face Paper Explorer",
+   "title": "Memento-Skills: Let Agents Design Agents",
+   "url": "https://huggingface.co/papers/2610.02164",
+   "snippet": "This paper introduces Memento-Skills, a framework where agents can autonomously design and train other agents. This meta-learning approach aims to accelerate the development of more capable and specialized AI agents.",
    "score": 0,
-   "published": "2026-10-26",
+   "published": "2026-10-03",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.62,
-    "difficulty": 0.04,
-    "learning_value": 1.1,
-    "hands_on": 0.1
+    "has_substance": 0.93,
+    "difficulty": 1.4,
+    "learning_value": 1.33,
+    "hands_on": 0.78
+   }
+  },
+  {
+   "source": "Hugging Face Paper Explorer",
+   "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+   "url": "https://huggingface.co/papers/2608.12507",
+   "snippet": "PDRVLA is a novel Vision-Language-Action model that incorporates physical dynamics into its representations. This allows embodied agents to better understand and predict the physical world, leading to more robust control and interaction.",
+   "score": 0,
+   "published": "2026-08-22",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.52,
+    "learning_value": 1.26,
+    "hands_on": 0.69
+   }
+  },
+  {
+   "source": "Hugging Face Paper Explorer",
+   "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
+   "url": "https://huggingface.co/papers/2605.15114",
+   "snippet": "HABIT-Bench is a new benchmark designed to evaluate the ability of AI agents to form habits from weak, longitudinal evidence. It focuses on assessing memory retention and behavioral adaptation over extended periods.",
+   "score": 0,
+   "published": "2026-05-27",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.02,
+    "learning_value": 1.14,
+    "hands_on": 0.61
+   }
+  },
+  {
+   "source": "Hugging Face Paper Explorer",
+   "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+   "url": "https://huggingface.co/papers/2603.10579",
+   "snippet": "Rollback introduces a technique for experience backtracking within world models, aiming to improve policy learning for embodied agents. This method allows agents to revisit and re-evaluate past experiences for better decision-making.",
+   "score": 0,
+   "published": "2026-03-19",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.44,
+    "learning_value": 1.54,
+    "hands_on": 0.72
+   }
+  },
+  {
+   "source": "Hugging Face Paper Explorer",
+   "title": "The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+   "url": "https://huggingface.co/papers/2601.14723",
+   "snippet": "The Trinity proposes a framework for recursive self-improvement in multimodal agents, driven by their capabilities. This approach allows agents to progressively enhance their own performance through iterative refinement.",
+   "score": 0,
+   "published": "2026-01-25",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.86,
+    "difficulty": 1.58,
+    "learning_value": 1.21,
+    "hands_on": 0.62
    },
    "related_to": [
-    "10 Agent Orchestration Platforms Worth Trying in 2026",
-    "AI Agent Security",
-    "AI Agent Security"
+    "Memento 3: Recursive Self-Improvement for Frozen LLMs via Reflective Rulebooks."
    ]
   },
   {
-   "source": "Oracle Cloud Infrastructure Blog",
-   "title": "First Principles: Building AI Agents on OCI | cloud-infrastructure",
-   "url": "https://blogs.oracle.com/cloud-infrastructure/first-principles-building-ai-agents-on-oci",
-   "snippet": "This blog post lays out the foundational principles for building AI agents on Oracle Cloud Infrastructure (OCI), differentiating between models, agents, frameworks, and harnesses. It explains that an agent integrates a model into an iterative loop, where the runtime manages context, calls the model, validates actions, and executes them while ensuring progress and access control.",
+   "source": "Hugging Face Paper Explorer",
+   "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+   "url": "https://huggingface.co/papers/2512.11638",
+   "snippet": "This paper presents Multiscale Policy Optimization, a method designed to improve the performance of LLM agents on long-horizon tasks. It addresses challenges in maintaining coherence and making effective decisions over extended sequences of actions.",
    "score": 0,
-   "published": "2026-10-27",
+   "published": "2025-12-19",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.9,
-    "difficulty": 0.34,
-    "learning_value": 1.99,
-    "hands_on": 0.65
-   }
+    "has_substance": 0.96,
+    "difficulty": 1.56,
+    "learning_value": 1.29,
+    "hands_on": 0.71
+   },
+   "related_to": [
+    "A curriculum for post-training agents"
+   ]
   },
   {
-   "source": "Reddit r/learnmachinelearning",
-   "title": "SWE struggling to become productive in ML inference infrastructure. How would you systematically close the knowledge gaps?",
-   "url": "https://www.reddit.com/r/learnmachinelearning/comments/1xfkwyp/swe_struggling_to_become_productive_in_ml/",
-   "snippet": "This Reddit discussion provides guidance for Software Engineers looking to improve their productivity in ML inference infrastructure. Key advice includes tracing a single inference request end-to-end to build a strong mental model of complex systems and simplifying failures to smaller scales for effective debugging.",
+   "source": "Hugging Face Paper Explorer",
+   "title": "VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation",
+   "url": "https://huggingface.co/papers/2511.17853",
+   "snippet": "VibeVideoBench is a benchmark for evaluating multimodal agents on code-driven video generation. It assesses the agents' ability to create videos based on textual instructions and code, pushing the boundaries of generative AI.",
    "score": 0,
-   "published": "2026-10-26",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.81,
-    "difficulty": 0.03,
-    "learning_value": 1.84,
-    "hands_on": 0.41
-   }
-  },
-  {
-   "source": "Coder Blog",
-   "title": "Headless Coding Agents: Practical Examples of Background Jobs That Work While You Sleep - Blog - Coder",
-   "url": "https://coder.com/blog/headless-coding-agents-practical-examples-of-background-jobs-that-work-while-you",
-   "snippet": "This blog post from Coder showcases practical applications of headless coding agents for automating development workflows, such as automated documentation checks on pull requests and panel-based code reviews. These agents perform background jobs, from triaging new issues to in-depth code analysis, significantly streamlining processes.",
-   "score": 0,
-   "published": "2026-10-27",
+   "published": "2025-11-30",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.9,
-    "difficulty": 0.06,
-    "learning_value": 1.24,
-    "hands_on": 0.93
+    "has_substance": 0.95,
+    "difficulty": 0.69,
+    "learning_value": 0.99,
+    "hands_on": 0.74
    }
   },
   {
-   "source": "A3 Association for Advancing Automation",
-   "title": "ABB Robotics brings industrial-grade physical AI to fashion logistics",
-   "url": "https://www.automate.org/robotics/news/abb-robotics-brings-industrial-grade-physical-ai-to-fashion-logistics",
-   "snippet": "ABB Robotics has introduced its first end-to-end vision-based industrial-grade physical AI solution, integrating AI Robot Trainer into its Fashion Inductor module. This innovation aims to drastically reduce engineering and commissioning effort for AI-powered fashion logistics applications, leveraging pre-trained vision models and rapid retraining capabilities.",
+   "source": "Hugging Face Paper Explorer",
+   "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
+   "url": "https://huggingface.co/papers/2511.04998",
+   "snippet": "This work analyzes the 'memory tax' associated with AI agents, quantifying the net value of memory in terms of performance gains versus computational overhead. It aims to guide the design of more efficient memory systems for agents.",
+   "score": 0,
+   "published": "2025-11-09",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.86,
+    "difficulty": 1.3,
+    "learning_value": 1.22,
+    "hands_on": 0.53
+   }
+  },
+  {
+   "source": "Hugging Face Paper Explorer",
+   "title": "ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence",
+   "url": "https://huggingface.co/papers/2410.19180",
+   "snippet": "ChronoReplay addresses the limitations of single-interface systems for streaming spatial intelligence. It proposes a replay mechanism to enhance the temporal and spatial reasoning capabilities of AI agents.",
+   "score": 0,
+   "published": "2024-10-31",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.92,
+    "difficulty": 1.43,
+    "learning_value": 1.15,
+    "hands_on": 0.48
+   }
+  },
+  {
+   "source": "AWS Blogs",
+   "title": "Amazon SageMaker AI serverless model customization now includes training sessions",
+   "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-serverless-model-customization-now-includes-training-sessions/",
+   "snippet": "Amazon SageMaker AI now offers serverless model customization with training sessions, allowing users to fine-tune models without managing GPUs. This feature supports custom loss functions and reward signals for advanced model training.",
    "score": 0,
    "published": "2026-10-27",
    "judge": {
     "injection": 0.01,
-    "has_substance": 0.92,
-    "difficulty": 0.28,
-    "learning_value": 0.93,
-    "hands_on": 0.44
+    "has_substance": 0.96,
+    "difficulty": 0.8,
+    "learning_value": 0.99,
+    "hands_on": 0.95
+   }
+  },
+  {
+   "source": "AWS Blogs",
+   "title": "Announcing SOCI-indexed images for faster SageMaker AI jobs",
+   "url": "https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/",
+   "snippet": "Seekable OCI (SOCI) indexing for Amazon SageMaker AI training and processing jobs takes full container image download off the critical path. SageMaker AI lazy-loads your image to start containers in seconds instead of minutes, with no changes to your job definition. See the benchmarks and how to adopt it. (Seekable OCI (SOCI) indexing has been introduced for Amazon SageMaker AI jobs, significantly speeding up container startup times. This optimization allows containers to load images lazily, reducing job initiation from minutes to seconds.)",
+   "score": 0,
+   "published": "2026-10-27",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 0.02,
+    "learning_value": 1.54,
+    "hands_on": 1.09
+   }
+  },
+  {
+   "source": "AWS Blogs",
+   "title": "Exowatt beats frontier models on accuracy with SageMaker serverless model customization",
+   "url": "https://aws.amazon.com/blogs/machine-learning/exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-customization/",
+   "snippet": "In this post, we show how Exowatt used Amazon SageMaker AI serverless model customization to build a repeatable AI pipeline that produces task-specific fine-tuned models for two deployment targets, edge and cloud, achieving higher accuracy than frontier models at up to 49x lower cost. (Exowatt achieved higher accuracy than frontier models using Amazon SageMaker AI serverless model customization. This approach enabled a repeatable AI pipeline for task-specific fine-tuned models, with significantly lower costs.)",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.53,
+    "learning_value": 1.41,
+    "hands_on": 0.99
+   }
+  },
+  {
+   "source": "AWS Blogs",
+   "title": "Bayer Crop Science built the Agentic Decision Engine (ADE) on Amazon Bedrock AgentCore",
+   "url": "https://aws.amazon.com/blogs/machine-learning/bayer-crop-science-built-the-agentic-decision-engine-ade-on-amazon-bedrock-agentcore/",
+   "snippet": "Bayer Crop Science developed the Agentic Decision Engine (ADE) using Amazon Bedrock AgentCore. This multi-agent platform allows users to query analytics platforms using natural language, enhancing decision-making for breeders, analysts, and researchers.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.94,
+    "difficulty": 0.06,
+    "learning_value": 0.98,
+    "hands_on": 0.79
+   }
+  },
+  {
+   "source": "Anthropic",
+   "title": "How AI agents shape experts' judgment calls",
+   "url": "https://www.anthropic.com/research/how-ai-agents-shape-judgment-calls",
+   "snippet": "This research investigates how AI agents influence expert decision-making. The study found that analysts' judgments closely mirrored the suggestions provided by AI agents, highlighting the growing impact of AI in professional fields.",
+   "score": 0,
+   "published": "2026-10-27",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.77,
+    "difficulty": 0.07,
+    "learning_value": 1.46,
+    "hands_on": 0.19
+   }
+  },
+  {
+   "source": "The Berkeley Artificial Intelligence Research Blog",
+   "title": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
+   "url": "https://bair.berkeley.edu/blog/2026/07/26/belief-update/",
+   "snippet": "This post explores how Large Language Models (LLMs) can be taught to update their beliefs efficiently for long-horizon interactions. This is crucial for agents that need to maintain context and adapt their strategies over extended periods.",
+   "score": 0,
+   "published": "2026-07-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.74,
+    "difficulty": 1.07,
+    "learning_value": 0.99,
+    "hands_on": 0.43
+   }
+  },
+  {
+   "source": "The Berkeley Artificial Intelligence Research Blog",
+   "title": "Gradient-based Planning for World Models at Longer Horizons",
+   "url": "https://bair.berkeley.edu/blog/2026/04/20/world-models/",
+   "snippet": "This research focuses on gradient-based planning for world models, particularly for tasks requiring longer horizons. It aims to improve the planning and decision-making capabilities of AI agents in complex, dynamic environments.",
+   "score": 0,
+   "published": "2026-04-20",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.94,
+    "difficulty": 1.76,
+    "learning_value": 1.04,
+    "hands_on": 0.73
+   },
+   "related_to": [
+    "Rollback: Experience Backtracking in World Models for Policy Improvement"
+   ]
+  },
+  {
+   "source": "arXiv",
+   "title": "LLM-Empowered Embodied Agent for Memory-Augmented Task Planning in Household Robotics",
+   "url": "https://arxiv.org/abs/2504.21716",
+   "snippet": "We present an embodied robotic system with an LLM-driven agent-orchestration architecture for autonomous household object management. The system integrates memory-augmented task planning, enabling robots to execute high-level user commands while tracking past actions. It employs three specialized agents: a routing agent, a task planning agent, and a knowledge base agent, each powered by task-specific LLMs. By leveraging in-context learning, our system avoids the need for explicit model training. RAG enables the system to retrieve context from past interactions, enhancing long-term object tracking. A combination of Grounded SAM and LLaMa3.2-Vision provides robust object detection, facilitating semantic scene understanding for task planning. Evaluation across three household scenarios demonstrates high task planning accuracy and an improvement in memory recall due to RAG. Specifically, Qwen2.5 yields best performance for specialized agents, while LLaMA3.1 excels in routing tasks. The source code is available at: https://github.com/marc1198/chat-hsr. (This paper presents an LLM-powered embodied agent for household robotics that uses memory-augmented task planning. The system integrates routing, task planning, and knowledge base agents, leveraging in-context learning and RAG for improved object tracking and task completion.)",
+   "score": 0,
+   "published": "2025-04-30",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.99,
+    "difficulty": 1.52,
+    "learning_value": 2.67,
+    "hands_on": 1.89
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Towards Embodied Agentic AI: Review and Classification of LLM- and VLM-Driven Robot Autonomy and Interaction",
+   "url": "https://arxiv.org/abs/2508.05294",
+   "snippet": "Foundation models, including large language models (LLMs) and vision-language models (VLMs), have recently enabled novel approaches to robot autonomy and human-robot interfaces. In parallel, vision-language-action models (VLAs) or large behavior models (LBMs) are increasing the dexterity and capabilities of robotic systems. This survey paper reviews works that advance agentic applications and architectures, including initial efforts with GPT-style interfaces and more complex systems where AI agents function as coordinators, planners, perception actors, or generalist interfaces. Such agentic architectures allow robots to reason over natural language instructions, invoke APIs, plan task sequences, or assist in operations and diagnostics. In addition to peer-reviewed research, due to the fast-evolving nature of the field, we highlight and include community-driven projects, ROS packages, and industrial frameworks that show emerging trends. We propose a taxonomy for classifying model integration approaches and present a comparative analysis of the role that agents play in different solutions in today's literature. (This survey reviews LLM- and VLM-driven robot autonomy and interaction. It classifies agentic applications and architectures, discussing their role in robot reasoning, planning, and human-robot interfaces, and proposes a taxonomy for model integration.)",
+   "score": 0,
+   "published": "2025-08-07",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.85,
+    "difficulty": 1.54,
+    "learning_value": 1.92,
+    "hands_on": 0.25
+   },
+   "related_to": [
+    "Communication-Efficient Desire Alignment for Proactive Embodied Human–Agent Interaction"
+   ]
+  },
+  {
+   "source": "arXiv",
+   "title": "Autonomous Embodied Agents: When Robotics Meets Deep Learning Reasoning",
+   "url": "https://arxiv.org/abs/2505.00935",
+   "snippet": "The increase in available computing power and the Deep Learning revolution have allowed the exploration of new topics and frontiers in Artificial Intelligence research. A new field called Embodied Artificial Intelligence, which places at the intersection of Computer Vision, Robotics, and Decision Making, has been gaining importance during the last few years, as it aims to foster the development of smart autonomous robots and their deployment in society. The recent availability of large collections of 3D models for photorealistic robotic simulation has allowed faster and safe training of learning-based agents for millions of frames and a careful evaluation of their behavior before deploying the models on real robotic platforms. These intelligent agents are intended to perform a certain task in a possibly unknown environment. To this end, during the training in simulation, the agents learn to perform continuous interactions with the surroundings, such as gathering information from the environment, encoding and extracting useful cues for the task, and performing actions towards the final goal; where every action of the agent influences the interactions. This dissertation follows the complete creation process of embodied agents for indoor environments, from their concept to their implementation and deployment. We aim to contribute to research in Embodied AI and autonomous agents, in order to foster future work in this field. We present a detailed analysis of the procedure behind ",
+   "score": 0,
+   "published": "2025-05-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.8,
+    "difficulty": 1.58,
+    "learning_value": 1.27,
+    "hands_on": 0.6
+   },
+   "related_to": [
+    "Embodied AI Hardware for Robot Learning",
+    "Researchers open autonomous robotics learning to the world | Stanford Report"
+   ]
+  },
+  {
+   "source": "arXiv",
+   "title": "From Language to Action: Can LLM-Based Agents Be Used for Embodied Robot Cognition?",
+   "url": "https://arxiv.org/abs/2603.03148",
+   "snippet": "In order to flexibly act in an everyday environment, a robotic agent needs a variety of cognitive capabilities that enable it to reason about plans and perform execution recovery. Large language models (LLMs) have been shown to demonstrate emergent cognitive aspects, such as reasoning and language understanding; however, the ability to control embodied robotic agents requires reliably bridging high-level language to low-level functionalities for perception and control. In this paper, we investigate the extent to which an LLM can serve as a core component for planning and execution reasoning in a cognitive robot architecture. For this purpose, we propose a cognitive architecture in which an agentic LLM serves as the core component for planning and reasoning, while components for working and episodic memories support learning from experience and adaptation. An instance of the architecture is then used to control a mobile manipulator in a simulated household environment, where environment interaction is done through a set of high-level tools for perception, reasoning, navigation, grasping, and placement, all of which are made available to the LLM-based agent. We evaluate our proposed system on two household tasks (object placement and object swapping), which evaluate the agent's reasoning, planning, and memory utilisation. The results demonstrate that the LLM-driven agent can complete structured tasks and exhibits emergent adaptation and memory-guided planning, but also reveal s",
+   "score": 0,
+   "published": "2026-03-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 1.61,
+    "learning_value": 2.23,
+    "hands_on": 0.95
+   },
+   "related_to": [
+    "Towards Embodied Agentic AI: Review and Classification of LLM- and VLM-Driven Robot Autonomy and Interaction"
+   ]
+  },
+  {
+   "source": "arXiv",
+   "title": "Work Agents: Systems, Capabilities, and Optimization",
+   "url": "https://arxiv.org/abs/2404.15926",
+   "snippet": "This article reviews different microwave technologies used in dark matter axion detection experiments with resonant cavities. The general concepts of the experiment are presented and ways to optimize the design parameters of microwave resonators are discussed. Additionally, different frequency tuning systems are described. Finally, research lines where microwave engineering can contribute to this kind of axion detection are presented. (This paper proposes a unified framework for work agents that integrates foundation models with runtime harnesses for reliable task execution. It introduces concepts of persistence and openness, alongside capability families and evaluation metrics.)",
+   "score": 0,
+   "published": "2024-04-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.6,
+    "difficulty": 1.52,
+    "learning_value": 1.15,
+    "hands_on": 0.4
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Internal Safety Collapse in Frontier Large Language Models",
+   "url": "https://arxiv.org/abs/2404.15091",
+   "snippet": "Intent-Based Networking (IBN) is a known concept for enabling the autonomous configuration and self-adaptation of networks. One of the major issues in IBN is maintaining the applied intent due the effects of drifts over time, which is the gradual degradation in the fulfillment of the intents, before they fail. Despite its critical role to intent assurance and maintenance, intent drift detection was largely overlooked in the literature. To fill this gap, we propose an intent drift detection algorithm for predictive maintenance of intents which can use various unsupervised learning techniques (Affinity Propagation, DBSCAN, Gaussian Mixture Models, Hierarchical clustering, K-Means clustering, OPTICS, One-Class SVM), here applied and comparatively analyzed due to their simplicity, yet efficiency in detecting drifts. The results show that DBSCAN is the best model for detecting the intent drifts. The worst performance is exhibited by the Affinity Propagation model, reflected in its poorest accuracy and latency values. (Frontier large language models exhibit 'Internal Safety Collapse,' generating harmful content under specific conditions. This paper reveals inherent vulnerabilities despite alignment efforts and discusses implications for model safety and development.)",
+   "score": 0,
+   "published": "2024-04-25",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.89,
+    "difficulty": 1.21,
+    "learning_value": 1.47,
+    "hands_on": 0.69
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic Applications",
+   "url": "https://arxiv.org/abs/2309.10234",
+   "snippet": "Vehicles in platoons need to process many tasks to support various real-time vehicular applications. When a task arrives at a vehicle, the vehicle may not process the task due to its limited computation resource. In this case, it usually requests to offload the task to other vehicles in the platoon for processing. However, when the computation resources of all the vehicles in the platoon are insufficient, the task cannot be processed in time through offloading to the other vehicles in the platoon. Vehicular fog computing (VFC)-assisted platoon can solve this problem through offloading the task to the VFC which is formed by the vehicles driving near the platoon. Offloading delay is an important performance metric, which is impacted by both the offloading strategy for deciding where the task is offloaded and the number of the allocated vehicles in VFC to process the task. Thus, it is critical to propose an offloading strategy to minimize the offloading delay. In the VFC-assisted platoon system, vehicles usually adopt the IEEE 802.11p distributed coordination function (DCF) mechanism while having various computation resources. Moreover, when vehicles arrive and depart the VFC randomly, their tasks also arrive at and depart the system randomly. In this paper, we propose a semi-Markov decision process (SMDP) based offloading strategy while considering these factors to obtain the maximal long-term reward reflecting the offloading delay. Our research provides a robust strategy for t",
+   "score": 0,
+   "published": "2023-09-18",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.87,
+    "difficulty": 1.64,
+    "learning_value": 1.38,
+    "hands_on": 0.45
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
+   "url": "https://arxiv.org/abs/2405.11045",
+   "snippet": "The main goal of this paper is to assign two combinatorial interpretations to the elements of the Rascal Triangle defined by Angorro et al. The first interpretation involves counting ascents in binary words, while the second interpretation involves pattern avoidance in the ascent sequences studied by Duncan and Steingrímsson, and related directly to a more recent paper by Baxter and Pudwell. (Zero-Mem enables structured agent memory without intermediate LLM generation by organizing interaction traces into complementary graph and temporal views. This facilitates deterministic retrieval and more efficient memory management for LLM agents.)",
+   "score": 0,
+   "published": "2024-05-17",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.89,
+    "difficulty": 1.73,
+    "learning_value": 1.39,
+    "hands_on": 0.6
+   },
+   "related_to": [
+    "Memory as Belief: Bayesian Evolution of Memory for Self-Evolving LLM Agents"
+   ]
+  },
+  {
+   "source": "arXiv",
+   "title": "Building Auditable AI Text Detectors with Sparse Autoencoders",
+   "url": "https://arxiv.org/abs/2405.04957",
+   "snippet": "Time-varying connectivity of triangle mesh sequences leads to substantial difficulties in their processing. Unlike editing sequences with constant connectivity, editing sequences with varying connectivity requires addressing the problem of temporal correspondence between the frames of the sequence. We present a method for time-consistent editing of triangle mesh sequences with varying connectivity using sparse temporal correspondence, which can be obtained using existing methods. Our method includes a deformation model based on the usage of the sparse temporal correspondence, which is suitable for the temporal propagation of user-specified deformations of the edited surface with respect to the shape and true topology of the surface while preserving the individual connectivity of each frame. Since there is no other method capable of comparable types of editing on time-varying meshes, we compare our method and the proposed deformation model with a baseline approach and demonstrate the benefits of our framework. (This paper presents a pipeline using sparse autoencoders to build auditable AI text detectors. The method extracts interpretable linguistic features, leading to more accurate and explainable classification of AI-generated text.)",
+   "score": 0,
+   "published": "2024-05-09",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.86,
+    "difficulty": 1.7,
+    "learning_value": 1.05,
+    "hands_on": 0.7
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation",
+   "url": "https://arxiv.org/abs/2404.16787",
+   "snippet": "The Internet service provider industry is currently experiencing intense competition as companies strive to provide top-notch services to their customers. Providers are introducing cutting-edge technologies to enhance service quality, understanding that their survival depends on the level of service they offer. However, evaluating service quality is a complex task. A crucial aspect of this evaluation lies in understanding user experience, which significantly impacts the success and reputation of a service or product. Ensuring a seamless and positive user experience is essential for attracting and retaining customers. To date, much effort has been devoted to developing tools for measuring Quality of Experience (QoE), which incorporate both subjective and objective criteria. These tools, available in closed and open-source formats, are accessible to organizations and contribute to improving user experience quality. This review article delves into recent research and initiatives aimed at creating frameworks for assessing user QoE. It also explores the integration of machine learning algorithms to enhance these tools for future advancements. Additionally, the article examines current challenges and envisions future directions in the development of these measurement tools. (Next-Concept Modeling accelerates diffusion language models using hierarchical discrete codes and parallel generation. This approach improves text generation quality and reasoning performance, making models mor",
+   "score": 0,
+   "published": "2024-04-27",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.84,
+    "difficulty": 1.56,
+    "learning_value": 1.14,
+    "hands_on": 0.66
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training",
+   "url": "https://arxiv.org/abs/2404.16246",
+   "snippet": "The time dependent experimental data are always collected at discrete grids with respect to the time t. The step size h of such a grid is always separated from zero by a certain positive number. The same is true for all computations, which are always done on discrete grids with their grid step sizes being not too small. These applied considerations prompt us to introduce a new type of Ill-Posed Problems and Coefficient Inverse Problems (CIP)for parabolic equations. In these problems the t-derivatives of corresponding parabolic operators are written in finite differences with the grid step size being separated from zero. We call this the \"t-finite difference framework\" (TFD). We address three long standing open questions within the TFD framework. Finally, a numerical method is developed for the CIP of monitoring epidemics. The global convergence of this method is proven. (Prism utilizes dynamic sparse attention for native 2K joint video-audio generation. It employs guided attention mechanisms to preserve semantic coherence and cross-modal interactions, enhancing the quality of generated content.)",
+   "score": 0,
+   "published": "2024-04-27",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.82,
+    "difficulty": 1.65,
+    "learning_value": 1.04,
+    "hands_on": 0.56
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+   "url": "https://arxiv.org/abs/2404.14807",
+   "snippet": "Recently, X-ray microscopy (XRM) and light-sheet fluorescence microscopy (LSFM) have emerged as pivotal tools in preclinical research, particularly for studying bone remodeling diseases such as osteoporosis. These modalities offer micrometer-level resolution, and their integration allows for a complementary examination of bone microstructures which is essential for analyzing functional changes. However, registering high-resolution volumes from these independently scanned modalities poses substantial challenges, especially in real-world and reference-free scenarios. This paper presents BigReg, a fast, two-stage pipeline designed for large-volume registration of XRM and LSFM data. The first stage involves extracting surface features and applying two successive point cloud-based methods for coarse alignment. The subsequent stage refines this alignment using a modified cross-correlation technique, achieving precise volumetric registration. Evaluations using expert-annotated landmarks and augmented test data demonstrate that BigReg approaches the accuracy of landmark-based registration with a landmark distance (LMD) of 8.36\\,\\textmu m\\,$\\pm$\\,0.12\\,\\textmu m and a landmark fitness (LM fitness) of 85.71\\%\\,$\\pm$\\,1.02\\%. Moreover, BigReg can provide an optimal initialization for mutual information-based methods which otherwise fail independently, further reducing LMD to 7.24\\,\\textmu m\\,$\\pm$\\,0.11\\,\\textmu m and increasing LM fitness to 93.90\\%\\,$\\pm$\\,0.77\\%. Ultimately, key micr",
+   "score": 0,
+   "published": "2024-04-25",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.75,
+    "difficulty": 1.64,
+    "learning_value": 1.4,
+    "hands_on": 0.46
+   }
+  },
+  {
+   "source": "Reddit",
+   "title": "Robotics multimodal LLMs",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/18k8j0g/robotics_multimodal_llms/",
+   "snippet": "This discussion explores resources for open-source robots and multimodal LLMs, including foundation models pretrained on robot platforms and datasets. Topics like Vision-Language-Actions (VLA) models, world models, and reasoning for robots are highlighted.",
+   "score": 0,
+   "published": "2023-12-15",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.81,
+    "difficulty": 1.45,
+    "learning_value": 1.05,
+    "hands_on": 0.7
+   },
+   "related_to": [
+    "Towards Embodied Agentic AI: Review and Classification of LLM- and VLM-Driven Robot Autonomy and Interaction"
+   ]
+  },
+  {
+   "source": "Reddit",
+   "title": "How Can an AI Agent + LLM Work With Robotics ?",
+   "url": "https://www.reddit.com/r/learnmachinelearning/comments/17v4897/how_can_an_ai_agent_llm_work_with_robotics/",
+   "snippet": "A user implemented an AI Harness + LLM to control a ROS simulator, exploring how LLMs can interface with robotics. The discussion includes insights into building and controlling robotic systems with AI agents.",
+   "score": 0,
+   "published": "2026-08-30",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.89,
+    "difficulty": 0.6,
+    "learning_value": 1.06,
+    "hands_on": 0.95
    }
   }
  ],
  "dropped": [
   {
-   "source": "Z-Space Dynamics",
-   "title": "Robotics & Automation: The deployment series",
-   "url": "https://zspacedynamics.com/whitepapers",
-   "snippet": "This whitepaper series focuses on the practical aspects of embodied automation, analyzing its true costs and returns, and addressing challenges like asset valuation and the pilot-to-production gap. It offers insights for buyers of robotics solutions, including a 'Robotics Buyer's Field Kit' toolkit.",
-   "score": 0,
-   "published": "2026-10-26",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.28,
-    "difficulty": 0.02,
-    "learning_value": 0.98,
-    "hands_on": 0.18
-   },
-   "reason": "no substance 0.28"
-  },
-  {
-   "source": "A3 Association for Advancing Automation",
-   "title": "From Inspection to Motion: How Automation Works Together",
-   "url": "https://www.automate.org/motion-control/editorials/from-inspection-to-motion-how-automation-works-together",
-   "snippet": "See how flexible feeding, 3D inspection, robotic handling and coordinated motion come together in one automation cell. Discover the Lanco and Jenny Science demonstration at MD&M Midwest, Booth 2021. (This editorial explores the integration of vision systems, robotics, flexible feeding, and coordinated motion within advanced automation cells. It emphasizes that successful automation requires a holistic understanding of the entire production process, rather than focusing on isolated technologies.)",
-   "score": 0,
-   "published": "2026-10-26",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.68,
-    "difficulty": 0.01,
-    "learning_value": 0.78,
-    "hands_on": 0.19
-   },
-   "reason": "low learning value 0.78"
-  },
-  {
-   "source": "Futurum",
-   "title": "Robotics TAM: Mobile Ground Robots, Not Humanoids, Will Lead by 2035",
-   "url": "https://futurumgroup.com/insights/robotics-tam-mobile-ground-robots-not-humanoids-will-lead-by-2035/",
-   "snippet": "Futurum's robotics Total Addressable Market (TAM) model predicts that the global market will reach $391 billion by 2035, with mobile ground robots surpassing humanoids in market share. The growth is primarily driven by wage arbitrage and the compelling financial return on investment from replacing human labor with capable robots.",
-   "score": 0,
-   "published": "2026-10-26",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.17,
-    "difficulty": 0.01,
-    "learning_value": 0.82,
-    "hands_on": 0.21
-   },
-   "reason": "no substance 0.17"
-  },
-  {
-   "source": "Hacker News",
-   "title": "An LLM is basically just a massive and extremely sophisticated mathematical function?",
-   "url": "https://www.reddit.com/r/artificial/comments/1xfw15p/an_llm_is_basically_just_a_massive_and_extremely/",
-   "snippet": "This Hacker News discussion explores whether an LLM can be fundamentally understood as a frozen, stateless mathematical function, in contrast to the dynamic nature of human brains. It clarifies that while LLMs are static after training, continuous training is an ongoing development aimed at enabling more adaptive behaviors.",
-   "score": 0,
-   "published": "2026-10-26",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.41,
-    "difficulty": 0.51,
-    "learning_value": 0.93,
-    "hands_on": 0.09
-   },
-   "reason": "no substance 0.41"
-  },
-  {
-   "source": "Grafana Labs Blog",
-   "title": "Agent Observability FAQ: Understand the value of monitoring, evaluating, and improving your AI agents | Grafana Labs",
-   "url": "https://grafana.com/blog/agent-observability-faq-understand-the-value-of-monitoring-evaluating-and-improving-your-ai-agents/",
-   "snippet": "Grafana Labs introduces Agent Observability, a new feature in Grafana Cloud designed to monitor, evaluate, and improve AI agents by tracking performance, costs, and quality. This solution addresses common challenges in agent management, such as inconsistent answers and complex debugging in multi-step workflows.",
+   "source": "Hugging Face Blog",
+   "title": "What's new in the hf CLI and huggingface_hub library",
+   "url": "https://huggingface.co/blog/hf-cli-v2",
+   "snippet": "This post details recent updates to the Hugging Face CLI and the huggingface_hub library, focusing on features that enhance the development workflow for AI models and agents. Improvements include better artifact management and streamlined interaction with the Hugging Face Hub.",
    "score": 0,
    "published": "2026-10-27",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.93,
-    "difficulty": 0.01,
-    "learning_value": 0.75,
-    "hands_on": 0.44
+    "has_substance": 0.94,
+    "difficulty": 0.03,
+    "learning_value": 0.89,
+    "hands_on": 0.73
    },
-   "reason": "low learning value 0.75"
+   "reason": "low learning value 0.89"
+  },
+  {
+   "source": "Hugging Face Blog",
+   "title": "Introducing A5: Proactive Personal Agent in Your Life-Long Context",
+   "url": "https://huggingface.co/blog/a5-agent",
+   "snippet": "A5 is a proactive personal agent designed to maintain context across a user's life. It leverages advanced LLMs to anticipate needs and offer assistance proactively, aiming to become an indispensable part of daily life.",
+   "score": 0,
+   "published": "2026-10-24",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.82,
+    "difficulty": 0.09,
+    "learning_value": 0.28,
+    "hands_on": 0.66
+   },
+   "reason": "low learning value 0.28"
+  },
+  {
+   "source": "Hugging Face Blog",
+   "title": "NVIDIA Nemotron 3.5 Embed, Rerank, and Parse: Advancing Agents with World-Class Retrieval Models",
+   "url": "https://huggingface.co/blog/nemotron-agents",
+   "snippet": "This post introduces NVIDIA Nemotron 3.5, a suite of retrieval models designed to enhance the capabilities of AI agents. The models excel at embedding, reranking, and parsing information, leading to more effective and context-aware agentic behavior.",
+   "score": 0,
+   "published": "2026-10-21",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 0.48,
+    "learning_value": 0.81,
+    "hands_on": 0.95
+   },
+   "reason": "low learning value 0.81"
+  },
+  {
+   "source": "Hugging Face Paper Explorer",
+   "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
+   "url": "https://huggingface.co/papers/2607.11279",
+   "snippet": "Hy-Nomas enables free-form and interactive world generation, allowing users to shape virtual environments through natural language. This is a significant step towards more dynamic and responsive embodied AI systems.",
+   "score": 0,
+   "published": "2026-07-19",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.91,
+    "difficulty": 0.57,
+    "learning_value": 0.76,
+    "hands_on": 0.77
+   },
+   "reason": "low learning value 0.76"
+  },
+  {
+   "source": "Hugging Face Paper Explorer",
+   "title": "Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?",
+   "url": "https://huggingface.co/papers/2603.09430",
+   "snippet": "This paper investigates whether discrete tokens can act as semantically lossless representations for visual signals, a crucial aspect for efficient and effective processing by multimodal AI agents.",
+   "score": 0,
+   "published": "2026-03-18",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.8,
+    "difficulty": 1.42,
+    "learning_value": 0.89,
+    "hands_on": 0.31
+   },
+   "reason": "low learning value 0.89"
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "Gemini 4 Argon for Robotics",
+   "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+   "snippet": "Discover Gemini 4 Argon for robotics: leading the ERQA benchmark with physical reasoning, zero-shot control, Real2Sim, and agentic workflows. (Google DeepMind introduces Gemini 4 Argon, a frontier model specifically adapted for robotics. This iteration aims to enhance robot autonomy, perception, and interaction capabilities through advanced AI reasoning and multimodal understanding.)",
+   "score": 0,
+   "published": "2026-10-13",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.84,
+    "difficulty": 0.87,
+    "learning_value": 0.78,
+    "hands_on": 0.7
+   },
+   "reason": "low learning value 0.78"
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+   "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+   "snippet": "Introducing EmbeddingGemma 2, an open multimodal embedding model optimized for privacy-first use cases (EmbeddingGemma 2 is presented as an open and lightweight multimodal embedding model. It is designed to efficiently process and represent information from various modalities, making it a valuable tool for multimodal AI applications.)",
+   "score": 0,
+   "published": "2026-10-06",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.52,
+    "learning_value": 0.84,
+    "hands_on": 1.22
+   },
+   "reason": "low learning value 0.84"
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+   "url": "https://deepmind.google/blog/google-deepmind-and-singapore-government-collaborate-to-build-fine-tuned-ai-model-for-scam-detection/",
+   "snippet": "This collaboration focuses on developing a fine-tuned AI model for enhanced scam detection. The initiative leverages AI to identify and combat fraudulent activities, underscoring the role of AI in public safety.",
+   "score": 0,
+   "published": "2026-10-03",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.59,
+    "difficulty": 0.23,
+    "learning_value": 0.33,
+    "hands_on": 0.2
+   },
+   "reason": "low learning value 0.33"
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "Gemini 4 Carbon: Our next frontier model",
+   "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+   "snippet": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities. (Google DeepMind announces Gemini 4 Carbon, its next-generation frontier model. This model represents a significant advancement in AI capabilities, pushing the boundaries of intelligence and problem-solving.)",
+   "score": 0,
+   "published": "2026-10-01",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.68,
+    "difficulty": 0.07,
+    "learning_value": 0.17,
+    "hands_on": 0.39
+   },
+   "reason": "low learning value 0.17"
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "Introducing agentic video understanding with Gemini",
+   "url": "https://deepmind.google/blog/introducing-agentic-video-understanding-with-gemini/",
+   "snippet": "This post introduces agentic video understanding capabilities powered by Gemini. The system can analyze and interpret video content in an agent-like manner, enabling more sophisticated video analysis tasks.",
+   "score": 0,
+   "published": "2026-09-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.92,
+    "difficulty": 0.22,
+    "learning_value": 0.42,
+    "hands_on": 0.68
+   },
+   "reason": "low learning value 0.42"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing GPT-6.1 Sol and GPT-6.1 Luna",
+   "url": "https://openai.com/blog/gpt-6-1-sol-and-luna",
+   "snippet": "OpenAI announces GPT-6.1 Sol and GPT-6.1 Luna, expanding the GPT-6 family with models optimized for cost-efficiency while maintaining high performance. These models aim to make advanced AI capabilities more accessible for a wider range of applications.",
+   "score": 0,
+   "published": "2026-09-29",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.69,
+    "difficulty": 0.03,
+    "learning_value": 0.29,
+    "hands_on": 0.45
+   },
+   "reason": "low learning value 0.29"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Working with academic communities to build scientific understanding",
+   "url": "https://openai.com/blog/working-with-academic-communities",
+   "snippet": "OpenAI is strengthening its collaboration with academic communities to foster scientific understanding and research. This initiative aims to ensure that AI advancements are shared and built upon responsibly within the broader scientific landscape.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.05,
+    "difficulty": 0.0,
+    "learning_value": 0.02,
+    "hands_on": 0.03
+   },
+   "reason": "no substance 0.05"
+  },
+  {
+   "source": "OpenAI",
+   "title": "ChatGPT's expanding world of work",
+   "url": "https://openai.com/blog/chatgpt-expanding-world-of-work",
+   "snippet": "This article explores how ChatGPT is increasingly being integrated into professional workflows, enhancing productivity and transforming various industries. It highlights the practical applications and evolving role of AI in the workplace.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.59,
+    "difficulty": 0.0,
+    "learning_value": 0.13,
+    "hands_on": 0.15
+   },
+   "reason": "low learning value 0.13"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing GPT-6.1 Terra",
+   "url": "https://openai.com/blog/gpt-6-1-terra",
+   "snippet": "OpenAI unveils GPT-6.1 Terra, a new model in the GPT-6 series. This release focuses on further advancing AI capabilities and expanding the application of frontier models.",
+   "score": 0,
+   "published": "2026-10-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.62,
+    "difficulty": 0.03,
+    "learning_value": 0.08,
+    "hands_on": 0.33
+   },
+   "reason": "low learning value 0.08"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Build more responsive apps with the Decisions API",
+   "url": "https://openai.com/blog/decisions-api",
+   "snippet": "The new Decisions API from OpenAI allows developers to build more responsive applications by enabling efficient decision-making processes. This API is designed to enhance the performance and user experience of AI-powered tools.",
+   "score": 0,
+   "published": "2026-10-22",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.89,
+    "difficulty": 0.01,
+    "learning_value": 0.31,
+    "hands_on": 0.73
+   },
+   "reason": "low learning value 0.31"
+  },
+  {
+   "source": "AWS Blogs",
+   "title": "Safely Releasing Frontier Models to Customers",
+   "url": "https://aws.amazon.com/blogs/machine-learning/safely-releasing-frontier-models-to-customers/",
+   "snippet": "It’s our goal for AWS to be the most secure place to run any workload, and in support of that we’ve been deeply investing in security across our services since AWS (AWS emphasizes its commitment to securely providing frontier AI models to customers. The blog post details the security foundation of AWS AI services like Amazon Bedrock, ensuring responsible deployment.)",
+   "score": 0,
+   "published": "2026-06-30",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.48,
+    "difficulty": 0.07,
+    "learning_value": 0.69,
+    "hands_on": 0.26
+   },
+   "reason": "no substance 0.48"
+  },
+  {
+   "source": "Anthropic",
+   "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude",
+   "url": "https://www.anthropic.com/research/vulnerabilities-in-critical-software",
+   "snippet": "An internal Anthropic research model successfully identified and chained vulnerabilities in major software like Chrome, Safari, Windows, and Linux. The findings demonstrate advanced AI capabilities in cybersecurity and vulnerability research.",
+   "score": 0,
+   "published": "2026-10-27",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.84,
+    "difficulty": 0.15,
+    "learning_value": 0.64,
+    "hands_on": 0.51
+   },
+   "reason": "low learning value 0.64"
+  },
+  {
+   "source": "Reddit",
+   "title": "[D] LLMs in Robotics",
+   "url": "https://www.reddit.com/r/MachineLearning/comments/13rhg7w/d_llms_in_robotics/",
+   "snippet": "This thread discusses the potential of LLMs, especially multimodal ones, for robotics. Participants explore how LLMs can be used for planning, high-level considerations, and bridging language to robotic actions.",
+   "score": 0,
+   "published": "2023-05-26",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.43,
+    "difficulty": 0.76,
+    "learning_value": 0.8,
+    "hands_on": 0.13
+   },
+   "reason": "no substance 0.43"
   }
  ],
- "judge": "judge: 12 kept, 5 dropped (12 pairs checked)"
+ "judge": "judge: 35 kept, 18 dropped (40 pairs checked)"
 }

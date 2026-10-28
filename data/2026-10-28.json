@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-28",
+  "headline": "AI 인프라 최적화부터 로봇 에이전트 개발까지, 최신 ML 트렌드를 만나보세요.",
+  "items": [
+    {
+      "title": "Announcing SOCI-indexed images for faster SageMaker AI jobs",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/",
+      "source": "AWS Blogs",
+      "categories": [
+        "ML Systems & Infra",
+        "Open Source & Tools"
+      ],
+      "level": "beginner",
+      "headline_ko": "SageMaker, 컨테이너 시작 획기적 단축",
+      "summary": "AWS SageMaker AI가 Seekable OCI (SOCI) 인덱싱을 도입하여 컨테이너 이미지 다운로드 시간을 대폭 단축합니다. 이 기술은 전체 이미지를 미리 다운로드하는 대신 필요한 파일만 즉시 로드하고 나머지는 백그라운드에서 스트리밍하여 작업을 몇 초 만에 시작하게 합니다. 이를 통해 딥러닝 작업의 시작 시간을 몇 분에서 몇 초로 줄여 GPU 유휴 시간을 최대 90%까지 감소시킵니다. 사용자는 기존 작업 정의 변경 없이 사전 인덱싱된 AWS Deep Learning Container (DLC)를 사용하거나 자체 이미지에 인덱스를 추가하여 이 기능을 활용할 수 있습니다.",
+      "why": "이 글을 통해 AWS SageMaker 작업의 비용 효율성과 속도를 개선하는 실제적인 방법을 배울 수 있습니다. ML 인프라 최적화가 실제 서비스 운영에 얼마나 중요한지 이해하고, 지연 로딩 기술의 장점을 파악하는 데 도움이 됩니다.",
+      "keywords": [
+        "AWS SageMaker",
+        "SOCI",
+        "container",
+        "lazy loading"
+      ],
+      "narration": "첫 번째 소식은 AWS SageMaker AI 작업 속도 향상에 대한 내용입니다. SOCI 인덱싱을 통해 컨테이너 시작 시간을 몇 분에서 몇 초로 단축한다고 합니다. 이는 딥러닝 작업의 비용 효율성을 높이는 중요한 발전입니다. 기존 작업 정의 변경 없이 쉽게 적용할 수 있어 더욱 편리합니다."
+    },
+    {
+      "title": "Train in Simulation, Deploy on a Real Robot: Microduck with Isaac Lab 3.0",
+      "url": "https://huggingface.co/blog/microduck-isaaclab",
+      "source": "Hugging Face Blog",
+      "categories": [
+        "Robotics & Embodied",
+        "RL",
+        "ML Systems & Infra"
+      ],
+      "level": "intermediate",
+      "headline_ko": "시뮬레이션 로봇, 실제 로봇에 적용",
+      "summary": "이 블로그 게시물은 시뮬레이션 환경에서 훈련된 로봇(Isaac Lab 3.0의 Microduck)을 실제 로봇에 성공적으로 배포한 사례를 소개합니다. 이는 로봇 학습의 핵심 과제 중 하나인 심투리얼(sim-to-real) 전이의 발전을 보여줍니다. 실제 세계에 적용 가능한 임베디드 에이전트 개발의 중요성을 강조합니다.",
+      "why": "시뮬레이션에서 훈련된 모델을 실제 로봇에 적용하는 복잡성과 가능성을 이해하는 데 도움이 됩니다. 로보틱스 분야에서 심투리얼 전이 기술의 현재와 미래를 엿볼 수 있습니다.",
+      "keywords": [
+        "sim-to-real",
+        "robotics",
+        "Isaac Lab",
+        "embodied agents"
+      ],
+      "narration": "다음 소식은 시뮬레이션에서 훈련된 로봇을 실제 세계에 배포하는 사례입니다. Isaac Lab 3.0의 Microduck이 성공적으로 실제 로봇에 적용되었습니다. 이는 심투리얼 전이 기술의 중요한 진전을 보여줍니다. 로봇공학에 관심 있는 학생이라면 꼭 살펴보세요."
+    },
+    {
+      "title": "LLM-Empowered Embodied Agent for Memory-Augmented Task Planning in Household Robotics",
+      "url": "https://arxiv.org/abs/2504.21716",
+      "source": "arXiv",
+      "categories": [
+        "Robotics & Embodied",
+        "Agents",
+        "LLM",
+        "Research Fundamentals"
+      ],
+      "level": "advanced",
+      "headline_ko": "LLM 기반 가정용 로봇 에이전트",
+      "summary": "이 논문은 LLM 기반 에이전트 오케스트레이션 아키텍처를 활용하여 가정용 물품 관리를 위한 임베디드 로봇 시스템을 제시합니다. 이 시스템은 메모리 증강 작업 계획을 통합하여 로봇이 이전 작업을 추적하면서 고수준 사용자 명령을 수행할 수 있도록 합니다. 라우팅 에이전트, 작업 계획 에이전트, 지식 기반 에이전트의 세 가지 전문 에이전트가 각각 작업별 LLM으로 구동됩니다. RAG를 사용하여 과거 상호 작용에서 컨텍스트를 검색하고 Grounded SAM 및 LLaMa3.2-Vision을 통해 강력한 객체 감지를 구현하여 장기적인 객체 추적과 의미론적 장면 이해를 향상시킵니다.",
+      "why": "LLM을 활용한 로봇 에이전트의 복잡한 시스템 설계와 메모리 증강 작업 계획의 중요성을 깊이 있게 이해할 수 있습니다. 가정용 로봇의 자율성 및 지능형 객체 관리 능력 향상에 대한 최신 연구 동향을 파악할 수 있습니다.",
+      "keywords": [
+        "LLM agent",
+        "embodied robotics",
+        "task planning",
+        "RAG"
+      ],
+      "narration": "마지막으로, LLM 기반 가정용 로봇 에이전트에 대한 연구 논문입니다. 이 시스템은 LLM과 메모리 증강 기술을 활용해 로봇이 복잡한 작업을 계획하고 수행하도록 합니다. 로봇이 과거 행동을 기억하고 사용자 명령을 더 잘 이해하는 데 도움이 됩니다. 가정용 로봇의 미래를 엿볼 수 있는 흥미로운 연구입니다."
+    }
+  ]
+}
