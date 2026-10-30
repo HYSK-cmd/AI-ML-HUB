@@ -1,353 +1,284 @@
 {
- "date": "2026-10-29",
- "collected_at": "2026-10-29T21:41:37+00:00",
+ "date": "2026-10-30",
+ "collected_at": "2026-10-30T20:19:43+00:00",
  "counts": {
-  "gemini_search": 26
+  "gemini_search": 19
  },
- "dedup": "dedup: 2 already in corpus, 2 cross-source duplicates, 22 new",
+ "dedup": "dedup: 0 already in corpus, 1 cross-source duplicates, 18 new",
  "items": [
   {
-   "source": "LangChain Blog",
-   "title": "How to Test LLMs and AI Agents",
-   "url": "https://www.langchain.com/blog/how-to-test-llms-and-ai-agents",
-   "snippet": "LLM testing checks whether an AI-powered application or agent behaves as intended. That includes checking an agent's output, tool calls, state it updates, and whether it completes the user's task. Testing AI applications and agents combines code checks, evals, and human review to ensure any changes are safe to release.",
+   "source": "Anthropic Blog",
+   "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude",
+   "url": "https://www.anthropic.com/news/exploiting-vulnerabilities-with-claude",
+   "snippet": "Anthropic used an unreleased, internal research model to find critical vulnerabilities in widely used software, such as browsers and operating systems. The model created sophisticated, multi-step exploits in both open-source and proprietary software, demonstrating its ability to chain multiple flaws into working proof-of-concept exploits. All identified flaws were reported to vendors and have since been patched.",
    "score": 0,
    "published": "2026-10-27",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.73,
-    "difficulty": 0.07,
-    "learning_value": 1.51,
-    "hands_on": 0.62
+    "has_substance": 0.86,
+    "difficulty": 0.17,
+    "learning_value": 1.2,
+    "hands_on": 0.61
    }
   },
   {
-   "source": "GitHub Trending",
-   "title": "pbakaus/impeccable: The design vocabulary for your coding agent.",
-   "url": "https://github.com/pbakaus/impeccable",
-   "snippet": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. This project provides a framework for defining and applying design principles to AI-generated code, aiming to improve quality and consistency.",
+   "source": "Anthropic Blog",
+   "title": "How AI agents shape experts' judgment calls",
+   "url": "https://www.anthropic.com/news/ai-agents-judgment-calls",
+   "snippet": "A study by Anthropic found that professional analysts using Claude Code often deferred to their AI agent's preferences, even when unaware of those preferences. Analysts went with their agent's lean 86% of the time across four analytical choices. This suggests that AI agents can subtly influence human judgment, which is significant for critical decisions and AI safety research.",
    "score": 0,
-   "published": "2026-10-29",
+   "published": "2026-10-27",
    "judge": {
-    "injection": 0.33,
-    "has_substance": 0.94,
-    "difficulty": 0.04,
-    "learning_value": 1.51,
-    "hands_on": 1.22
-   },
-   "related_to": [
-    "Introducing Scope: Open-source evaluation for AI coding agents"
-   ]
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "Nutlope/hallmark: Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-   "url": "https://github.com/Nutlope/hallmark",
-   "snippet": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. Hallmark trains your agent to think like a real designer, fighting the visual sameness and cookie-cutter layouts often seen in AI-generated designs.",
-   "score": 0,
-   "published": "2026-10-29",
-   "judge": {
-    "injection": 0.14,
-    "has_substance": 0.92,
-    "difficulty": 0.04,
-    "learning_value": 1.33,
-    "hands_on": 1.24
+    "injection": 0.02,
+    "has_substance": 0.85,
+    "difficulty": 0.02,
+    "learning_value": 1.8,
+    "hands_on": 0.24
    }
   },
   {
-   "source": "GitHub Trending",
-   "title": "HKUDS/DeepTutor: Lifelong Personalized Tutoring",
-   "url": "https://github.com/HKUDS/DeepTutor",
-   "snippet": "DeepTutor: Lifelong Personalized Tutoring. This project focuses on developing an AI-powered tutoring system that offers personalized and continuous learning support. It aims to adapt to individual student needs over time, providing tailored educational experiences.",
+   "source": "AWS Machine Learning Blog",
+   "title": "Building intent-driven UI testing with Amazon Nova Act",
+   "url": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/",
+   "snippet": "This post describes how Epsilon's Agentic Platform team built a managed, multi-tenant UI testing service using Amazon Nova Act and Amazon Bedrock AgentCore Browser Tool. It enables product teams to write tests in plain English and run them on AWS-managed browsers, providing resilient, intent-driven testing without per-team infrastructure overhead. The solution aims to deliver reliable and scalable UI testing.",
    "score": 0,
    "published": "2026-10-29",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.96,
-    "difficulty": 0.35,
-    "learning_value": 0.92,
-    "hands_on": 1.0
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "milind-soni/OpenMausBot: Open-source Grok Bot alternative with a virtual machine that bots can use.",
-   "url": "https://github.com/milind-soni/OpenMausBot",
-   "snippet": "Open-source Grok Bot alternative with a virtual machine that bots can use. This project provides an open-source alternative to proprietary AI chatbots, enabling users to customize and extend bot functionalities within a virtualized environment.",
-   "score": 0,
-   "published": "2026-10-29",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.96,
-    "difficulty": 0.1,
-    "learning_value": 1.31,
-    "hands_on": 1.41
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "YuJunZhiXue/dsh-purge: Jailbreak for every model — swap prompts per model.",
-   "url": "https://github.com/YuJunZhiXue/dsh-purge",
-   "snippet": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. This tool allows users to bypass safety filters and customize prompts for various LLMs, enabling flexible interaction and testing.",
-   "score": 0,
-   "published": "2026-10-29",
-   "judge": {
-    "injection": 0.27,
-    "has_substance": 0.97,
-    "difficulty": 0.09,
-    "learning_value": 1.1,
-    "hands_on": 1.6
-   }
-  },
-  {
-   "source": "Reddit r/AI_Agents",
-   "title": "Sahkarmi — a desktop team of AI coworkers",
-   "url": "https://www.reddit.com/r/AI_Agents/comments/17iw05x/weekly_thread_project_display/",
-   "snippet": "Sahkarmi — a desktop team of AI coworkers. Each coworker runs locally with its own embedded browser session and its own memory. The design rule is that internal work is free and external effects are gated.",
-   "score": 0,
-   "published": "2026-10-28",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.92,
-    "difficulty": 0.03,
-    "learning_value": 0.98,
+    "difficulty": 0.06,
+    "learning_value": 1.57,
     "hands_on": 0.95
    }
   },
   {
-   "source": "GitHub",
-   "title": "linny006/skills-tracker: Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend",
-   "url": "https://github.com/linny006/skills-tracker",
-   "snippet": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker (Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend. This repository aims to provide insights into the evolving landscape of AI agent skills by monitoring and cataloging new projects on GitHub.)",
+   "source": "GitHub Trending",
+   "title": "deepagents",
+   "url": "https://github.com/langchain-ai/deepagents",
+   "snippet": "The `langchain-ai/deepagents` repository is presented as a batteries-included agent harness. It provides a framework for building context-aware reasoning applications. This project is relevant for developers working with LLMs and agents, offering a comprehensive toolkit.",
    "score": 0,
-   "published": "2026-10-28",
+   "published": "",
    "judge": {
     "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.34,
+    "learning_value": 1.15,
+    "hands_on": 1.21
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "KiroCrew",
+   "url": "https://github.com/kirodotdev/KiroCrew",
+   "snippet": "`KiroCrew` is described as a persistent workspace for development work that self-improves and continues beyond one session. This repository focuses on enhancing developer productivity through AI-driven persistent environments. It's a tool for agents and embodied AI in a development context.",
+   "score": 0,
+   "published": "",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.95,
+    "difficulty": 0.1,
+    "learning_value": 1.02,
+    "hands_on": 0.99
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "mempalace",
+   "url": "https://github.com/MemPalace/mempalace",
+   "snippet": "`MemPalace` is an open-source AI memory system, claiming to be the best-benchmarked. This project provides a free solution for managing and optimizing AI memory, which is crucial for advanced AI agents and LLMs. It focuses on efficiency and performance in memory management.",
+   "score": 0,
+   "published": "",
+   "judge": null
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "harvey",
+   "url": "https://github.com/ethanplusai/harvey",
+   "snippet": "`harvey` is an autonomous AI sales agent powered by Claude Code or Codex. It automates tasks such as finding prospects, writing cold emails, sending campaigns, handling replies, and booking meetings without requiring API keys. This project showcases practical agentic AI for business automation.",
+   "score": 0,
+   "published": "",
+   "judge": {
+    "injection": 0.03,
     "has_substance": 0.96,
-    "difficulty": 0.01,
-    "learning_value": 1.04,
-    "hands_on": 1.17
+    "difficulty": 0.03,
+    "learning_value": 1.51,
+    "hands_on": 1.36
    }
   },
   {
-   "source": "GitHub",
-   "title": "shitagaki-lab/see-through: Single-image Layer Decomposition for Anime Characters",
-   "url": "https://github.com/shitagaki-lab/see-through",
-   "snippet": "\"Single-image Layer Decomposition for Anime Characters\" (SIGGRAPH 2026 Conference Paper) - shitagaki-lab/see-through (Single-image Layer Decomposition for Anime Characters (SIGGRAPH 2026 Conference Paper). This project presents a novel approach for decomposing 2D anime character images into separate layers, facilitating manipulation and animation.)",
+   "source": "GitHub Trending",
+   "title": "skills",
+   "url": "https://github.com/anthropics/skills",
+   "snippet": "`Anthropic Skills` is the official public repository providing example Agent Skills for Claude. These folders contain instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. It's a key resource for developing and extending Claude's agent capabilities.",
    "score": 0,
-   "published": "2026-10-29",
+   "published": "",
    "judge": {
-    "injection": 0.02,
-    "has_substance": 0.97,
-    "difficulty": 1.74,
-    "learning_value": 1.26,
-    "hands_on": 1.12
+    "injection": 0.03,
+    "has_substance": 0.95,
+    "difficulty": 0.15,
+    "learning_value": 1.49,
+    "hands_on": 1.49
    }
   },
   {
-   "source": "GitHub",
-   "title": "HKUDS/AutoSwarm: AutoSwarm: All Your Agents, Working as One",
-   "url": "https://github.com/HKUDS/AutoSwarm",
-   "snippet": "AutoSwarm: Unify Your Agents. Unify Your Context (Codex · Claude Code · DeepSeek Harness · Muse · Grok · WorkBuddy· nanobot · and more) - HKUDS/AutoSwarm (AutoSwarm: All Your Agents, Working as One (Codex · Claude Code · DeepSeek Harness · Muse · Grok · WorkBuddy· nanobot · and more). This framework enables the orchestration and collaboration of multiple AI agents, allowing them to work cohesively on complex tasks.)",
+   "source": "GitHub Trending",
+   "title": "blender-mcp",
+   "url": "https://github.com/blender-mcp",
+   "snippet": "`blender-mcp` is an MCP server that connects Blender 3D to Claude AI for AI-powered 3D creation. It enables two-way communication, object manipulation, material application, scene inspection, and text-to-3D generation. This project is a significant development for robotics and embodied AI, bridging AI with 3D design.",
    "score": 0,
-   "published": "2026-10-28",
-   "judge": {
-    "injection": 0.05,
-    "has_substance": 0.97,
-    "difficulty": 0.14,
-    "learning_value": 1.33,
-    "hands_on": 1.63
-   }
-  },
-  {
-   "source": "GitHub",
-   "title": "NVIDIA/auto-ontology: Auto Ontology is a Python framework for building semantic, graph-based reasoning",
-   "url": "https://github.com/NVIDIA/auto-ontology",
-   "snippet": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for L... (Auto Ontology is a Python framework for building semantic, graph-based reasoning. This project provides tools for constructing and utilizing knowledge graphs, enhancing the reasoning capabilities of AI systems.)",
-   "score": 0,
-   "published": "2026-10-28",
+   "published": "",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 0.52,
-    "learning_value": 1.46,
-    "hands_on": 1.46
-   }
-  },
-  {
-   "source": "NIST",
-   "title": "Design Tenets for Agent Identity Management Systems",
-   "url": "https://www.nist.gov/publications/design-tenets-agent-identity-management-systems",
-   "snippet": "Agentic infrastructure enables the unique, cryptographically verifiable identification of agents distinguishable from other identities. This document outlines critical design principles for creating secure and auditable identity management systems for AI agents, promoting traceability and preventing misuse.",
-   "score": 0,
-   "published": "2026-10-27",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.71,
-    "difficulty": 0.57,
-    "learning_value": 1.21,
-    "hands_on": 0.09
-   },
-   "related_to": [
-    "AI Agent Security",
-    "AI Agent Security"
-   ]
-  },
-  {
-   "source": "Arize AI Blog",
-   "title": "AI agent frameworks compared: LangGraph, CrewAI, AutoGen, and more",
-   "url": "https://arize.com/blog/ai-agent-frameworks-compared-langgraph-crewai-autogen/",
-   "snippet": "A framework that works well for a short tool-calling loop may be a poor fit for a workflow that must pause for approval, survive process restarts, or coordinate several agents over multiple hours. This comparison delves into various AI agent frameworks, analyzing their strengths and weaknesses across different orchestration patterns and use cases.",
-   "score": 0,
-   "published": "2026-10-27",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.91,
-    "difficulty": 0.36,
+    "difficulty": 0.06,
     "learning_value": 1.59,
-    "hands_on": 0.32
-   }
-  },
-  {
-   "source": "Google Cloud Blog",
-   "title": "Gemini Robotics Embodied Reasoning 2 is now available on Google Cloud",
-   "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-er2-now-available-on-google-cloud",
-   "snippet": "Gemini Robotics ER 2 transforms a robot into a physical agent. The model combines deep spatio-temporal reasoning and long-horizon planning, enabling robots to orchestrate steps to complete a task, self-correct, and generalize to novel situations. It combines advanced spatial and temporal video understanding with long-horizon planning and built-in safety guardrails.",
-   "score": 0,
-   "published": "2026-10-27",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 0.35,
-    "learning_value": 1.16,
-    "hands_on": 0.97
-   }
-  },
-  {
-   "source": "Microsoft Documentation",
-   "title": "Choose Development Tools for Your Microsoft 365 Copilot Plugin",
-   "url": "https://learn.microsoft.com/en-us/microsoft-365-copilot/plugins/development-tools",
-   "snippet": "Choose development tools for each component. A plugin can use more than one tool. This guide assists developers in selecting the appropriate tools and approaches for building plugins for Microsoft 365 Copilot, considering various development scenarios and levels of control.",
-   "score": 0,
-   "published": "2026-10-27",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.81,
-    "difficulty": 0.04,
-    "learning_value": 1.07,
-    "hands_on": 0.21
-   }
-  },
-  {
-   "source": "GitHub",
-   "title": "nightly-labs/openbot: A local-first desktop workspace for persistent AI teammates.",
-   "url": "https://github.com/nightly-labs/openbot",
-   "snippet": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration. - n... (A local-first desktop workspace for persistent AI teammates. OpenBot offers a platform for developing and deploying AI agents that can operate continuously and collaborate on tasks within a user's local environment.)",
-   "score": 0,
-   "published": "2026-10-28",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.97,
-    "difficulty": 0.05,
-    "learning_value": 1.33,
-    "hands_on": 1.47
-   }
-  },
-  {
-   "source": "GitHub",
-   "title": "OpenBMB/PilotDeck: Productivity platform for task-oriented agents with whitebox memory",
-   "url": "https://github.com/OpenBMB/PilotDeck",
-   "snippet": "Task-oriented AI Agent productivity platform. Contribute to OpenBMB/PilotDeck development by creating an account on GitHub. (PilotDeck is a productivity platform for task oriented agents that manages multiple projects with whitebox memory. You can actually see and edit what the agent remembers, offering rare transparency in agent operation.)",
-   "score": 0,
-   "published": "2026-10-28",
-   "judge": {
-    "injection": 0.08,
-    "has_substance": 0.98,
-    "difficulty": 0.41,
-    "learning_value": 1.42,
     "hands_on": 1.34
    }
   },
   {
-   "source": "GitHub",
-   "title": "stable-AI/Orca: High throughput LLM inference engine",
-   "url": "https://github.com/stable-AI/Orca",
-   "snippet": "Orca is a high throughput LLM inference engine targeting the same workload as VLLM but with lower memory overhead. This project aims to provide an efficient solution for deploying large language models with reduced resource consumption.",
+   "source": "GitHub Trending",
+   "title": "claude-skills",
+   "url": "https://github.com/alirezarezvani/claude-skills",
+   "snippet": "This repository, `claude-skills`, is a community collection of real-world Claude skill implementations. It includes subagents, commands, and customizable references for Claude Code and Claude AI. The project aims to provide practical skills for various applications of Claude.",
    "score": 0,
-   "published": "2026-10-28",
+   "published": "",
    "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.75,
-    "learning_value": 1.06,
-    "hands_on": 1.19
+    "injection": 0.03,
+    "has_substance": 0.96,
+    "difficulty": 0.04,
+    "learning_value": 1.67,
+    "hands_on": 1.56
    }
   },
   {
-   "source": "GitHub",
-   "title": "debpalash/voicestudio: Open source voice cloning and dubbing studio",
-   "url": "https://github.com/debpalash/voicestudio",
-   "snippet": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages. - debpalash/Voic... (Voice Studio is the most starred open-source voice cloning project on GitHub. It's a fully local voice cloning and dubbing studio that can clone any voice from a short sample and dub any video, running everything offline with no API.)",
+   "source": "GitHub Trending",
+   "title": "ai-whatsapp-intelligence",
+   "url": "https://github.com/shenald-dev/ai-whatsapp-intelligence",
+   "snippet": "`ai-whatsapp-intelligence` is an AI WhatsApp Group Intelligence Monitor, offering real-time automated conversation analysis, summaries, and social graph metrics. This project is relevant for understanding and managing group dynamics through AI. It provides insights into communication patterns.",
    "score": 0,
-   "published": "2026-10-28",
+   "published": "",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.98,
+    "has_substance": 0.97,
     "difficulty": 0.1,
-    "learning_value": 1.42,
-    "hands_on": 1.72
+    "learning_value": 1.19,
+    "hands_on": 1.14
    }
   }
  ],
  "dropped": [
   {
-   "source": "Hacker News",
-   "title": "Show HN: Snippet – An Always-On AI Agent",
-   "url": "https://news.ycombinator.com/item?id=38072054",
-   "snippet": "Hi HN, I built an always on always listening AI Agent, here's some backstory: I've always struggled with the attention problem while developing. It's an always-on, code-first agent based on my own struggles with writing code. It tracks, it remembers, it speaks and it listens.",
+   "source": "Hugging Face Blog",
+   "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+   "url": "https://huggingface.co/blog/nvidia-nemotron-3.5-transcribe-granary-v2",
+   "snippet": "This post announces new NVIDIA models for intelligent multilingual transcription, Nemotron 3.5 Transcribe and Granary v2. These models offer advanced capabilities for transcribing and adapting to various languages with prompting. They aim to improve the performance of specialized tasks in speech processing.",
    "score": 0,
-   "published": "2026-10-27",
+   "published": "2026-10-28",
    "judge": {
-    "injection": 0.03,
-    "has_substance": 0.89,
-    "difficulty": 0.05,
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 0.12,
+    "learning_value": 0.52,
+    "hands_on": 0.97
+   },
+   "reason": "low learning value 0.52"
+  },
+  {
+   "source": "Hugging Face Blog",
+   "title": "Lumma-Fev-v2",
+   "url": "https://huggingface.co/blog/frontiersmind/lumma-fev-v2",
+   "snippet": "This article introduces Lumma-Fev-v2, a new development from FrontiersMind. The post details the model's capabilities and potential applications. It highlights improvements in its design and performance, indicating advancements in its underlying intelligence.",
+   "score": 0,
+   "published": "2026-10-29",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.85,
+    "difficulty": 0.17,
     "learning_value": 0.25,
-    "hands_on": 0.93
+    "hands_on": 0.74
    },
    "reason": "low learning value 0.25"
   },
   {
-   "source": "Aras Blog",
-   "title": "Persistence is Futile. Or not? What's the Value of Persisting Digital Thread Relationships in an Mean-Oriented World?",
-   "url": "https://www.aras.com/blog/persistence-futile-or-not-whats-value-persisting-digital-thread-relationships-ai-powered-inference-oriented-world",
-   "snippet": "AI's rapidly advancing ability to infer relationships across disparate structured data stores raises a valid question: do we still need to proactively rearchitect structured data to get the benefits of a digital thread, or can AI just infer that structure on the fly? Digital thread strategies need to find a balance between persisting structure and leveraging the power of AI inference.",
+   "source": "Hugging Face Blog",
+   "title": "Clover-35B-A3B-Preview: A New Way for Intelligence",
+   "url": "https://huggingface.co/blog/diffuspace/clover-35b-a3b-preview",
+   "snippet": "A Blog post by Diffuspace on Hugging Face (Diffuspace announces Clover-35B-A3B-Preview, presenting it as a new approach to intelligence. The post delves into the model's unique features and its potential to enhance AI capabilities. It suggests novel methodologies in its design that set it apart from previous models.)",
    "score": 0,
-   "published": "2026-10-27",
+   "published": "2026-10-30",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.2,
-    "difficulty": 0.13,
-    "learning_value": 0.58,
-    "hands_on": 0.04
+    "has_substance": 0.82,
+    "difficulty": 0.59,
+    "learning_value": 0.3,
+    "hands_on": 0.86
    },
-   "reason": "no substance 0.20"
+   "reason": "low learning value 0.30"
   },
   {
-   "source": "GitHub",
-   "title": "openrig/openrig: Multi-agent coding teams framework",
-   "url": "https://github.com/openrig/openrig",
-   "snippet": "Instead of one coding agent, you build a team. Cloud code handles architecture, Codeex handles implementation, and Pi handles testing, with persistent roles, shared context, and owned work items per agent. Multi-agent coding teams are the next frontier.",
+   "source": "Hugging Face Blog",
+   "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+   "url": "https://huggingface.co/blog/project-protostar",
+   "snippet": "Project ProtoStar aims to catalyze systematic sharing of publicly funded scientific artifacts in AI-ready formats, supported by open infrastructure and practical publishing guidance. This initiative builds on existing efforts to make scientific data and models more accessible for AI research. It seeks to close the gap between scientific analysis and public benefits by encouraging sharing of datasets.",
    "score": 0,
-   "published": "2026-10-28",
+   "published": "2026-10-29",
    "judge": {
-    "injection": 0.03,
-    "has_substance": 0.97,
-    "difficulty": 0.06,
-    "learning_value": 1.16,
-    "hands_on": 1.32
+    "injection": 0.02,
+    "has_substance": 0.42,
+    "difficulty": 0.02,
+    "learning_value": 0.66,
+    "hands_on": 0.16
    },
-   "reason": "same as published: mvschwarz/openrig"
+   "reason": "no substance 0.42"
+  },
+  {
+   "source": "AWS Machine Learning Blog",
+   "title": "How the UK Amazon Quick User Group grew in 2026",
+   "url": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/",
+   "snippet": "This article summarizes the UK Amazon Quick User Group's activities in 2026, including three quarterly meetups and customer stories. It highlights how agentic AI and Amazon Quick are used to transform data into faster decisions, higher satisfaction, and scalable growth. The post showcases real-world applications of AI for business intelligence.",
+   "score": 0,
+   "published": "2026-10-29",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.39,
+    "difficulty": 0.0,
+    "learning_value": 0.53,
+    "hands_on": 0.27
+   },
+   "reason": "no substance 0.39"
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "code_puppy",
+   "url": "https://github.com/mpfaffenberger/code_puppy",
+   "snippet": "`code_puppy` is an agentic AI designed for writing code. This tool streamlines the coding process by leveraging AI for code generation and potentially other development tasks. It represents an advancement in AI assistance for software engineering.",
+   "score": 0,
+   "published": "",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.93,
+    "difficulty": 0.03,
+    "learning_value": 0.56,
+    "hands_on": 0.87
+   },
+   "reason": "low learning value 0.56"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Building an AI-native engineering org",
+   "url": "https://news.ycombinator.com/item?id=38081604",
+   "snippet": "This Hacker News thread discusses the concept of an 'AI-native' engineering organization, where AI is deeply integrated into development processes. The conversation explores the challenges and potential of leveraging AI to transform software engineering workflows. It touches on topics like AI's impact on code quality and developer productivity.",
+   "score": 0,
+   "published": "2026-10-30",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.16,
+    "difficulty": 0.03,
+    "learning_value": 0.54,
+    "hands_on": 0.07
+   },
+   "reason": "no substance 0.16"
   }
  ],
- "judge": "judge: 19 kept, 3 dropped (33 pairs checked)"
+ "judge": "judge: 11 kept, 7 dropped (2 pairs checked, 2 requests failed)"
 }

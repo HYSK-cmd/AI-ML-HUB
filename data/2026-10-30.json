@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-30",
+  "headline": "AI, 3D 창작부터 소프트웨어 취약점 발견까지 다양한 분야에서 가능성을 보여줍니다.",
+  "items": [
+    {
+      "title": "blender-mcp",
+      "url": "https://github.com/blender-mcp",
+      "source": "GitHub Trending",
+      "categories": [
+        "Robotics & Embodied",
+        "Open Source & Tools"
+      ],
+      "level": "beginner",
+      "headline_ko": "AI로 3D 창작하세요",
+      "summary": "`blender-mcp`는 Blender 3D를 Claude AI에 연결하여 AI 기반의 3D 창작을 가능하게 하는 MCP 서버입니다. 이 프로젝트는 양방향 통신, 객체 조작, 재료 적용, 장면 검사 및 텍스트-3D 생성을 지원합니다. AI와 3D 디자인을 연결하여 로봇 공학과 신체화된 AI 분야에서 중요한 발전을 이룹니다.",
+      "why": "AI가 3D 디자인과 로봇 공학에 어떻게 적용될 수 있는지 실용적인 사례를 통해 이해할 수 있습니다. 직접 AI 기반 3D 창작 도구를 경험하며 응용 능력을 키울 수 있습니다.",
+      "keywords": [
+        "Blender 3D",
+        "Claude AI",
+        "AI-powered 3D creation",
+        "robotics",
+        "embodied AI"
+      ],
+      "narration": "첫 번째는 AI를 활용한 3D 창작 도구, 블렌더 MCP입니다. 이 프로젝트는 블렌더 3D와 클로드 AI를 연결하여 AI 기반 3D 창작을 가능하게 합니다. 양방향 통신과 객체 조작 등 다양한 기능을 지원하며, 로봇 공학과 신체화된 AI 분야에 기여합니다."
+    },
+    {
+      "title": "deepagents",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "source": "GitHub Trending",
+      "categories": [
+        "Agents",
+        "LLM",
+        "Open Source & Tools"
+      ],
+      "level": "intermediate",
+      "headline_ko": "종합 LLM 에이전트 개발 도구",
+      "summary": "`langchain-ai/deepagents`는 장기적이고 다단계 작업을 위해 튜닝된, 모든 기능을 포함하는 에이전트 하네스입니다. LangGraph 기반으로 구축되어 스트리밍, 영속성 및 체크포인팅을 제공하며, 서브 에이전트, 파일 시스템, 컨텍스트 관리, 쉘 액세스, 지속적인 메모리 등의 기능을 포함합니다. OpenAI, Anthropic, Google 모델은 물론 오픈 가중치 모델과 로컬 모델도 지원하여 프로덕션 환경에 적합한 유연한 솔루션을 제공합니다.",
+      "why": "LLM 기반 에이전트를 구축하는 데 필요한 종합적인 프레임워크를 학습할 수 있습니다. 복잡한 에이전트 시스템을 효율적으로 개발하고 배포하는 방법을 이해하는 데 도움이 됩니다.",
+      "keywords": [
+        "agent harness",
+        "LangChain",
+        "LLM",
+        "context-aware reasoning",
+        "sub-agents",
+        "production-ready"
+      ],
+      "narration": "다음은 LLM 에이전트 개발을 위한 종합 도구, 딥 에이전트입니다. 이 도구는 컨텍스트 인식 추론 애플리케이션 구축을 위한 프레임워크를 제공합니다. 서브 에이전트, 파일 시스템, 컨텍스트 관리 등 다양한 기능을 갖추고 있습니다. 프로덕션 환경에 바로 적용할 수 있도록 설계되어 있습니다."
+    },
+    {
+      "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude",
+      "url": "https://www.anthropic.com/news/exploiting-vulnerabilities-with-claude",
+      "source": "Anthropic Blog",
+      "categories": [
+        "LLM",
+        "Industry & Policy"
+      ],
+      "level": "advanced",
+      "headline_ko": "클로드, SW 취약점 발견",
+      "summary": "Anthropic은 아직 출시되지 않은 자체 연구 모델을 사용하여 브라우저 및 운영 체제와 같은 널리 사용되는 소프트웨어에서 치명적인 취약점을 발견했습니다. 이 모델은 오픈소스 및 독점 소프트웨어 모두에서 정교하고 다단계적인 익스플로잇을 생성할 수 있었습니다. Anthropic은 여러 결함을 연결하여 작동하는 PoC(개념 증명) 익스플로잇을 만드는 능력을 시연했으며, 식별된 모든 결함은 공급업체에 보고되어 현재 패치되었습니다.",
+      "why": "최신 LLM이 단순한 정보 처리 이상으로 복잡한 문제 해결과 보안 분석에 어떻게 활용될 수 있는지 심층적으로 이해할 수 있습니다. AI의 잠재력과 함께 윤리적 사용의 중요성을 성찰하는 계기가 될 것입니다.",
+      "keywords": [
+        "Anthropic",
+        "Claude",
+        "vulnerabilities",
+        "software exploit",
+        "critical flaws",
+        "AI security"
+      ],
+      "narration": "마지막으로, 앤트로픽의 클로드 AI 모델이 소프트웨어 취약점을 발견한 연구입니다. 앤트로픽은 미공개 연구 모델로 실제 소프트웨어의 치명적인 취약점을 찾아냈습니다. 이 모델은 여러 결함을 연결하여 작동하는 정교한 익스플로잇을 생성했습니다. 발견된 모든 취약점은 보고되어 패치 완료되었습니다."
+    }
+  ]
+}
