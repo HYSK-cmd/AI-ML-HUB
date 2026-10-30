@@ -1,68 +1,69 @@
 {
-  "date": "2026-10-29",
-  "headline": "AI 에이전트 개발과 테스트부터 애니메이션 이미지 분석까지, 최신 AI 기술 동향을 알아봅니다.",
-  "items": [
-    {
-      "title": "How to Test LLMs and AI Agents",
-      "url": "https://www.langchain.com/blog/how-to-test-llms-and-ai-agents",
-      "source": "LangChain Blog",
-      "categories": [
-        "Agents",
-        "LLM",
-        "Open Source & Tools"
-      ],
-      "level": "beginner",
-      "headline_ko": "LLM/에이전트 테스트 가이드",
-      "summary": "LLM 및 AI 에이전트 테스트는 AI 기반 애플리케이션이 의도한 대로 작동하는지 확인하는 과정입니다. 이는 에이전트의 출력, 도구 호출, 상태 업데이트, 그리고 사용자 작업 완료 여부를 점검합니다. AI 애플리케이션 및 에이전트 테스트는 코드 검사, 평가, 그리고 인간 검토를 결합하여 모든 변경 사항이 안전하게 릴리스되도록 보장합니다.",
-      "why": "이 글을 통해 LLM 기반 애플리케이션의 품질을 보장하고 잠재적인 문제를 사전에 방지하는 실용적인 테스트 전략과 접근 방식을 배울 수 있습니다.",
-      "keywords": [
-        "LLM testing",
-        "AI agents",
-        "LangChain"
-      ],
-      "narration": "첫 번째 소식은 LLM 및 AI 에이전트를 효과적으로 테스트하는 방법에 대한 안내입니다. 애플리케이션이 의도한 대로 동작하는지 확인하는 것은 매우 중요합니다. 코드 검사, 평가, 그리고 인간 검토를 통해 안전한 릴리스를 보장하는 방법을 알아보세요."
-    },
-    {
-      "title": "AI agent frameworks compared: LangGraph, CrewAI, AutoGen, and more",
-      "url": "https://arize.com/blog/ai-agent-frameworks-compared-langgraph-crewai-autogen/",
-      "source": "Arize AI Blog",
-      "categories": [
-        "Agents",
-        "ML Systems & Infra",
-        "Open Source & Tools"
-      ],
-      "level": "intermediate",
-      "headline_ko": "AI 에이전트 프레임워크 비교",
-      "summary": "다양한 AI 에이전트 프레임워크는 서로 다른 오케스트레이션 패턴과 사용 사례에 적합합니다. 짧은 도구 호출 루프에 적합한 프레임워크가 장시간의 작업이나 승인, 재시작이 필요한 복잡한 워크플로우에는 적합하지 않을 수 있습니다. 이 비교는 LangGraph, CrewAI, AutoGen 등 여러 AI 에이전트 프레임워크의 장단점을 분석하며, 다양한 오케스트레이션 패턴과 사용 사례 전반에 걸쳐 이들을 평가합니다.",
-      "why": "이 글을 읽고 AI 에이전트를 개발할 때 특정 요구사항과 복잡성에 가장 적합한 프레임워크를 선택하는 데 필요한 통찰력을 얻을 수 있습니다.",
-      "keywords": [
-        "AI agent frameworks",
-        "LangGraph",
-        "CrewAI",
-        "AutoGen"
-      ],
-      "narration": "다음은 AI 에이전트 프레임워크를 비교하는 소식입니다. LangGraph, CrewAI, AutoGen 등 다양한 프레임워크가 특정 작업에 따라 강점이 다릅니다. 에이전트 개발 시 어떤 프레임워크를 선택해야 할지 고민이라면 이 비교 글이 좋은 가이드가 될 것입니다."
-    },
-    {
-      "title": "shitagaki-lab/see-through: Single-image Layer Decomposition for Anime Characters",
-      "url": "https://github.com/shitagaki-lab/see-through",
-      "source": "GitHub",
-      "categories": [
-        "Multimodal & Vision",
-        "Research Fundamentals",
-        "Open Source & Tools"
-      ],
-      "level": "advanced",
-      "headline_ko": "애니메이션 캐릭터 2.5D 모델링",
-      "summary": "이 프로젝트는 단일 애니메이션 캐릭터 이미지를 조작 및 애니메이션을 위한 개별 레이어로 분해하는 새로운 접근 방식을 제시합니다. 이는 정적인 애니메이션 일러스트레이션을 조작 가능한 2.5D 모델로 자동 변환하는 프레임워크입니다. 최대 23개의 의미론적으로 분리된 레이어(머리카락, 얼굴, 눈, 의류 등)를 유추된 그리기 순서와 함께 분해하여 PSD 파일로 출력합니다. LayerDiff 3D 및 미세 조정된 Marigold 모델을 활용하여 레이어를 생성합니다.",
-      "why": "SIGGRAPH 2026에 발표된 이 연구를 통해 고급 컴퓨터 비전 및 그래픽스 기술이 어떻게 창의적인 분야에 적용될 수 있는지 심층적으로 이해하고, 오픈 소스 코드를 통해 실제 구현을 살펴볼 수 있습니다.",
-      "keywords": [
-        "anime",
-        "layer decomposition",
-        "2.5D modeling",
-        "SIGGRAPH"
-      ],
-      "narration": "마지막 소식은 애니메이션 캐릭터 이미지를 2.5D 모델로 분해하는 혁신적인 연구입니다. 단일 이미지에서 최대 23개의 의미론적 레이어를 추출하여 캐릭터를 조작하고 애니메이션화할 수 있습니다. 이 연구는 고급 컴퓨터 비전 기술이 창의적인 콘텐츠 제작에 어떻게 활용될 수 있는지 보여줍니다."
-    }
-  ]
+ "date": "2026-10-29",
+ "headline": "AI 에이전트 개발과 테스트부터 애니메이션 이미지 분석까지, 최신 AI 기술 동향을 알아봅니다.",
+ "items": [
+  {
+   "title": "How to Test LLMs and AI Agents",
+   "url": "https://www.langchain.com/blog/how-to-test-llms-and-ai-agents",
+   "source": "LangChain Blog",
+   "categories": [
+    "Agents",
+    "LLM",
+    "Open Source & Tools"
+   ],
+   "level": "beginner",
+   "headline_ko": "LLM/에이전트 테스트 가이드",
+   "summary": "LLM 및 AI 에이전트 테스트는 AI 기반 애플리케이션이 의도한 대로 작동하는지 확인하는 과정입니다. 이는 에이전트의 출력, 도구 호출, 상태 업데이트, 그리고 사용자 작업 완료 여부를 점검합니다. AI 애플리케이션 및 에이전트 테스트는 코드 검사, 평가, 그리고 인간 검토를 결합하여 모든 변경 사항이 안전하게 릴리스되도록 보장합니다.",
+   "why": "이 글을 통해 LLM 기반 애플리케이션의 품질을 보장하고 잠재적인 문제를 사전에 방지하는 실용적인 테스트 전략과 접근 방식을 배울 수 있습니다.",
+   "keywords": [
+    "LLM testing",
+    "AI agents",
+    "LangChain"
+   ],
+   "narration": "첫 번째 소식은 LLM 및 AI 에이전트를 효과적으로 테스트하는 방법에 대한 안내입니다. 애플리케이션이 의도한 대로 동작하는지 확인하는 것은 매우 중요합니다. 코드 검사, 평가, 그리고 인간 검토를 통해 안전한 릴리스를 보장하는 방법을 알아보세요."
+  },
+  {
+   "title": "AI agent frameworks compared: LangGraph, CrewAI, AutoGen, and more",
+   "url": "https://arize.com/blog/ai-agent-frameworks-compared-langgraph-crewai-autogen/",
+   "source": "Arize AI Blog",
+   "categories": [
+    "Agents",
+    "ML Systems & Infra",
+    "Open Source & Tools"
+   ],
+   "level": "intermediate",
+   "headline_ko": "AI 에이전트 프레임워크 비교",
+   "summary": "다양한 AI 에이전트 프레임워크는 서로 다른 오케스트레이션 패턴과 사용 사례에 적합합니다. 짧은 도구 호출 루프에 적합한 프레임워크가 장시간의 작업이나 승인, 재시작이 필요한 복잡한 워크플로우에는 적합하지 않을 수 있습니다. 이 비교는 LangGraph, CrewAI, AutoGen 등 여러 AI 에이전트 프레임워크의 장단점을 분석하며, 다양한 오케스트레이션 패턴과 사용 사례 전반에 걸쳐 이들을 평가합니다.",
+   "why": "이 글을 읽고 AI 에이전트를 개발할 때 특정 요구사항과 복잡성에 가장 적합한 프레임워크를 선택하는 데 필요한 통찰력을 얻을 수 있습니다.",
+   "keywords": [
+    "AI agent frameworks",
+    "LangGraph",
+    "CrewAI",
+    "AutoGen"
+   ],
+   "narration": "다음은 AI 에이전트 프레임워크를 비교하는 소식입니다. LangGraph, CrewAI, AutoGen 등 다양한 프레임워크가 특정 작업에 따라 강점이 다릅니다. 에이전트 개발 시 어떤 프레임워크를 선택해야 할지 고민이라면 이 비교 글이 좋은 가이드가 될 것입니다."
+  },
+  {
+   "title": "shitagaki-lab/see-through: Single-image Layer Decomposition for Anime Characters",
+   "url": "https://github.com/shitagaki-lab/see-through",
+   "source": "GitHub",
+   "categories": [
+    "Multimodal & Vision",
+    "Research Fundamentals",
+    "Open Source & Tools"
+   ],
+   "level": "advanced",
+   "headline_ko": "애니메이션 캐릭터 2.5D 모델링",
+   "summary": "이 프로젝트는 단일 애니메이션 캐릭터 이미지를 조작 및 애니메이션을 위한 개별 레이어로 분해하는 새로운 접근 방식을 제시합니다. 이는 정적인 애니메이션 일러스트레이션을 조작 가능한 2.5D 모델로 자동 변환하는 프레임워크입니다. 최대 23개의 의미론적으로 분리된 레이어(머리카락, 얼굴, 눈, 의류 등)를 유추된 그리기 순서와 함께 분해하여 PSD 파일로 출력합니다. LayerDiff 3D 및 미세 조정된 Marigold 모델을 활용하여 레이어를 생성합니다.",
+   "why": "SIGGRAPH 2026에 발표된 이 연구를 통해 고급 컴퓨터 비전 및 그래픽스 기술이 어떻게 창의적인 분야에 적용될 수 있는지 심층적으로 이해하고, 오픈 소스 코드를 통해 실제 구현을 살펴볼 수 있습니다.",
+   "keywords": [
+    "anime",
+    "layer decomposition",
+    "2.5D modeling",
+    "SIGGRAPH"
+   ],
+   "narration": "마지막 소식은 애니메이션 캐릭터 이미지를 2.5D 모델로 분해하는 혁신적인 연구입니다. 단일 이미지에서 최대 23개의 의미론적 레이어를 추출하여 캐릭터를 조작하고 애니메이션화할 수 있습니다. 이 연구는 고급 컴퓨터 비전 기술이 창의적인 콘텐츠 제작에 어떻게 활용될 수 있는지 보여줍니다."
+  }
+ ],
+ "video": "videos/2026-10-29.mp4"
 }
