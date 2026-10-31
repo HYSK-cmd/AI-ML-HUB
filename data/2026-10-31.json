@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-31",
+  "headline": "코딩 에이전트가 로봇을 제어하고 시뮬레이션을 생성하며, 다중 에이전트 시스템의 안정성을 높이는 최신 연구들을 소개합니다.",
+  "items": [
+    {
+      "title": "Robot-Use Agents (RUA)",
+      "url": "https://heye.ai/notes/rua/",
+      "source": "Researcher's Blog",
+      "categories": [
+        "Robotics & Embodied",
+        "Agents",
+        "Open Source & Tools"
+      ],
+      "level": "beginner",
+      "headline_ko": "로봇을 코딩하는 에이전트",
+      "summary": "로봇 활용 에이전트(RUA)는 로봇을 컴퓨터처럼 작동시키는 에이전트에 대한 아이디어를 제시합니다. 로봇은 드라이버, 미들웨어, 플래너 등으로 구성된 소프트웨어 시스템이므로, 코드베이스와 터미널을 다룰 수 있는 코딩 에이전트가 로봇 팔을 제어할 수 있습니다. 핵심 전제는 프론티어 코딩 에이전트가 이미 기하학, 물리학, 프로그래밍 지식을 가지고 있고, 로봇은 프로그래밍 가능한 인터페이스를 제공한다는 것입니다. 이를 통해 정책을 학습하는 대신 코드로 작성하고, 이를 검사, 편집, 디버깅할 수 있습니다.",
+      "why": "로봇 제어 방식에 대한 새로운 관점을 이해하고, 학습 기반 정책의 한계를 극복하는 방법을 탐구할 수 있습니다. 코딩 에이전트를 활용한 로봇 자동화의 잠재력을 배울 수 있습니다.",
+      "keywords": [
+        "Robot-Use Agents",
+        "coding agent",
+        "robot control",
+        "policy generation"
+      ],
+      "narration": "로봇 제어 방식에 대한 새로운 아이디어를 소개합니다. 로봇 활용 에이전트, RUA는 코딩 에이전트가 로봇을 마치 컴퓨터처럼 다룰 수 있다는 개념입니다. 정책을 학습시키는 대신 코드로 작성하고 직접 디버깅할 수 있어, 로봇 자동화의 효율성을 높일 수 있습니다."
+    },
+    {
+      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "url": "https://arxiv.org/abs/2610.40565",
+      "source": "arXiv",
+      "categories": [
+        "Robotics & Embodied",
+        "Agents",
+        "ML Systems & Infra",
+        "RL"
+      ],
+      "level": "intermediate",
+      "headline_ko": "에이전트 기반 로봇 시뮬레이션",
+      "summary": "현실적이고 빠른 로봇 시뮬레이션은 실제 세계로 전이 가능한 임베디드 AI 모델의 대규모 훈련을 가능하게 합니다. 그러나 기존 시뮬레이션은 제한적이며 전문가의 노력이 많이 필요했습니다. 이에 본 연구는 코딩 에이전트가 현실적인 로봇 시뮬레이션을 생성하는 프레임워크인 'Gym-Anything for Robotics'를 제안합니다. 시뮬레이션 생성이 코딩 에이전트 작업이라는 통찰을 바탕으로, 25개의 시뮬레이션과 총 200개의 RL 환경으로 구성된 RoboWorld를 구축하여 첨단 모델의 성능 한계를 보여줍니다.",
+      "why": "로봇 시뮬레이션의 스케일링 문제를 해결하기 위한 에이전트 기반 접근 방식을 이해할 수 있습니다. 대규모 로봇 환경 구축의 실제적인 도전 과제와 이를 극복하기 위한 새로운 훈련 방법론을 배울 수 있습니다.",
+      "keywords": [
+        "robotics simulation",
+        "coding agents",
+        "Gym-Anything",
+        "RoboWorld",
+        "RL environments"
+      ],
+      "narration": "이 논문은 로봇 시뮬레이션의 혁신적인 접근 방식을 제시합니다. 코딩 에이전트를 활용해 현실적인 로봇 시뮬레이션을 대규모로 생성하는 Gym-Anything for Robotics 프레임워크를 소개하는데요. 이 연구를 통해 기존 로봇 시뮬레이션의 한계를 극복하고, RoboWorld라는 대규모 환경을 구축했습니다. 이를 통해 임베디드 AI 모델 훈련의 새로운 가능성을 열었습니다."
+    },
+    {
+      "title": "Drift No More: Spectral Locking for Long-Horizon Open-Weight Multi-Agent AI",
+      "url": "https://sumitkumarjha.com/ATLAS.pdf",
+      "source": "PDF",
+      "categories": [
+        "Agents",
+        "Research Fundamentals",
+        "ML Systems & Infra"
+      ],
+      "level": "advanced",
+      "headline_ko": "다중 에이전트 드리프트 방지 기술",
+      "summary": "장기적인 다중 에이전트 시스템은 태스크 드리프트, 역할 드리프트, 상태 부실화라는 세 가지 긴밀하게 연결된 실패 문제를 겪습니다. 이 연구는 이러한 문제들이 에이전트의 은닉 상태가 활성 태스크, 할당된 역할 및 현재 공유 상태를 인코딩하는 방향에서 벗어나는 공통된 표현적 원인을 공유한다는 가설을 세웁니다. 이에 대한 해결책으로, 토큰 생성 전에 은닉 상태에 개입하는 훈련 없는 기법인 ATLAS(Algebraic Task–role Locking with Adaptive Spectral Memory)를 제안합니다.",
+      "why": "다중 에이전트 시스템의 장기적인 안정성과 신뢰성을 저해하는 근본적인 문제를 이해하고, 이를 해결하기 위한 혁신적인 '훈련 없는' 접근 방식을 배울 수 있습니다. 복잡한 시스템의 행동 일관성을 유지하는 데 중요한 통찰을 얻을 수 있습니다.",
+      "keywords": [
+        "multi-agent systems",
+        "task drift",
+        "role drift",
+        "state staleness",
+        "ATLAS",
+        "spectral locking"
+      ],
+      "narration": "장기적인 다중 에이전트 시스템의 고질적인 문제인 태스크, 역할, 상태 드리프트를 해결하는 연구입니다. 이 논문은 에이전트의 은닉 상태가 핵심 정보를 놓치는 것이 문제의 근원이라고 가정하는데요. 이를 위해 토큰 생성 전에 은닉 상태를 조정하는 훈련 없는 기법, ATLAS를 제안합니다. 복잡한 에이전트 시스템의 안정성을 높이는 데 기여할 중요한 연구입니다."
+    }
+  ]
+}
