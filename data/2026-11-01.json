@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-01",
+  "headline": "LLM의 활용부터 벤치마크 평가, 이미지 생성 기술까지 AI 최신 동향을 살펴봅니다.",
+  "items": [
+    {
+      "title": "Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns",
+      "url": "https://arxiv.org/abs/2610.40563",
+      "source": "arXiv",
+      "categories": [
+        "LLM",
+        "Agents",
+        "Industry & Policy"
+      ],
+      "level": "beginner",
+      "headline_ko": "LLM 상담 훈련 시뮬레이션",
+      "summary": "이 연구는 온라인 상담 훈련에서 LLM이 시뮬레이션한 클라이언트와 인간 역할극 참여자를 비교합니다. 초보 상담사들이 인간 및 Mistral Mixtral 8x7b 기반 LLM 클라이언트와 상호작용하는 세션을 기록하고 상담 패턴을 분석했습니다. 연구 결과는 LLM 기반 역할극이 상담 역량 강화에 기여할 수 있음을 보여주며, 가상 클라이언트 시뮬레이션 개선점을 제시합니다.",
+      "why": "LLM이 교육 분야에서 어떻게 활용될 수 있는지, 특히 복잡한 인간 상호작용을 모방하는 능력을 이해하는 데 도움이 됩니다. 실제 적용 사례를 통해 LLM의 잠재력과 한계를 배울 수 있습니다.",
+      "keywords": [
+        "counselling training",
+        "LLM simulation",
+        "role-playing",
+        "educational AI"
+      ],
+      "narration": "첫 번째 소식은 LLM이 상담 훈련에 어떻게 활용되는지 보여줍니다. LLM이 시뮬레이션한 클라이언트와 인간 역할극 참여자를 비교해 상담 패턴을 분석했는데요. 이는 LLM이 복잡한 인간 상호작용을 얼마나 잘 모방할 수 있는지 보여주는 흥미로운 연구입니다. 교육 분야에서 LLM의 잠재력을 엿볼 수 있습니다."
+    },
+    {
+      "title": "Your Benchmark Is an Empirical Measure Over Difficulty",
+      "url": "https://arxiv.org/abs/2610.29927",
+      "source": "arXiv",
+      "categories": [
+        "ML Systems & Infra",
+        "Research Fundamentals",
+        "LLM"
+      ],
+      "level": "intermediate",
+      "headline_ko": "벤치마크 평가의 새로운 관점",
+      "summary": "이 논문은 벤치마크를 단순히 질문 모음이 아닌 '난이도에 대한 경험적 측정'으로 봐야 한다고 주장합니다. 벤치마크 평가의 두 가지 주요 실패 모드인 '측정 불일치'와 '커버리지 격차'를 식별하고 공식화했습니다. 이를 진단하는 두 가지 새로운 지표를 제안하고, 벤치마크의 부족한 부분을 채우는 BenchFill 알고리즘을 소개합니다.",
+      "why": "모델 성능 평가의 핵심인 벤치마크의 한계를 이해하고, 더 정확하고 효과적인 평가 방법을 고민해볼 수 있습니다. AI 모델 개발 및 평가에 관심 있는 학생들에게 필수적인 관점을 제공합니다.",
+      "keywords": [
+        "benchmark evaluation",
+        "difficulty measure",
+        "measure mismatch",
+        "coverage gaps",
+        "BenchFill"
+      ],
+      "narration": "다음은 AI 모델 평가의 핵심인 벤치마크에 대한 심층적인 분석입니다. 벤치마크를 단순히 문제 모음이 아니라 난이도에 대한 경험적 측정으로 봐야 한다고 주장하는데요. 이 연구는 기존 벤치마크의 한계를 파악하고, 더 정확한 평가를 위한 새로운 진단 지표와 알고리즘을 제안합니다. AI 모델 성능 평가에 대한 깊은 이해를 돕습니다."
+    },
+    {
+      "title": "Intrinsic Distribution Matching",
+      "url": "https://arxiv.org/abs/2610.39633",
+      "source": "arXiv",
+      "categories": [
+        "Multimodal & Vision",
+        "Research Fundamentals"
+      ],
+      "level": "advanced",
+      "headline_ko": "텍스트-이미지 생성 개선",
+      "summary": "이 논문은 텍스트-이미지 생성 모델의 정교함을 높이기 위한 Intrinsic Distribution Matching (IDM)을 제안합니다. IDM은 생성된 이미지 분포를 참조 분포에 가깝게 만들기 위해 분포 매칭 증류(DMD) 기법을 사용합니다. 외부 인코더 없이 생성기의 EMA(지수 이동 평균) 복사본을 활용하여 특징 평균과 표준 편차를 일치시킵니다. IDM은 Z-Image-Turbo 6B 및 Qwen-Image 20B 모델에서 LongText-Bench 최고 점수를 달성했습니다.",
+      "why": "최신 텍스트-이미지 생성 기술의 심층적인 원리를 이해하고, 효율적인 모델 학습 및 개선 방법에 대한 통찰을 얻을 수 있습니다. 코드도 공개되어 있어 실제 구현 방식을 살펴보기에 좋습니다.",
+      "keywords": [
+        "text-to-image generation",
+        "distribution matching",
+        "DMD",
+        "IDM",
+        "LoRA",
+        "diffusion models"
+      ],
+      "narration": "마지막으로, 텍스트-이미지 생성의 품질을 한층 더 끌어올릴 수 있는 기술, IDM에 대한 연구입니다. 이 기술은 외부 인코더 없이 생성기의 EMA 복사본을 활용해 이미지 분포를 정교하게 맞춰줍니다. Z-Image-Turbo, Qwen-Image 등 다양한 모델에서 최고 성능을 달성했으며, 코드가 공개되어 직접 살펴볼 수 있습니다."
+    }
+  ]
+}

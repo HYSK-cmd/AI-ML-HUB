@@ -1,75 +1,149 @@
 {
- "date": "2026-10-31",
- "collected_at": "2026-10-31T20:25:35+00:00",
+ "date": "2026-11-01",
+ "collected_at": "2026-11-01T20:05:59+00:00",
  "counts": {
-  "gemini_search": 4
+  "gemini_search": 18
  },
- "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 4 new",
+ "dedup": "dedup: 1 already in corpus, 8 cross-source duplicates, 9 new",
  "items": [
   {
    "source": "arXiv",
-   "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
-   "url": "https://arxiv.org/abs/2610.40565",
-   "snippet": "Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. To address this, we introduce Gym-Anything for Robotics, a framework in which coding agents create realistic robotics simulations. Our core insight is that simulation creation is a coding agent task, so improvements in coding agents translate directly into richer and more faithful simulations. Using this pipeline, we build RoboWorld, a set of 25 simulations with 25 test and 175 training RL environments of varying difficulty.",
+   "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+   "url": "https://arxiv.org/abs/2610.40589",
+   "snippet": "An autonomous research laboratory could conduct an entire study, from formulating questions to preparing manuscripts. Artificial intelligence (AI) offers one route towards this goal. Recent AI systems take on several research roles, but may draw conclusions that the evidence does not support. Here, we present an autonomous research laboratory in which agents based on large language models assess one another's work and can stop or redirect investigations. They can generate and reject research questions, require separate theoretical checks and conduct experiments designed to challenge their claims. We demonstrate these capabilities by investigating ensembles of quantum spins in diamond. The agents derived the minimum number of calibration settings needed to predict responses to a defined family of microwave pulse sequences. They checked the result computationally and designed experiments to distinguish competing predictions. An initial experiment agreed with the theoretical predictions, but repeated reference measurements showed that the signal was drifting during data collection. The agents therefore treated the result as inconclusive and revised the measurement protocol without relaxing the acceptance criteria. The revised experiment met those criteria and supported the theoretical predictions. This study demonstrates that collaborating AI agents can select research questions, derive theoretical results and test their predictions experimentally. (This paper presents collabora",
+   "score": 0,
+   "published": "2026-10-30",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.46,
+    "learning_value": 2.34,
+    "hands_on": 0.83
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In",
+   "url": "https://arxiv.org/abs/2610.40588",
+   "snippet": "When AI agents share channels and credentials, one agent can press another to break its operator's rule, a first step towards collusion. Output filters check only what an agent has already written. Can an overseer tell beforehand that an agent is about to give in? We show that a linear probe on the agent's activations can, in a controlled multi-agent setting. Across six scenarios, a peer presses a target for up to 20 rounds to reveal a secret, such as a deploy token; the target often refuses, then gives in. Read at each model call before its output is written, the probe picks out the one that leaks. On held-out Qwen3-32B episodes, at a threshold set to flag 5% of benign calls, it catches 82% of leaking calls. At a similar flag rate, a zero-shot decision-model monitor catches 26%. On gpt-oss-20b, a probe on its reasoning reaches AUROC 0.91. A bag-of-words classifier trained on the same calls comes close, so most of the gain comes from training on labels, not activations. The probe also flags permitted disclosures: it reads the coming disclosure more than the violation. The warning is short-range, and halting on any alarm would stop most benign episodes, which a second text check does not fix. A warning raised before generation could let an overseer stop an agent that is about to give in, ahead of others acting on its messages or recruitment spreading through a swarm. (This research explores the concept of 'pre-crime' for AI agents, investigating the conditions under which recr",
+   "score": 0,
+   "published": "2026-10-30",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.98,
+    "difficulty": 1.34,
+    "learning_value": 2.33,
+    "hands_on": 0.97
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+   "url": "https://arxiv.org/abs/2610.40578",
+   "snippet": "Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tailoring separate verifiers to different platforms and access settings adds further engineering cost. We present VeriCUA, a platform-agnostic framework for verification through agentic exploration. It treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities. After inspecting the available context to construct a task rubric, the verifier selects GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. Experiments show improved agreement with reference labels over the compared baselines across these settings, with the largest offline gains on hard cases and stronger rejection of false completion claims online. Further analyses connect these gains to complementary evidence and test-time exploration. (Introduces VeriCUA, a novel framework",
    "score": 0,
    "published": "2026-10-30",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 1.08,
-    "learning_value": 2.5,
+    "difficulty": 1.58,
+    "learning_value": 2.65,
     "hands_on": 0.95
    }
   },
   {
-   "source": "Researcher's Blog",
-   "title": "Robot-Use Agents (RUA)",
-   "url": "https://heye.ai/notes/rua/",
-   "snippet": "Notes on agents that operate a robot the way they operate a computer. A robot is a software system — drivers, middleware, planners, controllers — so a coding agent that can drive a codebase and a terminal can, in principle, drive an arm. The premise: a frontier coding agent already knows geometry, physics and programming, and a robot already exposes a programmable interface — so the policy can be written rather than learned, and then inspected, edited and debugged instead of retrained.",
+   "source": "arXiv",
+   "title": "Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns",
+   "url": "https://arxiv.org/abs/2610.40563",
+   "snippet": "This paper analyzes counselling patterns by comparing interactions between human role-players and clients simulated by Large Language Models (LLMs) in online counselling training settings. It provides insights into the effectiveness and potential of LLMs in simulating complex human interactions for educational purposes.",
    "score": 0,
    "published": "2026-10-30",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.78,
-    "difficulty": 0.61,
-    "learning_value": 1.79,
-    "hands_on": 0.44
-   },
-   "related_to": [
-    "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents"
-   ]
-  },
-  {
-   "source": "PubMed",
-   "title": "Evaluating large language models versus human therapists in generating interventions for patients with depression in psychodynamic psychotherapy",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/39474720/",
-   "snippet": "Objective: Recent advances in artificial intelligence, especially the rise of large language models (LLMs), hold great promise for transforming mental health care, but their growing integration also raises pressing questions about their ability to deliver meaningful therapeutic interventions. We developed an LLM-based framework composed of four specialized LLM agents, each representing a different therapeutic dimension, and a Judge-LLM that selects the most appropriate intervention for a given context.",
-   "score": 0,
-   "published": "2026-10-29",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.79,
-    "learning_value": 1.61,
-    "hands_on": 0.9
+    "has_substance": 0.86,
+    "difficulty": 0.54,
+    "learning_value": 1.4,
+    "hands_on": 0.51
    }
   },
   {
-   "source": "PDF/GitHub",
-   "title": "Drift No More: Spectral Locking for Long-Horizon Open-Weight Multi-Agent AI",
-   "url": "https://sumitkumarjha.com/ATLAS.pdf",
-   "snippet": "Long-horizon multi-agent systems suffer from three tightly coupled failures: task drift, role drift, and state staleness. We test the hypothesis that these share a common representational cause: agent hidden states move away from the directions encoding the active task, assigned role, and current shared state. We introduce ATLAS (Algebraic Task–role Locking with Adaptive Spectral Memory), a training-free intervention acting on hidden states before a token is generated.",
+   "source": "OpenReview",
+   "title": "MultiEvoSkill: Structure-Aware Multi-Agent Skill Evolution for Generalizable Skill Artifacts",
+   "url": "https://openreview.net/forum?id=ACL.ARR/2026/October/13629",
+   "snippet": "MultiEvoSkill introduces a structure-aware multi-agent framework for evolving generalizable skill artifacts, representing skills as typed attributed directed multigraphs. It comprises a skill compiler, a heterogeneous agent system for revision advice, and a structure-aware debate and evolution mechanism.",
    "score": 0,
-   "published": "2026-10-29",
+   "published": "2026-10-30",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 1.85,
+    "learning_value": 1.84,
+    "hands_on": 0.83
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Intrinsic Distribution Matching",
+   "url": "https://arxiv.org/abs/2610.39633",
+   "snippet": "One-step and few-step text-to-image generation must accurately render the details specified in the prompt despite limited opportunities for refinement. Distribution matching distillation (DMD) uses score differences to bring the generated distribution closer to a reference distribution. Following prior work, we estimate this difference with internal velocity branches, avoiding a separate fake-score network. We ask whether an explicit moment constraint improves this learned score supervision. A decomposition of the reverse-KL field into a Gaussian moment component and a non-Gaussian residual identifies statistics that can be constrained explicitly. We introduce Intrinsic Distribution Matching (IDM), which retains the full DMD correction and matches feature means and per-coordinate standard deviations using the generator's exponential-moving-average (EMA) copy, requiring no external feature encoder. Experiments use full-parameter and low-rank adaptation (LoRA) tuning on Z-Image-Turbo 6B and Qwen-Image 20B. At two network evaluations, IDM reaches 94.25% and 90.20% on Chinese and English LongText-Bench, the highest scores among the compared methods at this budget. Controlled ablations show gains from the added moment loss, while generator EMA features perform competitively with an external DINOv2 encoder across the five reported metrics. Code is available at https://github.com/inclusionAI/IDM. (This paper explores Intrinsic Distribution Matching, a technique aiming to accurately ",
+   "score": 0,
+   "published": "2026-10-30",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.99,
+    "difficulty": 1.92,
+    "learning_value": 2.83,
+    "hands_on": 1.91
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
+   "url": "https://arxiv.org/abs/2610.38568",
+   "snippet": "Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model's own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers. The training loop uses no external training examples or human-written answer labels. On the primary eleven-benchmark suite, A-RSI raises the performance average from 57.77 to 61.05 with 800 fresh tasks. (This research introduces A-RSI, a method for Adaptive Task Refresh that enables zero-data multimodal self-improvement in AI models. It focuses on how models can acquire and update useful training experience efficiently.)",
+   "score": 0,
+   "published": "2026-10-30",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.99,
+    "difficulty": 1.55,
+    "learning_value": 2.61,
+    "hands_on": 0.96
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Your Benchmark Is an Empirical Measure Over Difficulty",
+   "url": "https://arxiv.org/abs/2610.29927",
+   "snippet": "A benchmark is not merely a collection of test questions; it naturally induces an empirical measure over difficulty. In this work, we develop this measure-based view of benchmark evaluation. This perspective allows us to identify and formalize two central failure modes: measure mismatch, where the benchmark difficulty distribution differs from the intended difficulty distribution, and coverage gaps, where uncovered regions along the difficulty axis prevent benchmarks from detecting meaningful localized training progress. We propose two diagnostic metrics that capture these two failure modes and provide rigorous theoretical guarantees. Empirically, we analyze 25 popular benchmarks spanning 7 domains using carefully estimated item difficulties. Our results show that many benchmarks implicitly overweight certain difficulty regions, so their leaderboard conclusions should be interpreted with caution; others leave substantial portions of the difficulty axis uncovered, limiting their ability to monitor the model improvement process. Finally, we turn diagnosis into action by introducing BenchFill, a simple difficulty-targeted item rewriting algorithm that effectively reduces local coverage gaps. (This paper argues that a benchmark should be understood not merely as a collection of test questions but as an empirical measure over difficulty. It provides a new perspective on how to evaluate AI models and benchmarks effectively.)",
+   "score": 0,
+   "published": "2026-10-30",
    "judge": {
     "injection": 0.03,
     "has_substance": 0.97,
-    "difficulty": 1.79,
-    "learning_value": 2.29,
-    "hands_on": 1.01
+    "difficulty": 1.36,
+    "learning_value": 2.79,
+    "hands_on": 0.88
    }
   }
  ],
- "dropped": [],
- "judge": "judge: 4 kept, 0 dropped (6 pairs checked)"
+ "dropped": [
+  {
+   "source": "EA Voices",
+   "title": "Serious coding with LLMs. Lab notes 2026-10-31: Teaser Demo of the LLM-coded EACMP application, and a quiz",
+   "url": "https://eavoices.com/serious-coding-with-llms-lab-notes-2026-10-31-teaser-demo-of-the-llm-coded-eacmp-application-and-a-quiz/",
+   "snippet": "The seventh 'lab note' provides a teaser video demonstrating the capabilities of a serious LLM-coded application, focusing on advancements in coding with Large Language Models. This post serves as an engineering blog entry detailing practical applications of LLMs.",
+   "score": 0,
+   "published": "2026-10-31",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.83,
+    "difficulty": 0.22,
+    "learning_value": 0.73,
+    "hands_on": 0.84
+   },
+   "reason": "low learning value 0.73"
+  }
+ ],
+ "judge": "judge: 8 kept, 1 dropped (4 pairs checked)"
 }
