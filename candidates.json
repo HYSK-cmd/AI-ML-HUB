@@ -1,149 +1,325 @@
 {
- "date": "2026-11-01",
- "collected_at": "2026-11-01T20:05:59+00:00",
+ "date": "2026-11-02",
+ "collected_at": "2026-11-02T23:16:50+00:00",
  "counts": {
-  "gemini_search": 18
+  "gemini_search": 21
  },
- "dedup": "dedup: 1 already in corpus, 8 cross-source duplicates, 9 new",
+ "dedup": "dedup: 0 already in corpus, 1 cross-source duplicates, 20 new",
  "items": [
   {
    "source": "arXiv",
-   "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
-   "url": "https://arxiv.org/abs/2610.40589",
-   "snippet": "An autonomous research laboratory could conduct an entire study, from formulating questions to preparing manuscripts. Artificial intelligence (AI) offers one route towards this goal. Recent AI systems take on several research roles, but may draw conclusions that the evidence does not support. Here, we present an autonomous research laboratory in which agents based on large language models assess one another's work and can stop or redirect investigations. They can generate and reject research questions, require separate theoretical checks and conduct experiments designed to challenge their claims. We demonstrate these capabilities by investigating ensembles of quantum spins in diamond. The agents derived the minimum number of calibration settings needed to predict responses to a defined family of microwave pulse sequences. They checked the result computationally and designed experiments to distinguish competing predictions. An initial experiment agreed with the theoretical predictions, but repeated reference measurements showed that the signal was drifting during data collection. The agents therefore treated the result as inconclusive and revised the measurement protocol without relaxing the acceptance criteria. The revised experiment met those criteria and supported the theoretical predictions. This study demonstrates that collaborating AI agents can select research questions, derive theoretical results and test their predictions experimentally. (This paper presents collabora",
+   "title": "Self-Building Labs",
+   "url": "https://arxiv.org/abs/2610.23826",
+   "snippet": "This study introduces the concept of Self-Building Labs, focusing on automated scientific discovery. It integrates AI and robotics to accelerate experimental processes and data generation, representing a significant step towards autonomous research environments. The paper highlights the potential for AI-driven systems to design and execute experiments with minimal human intervention.",
    "score": 0,
-   "published": "2026-10-30",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 1.46,
-    "learning_value": 2.34,
-    "hands_on": 0.83
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In",
-   "url": "https://arxiv.org/abs/2610.40588",
-   "snippet": "When AI agents share channels and credentials, one agent can press another to break its operator's rule, a first step towards collusion. Output filters check only what an agent has already written. Can an overseer tell beforehand that an agent is about to give in? We show that a linear probe on the agent's activations can, in a controlled multi-agent setting. Across six scenarios, a peer presses a target for up to 20 rounds to reveal a secret, such as a deploy token; the target often refuses, then gives in. Read at each model call before its output is written, the probe picks out the one that leaks. On held-out Qwen3-32B episodes, at a threshold set to flag 5% of benign calls, it catches 82% of leaking calls. At a similar flag rate, a zero-shot decision-model monitor catches 26%. On gpt-oss-20b, a probe on its reasoning reaches AUROC 0.91. A bag-of-words classifier trained on the same calls comes close, so most of the gain comes from training on labels, not activations. The probe also flags permitted disclosures: it reads the coming disclosure more than the violation. The warning is short-range, and halting on any alarm would stop most benign episodes, which a second text check does not fix. A warning raised before generation could let an overseer stop an agent that is about to give in, ahead of others acting on its messages or recruitment spreading through a swarm. (This research explores the concept of 'pre-crime' for AI agents, investigating the conditions under which recr",
-   "score": 0,
-   "published": "2026-10-30",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.98,
-    "difficulty": 1.34,
-    "learning_value": 2.33,
-    "hands_on": 0.97
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
-   "url": "https://arxiv.org/abs/2610.40578",
-   "snippet": "Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tailoring separate verifiers to different platforms and access settings adds further engineering cost. We present VeriCUA, a platform-agnostic framework for verification through agentic exploration. It treats verification as dynamic evidence gathering and assessment within a shared procedure for online and offline settings across platforms and observation modalities. After inspecting the available context to construct a task rubric, the verifier selects GUI or code checks for unresolved requirements and combines their findings under explicit evidence rules. Experiments show improved agreement with reference labels over the compared baselines across these settings, with the largest offline gains on hard cases and stronger rejection of false completion claims online. Further analyses connect these gains to complementary evidence and test-time exploration. (Introduces VeriCUA, a novel framework",
-   "score": 0,
-   "published": "2026-10-30",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 1.58,
-    "learning_value": 2.65,
-    "hands_on": 0.95
-   }
-  },
-  {
-   "source": "arXiv",
-   "title": "Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns",
-   "url": "https://arxiv.org/abs/2610.40563",
-   "snippet": "This paper analyzes counselling patterns by comparing interactions between human role-players and clients simulated by Large Language Models (LLMs) in online counselling training settings. It provides insights into the effectiveness and potential of LLMs in simulating complex human interactions for educational purposes.",
-   "score": 0,
-   "published": "2026-10-30",
+   "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.86,
-    "difficulty": 0.54,
-    "learning_value": 1.4,
-    "hands_on": 0.51
+    "difficulty": 0.63,
+    "learning_value": 1.27,
+    "hands_on": 0.53
    }
   },
   {
-   "source": "OpenReview",
-   "title": "MultiEvoSkill: Structure-Aware Multi-Agent Skill Evolution for Generalizable Skill Artifacts",
-   "url": "https://openreview.net/forum?id=ACL.ARR/2026/October/13629",
-   "snippet": "MultiEvoSkill introduces a structure-aware multi-agent framework for evolving generalizable skill artifacts, representing skills as typed attributed directed multigraphs. It comprises a skill compiler, a heterogeneous agent system for revision advice, and a structure-aware debate and evolution mechanism.",
+   "source": "arXiv",
+   "title": "Leaner Training, Lower Leakage: Revisiting Memorization in LLM Fine-Tuning with LoRA",
+   "url": "https://arxiv.org/abs/2506.20856",
+   "snippet": "This research explores the impact of LoRA on memorization in fine-tuned Large Language Models, aiming for more efficient training with reduced leakage. The study re-examines the phenomenon of memorization, proposing methods to mitigate unintended data retention. It provides insights into optimizing LLM fine-tuning processes for better privacy and efficiency.",
    "score": 0,
-   "published": "2026-10-30",
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.93,
+    "difficulty": 1.41,
+    "learning_value": 1.35,
+    "hands_on": 0.71
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Characterizing Recoverable Expert-Utilization Signatures in Fine-Tuned Mixture-of-Experts LLMs",
+   "url": "https://arxiv.org/abs/2610.25079",
+   "snippet": "The paper investigates structural memory vulnerabilities in fine-tuned Mixture-of-Experts (MoE) Large Language Models. It proposes methods to recover expert paths through routing and output logits, aiding in the detection of targeted attacks. This work contributes to understanding and securing complex LLM architectures.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.72,
+    "learning_value": 1.86,
+    "hands_on": 0.85
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "MoLRSI: A Recursive Self-Improving AI agent for Molecular Discovery",
+   "url": "https://arxiv.org/abs/2610.25080",
+   "snippet": "This study introduces MoLRSI, an intelligent agent designed for molecular discovery, optimizing workflow and model architecture. It integrates cross-task memory for enhanced performance in applications like antibiotic discovery and peptide-MHC binding agent design. The agent's recursive self-improving nature promises accelerated breakthroughs in chemical research.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 1.45,
+    "learning_value": 1.19,
+    "hands_on": 0.79
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Optimizing Stochastic Policy Geometry for Few-Step Flow Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2610.41949",
+   "snippet": "The research proposes the Geo-FSRL method to enhance the performance of few-step flow reinforcement learning. It demonstrates superior results in image and video generation tasks under a 4-step setting compared to existing methods. This optimization focuses on improving the efficiency and effectiveness of reinforcement learning algorithms.",
+   "score": 0,
+   "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.85,
-    "learning_value": 1.84,
-    "hands_on": 0.83
+    "difficulty": 1.76,
+    "learning_value": 1.57,
+    "hands_on": 0.87
    }
   },
   {
    "source": "arXiv",
-   "title": "Intrinsic Distribution Matching",
-   "url": "https://arxiv.org/abs/2610.39633",
-   "snippet": "One-step and few-step text-to-image generation must accurately render the details specified in the prompt despite limited opportunities for refinement. Distribution matching distillation (DMD) uses score differences to bring the generated distribution closer to a reference distribution. Following prior work, we estimate this difference with internal velocity branches, avoiding a separate fake-score network. We ask whether an explicit moment constraint improves this learned score supervision. A decomposition of the reverse-KL field into a Gaussian moment component and a non-Gaussian residual identifies statistics that can be constrained explicitly. We introduce Intrinsic Distribution Matching (IDM), which retains the full DMD correction and matches feature means and per-coordinate standard deviations using the generator's exponential-moving-average (EMA) copy, requiring no external feature encoder. Experiments use full-parameter and low-rank adaptation (LoRA) tuning on Z-Image-Turbo 6B and Qwen-Image 20B. At two network evaluations, IDM reaches 94.25% and 90.20% on Chinese and English LongText-Bench, the highest scores among the compared methods at this budget. Controlled ablations show gains from the added moment loss, while generator EMA features perform competitively with an external DINOv2 encoder across the five reported metrics. Code is available at https://github.com/inclusionAI/IDM. (This paper explores Intrinsic Distribution Matching, a technique aiming to accurately ",
+   "title": "BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?",
+   "url": "https://arxiv.org/abs/2610.41999",
+   "snippet": "This paper explores the behavior of AI agents in detecting changes, questioning whether they actively seek out changes or only respond when prompted. It delves into the underlying mechanisms of change detection in AI systems, highlighting implications for agent autonomy and perception. The research investigates the proactive versus reactive nature of AI agents.",
    "score": 0,
-   "published": "2026-10-30",
+   "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.99,
-    "difficulty": 1.92,
-    "learning_value": 2.83,
-    "hands_on": 1.91
+    "has_substance": 0.77,
+    "difficulty": 1.07,
+    "learning_value": 1.12,
+    "hands_on": 0.48
    }
   },
   {
-   "source": "arXiv",
-   "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
-   "url": "https://arxiv.org/abs/2610.38568",
-   "snippet": "Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model's own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers. The training loop uses no external training examples or human-written answer labels. On the primary eleven-benchmark suite, A-RSI raises the performance average from 57.77 to 61.05 with 800 fresh tasks. (This research introduces A-RSI, a method for Adaptive Task Refresh that enables zero-data multimodal self-improvement in AI models. It focuses on how models can acquire and update useful training experience efficiently.)",
+   "source": "GitHub Trending",
+   "title": "agent-desktop",
+   "url": "https://github.com/vercel-labs/agent-desktop",
+   "snippet": "Agent Desktop enables reliable computer use for any AI agent on the desktop. Built with Rust, it leverages OS accessibility trees to perceive UI structure and execute actions safely and stably, rather than relying on pixel-based inferences. This tool aims to enhance the autonomy and robustness of AI agents interacting with graphical user interfaces.",
    "score": 0,
-   "published": "2026-10-30",
+   "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.99,
-    "difficulty": 1.55,
-    "learning_value": 2.61,
-    "hands_on": 0.96
+    "has_substance": 0.98,
+    "difficulty": 0.09,
+    "learning_value": 2.03,
+    "hands_on": 1.22
    }
   },
   {
-   "source": "arXiv",
-   "title": "Your Benchmark Is an Empirical Measure Over Difficulty",
-   "url": "https://arxiv.org/abs/2610.29927",
-   "snippet": "A benchmark is not merely a collection of test questions; it naturally induces an empirical measure over difficulty. In this work, we develop this measure-based view of benchmark evaluation. This perspective allows us to identify and formalize two central failure modes: measure mismatch, where the benchmark difficulty distribution differs from the intended difficulty distribution, and coverage gaps, where uncovered regions along the difficulty axis prevent benchmarks from detecting meaningful localized training progress. We propose two diagnostic metrics that capture these two failure modes and provide rigorous theoretical guarantees. Empirically, we analyze 25 popular benchmarks spanning 7 domains using carefully estimated item difficulties. Our results show that many benchmarks implicitly overweight certain difficulty regions, so their leaderboard conclusions should be interpreted with caution; others leave substantial portions of the difficulty axis uncovered, limiting their ability to monitor the model improvement process. Finally, we turn diagnosis into action by introducing BenchFill, a simple difficulty-targeted item rewriting algorithm that effectively reduces local coverage gaps. (This paper argues that a benchmark should be understood not merely as a collection of test questions but as an empirical measure over difficulty. It provides a new perspective on how to evaluate AI models and benchmarks effectively.)",
+   "source": "GitHub Trending",
+   "title": "claude-mem",
+   "url": "https://github.com/thedotmack/claude-mem",
+   "snippet": "This project provides persistent context across sessions for AI agents, capturing and compressing agent activities with AI. It injects relevant context into future sessions, supporting various models like Claude Code, OpenClaw, and Gemini. The goal is to improve long-term memory and coherence for AI agent interactions.",
    "score": 0,
-   "published": "2026-10-30",
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.98,
+    "difficulty": 0.14,
+    "learning_value": 1.72,
+    "hands_on": 1.21
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "Scrapling",
+   "url": "https://github.com/D4Vinci/Scrapling",
+   "snippet": "Scrapling is a web scraping framework that manages everything from single requests to full-scale crawls. It provides robust tools for undetected browser automation using stealth Firefox, Python, and anti-bot measures, making it ideal for large-scale data collection. This framework aims to simplify and enhance web scraping capabilities.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 0.01,
+    "learning_value": 1.18,
+    "hands_on": 1.09
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "Claude-Code-Game-Studios",
+   "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+   "snippet": "This repository transforms Claude Code into a comprehensive game development studio, featuring 49 AI agents and 72 workflow skills. It implements a complete coordination system that mirrors real studio hierarchies for efficient game creation. The project showcases advanced multi-agent collaboration in a creative domain.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.96,
+    "difficulty": 0.18,
+    "learning_value": 2.42,
+    "hands_on": 1.52
+   },
+   "related_to": [
+    "mvschwarz/openrig"
+   ]
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "FreeToken",
+   "url": "https://github.com/FlashML-org/FreeToken",
+   "snippet": "FreeToken enables datacenter-scale model serving directly on your desktop, allowing massive models to run locally with high speed and efficiency. This project aims to democratize access to powerful AI models for local execution without relying on cloud infrastructure. It addresses the challenge of running large models on consumer-grade hardware.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.94,
+    "difficulty": 0.32,
+    "learning_value": 1.15,
+    "hands_on": 1.06
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "roboskills",
+   "url": "https://github.com/openrobokit/roboskills",
+   "snippet": "Roboskills provides a minimal set of agent workflows and tools specifically designed for robotics applications. It enables coding agents like Claude Code or Codex to perform robotics tasks through integrated skills and tools that wrap existing models. The project aims to simplify the development and deployment of AI agents in robotic systems.",
+   "score": 0,
+   "published": "2026-10-31",
    "judge": {
     "injection": 0.03,
     "has_substance": 0.97,
-    "difficulty": 1.36,
-    "learning_value": 2.79,
-    "hands_on": 0.88
+    "difficulty": 0.25,
+    "learning_value": 1.27,
+    "hands_on": 1.07
+   }
+  },
+  {
+   "source": "GitHub",
+   "title": "llm-daily-review",
+   "url": "https://github.com/vfalbor/llm-daily-review",
+   "snippet": "This repository automates the daily discovery and evaluation of LLM applications from Hacker News. It scrapes submissions, tests each in an isolated Docker container, and scores them across 11 criteria, publishing results and weekly newsletters. The project offers a systematic approach to identifying and assessing new LLM tools.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.98,
+    "difficulty": 0.04,
+    "learning_value": 2.39,
+    "hands_on": 1.5
+   },
+   "related_to": [
+    "How to Test LLMs and AI Agents"
+   ]
+  },
+  {
+   "source": "NASA",
+   "title": "What is Super Intelligence?",
+   "url": "https://www.nasa.gov/general/what-is-super-intelligence/",
+   "snippet": "NASA defines Artificial Intelligence as a machine-based system that makes predictions, recommendations, or decisions for human-defined objectives, influencing real or virtual environments. Super Intelligence tools at NASA often use machine learning to train computers for classifications, predictions, or uncovering trends in large datasets. Common methods include decision support tools that consider multiple outcomes and probabilities in complex, imperfect situations.",
+   "score": 0,
+   "published": "2026-10-30",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.78,
+    "difficulty": 0.02,
+    "learning_value": 1.22,
+    "hands_on": 0.17
    }
   }
  ],
  "dropped": [
   {
-   "source": "EA Voices",
-   "title": "Serious coding with LLMs. Lab notes 2026-10-31: Teaser Demo of the LLM-coded EACMP application, and a quiz",
-   "url": "https://eavoices.com/serious-coding-with-llms-lab-notes-2026-10-31-teaser-demo-of-the-llm-coded-eacmp-application-and-a-quiz/",
-   "snippet": "The seventh 'lab note' provides a teaser video demonstrating the capabilities of a serious LLM-coded application, focusing on advancements in coding with Large Language Models. This post serves as an engineering blog entry detailing practical applications of LLMs.",
+   "source": "Google Blog",
+   "title": "The latest AI news we announced in October 2026: Step into real-time interactive worlds with Genie 4",
+   "url": "https://blog.google/technology/ai/google-ai-news-october-2026/",
+   "snippet": "Genie 4 offers unprecedented realism, advanced physics, lifelike human movement, and native audio for real-time interactive simulation. It allows users to steer scenes using natural language and is a crucial step toward AGI, advancing safe training environments for robots and AI agents. This development provides powerful tools for creating and exploring dynamic virtual worlds.",
    "score": 0,
-   "published": "2026-10-31",
+   "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.83,
-    "difficulty": 0.22,
-    "learning_value": 0.73,
-    "hands_on": 0.84
+    "has_substance": 0.87,
+    "difficulty": 0.11,
+    "learning_value": 0.69,
+    "hands_on": 0.89
    },
-   "reason": "low learning value 0.73"
+   "reason": "low learning value 0.69"
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "nanochat",
+   "url": "https://github.com/karpathy/nanochat",
+   "snippet": "nanochat is presented as 'the best ChatGPT that $100 can buy,' offering an efficient and cost-effective solution for conversational AI. It focuses on minimalist design and practical utility for AI interactions, making advanced language models more accessible. The project emphasizes affordability and ease of deployment.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.86,
+    "difficulty": 0.04,
+    "learning_value": 0.55,
+    "hands_on": 1.05
+   },
+   "reason": "low learning value 0.55"
+  },
+  {
+   "source": "UC San Diego News",
+   "title": "UC San Diego Launches AI-Driven Chip Design Research Initiative Supported By Qualcomm Technologies",
+   "url": "https://ucsdnews.ucsd.edu/pressrelease/uc-san-diego-launches-ai-driven-chip-design-research-initiative-supported-by-qualcomm-technologies",
+   "snippet": "UC San Diego has launched a new AI-driven chip design research initiative, supported by a $500,000 gift from Qualcomm Technologies. This collaboration aims to rethink how next-generation computing systems and systems-on-chips are designed, applying AI to optimize processing speed, energy consumption, and memory capacity. Researchers will explore new architectures and predict performance to accelerate innovation in semiconductor design.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.33,
+    "difficulty": 0.05,
+    "learning_value": 0.67,
+    "hands_on": 0.11
+   },
+   "reason": "no substance 0.33"
+  },
+  {
+   "source": "Psychology Today",
+   "title": "College Students Use AI Extensively, Survey Shows",
+   "url": "https://www.psychologytoday.com/us/blog/the-future-of-ai/202610/college-students-use-ai-extensively-survey-shows",
+   "snippet": "A new 2026 Dartmouth AI Survey reveals widespread AI usage among college students across the nation and their views on AI's impact on jobs. The survey indicates that most students use AI tools for tasks like explaining concepts, summarizing readings, and solving math problems. Fifty percent of students acknowledge peers use AI text with little editing, highlighting concerns about fairness in take-home work.",
+   "score": 0,
+   "published": "2026-10-30",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.54,
+    "difficulty": 0.0,
+    "learning_value": 0.84,
+    "hands_on": 0.03
+   },
+   "reason": "low learning value 0.84"
+  },
+  {
+   "source": "UKRI",
+   "title": "Artificial intelligence and robotics theme – UKRI",
+   "url": "https://www.ukri.org/what-we-do/our-themes/artificial-intelligence-and-robotics/",
+   "snippet": "The EPSRC AI and Robotics team plays a key role in engaging with UKRI colleagues and the research communities to maintain the UK's leading position in AI and robotics research. They collaborate with engineering and ICT themes to set strategic direction and support the development of core capabilities. Recent investments include new AI hubs addressing foundational mathematics and computational research, as well as AI for science, engineering, and real-world data applications.",
+   "score": 0,
+   "published": "2026-10-30",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.1,
+    "difficulty": 0.04,
+    "learning_value": 0.74,
+    "hands_on": 0.02
+   },
+   "reason": "no substance 0.10"
+  },
+  {
+   "source": "Proton Blog",
+   "title": "Proton's AI manifesto for software engineering",
+   "url": "https://proton.me/blog/ai-manifesto-software-engineering",
+   "snippet": "Proton's manifesto argues that the engineer's role has fundamentally shifted from writing code to helping LLMs write better code faster. Engineers are now team leaders managing models and agents, tasked with guiding and correcting them. The manifesto emphasizes pushing the limits of LLM autonomy, identifying problems LLMs can't solve, and continuously improving workflows and shared resources for all.",
+   "score": 0,
+   "published": "2026-11-01",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.15,
+    "difficulty": 0.11,
+    "learning_value": 0.59,
+    "hands_on": 0.13
+   },
+   "reason": "no substance 0.15"
   }
  ],
- "judge": "judge: 8 kept, 1 dropped (4 pairs checked)"
+ "judge": "judge: 14 kept, 6 dropped (25 pairs checked)"
 }

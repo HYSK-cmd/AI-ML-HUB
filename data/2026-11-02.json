@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-02",
+  "headline": "LLM 앱 자동 평가부터 모델 기억, MoE 취약점까지 최신 AI 동향을 살펴봅니다.",
+  "items": [
+    {
+      "title": "llm-daily-review",
+      "url": "https://github.com/vfalbor/llm-daily-review",
+      "source": "GitHub",
+      "categories": [
+        "Open Source & Tools",
+        "LLM",
+        "ML Systems & Infra"
+      ],
+      "level": "beginner",
+      "headline_ko": "LLM 앱 자동 검토",
+      "summary": "이 GitHub 저장소는 Hacker News의 LLM 애플리케이션을 자동으로 발견하고 평가합니다. 매일 HN 게시물을 스크랩하고, 각 앱을 격리된 Docker 컨테이너에서 테스트하며, 11가지 기준에 따라 점수를 매깁니다. 이를 통해 새로운 LLM 도구를 식별하고 평가하는 체계적인 방법을 제공하며, 주간 뉴스레터와 결과를 공개합니다.",
+      "why": "이 도구는 최신 LLM 앱 트렌드를 파악하고 실용적인 ML 시스템 자동화 방법을 배울 수 있는 좋은 기회입니다. 직접 실행해보고 평가 기준을 이해하면 LLM 프로젝트 개발 시 유용한 통찰력을 얻을 수 있습니다.",
+      "keywords": [
+        "LLM 애플리케이션",
+        "Hacker News",
+        "자동 평가",
+        "Docker"
+      ],
+      "narration": "첫 번째는 LLM 애플리케이션을 자동으로 검토하는 오픈소스 도구입니다. 이 프로젝트는 Hacker News에서 LLM 관련 앱을 찾아 Docker 컨테이너에서 테스트하고 11가지 기준으로 점수를 매깁니다. 최신 LLM 트렌드를 체계적으로 파악하고, ML 시스템 자동화 방법을 학습할 수 있는 실용적인 예시입니다."
+    },
+    {
+      "title": "Leaner Training, Lower Leakage: Revisiting Memorization in LLM Fine-Tuning with LoRA",
+      "url": "https://arxiv.org/abs/2506.20856",
+      "source": "arXiv",
+      "categories": [
+        "LLM",
+        "Research Fundamentals"
+      ],
+      "level": "intermediate",
+      "headline_ko": "LoRA와 LLM 미세조정 메모리",
+      "summary": "이 연구는 LoRA를 사용하여 미세조정된 LLM의 '기억(memorization)' 현상을 재조명합니다. 기존 사전 학습이나 전체 미세조정과 달리 LoRA 미세조정에서는 모델 스케일이나 데이터 중복이 기억에 미치는 영향이 다름을 발견했습니다. 연구는 LoRA가 전체 미세조정보다 기억 위험을 크게 줄이면서도 강력한 작업 성능을 유지함을 보여줍니다. 이는 효율적인 학습과 개인 정보 보호 개선에 중요한 시사점을 제공합니다.",
+      "why": "LoRA 기반 LLM 미세조정의 작동 원리와 데이터 기억 문제를 심층적으로 이해할 수 있습니다. 데이터 효율성과 모델 보안에 관심 있는 학생들에게 LLM 최적화 전략에 대한 중요한 관점을 제공합니다.",
+      "keywords": [
+        "LoRA",
+        "LLM 미세조정",
+        "데이터 기억",
+        "효율성"
+      ],
+      "narration": "다음은 LoRA를 활용한 LLM 미세조정 과정에서 데이터 '기억' 현상을 분석한 연구입니다. 이 논문은 LoRA가 기존 미세조정 방식보다 모델의 불필요한 데이터 기억을 효과적으로 줄여준다고 설명합니다. 이는 LLM의 효율적인 학습과 개인 정보 보호를 개선하는 데 중요한 통찰력을 제공합니다."
+    },
+    {
+      "title": "Characterizing Recoverable Expert-Utilization Signatures in Fine-Tuned Mixture-of-Experts LLMs",
+      "url": "https://arxiv.org/abs/2610.25079",
+      "source": "arXiv",
+      "categories": [
+        "LLM",
+        "Research Fundamentals",
+        "ML Systems & Infra"
+      ],
+      "level": "advanced",
+      "headline_ko": "MoE LLM 취약점 분석",
+      "summary": "이 논문은 미세조정된 MoE(Mixture-of-Experts) LLM의 구조적 메모리 취약점을 탐구합니다. 라우팅 및 출력 로짓을 통해 전문가 경로를 복구하는 방법을 제안하여, 표적 공격 탐지에 기여합니다. 이 연구는 복잡한 LLM 아키텍처를 이해하고 보안을 강화하는 데 중요한 기여를 합니다.",
+      "why": "MoE LLM의 내부 작동 방식과 보안 취약점에 대한 깊이 있는 이해를 얻을 수 있습니다. 고급 LLM 아키텍처의 잠재적 위험과 방어 메커니즘에 관심 있는 연구 지향 학생에게 적합합니다.",
+      "keywords": [
+        "MoE LLM",
+        "구조적 취약점",
+        "전문가 경로",
+        "LLM 보안"
+      ],
+      "narration": "마지막은 MoE LLM의 구조적 메모리 취약점을 분석한 고급 연구 논문입니다. 이 논문은 라우팅과 출력 로짓을 통해 전문가 경로를 복구하는 방법을 제시하여, 표적 공격 탐지에 기여합니다. 복잡한 LLM 아키텍처의 보안과 내부 동작 원리를 심층적으로 이해하고자 하는 학생에게 추천합니다."
+    }
+  ]
+}
