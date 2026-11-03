@@ -1,159 +1,315 @@
 {
- "date": "2026-11-02",
- "collected_at": "2026-11-02T23:16:50+00:00",
+ "date": "2026-11-03",
+ "collected_at": "2026-11-03T21:27:19+00:00",
  "counts": {
-  "gemini_search": 21
+  "gemini_search": 30
  },
- "dedup": "dedup: 0 already in corpus, 1 cross-source duplicates, 20 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 30 new",
  "items": [
   {
-   "source": "arXiv",
-   "title": "Self-Building Labs",
-   "url": "https://arxiv.org/abs/2610.23826",
-   "snippet": "This study introduces the concept of Self-Building Labs, focusing on automated scientific discovery. It integrates AI and robotics to accelerate experimental processes and data generation, representing a significant step towards autonomous research environments. The paper highlights the potential for AI-driven systems to design and execute experiments with minimal human intervention.",
+   "source": "OpenAI Blog",
+   "title": "LifeVal: Measuring Personal-Assistant Progress on Everyday Tasks",
+   "url": "https://openai.com/blog/lifeval-measuring-personal-assistant-progress-on-everyday-tasks",
+   "snippet": "OpenAI released LifeVal, a new benchmark designed to measure model progress on tasks that matter in everyday life, moving beyond traditional knowledge or academic benchmarks. It focuses on scenarios like parenting, accessing government services, budgeting, and designing fitness plans. The goal is to evaluate AI assistants on their ability to take action and complete work, not just offer advice.",
    "score": 0,
    "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.86,
-    "difficulty": 0.63,
-    "learning_value": 1.27,
-    "hands_on": 0.53
+    "has_substance": 0.92,
+    "difficulty": 0.04,
+    "learning_value": 1.19,
+    "hands_on": 0.73
    }
   },
   {
-   "source": "arXiv",
-   "title": "Leaner Training, Lower Leakage: Revisiting Memorization in LLM Fine-Tuning with LoRA",
-   "url": "https://arxiv.org/abs/2506.20856",
-   "snippet": "This research explores the impact of LoRA on memorization in fine-tuned Large Language Models, aiming for more efficient training with reduced leakage. The study re-examines the phenomenon of memorization, proposing methods to mitigate unintended data retention. It provides insights into optimizing LLM fine-tuning processes for better privacy and efficiency.",
+   "source": "OpenAI",
+   "title": "Community Safety Report and New Protections for Teens",
+   "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+   "snippet": "OpenAI has announced a major expansion of its safety architecture, specifically focusing on violence prevention and early intervention for teen users interacting with ChatGPT. The system now evaluates conversational trajectories over multiple turns to detect self-harm, severe psychological distress, or escalating violent tendencies. Interventions include adjusting model tone and providing crisis hotline resources.",
    "score": 0,
    "published": "2026-11-02",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.93,
-    "difficulty": 1.41,
-    "learning_value": 1.35,
+    "injection": 0.03,
+    "has_substance": 0.77,
+    "difficulty": 0.02,
+    "learning_value": 1.06,
+    "hands_on": 0.24
+   }
+  },
+  {
+   "source": "Google DeepMind Blog",
+   "title": "Genie 4: A New Generation of World Simulation",
+   "url": "https://deepmind.google/discover/blog/genie-4-a-new-generation-of-world-simulation/",
+   "snippet": "Google DeepMind has published details on Genie 4, a new iteration of its Genie world model, which simulates people and environments with greater realism. This version offers improved simulation of complex events, more natural character movement, and interactive steering in real-time. Genie 4 also integrates Gemini 3.8 Flash as a guiding agent for continuous calibration and adaptive planning.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.91,
+    "difficulty": 0.52,
+    "learning_value": 0.97,
+    "hands_on": 0.8
+   }
+  },
+  {
+   "source": "Google DeepMind",
+   "title": "Antigravity Cheminformatics Skills — AI agent for drug-design analysis",
+   "url": "https://deepmind.google/research/publications/antigravity-cheminformatics-skills-ai-agent-for-drug-design-analysis",
+   "snippet": "Antigravity Cheminformatics Skills are a set of agent skills for Google Antigravity that enable an AI agent to collect, curate, and analyze compound data from literature and patents for drug design. The model plans the work and reasons about results, while deterministic chemistry tools built on RDKit perform the actual calculations. This approach significantly reduces the time from proposal to design, from days to about an hour.",
+   "score": 0,
+   "published": "2026-11-02",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.89,
+    "difficulty": 0.37,
+    "learning_value": 1.68,
+    "hands_on": 0.7
+   }
+  },
+  {
+   "source": "Google DeepMind Blog",
+   "title": "AlphaEarth Foundations: Integrating Petabytes of Earth Observation Data",
+   "url": "https://deepmind.google/discover/blog/alphaearth-foundations-integrating-petabytes-of-earth-observation-data/",
+   "snippet": "Google DeepMind's AlphaEarth Foundations introduces an AI model that integrates petabytes of Earth observation data into a unified representation. This model enables various applications, including unsupervised and supervised classification of landscapes, regression for predicting environmental variables like canopy height, and similarity search for identifying similar surface conditions globally. The project provides a comprehensive dataset and tutorials for developers.",
+   "score": 0,
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 0.4,
+    "learning_value": 2.13,
+    "hands_on": 1.71
+   }
+  },
+  {
+   "source": "Hugging Face Blog",
+   "title": "CWE-bench v2: More coverage, quality, and transparency",
+   "url": "https://huggingface.co/blog/cwe-bench-v2",
+   "snippet": "CWE-bench v2 offers enhanced coverage, quality, and transparency for evaluating code generation models on security vulnerabilities. The updated benchmark includes 100 tasks covering 91 different Common Weakness Enumerations (CWEs) and employs LLM judge panels for curation. Gemini 4 Argon leads the evaluated models with 67.8% pass@1 and 81.0% pass@4.",
+   "score": 0,
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.45,
+    "learning_value": 1.52,
+    "hands_on": 0.88
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements",
+   "url": "https://huggingface.co/papers/2611.00102",
+   "snippet": "The 'CUA-Master' paper presents a method for scaling computer-use agents through open-world recursive improvements. This research aims to enhance the autonomy and capabilities of AI agents by allowing them to continuously learn and improve in dynamic, unconstrained environments. It addresses challenges in real-world application and agent generalization.",
+   "score": 0,
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.9,
+    "difficulty": 1.52,
+    "learning_value": 1.2,
+    "hands_on": 0.75
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "CoworkOS: Scaling Agent Coworkers for Real-world Automation",
+   "url": "https://huggingface.co/papers/2611.00104",
+   "snippet": "The 'CoworkOS' paper introduces a system for scaling agent coworkers to achieve real-world automation. This work focuses on developing frameworks and methodologies for multiple AI agents to collaborate effectively on complex tasks. It addresses orchestration, task division, and communication challenges in multi-agent systems for practical applications.",
+   "score": 0,
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.92,
+    "difficulty": 1.35,
+    "learning_value": 1.2,
+    "hands_on": 0.72
+   },
+   "related_to": [
+    "msitarzewski / agency-agents"
+   ]
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+   "url": "https://huggingface.co/papers/2611.00105",
+   "snippet": "This paper explores the intersection of 'Video Generation Meets Agent Harness', detailing agentic video generation, agentic world modeling, and recursive self-improvement. It investigates how AI agents can autonomously create and refine video content, including simulating dynamic virtual worlds, through continuous learning and iterative enhancements.",
+   "score": 0,
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.75,
+    "difficulty": 1.7,
+    "learning_value": 0.91,
+    "hands_on": 0.64
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "SWE-Trail: History-Guided Trajectory Collection for Coding Agent Training",
+   "url": "https://huggingface.co/papers/2611.00107",
+   "snippet": "'SWE-Trail' introduces a method for history-guided trajectory collection specifically for training coding agents. This research focuses on accumulating valuable interaction data to improve the performance of AI agents in software engineering tasks. By analyzing past successful and unsuccessful trajectories, the system enhances learning for code generation and debugging.",
+   "score": 0,
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.09,
+    "learning_value": 1.75,
     "hands_on": 0.71
    }
   },
   {
-   "source": "arXiv",
-   "title": "Characterizing Recoverable Expert-Utilization Signatures in Fine-Tuned Mixture-of-Experts LLMs",
-   "url": "https://arxiv.org/abs/2610.25079",
-   "snippet": "The paper investigates structural memory vulnerabilities in fine-tuned Mixture-of-Experts (MoE) Large Language Models. It proposes methods to recover expert paths through routing and output logits, aiding in the detection of targeted attacks. This work contributes to understanding and securing complex LLM architectures.",
+   "source": "Hugging Face Papers",
+   "title": "NorthCUA Technical Report: Turbocharging Computer-Use Agents through Experience at Scale",
+   "url": "https://huggingface.co/papers/2611.00108",
+   "snippet": "The 'NorthCUA Technical Report' details how computer-use agents can be turbocharged through experience at scale. This report investigates methods for rapidly improving the efficiency and effectiveness of AI agents by exposing them to vast amounts of operational data and real-world scenarios, leading to significant performance gains in diverse tasks.",
    "score": 0,
-   "published": "2026-11-02",
+   "published": "2026-11-03",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 1.72,
-    "learning_value": 1.86,
-    "hands_on": 0.85
+    "has_substance": 0.88,
+    "difficulty": 1.07,
+    "learning_value": 1.21,
+    "hands_on": 0.76
    }
   },
   {
-   "source": "arXiv",
-   "title": "MoLRSI: A Recursive Self-Improving AI agent for Molecular Discovery",
-   "url": "https://arxiv.org/abs/2610.25080",
-   "snippet": "This study introduces MoLRSI, an intelligent agent designed for molecular discovery, optimizing workflow and model architecture. It integrates cross-task memory for enhanced performance in applications like antibiotic discovery and peptide-MHC binding agent design. The agent's recursive self-improving nature promises accelerated breakthroughs in chemical research.",
+   "source": "Hugging Face Papers",
+   "title": "Lost in Recovery: Demystifying Recovery Behavior of Computer-Use Agents via Goal-Oriented Action Replay",
+   "url": "https://huggingface.co/papers/2611.00109",
+   "snippet": "'Lost in Recovery' demystifies the recovery behavior of computer-use agents through goal-oriented action replay. This paper analyzes how AI agents recover from errors or unexpected situations by replaying and learning from past successful recovery strategies. It aims to improve the robustness and resilience of autonomous agents in complex computational environments.",
    "score": 0,
-   "published": "2026-11-02",
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.92,
+    "difficulty": 1.44,
+    "learning_value": 1.51,
+    "hands_on": 0.67
+   },
+   "related_to": [
+    "CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements"
+   ]
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "PhotoGuider: Composition-Aware Cropping and 360 Degree View Framing with Explainable Photographic Assessments",
+   "url": "https://huggingface.co/papers/2611.00110",
+   "snippet": "'PhotoGuider' presents a system for composition-aware cropping and 360-degree view framing, complemented by explainable photographic assessments. This research uses AI to understand and apply principles of good photographic composition, offering automated tools for image enhancement and virtual reality content creation, with transparent reasoning for its decisions.",
+   "score": 0,
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.94,
+    "learning_value": 1.38,
+    "hands_on": 0.89
+   }
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning",
+   "url": "https://huggingface.co/papers/2611.00111",
+   "snippet": "'Reviso' investigates the selective attention of visual evidence in video captioning, proposing that not all visual information is equally important. This paper introduces a mechanism to dynamically weight visual cues, allowing AI models to focus on the most salient aspects of a video when generating descriptive captions, leading to more accurate and concise summaries.",
+   "score": 0,
+   "published": "2026-11-03",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.95,
-    "difficulty": 1.45,
-    "learning_value": 1.19,
-    "hands_on": 0.79
+    "difficulty": 1.14,
+    "learning_value": 1.85,
+    "hands_on": 0.78
    }
   },
   {
-   "source": "arXiv",
-   "title": "Optimizing Stochastic Policy Geometry for Few-Step Flow Reinforcement Learning",
-   "url": "https://arxiv.org/abs/2610.41949",
-   "snippet": "The research proposes the Geo-FSRL method to enhance the performance of few-step flow reinforcement learning. It demonstrates superior results in image and video generation tasks under a 4-step setting compared to existing methods. This optimization focuses on improving the efficiency and effectiveness of reinforcement learning algorithms.",
+   "source": "Hugging Face",
+   "title": "Rebuild 2026-11-01: AWQ fixes (MoE router/shared-expert-gate compensated during smoothing; gemma basic-pipeline smoothing actually applied), un-smoothed norms bit-exact",
+   "url": "https://huggingface.co/blog/rebuild-2026-11-01-awq-fixes",
+   "snippet": "This update details AWQ fixes, including compensation for MoE router/shared-expert-gate during smoothing and the actual application of gemma basic-pipeline smoothing. It also addresses un-smoothed norms to be bit-exact. These technical improvements are crucial for the efficient and accurate deployment of large language models, particularly those with Mixture-of-Experts (MoE) architectures.",
+   "score": 0,
+   "published": "2026-11-01",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 1.72,
+    "learning_value": 1.31,
+    "hands_on": 0.78
+   }
+  },
+  {
+   "source": "Hugging Face",
+   "title": "XLSR-Conformer-TCM-DF — implementation notes",
+   "url": "https://huggingface.co/datasets/SpeechAntiSpoofingBenchmarks/XLSR-Conformer-TCM-DF/blob/6332a342417e296a29777e4b95f082e3526a0c0b/implementation-notes.md",
+   "snippet": "These implementation notes provide a detailed overview of the XLSR-Conformer-TCM-DF model for speech spoofing detection. They cover the model's architecture, hyper-parameters, and wrapper decisions, including input processing and scoring mechanisms. The document also highlights specific optimizations and findings related to TF32 precision and batch-size overrides.",
    "score": 0,
    "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 1.76,
-    "learning_value": 1.57,
-    "hands_on": 0.87
+    "difficulty": 1.4,
+    "learning_value": 1.99,
+    "hands_on": 0.98
    }
   },
   {
-   "source": "arXiv",
-   "title": "BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?",
-   "url": "https://arxiv.org/abs/2610.41999",
-   "snippet": "This paper explores the behavior of AI agents in detecting changes, questioning whether they actively seek out changes or only respond when prompted. It delves into the underlying mechanisms of change detection in AI systems, highlighting implications for agent autonomy and perception. The research investigates the proactive versus reactive nature of AI agents.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.77,
-    "difficulty": 1.07,
-    "learning_value": 1.12,
-    "hands_on": 0.48
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "agent-desktop",
-   "url": "https://github.com/vercel-labs/agent-desktop",
-   "snippet": "Agent Desktop enables reliable computer use for any AI agent on the desktop. Built with Rust, it leverages OS accessibility trees to perceive UI structure and execute actions safely and stably, rather than relying on pixel-based inferences. This tool aims to enhance the autonomy and robustness of AI agents interacting with graphical user interfaces.",
+   "source": "AWS Machine Learning Blog",
+   "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
+   "url": "https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/",
+   "snippet": "This article demonstrates using Crawl4AI, an open-source Python crawler, to prepare web content for Amazon Bedrock Knowledge Bases. It focuses on custom extraction, Markdown formatting, and metadata sidecars for improved retrieval quality and citation accuracy in RAG applications. The workflow outlines deploying a scheduled AWS Fargate task to crawl websites and upload prepared content to Amazon S3.",
    "score": 0,
    "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.98,
-    "difficulty": 0.09,
-    "learning_value": 2.03,
-    "hands_on": 1.22
+    "difficulty": 0.19,
+    "learning_value": 2.39,
+    "hands_on": 1.39
    }
   },
   {
-   "source": "GitHub Trending",
-   "title": "claude-mem",
-   "url": "https://github.com/thedotmack/claude-mem",
-   "snippet": "This project provides persistent context across sessions for AI agents, capturing and compressing agent activities with AI. It injects relevant context into future sessions, supporting various models like Claude Code, OpenClaw, and Gemini. The goal is to improve long-term memory and coherence for AI agent interactions.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.98,
-    "difficulty": 0.14,
-    "learning_value": 1.72,
-    "hands_on": 1.21
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "Scrapling",
-   "url": "https://github.com/D4Vinci/Scrapling",
-   "snippet": "Scrapling is a web scraping framework that manages everything from single requests to full-scale crawls. It provides robust tools for undetected browser automation using stealth Firefox, Python, and anti-bot measures, making it ideal for large-scale data collection. This framework aims to simplify and enhance web scraping capabilities.",
+   "source": "AWS Machine Learning Blog",
+   "title": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock",
+   "url": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+   "snippet": "Circle K reduced DevOps incident triage time to under 15 minutes using Amazon Bedrock, decreasing manual investigation by 67-75 percent. They built an automated triage system with Amazon Bedrock Flows and Knowledge Bases, initially using three specialized agents. The system delivers structured incident summaries to Slack rapidly, enhancing incident response.",
    "score": 0,
    "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.01,
-    "learning_value": 1.18,
-    "hands_on": 1.09
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "Claude-Code-Game-Studios",
-   "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-   "snippet": "This repository transforms Claude Code into a comprehensive game development studio, featuring 49 AI agents and 72 workflow skills. It implements a complete coordination system that mirrors real studio hierarchies for efficient game creation. The project showcases advanced multi-agent collaboration in a creative domain.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.03,
     "has_substance": 0.96,
-    "difficulty": 0.18,
-    "learning_value": 2.42,
-    "hands_on": 1.52
+    "difficulty": 0.02,
+    "learning_value": 1.69,
+    "hands_on": 0.89
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "JustVugg / colibri",
+   "url": "https://github.com/JustVugg/colibri",
+   "snippet": "Colibri is a hierarchical inference engine for frontier Mixture-of-Experts (MoE) models, designed for efficient execution on consumer hardware. It manages hot experts on the GPU, warm ones in RAM, and cold ones streamed from NVMe. Written in C, it aims to optimize performance for large language models.",
+   "score": 0,
+   "published": "",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.15,
+    "learning_value": 2.01,
+    "hands_on": 1.27
+   }
+  },
+  {
+   "source": "GitHub Trending",
+   "title": "Donchitos / Claude-Code-Game-Studios",
+   "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+   "snippet": "This repository presents a framework to 'Turn Claude Code into a full game dev studio,' featuring 49 AI agents, 72 workflow skills, and a complete coordination system. It mirrors a real studio hierarchy to enable complex game development tasks. The project aims to automate and streamline various aspects of game creation using AI.",
+   "score": 0,
+   "published": "",
+   "judge": {
+    "injection": 0.06,
+    "has_substance": 0.96,
+    "difficulty": 0.09,
+    "learning_value": 2.18,
+    "hands_on": 1.47
    },
    "related_to": [
     "mvschwarz/openrig"
@@ -161,165 +317,162 @@
   },
   {
    "source": "GitHub Trending",
-   "title": "FreeToken",
-   "url": "https://github.com/FlashML-org/FreeToken",
-   "snippet": "FreeToken enables datacenter-scale model serving directly on your desktop, allowing massive models to run locally with high speed and efficiency. This project aims to democratize access to powerful AI models for local execution without relying on cloud infrastructure. It addresses the challenge of running large models on consumer-grade hardware.",
+   "title": "Usagi-org / ai-goofish-monitor",
+   "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+   "snippet": "AI Goofish Monitor is a system based on Playwright and AI for real-time/timed monitoring and intelligent analysis of multi-task processes, equipped with a comprehensive backend management UI. It helps users find desired products from a large volume of items, implying applications in e-commerce or data scraping.",
    "score": 0,
-   "published": "2026-11-02",
+   "published": "",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.32,
-    "learning_value": 1.15,
-    "hands_on": 1.06
+    "has_substance": 0.98,
+    "difficulty": 0.04,
+    "learning_value": 1.58,
+    "hands_on": 1.5
    }
   },
   {
    "source": "GitHub Trending",
-   "title": "roboskills",
-   "url": "https://github.com/openrobokit/roboskills",
-   "snippet": "Roboskills provides a minimal set of agent workflows and tools specifically designed for robotics applications. It enables coding agents like Claude Code or Codex to perform robotics tasks through integrated skills and tools that wrap existing models. The project aims to simplify the development and deployment of AI agents in robotic systems.",
+   "title": "huggingface/optimum",
+   "url": "https://github.com/huggingface/optimum",
+   "snippet": "Hugging Face's Optimum project provides easy-to-use hardware optimization tools to accelerate inference and training of Transformers, Diffusers, TIMM, and Sentence Transformers. It offers methods to enhance the performance of various machine learning models across different hardware configurations, crucial for efficient deployment and research.",
    "score": 0,
-   "published": "2026-10-31",
+   "published": "2026-11-02",
    "judge": {
-    "injection": 0.03,
-    "has_substance": 0.97,
-    "difficulty": 0.25,
-    "learning_value": 1.27,
-    "hands_on": 1.07
+    "injection": 0.01,
+    "has_substance": 0.98,
+    "difficulty": 0.83,
+    "learning_value": 1.26,
+    "hands_on": 1.26
    }
   },
   {
    "source": "GitHub",
-   "title": "llm-daily-review",
-   "url": "https://github.com/vfalbor/llm-daily-review",
-   "snippet": "This repository automates the daily discovery and evaluation of LLM applications from Hacker News. It scrapes submissions, tests each in an isolated Docker container, and scores them across 11 criteria, publishing results and weekly newsletters. The project offers a systematic approach to identifying and assessing new LLM tools.",
+   "title": "weideyouni/holoaeon",
+   "url": "https://github.com/weideyouni/holoaeon",
+   "snippet": "Holoaeon describes a multi-agent framework with an 'AdaptiveGraph' for collaboration, supporting features like Dijkstra shortest path, load application, and root-cause analysis. It includes 25 agents, 47 skills, and 9 domain packs, with recent updates focusing on 'Cold-hot-plug empowerment' and evidence hardening.",
+   "score": 0,
+   "published": "2026-11-01",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.81,
+    "learning_value": 1.58,
+    "hands_on": 1.4
+   }
+  },
+  {
+   "source": "Hacker News",
+   "title": "Astra can read and write weights to improve Qwen",
+   "url": "https://rikiyat.github.io/posts/astra-qwen-weights/",
+   "snippet": "A post discusses how a frontier LLM, GPT-6 Astra, can read and edit network weights of other models like Qwen without a traditional training loop. This novel approach suggests AI models gaining the capability to understand and directly modify the underlying parameters of other neural networks, indicating a leap in model introspection and self-modification.",
    "score": 0,
    "published": "2026-11-02",
    "judge": {
-    "injection": 0.03,
-    "has_substance": 0.98,
-    "difficulty": 0.04,
-    "learning_value": 2.39,
-    "hands_on": 1.5
-   },
-   "related_to": [
-    "How to Test LLMs and AI Agents"
-   ]
-  },
-  {
-   "source": "NASA",
-   "title": "What is Super Intelligence?",
-   "url": "https://www.nasa.gov/general/what-is-super-intelligence/",
-   "snippet": "NASA defines Artificial Intelligence as a machine-based system that makes predictions, recommendations, or decisions for human-defined objectives, influencing real or virtual environments. Super Intelligence tools at NASA often use machine learning to train computers for classifications, predictions, or uncovering trends in large datasets. Common methods include decision support tools that consider multiple outcomes and probabilities in complex, imperfect situations.",
-   "score": 0,
-   "published": "2026-10-30",
-   "judge": {
     "injection": 0.02,
-    "has_substance": 0.78,
-    "difficulty": 0.02,
-    "learning_value": 1.22,
-    "hands_on": 0.17
+    "has_substance": 0.61,
+    "difficulty": 0.93,
+    "learning_value": 1.11,
+    "hands_on": 0.73
    }
   }
  ],
  "dropped": [
   {
-   "source": "Google Blog",
-   "title": "The latest AI news we announced in October 2026: Step into real-time interactive worlds with Genie 4",
-   "url": "https://blog.google/technology/ai/google-ai-news-october-2026/",
-   "snippet": "Genie 4 offers unprecedented realism, advanced physics, lifelike human movement, and native audio for real-time interactive simulation. It allows users to steer scenes using natural language and is a crucial step toward AGI, advancing safe training environments for robots and AI agents. This development provides powerful tools for creating and exploring dynamic virtual worlds.",
+   "source": "OpenAI Blog",
+   "title": "Introducing the Grid Protectors Program",
+   "url": "https://openai.com/blog/introducing-the-grid-protectors-program",
+   "snippet": "OpenAI introduces the Grid Protectors Program, which will work with utilities, regulators, and policymakers so future compute campuses can support grid reliability and protect consumer electricity costs. The program aims to lower electricity demand when the grid is under stress, ensuring that households and small businesses are not burdened by the power needs of compute facilities. A pilot program in Effingham, Georgia, is designed to free up to 1,000 megawatts of flexible demand response.",
    "score": 0,
    "published": "2026-11-02",
+   "judge": {
+    "injection": 0.01,
+    "has_substance": 0.3,
+    "difficulty": 0.0,
+    "learning_value": 0.59,
+    "hands_on": 0.1
+   },
+   "reason": "no substance 0.30"
+  },
+  {
+   "source": "OpenAI Blog",
+   "title": "OpenAI Model Spec Update: Core Values and Principles",
+   "url": "https://openai.com/policy/model-spec",
+   "snippet": "OpenAI's updated Model Spec outlines five core values: Be faithful to human intent, Minimize harm, Be honest and transparent, Facilitate human agency, and Act with care. The document details how the model should behave, including principles against misleading users unless explicitly directed by a higher authority. It emphasizes preserving user control while striving for beneficial outcomes.",
+   "score": 0,
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.1,
+    "has_substance": 0.3,
+    "difficulty": 0.01,
+    "learning_value": 0.84,
+    "hands_on": 0.09
+   },
+   "reason": "no substance 0.30"
+  },
+  {
+   "source": "Hugging Face Papers",
+   "title": "Wave Forcing: Towards Speed-of-Light Streaming Video Generation",
+   "url": "https://huggingface.co/papers/2611.00101",
+   "snippet": "This paper introduces 'Wave Forcing', a novel approach towards achieving speed-of-light streaming video generation. The research explores new methods for efficient video synthesis, focusing on low-latency and high-throughput performance. This could have significant implications for real-time video applications and interactive media.",
+   "score": 0,
+   "published": "2026-11-03",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.87,
-    "difficulty": 0.11,
-    "learning_value": 0.69,
-    "hands_on": 0.89
+    "difficulty": 0.75,
+    "learning_value": 0.78,
+    "hands_on": 0.64
    },
-   "reason": "low learning value 0.69"
+   "reason": "low learning value 0.78"
   },
   {
-   "source": "GitHub Trending",
-   "title": "nanochat",
-   "url": "https://github.com/karpathy/nanochat",
-   "snippet": "nanochat is presented as 'the best ChatGPT that $100 can buy,' offering an efficient and cost-effective solution for conversational AI. It focuses on minimalist design and practical utility for AI interactions, making advanced language models more accessible. The project emphasizes affordability and ease of deployment.",
+   "source": "Hugging Face Papers",
+   "title": "Advances in Agentic Computer Graphics",
+   "url": "https://huggingface.co/papers/2611.00103",
+   "snippet": "This paper highlights recent 'Advances in Agentic Computer Graphics', exploring how AI agents are being integrated into graphic design and rendering pipelines. The research delves into new paradigms for creating and manipulating visual content using autonomous agents, potentially revolutionizing areas like animation, game development, and architectural visualization.",
+   "score": 0,
+   "published": "2026-11-03",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.66,
+    "difficulty": 0.95,
+    "learning_value": 0.78,
+    "hands_on": 0.31
+   },
+   "reason": "low learning value 0.78"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Show HN: Subvocal – Talk to your computer without making noise",
+   "url": "https://news.ycombinator.com/item?id=38139598",
+   "snippet": "Subvocal is a new project that allows users to communicate with their computer silently, without vocalizing. This innovation could enable more discreet and efficient human-computer interaction, with potential applications in various environments where spoken commands are impractical or undesirable. The project is presented as a 'Show HN' demonstrating its capabilities.",
    "score": 0,
    "published": "2026-11-02",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.86,
-    "difficulty": 0.04,
-    "learning_value": 0.55,
-    "hands_on": 1.05
+    "has_substance": 0.88,
+    "difficulty": 0.01,
+    "learning_value": 0.65,
+    "hands_on": 0.95
    },
-   "reason": "low learning value 0.55"
+   "reason": "low learning value 0.65"
   },
   {
-   "source": "UC San Diego News",
-   "title": "UC San Diego Launches AI-Driven Chip Design Research Initiative Supported By Qualcomm Technologies",
-   "url": "https://ucsdnews.ucsd.edu/pressrelease/uc-san-diego-launches-ai-driven-chip-design-research-initiative-supported-by-qualcomm-technologies",
-   "snippet": "UC San Diego has launched a new AI-driven chip design research initiative, supported by a $500,000 gift from Qualcomm Technologies. This collaboration aims to rethink how next-generation computing systems and systems-on-chips are designed, applying AI to optimize processing speed, energy consumption, and memory capacity. Researchers will explore new architectures and predict performance to accelerate innovation in semiconductor design.",
+   "source": "Hugging Face Papers",
+   "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+   "url": "https://huggingface.co/papers/2611.00106",
+   "snippet": "The paper 'Democratizing Robot-Use Agents' proposes a unified harness that leverages open models to make robot control more accessible. This research aims to lower the barrier to entry for developing and deploying robotic agents by providing a standardized framework and utilizing publicly available AI models. It covers aspects of control, perception, and task execution.",
    "score": 0,
-   "published": "2026-11-02",
+   "published": "2026-11-03",
    "judge": {
-    "injection": 0.01,
-    "has_substance": 0.33,
-    "difficulty": 0.05,
-    "learning_value": 0.67,
-    "hands_on": 0.11
+    "injection": 0.02,
+    "has_substance": 0.92,
+    "difficulty": 0.96,
+    "learning_value": 1.2,
+    "hands_on": 0.97
    },
-   "reason": "no substance 0.33"
-  },
-  {
-   "source": "Psychology Today",
-   "title": "College Students Use AI Extensively, Survey Shows",
-   "url": "https://www.psychologytoday.com/us/blog/the-future-of-ai/202610/college-students-use-ai-extensively-survey-shows",
-   "snippet": "A new 2026 Dartmouth AI Survey reveals widespread AI usage among college students across the nation and their views on AI's impact on jobs. The survey indicates that most students use AI tools for tasks like explaining concepts, summarizing readings, and solving math problems. Fifty percent of students acknowledge peers use AI text with little editing, highlighting concerns about fairness in take-home work.",
-   "score": 0,
-   "published": "2026-10-30",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.54,
-    "difficulty": 0.0,
-    "learning_value": 0.84,
-    "hands_on": 0.03
-   },
-   "reason": "low learning value 0.84"
-  },
-  {
-   "source": "UKRI",
-   "title": "Artificial intelligence and robotics theme – UKRI",
-   "url": "https://www.ukri.org/what-we-do/our-themes/artificial-intelligence-and-robotics/",
-   "snippet": "The EPSRC AI and Robotics team plays a key role in engaging with UKRI colleagues and the research communities to maintain the UK's leading position in AI and robotics research. They collaborate with engineering and ICT themes to set strategic direction and support the development of core capabilities. Recent investments include new AI hubs addressing foundational mathematics and computational research, as well as AI for science, engineering, and real-world data applications.",
-   "score": 0,
-   "published": "2026-10-30",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.1,
-    "difficulty": 0.04,
-    "learning_value": 0.74,
-    "hands_on": 0.02
-   },
-   "reason": "no substance 0.10"
-  },
-  {
-   "source": "Proton Blog",
-   "title": "Proton's AI manifesto for software engineering",
-   "url": "https://proton.me/blog/ai-manifesto-software-engineering",
-   "snippet": "Proton's manifesto argues that the engineer's role has fundamentally shifted from writing code to helping LLMs write better code faster. Engineers are now team leaders managing models and agents, tasked with guiding and correcting them. The manifesto emphasizes pushing the limits of LLM autonomy, identifying problems LLMs can't solve, and continuously improving workflows and shared resources for all.",
-   "score": 0,
-   "published": "2026-11-01",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.15,
-    "difficulty": 0.11,
-    "learning_value": 0.59,
-    "hands_on": 0.13
-   },
-   "reason": "no substance 0.15"
+   "reason": "same as published: Robot-Use Agents (RUA)"
   }
  ],
- "judge": "judge: 14 kept, 6 dropped (25 pairs checked)"
+ "judge": "judge: 24 kept, 6 dropped (29 pairs checked)"
 }

@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-03",
+  "headline": "데이터 효율화와 AI 모델 최적화, 최신 ML 트렌드",
+  "items": [
+    {
+      "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
+      "url": "https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/",
+      "source": "AWS Machine Learning Blog",
+      "categories": [
+        "ML Systems & Infra",
+        "Open Source & Tools"
+      ],
+      "level": "beginner",
+      "headline_ko": "Crawl4AI로 RAG 개선",
+      "summary": "이 AWS 블로그 게시물은 오픈소스 Python 크롤러인 Crawl4AI를 사용하여 Amazon Bedrock Knowledge Bases를 위한 웹 콘텐츠를 준비하는 방법을 설명합니다. Crawl4AI는 웹 콘텐츠에서 사용자 정의 추출, Markdown 형식 지정 및 메타데이터 사이드카 생성을 지원하여 RAG 애플리케이션의 검색 품질과 인용 정확도를 향상시킵니다. 이 워크플로우는 AWS Fargate 태스크를 사용하여 웹사이트를 주기적으로 크롤링하고 준비된 콘텐츠를 Amazon S3에 업로드하는 과정을 포함합니다. 표준 Amazon Bedrock 웹 크롤러가 충분하지 않을 때, 더 세밀한 제어가 필요한 데이터 소스에 유용합니다.",
+      "why": "RAG 시스템에서 데이터 준비의 중요성을 이해하고, 실제 AWS 환경에서 이를 구현하는 방법을 배울 수 있습니다. Crawl4AI 같은 오픈소스 도구를 활용하여 검색 증강 생성 애플리케이션의 성능을 최적화하는 실용적인 지식을 얻을 수 있습니다.",
+      "keywords": [
+        "RAG",
+        "Amazon Bedrock",
+        "Crawl4AI",
+        "AWS Fargate",
+        "Data Preparation"
+      ],
+      "narration": "첫 번째 소식은 AWS Bedrock Knowledge Bases를 위한 데이터 준비 도구, Crawl4AI에 대한 이야기입니다. 이 오픈소스 파이썬 크롤러는 RAG 애플리케이션의 검색 품질을 높이기 위해 웹 콘텐츠를 추출하고 포맷팅하며 메타데이터를 추가합니다. AWS Fargate를 활용한 자동화된 웹 크롤링 워크플로우를 통해, 효율적으로 데이터를 관리할 수 있습니다. 이는 RAG 시스템 구축 시, 데이터의 정확성과 품질을 중요하게 생각하는 분들에게 유용한 정보가 될 것입니다."
+    },
+    {
+      "title": "AlphaEarth Foundations: Integrating Petabytes of Earth Observation Data",
+      "url": "https://deepmind.google/discover/blog/alphaearth-foundations-integrating-petabytes-of-earth-observation-data/",
+      "source": "Google DeepMind Blog",
+      "categories": [
+        "Multimodal & Vision",
+        "Research Fundamentals"
+      ],
+      "level": "intermediate",
+      "headline_ko": "알파어스, 지구 데이터 통합",
+      "summary": "Google DeepMind의 AlphaEarth Foundations는 페타바이트 규모의 지구 관측 데이터를 통합된 표현으로 변환하는 AI 모델을 소개합니다. 이 모델은 풍경의 비지도 및 지도 분류, 캐노피 높이와 같은 환경 변수 예측을 위한 회귀, 전 세계 유사 지표면 조건 식별을 위한 유사성 검색 등 다양한 애플리케이션을 가능하게 합니다. AlphaEarth는 개발자를 위한 포괄적인 데이터셋과 튜토리얼을 제공하여, 지구 과학 분야의 AI 연구와 적용을 촉진합니다.",
+      "why": "방대한 양의 다중 모달 지구 관측 데이터를 효율적으로 처리하고 통합하는 최신 AI 기술을 엿볼 수 있습니다. 환경 모델링 및 기후 변화 연구에 AI가 어떻게 활용될 수 있는지, 그 잠재력과 실제 적용 사례를 이해하는 데 도움이 됩니다.",
+      "keywords": [
+        "AlphaEarth",
+        "Earth Observation Data",
+        "Foundation Model",
+        "Environmental AI",
+        "DeepMind"
+      ],
+      "narration": "다음은 구글 딥마인드의 AlphaEarth Foundations 프로젝트 소식입니다. 이 AI 모델은 페타바이트 규모의 지구 관측 데이터를 하나의 통합된 표현으로 변환합니다. 이를 통해 풍경 분류, 환경 변수 예측, 유사 지표면 검색 등 다양한 지구 과학 애플리케이션이 가능해졌습니다. 방대한 데이터 처리와 AI의 환경 문제 해결 능력을 엿볼 수 있는 흥미로운 연구입니다."
+    },
+    {
+      "title": "JustVugg / colibri",
+      "url": "https://github.com/JustVugg/colibri",
+      "source": "GitHub Trending",
+      "categories": [
+        "LLM",
+        "ML Systems & Infra"
+      ],
+      "level": "advanced",
+      "headline_ko": "Colibri: MoE 추론 엔진",
+      "summary": "Colibri는 선두적인 Mixture-of-Experts (MoE) 모델을 위한 계층적 추론 엔진으로, 소비자 하드웨어에서 효율적으로 실행되도록 설계되었습니다. 이 엔진은 '핫' 전문가를 GPU에, '웜' 전문가를 RAM에, '콜드' 전문가를 NVMe에서 스트리밍하는 방식으로 메모리를 관리합니다. C로 작성되었으며, GLM, Mistral-Large 등 다양한 대규모 언어 모델의 성능을 최적화하는 것을 목표로 합니다. 최소 8GB RAM과 22GB 디스크 공간으로도 구동이 가능합니다.",
+      "why": "MoE 모델의 작동 방식과 이를 일반 소비자 하드웨어에서 효율적으로 구동하기 위한 시스템 최적화 기술을 깊이 이해할 수 있습니다. 대규모 AI 모델을 제한된 자원으로 운영하는 데 관심 있는 학생들에게 실용적인 인사이트를 제공할 것입니다.",
+      "keywords": [
+        "MoE",
+        "Inference Engine",
+        "Consumer Hardware",
+        "LLM Optimization",
+        "C programming"
+      ],
+      "narration": "마지막은 대규모 MoE 모델을 소비자 하드웨어에서 효율적으로 구동하는 Colibri 추론 엔진입니다. 이 엔진은 GPU, RAM, NVMe 스토리지를 계층적으로 활용하여, 방대한 MoE 모델의 '전문가'들을 지능적으로 관리합니다. 순수 C 언어로 구현되어 GLM, Mistral-Large 등 다양한 LLM의 성능을 최적화합니다. 대규모 언어 모델을 개인 장치에서 운영하고자 하는 사용자에게 매우 유용한 도구가 될 것입니다."
+    }
+  ]
+}
