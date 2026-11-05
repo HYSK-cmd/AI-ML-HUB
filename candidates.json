@@ -1,459 +1,477 @@
 {
- "date": "2026-11-04",
- "collected_at": "2026-11-04T21:41:26+00:00",
+ "date": "2026-11-05",
+ "collected_at": "2026-11-05T21:44:22+00:00",
  "counts": {
   "gemini_search": 30
  },
- "dedup": "dedup: 0 already in corpus, 1 cross-source duplicates, 29 new",
+ "dedup": "dedup: 0 already in corpus, 0 cross-source duplicates, 30 new",
  "items": [
   {
-   "source": "Google DeepMind Blog",
-   "title": "Antigravity Cheminformatics Skills — AI agent for drug-design analysis",
-   "url": "https://www.deepmind.com/blog/antigravity-cheminformatics-skills-ai-agent-for-drug-design-analysis",
-   "snippet": "Cheminformatics Skills are a set of agent skills for Google Antigravity that let an agent collect compound data from literature and patents, curate it, and analyze it. The model plans the work and reasons about results, while deterministic chemistry tools built on RDKit do the actual calculations. DeepMind states that the full path from proposal to design took about an hour, significantly reducing the previous multiple-day timeframe. This advancement aids in early drug-design analysis by integrating AI agents with chemistry tools.",
+   "source": "arXiv",
+   "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
+   "url": "https://arxiv.org/abs/2611.06905",
+   "snippet": "The introduction of generalist robot policies has enabled a single, large model to learn to perform a variety of tasks from a vast pre-training corpus. While these models often exhibit powerful zero-shot generalization capabilities, they typically require an adaptation phase to achieve sufficient performance in deployment. Iterated self-improvement via reinforcement learning (RL) has demonstrated promise in enabling this adaptation, yet such approaches have been largely explored in single-task settings - where the goal is to simply improve on a narrow deployment task - which lies in stark contrast to the multi-task capabilities of the base policy. In this work we ask whether generalist robot policies are capable of multi-task, generalist improvement in deployment - targeting many diverse tasks simultaneously - and what algorithmic recipe enables this. To answer this question, we first develop a set of structured evaluations to test generalist improvement capabilities, and systematically evaluate algorithmic and practical design choices regarding value estimation, policy extraction and resource allocation. We show that not only can generalist policies be improved online across diverse tasks, but that the right recipe can enable generalization and increase performance on tasks not considered during online training. We characterize when this generalization occurs and show that both the training task distribution and the use of value-based RL are critical. To the best of our know",
    "score": 0,
-   "published": "2026-11-03",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.15,
-    "learning_value": 1.69,
-    "hands_on": 0.78
-   }
-  },
-  {
-   "source": "Anthropic (research post)",
-   "title": "FlashProve — Anthropic's open-source proof of which model wrote a reply",
-   "url": "https://www.anthropic.com/research/flashprove",
-   "snippet": "FlashProve is an open-source tool released by Anthropic, offering a zero-knowledge proof that verifies which model generated a particular reply. This proof can be checked on a normal CPU, enhancing transparency and trust in AI model outputs. It represents a significant step towards provable inference for large language models.",
-   "score": 0,
-   "published": "2026-11-03",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.82,
-    "difficulty": 0.93,
-    "learning_value": 1.55,
-    "hands_on": 1.22
-   }
-  },
-  {
-   "source": "AWS Machine Learning Blog",
-   "title": "Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore",
-   "url": "https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore/",
-   "snippet": "This article demonstrates building a multi-agent engineering assistant using Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore to automate aerospace component substitution evaluation. The solution combines multimodal retrieval, deterministic evaluation, and agentic orchestration to replace manual cross-referencing of engineering specifications with automated evidence assembly for aerospace component substitution decisions. It utilizes multi-agent orchestration to route queries to specialist agents.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.98,
-    "difficulty": 0.68,
-    "learning_value": 1.99,
-    "hands_on": 0.98
-   }
-  },
-  {
-   "source": "OpenAI (research/blog post)",
-   "title": "OpenAI says its AI is getting better at doing things humans do, like shopping and meal planning",
-   "url": "https://openai.com/research/ai-everyday-tasks-gpt6-astra",
-   "snippet": "OpenAI announced a new internal tool for assessing how AI handles everyday tasks, alongside research on its models' performance. The GPT-6 Astra model scored 93.1% at finding the right kindergarten after moving, 98% at managing community volunteers for a flood, and 90.4% at creating a meal plan for a parent with diabetes. This indicates significant progress in AI agents performing complex, real-world tasks.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.8,
-    "difficulty": 0.05,
-    "learning_value": 1.12,
-    "hands_on": 0.46
-   }
-  },
-  {
-   "source": "Hugging Face Blog",
-   "title": "CWE-bench v2: More coverage, quality, and transparency",
-   "url": "https://huggingface.co/blog/cwe-bench-v2",
-   "snippet": "CWE-bench v2 updates the evaluation benchmark for code generation models, emphasizing increased coverage, quality, and transparency. Among 11 models evaluated, Gemini 4 Argon achieved 67.8% pass@1 and 81.0% pass@4, slightly surpassing Claude Opus 5.5. The benchmark covers 91 different Common Weakness Enumerations (CWEs), indicating a wide range of vulnerability classes.",
-   "score": 0,
-   "published": "2026-11-03",
+   "published": "2026-11-05",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.97,
-    "difficulty": 0.39,
-    "learning_value": 1.44,
-    "hands_on": 0.72
-   }
+    "difficulty": 1.66,
+    "learning_value": 2.24,
+    "hands_on": 0.69
+   },
+   "related_to": [
+    "What if Thing From the Addams Family was Actually a Robot?"
+   ]
   },
   {
-   "source": "AWS (announcement)",
-   "title": "OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock",
-   "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
-   "snippet": "OpenAI's GPT-6.1 Terra model is now generally available on Amazon Bedrock, positioned as the everyday-workload line of the GPT-6 family. In OpenAI's Agents' Last Exam evaluation, Terra scored 15 percentage points higher than GPT-5.6 Terra and performed on par with GPT-6 Astra, completing tasks more than three times faster. The pricing for input and output tokens is at least 50% lower than GPT-6.1 Sol and GPT-5.6 Terra.",
+   "source": "arXiv",
+   "title": "Adaptive Multi Mode: Budget-Aware Routing of Optimizers By Online Landscape Probes",
+   "url": "https://arxiv.org/abs/2611.06879",
+   "snippet": "The best classical optimizer for a continuous black-box problem depends on its budget and landscape. Existing routers decide from the dimension and budget, past improvement or features fitted to one benchmark, and few test an optimizer's implicit assumptions online. AMM (Adaptive Multi Mode) routes a known budget among quasi-Newton, trust-region, coordinate, multistart and evolution-strategy optimization engines with online probes of curvature, plateaus, separability, kinks, basins and fractal structure. Each probe has a default, a dimension-by-budget validity range and a cost charged to the budget. In its pre-registered development loop on bbob, 32 of 36 predictions held over the last 16 confirmations. AMM was then tested once on held-out bbob instances 101-110 (D=2-40, 10*D-1000*D) against up to seven competitors. It has the highest target share in 382 of 600 function-dimension-budget cells (236 outright, 146 tied) and, by a descriptive posterior rule, is credibly behind in 35, mostly at 10*D and 30*D. At every budget it also leads the controls built from its own engines (the best engine alone, the best engine per dimension and budget, and a greedy schedule), narrowly at 10*D and 30*D, and nevergrad's NgIohTuned. In pre-registered runs its lead over IPOP-CMA-ES holds under affine and box transformations, on box-constrained bbob and, pooled, on rotated f2-f4, but rotating the separable f3 and f4 removes most of the lead there. On held-out MA-BBOB its final share at 2000*D is",
    "score": 0,
-   "published": "2026-11-02",
+   "published": "2026-11-05",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.94,
-    "difficulty": 0.05,
-    "learning_value": 0.91,
-    "hands_on": 0.84
-   }
-  },
-  {
-   "source": "Google DeepMind Blog",
-   "title": "Genie 4: A new generation of world simulation",
-   "url": "https://www.deepmind.com/blog/genie-4-a-new-generation-of-world-simulation",
-   "snippet": "Google DeepMind has released details on Genie 4, a new iteration of its world model, which is being rolled out as a research preview to trusted testers. Genie 4 significantly improves the simulation of people, creating characters that move naturally and respond organically to their environments, and can be interactively steered in real-time. It is also the first real-time world model to natively generate audio and introduces interactive dialogue that adapts on the fly.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.92,
-    "difficulty": 0.3,
-    "learning_value": 1.0,
-    "hands_on": 0.8
-   }
-  },
-  {
-   "source": "Deep Principle (technical blog)",
-   "title": "Hydrogen-1.0: A 753B Open-Weight Model for Scientific Discovery",
-   "url": "https://deepprinciple.com/blog/hydrogen-1-0-open-weight-model-for-scientific-discovery",
-   "snippet": "Deep Principle announced Hydrogen-1.0, a 753B GLM-5.3 post-train model with an MIT license, designed for scientific discovery. The model reports a 38.3% score on FrontierScience-Research, outperforming GPT-6-Astra's 33.3%. Its training incorporates lab records and discovery trajectories, targeting NVIDIA B200/B300 and AMD Instinct MI350X/MI355X GPUs for deployment.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.9,
-    "difficulty": 0.7,
-    "learning_value": 0.97,
-    "hands_on": 1.34
-   }
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "vercel-labs/agent-desktop",
-   "url": "https://github.com/vercel-labs/agent-desktop",
-   "snippet": "The 'agent-desktop' repository from Vercel Labs was trending on GitHub on November 2, 2026, and is associated with AI Agents, CLI, Automation, and Accessibility. This project likely focuses on building a desktop application for AI agents with command-line interface capabilities. Recent activity would be expected to drive its trending status.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.93,
-    "difficulty": 0.02,
-    "learning_value": 0.9,
-    "hands_on": 1.12
-   }
-  },
-  {
-   "source": "Google DeepMind Blog",
-   "title": "Gemma 4 31B: Google's Dense Open Model in watsonx Orchestrate",
-   "url": "https://www.deepmind.com/blog/gemma-4-31b-googles-dense-open-model-in-watsonx-orchestrate",
-   "snippet": "Gemma 4 31B, a 30.7-billion parameter dense model from Google DeepMind, is now available in IBM watsonx Orchestrate. This model is specifically designed for agent workloads, offering enhanced agentic capabilities and notable improvements across benchmarks. Its 256K context allows agents to manage complex, long-running workflows effectively without losing conversational history.",
-   "score": 0,
-   "published": "2026-11-04",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 0.3,
-    "learning_value": 0.91,
-    "hands_on": 1.08
-   }
-  },
-  {
-   "source": "Hugging Face Model Card",
-   "title": "RikiyaT/Qwen3.5-0.8B-weight-space-programming",
-   "url": "https://huggingface.co/RikiyaT/Qwen3.5-0.8B-weight-space-programming/commit/d1671a1",
-   "snippet": "This Hugging Face model card, updated on November 2, 2026, describes a direct weight edit (not fine-tuning) of Qwen3.5-0.8B for mathematical problem-solving. The edited model scored 51.0% on a benchmark, with significantly fewer instances of hitting the token limit compared to the base model. A 25-problem smoke test showed the base model hitting the token limit 95% of the time, while the edited one mostly avoids this issue.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.97,
-    "difficulty": 0.68,
-    "learning_value": 1.77,
-    "hands_on": 1.34
-   }
-  },
-  {
-   "source": "Hugging Face Model Card",
-   "title": "litert-community/Qwen3.5-4B-3D-Coder",
-   "url": "https://huggingface.co/litert-community/Qwen3.5-4B-3D-Coder",
-   "snippet": "Qwen3.5-4B-3D-Coder is CCORE's early-preview fine-tune of Qwen/Qwen3.5-4B, specialized for generating interactive 3D scenes in Three.js. From a scene description, it writes a self-contained HTML file. The technical report outlines full fine-tuning of language parameters with a frozen vision encoder and a short LoRA stage on a dataset of 3,933 training scenes.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.98,
-    "difficulty": 0.99,
-    "learning_value": 1.73,
-    "hands_on": 1.68
-   }
-  },
-  {
-   "source": "AWS Machine Learning Blog",
-   "title": "AWS sets up an on-behalf-of token exchange in Bedrock AgentCore Gateway so an agent calls ServiceNow as the signed-in user",
-   "url": "https://aws.amazon.com/blogs/machine-learning/aws-sets-up-an-on-behalf-of-token-exchange-in-bedrock-agentcore-gateway-so-an-agent-calls-servicenow-as-the-signed-in-user/",
-   "snippet": "AWS introduced a pattern for setting up an on-behalf-of token exchange in Bedrock AgentCore Gateway, allowing an AI agent to call ServiceNow as the signed-in user. This ensures that the user's identity, audit trail, and permissions remain intact when agents interact with enterprise APIs. The agent authenticates to the gateway with a JWT, which is then exchanged through the OBO flow for a token scoped to the ServiceNow connector, preserving user identity.",
-   "score": 0,
-   "published": "2026-11-03",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.96,
-    "difficulty": 0.05,
-    "learning_value": 1.93,
-    "hands_on": 0.9
-   }
-  },
-  {
-   "source": "Google DeepMind Blog",
-   "title": "Gemini Robotics ER 2 overview",
-   "url": "https://www.deepmind.com/blog/gemini-robotics-er-2-overview",
-   "snippet": "The Gemini Robotics ER 2 overview from Google DeepMind details its model information, technical specifications, token limits, and supported capabilities. It covers advancements in spatial reasoning, including pointing, tracking, bounding boxes, and trajectories. The model also features enhanced agentic capabilities such as code execution, instrument reading, and image annotation, alongside task orchestration for long-horizon tasks with custom robot APIs.",
-   "score": 0,
-   "published": "2026-11-03",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.95,
-    "difficulty": 0.63,
-    "learning_value": 1.07,
-    "hands_on": 0.77
-   }
-  },
-  {
-   "source": "AWS (blog post)",
-   "title": "Amazon RDS Protection for data activity using ML-based anomaly detection",
-   "url": "https://aws.amazon.com/blogs/aws/amazon-rds-protection-for-data-activity-using-ml-based-anomaly-detection/",
-   "snippet": "Amazon RDS Protection for data activity introduces ML-based anomaly detection and integrated threat intelligence to continuously monitor database query patterns. This new capability detects unusual data activity without requiring agents, additional infrastructure, or database configuration changes. It establishes behavioral baselines for normal query patterns to identify malicious database activity that might otherwise appear legitimate.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.01,
-    "has_substance": 0.96,
-    "difficulty": 0.0,
-    "learning_value": 1.49,
-    "hands_on": 0.38
-   }
-  },
-  {
-   "source": "OpenAI Blog",
-   "title": "Scaling Git at OpenAI",
-   "url": "https://openai.com/blog/scaling-git-at-openai",
-   "snippet": "OpenAI shares insights into its strategies and challenges for scaling Git within its large-scale development environment. The blog post discusses how the company manages extensive codebases and distributed teams effectively, ensuring efficiency and seamless collaboration. This is crucial for maintaining robust ML infrastructure that supports rapid AI development.",
-   "score": 0,
-   "published": "2026-11-03",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.64,
-    "difficulty": 0.01,
-    "learning_value": 1.22,
-    "hands_on": 0.15
-   }
-  },
-  {
-   "source": "GitHub (repository)",
-   "title": "Nvidia – open-source auto-ontology",
-   "url": "https://github.com/nvidia/open-source-auto-ontology",
-   "snippet": "Nvidia's 'open-source auto-ontology' GitHub repository, identified as trending on November 3, 2026, aims to provide tools or frameworks for automatically generating ontologies. This project likely involves machine learning techniques for knowledge representation and organization, crucial for complex AI systems. Its open-source nature promotes community contributions and broader adoption.",
-   "score": 0,
-   "published": "2026-11-03",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.89,
-    "difficulty": 0.69,
-    "learning_value": 1.01,
-    "hands_on": 0.98
+    "has_substance": 0.99,
+    "difficulty": 1.96,
+    "learning_value": 2.46,
+    "hands_on": 0.95
    }
   },
   {
    "source": "arXiv",
-   "title": "Agentic backdoors via pretraining poisoning",
-   "url": "https://arxiv.org/abs/2611.00000",
-   "snippet": "This arXiv paper investigates the creation of backdoors in AI agents through pretraining poisoning, a critical security concern. It explores how malicious data injected during the pretraining phase can lead to compromised agent behavior under specific, covert triggers. The research highlights significant security risks associated with autonomous AI systems and their vulnerability to adversarial attacks.",
+   "title": "Navigating Disagreement Among Criteria for Evaluating Explanation Faithfulness",
+   "url": "https://arxiv.org/abs/2611.06846",
+   "snippet": "Faithfulness requires that algorithmic explanations accurately reflect the model's behavior. Yet existing operationalizations of faithfulness can disagree about whether the same explanation is faithful, leaving developers and auditors to choose among conflicting evaluations. In this paper, we investigate disagreement among evaluation criteria and offer a practical path forward for evaluating explanation faithfulness. We first identify how operationalizations of faithfulness differ. We introduce a faithfulness functional that locates their disagreements in what an explanation claims about the model, which comparisons bear on that claim, and how agreement across those comparisons should be aggregated, and we reconstruct existing evaluation criteria within it. We argue these reconstructions support understanding faithfulness as a common though incompletely specified relation between the model and explanation, so the differences reflect choices left open by the general requirement. Justifying an operationalization then comes down to justifying these choices, which, on our view, draws on explanatory, institutional, and normative considerations. We support this argument with a case study of adverse action notices, reconstructing the evaluation implicit in an industry-proposed procedure and identifying which of its choices the setting justifies and which remain open. Our work gives auditors and practitioners a way to navigate disagreeing evaluations of faithfulness. It also explains",
    "score": 0,
-   "published": "2026-11-02",
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.81,
+    "difficulty": 1.83,
+    "learning_value": 2.36,
+    "hands_on": 0.3
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Context--Answer Metamodels: Forecasting LLM Activations Before the First Answer Token",
+   "url": "https://arxiv.org/abs/2611.06837",
+   "snippet": "Under stochastic decoding, a single context can elicit many different answers from a language model. Characterizing this variation typically requires many expensive autoregressive rollouts, each revealing only one realization. We ask whether the activations produced while reading the context can directly forecast the model's rollout activations. We train context--answer metamodels that map a context activation sequence to point or distribution forecasts of mean-pooled answer activations. We find that (i) the four metamodel families we study forecast mean-pooled answer activations with high fidelity, and the distribution metamodels also capture rollout variability; (ii) performance improves as the training set grows to 500,000 prompts, and the metamodels generalize zero-shot to out-of-domain datasets; (iii) their forecasts retain behavior-predictive signal; and (iv) context activations from Qwen2.5 predict mean-pooled answer activations from Qwen3.5 and Gemma 4, suggesting that activation forecasts can transfer across models. Together, these results suggest that context activation traces can support scalable forecasts of behaviors in LLM answers before the first answer token is generated. (The authors introduce context-answer metamodels to forecast LLM activations prior to the generation of the first answer token. This research provides insights into the internal workings of large language models and could lead to more efficient and controllable generation.)",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.59,
+    "learning_value": 2.62,
+    "hands_on": 0.92
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Systolic Linear Attention: Co-Designing Tile-Grouped Gated Delta Attention for TPUs",
+   "url": "https://arxiv.org/abs/2611.06828",
+   "snippet": "Gated-delta linear attention layers such as Gated DeltaNet (GDN), Kimi Delta Attention (KDA), and GDN-2 are tuned for GPUs, where small tensor-core tiles and fast vector registers make per-channel decay rescaling and sequential in-block solves cheap. On Google TPUs, which concentrate compute in wide $256 \\times 256$ systolic matrix units backed by a slower vector unit, porting these layers directly leaves half of each matrix tile empty and bottlenecks on vector operations. We present \\textbf{Systolic Linear Attention (SLA)}, which reshapes gated delta attention around the matrix unit by widening keys to $256$ with grouped value heads, grouping decay gates into four $64$-channel tiles, and computing the chunk solve entirely with block matrix products in a single fused kernel. On TPU v7x, a full \\texttt{SLA-R4} layer runs $1.6\\times$--$2.5\\times$ faster than the open-source Tokamax KDA kernel ($1.4\\times$--$2.4\\times$ with exact chunk inversion), driven primarily by head sharing and kernel fusion. Across a $2{,}048$-chip TPU v7x pre-training study of sparse Mixture-of-Experts (MoE) models from $6.5\\text{B}$ to $63.1\\text{B}$ parameters, SLA trains $11\\%$--$24\\%$ faster than KDA at similar perplexity, and reaches slightly lower perplexity than KDA in smaller matched-seed runs. (This paper presents Systolic Linear Attention, a co-designed tile-grouped gated delta attention mechanism optimized for TPUs. The design aims to improve the efficiency and performance of attention mechani",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.99,
+    "difficulty": 1.96,
+    "learning_value": 2.68,
+    "hands_on": 0.95
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Rules, Traces and Routing Statistics: Training and Calibration Data for Open Models on ARC-AGI-2",
+   "url": "https://arxiv.org/abs/2611.06827",
+   "snippet": "We study which training and calibration data help three open models solve ARC-AGI-2 tasks when the solver runs offline on four L4 GPUs for at most 12 hours. We compare data offline on public tasks and report 189 runs on the 120 hidden semi-private tasks. For the NVARC Qwen3-4B grid model, we built a corpus of 12,000 executable rules in a typed language and 95,993 tasks; a rule is admitted only if its behaviour on a fixed probe set differs from that of every admitted rule, and a task only if its pairs refute a shortlist of nearest competing rules and defeat 12 shortcut solvers. Continued fine-tuning on 1,920 real task records with revised four-GPU scheduling raised the semi-private score from 28.96 (mean of the released model) to 33.06 (mean of five runs, best 34.86); no checkpoint trained with synthetic tasks, even all 95,993 of them, improved on the real-task model. For the Qwen3.8-27B reasoning model, we fine-tuned on 1,036 of its own reasoning traces with correct final answers and compared sets that add traces of other models and synthetic tasks. With an inference procedure built around the model (a thinking cap enforced in the serving engine, a Python program checked on the demonstrations after each answer, a long first attempt per input), the score rose from 26.81 to 44.03, the level the ARC Prize Foundation measured for the base model without a time limit (42.36); most of the gain came from the inference procedure. For the Qwen3.8-Flash-Next mixture-of-experts model (12",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.63,
+    "learning_value": 2.36,
+    "hands_on": 1.05
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "TestBED: An Open-Source Toolkit for Bayesian Experimental Design",
+   "url": "https://arxiv.org/abs/2611.06633",
+   "snippet": "Bayesian experimental design (BED) is a principled framework for intelligent data acquisition with applications across a wide range of scientific and industrial domains. However, the development and adoption of BED remains hindered by a lack of standardised software and benchmarks. Existing methods are typically implemented in bespoke codebases and evaluated on a small subset of tasks, making methods difficult to apply, compare, or extend. To address this, we present TestBED, a general-purpose, open-source toolkit for Bayesian experimental design. TestBED decomposes the BED process into modular, reusable components spanning tasks, objectives, training mechanisms, policy architectures, and evaluation procedures, together with scalable implementations of core primitives such as expected information gain estimators. We provide a wide range of these components, which can be freely composed, allowing existing methods to be reproduced within a common framework, while also enabling previously unexplored configurations and new methodologies to be easily implemented and evaluated. Using TestBED, we further conduct a large-scale benchmark of contemporary BED methods, including controlled studies of under-appreciated but surprisingly critical methodological choices, such as the importance of time embeddings in design policy architectures. By providing a modular, extensible software foundation and a reproducible benchmarking suite, we hope that TestBED will accelerate methodological rese",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.99,
+    "difficulty": 1.64,
+    "learning_value": 2.79,
+    "hands_on": 1.43
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Risk-Sensitive Non-Parametric and Kernel Bandits",
+   "url": "https://arxiv.org/abs/2611.06489",
+   "snippet": "We study non-parametric bandits in which arms are evaluated using Cumulative Prospect Theory (CPT) rather than expected reward. We consider continuous action spaces with arm-dependent noise and propose Non-Parametric CPT Bandits ($\\mathtt{NPCB}$), an optimistic algorithm that decouples mean estimation from CPT-based decision-making. We prove CPT regret of order $\\widetilde{\\mathcal O}\\bigl(\\sqrt{T\\,\\dim_E(\\mathcal F,T^{-2})\\,\\log N(\\mathcal F,T^{-2},\\|\\cdot\\|_\\infty)}\\bigr)$, where $\\dim_E$ is the Eluder dimension of the function class $\\mathcal F$, $T$ is the time horizon, and $N$ is its covering number in the sup norm. This matches the order-wise regret of classical non-parametric bandits, showing that CPT risk sensitivity incurs no additional order-wise regret cost. We extend $\\mathtt{NPCB}$ to unknown noise CDFs, retaining the known-CDF mean-learning term and adding a CDF-learning cost governed by a distributional Eluder dimension. We also study Kernel-CPT bandits and obtain information-gain-based regret bounds for a broad range of kernels, matching the corresponding risk-neutral kernel rates up to logarithmic factors. (This paper explores risk-sensitive approaches to non-parametric and kernel bandits, aiming to develop more robust decision-making algorithms under uncertainty. It considers scenarios where avoiding adverse outcomes is as important as maximizing rewards.)",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.97,
+    "learning_value": 2.41,
+    "hands_on": 0.8
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Learning Object-Centric Motion Priors from Human for Robotic Dexterous Manipulation",
+   "url": "https://arxiv.org/abs/2611.05979",
+   "snippet": "This method learns to holistically predict future hand-object states from Human-Object Interaction (HOI) datasets, serving as a general-purpose reward for reinforcement learning. It reduces reliance on task-specific reward engineering and enhances generalization across tasks in robotic manipulation.",
+   "score": 0,
+   "published": "2026-11-04",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 1.51,
+    "learning_value": 2.0,
+    "hands_on": 0.87
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Generative Modeling for Cascading Extremes via Autoregressive Transformers",
+   "url": "https://arxiv.org/abs/2611.05728",
+   "snippet": "Extreme events often occur sequentially, from earthquake-tsunami cascades to successive extreme losses in financial markets. We introduce an extremal token representation that encodes multivariate observations as a categorical sequence. A quiet token records the absence of threshold exceedances; otherwise, the token identifies the exceeding component with the largest marginal probability-scale score. The representation is invariant to componentwise strictly increasing transformations. It preserves the identity and temporal ordering of dominant exceedances but discards their magnitudes and the identities of nondominant simultaneous exceedances. A decoder-only transformer estimates the history-dependent next-token kernel on this representation, and recursive sampling generates future token sequences from the induced joint predictive law. We amortize our generative model by pretraining across simulated process families with varying parameters and dependence persistence. Next-token predictions are evaluated against exact conditional probabilities for held-out categorical processes and particle filter references for heavy-tailed vector autoregressive processes. Applied to ten-second returns for five semiconductor stocks, the pretrained model supports zero-shot transfer, while a few epochs of adaptation improve agreement between observed and generated token frequencies and transition patterns. These results support task-specific tokenization and simulation-based pretraining for mod",
+   "score": 0,
+   "published": "2026-11-04",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.91,
+    "learning_value": 2.5,
+    "hands_on": 0.92
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Near-Minimax Sample Complexity for Multi-Objective Reinforcement Learning under Generative Models",
+   "url": "https://arxiv.org/abs/2611.05562",
+   "snippet": "In multi-objective reinforcement learning, preferences may be specified only after data collection, requiring one dataset to support a continuum of reward trade-offs. We study finite discounted Markov decision processes with unknown transitions, $S$ states, $A$ actions, and $m$ known reward functions taking values in $[0,1]$, given access to a generative model. The learner must provide an $\\varepsilon$-optimal policy for every convex combination of these rewards without further sampling, with a guarantee that holds simultaneously over all preferences and initial states. Writing $H=(1-γ)^{-1}$, we establish the constant-confidence minimax sample complexity $\\widetildeΘ\\!\\left( \\frac{SAH^3}{\\varepsilon^2}\\min\\{S,\\log(em)\\} \\right)$, where the suppressed factors are logarithmic in $S,A,H,\\varepsilon^{-1}$ and the dependence on $m$ is explicit. Thus, up to these logarithmic factors, the worst-case statistical cost of supporting all preferences grows logarithmically with the number of objectives and saturates at the number of states. The upper bound uses uniform state--action sampling and empirical planning, with reward rounding in the logarithmic-objective regime. Its analysis chains optimal-value increments over covers of the reward hull. A one-sided Bellman variance bound controls signed value differences under a second transition kernel, preserving the $H^3\\varepsilon^{-2}$ dependence. A complementary uniform guarantee for all bounded rewards yields the state-dimension saturat",
+   "score": 0,
+   "published": "2026-11-04",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.96,
+    "learning_value": 2.24,
+    "hands_on": 0.52
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "A Unified Framework for Training-Dataset Aggregation and Exact Machine Unlearning via Gibbs Probability Measures",
+   "url": "https://arxiv.org/abs/2611.05544",
+   "snippet": "In this paper, three operations on Gibbs probability measures are studied: renormalization, normalized log-linear combination, and nesting. The resulting measures are shown to be Gibbs probability measures with explicit expressions for their objective functions, reference measures, and regularization factors. These measures are further characterized as unique solutions to optimization problems involving linear combinations of the original objective functions, subject to either relative entropy regularization or relative entropy constraints. When the reference measures are probability measures, geometric interpretations of these three operations are established involving Pythagorean identities and exponential geodesics.A central result is the equivalence between nesting and normalized log-linear combinations of Gibbs probability measures. These results are then applied to supervised machine learning with Gibbs algorithms, which are represented by Gibbs probability measures. In this context, either through nesting or log-linear combinations, Gibbs algorithms trained on local datasets are used to form new Gibbs algorithms trained upon the aggregation of all local training datasets. Interestingly, the parameters of such operations, determine the weights of each training data point on the aggregated dataset. %Operations on local Gibbs probability measures are shown to control the contributions of training data. This observation is leveraged for achieving: (a) exact machine unlearn",
+   "score": 0,
+   "published": "2026-11-04",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.99,
+    "learning_value": 2.32,
+    "hands_on": 0.63
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+   "url": "https://arxiv.org/abs/2611.05377",
+   "snippet": "Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in embodiment and appearance. Existing latent action models infer actions from visual transitions, but their representations often entangle the underlying action with irrelevant visual variations, limiting transfer across embodiments. We introduce DreamX, which repurposes a pretrained video diffusion model as a universal latent action learner. Our approach extracts compact latent actions from the video model's rich spatiotemporal features, compressing each latent video frame by $\\boldsymbol{300\\times}$ ($\\boldsymbol{1{,}200 \\rightarrow 4}$ tokens). In addition, by leveraging the video model's generative prior, these latent actions capture action-relevant dynamics disentangled from visual appearance. The resulting latent space serves as a shared action interface across embodiments (human and robot), environments, and action parameterizations. On LARY-Bench, DreamX achieves state-of-the-art performance among latent action models. Moreover, actions encoded in one setting remain effective in another: the latent space supports any-to-any video transfer and zero-shot action transfer across diverse embodiments and environments. Furthermore, this shared interface also enables policy learning in a compact latent action space, reducing the computational cost of video-diffusion-based policies. (DreamX is presented as",
+   "score": 0,
+   "published": "2026-11-04",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.98,
+    "difficulty": 1.85,
+    "learning_value": 2.59,
+    "hands_on": 0.86
+   },
+   "related_to": [
+    "Native Action-Prior Learning from Videos for World Action Models"
+   ]
+  },
+  {
+   "source": "arXiv",
+   "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+   "url": "https://arxiv.org/abs/2611.05373",
+   "snippet": "Direct Nash Optimization (DNO) aligns a language model to a general preference function by approximating the Nash equilibrium of a two-player preference game. Its practical variant, DNO-Prct, iterates on-policy sampling, LLM-based rating of the samples together with a teacher's gold response, large-margin preference-pair selection and a DPO-style contrastive update. We re-implement DNO-Prct independently and study it on two open-weight instruct models, Llama 3.1 8B Instruct and Mistral 7B Instruct v0.1, with GPT-4o or a larger open-weight model of the same family as the annotator. On AlpacaEval 2.0 with GPT-4o as judge, three iterations raise the length-controlled (LC) win rate against GPT-4o from 31.7% to 45.3% for Llama and from 6.8% to 18.4% for Mistral, and the tuned 8B model scores above Llama 3.1 70B Instruct on every reported win rate. With same-family open-weight annotators, the runs retain 62% (Llama) and 82% (Mistral) of the LC gain achieved with GPT-4o as annotator, so the rating step does not require a proprietary model. In a separate ablation configuration, variants that remove the gold responses, remove the data look-back, or accept only teacher-preferred pairs score 6 to 10 LC points below the full procedure, whereas varying the number of on-policy samples per prompt (1 to 7) moves the LC win rate by at most 2.1 points, and a margin sweep (1 to 5) run in its own pipeline by at most 2.4 points. We also report the cost of the pipeline and where the practical algo",
+   "score": 0,
+   "published": "2026-11-04",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.99,
+    "difficulty": 1.82,
+    "learning_value": 2.43,
+    "hands_on": 1.08
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2611.05372",
+   "snippet": "Inverse kinematics (IK) converts end-effector pose commands into joint motion, and many vision-language-action (VLA) policies rely on it to act on a given arm and to transfer across embodiments. Precise IK remains laborious: redundancy and singularities complicate the inverse mapping, execution depends on hand-tuned controllers, and training data on physical robots are costly to collect. We present PolicyIK, a goal-conditioned reinforcement learning policy for high-precision IK. It updates joint-position references from pose feedback and observes its accumulated reference relative to the measured joints, so it can retain the offset that the position controller needs at rest. Two-scale pose errors with an error-dependent action gain resolve millimeter residuals while preserving large motions. Progress and dwell rewards teach it to both reach the tolerance and stay within it. In simulation, a single attempt by the trained PPO policy keeps the mean errors over the final second within 1 mm and 0.2° on 93.5% of held-out tasks, and a deployment protocol raises success to 98.9%. When trained directly on a physical arm with an off-policy RL learner, PolicyIK achieves higher reaching and holding success than all four classical IK controllers under the same time budgets. In simulated pick-and-place, PolicyIK executes the end-effector commands of the $π_{0.5}$ VLA policy with 95.7% success. These results show that reinforcement learning can provide high-precision inverse kinematics for ",
+   "score": 0,
+   "published": "2026-11-04",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.99,
+    "difficulty": 1.53,
+    "learning_value": 2.53,
+    "hands_on": 0.94
+   }
+  },
+  {
+   "source": "arXiv",
+   "title": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review",
+   "url": "https://arxiv.org/abs/2611.05390",
+   "snippet": "Multi-agent language-model systems often add a reviewer to improve an upstream agent's decision. Yet a reviewer can both repair errors and replace decisions that were already correct. We study this as a problem of institutional jurisdiction: conditional on the same proposal, task information, model, and review output, when is the reviewer authorized to make its recommendation binding? We compare broad override authority with an evidence gate that permits replacement only after the reviewer produces a mechanically valid record of a binding-constraint violation and a compliant repair. Across two locally run open-weight models, 96 spatial-policy tasks, and a 96-task portfolio-transfer benchmark, the gate sharply reduces corruption of correct proposals while retaining most repairs of violations. The directions of this tradeoff are partly implied by the rule; its magnitude depends on reviewer transitions and upstream proposal states. A prospective validation then gives the reviewer an explicit choice to retain, replace, or escalate. This eliminates correct-proposal corruption for Qwen, but Mistral still replaces all 48 correct proposals; Qwen also declines every welfare-only repair that Mistral frequently attempts. Thus interface design changes reviewer behavior but is not a model-independent safeguard. The result is not that restricted review is universally better. It is that reviewer competence, action interface, and binding jurisdiction jointly determine both the correction dom",
+   "score": 0,
+   "published": "2026-11-04",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.98,
+    "difficulty": 1.63,
+    "learning_value": 2.36,
+    "hands_on": 1.0
+   }
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+   "url": "https://huggingface.co/papers/2611.06999",
+   "snippet": "This paper focuses on advancing streaming video reinforcement learning by incorporating turn-level credit assignment. It aims to improve the learning efficiency and performance of agents operating in sequential decision-making environments with continuous video input.",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.95,
+    "difficulty": 1.37,
+    "learning_value": 1.2,
+    "hands_on": 0.66
+   }
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+   "url": "https://huggingface.co/papers/2611.06997",
+   "snippet": "FrontierPhysics is presented as a framework for evaluating agents capable of conducting end-to-end physics research. This research aims to benchmark and improve the autonomous scientific discovery capabilities of AI agents.",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.89,
+    "difficulty": 0.8,
+    "learning_value": 1.02,
+    "hands_on": 0.68
+   }
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
+   "url": "https://huggingface.co/papers/2611.06996",
+   "snippet": "GameVerse is a dataset introduced for long-horizon interactive world modeling, featuring minute-scale gameplay. This dataset facilitates the development of AI systems that can learn and predict complex interactions in dynamic virtual environments.",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 0.61,
+    "learning_value": 1.18,
+    "hands_on": 0.7
+   }
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?",
+   "url": "https://huggingface.co/papers/2611.06995",
+   "snippet": "This research investigates the specific improvements brought by multi-turn reinforcement learning in the context of LLM agents. It sheds light on how iterative interactions enhance the capabilities and effectiveness of language model-powered agents.",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.9,
+    "difficulty": 1.18,
+    "learning_value": 0.94,
+    "hands_on": 0.29
+   },
+   "related_to": [
+    "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning",
+    "Critical-State RL: Diagnosing Trainable States for Multi-Turn Tool Use"
+   ]
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL",
+   "url": "https://huggingface.co/papers/2611.06994",
+   "snippet": "EmoReward proposes a self-evolving reward calibration mechanism for reinforcement learning in emotional video generation. This innovative approach dynamically adjusts rewards to produce videos with desired emotional characteristics.",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.25,
+    "learning_value": 1.51,
+    "hands_on": 0.73
+   }
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+   "url": "https://huggingface.co/papers/2611.06993",
+   "snippet": "PyRUA-DataFarm utilizes an LLM agent as a cost-efficient teleoperator to gather real-ready robot data. This system addresses the challenge of data collection for robotics by leveraging large language models to guide and control robots remotely.",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 0.56,
+    "learning_value": 1.29,
+    "hands_on": 0.9
+   }
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "Halley: A Predictive Control Plane for Optical AI Data Center Networks",
+   "url": "https://huggingface.co/papers/2611.06992",
+   "snippet": "Halley describes a predictive control plane designed for optical AI data center networks. This infrastructure-focused work aims to optimize data flow and resource allocation in high-performance computing environments for AI workloads.",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.96,
+    "difficulty": 1.66,
+    "learning_value": 1.08,
+    "hands_on": 0.63
+   }
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "StreamDuo: A Live Commentator and a Research Agent for Unseen Games",
+   "url": "https://huggingface.co/papers/2611.06991",
+   "snippet": "StreamDuo introduces a system combining a live commentator and a research agent for analyzing unseen games. This innovative approach combines real-time commentary with AI-driven analysis to provide comprehensive insights into novel game scenarios.",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.94,
+    "difficulty": 0.5,
+    "learning_value": 0.97,
+    "hands_on": 0.81
+   }
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "Solv3R: 3D Looped Transformer as a Multi-view Solver",
+   "url": "https://huggingface.co/papers/2611.06990",
+   "snippet": "Solv3R proposes a 3D looped transformer architecture that functions as a multi-view solver. This research offers a novel approach to processing and integrating information from multiple perspectives, applicable to 3D reconstruction and understanding.",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.02,
+    "has_substance": 0.97,
+    "difficulty": 1.56,
+    "learning_value": 1.41,
+    "hands_on": 0.85
+   }
+  },
+  {
+   "source": "Hugging Face Daily Papers",
+   "title": "Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs",
+   "url": "https://huggingface.co/papers/2611.06989",
+   "snippet": "This paper explores human-to-robot transfer by bridging representation and action spaces within Vision-Language-Action (VLA) models. It aims to enable robots to learn complex skills more effectively from human demonstrations.",
+   "score": 0,
+   "published": "2026-11-05",
    "judge": {
     "injection": 0.02,
     "has_substance": 0.93,
-    "difficulty": 1.5,
-    "learning_value": 1.28,
-    "hands_on": 0.77
+    "difficulty": 1.66,
+    "learning_value": 1.15,
+    "hands_on": 0.64
    }
   }
  ],
  "dropped": [
   {
-   "source": "OpenAI Blog",
-   "title": "GPT-6 Astra designs a Codex device in a week — OpenAI's hardware push",
-   "url": "https://openai.com/blog/gpt-6-astra-designs-codex-device",
-   "snippet": "OpenAI showcases its models performing mechanical and electrical design work, demonstrating their capability to design a Codex device in a week. This effort signifies OpenAI's push into hardware development, inviting engineers to help test its advanced AI capabilities. GPT-6 Astra's performance highlights the growing potential of AI in complex engineering tasks.",
+   "source": "arXiv",
+   "title": "Alignment Myopia in Generative AI",
+   "url": "https://arxiv.org/abs/2611.06830",
+   "snippet": "Current generative AI alignment relies on a myopic paradigm that prioritizes immediate conversational satisfaction. By relying on short-horizon feedback, this approach ignores the profound, longitudinal externalities of persistent human-AI interaction, which can lead to adverse outcomes such as cognitive atrophy, social erosion, and diminished human agency. To address this, we propose a paradigm shift toward long-horizon alignment that accounts for how AI reshapes human experience over time. To this end, we map the tensions between near-term utility and long-term costs of AI use across four facets of human well-being to reveal outcomes that current reward models fail to capture. Ultimately, we advocate for moving beyond simple preference optimization toward alignment strategies that actively foster long-term human well-being by navigating these complex temporal scales. (This paper discusses 'Alignment Myopia in Generative AI' and its implications, exploring how current alignment techniques might lead to short-sighted or incomplete solutions in complex AI systems. It delves into the societal and ethical considerations of generative AI.)",
+   "score": 0,
+   "published": "2026-11-05",
+   "judge": {
+    "injection": 0.03,
+    "has_substance": 0.26,
+    "difficulty": 0.85,
+    "learning_value": 1.8,
+    "hands_on": 0.08
+   },
+   "reason": "no substance 0.26"
+  },
+  {
+   "source": "arXiv",
+   "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+   "url": "https://arxiv.org/abs/2611.05376",
+   "snippet": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, fail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, attention has settled on one kind of intelligent individual, the embodied robot; we argue that the era of Physical AI holds a second kind of equal importance, the person augmented by AI. Alongside artificial general intelligence, which asks how intelligent a machine can be, stands AI-augmented human intelligence (AHI), which asks how much intelligence a machine can enable in a particular person. Realizing it calls for a new kind of system, a cognitive symbiont: a lifelong, embedded, real-time, private, low-friction, and proactive companion that senses what the person senses through external devices, keeps their context across years, models their situation and their mind, takes part in their thinking at the right moment, carries out everyday tasks with their context, and keeps learning the person as both change. We give the paradigm a conceptual core, the cognitive gap between what a person could bring to a situation and what they can hold in working memory, and organize its design space as",
    "score": 0,
    "published": "2026-11-04",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.46,
-    "difficulty": 0.02,
-    "learning_value": 0.35,
-    "hands_on": 0.51
+    "has_substance": 0.47,
+    "difficulty": 0.78,
+    "learning_value": 2.0,
+    "hands_on": 0.09
    },
-   "reason": "no substance 0.46"
+   "reason": "no substance 0.47"
   },
   {
-   "source": "Anthropic (Claude Code release notes)",
-   "title": "Claude Code 2.1.318 — sign-in expiry warnings and repo-free cloud sessions",
-   "url": "https://www.anthropic.com/news/claude-code-2-1-318-release",
-   "snippet": "Claude Code 2.1.318 introduces sign-in expiry warnings for headless jobs, ensuring users are notified when their login sessions are about to expire. The update also features fixes for configuration saves on network homes. Furthermore, it enables repo-free cloud sessions, streamlining the development workflow for users.",
+   "source": "Hugging Face Daily Papers",
+   "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
+   "url": "https://huggingface.co/papers/2611.06998",
+   "snippet": "This work explores the development of native vision-language-action policies, transitioning from raw pixel data to executable actions. It represents a step towards more intuitive and capable embodied AI systems that can understand and interact with the world like humans.",
    "score": 0,
-   "published": "2026-11-03",
+   "published": "2026-11-05",
    "judge": {
     "injection": 0.02,
-    "has_substance": 0.9,
-    "difficulty": 0.0,
-    "learning_value": 0.66,
-    "hands_on": 0.57
+    "has_substance": 0.87,
+    "difficulty": 1.08,
+    "learning_value": 0.69,
+    "hands_on": 0.65
    },
-   "reason": "low learning value 0.66"
+   "reason": "low learning value 0.69"
   },
   {
-   "source": "AWS (blog post)",
-   "title": "Unveiling Infinity: AWS's Rust-Based Framework for Concurrent AI Agents",
-   "url": "https://aws.amazon.com/blogs/aws/unveiling-infinity-awss-rust-based-framework-for-concurrent-ai-agents/",
-   "snippet": "AWS introduced Infinity, a Rust-based framework designed for extreme agent concurrency, enabling massively concurrent AI agents. This innovation allows for fitting an astronomical 75,000 agents in a Raspberry Pi with just 8 GB of memory, addressing inefficiencies in traditional agent systems. Infinity tackles the challenge of agents spending significant time waiting by optimizing resource consumption.",
+   "source": "Hugging Face Daily Papers",
+   "title": "Advances in Agentic Computer Graphics",
+   "url": "https://huggingface.co/papers/2611.06988",
+   "snippet": "This paper discusses recent advances in agentic computer graphics, focusing on how intelligent agents can be used to automate and enhance various aspects of graphic design and content creation.",
    "score": 0,
-   "published": "2026-11-03",
+   "published": "2026-11-05",
    "judge": {
-    "injection": 0.02,
-    "has_substance": 0.8,
-    "difficulty": 0.12,
-    "learning_value": 0.89,
-    "hands_on": 0.83
+    "injection": 0.01,
+    "has_substance": 0.67,
+    "difficulty": 0.7,
+    "learning_value": 0.71,
+    "hands_on": 0.21
    },
-   "reason": "low learning value 0.89"
-  },
-  {
-   "source": "Hugging Face Dataset Card",
-   "title": "dougalldeepmind/2026-11-02-mask-qwen36-0-da-15-c",
-   "url": "https://huggingface.co/dougalldeepmind/2026-11-02-mask-qwen36-0-da-15-c",
-   "snippet": "This Hugging Face dataset card introduces a masked Qwen model, dated 2026-11-02. The dataset generation encountered a cast error, preventing the full viewer from being available, and only a preview of the rows is shown. It contains data related to various user prompts including discussions on 5G technology and theories about Egyptian pyramids.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.92,
-    "difficulty": 0.41,
-    "learning_value": 0.64,
-    "hands_on": 0.53
-   },
-   "reason": "low learning value 0.64"
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "thedotmack/claude-mem",
-   "url": "https://github.com/thedotmack/claude-mem",
-   "snippet": "This GitHub repository, 'claude-mem', is categorized under AI Agents, Agent Skills, and Knowledge Base. It was trending on November 2, 2026, indicating recent activity or popularity. Further details would require direct examination of the repository's commit history or release notes to confirm specific updates within the last 48 hours.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.9,
-    "difficulty": 0.04,
-    "learning_value": 0.84,
-    "hands_on": 0.83
-   },
-   "reason": "low learning value 0.84"
-  },
-  {
-   "source": "GitHub Trending",
-   "title": "max-sixty/worktrunk",
-   "url": "https://github.com/max-sixty/worktrunk",
-   "snippet": "The GitHub repository 'worktrunk' by max-sixty was listed as trending on November 2, 2026. It is categorized under CLI, AI Agents, Productivity, and Git, suggesting tools or frameworks for enhancing developer workflows with AI capabilities. Its recent popularity indicates new developments or significant community interest.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.91,
-    "difficulty": 0.01,
-    "learning_value": 0.83,
-    "hands_on": 1.04
-   },
-   "reason": "low learning value 0.83"
-  },
-  {
-   "source": "Honnibal.dev (blog post)",
-   "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
-   "url": "https://honnibal.dev/blog/astra-qwen-weights/",
-   "snippet": "This blog post addresses claims that OpenAI's Astra model possesses the ability to directly read and write weights to enhance other models like Qwen. It likely provides a technical refutation or clarification, dissecting the complexities and limitations of current AI models in such direct self-improvement or inter-model manipulation. The author questions the validity of such statements in the current AI landscape.",
-   "score": 0,
-   "published": "2026-11-03",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.2,
-    "difficulty": 0.84,
-    "learning_value": 0.92,
-    "hands_on": 0.07
-   },
-   "reason": "no substance 0.20"
-  },
-  {
-   "source": "OpenAthena.ai (blog post)",
-   "title": "There is no posttraining data commons",
-   "url": "https://openathena.ai/blog/no-posttraining-data-commons",
-   "snippet": "This blog post from OpenAthena.ai argues for the current lack of a unified 'posttraining data commons' for large language models. It highlights the challenges this absence creates for standardized evaluation, bias mitigation, and collaborative development in the AI research ecosystem. The author suggests this fragmentation impedes systematic improvement and shared understanding of model performance.",
-   "score": 0,
-   "published": "2026-11-04",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.13,
-    "difficulty": 0.83,
-    "learning_value": 0.48,
-    "hands_on": 0.02
-   },
-   "reason": "no substance 0.13"
-  },
-  {
-   "source": "Brethorsting.com (blog post)",
-   "title": "Prompting Is Programming",
-   "url": "https://brethorsting.com/blog/prompting-is-programming",
-   "snippet": "This article posits that the act of prompting large language models should be viewed as a form of programming. It delves into how well-crafted prompts serve as executable instructions and algorithms that dictate AI behavior and output. The piece explores the evolving definition of 'programming' as interactions with advanced AI systems become more sophisticated and directive.",
-   "score": 0,
-   "published": "2026-11-04",
-   "judge": {
-    "injection": 0.02,
-    "has_substance": 0.32,
-    "difficulty": 0.08,
-    "learning_value": 0.52,
-    "hands_on": 0.36
-   },
-   "reason": "no substance 0.32"
-  },
-  {
-   "source": "OpenAI (safety document)",
-   "title": "GPT-Rosalind-6 System Card Addendum",
-   "url": "https://deploymentsafety.openai.com/gpt-rosalind-6-system-card-addendum",
-   "snippet": "This addendum to the GPT-Rosalind-6 System Card provides an updated overview of the model's safety and ethical considerations. It elaborates on specific evaluations and measures implemented to mitigate potential risks, focusing on responsible development and deployment practices for advanced AI. The document covers aspects related to model alignment and safety protocols.",
-   "score": 0,
-   "published": "2026-11-02",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.51,
-    "difficulty": 0.53,
-    "learning_value": 0.58,
-    "hands_on": 0.06
-   },
-   "reason": "low learning value 0.58"
-  },
-  {
-   "source": "Google DeepMind Blog",
-   "title": "AlphaEarth Foundations Blog: Learn how Google DeepMind's AI model integrates petabytes of data into a unified representation",
-   "url": "https://www.deepmind.com/blog/alphaearth-foundations",
-   "snippet": "The AlphaEarth Foundations blog post from Google DeepMind details how their AI model integrates petabytes of data into a unified representation. This initiative enables advanced applications like predicting environmental variables such as canopy height and clustering landscapes. It offers resources including a Satellite Embeddings Dataset and various tutorials for supervised and unsupervised classification.",
-   "score": 0,
-   "published": "2026-11-03",
-   "judge": {
-    "injection": 0.03,
-    "has_substance": 0.97,
-    "difficulty": 0.84,
-    "learning_value": 2.26,
-    "hands_on": 1.77
-   },
-   "reason": "same as published: AlphaEarth Foundations: Integrating Petabytes of Earth Observation Data"
+   "reason": "low learning value 0.71"
   }
  ],
- "judge": "judge: 18 kept, 11 dropped (18 pairs checked)"
+ "judge": "judge: 26 kept, 4 dropped (40 pairs checked)"
 }

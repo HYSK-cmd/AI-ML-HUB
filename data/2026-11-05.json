@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-05",
+  "headline": "로봇 데이터 수집 효율화부터 베이시안 실험 설계 툴킷, 그리고 LLM 정렬 최적화까지 최신 AI 동향을 알아봅니다.",
+  "items": [
+    {
+      "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+      "url": "https://huggingface.co/papers/2611.06993",
+      "source": "Hugging Face Daily Papers",
+      "categories": [
+        "Robotics & Embodied",
+        "Agents"
+      ],
+      "level": "beginner",
+      "headline_ko": "LLM 에이전트로 로봇 데이터!",
+      "summary": "PyRUA-DataFarm은 LLM 에이전트를 활용하여 비용 효율적인 로봇 데이터 수집 시스템을 제공합니다. 이 시스템은 대규모 언어 모델을 이용해 로봇을 원격으로 제어하며, 실제 환경에 바로 적용 가능한 데이터를 효율적으로 확보합니다. 로봇 데이터 수집의 어려운 문제를 LLM을 통해 해결하는 새로운 접근법을 제시합니다.",
+      "why": "로봇 공학에서 중요한 데이터 수집 문제를 LLM 기반 에이전트로 해결하는 방안을 배울 수 있습니다. 실제 로봇 제어와 LLM 에이전트의 결합 사례를 이해하는 데 도움이 됩니다.",
+      "keywords": [
+        "로봇 데이터",
+        "LLM 에이전트",
+        "원격 제어",
+        "데이터 수집"
+      ],
+      "narration": "PyRUA-DataFarm은 LLM 에이전트를 활용해 로봇 데이터 수집 비용을 크게 줄입니다. LLM이 로봇을 원격으로 제어하며 실제 활용 가능한 데이터를 효율적으로 모읍니다. 로봇 데이터 수집의 고질적인 문제를 LLM으로 해결한 새로운 접근법입니다."
+    },
+    {
+      "title": "TestBED: An Open-Source Toolkit for Bayesian Experimental Design",
+      "url": "https://arxiv.org/abs/2611.06633",
+      "source": "arXiv",
+      "categories": [
+        "ML Systems & Infra",
+        "Open Source & Tools",
+        "Research Fundamentals"
+      ],
+      "level": "intermediate",
+      "headline_ko": "베이시안 실험 설계 툴킷",
+      "summary": "TestBED는 베이시안 실험 설계(BED)를 위한 범용 오픈소스 툴킷으로, 지능형 데이터 획득의 핵심 프레임워크를 제공합니다. 이 툴킷은 기존 BED 방법론의 표준화된 소프트웨어 및 벤치마크 부족 문제를 해결하고자 개발되었습니다. TestBED는 모듈식 재사용 가능한 구성 요소를 제공하여 기존 방법론을 재현하고 새로운 방법론을 쉽게 구현 및 평가할 수 있게 합니다.",
+      "why": "지능형 데이터 수집의 핵심인 베이시안 실험 설계를 이해하고, 실제 적용을 위한 오픈소스 툴킷 사용법을 배울 수 있습니다. 머신러닝 시스템 설계와 벤치마킹에 대한 통찰을 얻을 수 있습니다.",
+      "keywords": [
+        "베이시안 실험 설계",
+        "오픈소스 툴킷",
+        "지능형 데이터 수집",
+        "ML 시스템"
+      ],
+      "narration": "TestBED는 지능형 데이터 수집을 위한 베이시안 실험 설계 오픈소스 툴킷입니다. 기존 BED 방법론의 표준화된 소프트웨어 부족을 해결합니다. 이 툴킷은 모듈식 구성 요소를 제공하여 새로운 방법론 개발과 평가를 쉽게 만듭니다."
+    },
+    {
+      "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+      "url": "https://arxiv.org/abs/2611.05373",
+      "source": "arXiv",
+      "categories": [
+        "LLM",
+        "RL",
+        "Research Fundamentals"
+      ],
+      "level": "advanced",
+      "headline_ko": "LLM 정렬, DNO로 개선",
+      "summary": "Direct Nash Optimization(DNO)은 두 플레이어 선호 게임의 내쉬 균형을 근사하여 언어 모델을 일반적인 선호 함수에 정렬하는 방법입니다. 그 실용적인 변형인 DNO-Prct는 온-정책 샘플링, LLM 기반 평가, 대규모 마진 선호 쌍 선택 및 DPO 스타일 업데이트를 반복합니다. 이 연구는 Llama 3.1 8B와 Mistral 7B 모델에서 GPT-4o를 평가자로 사용했을 때, Llama의 승률이 31.7%에서 45.3%로, Mistral은 6.8%에서 18.4%로 상승했음을 보여줍니다.",
+      "why": "LLM을 일반적인 선호도에 정렬하는 최신 연구 방법론인 DNO-Prct의 이론과 실제 적용 사례를 깊이 있게 이해할 수 있습니다. 강화 학습 기반 LLM 정렬의 핵심적인 접근 방식을 배우고, 효율적인 모델 개선 방안을 탐구할 수 있습니다.",
+      "keywords": [
+        "LLM 정렬",
+        "Direct Nash Optimization",
+        "강화 학습",
+        "DPO",
+        "선호도 학습"
+      ],
+      "narration": "Direct Nash Optimization, 즉 DNO는 언어 모델을 일반적인 선호도에 정렬하는 고급 방법론입니다. DNO-Prct는 온-정책 샘플링과 LLM 기반 평가를 통해 모델을 개선합니다. 이 연구는 Llama와 Mistral 모델의 성능을 크게 향상시켰음을 보여줍니다."
+    }
+  ]
+}
